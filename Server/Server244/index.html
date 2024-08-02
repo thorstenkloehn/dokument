@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Server24.04 - Dokument</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Dokument</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Starseite</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Server</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Server20.04</a>
+</li>
+                                    
+<li>
+    <a href="../Server224/" class="dropdown-item">Server22.04</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Server24.04</a>
+</li>
+                                    
+<li>
+    <a href="../Server_Mieten/" class="dropdown-item">Server Mieten</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../IDE/" class="nav-link">IDE</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CMS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../CMS/" class="dropdown-item">Allgemein</a>
+</li>
+                                    
+<li>
+    <a href="../../CMS/Wordpress/" class="dropdown-item">Wordpress</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Static Site Generator</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../SSG/Mkdocs/" class="dropdown-item">Mkdocs</a>
+</li>
+                                    
+<li>
+    <a href="../../SSG/github_page/" class="dropdown-item">Github-pages</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Framework</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Framework/Next.js" class="dropdown-item">Next.js</a>
+</li>
+                                    
+<li>
+    <a href="../../Framework/astro.buil" class="dropdown-item">astro.build</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tools</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Tools/Analysetool/" class="dropdown-item">Analysetool</a>
+</li>
+                                    
+<li>
+    <a href="../../Tools/Benchmark/" class="dropdown-item">Benchmark</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Server224/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Server_Mieten/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#ubuntu-2404-lts-installation" class="nav-link">Ubuntu 24.04 LTS Installation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#softwareinstallation" class="nav-link">Softwareinstallation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nutzer-erstellen-bei-ubuntu-2404-lts" class="nav-link">Nutzer erstellen bei Ubuntu 24.04 LTS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nodjs-installation" class="nav-link">Nodjs Installation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#installation-weitere-pakete" class="nav-link">Installation weitere Pakete</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#mapnik" class="nav-link">Mapnik</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#konfiguration-des-stylesheets" class="nav-link">Konfiguration des Stylesheets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#daten-laden" class="nav-link">Daten laden</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#erstellen-von-indizes" class="nav-link">Erstellen von Indizes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#shapefile-download" class="nav-link">Shapefile-Download</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#schriftarten" class="nav-link">Schriftarten</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#einrichten-ihres-webservers" class="nav-link">Einrichten Ihres Webservers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#neue-nutzer-hinzufugen" class="nav-link">Neue Nutzer hinzufügen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="ubuntu-2404-lts-installation">Ubuntu 24.04 LTS Installation</h2>
+<p>Diese Seite beschreibt, wie man alle notwendige Software installiert, einrichtet und konfiguriert, um einen eigenen Kachelserver zu betreiben. Diese Schritt-für-Schritt-Anleitung wurde für Ubuntu Linux 24.04 (Noble Numbat) geschrieben und im April 2024 getestet.</p>
+<h2 id="softwareinstallation">Softwareinstallation</h2>
+<p>Der OSM-Kachelserver-Stack ist eine Sammlung von Programmen und Bibliotheken, die zusammenarbeiten, um einen Kachelserver zu erstellen. Wie so oft bei OpenStreetMap gibt es viele Wege, dieses Ziel zu erreichen, und fast alle Komponenten haben Alternativen, die verschiedene spezifische Vor- und Nachteile haben. Dieses Tutorial beschreibt die gängigste Version, die der auf den Haupt-Kachelserven von OpenStreetMap.org ähnlich ist.</p>
+<p>Er besteht aus 5 Hauptkomponenten: mod_tile, renderd, mapnik, osm2pgsql und einer PostgreSQL/PostGIS-Datenbank. Mod_tile ist ein Apache-Modul, das zwischengespeicherte Kacheln bereitstellt und entscheidet, welche Kacheln neu gerendert werden müssen - entweder weil sie noch nicht zwischengespeichert sind oder weil sie veraltet sind. Renderd bietet ein Prioritätswarteschlangensystem für verschiedene Arten von Anfragen, um die Last von Renderanfragen zu verwalten und zu glätten. Mapnik ist die Softwarebibliothek, die das eigentliche Rendern durchführt und von renderd verwendet wird.</p>
+<p>Dank der Arbeit der Debian- und Ubuntu-Maintainer, die neuesten Versionen dieser Pakete in Ubuntu 24.04 zu integrieren, sind diese Anweisungen etwas kürzer als einige frühere Versionen.</p>
+<p>Diese Anweisungen wurden geschrieben und gegen einen neu installierten Ubuntu 24.04 Server getestet. Wenn Sie bereits andere Versionen einiger Software installiert haben (vielleicht haben Sie von einer früheren Version aktualisiert, oder Sie haben einige PPAs zum Laden eingerichtet), dann müssen Sie möglicherweise einige Anpassungen vornehmen.</p>
+<p>Um diese Komponenten zu erstellen, müssen zunächst eine Vielzahl von Abhängigkeiten installiert werden.</p>
+<p>Dieser Leitfaden geht davon aus, dass Sie alles von einem Nicht-Root-Benutzer über "sudo" ausführen. Versuchen Sie nicht, alles unten als Root zu tun; es wird nicht funktionieren.</p>
+<p>Aktualisieren Sie zunächst Ihre Paketliste und installieren Sie die erforderlichen Pakete:</p>
+<h2 id="nutzer-erstellen-bei-ubuntu-2404-lts">Nutzer erstellen bei Ubuntu 24.04 LTS</h2>
+<p>Um einen neuen Nutzer in Ubuntu 24.04 LTS zu erstellen, können Sie die folgenden Schritte ausführen:</p>
+<ol>
+<li>
+<p>Öffnen Sie ein Terminalfenster.</p>
+</li>
+<li>
+<p>Führen Sie den folgenden Befehl aus, um einen neuen Nutzer zu erstellen:</p>
+</li>
+</ol>
+<pre><code class="language-bash">sudo adduser --force-badname _renderd
+sudo usermod -aG sudo _renderd
+exit
+</code></pre>
+<h3 id="login-als-neuer-nutzer">Login als neuer Nutzer</h3>
+<p>Der gegebene Codeblock zeigt, wie man sich als ein bestimmter Nutzer in einem Linux-System einloggt. Der Befehl <code>ssh</code> wird verwendet, um eine sichere Shell-Sitzung zu starten.</p>
+<pre><code class="language-bash">ssh _renderd@localhost
+</code></pre>
+<h3 id="system-aktualisieren-und-upgraden">System aktualisieren und upgraden</h3>
+<p>Um Ihr Ubuntu-System zu aktualisieren und zu upgraden, können Sie die folgenden Befehle verwenden:</p>
+<ol>
+<li><strong>System aktualisieren</strong></li>
+</ol>
+<p>Der Befehl <code>sudo apt update</code> wird verwendet, um die Paketlisten für Upgrades für Pakete zu aktualisieren, die installiert werden müssen, und neue Pakete, die installiert werden können.</p>
+<p><code>bash
+   sudo apt update
+  sudo apt upgrade</code></p>
+<h2 id="nodjs-installation">Nodjs Installation</h2>
+<p>Anleitung zur Installation von Node.js auf Ubuntu 24.04 LTS
+* <a href="https://github.com/nodesource/distributions">Anleitung</a></p>
+<h2 id="installation-weitere-pakete">Installation weitere Pakete</h2>
+<pre><code class="language-bash">sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin npm node-carto postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis
+</code></pre>
+<p>An diesem Punkt wurden einige neue Konten hinzugefügt. Sie können sie mit "tail /etc/passwd" sehen. "postgres" wird zur Verwaltung der Datenbanken verwendet, die wir zur Speicherung von Daten für das Rendering verwenden. "_renderd" wird für den Renderd-Daemon verwendet, und wir müssen sicherstellen, dass viele der unten aufgeführten Befehle als dieser Benutzer ausgeführt werden.</p>
+<p>Jetzt müssen Sie eine PostGIS-Datenbank erstellen. Die Standardwerte verschiedener Programme gehen davon aus, dass die Datenbank "gis" heißt und wir werden in diesem Tutorial die gleiche Konvention verwenden, obwohl dies nicht notwendig ist. Beachten Sie, dass "_renderd" unten dem Benutzer entspricht, unter dem der Renderd-Daemon ausgeführt wird.</p>
+<pre><code class="language-bash">sudo -u postgres -i
+createuser _renderd
+createdb -E UTF8 -O _renderd gis
+</code></pre>
+<p>Während Sie noch als Benutzer "postgres" arbeiten, richten Sie PostGIS auf der PostgreSQL-Datenbank ein:</p>
+<pre><code class="language-bash">psql
+</code></pre>
+<p>(Das bringt Sie zu einer "postgres=#"-Eingabeaufforderung)</p>
+<pre><code class="language-bash">\c gis
+</code></pre>
+<p>(Es wird antworten "Sie sind jetzt als Benutzer 'postgres' mit der Datenbank 'gis' verbunden.")</p>
+<pre><code class="language-bash">CREATE EXTENSION postgis;
+</code></pre>
+<p>(Es wird antworten mit "CREATE EXTENSION")</p>
+<pre><code class="language-bash">CREATE EXTENSION hstore;
+</code></pre>
+<p>(Es wird antworten mit "CREATE EXTENSION")</p>
+<pre><code class="language-bash">ALTER TABLE geometry_columns OWNER TO _renderd;
+</code></pre>
+<p>(Es wird antworten mit "ALTER TABLE")</p>
+<pre><code class="language-bash">ALTER TABLE spatial_ref_sys OWNER TO _renderd;
+</code></pre>
+<p>(Es wird antworten mit "ALTER TABLE")</p>
+<pre><code class="language-bash">\q
+</code></pre>
+<p>(Das wird Sie aus der psql-Shell herausbringen)</p>
+<pre><code class="language-bash">exit
+</code></pre>
+<p>(Das wird Sie aus dem Benutzer "postgres" herausbringen)</p>
+<h2 id="mapnik">Mapnik</h2>
+<p>Mapnik wurde oben installiert. Wir werden überprüfen, ob es korrekt installiert wurde, indem wir Folgendes tun:</p>
+<pre><code class="language-bash">python3
+&gt;&gt;&gt; import mapnik
+&gt;&gt;&gt;
+</code></pre>
+<p>Wenn Sie keine Fehlermeldung erhalten, ist Mapnik korrekt installiert. Drücken Sie "Ctrl-D", um Python zu verlassen.</p>
+<h2 id="konfiguration-des-stylesheets">Konfiguration des Stylesheets</h2>
+<p>Jetzt, da alle notwendige Software installiert ist, müssen Sie ein Stylesheet herunterladen und konfigurieren.</p>
+<p>Der Stil, den wir hier verwenden, ist der, der von der "Standard"-Karte auf der Website openstreetmap.org verwendet wird. Er wurde gewählt, weil er gut dokumentiert ist und überall auf der Welt funktionieren sollte (einschließlich an Orten mit nicht-lateinischen Ortsnamen). Es gibt jedoch ein paar Nachteile - es ist sehr viel ein Kompromiss, der global funktionieren soll, und es ist ziemlich kompliziert zu verstehen und zu modifizieren, falls Sie das tun müssen.</p>
+<p>Die Heimat von "OpenStreetMap Carto" im Web ist https://github.com/gravitystorm/openstreetmap-carto/ und es hat seine eigenen Installationsanweisungen unter https://github.com/gravitystorm/openstreetmap-carto/blob/master/INSTALL.md , obwohl wir hier alles abdecken, was getan werden muss.</p>
+<p>Hier gehen wir davon aus, dass wir die Details des Stylesheets in einem Verzeichnis unter "src" im Home-Verzeichnis des jeweiligen Nicht-Root-Benutzerkontos speichern, das Sie verwenden; wir werden den Zugriff so ändern, dass der Benutzer "_renderd" darauf zugreifen kann.</p>
+<pre><code class="language-bash">mkdir ~/src
+cd ~/src
+git clone https://github.com/gravitystorm/openstreetmap-carto
+cd openstreetmap-carto
+</code></pre>
+<p>Als nächstes installieren wir eine geeignete Version des "carto"-Compilers.</p>
+<pre><code class="language-bash">sudo npm install -g carto
+carto -v
+</code></pre>
+<p>Das sollte mit einer Zahl antworten, die mindestens so hoch ist wie:</p>
+<pre><code class="language-bash">    1.2.0
+</code></pre>
+<p>Dann konvertieren wir das Carto-Projekt in ein Format, das Mapnik verstehen kann:</p>
+<pre><code class="language-bash">carto project.mml &gt; mapnik.xml
+</code></pre>
+<p>Sie haben jetzt ein Mapnik XML-Stylesheet unter /home/IhrBenutzerkonto/src/openstreetmap-carto/mapnik.xml .</p>
+<h2 id="daten-laden">Daten laden</h2>
+<p>Zunächst laden wir nur eine kleine Menge an Testdaten. Es sind andere Download-Standorte verfügbar, aber "download.geofabrik.de" bietet eine breite Palette an Optionen. In diesem Beispiel laden wir die Daten für Schlewig Holstein herunter, die derzeit etwa 32Mb groß sind.</p>
+<p>Navigieren Sie zu https://download.geofabrik.de/europe/germany/schleswig-holstein.html und beachten Sie das Datum "Diese Datei wurde zuletzt geändert" (z.B. "2024-04-24T20:21:40Z"). Wir werden das später benötigen, wenn wir die Datenbank mit den nachfolgenden Änderungen der Menschen an OpenStreetMap aktualisieren wollen. Laden Sie es wie folgt herunter:</p>
+<pre><code class="language-bash">mkdir ~/data
+cd ~/data
+wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+
+</code></pre>
+<p>Als nächstes müssen wir sicherstellen, dass der Benutzer "_renderd" auf das Stylesheet zugreifen kann. Um dies zu ermöglichen, benötigt er Zugriff auf den Ort, an dem Sie es heruntergeladen haben, und standardmäßig hat er keinen Zugriff auf Ihr Home-Verzeichnis. Wenn es sich in "src" unter Ihrem Benutzerkonto befindet, dann</p>
+<pre><code class="language-bash">chmod a+rx ~
+</code></pre>
+<p>wird funktionieren. Wenn Sie dies nicht tun möchten, können Sie es verschieben und die Verweise auf die Dateiorte in den nachfolgenden Befehlen ändern.</p>
+<p>Der folgende Befehl wird die zuvor heruntergeladenen OpenStreetMap-Daten in die Datenbank einfügen. Dieser Schritt ist sehr intensiv in Bezug auf die Festplatten-I/O; der Import des gesamten Planeten kann je nach Hardware viele Stunden, Tage oder Wochen dauern. Für kleinere Extrakte ist die Importzeit entsprechend viel schneller, und Sie müssen möglicherweise mit verschiedenen -C-Werten experimentieren, um in den verfügbaren Speicher Ihres Rechners zu passen. Beachten Sie, dass der Benutzer "_renderd" für diesen Prozess verwendet wird.</p>
+<pre><code class="language-bash">sudo -u _renderd osm2pgsql -d gis --create --slim  -G --hstore --tag-transform-script ~/src/openstreetmap-carto/openstreetmap-carto.lua -C 2500 --number-processes 1 -S ~/src/openstreetmap-carto/openstreetmap-carto.style ~/data/ahrensburg.pbf
+</code></pre>
+<h2 id="erstellen-von-indizes">Erstellen von Indizes</h2>
+<p>Seit der Version v5.3.0 müssen einige zusätzliche Indizes manuell angewendet werden:</p>
+<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+sudo -u _renderd psql -d gis -f indexes.sql
+</code></pre>
+<p>Es sollte 16 Mal mit "CREATE INDEX" antworten.</p>
+<h2 id="shapefile-download">Shapefile-Download</h2>
+<p>Obwohl die meisten Daten, die zur Erstellung der Karte verwendet werden, direkt aus der oben heruntergeladenen OpenStreetMap-Datendatei stammen, werden immer noch einige Shapefiles für Dinge wie Ländergrenzen bei niedriger Zoomstufe benötigt. Um diese herunterzuladen und zu indizieren, verwenden wir das gleiche Konto wie zuvor:</p>
+<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+mkdir data
+sudo chown _renderd data
+sudo -u _renderd scripts/get-external-data.py
+</code></pre>
+<p>Dieser Prozess beinhaltet einen erheblichen Download und kann einige Zeit in Anspruch nehmen - während er läuft, wird nicht viel auf dem Bildschirm angezeigt. Einige Daten gehen direkt in die Datenbank, und einige gehen in ein "data"-Verzeichnis unter "openstreetmap-carto". Wenn hier ein Problem auftritt, dann sind die Natural Earth Daten möglicherweise verschoben worden - schauen Sie sich dieses Problem und andere Probleme bei Natural Earth für weitere Details an. Wenn Sie den Download-Ort von Natural Earth ändern müssen, ist Ihre Kopie dieser Datei diejenige, die Sie bearbeiten sollten.</p>
+<h2 id="schriftarten">Schriftarten</h2>
+<p>In der Version v5.6.0 und höher von Carto müssen Schriftarten manuell installiert werden:</p>
+<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+scripts/get-fonts.sh
+</code></pre>
+<p>Unser Testdatenbereich (Ahrensburg) wurde sowohl wegen seiner geringen Größe als auch wegen einiger Ortsnamen in dieser Region ausgewählt, die Namen mit nicht-lateinischen Zeichen enthalten.</p>
+<h2 id="einrichten-ihres-webservers">Einrichten Ihres Webservers</h2>
+<h3 id="konfigurieren-von-renderd">Konfigurieren von renderd</h3>
+<p>Die Konfigurationsdatei für "renderd" unter Ubuntu 24.04 ist "/etc/renderd.conf". Bearbeiten Sie diese mit einem Texteditor wie nano:</p>
+<pre><code class="language-bash">sudo nano /etc/renderd.conf
+</code></pre>
+<p>Ändern Sie die folgenden Zeilen, um sie an Ihre Umgebung anzupassen:</p>
+<pre><code class="language-bash">[s2o]
+URI=/hot/
+XML=/home/_renderd/src/openstreetmap-carto/mapnik.xml
+HOST=localhost
+TILESIZE=256
+MAXZOOM=20
+</code></pre>
+<p>Der Pfad zur XML-Datei "/home/accountname/src/openstreetmap-carto/mapnik.xml" muss auf den tatsächlichen Pfad auf Ihrem System geändert werden. Sie können auch "[s2o]" und "URI=/hot/" ändern, wenn Sie möchten. Wenn Sie mehr als einen Satz von Kacheln von einem Server rendern möchten, können Sie das tun - fügen Sie einfach einen weiteren Abschnitt wie "[s2o]" mit einem anderen Namen hinzu, der auf einen anderen Kartenstil verweist. Wenn Sie möchten, dass es sich auf eine andere Datenbank als die Standarddatenbank "gis" bezieht, können Sie das tun, aber das liegt außerhalb des Rahmens dieses Dokuments. Wenn Sie nur etwa 2Gb Speicher haben, sollten Sie auch "num_threads" auf 2 reduzieren. "URI=/hot/" wurde gewählt, damit die hier generierten Kacheln leichter anstelle der HOT-Kachel-Ebene auf OpenStreetMap.org verwendet werden können. Sie können hier etwas anderes verwenden, aber "/hot/" ist genauso gut wie alles andere.</p>
+<p>Als dieser Leitfaden zum ersten Mal geschrieben wurde, war die von Ubuntu 24.04 bereitgestellte Version von Mapnik 3.1, und die Einstellung "plugins_dir" im Abschnitt "[mapnik]" der Datei war "/usr/lib/mapnik/3.1/input". Dieses "3.1" könnte sich in der Zukunft wieder ändern. Wenn beim Versuch, Kacheln zu rendern, ein Fehler auftritt, wie dieser:</p>
+<pre><code class="language-bash">An error occurred while loading the map layer 's2o': Could not create datasource for type: 'postgis' (no datasource plugin directories have been successfully registered)  encountered during parsing of layer 'landcover-low-zoom'
+</code></pre>
+<p>Dann schauen Sie in "/usr/lib/mapnik" und sehen Sie, welche Versionsverzeichnisse es gibt, und schauen Sie auch in "/usr/lib/mapnik/(version)/input", um sicherzustellen, dass dort eine Datei "postgis.input" existiert.</p>
+<p>Jetzt, da wir "renderd" gesagt haben, wie es auf Kachelrendering-Anfragen reagieren soll, müssen wir dem Apache-Webserver sagen, dass er sie senden soll. Leider wurde die Konfiguration dafür aus den neuesten Versionen von mod_tile entfernt. Sie kann jedoch derzeit von hier installiert werden</p>
+<pre><code class="language-bash">cd /etc/apache2/conf-available/
+sudo wget https://raw.githubusercontent.com/openstreetmap/mod_tile/python-implementation/etc/apache2/renderd.conf
+sudo a2enconf renderd
+sudo systemctl reload apache2
+</code></pre>
+<h3 id="reload-apache">Reload Apache</h3>
+<pre><code class="language-bash">sudo nano /usr/lib/systemd/system/renderd.service
+sudo systemctl daemon-reload
+sudo systemctl restart renderd
+sudo systemctl restart apache2
+</code></pre>
+<h3 id="apache-port-andern">Apache Port ändern</h3>
+<pre><code class="language-bash">sudo nano /etc/apache2/ports.conf
+</code></pre>
+<p>Ändern Sie den Port von 80 auf 8080</p>
+<pre><code class="language-bash">Listen 8080
+</code></pre>
+<p>Apache restarten</p>
+<pre><code class="language-bash">sudo systemctl restart apache2
+sudo apt-get install nginx
+sudo rm /etc/nginx/sites-enabled/default
+sudo systemctl stop nginx
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo systemctl stop nginx
+sudo certbot certonly --standalone -d ahrensburg.city -d www.ahrensburg.city
+sudo certbot certonly --standalone -d karte.ahrensburg.city
+</code></pre>
+<h2 id="neue-nutzer-hinzufugen">Neue Nutzer hinzufügen</h2>
+<pre><code class="language-bash">sudo adduser thorsten
+sudo usermod -aG sudo thorsten
+exit
+</code></pre>
+<p>ssh thorsten@localhost</p>
+<pre><code>ssh thorsten@
+cd $HOME
+sudo -u postgres -i
+createuser thorsten
+createdb -E UTF8 -O thorsten thorsten
+psql
+\c thorsten
+CREATE EXTENSION postgis;
+CREATE EXTENSION hstore;
+ALTER TABLE geometry_columns OWNER TO thorsten;
+ALTER TABLE spatial_ref_sys OWNER TO thorsten;
+## Passwort für den Benutzer postgres setzen
+\password thorsten
+\q
+exit
+</code></pre>
+<h3 id="herunterladen-der-daten">Herunterladen der Daten</h3>
+<pre><code class="language-bash">cd $HOME
+wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+
+osm2pgsql  -d thorsten --create  -G --hstore  ahrensburg.pbf
+</code></pre>
+<h3 id="build-von-ahrensburgcity">Build von Ahrensburg.city</h3>
+<pre><code class="language-bash">cd $HOME
+git clone https://github.com/thorstenkloehn/ahrensburg.city.git
+cd ahrensburg.city
+npm install
+npm run build
+</code></pre>
+<h3 id="systemctl-einrichten">Systemctl Einrichten</h3>
+<pre><code class="language-bash">sudo cp ahrensburg-city.service /etc/systemd/system/ahrensburg-city.service
+sudo systemctl enable ahrensburg-city
+sudo systemctl start ahrensburg-city
+</code></pre>
+<h3 id="config-daten-kopieren">config daten kopieren</h3>
+<pre><code class="language-bash">cp env.local.example .env.local
+nano .env.local
+</code></pre>
+<h3 id="restart">Restart</h3>
+<pre><code class="language-bash">sudo cp ahrensburg-city.conf /etc/nginx/conf.d/ahrensburg-city.conf
+sudo systemctl restart ahrensburg-city
+sudo systemctl restart nginx
+</code></pre>
+<p>Java Installation ubuntu 24.04 LTS</p>
+<pre><code class="language-bash">sudo apt update
+sudo apt upgrade
+sudo apt install openjdk-22-jdk
+sudo apt install gradle
+sudo apt install maven  
+</code></pre>
+<h3 id="aspnet-core">Asp.Net Core</h3>
+<pre><code class="language-bash">sudo apt-get update &amp;&amp; \
+  sudo apt-get install -y aspnetcore-runtime-8.0
+  sudo apt-get install -y dotnet-runtime-8.0
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

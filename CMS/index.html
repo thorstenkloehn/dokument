@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Allgemein - Dokument</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Dokument</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Starseite</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Server</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Server/" class="dropdown-item">Server20.04</a>
+</li>
+                                    
+<li>
+    <a href="../Server/Server224/" class="dropdown-item">Server22.04</a>
+</li>
+                                    
+<li>
+    <a href="../Server/Server244/" class="dropdown-item">Server24.04</a>
+</li>
+                                    
+<li>
+    <a href="../Server/Server_Mieten/" class="dropdown-item">Server Mieten</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../IDE/" class="nav-link">IDE</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CMS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Allgemein</a>
+</li>
+                                    
+<li>
+    <a href="Wordpress/" class="dropdown-item">Wordpress</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Static Site Generator</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../SSG/Mkdocs/" class="dropdown-item">Mkdocs</a>
+</li>
+                                    
+<li>
+    <a href="../SSG/github_page/" class="dropdown-item">Github-pages</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Framework</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Framework/Next.js" class="dropdown-item">Next.js</a>
+</li>
+                                    
+<li>
+    <a href="../Framework/astro.buil" class="dropdown-item">astro.build</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tools</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Tools/Analysetool/" class="dropdown-item">Analysetool</a>
+</li>
+                                    
+<li>
+    <a href="../Tools/Benchmark/" class="dropdown-item">Benchmark</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../IDE/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="Wordpress/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#was-ist-ein-content-management-system-cms" class="nav-link">Was ist ein Content-Management-System (CMS)?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="was-ist-ein-content-management-system-cms">Was ist ein Content-Management-System (CMS)?</h2>
+<p>Ein Content-Management-System (CMS) ist eine Softwareanwendung, die es Benutzern ermöglicht, digitale Inhalte zu erstellen, zu verwalten und zu modifizieren, ohne tiefgehende technische Kenntnisse zu benötigen. CMS werden häufig verwendet, um Websites zu erstellen und zu verwalten.</p>
+<h3 id="hauptfunktionen-eines-cms">Hauptfunktionen eines CMS</h3>
+<ol>
+<li><strong>Erstellung und Bearbeitung von Inhalten</strong>:</li>
+<li>Benutzer können Texte, Bilder, Videos und andere Medieninhalte einfach erstellen und bearbeiten.</li>
+<li>
+<p>Ein WYSIWYG-Editor (What You See Is What You Get) ermöglicht es Benutzern, Inhalte so zu gestalten, wie sie auf der Website erscheinen werden.</p>
+</li>
+<li>
+<p><strong>Verwaltung von Inhalten</strong>:</p>
+</li>
+<li>Inhalte können in Kategorien und Tags organisiert werden, um die Navigation und Suche zu erleichtern.</li>
+<li>
+<p>Versionierung und Änderungsverfolgung ermöglichen es, frühere Versionen von Inhalten wiederherzustellen.</p>
+</li>
+<li>
+<p><strong>Veröffentlichung von Inhalten</strong>:</p>
+</li>
+<li>Inhalte können geplant und automatisch zu einem bestimmten Zeitpunkt veröffentlicht werden.</li>
+<li>
+<p>Benutzer können Inhalte in Entwurfsform speichern und später veröffentlichen.</p>
+</li>
+<li>
+<p><strong>Benutzer- und Rollenverwaltung</strong>:</p>
+</li>
+<li>Administratoren können verschiedene Benutzerrollen und -berechtigungen festlegen, um den Zugriff auf bestimmte Funktionen und Inhalte zu steuern.</li>
+<li>
+<p>Mehrere Benutzer können gleichzeitig an der Website arbeiten, wobei jeder Benutzer spezifische Aufgaben und Verantwortlichkeiten hat.</p>
+</li>
+<li>
+<p><strong>Design und Layout</strong>:</p>
+</li>
+<li>CMS bieten oft eine Auswahl an vorgefertigten Themes und Templates, die das Design und Layout der Website bestimmen.</li>
+<li>
+<p>Benutzer können das Aussehen der Website anpassen, ohne den zugrunde liegenden Code ändern zu müssen.</p>
+</li>
+<li>
+<p><strong>Erweiterbarkeit</strong>:</p>
+</li>
+<li>CMS können durch Plugins und Erweiterungen erweitert werden, um zusätzliche Funktionen hinzuzufügen.</li>
+<li>Eine große Community von Entwicklern erstellt und pflegt diese Erweiterungen, um die Funktionalität des CMS zu verbessern.</li>
+</ol>
+<h3 id="beispiele-fur-beliebte-cms">Beispiele für beliebte CMS</h3>
+<ul>
+<li><strong>WordPress</strong>: Eines der am weitesten verbreiteten CMS, bekannt für seine Benutzerfreundlichkeit und eine große Auswahl an Plugins und Themes.</li>
+</ul>
+<h3 id="vorteile-eines-cms">Vorteile eines CMS</h3>
+<ul>
+<li><strong>Benutzerfreundlichkeit</strong>: Auch Benutzer ohne technische Kenntnisse können Inhalte erstellen und verwalten.</li>
+<li><strong>Zeitersparnis</strong>: Inhalte können schnell und einfach aktualisiert und veröffentlicht werden.</li>
+<li><strong>Kollaboration</strong>: Mehrere Benutzer können gleichzeitig an der Website arbeiten, was die Zusammenarbeit erleichtert.</li>
+<li><strong>Skalierbarkeit</strong>: CMS können mit der Website wachsen und zusätzliche Funktionen und Inhalte unterstützen.</li>
+</ul>
+<h3 id="fazit">Fazit</h3>
+<p>Ein Content-Management-System ist ein unverzichtbares Werkzeug für die Erstellung und Verwaltung von Websites. Es bietet eine benutzerfreundliche Oberfläche, leistungsstarke Funktionen und die Flexibilität, um den Anforderungen verschiedener Benutzer gerecht zu werden.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>IDE - Dokument</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Dokument</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Starseite</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Server</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Server/" class="dropdown-item">Server20.04</a>
+</li>
+                                    
+<li>
+    <a href="../Server/Server224/" class="dropdown-item">Server22.04</a>
+</li>
+                                    
+<li>
+    <a href="../Server/Server244/" class="dropdown-item">Server24.04</a>
+</li>
+                                    
+<li>
+    <a href="../Server/Server_Mieten/" class="dropdown-item">Server Mieten</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">IDE</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CMS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../CMS/" class="dropdown-item">Allgemein</a>
+</li>
+                                    
+<li>
+    <a href="../CMS/Wordpress/" class="dropdown-item">Wordpress</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Static Site Generator</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../SSG/Mkdocs/" class="dropdown-item">Mkdocs</a>
+</li>
+                                    
+<li>
+    <a href="../SSG/github_page/" class="dropdown-item">Github-pages</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Framework</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Framework/Next.js" class="dropdown-item">Next.js</a>
+</li>
+                                    
+<li>
+    <a href="../Framework/astro.buil" class="dropdown-item">astro.build</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tools</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Tools/Analysetool/" class="dropdown-item">Analysetool</a>
+</li>
+                                    
+<li>
+    <a href="../Tools/Benchmark/" class="dropdown-item">Benchmark</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Server/Server_Mieten/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../CMS/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#aktualisieren" class="nav-link">Aktualisieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#google-chrome-installieren-" class="nav-link">Google Chrome Installieren-</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#gh-konfigurieren" class="nav-link">gh Konfigurieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nodejs-installieren" class="nav-link">Nodejs Installieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#visual-studio-code" class="nav-link">Visual Studio Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#datenbank" class="nav-link">Datenbank</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#benutzer-thorsten-zu-gruppe-postgres-hinzufugen" class="nav-link">Benutzer thorsten zu Gruppe postgres hinzufügen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#passwort-fur-den-benutzer-postgres-setzen" class="nav-link">Passwort für den Benutzer postgres setzen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#anki" class="nav-link">Anki</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#lumi-installieren" class="nav-link">Lumi Installieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#rust-installieren" class="nav-link">Rust Installieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#java-installieren" class="nav-link">Java Installieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#golang-installieren" class="nav-link">Golang Installieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#python-installieren" class="nav-link">Python Installieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#python-vscode-erweiterungen" class="nav-link">Python vscode Erweiterungen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#python-virtual-environment" class="nav-link">Python Virtual Environment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#python-vorasusetzungen" class="nav-link">Python Vorasusetzungen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#visual-studio-code-erweiterungen" class="nav-link">Visual Studio Code Erweiterungen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#c-installieren" class="nav-link">C++ Installieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#dotnet-installieren" class="nav-link">Dotnet Installieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="aktualisieren">Aktualisieren</h2>
+<ul>
+<li>Öffne Sie das Terminal und auf ihrem Ubuntu-Desktop</li>
+<li>Führen Sie folgenden Befehl aus,um System zu aktualisieren.</li>
+</ul>
+<pre><code class="language-bash">sudo apt-get update 
+sudo apt-get upgrade
+</code></pre>
+<h2 id="google-chrome-installieren-">Google Chrome Installieren-</h2>
+<pre><code class="language-bash">wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+ sudo dpkg -i google-chrome-stable_current_amd64.deb
+ ```
+## Git Installieren
+```bash
+sudo apt-get install git  gh
+git config --global user.email &quot;you@example.com&quot;
+git config --global user.name &quot;Your Name&quot;
+
+</code></pre>
+<h2 id="gh-konfigurieren">gh Konfigurieren</h2>
+<pre><code class="language-bash">gh auth login
+</code></pre>
+<h2 id="nodejs-installieren">Nodejs Installieren</h2>
+<pre><code class="language-bash">sudo apt-get install curl
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &amp;&amp;\
+sudo apt-get install -y nodejs
+</code></pre>
+<h2 id="visual-studio-code">Visual Studio Code</h2>
+<h3 id="installieren">Installieren</h3>
+<pre><code class="language-bash">sudo snap install code --classic
+</code></pre>
+<h3 id="pflugin">Pflugin</h3>
+<p>In Visual Studio Code, öffnen Sie das Terminal und führen Sie folgende Befehle aus.</p>
+<pre><code class="language-bash">code --install-extension GitHub.copilot
+code --install-extension ckolkman.vscode-postgres
+code --install-extension  ms-ossdata.vscode-postgresql
+code --install-extension  unifiedjs.vscode-mdx
+code --install-extension xyc.vscode-mdx-preview
+code --install-extension iJS.reactnextjssnippets
+code --install-exenstion PulkitGangwar.nextjs-snippets
+code --install-exenstion KristiyanVelkov.nextjs-file-gelenator
+code --install-extenstion bradlc.vscode-tailwindcss
+</code></pre>
+<h2 id="datenbank">Datenbank</h2>
+<h3 id="postgresql">PostgreSQL</h3>
+<h4 id="installation">Installation</h4>
+<pre><code class="language-bash">sudo apt-get install postgresql-all
+</code></pre>
+<h3 id="posgresql-version-zeigen">PosgreSQL Version zeigen</h3>
+<pre><code class="language-bash">psql --version
+</code></pre>
+<h3 id="postgis-installation-in-ubuntu-2304">Postgis Installation in Ubuntu 23.04</h3>
+<pre><code class="language-bash">sudo apt install postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts
+</code></pre>
+<h3 id="installation-von-osm2pgsql-und-osmosis">Installation von osm2pgsql und osmosis</h3>
+<pre><code class="language-bash">sudo apt-get install osm2pgsql osmosis
+</code></pre>
+<h3 id="datenbank-erstellen">Datenbank erstellen</h3>
+<pre><code class="language-bash">sudo adduser thorsten
+sudo usermod -aG sudo thorsten
+</code></pre>
+<h2 id="benutzer-thorsten-zu-gruppe-postgres-hinzufugen">Benutzer thorsten zu Gruppe postgres hinzufügen</h2>
+<pre><code class="language-bash">
+sudo -u postgres -i
+createuser thorsten
+createdb -E UTF8 -O thorsten thorsten
+psql
+\c thorsten
+CREATE EXTENSION postgis;
+CREATE EXTENSION hstore;
+ALTER TABLE geometry_columns OWNER TO thorsten;
+ALTER TABLE spatial_ref_sys OWNER TO thorsten;
+</code></pre>
+<h2 id="passwort-fur-den-benutzer-postgres-setzen">Passwort für den Benutzer postgres setzen</h2>
+<pre><code class="language-bash">\password thorsten
+\q
+exit
+
+</code></pre>
+<p>Herunterladen der Daten</p>
+<pre><code class="language-bash">cd $HOME
+wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+
+osm2pgsql  -d thorsten --create  -G --hstore  ahrensburg.pbf
+</code></pre>
+<h3 id="datenbank-loschen">Datenbank Löschen</h3>
+<pre><code class="language-bash">sudo -u postgres -i
+psql
+GRANT ALL PRIVILEGES ON DATABASE thorsten TO postgres;
+drop database thorsten;
+\q
+</code></pre>
+<h3 id="ahrensburgcity-instakllieren">ahrensburg.city Instakllieren</h3>
+<pre><code class="language-bash">cd $HOME
+git clone https://github.com/thorstenkloehn/ahrensburg.city.git
+cd ahrensburg.city
+npm install
+cp env.local.example .env.local
+</code></pre>
+<h2 id="anki">Anki</h2>
+<p>Anki ist ein Programm zum Lernen von Vokabeln und anderen Inhalten. Es ist für Windows, Linux und Mac OS X verfügbar. Anki ist Open Source und kostenlos. Es ist auch für Android und iOS verfügbar, aber diese Versionen sind nicht kostenlos.</p>
+<h3 id="anforderungen">Anforderungen</h3>
+<pre><code class="language-bash">sudo apt install libxcb-xinerama0 libxcb-cursor0
+
+</code></pre>
+<h3 id="anki-herunterladen">Anki herunterladen</h3>
+<pre><code class="language-bash">cd $HOME
+wget https://github.com/ankitects/anki/releases/download/23.12.1/anki-23.12.1-linux-qt6.tar.zst
+</code></pre>
+<h3 id="anki-installieren">Anki installieren</h3>
+<pre><code class="language-bash">tar xaf anki-23.12.1-linux-qt6.tar.zst
+cd  anki-23.12.1-linux-qt6
+sudo ./install.sh
+QT_DEBUG_PLUGINS=1 anki
+</code></pre>
+<h3 id="erweiterungen">Erweiterungen</h3>
+<h4 id="erweiterungen-installieren">Erweiterungen installieren</h4>
+<pre><code class="language-bash">1436550454 1933645497 1463041493 1190756458
+</code></pre>
+<h2 id="lumi-installieren">Lumi Installieren</h2>
+<pre><code class="language-bash">cd $HOME
+wget https://github.com/Lumieducation/Lumi/releases/download/v0.10.0/lumi_0.10.0_amd64.deb
+sudo dpkg -i lumi_0.10.0_amd64.deb
+</code></pre>
+<h2 id="rust-installieren">Rust Installieren</h2>
+<pre><code class="language-bash">sudo apt  install curl 
+sudo apt install build-essential
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+</code></pre>
+<h2 id="java-installieren">Java Installieren</h2>
+<pre><code class="language-bash">sudo apt install openjdk-17-jdk
+sudo apt install maven
+</code></pre>
+<h2 id="golang-installieren">Golang Installieren</h2>
+<pre><code class="language-bash">cd $HOME
+wget https://go.dev/dl/go1.22.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.22.3.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
+echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
+source ~/.bashrc
+</code></pre>
+<h2 id="python-installieren">Python Installieren</h2>
+<pre><code class="language-bash">sudo apt install python3 python3-pip python3-venv  python-is-python3
+</code></pre>
+<h2 id="python-vscode-erweiterungen">Python vscode Erweiterungen</h2>
+<pre><code class="language-bash">
+code --install ms-dotnettools.dotnet-interactive-vscode
+</code></pre>
+<h2 id="python-virtual-environment">Python Virtual Environment</h2>
+<pre><code class="language-bash">python3 -m venv .venv
+source .venv/bin/activate
+</code></pre>
+<h2 id="python-vorasusetzungen">Python Vorasusetzungen</h2>
+<h3 id="ubuntu">Ubuntu</h3>
+<pre><code class="language-bash">sudo apt-get install build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev  libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev uuid-dev#
+</code></pre>
+<h4 id="hinunterladen-von-python">hinunterladen von Python</h4>
+<pre><code class="language-bash">wget https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz
+</code></pre>
+<h4 id="entpacken-von-python">entpacken von Python</h4>
+<pre><code class="language-bash">tar -xvf Python-3.12.2.tgz
+</code></pre>
+<h4 id="wechseln-in-das-python-verzeichnis">wechseln in das Python Verzeichnis</h4>
+<pre><code class="language-bash">cd Python-3.12.2
+</code></pre>
+<h4 id="installieren-von-python">Installieren von Python</h4>
+<pre><code class="language-bash">./configure
+make
+sudo make altinstall 
+</code></pre>
+<h2 id="visual-studio-code-erweiterungen">Visual Studio Code Erweiterungen</h2>
+<pre><code class="language-bash">code --install-extension  vscjava.vscode-java-pack
+code --install-extension  ms-vscode-remote.remote-ssh
+code --install-extension  ms-vscode.remote-server
+</code></pre>
+<h2 id="c-installieren">C++ Installieren</h2>
+<pre><code class="language-bash">sudo apt-get install build-essential
+sudo apt-get install cmake
+sudo apt-get install gdb
+sudo apt-get install clang
+sudo apt-get install valgrind
+sudo apt-get install cppcheck
+code --install-extension ms-vscode.cpptools-extension-pack
+code --install-extension krosf.vscode-valgrind
+code --install-extension NathanJ.cppcheck-plugin
+</code></pre>
+<h2 id="dotnet-installieren">Dotnet Installieren</h2>
+<pre><code class="language-bash">sudo apt-get update &amp;&amp; \
+  sudo apt-get install -y dotnet-sdk-8.0
+  code --install-extension ms-dotnettools.csdevkit
+</code></pre>
+<h4 id="quellangabe">Quellangabe</h4>
+<ul>
+<li>Quelle: <a href="https://www.python.org/downloads">Download</a></li>
+<li>Quelle: <a href="https://wiki.ubuntuusers.de/Python/">Installieren Anleitung</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

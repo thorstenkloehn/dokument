@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Server20.04 - Dokument</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Dokument</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Starseite</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Server</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Server20.04</a>
+</li>
+                                    
+<li>
+    <a href="Server224/" class="dropdown-item">Server22.04</a>
+</li>
+                                    
+<li>
+    <a href="Server244/" class="dropdown-item">Server24.04</a>
+</li>
+                                    
+<li>
+    <a href="Server_Mieten/" class="dropdown-item">Server Mieten</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../IDE/" class="nav-link">IDE</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CMS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../CMS/" class="dropdown-item">Allgemein</a>
+</li>
+                                    
+<li>
+    <a href="../CMS/Wordpress/" class="dropdown-item">Wordpress</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Static Site Generator</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../SSG/Mkdocs/" class="dropdown-item">Mkdocs</a>
+</li>
+                                    
+<li>
+    <a href="../SSG/github_page/" class="dropdown-item">Github-pages</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Framework</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Framework/Next.js" class="dropdown-item">Next.js</a>
+</li>
+                                    
+<li>
+    <a href="../Framework/astro.buil" class="dropdown-item">astro.build</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tools</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Tools/Analysetool/" class="dropdown-item">Analysetool</a>
+</li>
+                                    
+<li>
+    <a href="../Tools/Benchmark/" class="dropdown-item">Benchmark</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="Server224/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ubuntu-2004" class="nav-link">Ubuntu 20.04</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#software-installation" class="nav-link">Software installation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#nodejs-installation" class="nav-link">Nodejs Installation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#installation-von-postgresql-postgis" class="nav-link">Installation von PostgreSQL / PostGIS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#installation-von-osm2pgsql-und-osmosis" class="nav-link">Installation von osm2pgsql und osmosis</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#installation-von-mapnik" class="nav-link">Installation von Mapnik</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#installation-von-mod_tile-und-renderd" class="nav-link">Installation von mod_tile und renderd</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#kompilieren-sie-den-mod_tile-quellcode" class="nav-link">Kompilieren Sie den mod_tile-Quellcode:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#konfiguration-des-stylesheets" class="nav-link">Konfiguration des Stylesheets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#daten-laden" class="nav-link">Daten laden</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#erstellen-von-indizes" class="nav-link">Erstellen von Indizes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#shapefile-download" class="nav-link">Shapefile-Download</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#schriftarten" class="nav-link">Schriftarten</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#einrichten-ihres-webservers" class="nav-link">Einrichten Ihres Webservers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#apache-konfigurieren" class="nav-link">Apache konfigurieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#erstmaliges-ausfuhren-von-renderd" class="nav-link">Erstmaliges Ausführen von renderd</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#renderd-im-hintergrund-ausfuhren" class="nav-link">Renderd im Hintergrund ausführen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#apache-port-andern" class="nav-link">Apache port ändern</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ahrensburgcity-installieren" class="nav-link">ahrensburg.city installieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#neuen-nutzer-erstellen" class="nav-link">Neuen Nutzer erstellen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ssh-thorsten" class="nav-link">ssh thorsten</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#herunterladen-der-daten" class="nav-link">Herunterladen der Daten</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#build-von-ahrensburgcity" class="nav-link">Build von Ahrensburg.city</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#systemctl-einrichten" class="nav-link">Systemctl Einrichten</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#config-daten-kopieren" class="nav-link">config daten kopieren</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#restart" class="nav-link">Restart</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="ubuntu-2004">Ubuntu 20.04</h1>
+<p>Diese Seite beschreibt, wie man alle notwendige Software installiert, einrichtet und konfiguriert, um einen eigenen Kachelserver zu betreiben. Diese Schritt-für-Schritt-Anleitung wurde für Ubuntu Linux 20.04 LTS (Focal Fossa) geschrieben und im Mai 2020 getestet.</p>
+<h2 id="software-installation">Software installation</h2>
+<p>Der OSM-Kachelserver-Stack ist eine Sammlung von Programmen und Bibliotheken, die zusammenarbeiten, um einen Kachelserver zu erstellen. Wie so oft bei OpenStreetMap gibt es viele Wege, dieses Ziel zu erreichen, und fast alle Komponenten haben Alternativen, die verschiedene spezifische Vor- und Nachteile haben. Dieses Tutorial beschreibt die gängigste Version, die der auf den Haupt-Kachelservern von OpenStreetMap.org ähnlich ist.</p>
+<p>Er besteht aus 5 Hauptkomponenten: mod_tile, renderd, mapnik, osm2pgsql und einer PostgreSQL/PostGIS-Datenbank. Mod_tile ist ein Apache-Modul, das zwischengespeicherte Kacheln bereitstellt und entscheidet, welche Kacheln neu gerendert werden müssen - entweder weil sie noch nicht zwischengespeichert sind oder weil sie veraltet sind. Renderd bietet ein Prioritätswarteschlangensystem für verschiedene Arten von Anfragen, um die Last von Renderanfragen zu verwalten und auszugleichen. Mapnik ist die Softwarebibliothek, die das eigentliche Rendern durchführt und von renderd verwendet wird.</p>
+<p>Beachten Sie, dass diese Anweisungen gegen einen neu installierten Ubuntu 20.04 Server geschrieben und getestet wurden. Wenn Sie bereits andere Versionen einiger Software installiert haben (vielleicht haben Sie von einer früheren Ubuntu-Version aktualisiert, oder Sie haben einige PPAs zum Laden eingerichtet), dann müssen Sie möglicherweise einige Anpassungen vornehmen.</p>
+<p>Dieser Leitfaden geht davon aus, dass Sie alles von einem Nicht-Root-Benutzer über "sudo" ausführen. Der standardmäßig verwendete Nicht-Root-Benutzername ist unten "renderaccount" - Sie können diesen lokal erstellen, wenn Sie möchten, oder Skripte bearbeiten, um auf einen anderen Benutzernamen zu verweisen, wenn Sie möchten. Wenn Sie den Benutzer "renderaccount" erstellen, müssen Sie ihn zur Gruppe der Benutzer hinzufügen, die zu Root sudo können. Von Ihrem normalen Nicht-Root-Benutzerkonto aus:</p>
+<pre><code class="language-bash">sudo -i
+sudo adduser renderaccount
+usermod -aG sudo renderaccount
+exit
+exit
+ssh renderaccount@yourserver
+sudo apt-get update 
+sudo apt-get upgrade
+sudo apt-get install curl
+</code></pre>
+<h2 id="nodejs-installation">Nodejs Installation</h2>
+<ul>
+<li><a href="https://github.com/nodesource/distributions">Anleitung</a></li>
+</ul>
+<p>Um diese Komponenten zu erstellen, müssen zunächst eine Vielzahl von Abhängigkeiten installiert werden:</p>
+<pre><code class="language-bash">sudo apt install libboost-all-dev git tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin protobuf-c-compiler libfreetype6-dev libtiff5-dev libicu-dev libgdal-dev libcairo2-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-0-dev
+</code></pre>
+<p>Stimmen Sie der Installation zu. Dies wird eine Weile dauern, also gehen Sie und trinken Sie eine Tasse Tee. Diese Liste enthält verschiedene Dienstprogramme und Bibliotheken, den Apache-Webserver und "carto", das zur Umwandlung von Carto-CSS-Stylesheets in ein Format verwendet wird, das der Kartenrenderer "mapnik" verstehen kann. Wenn das abgeschlossen ist, installieren Sie die zweite Reihe von Voraussetzungen:</p>
+<h2 id="installation-von-postgresql-postgis">Installation von PostgreSQL / PostGIS</h2>
+<p>Auf Ubuntu gibt es vorgepackte Versionen von sowohl PostGIS als auch PostgreSQL, diese können einfach über den Ubuntu-Paketmanager installiert werden.</p>
+<pre><code class="language-bash">
+sudo apt install postgresql postgresql-contrib postgis postgresql-12-postgis-3 postgresql-12-postgis-3-scripts osmosis
+
+</code></pre>
+<p>Hier ist "postgresql" die Datenbank, in der wir Kartendaten speichern, und "postgis" fügt ihr zusätzliche grafische Unterstützung hinzu. Stimmen Sie erneut zu, um die Installation durchzuführen.</p>
+<p>Jetzt müssen Sie eine PostGIS-Datenbank erstellen. Die Standardwerte verschiedener Programme gehen davon aus, dass die Datenbank "gis" heißt und wir werden in diesem Tutorial die gleiche Konvention verwenden, obwohl dies nicht notwendig ist. Ersetzen Sie Ihren Benutzernamen durch "renderaccount", wo er unten verwendet wird. Dies sollte der Benutzername sein, der Karten mit Mapnik rendert.</p>
+<pre><code class="language-bash">sudo -u postgres -i
+createuser renderaccount # answer yes for superuser (although this isn't strictly necessary)
+createdb -E UTF8 -O renderaccount gis
+psql
+\c gis
+CREATE EXTENSION postgis;
+CREATE EXTENSION hstore;
+ALTER TABLE geometry_columns OWNER TO renderaccount;
+ALTER TABLE spatial_ref_sys OWNER TO renderaccount;
+\q
+exit
+</code></pre>
+<h2 id="installation-von-osm2pgsql-und-osmosis">Installation von osm2pgsql und osmosis</h2>
+<pre><code class="language-bash">sudo apt-get install osm2pgsql osmosis
+</code></pre>
+<h2 id="installation-von-mapnik">Installation von Mapnik</h2>
+<pre><code class="language-bash">sudo apt install autoconf apache2-dev libtool libxml2-dev libbz2-dev libgeos-dev libgeos++-dev libproj-dev gdal-bin libmapnik-dev mapnik-utils python3-mapnik python3-psycopg2 python3-yaml
+
+</code></pre>
+<h2 id="installation-von-mod_tile-und-renderd">Installation von mod_tile und renderd</h2>
+<p>Als nächstes installieren wir mod_tile und renderd. "mod_tile" ist ein Apache-Modul, das Anfragen nach Kacheln bearbeitet; "renderd" ist ein Daemon, der tatsächlich Kacheln rendert, wenn "mod_tile" sie anfordert. Wir verwenden den "switch2osm"-Zweig von https://github.com/SomeoneElseOSM/mod_tile, der selbst von https://github.com/openstreetmap/mod_tile abgezweigt ist, aber so modifiziert wurde, dass er Ubuntu 20.04 unterstützt, und mit ein paar anderen Änderungen, um auf einem Standard-Ubuntu-Server zu arbeiten, anstatt auf einem der OSM-Rendering-Server.</p>
+<h2 id="kompilieren-sie-den-mod_tile-quellcode">Kompilieren Sie den mod_tile-Quellcode:</h2>
+<pre><code class="language-bash">mkdir ~/src
+cd ~/src
+git clone -b switch2osm https://github.com/SomeoneElseOSM/mod_tile.git
+cd mod_tile
+./autogen.sh
+</code></pre>
+<p>(Das sollte mit "autoreconf: Verlassen des Verzeichnisses '.'" enden.)</p>
+<pre><code class="language-bash">./configure
+</code></pre>
+<p>(Das sollte mit "config.status: erstelle Makefile" enden.)</p>
+<pre><code class="language-bash">make
+</code></pre>
+<p>Beachten Sie, dass hier einige "beunruhigende" Nachrichten über den Bildschirm scrollen werden. Es sollte jedoch mit "make[1]: Verlassen des Verzeichnisses '/home/renderaccount/src/mod_tile'" enden.</p>
+<pre><code class="language-bash">sudo make install
+</code></pre>
+<p>(Das sollte mit "make[1]: Verlassen des Verzeichnisses '/home/renderaccount/src/mod_tile'" enden.)</p>
+<pre><code class="language-bash">sudo make install-mod_tile
+</code></pre>
+<p>(Das sollte mit "chmod 644 /usr/lib/apache2/modules/mod_tile.so" enden.)</p>
+<pre><code class="language-bash">sudo ldconfig
+</code></pre>
+<p>(das sollte nichts zurückgeben)</p>
+<h2 id="konfiguration-des-stylesheets">Konfiguration des Stylesheets</h2>
+<p>Jetzt, da alle notwendige Software installiert ist, müssen Sie ein Stylesheet herunterladen und konfigurieren.</p>
+<p>Der Stil, den wir hier verwenden, ist derjenige, der von der "Standard"-Karte auf der openstreetmap.org-Website verwendet wird. Er wird gewählt, weil er gut dokumentiert ist und überall auf der Welt funktionieren sollte (einschließlich an Orten mit nicht-lateinischen Ortsnamen). Es gibt jedoch ein paar Nachteile - es ist sehr viel ein Kompromiss, der global funktionieren soll, und es ist ziemlich kompliziert zu verstehen und zu modifizieren, falls Sie das tun müssen.</p>
+<p>Die Heimat von "OpenStreetMap Carto" im Web ist https://github.com/gravitystorm/openstreetmap-carto/ und es hat seine eigenen Installationsanweisungen unter https://github.com/gravitystorm/openstreetmap-carto/blob/master/INSTALL.md, obwohl wir hier alles abdecken, was getan werden muss.</p>
+<p>Hier gehen wir davon aus, dass wir die Details des Stylesheets in einem Verzeichnis unter "src" im Home-Verzeichnis des Benutzers "renderaccount" (oder welchen anderen Sie verwenden) speichern.</p>
+<pre><code class="language-bash">cd ~/src
+git clone https://github.com/gravitystorm/openstreetmap-carto
+cd openstreetmap-carto
+</code></pre>
+<p>Als nächstes installieren wir eine geeignete Version des "carto"-Compilers.</p>
+<pre><code class="language-bash">sudo npm install -g carto
+carto -v
+</code></pre>
+<p>Das sollte eine Versionsnummer zurückgeben, die größer als 1.2.0 ist. Wenn das nicht der Fall ist, müssen Sie möglicherweise eine neuere Version von "carto" installieren. Wenn Sie das tun müssen, können Sie dies mit dem folgenden Befehl tun:
+Dann konvertieren wir das Carto-Projekt in etwas, das Mapnik verstehen kann</p>
+<pre><code class="language-bash">carto project.mml &gt; mapnik.xml
+</code></pre>
+<h2 id="daten-laden">Daten laden</h2>
+<pre><code class="language-bash">mkdir ~/data
+cd ~/data
+wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+osm2pgsql -d gis --create --slim  -G --hstore --tag-transform-script ~/src/openstreetmap-carto/openstreetmap-carto.lua -C 2500 --number-processes 1 -S ~/src/openstreetmap-carto/openstreetmap-carto.style ~/data/ahrensburg.pbf
+</code></pre>
+<h2 id="erstellen-von-indizes">Erstellen von Indizes</h2>
+<p>Seit Version v5.3.0 müssen einige zusätzliche Indizes nun manuell angewendet werden.</p>
+<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+psql -d gis -f indexes.sql
+</code></pre>
+<p>Es sollte 14 Mal mit "CREATE INDEX" antworten.</p>
+<h2 id="shapefile-download">Shapefile-Download</h2>
+<p>Obwohl die meisten Daten zur Erstellung der Karte direkt aus der oben heruntergeladenen OpenStreetMap-Datendatei stammen, werden immer noch einige Shapefiles für Dinge wie Ländergrenzen bei geringer Zoomstufe benötigt. Um diese herunterzuladen und zu indizieren:</p>
+<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+scripts/get-external-data.py
+</code></pre>
+<p>Dieser Prozess beinhaltet einen erheblichen Download und kann einige Zeit in Anspruch nehmen - während er läuft, wird nicht viel auf dem Bildschirm angezeigt. Tatsächlich wird ein "data"-Verzeichnis unter "openstreetmap-carto" gefüllt.</p>
+<h2 id="schriftarten">Schriftarten</h2>
+<p>In der Version v5.6.0 und höher von Carto müssen Schriftarten manuell installiert werden:</p>
+<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+scripts/get-fonts.sh
+</code></pre>
+<h2 id="einrichten-ihres-webservers">Einrichten Ihres Webservers</h2>
+<h3 id="konfigurieren-von-renderd">Konfigurieren von renderd</h3>
+<p>Die Konfigurationsdatei für "renderd" ist "/usr/local/etc/renderd.conf". Bearbeiten Sie diese mit einem Texteditor wie nano:</p>
+<pre><code class="language-bash">sudo nano /usr/local/etc/renderd.conf
+</code></pre>
+<h2 id="apache-konfigurieren">Apache konfigurieren</h2>
+<pre><code class="language-bash">sudo mkdir /var/lib/mod_tile
+sudo chown renderaccount /var/lib/mod_tile
+
+sudo mkdir /var/run/renderd
+sudo chown renderaccount /var/run/renderd
+</code></pre>
+<p>Jetzt müssen wir Apache über "mod_tile" informieren, also mit nano (oder einem anderen Editor):</p>
+<pre><code class="language-bash">sudo nano /etc/apache2/conf-available/mod_tile.conf
+</code></pre>
+<p>Fügen Sie die folgende Zeile in diese Datei ein:</p>
+<pre><code class="language-bash">LoadModule tile_module /usr/lib/apache2/modules/mod_tile.so
+</code></pre>
+<p>und speichern Sie es, und führen Sie dann aus:</p>
+<pre><code class="language-bash">sudo a2enconf mod_tile
+</code></pre>
+<p>Das wird Ihnen sagen, dass Sie "service apache2 reload" ausführen müssen, um die neue Konfiguration zu aktivieren; das werden wir noch nicht gleich tun.</p>
+<p>Wir müssen jetzt Apache über "renderd" informieren. Mit nano (oder einem anderen Editor):</p>
+<pre><code class="language-bash">sudo nano /etc/apache2/sites-available/000-default.conf
+</code></pre>
+<p>Fügen Sie das Folgende zwischen den Zeilen "ServerAdmin" und "DocumentRoot" ein:</p>
+<pre><code class="language-bash">LoadTileConfigFile /usr/local/etc/renderd.conf
+ModTileRenderdSocketName /var/run/renderd/renderd.sock
+# Timeout before giving up for a tile to be rendered
+ModTileRequestTimeout 0
+# Timeout before giving up for a tile to be rendered that is otherwise missing
+ModTileMissingRequestTimeout 30
+
+</code></pre>
+<p>und laden Sie Apache zweimal neu:</p>
+<pre><code class="language-bash">sudo service apache2 reload
+sudo service apache2 reload
+</code></pre>
+<p>(Ich vermute, dass es zweimal gemacht werden muss, weil Apache "verwirrt" wird, wenn es beim Laufen neu konfiguriert wird)</p>
+<p>Wenn Sie einen Webbrowser auf: http://ihreserveripadresse/index.html richten, sollten Sie die "Es funktioniert!" Seite von Ubuntu / Apache bekommen.</p>
+<p>(Wenn Sie nicht wissen, welche IP-Adresse zugewiesen wurde, können Sie wahrscheinlich "ifconfig" verwenden, um es herauszufinden - wenn die Netzwerkkonfiguration nicht zu kompliziert ist, wird es wahrscheinlich die "inet addr" sein, die nicht "127.0.0.1" ist). Wenn Sie einen Server bei einem Hosting-Anbieter verwenden, dann ist es wahrscheinlich, dass die interne Adresse Ihres Servers anders sein wird als die externe Adresse, die Ihnen zugewiesen wurde, aber diese externe IP-Adresse wird Ihnen bereits zugesandt worden sein und es wird wahrscheinlich diejenige sein, auf der Sie den Server derzeit zugreifen.</p>
+<p>Beachten Sie, dass dies nur die "http" (Port 80) Seite ist - Sie müssen ein wenig mehr Apache-Konfiguration machen, wenn Sie https aktivieren wollen, aber das ist außerhalb des Rahmens dieser Anweisungen. Wenn Sie jedoch "Let's Encrypt" verwenden, um Zertifikate auszustellen, dann kann der Prozess der Einrichtung davon auch die Apache HTTPS-Seite konfigurieren.</p>
+<h2 id="erstmaliges-ausfuhren-von-renderd">Erstmaliges Ausführen von renderd</h2>
+<p>Als nächstes führen wir renderd aus, um einige Kacheln zu rendern. Zunächst führen wir es im Vordergrund aus, damit wir Fehler sofort sehen können:</p>
+<pre><code class="language-bash">renderd -f -c /usr/local/etc/renderd.conf
+</code></pre>
+<p>Hier können einige Warnungen auftreten - machen Sie sich darüber vorerst keine Sorgen. Sie sollten keine Fehler erhalten. Wenn doch, speichern Sie die vollständige Ausgabe in einem Pastebin und stellen Sie eine Frage zu dem Problem irgendwo wie help.openstreetmap.org (verlinken Sie auf das Pastebin - fügen Sie nicht den gesamten Text in die Frage ein).</p>
+<p>Richten Sie einen Webbrowser auf: http://ihreserveripadresse/hot/0/0/0.png</p>
+<p>Sie sollten eine Weltkarte in Ihrem Browser sehen und einige weitere Debug-Informationen auf der Kommandozeile, einschließlich "DEBUG: START TILE" und "DEBUG: DONE TILE". Ignorieren Sie jede "DEBUG: Failed to read cmd on fd" Nachricht - es ist kein Fehler. Wenn Sie kein Kachel erhalten und andere Fehler auftreten, speichern Sie erneut die vollständige Ausgabe in einem Pastebin und stellen Sie eine Frage zu dem Problem irgendwo wie help.openstreetmap.org.</p>
+<p>Wenn das alles funktioniert, drücken Sie Strg-C, um den Rendering-Prozess im Vordergrund zu stoppen.</p>
+<h2 id="renderd-im-hintergrund-ausfuhren">Renderd im Hintergrund ausführen</h2>
+<p>Als nächstes richten wir "renderd" ein, um im Hintergrund zu laufen. Zuerst bearbeiten Sie die Datei "~/src/mod_tile/debian/renderd.init", so dass "RUNASUSER" auf das Nicht-Root-Konto eingestellt ist, das Sie zuvor verwendet haben, wie zum Beispiel "renderaccount", und kopieren Sie es dann in das Systemverzeichnis:</p>
+<pre><code class="language-bash">nano ~/src/mod_tile/debian/renderd.init
+sudo cp ~/src/mod_tile/debian/renderd.init /etc/init.d/renderd
+sudo chmod u+x /etc/init.d/renderd
+sudo cp ~/src/mod_tile/debian/renderd.service /lib/systemd/system/
+</code></pre>
+<p>Die Datei "renderd.service" ist eine "systemd"-Service-Datei. Die hier verwendete Version ruft lediglich alte init-Befehle auf. Um zu testen, ob der Startbefehl funktioniert:</p>
+<pre><code class="language-bash">sudo /etc/init.d/renderd start
+</code></pre>
+<p>(Das sollte mit "[ ok ] Starten von renderd (über systemctl): renderd.service" antworten.)</p>
+<p>Um es jedes Mal automatisch zu starten:</p>
+<pre><code class="language-bash">sudo systemctl enable renderd
+</code></pre>
+<h2 id="apache-port-andern">Apache port ändern</h2>
+<p>Wenn Sie Apache auf einem anderen Port als 80 laufen lassen möchten, können Sie dies tun, indem Sie die Datei "/etc/apache2/ports.conf" bearbeiten. Zum Beispiel, um es auf Port 8080 zu ändern:</p>
+<pre><code class="language-bash">sudo nano /etc/apache2/ports.conf
+</code></pre>
+<p>Ändern Sie die Zeile "Listen 80" in "Listen 8080" und speichern Sie die Datei. Starten Sie dann Apache neu:</p>
+<pre><code class="language-bash">sudo /etc/init.d/apache2 restart
+</code></pre>
+<h2 id="ahrensburgcity-installieren">ahrensburg.city installieren</h2>
+<pre><code class="language-bash">sudo apt install snapd
+sudo apt-get install nginx
+sudo rm /etc/nginx/sites-enabled/default
+sudo systemctl stop nginx
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo systemctl stop nginx
+sudo certbot certonly --standalone -d ahrensburg.city -d www.ahrensburg.city
+sudo certbot certonly --standalone -d karte.ahrensburg.city
+sudo certbot certonly --standalone -d blog.ahrensburg.city
+</code></pre>
+<h2 id="neuen-nutzer-erstellen">Neuen Nutzer erstellen</h2>
+<pre><code class="language-bash">sudo adduser thorsten
+sudo usermod -aG sudo thorsten
+exit
+</code></pre>
+<h2 id="ssh-thorsten">ssh thorsten</h2>
+<pre><code class="language-bash">ssh thorsten@
+cd $HOME
+sudo -u postgres -i
+createuser thorsten
+createdb -E UTF8 -O thorsten thorsten
+psql
+\c thorsten
+CREATE EXTENSION postgis;
+CREATE EXTENSION hstore;
+ALTER TABLE geometry_columns OWNER TO thorsten;
+ALTER TABLE spatial_ref_sys OWNER TO thorsten;
+## Passwort für den Benutzer postgres setzen
+\password thorsten
+\q
+exit
+</code></pre>
+<h2 id="herunterladen-der-daten">Herunterladen der Daten</h2>
+<pre><code class="language-bash">cd $HOME
+wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+
+osm2pgsql  -d thorsten --create  -G --hstore  ahrensburg.pbf
+</code></pre>
+<h2 id="build-von-ahrensburgcity">Build von Ahrensburg.city</h2>
+<pre><code class="language-bash">cd $HOME
+git clone https://github.com/thorstenkloehn/ahrensburg.city.git
+cd ahrensburg.city
+npm install
+npm run build
+</code></pre>
+<h2 id="systemctl-einrichten">Systemctl Einrichten</h2>
+<pre><code class="language-bash">
+sudo cp ahrensburg-city.service /etc/systemd/system/ahrensburg-city.service
+sudo systemctl enable ahrensburg-city
+sudo systemctl start ahrensburg-city
+
+</code></pre>
+<h2 id="config-daten-kopieren">config daten kopieren</h2>
+<pre><code class="language-bash">cp env.local.example .env.local
+nano .env.local
+</code></pre>
+<h2 id="restart">Restart</h2>
+<pre><code class="language-bash">sudo cp ahrensburg-city.conf /etc/nginx/conf.d/ahrensburg-city.conf
+sudo systemctl restart ahrensburg-city
+sudo systemctl restart nginx
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
