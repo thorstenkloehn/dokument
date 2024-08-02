@@ -1,5 +1,6 @@
 site_name: Dokument 
 nav:
+  - ahrensburg.city : https://ahrensburg.city
   - Starseite: index.md
   - Server:
     - Server20.04: Server/index.md
@@ -19,7 +20,8 @@ nav:
   - Tools:
     - Analysetool: Tools/Analysetool.md
     - Benchmark: Tools/Benchmark.md
-
+  - Impressum: Impressum.md
+  - Datenschutz: Datenschutz.md
 theme:
   name: mkdocs
   language: 'de'
