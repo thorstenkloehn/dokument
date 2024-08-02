@@ -1,0 +1,25 @@
+site_name: Dokument 
+nav:
+  - Starseite: index.md
+  - Server:
+    - Server20.04: Server/index.md
+    - Server22.04: Server/Server224.md
+    - Server24.04: Server/Server244.md
+    - Server Mieten: Server/Server_Mieten.md
+  - IDE: IDE/index.md  
+  - CMS:
+    - Allgemein: CMS/index.md
+    - Wordpress: CMS/Wordpress.md
+  - Static Site Generator:
+    - Mkdocs: SSG/Mkdocs.md
+    - Github-pages: SSG/github_page.md
+  - Framework:
+    - Next.js: Framework/Next.js 
+    - astro.build: Framework/astro.buil 
+  - Tools:
+    - Analysetool: Tools/Analysetool.md
+    - Benchmark: Tools/Benchmark.md
+
+theme:
+  name: mkdocs
+  language: 'de'
