@@ -138,9 +138,29 @@ sudo mv wordpress/* .
 sudo rm -rf wordpress latest-de_DE.tar.gz
 sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
+sudo rm /etc/nginx/sites-enabled/default
 ```
-## Php Server starten
+## Wordpress Nginx Lokale Rechner
+sudo nano /etc/nginx/conf.d/blog.conf
 ```
-cd /var/www/html
-php -S localhost:8000
+server {
+    
+    listen 80;
+    server_name localhost;
+    index index.php index.html index.htm;
+    root /var/www/html/;
+    
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
 ```
