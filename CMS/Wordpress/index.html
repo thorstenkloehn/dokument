@@ -168,7 +168,7 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#php-server-starten" class="nav-link">Php Server starten</a>
+            <li class="nav-item" data-bs-level="2"><a href="#wordpress-nginx-lokale-rechner" class="nav-link">Wordpress Nginx Lokale Rechner</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -279,10 +279,30 @@ sudo mv wordpress/* .
 sudo rm -rf wordpress latest-de_DE.tar.gz
 sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
+sudo rm /etc/nginx/sites-enabled/default
 </code></pre>
-<h2 id="php-server-starten">Php Server starten</h2>
-<pre><code>cd /var/www/html
-php -S localhost:8000
+<h2 id="wordpress-nginx-lokale-rechner">Wordpress Nginx Lokale Rechner</h2>
+<p>sudo nano /etc/nginx/conf.d/blog.conf</p>
+<pre><code>server {
+
+    listen 80;
+    server_name localhost;
+    index index.php index.html index.htm;
+    root /var/www/html/;
+
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
 </code></pre></div>
             </div>
         </div>
