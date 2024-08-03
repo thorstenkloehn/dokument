@@ -8,9 +8,9 @@ nav:
     - Server24.04: Server/Server244.md
     - Server Mieten: Server/Server_Mieten.md
   - IDE: IDE/index.md  
-  - CMS:
-    - Allgemein: CMS/index.md
-    - Wordpress: CMS/Wordpress.md
+  - Wordpress:
+    - Installieren: Wordpress/index.md
+    - klassik Themen: Wordpress/classe:Themen.md
   - Static Site Generator:
     - Mkdocs: SSG/Mkdocs.md
     - Github-pages: SSG/github_page.md
@@ -23,5 +23,9 @@ nav:
   - Impressum: Impressum.md
   - Datenschutz: Datenschutz.md
 theme:
-  name: mkdocs
-  language: 'de'
+  name: 'mkdocs'
+  locale: 'de'
+
+plugins:
+  - search:
+      lang: 'de'
