@@ -35,9 +35,6 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="https://ahrensburg.city" class="nav-link">ahrensburg.city</a>
-                            </li>
-                            <li class="nav-item">
                                 <a href=".." class="nav-link">Starseite</a>
                             </li>
                             <li class="nav-item dropdown">
@@ -87,19 +84,6 @@
                                     
 <li>
     <a href="../SSG/github_page/" class="dropdown-item">Github-pages</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Framework</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../Framework/Next.js" class="dropdown-item">Next.js</a>
-</li>
-                                    
-<li>
-    <a href="../Framework/astro.buil" class="dropdown-item">astro.build</a>
 </li>
                                 </ul>
                             </li>
@@ -225,25 +209,32 @@ sudo nano /etc/nginx/conf.d/blog.conf</p>
 <p>Fügen Sie den folgenden Inhalt hinzu:</p>
 <pre><code class="language-bash">
 server {
-
+    listen 443 ssl http2;
     listen [::]:443 ssl http2;
     server_name blog.ahrensburg.city;
     ssl_certificate /etc/letsencrypt/live/blog.ahrensburg.city/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/blog.ahrensburg.city/privkey.pem;
-    index index.php index.html index.htm;
-    root /var/www/html/wordpress;
+    root /var/www/wordpress;
+
+    index index.php;
+
     location / {
-        try_files $uri $uri/ /index.php?$args;
+        try_files $uri $uri/ /index.php;
     }
 
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
     }
+}
 
-    location ~ /\.ht {
-        deny all;
-    }
+server {
+    listen 80;
+    listen [::]:80;
+    server_name blog.ahrensburg.city;
+    return 301 https://$host$request_uri;
 }
 
 </code></pre>
@@ -284,11 +275,11 @@ sudo rm /etc/nginx/sites-enabled/default
 <h2 id="wordpress-nginx-lokale-rechner">Wordpress Nginx Lokale Rechner</h2>
 <p>sudo nano /etc/nginx/conf.d/blog.conf</p>
 <pre><code>server {
-
     listen 80;
-    server_name localhost;
+    server_name example.com;  # Ersetzen Sie 'example.com' durch Ihre Domain
+    root /var/www/html;       # Pfad zu Ihrer WordPress-Installation
+
     index index.php index.html index.htm;
-    root /var/www/html/;
 
     location / {
         try_files $uri $uri/ /index.php?$args;
@@ -301,6 +292,21 @@ sudo rm /etc/nginx/sites-enabled/default
 
     location ~ /\.ht {
         deny all;
+    }
+
+    # Zusätzliche Konfiguration für Multisite
+    location /files/ {
+        access_log off;
+        log_not_found off;
+        expires max;
+    }
+
+    location ^~ /blogs.dir/ {
+        internal;
+        alias /var/www/html/wp-content/blogs.dir/;
+        access_log off;
+        log_not_found off;
+        expires max;
     }
 }
 </code></pre></div>
