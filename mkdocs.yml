@@ -14,16 +14,14 @@ nav:
     - Code-Dokumentationen:
       - mkdocs: SSG/mkdocs.md
       - sphinx: SSG/sphinx.md
-      - Jupyter Book: SSG/jupyter_book.md 
     - Bücher:
       - mdBook: SSG/mdbook.md
       - Jupyter Book: SSG/jupyter_book.md 
     - Frameworks:
       - next.js: SSG/next.js.md
-      - astro: SSG/astro.md 
-    - Einfavhe SSG:
+      - astro.build: SSG/astro.build.md
+    - Einfache SSG:
       - Eleventy: SSG/eleventy.md
-      - Hugo: SSG/hugo.md
     - Github-pages: SSG/github_page.md
   
   - Tools:
