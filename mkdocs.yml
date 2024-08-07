@@ -1,6 +1,5 @@
 site_name: Dokument 
 nav:
-  - ahrensburg.city : https://ahrensburg.city
   - Starseite: index.md
   - Server:
     - Server20.04: Server/index.md
@@ -9,23 +8,39 @@ nav:
     - Server Mieten: Server/Server_Mieten.md
   - IDE: IDE/index.md  
   - Wordpress:
-    - Installieren: Wordpress/index.md
-    - klassik Themen: Wordpress/classe:Themen.md
+    - Installieren: CMS/Wordpress/index.md
+    - klassik Themen: CMS/Wordpress/classe:Themen.md
   - Static Site Generator:
-    - Mkdocs: SSG/Mkdocs.md
+    - Code-Dokumentationen:
+      - mkdocs: SSG/mkdocs.md
+      - sphinx: SSG/sphinx.md
+      - Jupyter Book: SSG/jupyter_book.md 
+    - Bücher:
+      - mdBook: SSG/mdbook.md
+      - Jupyter Book: SSG/jupyter_book.md 
+    - Frameworks:
+      - next.js: SSG/next.js.md
+      - astro: SSG/astro.md 
+    - Einfavhe SSG:
+      - Eleventy: SSG/eleventy.md
+      - Hugo: SSG/hugo.md
     - Github-pages: SSG/github_page.md
-  - Framework:
-    - Next.js: Framework/Next.js 
-    - astro.build: Framework/astro.buil 
+  
   - Tools:
     - Analysetool: Tools/Analysetool.md
     - Benchmark: Tools/Benchmark.md
   - Impressum: Impressum.md
   - Datenschutz: Datenschutz.md
 theme:
-  name: 'mkdocs'
-  locale: 'de'
-
+  name: 'material'
+  language: de
 plugins:
-  - search:
-      lang: 'de'
+    - search
+    - pdf-export
+
+extra:
+  consent:
+    title: Cookie-Zustimmung
+    description: >-
+      Wir verwenden Cookies, um Ihre Besuche und Präferenzen zu erkennen und die
+      Effektivität unserer Dokumentation zu messen.

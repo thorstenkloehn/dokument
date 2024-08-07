@@ -255,6 +255,7 @@ sudo systemctl stop nginx
 sudo certbot certonly --standalone -d ahrensburg.city -d www.ahrensburg.city
 sudo certbot certonly --standalone -d karte.ahrensburg.city
 sudo certbot certonly --standalone -d blog.ahrensburg.city
+sudo certbot certonly --standalone -d wiki.ahrensburg.city
 ```
 ## Neuen Nutzer erstellen
 ```bash

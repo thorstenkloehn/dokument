@@ -1,17 +1,25 @@
-## Installieren
 
-```
-python3 -m venv .venv
-source .venv/bin/activate
-```
-## Installieren
+### Zusammenfassung
 
-```
-pip install mkdocs
-```
+1. **Virtuelle Umgebung erstellen**:
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
 
-## Seiten Bauen
+2. **MkDocs und Material-Theme installieren**:
+    ```bash
+    pip install mkdocs
+    pip install mkdocs-material
+    ```
 
-``` 
-mkdocs build
-```
+3. **Dokumentationsseite bauen**:
+    ```bash
+    mkdocs build
+    ```
+
+4. **Veröffentlichen**:
+    ```bash
+    npm run ver  
+    ```
+

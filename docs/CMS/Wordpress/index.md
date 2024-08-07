@@ -66,16 +66,18 @@ sudo nano /etc/nginx/conf.d/blog.conf
 ```
 Fügen Sie den folgenden Inhalt hinzu:
 
-```bash
+```nginx
 
 server {
-    
+    listen 443 ssl http2;
     listen [::]:443 ssl http2;
     server_name blog.ahrensburg.city;
     ssl_certificate /etc/letsencrypt/live/blog.ahrensburg.city/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/blog.ahrensburg.city/privkey.pem;
+    root /var/www/html;
+
     index index.php index.html index.htm;
-    root /var/www/html/wordpress;
+
     location / {
         try_files $uri $uri/ /index.php?$args;
     }
@@ -83,6 +85,8 @@ server {
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
     }
 
     location ~ /\.ht {
@@ -90,6 +94,12 @@ server {
     }
 }
 
+server {
+    listen 80;
+    listen [::]:80;
+    server_name blog.ahrensburg.city;
+    return 301 https://$host$request_uri;
+}
 ```
 ## Local Wordpress Installieren
 
@@ -144,12 +154,12 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo nano /etc/nginx/conf.d/blog.conf
 ```
 server {
-    
     listen 80;
-    server_name localhost;
+    server_name example.com;  # Ersetzen Sie 'example.com' durch Ihre Domain
+    root /var/www/html;       # Pfad zu Ihrer WordPress-Installation
+
     index index.php index.html index.htm;
-    root /var/www/html/;
-    
+
     location / {
         try_files $uri $uri/ /index.php?$args;
     }
@@ -161,6 +171,21 @@ server {
 
     location ~ /\.ht {
         deny all;
+    }
+
+    # Zusätzliche Konfiguration für Multisite
+    location /files/ {
+        access_log off;
+        log_not_found off;
+        expires max;
+    }
+
+    location ^~ /blogs.dir/ {
+        internal;
+        alias /var/www/html/wp-content/blogs.dir/;
+        access_log off;
+        log_not_found off;
+        expires max;
     }
 }
 ```
