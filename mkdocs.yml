@@ -37,8 +37,6 @@ theme:
   language: de
 plugins:
     - search
-    - pdf-export
-
 extra:
   consent:
     title: Cookie-Zustimmung
