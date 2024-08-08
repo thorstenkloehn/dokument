@@ -27,6 +27,7 @@ nav:
     - Github-pages: SSG/github_page.md
   
   - Tools:
+    - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
     - Benchmark: Tools/Benchmark.md
   - Impressum: Impressum.md
