@@ -19,8 +19,6 @@ nav:
     - Frameworks:
       - next.js: SSG/next.js.md
       - astro.build: SSG/astro.build.md
-    - Einfache SSG:
-      - Eleventy: SSG/eleventy.md
     - Github-pages: SSG/github_page.md
   
   - Tools:
