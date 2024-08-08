@@ -16,9 +16,6 @@ nav:
     - Code-Dokumentationen:
       - mkdocs: SSG/mkdocs.md
       - sphinx: SSG/sphinx.md
-    - Bücher:
-      - mdBook: SSG/mdbook.md
-      - Jupyter Book: SSG/jupyter_book.md 
     - Frameworks:
       - next.js: SSG/next.js.md
       - astro.build: SSG/astro.build.md
