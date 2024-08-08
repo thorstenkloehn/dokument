@@ -10,6 +10,8 @@ nav:
   - Wordpress:
     - Installieren: CMS/Wordpress/index.md
     - klassik Themen: CMS/Wordpress/classe:Themen.md
+  - Mediawiki:
+    - Installieren: CMS/Mediawiki/index.md
   - Static Site Generator:
     - Code-Dokumentationen:
       - mkdocs: SSG/mkdocs.md
