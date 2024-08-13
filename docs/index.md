@@ -5,10 +5,6 @@
 
 
 
-- **Installation von WordPress**
-  - Voraussetzungen
-  - Schritt-für-Schritt-Anleitung
-  - Konfiguration und Anpassung
 
 - **Kachelserver**
   - Einführung

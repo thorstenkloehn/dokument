@@ -7,9 +7,6 @@ nav:
     - Server24.04: Server/Server244.md
     - Server Mieten: Server/Server_Mieten.md
   - IDE: IDE/index.md  
-  - Wordpress:
-    - Installieren: CMS/Wordpress/index.md
-    - klassik Themen: CMS/Wordpress/classe:Themen.md
   - Mediawiki:
     - Installieren: CMS/Mediawiki/index.md
   - Static Site Generator:
