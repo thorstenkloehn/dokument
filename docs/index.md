@@ -1,11 +1,6 @@
 # Dokumentation für meine Entwicklungsumgebung und den Einsatz von Servern
 
 ## Themen
-
-
-
-
-
 - **Kachelserver**
   - Einführung
   - Installation und Einrichtung
