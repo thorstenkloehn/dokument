@@ -21,6 +21,8 @@ git tag -l | sort -V
 git checkout REL1_35
 cd mediawiki
 git submodule update --init --recursive
+sudo chown -R www-data:www-data /var/www/mediawiki
+sudo chmod -R 755 /var/www/mediawiki
 
 ```
 ## Nginx Konfiguration
