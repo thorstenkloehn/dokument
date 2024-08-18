@@ -15,12 +15,13 @@ EXIT;
 
 sudo apt install php-fpm php-mysql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip -y
 cd /var/www
-sudo wget https://releases.wikimedia.org/mediawiki/1.39/mediawiki-1.39.8.zip
-sudo unzip mediawiki-1.39.8.zip
-sudo mv mediawiki-1.39.8 mediawiki
-sudo chown -R www-data:www-data /var/www/mediawiki
-sudo chmod -R 755 /var/www/mediawiki
-sudo rm mediawiki-1.39.8.zip
+git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
+cd mediawiki
+git tag -l | sort -V
+git checkout REL1_35
+cd mediawiki
+git submodule update --init --recursive
+
 ```
 ## Nginx Konfiguration
 
@@ -72,5 +73,37 @@ $wgArticlePath = "/$1";
 $wgUsePathInfo = true;
 
 ```
+## mediawiki extensions installieren
+```bash
+sudo nano /var/www/mediawiki/LocalSettings.php
+```
+```php
+fLoadExtension( 'CookieWarning' );
+wfLoadExtension( 'SemanticMediaWiki' );
+enableSemantics( 'wiki.ahrensburg.city' );
+wfLoadExtension( 'WikiMarkdown' );
+wfLoadExtension( 'SimpleBlogPage' );
+wfLoadExtension( 'Gadgets' );
+$wgCookieWarningEnabled=true;
+$wgCookieWarningMoreUrl='';
+$wgCookieWarningGeoIPServiceURL='';
+$wgCookieWarningGeoIPLookup='none';
+$wgCookieWarningForCountryCodes="EU";
+$wgGroupPermissions['user']['move'] = false;
+wfLoadExtension( 'Maps' );
+$egMapsDefaultService = 'leaflet';
+```
+## Composer installieren
+```bash
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
 
+sudo mv composer.phar /usr/local/bin/composer
+```
 
+## composer.local.json
+
+## Weblinks
+* [Git clone](https://www.mediawiki.org/wiki/Download_from_Git)
