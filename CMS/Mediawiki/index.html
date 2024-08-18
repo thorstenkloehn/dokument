@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mediawiki-auf-einem-ubuntu-2004-nginx-server-installieren" class="md-skip">
+        <a href="#postgres-datenbank-erstellen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -436,9 +436,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mediawiki-auf-einem-ubuntu-2004-nginx-server-installieren" class="md-nav__link">
+  <a href="#postgres-datenbank-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
-      MediaWiki auf einem Ubuntu 20.04 Nginx-Server installieren
+      Postgres Datenbank erstellen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composer-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composer installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mediawiki-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mediawiki installieren
     </span>
   </a>
   
@@ -454,27 +472,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lesbare-urls-konfiguriern-in-mediawiki" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lesbare URLs konfiguriern in mediawiki
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#mediawiki-extensions-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       mediawiki extensions installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#composer-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Composer installieren
     </span>
   </a>
   
@@ -917,9 +917,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mediawiki-auf-einem-ubuntu-2004-nginx-server-installieren" class="md-nav__link">
+  <a href="#postgres-datenbank-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
-      MediaWiki auf einem Ubuntu 20.04 Nginx-Server installieren
+      Postgres Datenbank erstellen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composer-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composer installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mediawiki-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mediawiki installieren
     </span>
   </a>
   
@@ -935,27 +953,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lesbare-urls-konfiguriern-in-mediawiki" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lesbare URLs konfiguriern in mediawiki
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#mediawiki-extensions-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       mediawiki extensions installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#composer-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Composer installieren
     </span>
   </a>
   
@@ -996,26 +996,26 @@
 
   <h1>Installieren</h1>
 
-<h2 id="mediawiki-auf-einem-ubuntu-2004-nginx-server-installieren">MediaWiki auf einem Ubuntu 20.04 Nginx-Server installieren</h2>
-<pre><code>sudo apt update -y
-sudo apt upgrade -y
-sudo apt install nginx -y
-sudo apt install mysql-server -y
-sudo mysql_secure_installation
-sudo mysql -u root -p
-CREATE DATABASE mediawiki;
-CREATE USER 'mwuser'@'localhost' IDENTIFIED BY 'secure_password';
-GRANT ALL PRIVILEGES ON mediawiki.* TO 'mwuser'@'localhost';
-FLUSH PRIVILEGES;
-EXIT;
+<h2 id="postgres-datenbank-erstellen">Postgres Datenbank erstellen</h2>
+<pre><code class="language-bash">sudo -u postgres -i
+createdb -E UTF8 -O thorsten mediawiki
+exit
+</code></pre>
+<h2 id="composer-installieren">Composer installieren</h2>
+<pre><code class="language-bash">php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
+php -r &quot;if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
+php composer-setup.php
+php -r &quot;unlink('composer-setup.php');&quot;
 
-sudo apt install php-fpm php-mysql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip -y
+sudo mv composer.phar /usr/local/bin/composer
+</code></pre>
+<h2 id="mediawiki-installieren">Mediawiki installieren</h2>
+<pre><code class="language-bash">sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-int -y
 cd /var/www
 git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
 cd mediawiki
 git tag -l | sort -V
-git checkout REL1_35
-cd mediawiki
+git checkout 1.39.8
 git submodule update --init --recursive
 sudo chown -R www-data:www-data /var/www/mediawiki
 sudo chmod -R 755 /var/www/mediawiki
@@ -1033,30 +1033,47 @@ server {
     ssl_certificate_key /etc/letsencrypt/live/blog.ahrensburg.city/privkey.pem;
     root /var/www/mediawiki;
 
-    index index.php;
+    index index.php;## Composer installieren
+```bash
+php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
+php -r &quot;if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
+php composer-setup.php
+php -r &quot;unlink('composer-setup.php');&quot;
 
-    location / {
-        try_files $uri $uri/ /index.php?$args;
-    }
-
-    location ~ \.php$ {
-        include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
-    }
-
-    location ~ /\.ht {
-        deny all;
-    }
+sudo mv composer.phar /usr/local/bin/composer
+</code></pre>
+<pre><code>location / {
+    try_files $uri $uri/ /index.php?$args;
 }
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+}
+
+location ~ /\.ht {## Composer installieren
+</code></pre>
+<pre><code class="language-bash">php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
+php -r &quot;if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
+php composer-setup.php
+php -r &quot;unlink('composer-setup.php');&quot;
+
+sudo mv composer.phar /usr/local/bin/composer
+</code></pre>
+<pre><code>    deny all;
+}
+</code></pre>
+<p>}
 server {
     listen 80;
     listen [::]:80;
     server_name blog.ahrensburg.city;
     return 301 https://$host$request_uri;
-}
-</code></pre>
-<h2 id="lesbare-urls-konfiguriern-in-mediawiki">Lesbare URLs konfiguriern in mediawiki</h2>
-<pre><code class="language-bash">sudo nano /var/www/mediawiki/LocalSettings.php
+}</p>
+<pre><code>
+## Lesbare URLs konfiguriern in mediawiki
+```bash
+sudo nano /var/www/mediawiki/LocalSettings.php
 </code></pre>
 <pre><code class="language-php">$wgScriptPath = &quot;&quot;;
 $wgArticlePath = &quot;/$1&quot;;
@@ -1066,9 +1083,9 @@ $wgUsePathInfo = true;
 <h2 id="mediawiki-extensions-installieren">mediawiki extensions installieren</h2>
 <pre><code class="language-bash">sudo nano /var/www/mediawiki/LocalSettings.php
 </code></pre>
-<pre><code class="language-php">fLoadExtension( 'CookieWarning' );
+<pre><code class="language-php">wfLoadExtension( 'CookieWarning' );
 wfLoadExtension( 'SemanticMediaWiki' );
-enableSemantics( 'wiki.ahrensburg.city' );
+enableSemantics( 'ahrensburg.city' );
 wfLoadExtension( 'WikiMarkdown' );
 wfLoadExtension( 'SimpleBlogPage' );
 wfLoadExtension( 'Gadgets' );
@@ -1080,14 +1097,6 @@ $wgCookieWarningForCountryCodes=&quot;EU&quot;;
 $wgGroupPermissions['user']['move'] = false;
 wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
-</code></pre>
-<h2 id="composer-installieren">Composer installieren</h2>
-<pre><code class="language-bash">php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
-php -r &quot;if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
-php composer-setup.php
-php -r &quot;unlink('composer-setup.php');&quot;
-
-sudo mv composer.phar /usr/local/bin/composer
 </code></pre>
 <h2 id="composerlocaljson">composer.local.json</h2>
 <h2 id="weblinks">Weblinks</h2>
