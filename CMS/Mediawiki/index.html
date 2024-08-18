@@ -472,6 +472,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lesbare-urls-konfiguriern-in-mediawiki" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesbare URLs konfiguriern in mediawiki
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mediawiki-extensions-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       mediawiki extensions installieren
@@ -953,6 +962,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lesbare-urls-konfiguriern-in-mediawiki" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesbare URLs konfiguriern in mediawiki
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mediawiki-extensions-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       mediawiki extensions installieren
@@ -1028,52 +1046,33 @@ sudo chmod -R 755 /var/www/mediawiki
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name wiki.ahrensburg.city;
+    server_name ahrensburg.city;
     ssl_certificate /etc/letsencrypt/live/blog.ahrensburg.city/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/blog.ahrensburg.city/privkey.pem;
     root /var/www/mediawiki;
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
 
-    index index.php;## Composer installieren
-```bash
-php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
-php -r &quot;if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
-php composer-setup.php
-php -r &quot;unlink('composer-setup.php');&quot;
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+    }
 
-sudo mv composer.phar /usr/local/bin/composer
-</code></pre>
-<pre><code>location / {
-    try_files $uri $uri/ /index.php?$args;
+    location ~ /\.ht {
+
+           deny all;
+    }
 }
-
-location ~ \.php$ {
-    include snippets/fastcgi-php.conf;
-    fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
-}
-
-location ~ /\.ht {## Composer installieren
-</code></pre>
-<pre><code class="language-bash">php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
-php -r &quot;if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
-php composer-setup.php
-php -r &quot;unlink('composer-setup.php');&quot;
-
-sudo mv composer.phar /usr/local/bin/composer
-</code></pre>
-<pre><code>    deny all;
-}
-</code></pre>
-<p>}
 server {
     listen 80;
     listen [::]:80;
-    server_name blog.ahrensburg.city;
+    server_name ahrensburg.city;
     return 301 https://$host$request_uri;
-}</p>
-<pre><code>
-## Lesbare URLs konfiguriern in mediawiki
-```bash
-sudo nano /var/www/mediawiki/LocalSettings.php
+}
+</code></pre>
+<h2 id="lesbare-urls-konfiguriern-in-mediawiki">Lesbare URLs konfiguriern in mediawiki</h2>
+<pre><code class="language-bash">sudo nano /var/www/mediawiki/LocalSettings.php
 </code></pre>
 <pre><code class="language-php">$wgScriptPath = &quot;&quot;;
 $wgArticlePath = &quot;/$1&quot;;
