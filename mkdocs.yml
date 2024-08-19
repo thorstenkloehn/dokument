@@ -13,6 +13,7 @@ nav:
     - Backup: CMS/Mediawiki/Backup.md
     - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
   - Static Site Generator:
+    - Allgemein Liste: SSG/Allgemeine.md
     - Code-Dokumentationen:
       - mkdocs: SSG/mkdocs.md
       - sphinx: SSG/sphinx.md
@@ -20,7 +21,7 @@ nav:
       - next.js: SSG/next.js.md
       - astro.build: SSG/astro.build.md
     - Github-pages: SSG/github_page.md
-  
+    
   - Tools:
     - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
