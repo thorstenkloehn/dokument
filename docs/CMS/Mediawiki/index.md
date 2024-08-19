@@ -41,22 +41,10 @@ sudo nano /etc/nginx/conf.d/mediawiki.conf
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name wiki.ahrensburg.city;
+    server_name ahrensburg.city;
     ssl_certificate /etc/letsencrypt/live/blog.ahrensburg.city/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/blog.ahrensburg.city/privkey.pem;
     root /var/www/mediawiki;
-
-    index index.php;## Composer installieren
-```bash
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-
-sudo mv composer.phar /usr/local/bin/composer
-```
-
-
     location / {
         try_files $uri $uri/ /index.php?$args;
     }
@@ -66,23 +54,15 @@ sudo mv composer.phar /usr/local/bin/composer
         fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
     }
 
-    location ~ /\.ht {## Composer installieren
-```bash
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
+    location ~ /\.ht {
 
-sudo mv composer.phar /usr/local/bin/composer
-```
-
-        deny all;
+           deny all;
     }
 }
 server {
     listen 80;
     listen [::]:80;
-    server_name blog.ahrensburg.city;
+    server_name ahrensburg.city;
     return 301 https://$host$request_uri;
 }
 ```
@@ -103,9 +83,9 @@ $wgUsePathInfo = true;
 sudo nano /var/www/mediawiki/LocalSettings.php
 ```
 ```php
-fLoadExtension( 'CookieWarning' );
+wfLoadExtension( 'CookieWarning' );
 wfLoadExtension( 'SemanticMediaWiki' );
-enableSemantics( 'wiki.ahrensburg.city' );
+enableSemantics( 'ahrensburg.city' );
 wfLoadExtension( 'WikiMarkdown' );
 wfLoadExtension( 'SimpleBlogPage' );
 wfLoadExtension( 'Gadgets' );

@@ -235,11 +235,15 @@ Um es jedes Mal automatisch zu starten:
 sudo systemctl enable renderd
 ```
 ## Apache port ändern
-Wenn Sie Apache auf einem anderen Port als 80 laufen lassen möchten, können Sie dies tun, indem Sie die Datei "/etc/apache2/ports.conf" bearbeiten. Zum Beispiel, um es auf Port 8080 zu ändern:
+Wenn Sie Apache auf einem anderen Port als 80 laufen lassen möchten, können Sie dies tun, indem Sie die Datei "/etc/apache2/ports.conf" bearbeiten. Zum Beispiel, um es auf Port 8090 zu ändern:
 ```bash
 sudo nano /etc/apache2/ports.conf
 ```
-Ändern Sie die Zeile "Listen 80" in "Listen 8080" und speichern Sie die Datei. Starten Sie dann Apache neu:
+Ändern Sie die Zeile "Listen 80" in "Listen 8090" und speichern Sie die Datei. Starten Sie dann Apache neu:
+
+und sudo nano /etc/apache2/sites-available/000-default.conf
+
+Ändern Sie die Zeile "Listen 80" in "Listen 8090" und speichern Sie die Datei. Starten Sie dann Apache neu:
 ```bash
 sudo /etc/init.d/apache2 restart
 ```
@@ -254,8 +258,32 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo systemctl stop nginx
 sudo certbot certonly --standalone -d ahrensburg.city -d www.ahrensburg.city
 sudo certbot certonly --standalone -d karte.ahrensburg.city
-sudo certbot certonly --standalone -d blog.ahrensburg.city
-sudo certbot certonly --standalone -d wiki.ahrensburg.city
+
+sudo nano /etc/nginx/conf.d/karte.conf
+```
+```bash
+ server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name karte.ahrensburg.city;
+    ssl_certificate /etc/letsencrypt/live/karte.ahrensburg.city/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/karte.ahrensburg.city/privkey.pem;
+
+   location / {
+        proxy_pass http://localhost:8090;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+server {
+    listen 80;
+    listen [::]:80;
+    server_name karte.ahrensburg.city;
+    return 301 https://$host$request_uri;
+}
 ```
 ## Neuen Nutzer erstellen
 ```bash
@@ -289,31 +317,4 @@ osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10
 
 osm2pgsql  -d thorsten --create  -G --hstore  ahrensburg.pbf
 ```
-## Build von Ahrensburg.city
-```bash
-cd $HOME
-git clone https://github.com/thorstenkloehn/ahrensburg.city.git
-cd ahrensburg.city
-npm install
-npm run build
-```
-## Systemctl Einrichten
-```bash
 
-sudo cp ahrensburg-city.service /etc/systemd/system/ahrensburg-city.service
-sudo systemctl enable ahrensburg-city
-sudo systemctl start ahrensburg-city
-
-```
-## config daten kopieren
-```bash
-cp env.local.example .env.local
-nano .env.local
-```
-
-## Restart
-```bash
-sudo cp ahrensburg-city.conf /etc/nginx/conf.d/ahrensburg-city.conf
-sudo systemctl restart ahrensburg-city
-sudo systemctl restart nginx
-```

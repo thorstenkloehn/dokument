@@ -19,7 +19,7 @@
     ```
 
 4. **Veröffentlichen**:
-    ```bash
+    ```bashhttp://127.0.0.1:8000
     npm run ver  
     ```
 
