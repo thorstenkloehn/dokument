@@ -12,7 +12,7 @@
         <link rel="prev" href="../../IDE/">
       
       
-        <link rel="next" href="../../SSG/mkdocs/">
+        <link rel="next" href="Backup/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -520,6 +520,48 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Backup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Wiederherstellen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wiedererstellen
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1066,9 +1108,10 @@ server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
     server_name ahrensburg.city;
-    ssl_certificate /etc/letsencrypt/live/blog.ahrensburg.city/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/blog.ahrensburg.city/privkey.pem;
-    root /home/thorsten/mediawiki
+    ssl_certificate /etc/letsencrypt/live/ahrensburg.city/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ahrensburg.city/privkey.pem;
+    root /home/thorsten/mediawiki;
+    index index.php index.html index.htm;
     location / {
         try_files $uri $uri/ /index.php?$args;
     }
@@ -1117,6 +1160,21 @@ wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
 </code></pre>
 <h2 id="composerlocaljson">composer.local.json</h2>
+<pre><code class="language-json">{
+    &quot;require&quot;: {
+        &quot;mediawiki/semantic-media-wiki&quot;: &quot;~4.0&quot;
+    },
+    &quot;extra&quot;: {
+        &quot;merge-plugin&quot;: {
+            &quot;include&quot;: [
+                &quot;extensions/*/composer.json&quot;,
+                &quot;skins/*/composer.json&quot;,
+                &quot;extensions/WikiMarkdown/composer.json&quot;
+            ]
+        }
+    }
+}
+</code></pre>
 <h2 id="weblinks">Weblinks</h2>
 <ul>
 <li><a href="https://www.mediawiki.org/wiki/Download_from_Git">Git clone</a></li>
