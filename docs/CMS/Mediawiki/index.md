@@ -20,14 +20,13 @@ sudo mv composer.phar /usr/local/bin/composer
 ## Mediawiki installieren
 ```bash
 sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-int -y
-cd /var/www
 git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
 cd mediawiki
 git tag -l | sort -V
 git checkout 1.39.8
 git submodule update --init --recursive
-sudo chown -R www-data:www-data /var/www/mediawiki
-sudo chmod -R 755 /var/www/mediawiki
+sudo chown -R www-data:www-data /home/thorsten/mediawiki
+sudo chmod -R 755 /home/thorsten/mediawiki
 
 ```
 ## Nginx Konfiguration
@@ -44,7 +43,7 @@ server {
     server_name ahrensburg.city;
     ssl_certificate /etc/letsencrypt/live/blog.ahrensburg.city/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/blog.ahrensburg.city/privkey.pem;
-    root /var/www/mediawiki;
+    root /home/thorsten/mediawiki
     location / {
         try_files $uri $uri/ /index.php?$args;
     }

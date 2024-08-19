@@ -285,6 +285,8 @@ server {
     return 301 https://$host$request_uri;
 }
 ```
+
+```bash
 ## Neuen Nutzer erstellen
 ```bash
 sudo adduser thorsten
