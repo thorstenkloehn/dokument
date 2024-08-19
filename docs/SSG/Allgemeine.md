@@ -14,9 +14,10 @@ Es gibt viele verschiedene SSGs, die für verschiedene Zwecke geeignet sind. Ein
 ## SSG
 
 ### Dokumentation
-* Mkdocs
+* MkDocs
 * Sphinx
 * Docusaurus
+
 
 ### React-basierte Anwendungen
 * Next.js
@@ -29,6 +30,5 @@ Es gibt viele verschiedene SSGs, die für verschiedene Zwecke geeignet sind. Ein
 
 #### Minimalistisch und flexibel
 * Eleventy
-* Hugo
 
 
