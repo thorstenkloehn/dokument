@@ -9,6 +9,8 @@ nav:
   - IDE: IDE/index.md  
   - Mediawiki:
     - Installieren: CMS/Mediawiki/index.md
+    - Backup: CMS/Mediawiki/Backup.md
+    - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
   - Static Site Generator:
     - Code-Dokumentationen:
       - mkdocs: SSG/mkdocs.md

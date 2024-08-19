@@ -4,7 +4,10 @@ sudo -u postgres -i
 createdb -E UTF8 -O thorsten mediawiki
 exit
 ```
-
+## PHP installieren
+```bash
+sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-int -y
+```
 
 ## Composer installieren
 ```bash
@@ -19,7 +22,6 @@ sudo mv composer.phar /usr/local/bin/composer
 
 ## Mediawiki installieren
 ```bash
-sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-int -y
 git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
 cd mediawiki
 git tag -l | sort -V
@@ -41,9 +43,10 @@ server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
     server_name ahrensburg.city;
-    ssl_certificate /etc/letsencrypt/live/blog.ahrensburg.city/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/blog.ahrensburg.city/privkey.pem;
-    root /home/thorsten/mediawiki
+    ssl_certificate /etc/letsencrypt/live/ahrensburg.city/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ahrensburg.city/privkey.pem;
+    root /home/thorsten/mediawiki;
+    index index.php index.html index.htm;
     location / {
         try_files $uri $uri/ /index.php?$args;
     }
@@ -100,6 +103,23 @@ $egMapsDefaultService = 'leaflet';
 
 
 ## composer.local.json
+```json 
+{
+    "require": {
+        "mediawiki/semantic-media-wiki": "~4.0"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "extensions/*/composer.json",
+                "skins/*/composer.json",
+                "extensions/WikiMarkdown/composer.json"
+            ]
+        }
+    }
+}
+```
+
 
 ## Weblinks
 * [Git clone](https://www.mediawiki.org/wiki/Download_from_Git)
