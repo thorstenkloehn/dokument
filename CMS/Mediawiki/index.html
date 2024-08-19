@@ -445,6 +445,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#php-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      PHP installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#composer-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Composer installieren
@@ -935,6 +944,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#php-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      PHP installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#composer-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Composer installieren
@@ -1019,6 +1037,9 @@
 createdb -E UTF8 -O thorsten mediawiki
 exit
 </code></pre>
+<h2 id="php-installieren">PHP installieren</h2>
+<pre><code class="language-bash">sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-int -y
+</code></pre>
 <h2 id="composer-installieren">Composer installieren</h2>
 <pre><code class="language-bash">php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
 php -r &quot;if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
@@ -1028,8 +1049,7 @@ php -r &quot;unlink('composer-setup.php');&quot;
 sudo mv composer.phar /usr/local/bin/composer
 </code></pre>
 <h2 id="mediawiki-installieren">Mediawiki installieren</h2>
-<pre><code class="language-bash">sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-int -y
-git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
+<pre><code class="language-bash">git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
 cd mediawiki
 git tag -l | sort -V
 git checkout 1.39.8
