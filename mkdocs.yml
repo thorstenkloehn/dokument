@@ -5,6 +5,7 @@ nav:
     - Server20.04: Server/index.md
     - Server22.04: Server/Server224.md
     - Server24.04: Server/Server244.md
+    - Tomcat9: Server/Tomcat9.md
     - Server Mieten: Server/Server_Mieten.md
   - IDE: IDE/index.md  
   - Mediawiki:
