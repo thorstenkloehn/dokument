@@ -471,15 +471,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#neuen-nutzer-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Neuen Nutzer erstellen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ssh-thorsten" class="md-nav__link">
     <span class="md-ellipsis">
       ssh thorsten
@@ -1241,15 +1232,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#neuen-nutzer-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Neuen Nutzer erstellen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ssh-thorsten" class="md-nav__link">
     <span class="md-ellipsis">
       ssh thorsten
@@ -1509,8 +1491,9 @@ server {
     return 301 https://$host$request_uri;
 }
 </code></pre>
-<h2 id="neuen-nutzer-erstellen">Neuen Nutzer erstellen</h2>
-<pre><code class="language-bash">sudo adduser thorsten
+<pre><code class="language-bash">## Neuen Nutzer erstellen
+```bash
+sudo adduser thorsten
 sudo usermod -aG sudo thorsten
 exit
 </code></pre>
