@@ -1185,12 +1185,12 @@ git config --global user.name &quot;Your Name&quot;
 
 </code></pre>
 <h3 id="backup-fur-mediawiki-erstellen">Backup für MediaWiki erstellen</h3>
-<pre><code class="language-bash">cd /var/www
+<pre><code class="language-bash">cd /home/thorsten
 gh repo clone thorstenkloehn/Download
 sudo chmod 777 -R Download
-cd /var/www/Download
-sudo rm /var/www/Download/pagedump.xml
-php /var/www/mediawiki/maintenance/dumpBackup.php --full &gt; /var/www/Download/pagedump.xml
+cd /home/thorsten/Download
+sudo rm /home/thorsten/Download/pagedump.xml
+php /home/thorsten/mediawiki/maintenance/dumpBackup.php --full &gt; /home/thorsten/Download/pagedump.xml
 git add .
 git commit -m &quot;Backup&quot;
 git push
