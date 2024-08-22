@@ -4,6 +4,10 @@
 ```
 sudo -u postgres -i
 createdb -E UTF8 -O thorsten drupal
+psql
+\c drupal
+CREATE EXTENSION pg_trgm;
+\q
 exit
 ```
 
