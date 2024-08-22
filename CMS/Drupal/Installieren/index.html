@@ -1232,6 +1232,10 @@
 <h4 id="postgres-datenbank-erstellen">Postgres Datenbank erstellen</h4>
 <pre><code>sudo -u postgres -i
 createdb -E UTF8 -O thorsten drupal
+psql
+\c drupal
+CREATE EXTENSION pg_trgm;
+\q
 exit
 </code></pre>
 <h3 id="php-installieren">PHP installieren</h3>
