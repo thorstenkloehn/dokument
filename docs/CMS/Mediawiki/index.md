@@ -9,6 +9,14 @@ exit
 sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-int -y
 ```
 
+#### PHP 8.3 Installation
+```bash
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install php8.3 php8.3-fpm php8.3-pgsql php8.3-xml php8.3-curl php8.3-gd php8.3-mbstring php8.3-xmlrpc php8.3-xmlrpc php8.3-zip php8.3-intl -y
+```
+
 ## Composer installieren
 ```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"

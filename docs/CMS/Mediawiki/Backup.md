@@ -29,12 +29,12 @@ gh auth login
 
 ### Backup für MediaWiki erstellen
 ```bash
-cd /var/www
+cd /home/thorsten
 gh repo clone thorstenkloehn/Download
 sudo chmod 777 -R Download
-cd /var/www/Download
-sudo rm /var/www/Download/pagedump.xml
-php /var/www/mediawiki/maintenance/dumpBackup.php --full > /var/www/Download/pagedump.xml
+cd /home/thorsten/Download
+sudo rm /home/thorsten/Download/pagedump.xml
+php /home/thorsten/mediawiki/maintenance/dumpBackup.php --full > /home/thorsten/Download/pagedump.xml
 git add .
 git commit -m "Backup"
 git push

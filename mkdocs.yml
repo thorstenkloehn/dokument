@@ -5,14 +5,19 @@ nav:
     - Server20.04: Server/index.md
     - Server22.04: Server/Server224.md
     - Server24.04: Server/Server244.md
-    - Tomcat9: Server/Tomcat9.md
+    - Tomcat9 Lokal: Server/Tomcat9.md
+    - Tomcat9 Server: Server/Tomcat9_Server.md
     - Geoserver: Server/Geoserver.md
     - Server Mieten: Server/Server_Mieten.md
   - IDE: IDE/index.md  
-  - Mediawiki:
-    - Installieren: CMS/Mediawiki/index.md
-    - Backup: CMS/Mediawiki/Backup.md
-    - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
+  - CMS:
+    - Allgemein: CMS/Allgemein.md
+    - Mediawiki:
+      - Installieren: CMS/Mediawiki/index.md
+      - Backup: CMS/Mediawiki/Backup.md
+      - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
+    - Drupal:
+      - Installieren: CMS/Drupal/Installieren.md
   - Static Site Generator:
     - Allgemein Liste: SSG/Allgemeine.md
     - Code-Dokumentationen:
@@ -22,7 +27,6 @@ nav:
       - next.js: SSG/next.js.md
       - astro.build: SSG/astro.build.md
     - Github-pages: SSG/github_page.md
-    
   - Tools:
     - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
@@ -33,7 +37,7 @@ theme:
   name: 'material'
   language: de
 plugins:
-    - search
+  - search
 extra:
   consent:
     title: Cookie-Zustimmung

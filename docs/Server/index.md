@@ -8,7 +8,12 @@ Er besteht aus 5 Hauptkomponenten: mod_tile, renderd, mapnik, osm2pgsql und eine
 Beachten Sie, dass diese Anweisungen gegen einen neu installierten Ubuntu 20.04 Server geschrieben und getestet wurden. Wenn Sie bereits andere Versionen einiger Software installiert haben (vielleicht haben Sie von einer früheren Ubuntu-Version aktualisiert, oder Sie haben einige PPAs zum Laden eingerichtet), dann müssen Sie möglicherweise einige Anpassungen vornehmen.
 
 Dieser Leitfaden geht davon aus, dass Sie alles von einem Nicht-Root-Benutzer über "sudo" ausführen. Der standardmäßig verwendete Nicht-Root-Benutzername ist unten "renderaccount" - Sie können diesen lokal erstellen, wenn Sie möchten, oder Skripte bearbeiten, um auf einen anderen Benutzernamen zu verweisen, wenn Sie möchten. Wenn Sie den Benutzer "renderaccount" erstellen, müssen Sie ihn zur Gruppe der Benutzer hinzufügen, die zu Root sudo können. Von Ihrem normalen Nicht-Root-Benutzerkonto aus:
-
+### Gaanze Neue Postgrs Datenbank
+```bash
+sudo apt install -y postgresql-common
+sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+sudo apt update
+```
 ```bash
 sudo -i
 sudo adduser renderaccount
@@ -34,7 +39,7 @@ Stimmen Sie der Installation zu. Dies wird eine Weile dauern, also gehen Sie und
 Auf Ubuntu gibt es vorgepackte Versionen von sowohl PostGIS als auch PostgreSQL, diese können einfach über den Ubuntu-Paketmanager installiert werden.
 ```bash
 
-sudo apt install postgresql postgresql-contrib postgis postgresql-12-postgis-3 postgresql-12-postgis-3-scripts osmosis
+sudo apt install postgresql-16 postgresql-client-16 postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osmosis
 
 ```
 Hier ist "postgresql" die Datenbank, in der wir Kartendaten speichern, und "postgis" fügt ihr zusätzliche grafische Unterstützung hinzu. Stimmen Sie erneut zu, um die Installation durchzuführen.
