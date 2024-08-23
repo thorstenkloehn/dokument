@@ -30,11 +30,11 @@ sudo mv composer.phar /usr/local/bin/composer
 
 ## Mediawiki installieren
 ```bash
-git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
-cd mediawiki
-git tag -l | sort -V
-git checkout 1.39.8
-git submodule update --init --recursive
+sudo git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
+sudo cd mediawiki
+sudo git tag -l | sort -V
+sudo git checkout 1.39.8
+sudo git submodule update --init --recursive
 sudo chown -R www-data:www-data /home/thorsten/mediawiki
 sudo chmod -R 755 /home/thorsten/mediawiki
 
@@ -84,7 +84,7 @@ sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/ho
 
 ## Lesbare URLs konfiguriern in mediawiki
 ```bash
-sudo nano /var/www/mediawiki/LocalSettings.php
+sudo nano /home/thorsten/mediawiki/LocalSettings.php
 ```
 
 ```php
@@ -95,7 +95,7 @@ $wgUsePathInfo = true;
 ```
 ## mediawiki extensions installieren
 ```bash
-sudo nano /var/www/mediawiki/LocalSettings.php
+sudo nano /home/thorsten/mediawiki/LocalSettings.php
 ```
 ```php
 wfLoadExtension( 'CookieWarning' );
@@ -111,28 +111,24 @@ $wgGroupPermissions['user']['move'] = false;
 wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
 ```
+## Semantik Web
+```bash
+cd /home/thorsten/mediawiki
+sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semantic-media-wiki
+ sudo composer update --no-dev
+ php maintenance/update.php
+```
+
+## Maps
+```bash
+cd /home/thorsten/mediawiki
+COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
+composer update mediawiki/maps --no-dev -o
+```
 ## Git clone extensions
 ```bash
 cd /home/thorsten/mediawiki/extensions
 git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CookieWarning.git
-
-
-
 ```
-## Semantik Web
-```
- COMPOSER=composer.local.json php composer require --no-update mediawiki/semantic-media-wiki
- composer update --no-dev
- php maintenance/update.php
- 
- ```
-## Maps
-```
-COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
-composer update mediawiki/maps --no-dev -o
- 
-```
-
-
 ## Weblinks
 * [Git clone](https://www.mediawiki.org/wiki/Download_from_Git)

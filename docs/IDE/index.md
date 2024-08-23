@@ -111,14 +111,6 @@ drop database thorsten;
 \q
 ```
 
-### ahrensburg.city Instakllieren
-```bash
-cd $HOME
-git clone https://github.com/thorstenkloehn/ahrensburg.city.git
-cd ahrensburg.city
-npm install
-cp env.local.example .env.local
-```
 ## Anki
 Anki ist ein Programm zum Lernen von Vokabeln und anderen Inhalten. Es ist für Windows, Linux und Mac OS X verfügbar. Anki ist Open Source und kostenlos. Es ist auch für Android und iOS verfügbar, aber diese Versionen sind nicht kostenlos.
 
@@ -146,12 +138,7 @@ QT_DEBUG_PLUGINS=1 anki
 ```bash
 1436550454 1933645497 1463041493 1190756458
 ```
-## Lumi Installieren
-```bash
-cd $HOME
-wget https://github.com/Lumieducation/Lumi/releases/download/v0.10.0/lumi_0.10.0_amd64.deb
-sudo dpkg -i lumi_0.10.0_amd64.deb
-```
+
 ## Rust Installieren
 ```bash
 sudo apt  install curl 
