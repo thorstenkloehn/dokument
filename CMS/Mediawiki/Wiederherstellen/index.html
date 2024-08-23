@@ -1145,7 +1145,10 @@
   <h1>Wiedererstellen</h1>
 
 <h2 id="wiedererstellen">Wiedererstellen</h2>
-<pre><code class="language-bash">git clone https://github.com/thorstenkloehn/Download.git
+<pre><code class="language-bash">cd /home/thorsten
+sudo gh repo clone thorstenkloehn/Download
+sudo chmod 777 -R Download
+cd /home/thorsten/Download
 php /home/thorsten/mediawiki/maintenance/importDump.php &lt; /home/thorsten/Download/pagedump.xml
 
 </code></pre>

@@ -635,9 +635,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#composerlocaljson" class="md-nav__link">
+  <a href="#semantik-web" class="md-nav__link">
     <span class="md-ellipsis">
-      composer.local.json
+      Semantik Web
     </span>
   </a>
   
@@ -1284,9 +1284,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#composerlocaljson" class="md-nav__link">
+  <a href="#semantik-web" class="md-nav__link">
     <span class="md-ellipsis">
-      composer.local.json
+      Semantik Web
     </span>
   </a>
   
@@ -1341,11 +1341,11 @@ php -r &quot;unlink('composer-setup.php');&quot;
 sudo mv composer.phar /usr/local/bin/composer
 </code></pre>
 <h2 id="mediawiki-installieren">Mediawiki installieren</h2>
-<pre><code class="language-bash">git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
-cd mediawiki
-git tag -l | sort -V
-git checkout 1.39.8
-git submodule update --init --recursive
+<pre><code class="language-bash">sudo git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
+sudo cd mediawiki
+sudo git tag -l | sort -V
+sudo git checkout 1.39.8
+sudo git submodule update --init --recursive
 sudo chown -R www-data:www-data /home/thorsten/mediawiki
 sudo chmod -R 755 /home/thorsten/mediawiki
 
@@ -1383,8 +1383,11 @@ server {
     return 301 https://$host$request_uri;
 }
 </code></pre>
+<p>Hochladen der Konfiguration</p>
+<pre><code class="language-bash">sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/home/thorsten/mediawiki/LocalSettings.php
+</code></pre>
 <h2 id="lesbare-urls-konfiguriern-in-mediawiki">Lesbare URLs konfiguriern in mediawiki</h2>
-<pre><code class="language-bash">sudo nano /var/www/mediawiki/LocalSettings.php
+<pre><code class="language-bash">sudo nano /home/thorsten/mediawiki/LocalSettings.php
 </code></pre>
 <pre><code class="language-php">$wgScriptPath = &quot;&quot;;
 $wgArticlePath = &quot;/$1&quot;;
@@ -1392,13 +1395,11 @@ $wgUsePathInfo = true;
 
 </code></pre>
 <h2 id="mediawiki-extensions-installieren">mediawiki extensions installieren</h2>
-<pre><code class="language-bash">sudo nano /var/www/mediawiki/LocalSettings.php
+<pre><code class="language-bash">sudo nano /home/thorsten/mediawiki/LocalSettings.php
 </code></pre>
 <pre><code class="language-php">wfLoadExtension( 'CookieWarning' );
 wfLoadExtension( 'SemanticMediaWiki' );
 enableSemantics( 'ahrensburg.city' );
-wfLoadExtension( 'WikiMarkdown' );
-wfLoadExtension( 'SimpleBlogPage' );
 wfLoadExtension( 'Gadgets' );
 $wgCookieWarningEnabled=true;
 $wgCookieWarningMoreUrl='';
@@ -1409,21 +1410,21 @@ $wgGroupPermissions['user']['move'] = false;
 wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
 </code></pre>
-<h2 id="composerlocaljson">composer.local.json</h2>
-<pre><code class="language-json">{
-    &quot;require&quot;: {
-        &quot;mediawiki/semantic-media-wiki&quot;: &quot;~4.0&quot;
-    },
-    &quot;extra&quot;: {
-        &quot;merge-plugin&quot;: {
-            &quot;include&quot;: [
-                &quot;extensions/*/composer.json&quot;,
-                &quot;skins/*/composer.json&quot;,
-                &quot;extensions/WikiMarkdown/composer.json&quot;
-            ]
-        }
-    }
-}
+<h2 id="semantik-web">Semantik Web</h2>
+<pre><code>cd /home/thorsten/mediawiki
+ sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semantic-media-wiki
+ sudo composer update --no-dev
+ php maintenance/update.php
+
+ ```
+## Maps
+</code></pre>
+<p>COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
+composer update mediawiki/maps --no-dev -o</p>
+<pre><code>## Git clone extensions
+```bash
+cd /home/thorsten/mediawiki/extensions
+git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CookieWarning.git
 </code></pre>
 <h2 id="weblinks">Weblinks</h2>
 <ul>
