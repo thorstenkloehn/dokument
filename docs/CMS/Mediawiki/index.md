@@ -76,6 +76,11 @@ server {
     return 301 https://$host$request_uri;
 }
 ```
+Hochladen der Konfiguration
+```bash
+sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/home/thorsten/mediawiki/LocalSettings.php
+```
+
 
 ## Lesbare URLs konfiguriern in mediawiki
 ```bash
@@ -96,8 +101,6 @@ sudo nano /var/www/mediawiki/LocalSettings.php
 wfLoadExtension( 'CookieWarning' );
 wfLoadExtension( 'SemanticMediaWiki' );
 enableSemantics( 'ahrensburg.city' );
-wfLoadExtension( 'WikiMarkdown' );
-wfLoadExtension( 'SimpleBlogPage' );
 wfLoadExtension( 'Gadgets' );
 $wgCookieWarningEnabled=true;
 $wgCookieWarningMoreUrl='';
@@ -108,24 +111,26 @@ $wgGroupPermissions['user']['move'] = false;
 wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
 ```
+## Git clone extensions
+```bash
+cd /home/thorsten/mediawiki/extensions
+git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CookieWarning.git
 
 
-## composer.local.json
-```json 
-{
-    "require": {
-        "mediawiki/semantic-media-wiki": "~4.0"
-    },
-    "extra": {
-        "merge-plugin": {
-            "include": [
-                "extensions/*/composer.json",
-                "skins/*/composer.json",
-                "extensions/WikiMarkdown/composer.json"
-            ]
-        }
-    }
-}
+
+```
+## Semantik Web
+```
+ COMPOSER=composer.local.json php composer require --no-update mediawiki/semantic-media-wiki
+ composer update --no-dev
+ php maintenance/update.php
+ 
+ ```
+## Maps
+```
+COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
+composer update mediawiki/maps --no-dev -o
+ 
 ```
 
 
