@@ -17,8 +17,14 @@ nav:
       - Installieren: CMS/Mediawiki/index.md
       - Backup: CMS/Mediawiki/Backup.md
       - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
+    - Wordpress:
+      - Installieren: CMS/Wordpress/Installieren.md
     - Django: 
       - Installieren: CMS/Django/Installieren.md
+    - Geonode: 
+      - Installieren: CMS/Geonode/Installieren.md
+    - Mapbender: 
+      - Installieren: CMS/Mapbender/Installieren.md  
   - Static Site Generator:
     - Allgemein Liste: SSG/Allgemeine.md
     - Code-Dokumentationen:
