@@ -10,15 +10,16 @@ nav:
     - Geoserver: Server/Geoserver.md
     - Tileserver: Server/Tileserver.md
     - Server Mieten: Server/Server_Mieten.md
-  - IDE: IDE/index.md  
+  - IDE: 
+  - Baukastensysteme:
+    - Geo Software: 
+      - Qgis: Baukastensysteme/Qgis.md
   - CMS:
     - Allgemein: CMS/Allgemein.md
     - Mediawiki: 
       - Installieren: CMS/Mediawiki/index.md
       - Backup: CMS/Mediawiki/Backup.md
       - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
-    - Wordpress:
-      - Installieren: CMS/Wordpress/Installieren.md
     - Django: 
       - Installieren: CMS/Django/Installieren.md
     - Geonode: 
