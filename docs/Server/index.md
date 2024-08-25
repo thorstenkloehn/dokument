@@ -8,7 +8,7 @@ Er besteht aus 5 Hauptkomponenten: mod_tile, renderd, mapnik, osm2pgsql und eine
 Beachten Sie, dass diese Anweisungen gegen einen neu installierten Ubuntu 20.04 Server geschrieben und getestet wurden. Wenn Sie bereits andere Versionen einiger Software installiert haben (vielleicht haben Sie von einer früheren Ubuntu-Version aktualisiert, oder Sie haben einige PPAs zum Laden eingerichtet), dann müssen Sie möglicherweise einige Anpassungen vornehmen.
 
 Dieser Leitfaden geht davon aus, dass Sie alles von einem Nicht-Root-Benutzer über "sudo" ausführen. Der standardmäßig verwendete Nicht-Root-Benutzername ist unten "renderaccount" - Sie können diesen lokal erstellen, wenn Sie möchten, oder Skripte bearbeiten, um auf einen anderen Benutzernamen zu verweisen, wenn Sie möchten. Wenn Sie den Benutzer "renderaccount" erstellen, müssen Sie ihn zur Gruppe der Benutzer hinzufügen, die zu Root sudo können. Von Ihrem normalen Nicht-Root-Benutzerkonto aus:
-### Gaanze Neue Postgrs Datenbank
+### Ganze Neue Postgrs Datenbank 
 ```bash
 sudo apt install -y postgresql-common
 sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh

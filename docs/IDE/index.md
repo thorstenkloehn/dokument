@@ -184,6 +184,7 @@ sudo apt-get install build-essential libssl-dev zlib1g-dev libncurses5-dev libnc
 ```
 #### hinunterladen von Python
 ```bash
+cd /home/thorsten
 wget https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz
 ```
 #### entpacken von Python

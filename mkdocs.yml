@@ -8,16 +8,17 @@ nav:
     - Tomcat9 Lokal: Server/Tomcat9.md
     - Tomcat9 Server: Server/Tomcat9_Server.md
     - Geoserver: Server/Geoserver.md
+    - Tileserver: Server/Tileserver.md
     - Server Mieten: Server/Server_Mieten.md
   - IDE: IDE/index.md  
   - CMS:
     - Allgemein: CMS/Allgemein.md
-    - Mediawiki:
+    - Mediawiki: 
       - Installieren: CMS/Mediawiki/index.md
       - Backup: CMS/Mediawiki/Backup.md
       - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
-    - Drupal:
-      - Installieren: CMS/Drupal/Installieren.md
+    - Django: 
+      - Installieren: CMS/Django/Installieren.md
   - Static Site Generator:
     - Allgemein Liste: SSG/Allgemeine.md
     - Code-Dokumentationen:
@@ -26,6 +27,7 @@ nav:
     - Frameworks:
       - next.js: SSG/next.js.md
       - astro.build: SSG/astro.build.md
+      - hugo: SSG/hugo.md
     - Github-pages: SSG/github_page.md
   - Tools:
     - Pandoc: Tools/Pandoc.md
