@@ -372,6 +372,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Server/Tileserver.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tileserver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Server/Server_Mieten/" class="md-nav__link">
         
   
@@ -644,6 +665,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#maps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-clone-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git clone extensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#weblinks" class="md-nav__link">
     <span class="md-ellipsis">
       Weblinks
@@ -732,7 +771,7 @@
             
   
   <span class="md-ellipsis">
-    Drupal
+    Django
   </span>
   
 
@@ -742,7 +781,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
-            Drupal
+            Django
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -753,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Drupal/Installieren/" class="md-nav__link">
+      <a href="../Django/Installieren/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -991,6 +1030,27 @@
   
   <span class="md-ellipsis">
     astro.build
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SSG/hugo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    hugo
   </span>
   
 
@@ -1293,6 +1353,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#maps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-clone-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git clone extensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#weblinks" class="md-nav__link">
     <span class="md-ellipsis">
       Weblinks
@@ -1411,19 +1489,18 @@ wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
 </code></pre>
 <h2 id="semantik-web">Semantik Web</h2>
-<pre><code>cd /home/thorsten/mediawiki
- sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semantic-media-wiki
+<pre><code class="language-bash">cd /home/thorsten/mediawiki
+sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semantic-media-wiki
  sudo composer update --no-dev
  php maintenance/update.php
-
- ```
-## Maps
 </code></pre>
-<p>COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
-composer update mediawiki/maps --no-dev -o</p>
-<pre><code>## Git clone extensions
-```bash
-cd /home/thorsten/mediawiki/extensions
+<h2 id="maps">Maps</h2>
+<pre><code class="language-bash">cd /home/thorsten/mediawiki
+COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
+composer update mediawiki/maps --no-dev -o
+</code></pre>
+<h2 id="git-clone-extensions">Git clone extensions</h2>
+<pre><code class="language-bash">cd /home/thorsten/mediawiki/extensions
 git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CookieWarning.git
 </code></pre>
 <h2 id="weblinks">Weblinks</h2>
