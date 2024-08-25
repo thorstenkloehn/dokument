@@ -15,7 +15,7 @@ sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.or
 
 3. Fügen Sie das QGIS-Repository hinzu:
 ```bash
-sudo /etc/apt/sources.list.d/qgis.sources 
+sudo nano /etc/apt/sources.list.d/qgis.sources 
 ```
 4 . Zeile hinzufügen:
 ```bash
