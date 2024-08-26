@@ -5,8 +5,6 @@
   * **JavaScript-basierte CMS**
     * **KeystoneJS** - JavaScript (Node.js) - Ein flexibles und erweiterbares Content-Management-System und Web-Anwendungs-Framework.
     * **Payload CMS** - JavaScript (Node.js) - Ein modernes Headless-CMS, das auf Node.js basiert und eine flexible API bietet.
-  * **PHP-basierte CMS**
-    * **Wordpress** - Ein weit verbreitetes Content-Management-System, das hauptsächlich für Blogs und einfache Websites verwendet wird.
 * **Geodaten-Management**
   * **Plattformen**
     * **Geonode** - Eine Plattform für die Verwaltung und Veröffentlichung von Geodaten, die auf Django basiert.
@@ -14,8 +12,6 @@
     * **Geodjango** - Eine Erweiterung für das Django-Framework, die die Erstellung von geografischen Anwendungen erleichtert.
   * **Server**
     * **Geoserver** - Ein Open-Source-Server, der es ermöglicht, geographische Daten zu teilen und zu bearbeiten.
-  * **Frameworks**
-    * **Mapbender** - Ein Web-GIS-Framework zur Verwaltung und Bereitstellung von Geodaten.
   * **Geoinformationssysteme (GIS)**
     * **QGIS** - Ein Open-Source-Geoinformationssystem zur Analyse und Bearbeitung von räumlichen Daten.
 
