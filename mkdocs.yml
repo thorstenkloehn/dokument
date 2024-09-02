@@ -21,6 +21,10 @@ nav:
       - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
     - Django: 
       - Installieren: CMS/Django/Installieren.md
+    - Wordpress: 
+      - Installieren: CMS/Wordpress/Installieren.md
+      - Backup: CMS/Wordpress/Backup.md
+      - Wiederherstellen: CMS/Wordpress/Wiederherstellen.md
   - Static Site Generator:
     - Allgemein Liste: SSG/Allgemeine.md
     - Code-Dokumentationen:
