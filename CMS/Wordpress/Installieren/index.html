@@ -870,9 +870,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#nginx-konfiguration-auf-subdomain" class="md-nav__link">
+  <a href="#nginx-konfiguration" class="md-nav__link">
     <span class="md-ellipsis">
-      Nginx Konfiguration auf subdomain
+      Nginx Konfiguration
     </span>
   </a>
   
@@ -1431,9 +1431,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#nginx-konfiguration-auf-subdomain" class="md-nav__link">
+  <a href="#nginx-konfiguration" class="md-nav__link">
     <span class="md-ellipsis">
-      Nginx Konfiguration auf subdomain
+      Nginx Konfiguration
     </span>
   </a>
   
@@ -1489,10 +1489,10 @@ sudo rm latest.zip
 sudo chown -R www-data:www-data /home/thorsten/wordpress
 sudo chmod -R 755 /home/thorsten/wordpress
 </code></pre>
-<h3 id="nginx-konfiguration-auf-subdomain">Nginx Konfiguration auf subdomain</h3>
-<pre><code class="language-bash">sudo nano /etc/nginx/conf.d//wordpress
-</code></pre>
-<pre><code class="language-nginx">server {
+<h3 id="nginx-konfiguration">Nginx Konfiguration</h3>
+<pre><code class="language-bash">sudo nano /etc/nginx/conf.d//wordpress.conf
+```nginx
+server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
     server_name blog.ahrensburg.city;
