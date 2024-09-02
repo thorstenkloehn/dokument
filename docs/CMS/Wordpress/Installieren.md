@@ -29,10 +29,9 @@ sudo rm latest.zip
 sudo chown -R www-data:www-data /home/thorsten/wordpress
 sudo chmod -R 755 /home/thorsten/wordpress
 ```
-### Nginx Konfiguration auf subdomain
+### Nginx Konfiguration
 ```bash
-sudo nano /etc/nginx/conf.d//wordpress
-```
+sudo nano /etc/nginx/conf.d//wordpress.conf
 ```nginx
 server {
     listen 443 ssl http2;
@@ -63,6 +62,3 @@ server {
     return 301 https://$host$request_uri;
 }
 ```
-
-
-
