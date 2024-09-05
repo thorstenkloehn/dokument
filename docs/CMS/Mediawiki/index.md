@@ -8,15 +8,6 @@ exit
 ```bash
 sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-int -y
 ```
-
-#### PHP 8.3 Installation
-```bash
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php
-sudo apt update
-sudo apt install php8.3 php8.3-fpm php8.3-pgsql php8.3-xml php8.3-curl php8.3-gd php8.3-mbstring php8.3-xmlrpc php8.3-xmlrpc php8.3-zip php8.3-intl -y
-```
-
 ## Composer installieren
 ```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -30,61 +21,25 @@ sudo mv composer.phar /usr/local/bin/composer
 
 ## Mediawiki installieren
 ```bash
+cd /var/www
 sudo git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
 sudo cd mediawiki
 sudo git tag -l | sort -V
 sudo git checkout 1.39.8
 sudo git submodule update --init --recursive
-sudo chown -R www-data:www-data /home/thorsten/mediawiki
-sudo chmod -R 755 /home/thorsten/mediawiki
+sudo chown -R www-data:www-data /var/www/mediawiki
+sudo chmod -R 755 /var/www/mediawiki
 
-```
-## Nginx Konfiguration
-
-```
-sudo nano /etc/nginx/conf.d/mediawiki.conf
-```
-
-```
-
-server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    server_name ahrensburg.city;
-    ssl_certificate /etc/letsencrypt/live/ahrensburg.city/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/ahrensburg.city/privkey.pem;
-    root /home/thorsten/mediawiki;
-    index index.php index.html index.htm;
-    location / {
-        try_files $uri $uri/ /index.php?$args;
-    }
-
-    location ~ \.php$ {
-        include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
-    }
-
-    location ~ /\.ht {
-
-           deny all;
-    }
-}
-server {
-    listen 80;
-    listen [::]:80;
-    server_name ahrensburg.city;
-    return 301 https://$host$request_uri;
-}
 ```
 Hochladen der Konfiguration
 ```bash
-sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/home/thorsten/mediawiki/LocalSettings.php
+sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/var/www/mediawiki/LocalSettings.php
 ```
 
 
 ## Lesbare URLs konfiguriern in mediawiki
 ```bash
-sudo nano /home/thorsten/mediawiki/LocalSettings.php
+sudo nano /var/www/mediawiki/LocalSettings.php
 ```
 
 ```php
@@ -95,7 +50,7 @@ $wgUsePathInfo = true;
 ```
 ## mediawiki extensions installieren
 ```bash
-sudo nano /home/thorsten/mediawiki/LocalSettings.php
+sudo nano /var/www/mediawiki/LocalSettings.php
 ```
 ```php
 wfLoadExtension( 'CookieWarning' );
@@ -113,7 +68,7 @@ $egMapsDefaultService = 'leaflet';
 ```
 ## Semantik Web
 ```bash
-cd /home/thorsten/mediawiki
+cd /var/wiki/mediawiki
 sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semantic-media-wiki
  sudo composer update --no-dev
  php maintenance/update.php
@@ -121,13 +76,13 @@ sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semant
 
 ## Maps
 ```bash
-cd /home/thorsten/mediawiki
+cd /var/wiki/mediawiki
 COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
 composer update mediawiki/maps --no-dev -o
 ```
 ## Git clone extensions
 ```bash
-cd /home/thorsten/mediawiki/extensions
+cd /var/wiki/mediawiki/extensions
 git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CookieWarning.git
 ```
 ## Weblinks

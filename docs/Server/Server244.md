@@ -52,7 +52,7 @@ Anleitung zur Installation von Node.js auf Ubuntu 24.04 LTS
 * [Anleitung](https://github.com/nodesource/distributions)
 ## Installation weitere Pakete
 ```bash
-sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin npm node-carto postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis
+sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis
 ```
 An diesem Punkt wurden einige neue Konten hinzugefügt. Sie können sie mit "tail /etc/passwd" sehen. "postgres" wird zur Verwaltung der Datenbanken verwendet, die wir zur Speicherung von Daten für das Rendering verwenden. "_renderd" wird für den Renderd-Daemon verwendet, und wir müssen sicherstellen, dass viele der unten aufgeführten Befehle als dieser Benutzer ausgeführt werden.
 
@@ -62,46 +62,10 @@ Jetzt müssen Sie eine PostGIS-Datenbank erstellen. Die Standardwerte verschiede
 sudo -u postgres -i
 createuser _renderd
 createdb -E UTF8 -O _renderd gis
-```
-Während Sie noch als Benutzer "postgres" arbeiten, richten Sie PostGIS auf der PostgreSQL-Datenbank ein:
-
-```bash
-psql
-```
-
-(Das bringt Sie zu einer "postgres=#"-Eingabeaufforderung)
-
-```bash
-\c gis
-```
-(Es wird antworten "Sie sind jetzt als Benutzer 'postgres' mit der Datenbank 'gis' verbunden.")
-    
-```bash
-CREATE EXTENSION postgis;
-```
-(Es wird antworten mit "CREATE EXTENSION")
-    
-```bash
-CREATE EXTENSION hstore;
-```
-(Es wird antworten mit "CREATE EXTENSION")
-
-```bash
-ALTER TABLE geometry_columns OWNER TO _renderd;
-```
-(Es wird antworten mit "ALTER TABLE")
-
-```bash
-ALTER TABLE spatial_ref_sys OWNER TO _renderd;
-```
-(Es wird antworten mit "ALTER TABLE")
-    
-```bash
-\q
-```
-(Das wird Sie aus der psql-Shell herausbringen)
-
-```bash
+psql -d gis -c "CREATE EXTENSION postgis;" # Erweiterung hinzufügen
+psql -d gis -c "CREATE EXTENSION hstore;" # Erweiterung hinzufügen
+psql -d gis -c "ALTER TABLE geometry_columns OWNER TO _renderd;" # Rechte setzen
+psql -d gis -c "ALTER TABLE spatial_ref_sys OWNER TO _renderd;" # Rechte setzen
 exit
 ```
 (Das wird Sie aus dem Benutzer "postgres" herausbringen)
@@ -270,16 +234,12 @@ cd $HOME
 sudo -u postgres -i
 createuser thorsten
 createdb -E UTF8 -O thorsten thorsten
-psql
-\c thorsten
-CREATE EXTENSION postgis;
-CREATE EXTENSION hstore;
-ALTER TABLE geometry_columns OWNER TO thorsten;
-ALTER TABLE spatial_ref_sys OWNER TO thorsten;
-## Passwort für den Benutzer postgres setzen
-\password thorsten
-\q
-exit
+psql -d thorsten -c "CREATE EXTENSION postgis;" # Erweiterung hinzufügen
+psql -d thorsten -c "CREATE EXTENSION hstore;" # Erweiterung hinzufügen
+psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO _renderd;" # Rechte setzen
+psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO _renderd;" # Rechte setzen
+psql -d thorsten -c "\password thorsten"
+exit # Ausloggen
 ```
 ### Herunterladen der Daten
 ```bash
