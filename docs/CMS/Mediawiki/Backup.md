@@ -29,7 +29,7 @@ gh auth login
 
 ### Backup für MediaWiki erstellen
 ```bash
-cd /thorsten/home
+cd /home/thorsten
 gh repo clone thorstenkloehn/Download
 sudo chmod 777 -R Download
 cd /home/thorsten/Download
