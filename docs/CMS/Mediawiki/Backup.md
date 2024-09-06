@@ -34,10 +34,10 @@ gh repo clone thorstenkloehn/Download
 sudo chmod 777 -R Download
 cd /home/thorsten/Download
 sudo rm /home/thorsten/Download/pagedump.xml
-php /var/www/mediawiki/dumpBackup.php --full > /home/thorsten/Download/pagedump.xml
-sudo git add .
-sudo git commit -m "Backup"
-sudo git push
+php /var/www/mediawiki/maintenance/dumpBackup.php --full > /home/thorsten/Download/pagedump.xml
+git add .
+git commit -m "Backup"
+git push
 ```
 
 
