@@ -5,9 +5,17 @@ nav:
     - Server20.04: Server/index.md
     - Server22.04: Server/Server224.md
     - Server24.04: Server/Server244.md
+    - Toncat: Server/Tomcat.md
+    - Geoserver: Server/Geoserver.md
     - Nginx Einstellung: Server/nginx.md
     - Server Mieten: Server/Server_Mieten.md
+    
   - IDE: IDE/index.md  
+  - Datenerfassung:
+    - OpenDataKit: Datenerfassung/OpenDataKit.md
+    - ODK Collect: Datenerfassung/ODK_Collect.md
+    - QField: Datenerfassung/QField.md
+    - Geopaparazzi: Datenerfassung/Geopaparazzi.md
   - Baukastensysteme:
     - Geo Software: 
       - Qgis: Baukastensysteme/Qgis.md
