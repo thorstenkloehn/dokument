@@ -2,20 +2,18 @@ site_name: Dokument
 nav:
   - Starseite: index.md
   - Server:
-    - Server20.04: Server/index.md
-    - Server22.04: Server/Server224.md
-    - Server24.04: Server/Server244.md
-    - Toncat: Server/Tomcat.md
-    - Geoserver: Server/Geoserver.md
+    - Kachelserver:
+      - Server20.04: Server/Kachelserver/Server204.md
+      - Server22.04:  Server/Kachelserver/Server224.md
+      - Server24.04: Server/Kachelserver/Server244.md
+    - Apache-Server mit Nginx verbinden: Server/Apache_Nginx.md
+    - Nginx SSL Zertifikat: Server/Nginx_SSL.md
     - Nginx Einstellung: Server/nginx.md
     - Server Mieten: Server/Server_Mieten.md
     
   - IDE: IDE/index.md  
   - Datenerfassung:
     - OpenDataKit: Datenerfassung/OpenDataKit.md
-    - ODK Collect: Datenerfassung/ODK_Collect.md
-    - QField: Datenerfassung/QField.md
-    - Geopaparazzi: Datenerfassung/Geopaparazzi.md
   - Baukastensysteme:
     - Geo Software: 
       - Qgis: Baukastensysteme/Qgis.md
@@ -34,7 +32,6 @@ nav:
     - Frameworks:
       - next.js: SSG/next.js.md
       - astro.build: SSG/astro.build.md
-      - hugo: SSG/hugo.md
     - Github-pages: SSG/github_page.md
   - Tools:
     - Pandoc: Tools/Pandoc.md
