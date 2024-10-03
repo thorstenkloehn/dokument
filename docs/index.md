@@ -11,11 +11,11 @@ Der Apache-Server ist ein weit verbreiteter Webserver, der auf vielen Servern ei
 
 ### Proxy-Server mit Nginx einrichten
 Ein Proxy-Server kann dazu genutzt werden, um Anfragen an einen anderen Server weiterzuleiten. Nginx ist ein weit verbreiteter Webserver, der auch als Proxy-Server eingesetzt werden kann.
-  Auf meinem Server habe ich Nginx habe folgene Installiert!
+Auf meinem Server habe ich Nginx habe folgene Installiert!
 
 
-* PHP: Eine weit verbreitete Skriptsprache, die hauptsächlich zur       Webentwicklung verwendet wird.
-* Next.js und Astro.build: Frameworks für die Erstellung von React-Anwendungen und statischen Websites.
+* PHP: Wird nur für MediaWiki verwendet, da die Module sonst nicht kontrolliert werden können. MediaWiki ist sicher, um die Module zu kontrollieren, und die   Software ist ebenfalls sicher und wird regelmäßig aktualisiert.
+* Next.js und Astro.build: Frameworks für die Erstellung von React-Anwendungen und statischen Websites mit Supabase.
 * Gunicorn: Ein Python WSGI HTTP Server für UNIX.
 * Supabase: Eine Open-Source-Alternative zu Firebase, die Echtzeit-Datenbanken und Authentifizierung bietet.
 * Golang: Eine statisch typisierte, kompilierte Programmiersprache, die von Google entwickelt wurde.
@@ -23,6 +23,8 @@ Ein Proxy-Server kann dazu genutzt werden, um Anfragen an einen anderen Server w
 * Node.js: Eine JavaScript-Laufzeitumgebung, die serverseitige Programmierung ermöglicht.
 * Docker.io: Eine Plattform zur Automatisierung der Bereitstellung von Anwendungen in Containern.
 * OpenDataKit: Eine Open-Source-Plattform zur Erstellung von Umfragen und Datenerfassung.
+* Spring Boot: Ein Framework für die Erstellung von Java-Anwendungen.
+
 
 
 

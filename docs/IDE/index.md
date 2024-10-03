@@ -6,17 +6,20 @@
 sudo apt-get update 
 sudo apt-get upgrade
 ```
-## Google Chrome Installieren- 
+## Google Chrome Installieren
+
 ```bash
+
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
- sudo dpkg -i google-chrome-stable_current_amd64.deb
- ```
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+```
+
 ## Git Installieren
 ```bash
 sudo apt-get install git  gh
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
-
 ```
 ## gh Konfigurieren
 
@@ -77,15 +80,17 @@ sudo usermod -aG sudo thorsten
 ## Benutzer thorsten zu Gruppe postgres hinzufügen
 ```bash
 
+ssh thorsten@
+cd $HOME
 sudo -u postgres -i
 createuser thorsten
 createdb -E UTF8 -O thorsten thorsten
-psql
-\c thorsten
-CREATE EXTENSION postgis;
-CREATE EXTENSION hstore;
-ALTER TABLE geometry_columns OWNER TO thorsten;
-ALTER TABLE spatial_ref_sys OWNER TO thorsten;
+psql -d thorsten -c "CREATE EXTENSION postgis;" # Erweiterung hinzufügen
+psql -d thorsten -c "CREATE EXTENSION hstore;" # Erweiterung hinzufügen
+psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO _renderd;" # Rechte setzen
+psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO _renderd;" # Rechte setzen
+psql -d thorsten -c "\password thorsten"
+exit # Ausloggen
 ```
 ## Passwort für den Benutzer postgres setzen
 ```bash
@@ -156,7 +161,11 @@ echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
-
+## Java Installieren
+```bash
+sudo apt install openjdk-17-jdk
+sudo apt install maven
+```
 
 ## Python Installieren
 ```bash
