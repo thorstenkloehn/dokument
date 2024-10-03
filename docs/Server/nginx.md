@@ -1,9 +1,10 @@
 ## ginx einstellung
+
 ```
 sudo nano /etc/nginx/conf.d/start.conf
 ```
-```nginx
-  GNU nano 7.2                                                                           start.conf                                                                                     
+
+```
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
@@ -44,3 +45,4 @@ server {
     server_name ahrensburg.city;
     return 301 https://$host$request_uri;
 }
+```
