@@ -1,4 +1,4 @@
-## ginx einstellung
+## Nginx einstellung
 
 ```
 sudo nano /etc/nginx/conf.d/start.conf

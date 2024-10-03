@@ -8,8 +8,8 @@ nav:
       - Server24.04: Server/Kachelserver/Server244.md
     - Apache-Server mit Nginx verbinden: Server/Apache_Nginx.md
     - Nginx SSL Zertifikat: Server/Nginx_SSL.md
+    - PHP: Server/PHP.md
     - Nginx Einstellung: Server/nginx.md
-    - PHP-Server: Server/PHP.md
     - Server Mieten: Server/Server_Mieten.md
     
   - IDE: IDE/index.md  
