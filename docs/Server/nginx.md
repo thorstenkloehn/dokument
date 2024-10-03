@@ -1,8 +1,9 @@
-## nginx einstellung
+## ginx einstellung
 ```
 sudo nano /etc/nginx/conf.d/start.conf
 ```
 ```nginx
+  GNU nano 7.2                                                                           start.conf                                                                                     
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
@@ -11,13 +12,18 @@ server {
     ssl_certificate_key /etc/letsencrypt/live/ahrensburg.city/privkey.pem;
      root /var/www/mediawiki;
     index index.php index.html index.htm;
-  location /hot {
-        proxy_pass http://localhost:8080/hot;
+   location /Bilder {
+        proxy_pass http://localhost:8081/Bilder;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
     }
+
+location /karte {
+    alias /var/www/karte;
+    autoindex on;
+}
  location / {
         try_files $uri $uri/ /index.php?$args;
     }
@@ -30,6 +36,7 @@ server {
 
            deny all;
     }
+
 }
 server {
     listen 80;
@@ -37,5 +44,3 @@ server {
     server_name ahrensburg.city;
     return 301 https://$host$request_uri;
 }
-
-```
