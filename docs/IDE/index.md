@@ -145,11 +145,7 @@ sudo apt  install curl
 sudo apt install build-essential
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-## Java Installieren
-```bash
-sudo apt install openjdk-17-jdk
-sudo apt install maven
-```
+
 ## Golang Installieren
 ```bash
 cd $HOME
@@ -204,27 +200,9 @@ sudo make altinstall
 
 ## Visual Studio Code Erweiterungen
 ```bash
-code --install-extension  vscjava.vscode-java-pack
+
 code --install-extension  ms-vscode-remote.remote-ssh
 code --install-extension  ms-vscode.remote-server
-```
-## C++ Installieren
-```bash
-sudo apt-get install build-essential
-sudo apt-get install cmake
-sudo apt-get install gdb
-sudo apt-get install clang
-sudo apt-get install valgrind
-sudo apt-get install cppcheck
-code --install-extension ms-vscode.cpptools-extension-pack
-code --install-extension krosf.vscode-valgrind
-code --install-extension NathanJ.cppcheck-plugin
-```
-## Dotnet Installieren
-```bash
-sudo apt-get update && \
-  sudo apt-get install -y dotnet-sdk-8.0
-  code --install-extension ms-dotnettools.csdevkit
 ```
 #### Quellangabe
 * Quelle: [Download](https://www.python.org/downloads)
