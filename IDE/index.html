@@ -515,9 +515,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#google-chrome-installieren-" class="md-nav__link">
+  <a href="#google-chrome-installieren" class="md-nav__link">
     <span class="md-ellipsis">
-      Google Chrome Installieren-
+      Google Chrome Installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Installieren
     </span>
   </a>
   
@@ -761,6 +770,15 @@
   <a href="#golang-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Golang Installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Java Installieren
     </span>
   </a>
   
@@ -1705,9 +1723,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#google-chrome-installieren-" class="md-nav__link">
+  <a href="#google-chrome-installieren" class="md-nav__link">
     <span class="md-ellipsis">
-      Google Chrome Installieren-
+      Google Chrome Installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Installieren
     </span>
   </a>
   
@@ -1957,6 +1984,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#java-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Java Installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#python-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Python Installieren
@@ -2098,16 +2134,16 @@
 <pre><code class="language-bash">sudo apt-get update 
 sudo apt-get upgrade
 </code></pre>
-<h2 id="google-chrome-installieren-">Google Chrome Installieren-</h2>
-<pre><code class="language-bash">wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
- sudo dpkg -i google-chrome-stable_current_amd64.deb
- ```
-## Git Installieren
-```bash
-sudo apt-get install git  gh
+<h2 id="google-chrome-installieren">Google Chrome Installieren</h2>
+<pre><code class="language-bash">
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+</code></pre>
+<h2 id="git-installieren">Git Installieren</h2>
+<pre><code class="language-bash">sudo apt-get install git  gh
 git config --global user.email &quot;you@example.com&quot;
 git config --global user.name &quot;Your Name&quot;
-
 </code></pre>
 <h2 id="gh-konfigurieren">gh Konfigurieren</h2>
 <pre><code class="language-bash">gh auth login
@@ -2153,15 +2189,17 @@ sudo usermod -aG sudo thorsten
 </code></pre>
 <h2 id="benutzer-thorsten-zu-gruppe-postgres-hinzufugen">Benutzer thorsten zu Gruppe postgres hinzufügen</h2>
 <pre><code class="language-bash">
+ssh thorsten@
+cd $HOME
 sudo -u postgres -i
 createuser thorsten
 createdb -E UTF8 -O thorsten thorsten
-psql
-\c thorsten
-CREATE EXTENSION postgis;
-CREATE EXTENSION hstore;
-ALTER TABLE geometry_columns OWNER TO thorsten;
-ALTER TABLE spatial_ref_sys OWNER TO thorsten;
+psql -d thorsten -c &quot;CREATE EXTENSION postgis;&quot; # Erweiterung hinzufügen
+psql -d thorsten -c &quot;CREATE EXTENSION hstore;&quot; # Erweiterung hinzufügen
+psql -d thorsten -c &quot;ALTER TABLE geometry_columns OWNER TO _renderd;&quot; # Rechte setzen
+psql -d thorsten -c &quot;ALTER TABLE spatial_ref_sys OWNER TO _renderd;&quot; # Rechte setzen
+psql -d thorsten -c &quot;\password thorsten&quot;
+exit # Ausloggen
 </code></pre>
 <h2 id="passwort-fur-den-benutzer-postgres-setzen">Passwort für den Benutzer postgres setzen</h2>
 <pre><code class="language-bash">\password thorsten
@@ -2216,6 +2254,10 @@ echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
 echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
 source ~/.bashrc
+</code></pre>
+<h2 id="java-installieren">Java Installieren</h2>
+<pre><code class="language-bash">sudo apt install openjdk-17-jdk
+sudo apt install maven
 </code></pre>
 <h2 id="python-installieren">Python Installieren</h2>
 <pre><code class="language-bash">sudo apt install python3 python3-pip python3-venv  python-is-python3
