@@ -10,7 +10,7 @@ nav:
     - Nginx SSL Zertifikat: Server/Nginx_SSL.md
     - PHP: Server/PHP.md
     - Nginx Einstellung: Server/nginx.md
-    - Server Mieten: Server/Server_Mieten.md
+
     
   - IDE: IDE/index.md  
   - Datenerfassung:
@@ -23,6 +23,7 @@ nav:
       - Installieren: CMS/Mediawiki/index.md
       - Backup: CMS/Mediawiki/Backup.md
       - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
+  - Frameworks:
     - Django: 
       - Installieren: CMS/Django/Installieren.md
   - Static Site Generator:

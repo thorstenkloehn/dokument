@@ -87,8 +87,8 @@ createuser thorsten
 createdb -E UTF8 -O thorsten thorsten
 psql -d thorsten -c "CREATE EXTENSION postgis;" # Erweiterung hinzufügen
 psql -d thorsten -c "CREATE EXTENSION hstore;" # Erweiterung hinzufügen
-psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO _renderd;" # Rechte setzen
-psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO _renderd;" # Rechte setzen
+psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO thorsten;" # Rechte setzen
+psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO thorsten;" # Rechte setzen
 psql -d thorsten -c "\password thorsten"
 exit # Ausloggen
 ```
