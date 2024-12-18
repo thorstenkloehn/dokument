@@ -43,12 +43,6 @@ In Visual Studio Code, öffnen Sie das Terminal und führen Sie folgende Befehle
 code --install-extension GitHub.copilot
 code --install-extension ckolkman.vscode-postgres
 code --install-extension  ms-ossdata.vscode-postgresql
-code --install-extension  unifiedjs.vscode-mdx
-code --install-extension xyc.vscode-mdx-preview
-code --install-extension iJS.reactnextjssnippets
-code --install-exenstion PulkitGangwar.nextjs-snippets
-code --install-exenstion KristiyanVelkov.nextjs-file-gelenator
-code --install-extenstion bradlc.vscode-tailwindcss
 ```
 ## Datenbank
 ### PostgreSQL
@@ -163,18 +157,13 @@ source ~/.bashrc
 ```
 ## Java Installieren
 ```bash
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-21-jdk
 sudo apt install maven
 ```
 
 ## Python Installieren
 ```bash
 sudo apt install python3 python3-pip python3-venv  python-is-python3
-```
-## Python vscode Erweiterungen
-```bash
-
-code --install ms-dotnettools.dotnet-interactive-vscode
 ```
 ## Python Virtual Environment
 ```bash

@@ -11,6 +11,7 @@
     ```bash
     pip install mkdocs
     pip install mkdocs-material
+    npm install
     ```
 
 3. **Dokumentationsseite bauen**:
