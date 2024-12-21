@@ -121,12 +121,12 @@ sudo apt install libxcb-xinerama0 libxcb-cursor0
 ### Anki herunterladen
 ```bash
 cd $HOME
-wget https://github.com/ankitects/anki/releases/download/23.12.1/anki-23.12.1-linux-qt6.tar.zst
+wget https://github.com/ankitects/anki/releases/download/24.11/anki-24.11-linux-qt6.tar.zst
 ```
 ### Anki installieren
 ```bash
-tar xaf anki-23.12.1-linux-qt6.tar.zst
-cd  anki-23.12.1-linux-qt6
+tar xaf anki-24.11-linux-qt6.tar.zst
+cd  anki-24.11-linux-qt6.tar.zst
 sudo ./install.sh
 QT_DEBUG_PLUGINS=1 anki
 ```
@@ -148,8 +148,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ## Golang Installieren
 ```bash
 cd $HOME
-wget https://go.dev/dl/go1.22.3.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.22.3.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.23.4.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
