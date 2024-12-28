@@ -29,8 +29,14 @@ gh auth login
 ## Nodejs Installieren
 ```bash
 sudo apt-get install curl
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.bashrc
+nvm install 22
+# Verify the Node.js version:
+node -v # Should print "v22.12.0".
+nvm current # Should print "v22.12.0".
+# Verify npm version:
+npm -v # Should print "10.9.0".
 ```
 ## Visual Studio Code 
 ### Installieren
@@ -126,7 +132,7 @@ wget https://github.com/ankitects/anki/releases/download/24.11/anki-24.11-linux-
 ### Anki installieren
 ```bash
 tar xaf anki-24.11-linux-qt6.tar.zst
-cd  anki-24.11-linux-qt6.tar.zst
+cd  anki-24.11-linux-qt6.tar
 sudo ./install.sh
 QT_DEBUG_PLUGINS=1 anki
 ```
