@@ -49,6 +49,7 @@ In Visual Studio Code, öffnen Sie das Terminal und führen Sie folgende Befehle
 code --install-extension GitHub.copilot
 code --install-extension ckolkman.vscode-postgres
 code --install-extension  ms-ossdata.vscode-postgresql
+code --install-extension RoweWilsonFrederiskHolme.wikitext
 ```
 ## Datenbank
 ### PostgreSQL
@@ -150,6 +151,17 @@ sudo apt  install curl
 sudo apt install build-essential
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+## dotnet Installieren
+
+```
+sudo apt-get update # Aktualisiert die Paketliste
+sudo apt-get install -y dotnet-sdk-9.0 # Installation des .NET SDK
+dotnet tool install --global dotnet-ef  # Installation des Entity Framework Core
+echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc # Hinzufügen des Pfads zum .bashrc
+source ~/.bashrc  # Aktualisierung der .bashrc
+code --install-extension ms-dotnettools.csdevkit # Installiert die C# Dev Kit Erweiterung
+
+```
 
 ## Golang Installieren
 ```bash
@@ -163,13 +175,16 @@ source ~/.bashrc
 ```
 ## Java Installieren
 ```bash
-sudo apt install openjdk-21-jdk
-sudo apt install maven
+sudo apt install openjdk-21-jdk # Installiert OpenJDK 21
+sudo apt install maven # Installiert Maven
+code --install-extension  vscjava.vscode-java-pack # Installiert Java Extension Pack für Visual Studio Code
+code --install-extension  vmware.vscode-boot-dev-pack # Installiert Spring Boot Extension Pack für Visual Studio Code
 ```
 
 ## Python Installieren
 ```bash
 sudo apt install python3 python3-pip python3-venv  python-is-python3
+code --install-extension  ms-python.python
 ```
 ## Python Virtual Environment
 ```bash
