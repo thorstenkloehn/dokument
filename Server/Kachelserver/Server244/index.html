@@ -1129,7 +1129,7 @@
             
   
   <span class="md-ellipsis">
-    Static Site Generator
+    Tools
   </span>
   
 
@@ -1138,260 +1138,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            Static Site Generator
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../SSG/Allgemeine/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Allgemein Liste
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Code-Dokumentationen
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_2">
-            <span class="md-nav__icon md-icon"></span>
-            Code-Dokumentationen
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../SSG/mkdocs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    mkdocs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../SSG/sphinx/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    sphinx
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Frameworks
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_3">
-            <span class="md-nav__icon md-icon"></span>
-            Frameworks
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../SSG/next.js/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    next.js
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../SSG/astro.build/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    astro.build
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../SSG/github_page/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Github-pages
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tools
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Tools
           </label>
@@ -1775,8 +1521,12 @@ exit
    sudo apt update
   sudo apt upgrade</code></p>
 <h2 id="nodjs-installation">Nodjs Installation</h2>
-<p>Anleitung zur Installation von Node.js auf Ubuntu 24.04 LTS
-* <a href="https://github.com/nodesource/distributions">Anleitung</a></p>
+<p>Anleitung zur Installation von Node.js auf Ubuntu 24.04 LTS</p>
+<pre><code>sudo apt-get install curl
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.bashrc
+nvm install 22
+</code></pre>
 <h2 id="installation-weitere-pakete">Installation weitere Pakete</h2>
 <pre><code class="language-bash">sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis
 </code></pre>
@@ -1808,6 +1558,8 @@ exit
 cd ~/src
 git clone https://github.com/gravitystorm/openstreetmap-carto
 cd openstreetmap-carto
+git pull --all
+git switch --detach v5.9.0
 </code></pre>
 <p>Als nächstes installieren wir eine geeignete Version des "carto"-Compilers.</p>
 <pre><code class="language-bash">sudo npm install -g carto
