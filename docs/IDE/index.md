@@ -133,7 +133,7 @@ wget https://github.com/ankitects/anki/releases/download/24.11/anki-24.11-linux-
 ### Anki installieren
 ```bash
 tar xaf anki-24.11-linux-qt6.tar.zst
-cd  anki-24.11-linux-qt6.tar
+cd  anki-24.11-linux-qt6
 sudo ./install.sh
 QT_DEBUG_PLUGINS=1 anki
 ```
