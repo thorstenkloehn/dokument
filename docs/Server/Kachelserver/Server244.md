@@ -49,7 +49,13 @@ Um Ihr Ubuntu-System zu aktualisieren und zu upgraden, können Sie die folgenden
     ```
 ## Nodjs Installation
 Anleitung zur Installation von Node.js auf Ubuntu 24.04 LTS
-* [Anleitung](https://github.com/nodesource/distributions)
+```
+sudo apt-get install curl
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.bashrc
+nvm install 22
+```
+
 ## Installation weitere Pakete
 ```bash
 sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis
@@ -92,6 +98,8 @@ mkdir ~/src
 cd ~/src
 git clone https://github.com/gravitystorm/openstreetmap-carto
 cd openstreetmap-carto
+git pull --all
+git switch --detach v5.9.0
 ```
 Als nächstes installieren wir eine geeignete Version des "carto"-Compilers.
     
