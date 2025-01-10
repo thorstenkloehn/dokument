@@ -155,22 +155,7 @@ code --install-extension rust-lang.rust-analyzer
 sudo apt-get install cmake
 sudo apt-get install gdb
 ```
-## Dotnet
-```
-sudo apt-get update # Aktualisiert die Paketliste
-sudo apt-get install -y dotnet-sdk-9.0 # Installation des .NET SDK
-dotnet tool install --global dotnet-ef  # Installation des Entity Framework Core
-echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc # Hinzufügen des Pfads zum .bashrc
-source ~/.bashrc  # Aktualisierung der .bashrc
-code --install-extension ms-dotnettools.csdevkit # Installiert die C# Dev Kit Erweiterung
-```
-## Spring boot
-```
-sudo apt install openjdk-21-jdk # Installiert OpenJDK 21
-sudo apt install maven # Installiert Maven
-code --install-extension  vscjava.vscode-java-pack # Installiert Java Extension Pack für Visual Studio Code
-code --install-extension  vmware.vscode-boot-dev-pack # Installiert Spring Boot Extension Pack für Visual Studio Code
-```
+
 
 ## Golang Installieren
 ```bash
