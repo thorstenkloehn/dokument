@@ -746,15 +746,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#golang-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Golang Installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#python-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Python Installieren
@@ -1724,15 +1715,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#golang-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Golang Installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#python-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Python Installieren
@@ -1981,16 +1963,6 @@ code --install-extension  ms-vscode.cpptools-extension-pack
 code --install-extension rust-lang.rust-analyzer
 sudo apt-get install cmake
 sudo apt-get install gdb
-</code></pre>
-<h2 id="golang-installieren">Golang Installieren</h2>
-<pre><code class="language-bash">cd $HOME
-wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.23.4.linux-amd64.tar.gz
-echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
-echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
-echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
-source ~/.bashrc
-go install github.com/google/osv-scanner/cmd/osv-scanner@v1
 </code></pre>
 <h2 id="python-installieren">Python Installieren</h2>
 <pre><code class="language-bash">sudo apt install python3 python3-pip python3-venv  python-is-python3
