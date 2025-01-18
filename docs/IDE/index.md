@@ -146,12 +146,9 @@ QT_DEBUG_PLUGINS=1 anki
 ```
 
 ## C Installieren
-```bash
-sudo apt  install curl 
+```bash 
 sudo apt install build-essential
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 code --install-extension  ms-vscode.cpptools-extension-pack
-code --install-extension rust-lang.rust-analyzer
 sudo apt-get install cmake
 sudo apt-get install gdb
 ```
