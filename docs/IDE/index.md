@@ -129,16 +129,7 @@ code --install-extension rust-lang.rust-analyzer
 sudo apt-get install cmake
 sudo apt-get install gdb
 ```
-## Golang
-```
-cd $HOME
-wget https://go.dev/dl/go1.23.5.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.23.5.linux-amd64.tar.gz
-echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
-echo 'export GOPATH=$HOME/go' >> ~/.bashrc
-echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
-source ~/.bashrc
-```
+
 ## Python Installieren
 ```bash
 sudo apt install python3 python3-pip python3-venv  python-is-python3
