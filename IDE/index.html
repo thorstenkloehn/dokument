@@ -737,9 +737,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#c-installieren" class="md-nav__link">
+  <a href="#c-und-rust-installieren" class="md-nav__link">
     <span class="md-ellipsis">
-      C Installieren
+      C und Rust Installieren
     </span>
   </a>
   
@@ -1706,9 +1706,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#c-installieren" class="md-nav__link">
+  <a href="#c-und-rust-installieren" class="md-nav__link">
     <span class="md-ellipsis">
-      C Installieren
+      C und Rust Installieren
     </span>
   </a>
   
@@ -1955,9 +1955,12 @@ QT_DEBUG_PLUGINS=1 anki
 <h4 id="erweiterungen-installieren">Erweiterungen installieren</h4>
 <pre><code class="language-bash">1436550454 1933645497 1463041493 1190756458
 </code></pre>
-<h2 id="c-installieren">C Installieren</h2>
-<pre><code class="language-bash">sudo apt install build-essential
+<h2 id="c-und-rust-installieren">C und Rust Installieren</h2>
+<pre><code class="language-bash">sudo apt  install curl 
+sudo apt install build-essential
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 code --install-extension  ms-vscode.cpptools-extension-pack
+code --install-extension rust-lang.rust-analyzer
 sudo apt-get install cmake
 sudo apt-get install gdb
 </code></pre>
