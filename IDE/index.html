@@ -680,6 +680,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#golang" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golang
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#python-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Python Installieren
@@ -698,13 +707,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-vorasusetzungen" class="md-nav__link">
+  <a href="#python-vorausetzu" class="md-nav__link">
     <span class="md-ellipsis">
-      Python Vorasusetzungen
+      Python Vorausetzu
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Python Vorasusetzungen">
+    <nav class="md-nav" aria-label="Python Vorausetzu">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1583,6 +1592,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#golang" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golang
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#python-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Python Installieren
@@ -1601,13 +1619,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-vorasusetzungen" class="md-nav__link">
+  <a href="#python-vorausetzu" class="md-nav__link">
     <span class="md-ellipsis">
-      Python Vorasusetzungen
+      Python Vorausetzu
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Python Vorasusetzungen">
+    <nav class="md-nav" aria-label="Python Vorausetzu">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1812,6 +1830,15 @@ code --install-extension rust-lang.rust-analyzer
 sudo apt-get install cmake
 sudo apt-get install gdb
 </code></pre>
+<h2 id="golang">Golang</h2>
+<pre><code>cd $HOME
+wget https://go.dev/dl/go1.23.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.23.5.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
+echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
+source ~/.bashrc
+</code></pre>
 <h2 id="python-installieren">Python Installieren</h2>
 <pre><code class="language-bash">sudo apt install python3 python3-pip python3-venv  python-is-python3
 code --install-extension  ms-python.python
@@ -1820,7 +1847,7 @@ code --install-extension  ms-python.python
 <pre><code class="language-bash">python3 -m venv .venv
 source .venv/bin/activate
 </code></pre>
-<h2 id="python-vorasusetzungen">Python Vorasusetzungen</h2>
+<h2 id="python-vorausetzu">Python Vorausetzu</h2>
 <h3 id="ubuntu">Ubuntu</h3>
 <pre><code class="language-bash">sudo apt-get install build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev  libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev uuid-dev#
 </code></pre>
