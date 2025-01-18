@@ -145,7 +145,7 @@ QT_DEBUG_PLUGINS=1 anki
 1436550454 1933645497 1463041493 1190756458
 ```
 
-## C Installieren
+## C und Rust Installieren
 ```bash
 sudo apt  install curl 
 sudo apt install build-essential
