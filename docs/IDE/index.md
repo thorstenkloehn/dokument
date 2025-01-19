@@ -117,6 +117,18 @@ drop database thorsten;
 \q
 ```
 
+## Golang Installieren
+
+```
+cd $HOME
+wget https://go.dev/dl/go1.23.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.23.5.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+source ~/.bashrc
+```
+
 
 
 ## C und Rust Installieren
