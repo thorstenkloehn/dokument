@@ -1828,7 +1828,7 @@ code --install-extension RoweWilsonFrederiskHolme.wikitext
 <pre><code class="language-bash">psql --version
 </code></pre>
 <h3 id="postgis-installation-in-ubuntu-2304">Postgis Installation in Ubuntu 23.04</h3>
-<pre><code class="language-bash">sudo apt install postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts
+<pre><code class="language-bash">sudo apt install postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts postgresql-16-pgvector
 </code></pre>
 <h3 id="installation-von-osm2pgsql-und-osmosis">Installation von osm2pgsql und osmosis</h3>
 <pre><code class="language-bash">sudo apt-get install osm2pgsql osmosis
@@ -1846,6 +1846,7 @@ createuser thorsten
 createdb -E UTF8 -O thorsten thorsten
 psql -d thorsten -c &quot;CREATE EXTENSION postgis;&quot; # Erweiterung hinzufügen
 psql -d thorsten -c &quot;CREATE EXTENSION hstore;&quot; # Erweiterung hinzufügen
+psql -d thorsten -c &quot;CREATE EXTENSION vector;&quot; # Erweiterung hinzufügen
 psql -d thorsten -c &quot;ALTER TABLE geometry_columns OWNER TO thorsten;&quot; # Rechte setzen
 psql -d thorsten -c &quot;ALTER TABLE spatial_ref_sys OWNER TO thorsten;&quot; # Rechte setzen
 psql -d thorsten -c &quot;\password thorsten&quot;
