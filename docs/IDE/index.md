@@ -144,6 +144,15 @@ curl -fsSL https://ollama.com/install.sh | sh
 python3 -m venv .venv
 source .venv/bin/activate
 ```
+## Spring boot
+```
+sudo apt install openjdk-21-jdk # Installiert OpenJDK 21
+sudo apt install maven # Installiert Maven
+code --install-extension  vscjava.vscode-java-pack # Installiert Java Extension Pack für Visual Studio Code
+code --install-extension  vmware.vscode-boot-dev-pack # Installiert Spring Boot Extension Pack für Visual S
+```
+
+
 
 ## Python Vorausetzu
 ### Ubuntu
