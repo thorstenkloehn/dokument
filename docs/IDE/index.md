@@ -65,7 +65,7 @@ psql --version
 
 ### Postgis Installation in Ubuntu 23.04
 ```bash
-sudo apt install postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts
+sudo apt install postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts postgresql-16-pgvector
 ```
 ### Installation von osm2pgsql und osmosis
 ```bash
@@ -88,6 +88,7 @@ createuser thorsten
 createdb -E UTF8 -O thorsten thorsten
 psql -d thorsten -c "CREATE EXTENSION postgis;" # Erweiterung hinzufügen
 psql -d thorsten -c "CREATE EXTENSION hstore;" # Erweiterung hinzufügen
+psql -d thorsten -c "CREATE EXTENSION vector;" # Erweiterung hinzufügen
 psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO thorsten;" # Rechte setzen
 psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO thorsten;" # Rechte setzen
 psql -d thorsten -c "\password thorsten"
