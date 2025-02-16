@@ -116,33 +116,7 @@ GRANT ALL PRIVILEGES ON DATABASE thorsten TO postgres;
 drop database thorsten;
 \q
 ```
-## Anki
-Anki ist ein Programm zum Lernen von Vokabeln und anderen Inhalten. Es ist für Windows, Linux und Mac OS X verfügbar. Anki ist Open Source und kostenlos. Es ist auch für Android und iOS verfügbar, aber diese Versionen sind nicht kostenlos.
 
-### Anforderungen
-```bash
-sudo apt install libxcb-xinerama0 libxcb-cursor0
-
-```
-### Anki herunterladen
-```bash
-cd $HOME
-wget https://github.com/ankitects/anki/releases/download/24.11/anki-24.11-linux-qt6.tar.zst
-```
-### Anki installieren
-```bash
-tar xaf anki-24.11-linux-qt6.tar.zst
-cd  anki-24.11-linux-qt6
-sudo ./install.sh
-QT_DEBUG_PLUGINS=1 anki
-```
-
-### Erweiterungen
-
-#### Erweiterungen installieren
-```bash
-1436550454 1933645497 1463041493 1190756458
-```
 ## C und Rust Installieren
 ```bash
 sudo apt  install curl 
@@ -159,6 +133,11 @@ sudo apt-get install gdb
 sudo apt install python3 python3-pip python3-venv  python-is-python3
 code --install-extension  ms-python.python
 ```
+## Download Ollama
+```
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
 ## Python Virtual Environment
 ```bash
 python3 -m venv .venv
