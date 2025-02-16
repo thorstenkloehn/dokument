@@ -135,6 +135,7 @@ code --install-extension  ms-python.python
 ```
 ## Download Ollama
 ```
+nvcc --version
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
