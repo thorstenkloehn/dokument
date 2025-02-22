@@ -165,10 +165,19 @@ sudo apt install maven # Installiert Maven
 code --install-extension  vscjava.vscode-java-pack # Installiert Java Extension Pack für Visual Studio Code
 code --install-extension  vmware.vscode-boot-dev-pack # Installiert Spring Boot Extension Pack für Visual S
 ```
+## dotnet
 
+```
+sudo apt-get update # Aktualisiert die Paketliste
+sudo apt-get install -y dotnet-sdk-9.0 # Installation des .NET SDK
+sudo apt-get install -y dotnet-sdk-8.0 # Installation des .NET SDK
+echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc # Hinzufügen des Pfads zum .bashrc
+source ~/.bashrc  # Aktualisierung der .bashrc
+code --install-extension ms-dotnettools.csdevkit # Installiert die C# Dev Kit Erweiterung
 
+```
 
-## Python Vorausetzu
+## Python Voraussetzung
 ### Ubuntu
 ```bash
 sudo apt-get install build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev  libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev uuid-dev#
