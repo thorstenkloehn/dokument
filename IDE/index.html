@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
     
     
       
@@ -737,13 +737,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-vorausetzu" class="md-nav__link">
+  <a href="#dotnet" class="md-nav__link">
     <span class="md-ellipsis">
-      Python Vorausetzu
+      dotnet
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Python Vorausetzu">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-voraussetzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Voraussetzung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Voraussetzung">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1686,13 +1695,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-vorausetzu" class="md-nav__link">
+  <a href="#dotnet" class="md-nav__link">
     <span class="md-ellipsis">
-      Python Vorausetzu
+      dotnet
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Python Vorausetzu">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-voraussetzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Voraussetzung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Voraussetzung">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1927,7 +1945,16 @@ sudo apt install maven # Installiert Maven
 code --install-extension  vscjava.vscode-java-pack # Installiert Java Extension Pack für Visual Studio Code
 code --install-extension  vmware.vscode-boot-dev-pack # Installiert Spring Boot Extension Pack für Visual S
 </code></pre>
-<h2 id="python-vorausetzu">Python Vorausetzu</h2>
+<h2 id="dotnet">dotnet</h2>
+<pre><code>sudo apt-get update # Aktualisiert die Paketliste
+sudo apt-get install -y dotnet-sdk-9.0 # Installation des .NET SDK
+sudo apt-get install -y dotnet-sdk-8.0 # Installation des .NET SDK
+echo 'export PATH=$HOME/.dotnet/tools:$PATH' &gt;&gt; ~/.bashrc # Hinzufügen des Pfads zum .bashrc
+source ~/.bashrc  # Aktualisierung der .bashrc
+code --install-extension ms-dotnettools.csdevkit # Installiert die C# Dev Kit Erweiterung
+
+</code></pre>
+<h2 id="python-voraussetzung">Python Voraussetzung</h2>
 <h3 id="ubuntu">Ubuntu</h3>
 <pre><code class="language-bash">sudo apt-get install build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev  libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev uuid-dev#
 </code></pre>
