@@ -10,6 +10,7 @@ nav:
     - Nginx SSL Zertifikat: Server/Nginx_SSL.md
     - PHP: Server/PHP.md
     - Nginx Einstellung: Server/nginx.md
+    - Ollama : Server/ollama.md
 
     
   - IDE: IDE/index.md  
