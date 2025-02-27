@@ -714,15 +714,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#golang-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Golang Installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#python-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Python Installieren
@@ -732,9 +723,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#download-ollama" class="md-nav__link">
+  <a href="#ollama-installieren" class="md-nav__link">
     <span class="md-ellipsis">
-      Download Ollama
+      Ollama Installieren
     </span>
   </a>
   
@@ -1672,15 +1663,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#golang-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Golang Installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#python-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Python Installieren
@@ -1690,9 +1672,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#download-ollama" class="md-nav__link">
+  <a href="#ollama-installieren" class="md-nav__link">
     <span class="md-ellipsis">
-      Download Ollama
+      Ollama Installieren
     </span>
   </a>
   
@@ -1876,6 +1858,7 @@ npm -v # Should print &quot;10.9.0&quot;.
 code --install-extension ckolkman.vscode-postgres
 code --install-extension  ms-ossdata.vscode-postgresql
 code --install-extension RoweWilsonFrederiskHolme.wikitext
+code --install-extension ms-windows-ai-studio.windows-ai-studio
 </code></pre>
 <h2 id="datenbank">Datenbank</h2>
 <h3 id="postgresql">PostgreSQL</h3>
@@ -1939,23 +1922,14 @@ code --install-extension rust-lang.rust-analyzer
 sudo apt-get install cmake
 sudo apt-get install gdb
 </code></pre>
-<h2 id="golang-installieren">Golang Installieren</h2>
-<pre><code>cd $HOME
-wget https://go.dev/dl/go1.24.0.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.24.0.linux-amd64.tar.gz
-echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
-echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
-echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
-source ~/.bashrc
-
-</code></pre>
 <h2 id="python-installieren">Python Installieren</h2>
 <pre><code class="language-bash">sudo apt install python3 python3-pip python3-venv  python-is-python3
 code --install-extension  ms-python.python
 </code></pre>
-<h2 id="download-ollama">Download Ollama</h2>
-<pre><code>nvcc --version
+<h2 id="ollama-installieren">Ollama Installieren</h2>
+<pre><code>
 curl -fsSL https://ollama.com/install.sh | sh
+
 </code></pre>
 <h2 id="python-virtual-environment">Python Virtual Environment</h2>
 <pre><code class="language-bash">python3 -m venv .venv
