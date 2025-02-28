@@ -23,5 +23,3 @@
     ```bash
     npm run ver  
     ```
-
-kkk
