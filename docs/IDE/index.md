@@ -142,6 +142,33 @@ code --install-extension  ms-python.python
 curl -fsSL https://ollama.com/install.sh | sh
 
 ```
+## Anki
+Anki ist ein Programm zum Lernen von Vokabeln und anderen Inhalten. Es ist für Windows, Linux und Mac OS X verfügbar. Anki ist Open Source und kostenlos. Es ist auch für Android und iOS verfügbar, aber diese Versionen sind nicht kostenlos.
+
+### Anforderungen
+```bash
+sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
+
+```
+### Anki herunterladen
+```bash
+cd $HOME
+wget https://github.com/ankitects/anki/releases/download/25.02/anki-25.02-linux-qt6.tar.zst
+```
+### Anki installieren
+```bash
+tar xaf anki-25.02-linux-qt6.tar.zst
+cd  anki-25.02-linux-qt6
+sudo ./install.sh
+QT_DEBUG_PLUGINS=1 anki
+```
+
+### Erweiterungen
+
+#### Erweiterungen installieren
+```bash
+1436550454 1933645497 1463041493 1190756458
+```
 
 ## Python Virtual Environment
 ```bash
