@@ -143,6 +143,26 @@ code --install-extension  ms-python.python
 curl -fsSL https://ollama.com/install.sh | sh
 
 ```
+## Spring boot
+```
+sudo apt install openjdk-21-jdk # Installiert OpenJDK 21
+sudo apt install maven # Installiert Maven
+code --install-extension  vscjava.vscode-java-pack # Installiert Java Extension Pack für Visual Studio Code
+code --install-extension  vmware.vscode-boot-dev-pack # Installiert Spring Boot Extension Pack für Visual S
+```
+## dotnet
+
+```
+sudo apt-get update # Aktualisiert die Paketliste
+sudo apt-get install -y dotnet-sdk-9.0 # Installation des .NET SDK
+sudo apt-get install -y dotnet-sdk-8.0 # Installation des .NET SDK
+echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc # Hinzufügen des Pfads zum .bashrc
+source ~/.bashrc  # Aktualisierung der .bashrc
+code --install-extension ms-dotnettools.csdevkit # Installiert die C# Dev Kit Erweiterung
+
+```
+
+
 ## Anki
 Anki ist ein Programm zum Lernen von Vokabeln und anderen Inhalten. Es ist für Windows, Linux und Mac OS X verfügbar. Anki ist Open Source und kostenlos. Es ist auch für Android und iOS verfügbar, aber diese Versionen sind nicht kostenlos.
 
