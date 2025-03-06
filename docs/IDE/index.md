@@ -128,6 +128,7 @@ code --install-extension  ms-vscode.cpptools-extension-pack
 code --install-extension rust-lang.rust-analyzer
 sudo apt-get install cmake
 sudo apt-get install gdb
+sudo apt install emscripten
 ```
 ## Golang Installieren
 ```
