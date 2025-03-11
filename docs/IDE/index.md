@@ -135,7 +135,24 @@ sudo apt install emscripten
 sudo apt install python3 python3-pip python3-venv  python-is-python3
 code --install-extension  ms-python.python
 ```
+## Spring boot
+```
+sudo apt install openjdk-21-jdk # Installiert OpenJDK 21
+sudo apt install maven # Installiert Maven
+code --install-extension  vscjava.vscode-java-pack # Installiert Java Extension Pack für Visual Studio Code
+code --install-extension  vmware.vscode-boot-dev-pack # Installiert Spring Boot Extension Pack für Visual S
+```
+## dotnet
 
+```
+sudo apt-get update # Aktualisiert die Paketliste
+sudo apt-get install -y dotnet-sdk-9.0 # Installation des .NET SDK
+sudo apt-get install -y dotnet-sdk-8.0 # Installation des .NET SDK
+echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc # Hinzufügen des Pfads zum .bashrc
+source ~/.bashrc  # Aktualisierung der .bashrc
+code --install-extension ms-dotnettools.csdevkit # Installiert die C# Dev Kit Erweiterung
+
+```
 Golang Installieren
 ```bash
 cd $HOME
