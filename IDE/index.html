@@ -723,24 +723,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spring-boot" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spring boot
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dotnet" class="md-nav__link">
-    <span class="md-ellipsis">
-      dotnet
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ollama-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Ollama Installieren
@@ -1738,24 +1720,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spring-boot" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spring boot
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dotnet" class="md-nav__link">
-    <span class="md-ellipsis">
-      dotnet
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ollama-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Ollama Installieren
@@ -2059,20 +2023,14 @@ sudo apt install emscripten
 <pre><code class="language-bash">sudo apt install python3 python3-pip python3-venv  python-is-python3
 code --install-extension  ms-python.python
 </code></pre>
-<h2 id="spring-boot">Spring boot</h2>
-<pre><code>sudo apt install openjdk-21-jdk # Installiert OpenJDK 21
-sudo apt install maven # Installiert Maven
-code --install-extension  vscjava.vscode-java-pack # Installiert Java Extension Pack für Visual Studio Code
-code --install-extension  vmware.vscode-boot-dev-pack # Installiert Spring Boot Extension Pack für Visual S
-</code></pre>
-<h2 id="dotnet">dotnet</h2>
-<pre><code>sudo apt-get update # Aktualisiert die Paketliste
-sudo apt-get install -y dotnet-sdk-9.0 # Installation des .NET SDK
-sudo apt-get install -y dotnet-sdk-8.0 # Installation des .NET SDK
-echo 'export PATH=$HOME/.dotnet/tools:$PATH' &gt;&gt; ~/.bashrc # Hinzufügen des Pfads zum .bashrc
-source ~/.bashrc  # Aktualisierung der .bashrc
-code --install-extension ms-dotnettools.csdevkit # Installiert die C# Dev Kit Erweiterung
-
+<p>Golang Installieren</p>
+<pre><code class="language-bash">cd $HOME
+wget https://go.dev/dl/go1.24.1.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.24.1.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
+echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
+source ~/.bashrc
 </code></pre>
 <h2 id="ollama-installieren">Ollama Installieren</h2>
 <pre><code>
