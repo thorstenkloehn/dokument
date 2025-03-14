@@ -723,6 +723,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#golang-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golang Installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#spring-boot" class="md-nav__link">
     <span class="md-ellipsis">
       Spring Boot
@@ -1738,6 +1747,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#golang-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golang Installieren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#spring-boot" class="md-nav__link">
     <span class="md-ellipsis">
       Spring Boot
@@ -2058,6 +2076,15 @@ sudo apt install emscripten
 <h2 id="python-installieren">Python Installieren</h2>
 <pre><code class="language-bash">sudo apt install python3 python3-pip python3-venv  python-is-python3
 code --install-extension  ms-python.python
+</code></pre>
+<h2 id="golang-installieren">Golang Installieren</h2>
+<pre><code class="language-bash">cd $HOME
+wget https://go.dev/dl/go1.24.1.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.24.1.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
+echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
+source ~/.bashrc
 </code></pre>
 <h2 id="spring-boot">Spring Boot</h2>
 <pre><code>sudo apt install openjdk-21-jdk # Installiert OpenJDK 21
