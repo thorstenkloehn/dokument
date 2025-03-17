@@ -10,29 +10,26 @@ nav:
     - Nginx SSL Zertifikat: Server/Nginx_SSL.md
     - PHP: Server/PHP.md
     - Nginx Einstellung: Server/nginx.md
-    - Ollama : Server/ollama.md
 
     
   - IDE: IDE/index.md  
   - Datenerfassung:
     - OpenDataKit: Datenerfassung/OpenDataKit.md
-  - Baukastensysteme:
-    - Geo Software: 
-      - Qgis: Baukastensysteme/Qgis.md
   - CMS:
     - Mediawiki: 
       - Installieren: CMS/Mediawiki/index.md
       - Backup: CMS/Mediawiki/Backup.md
       - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
-  - Frameworks:
-    - Django: 
-      - Installieren: CMS/Django/Installieren.md
   - Tools:
     - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
     - Benchmark: Tools/Benchmark.md
+  - Archiv:
+    - Ollama: Archiv/ollama.md
+    - Programmiersprachen: Archiv/Programmiersprachen
   - Impressum: Impressum.md
   - Datenschutz: Datenschutz.md
+
 theme:
   name: 'material'
   language: de
