@@ -1265,10 +1265,16 @@ $wgUsePathInfo = true;
 <h2 id="mediawiki-extensions-installieren">mediawiki extensions installieren</h2>
 <pre><code class="language-bash">sudo nano /var/www/mediawiki/LocalSettings.php
 </code></pre>
-<pre><code class="language-php">wfLoadExtension( 'CookieWarning' );
+<pre><code class="language-php">wfLoadSkin( 'MinervaNeue' );
+wfLoadSkin( 'MonoBook' );
+wfLoadSkin( 'Timeless' );
+wfLoadSkin( 'Vector' );
+wfLoadExtension( 'CookieWarning' );
 wfLoadExtension( 'SemanticMediaWiki' );
 enableSemantics( 'ahrensburg.city' );
 wfLoadExtension( 'Gadgets' );
+wfLoadExtension( 'Mermaid' );
+$mermaidgDefaultTheme = 'neutral';
 $wgCookieWarningEnabled=true;
 $wgCookieWarningMoreUrl='';
 $wgCookieWarningGeoIPServiceURL='';
@@ -1277,6 +1283,11 @@ $wgCookieWarningForCountryCodes=&quot;EU&quot;;
 $wgGroupPermissions['user']['move'] = false;
 wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
+wfLoadExtension( 'SyntaxHighlight_GeSHi' );
+wfLoadExtension( 'YouTube' ); 
+# End of automatically generated settings.
+# Add more configuration options below.
+;
 </code></pre>
 <h2 id="semantik-web">Semantik Web</h2>
 <pre><code class="language-bash">cd /var/wiki/mediawiki
