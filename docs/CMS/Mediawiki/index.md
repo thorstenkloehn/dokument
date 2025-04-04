@@ -2,7 +2,7 @@
 ```bash
 sudo -u postgres -i
 createdb -E UTF8 -O thorsten mediawiki
-psql -d mediawiki -c "GRANT ALL PRIVILEGES ON DATABASE mediawiki TO thorsten;"
+psql -d mediawiki -c "GRANT ALL PRIVILEGES ON DATABASE mediawiki TO thorsten
 
 exit
 ```
