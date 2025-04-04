@@ -2,6 +2,8 @@
 ```bash
 sudo -u postgres -i
 createdb -E UTF8 -O thorsten mediawiki
+psql -d mediawiki -c "GRANT ALL PRIVILEGES ON DATABASE mediawiki TO thorsten;"
+
 exit
 ```
 ## PHP installieren
@@ -79,7 +81,7 @@ wfLoadExtension( 'YouTube' );
 ```
 ## Semantik Web
 ```bash
-cd /var/wiki/mediawiki
+cd /var/www/mediawiki
 sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semantic-media-wiki
  sudo composer update --no-dev
  php maintenance/update.php
@@ -87,13 +89,13 @@ sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semant
 
 ## Maps
 ```bash
-cd /var/wiki/mediawiki
+cd /var/www/mediawiki
 COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
 composer update mediawiki/maps --no-dev -o
 ```
 ## Git clone extensions
 ```bash
-cd /var/wiki/mediawiki/extensions
+cd /var/www/mediawiki/extensions
 git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CookieWarning.git
 ```
 ## Weblinks
