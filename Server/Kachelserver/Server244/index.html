@@ -1519,7 +1519,7 @@ git pull --all
 git switch --detach v5.9.0
 </code></pre>
 <p>Als nächstes installieren wir eine geeignete Version des "carto"-Compilers.</p>
-<pre><code class="language-bash">sudo npm install -g carto
+<pre><code class="language-bash">npm install -g carto
 carto -v
 </code></pre>
 <p>Das sollte mit einer Zahl antworten, die mindestens so hoch ist wie:</p>
@@ -1615,7 +1615,7 @@ sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo systemctl stop nginx
 sudo certbot certonly --standalone -d ahrensburg.city -d www.ahrensburg.city
-sudo certbot certonly --standalone -d karte.ahrensburg.city
+
 </code></pre>
 <h2 id="neue-nutzer-hinzufugen">Neue Nutzer hinzufügen</h2>
 <pre><code class="language-bash">sudo adduser thorsten
