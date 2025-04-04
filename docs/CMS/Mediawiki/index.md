@@ -53,10 +53,16 @@ $wgUsePathInfo = true;
 sudo nano /var/www/mediawiki/LocalSettings.php
 ```
 ```php
+wfLoadSkin( 'MinervaNeue' );
+wfLoadSkin( 'MonoBook' );
+wfLoadSkin( 'Timeless' );
+wfLoadSkin( 'Vector' );
 wfLoadExtension( 'CookieWarning' );
 wfLoadExtension( 'SemanticMediaWiki' );
 enableSemantics( 'ahrensburg.city' );
 wfLoadExtension( 'Gadgets' );
+wfLoadExtension( 'Mermaid' );
+$mermaidgDefaultTheme = 'neutral';
 $wgCookieWarningEnabled=true;
 $wgCookieWarningMoreUrl='';
 $wgCookieWarningGeoIPServiceURL='';
@@ -65,6 +71,11 @@ $wgCookieWarningForCountryCodes="EU";
 $wgGroupPermissions['user']['move'] = false;
 wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
+wfLoadExtension( 'SyntaxHighlight_GeSHi' );
+wfLoadExtension( 'YouTube' ); 
+# End of automatically generated settings.
+# Add more configuration options below.
+;
 ```
 ## Semantik Web
 ```bash

@@ -150,6 +150,12 @@ cd ~/src/openstreetmap-carto/
 sudo -u _renderd psql -d gis -f indexes.sql
 ```
 Es sollte 16 Mal mit "CREATE INDEX" antworten.
+## Datenbankfunktionen
+In Version 5.9.0 von "OSM Carto" (veröffentlicht im Oktober 2024) müssen einige Funktionen manuell in die Datenbank geladen werden. Diese können jederzeit hinzugefügt / neu geladen werden mit:
+```bash
+cd ~/src/openstreetmap-carto/
+sudo -u _renderd psql -d gis -f functions.sql
+```
 ## Shapefile-Download
 Obwohl die meisten Daten, die zur Erstellung der Karte verwendet werden, direkt aus der oben heruntergeladenen OpenStreetMap-Datendatei stammen, werden immer noch einige Shapefiles für Dinge wie Ländergrenzen bei niedriger Zoomstufe benötigt. Um diese herunterzuladen und zu indizieren, verwenden wir das gleiche Konto wie zuvor:
 
