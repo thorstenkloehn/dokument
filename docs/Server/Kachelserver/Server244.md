@@ -43,10 +43,10 @@ Um Ihr Ubuntu-System zu aktualisieren und zu upgraden, können Sie die folgenden
 
    Der Befehl `sudo apt update` wird verwendet, um die Paketlisten für Upgrades für Pakete zu aktualisieren, die installiert werden müssen, und neue Pakete, die installiert werden können.
 
-   ```bash
-   sudo apt update
+```bash
+  sudo apt update
   sudo apt upgrade
-    ```
+```
 ## Nodjs Installation
 Anleitung zur Installation von Node.js auf Ubuntu 24.04 LTS
 ```
@@ -58,7 +58,7 @@ nvm install 22
 
 ## Installation weitere Pakete
 ```bash
-sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis
+sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis snapd
 ```
 An diesem Punkt wurden einige neue Konten hinzugefügt. Sie können sie mit "tail /etc/passwd" sehen. "postgres" wird zur Verwaltung der Datenbanken verwendet, die wir zur Speicherung von Daten für das Rendering verwenden. "_renderd" wird für den Renderd-Daemon verwendet, und wir müssen sicherstellen, dass viele der unten aufgeführten Befehle als dieser Benutzer ausgeführt werden.
 
