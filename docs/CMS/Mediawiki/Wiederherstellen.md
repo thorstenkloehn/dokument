@@ -1,5 +1,7 @@
 ## Wiedererstellen
 ```bash
+sudo apt-get install gh
+gh login
 cd /home/thorsten
 sudo gh repo clone thorstenkloehn/Download
 sudo chmod 777 -R Download
