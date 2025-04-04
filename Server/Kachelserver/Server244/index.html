@@ -1474,9 +1474,9 @@ exit
 <li><strong>System aktualisieren</strong></li>
 </ol>
 <p>Der Befehl <code>sudo apt update</code> wird verwendet, um die Paketlisten für Upgrades für Pakete zu aktualisieren, die installiert werden müssen, und neue Pakete, die installiert werden können.</p>
-<p><code>bash
-   sudo apt update
-  sudo apt upgrade</code></p>
+<pre><code class="language-bash">  sudo apt update
+  sudo apt upgrade
+</code></pre>
 <h2 id="nodjs-installation">Nodjs Installation</h2>
 <p>Anleitung zur Installation von Node.js auf Ubuntu 24.04 LTS</p>
 <pre><code>sudo apt-get install curl
@@ -1485,7 +1485,7 @@ source ~/.bashrc
 nvm install 22
 </code></pre>
 <h2 id="installation-weitere-pakete">Installation weitere Pakete</h2>
-<pre><code class="language-bash">sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis
+<pre><code class="language-bash">sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis snapd
 </code></pre>
 <p>An diesem Punkt wurden einige neue Konten hinzugefügt. Sie können sie mit "tail /etc/passwd" sehen. "postgres" wird zur Verwaltung der Datenbanken verwendet, die wir zur Speicherung von Daten für das Rendering verwenden. "_renderd" wird für den Renderd-Daemon verwendet, und wir müssen sicherstellen, dass viele der unten aufgeführten Befehle als dieser Benutzer ausgeführt werden.</p>
 <p>Jetzt müssen Sie eine PostGIS-Datenbank erstellen. Die Standardwerte verschiedener Programme gehen davon aus, dass die Datenbank "gis" heißt und wir werden in diesem Tutorial die gleiche Konvention verwenden, obwohl dies nicht notwendig ist. Beachten Sie, dass "_renderd" unten dem Benutzer entspricht, unter dem der Renderd-Daemon ausgeführt wird.</p>

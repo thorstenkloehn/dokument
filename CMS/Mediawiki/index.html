@@ -1227,6 +1227,8 @@
 <h2 id="postgres-datenbank-erstellen">Postgres Datenbank erstellen</h2>
 <pre><code class="language-bash">sudo -u postgres -i
 createdb -E UTF8 -O thorsten mediawiki
+psql -d mediawiki -c &quot;GRANT ALL PRIVILEGES ON DATABASE mediawiki TO thorsten;&quot;
+
 exit
 </code></pre>
 <h2 id="php-installieren">PHP installieren</h2>
@@ -1290,18 +1292,18 @@ wfLoadExtension( 'YouTube' );
 ;
 </code></pre>
 <h2 id="semantik-web">Semantik Web</h2>
-<pre><code class="language-bash">cd /var/wiki/mediawiki
+<pre><code class="language-bash">cd /var/www/mediawiki
 sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semantic-media-wiki
  sudo composer update --no-dev
  php maintenance/update.php
 </code></pre>
 <h2 id="maps">Maps</h2>
-<pre><code class="language-bash">cd /var/wiki/mediawiki
+<pre><code class="language-bash">cd /var/www/mediawiki
 COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
 composer update mediawiki/maps --no-dev -o
 </code></pre>
 <h2 id="git-clone-extensions">Git clone extensions</h2>
-<pre><code class="language-bash">cd /var/wiki/mediawiki/extensions
+<pre><code class="language-bash">cd /var/www/mediawiki/extensions
 git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CookieWarning.git
 </code></pre>
 <h2 id="weblinks">Weblinks</h2>
