@@ -718,9 +718,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spring-boot" class="md-nav__link">
+  <a href="#rust" class="md-nav__link">
     <span class="md-ellipsis">
-      Spring Boot
+      Rust
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golang" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golang
     </span>
   </a>
   
@@ -1311,29 +1320,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Archiv/Programmiersprachen" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Programmiersprachen
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1614,9 +1600,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#spring-boot" class="md-nav__link">
+  <a href="#rust" class="md-nav__link">
     <span class="md-ellipsis">
-      Spring Boot
+      Rust
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golang" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golang
     </span>
   </a>
   
@@ -1923,11 +1918,19 @@ sudo apt-get install gdb
 <pre><code class="language-bash">sudo apt install python3 python3-pip python3-venv  python-is-python3
 code --install-extension  ms-python.python
 </code></pre>
-<h2 id="spring-boot">Spring Boot</h2>
-<pre><code>sudo apt install openjdk-21-jdk # Installiert OpenJDK 21
-sudo apt install maven # Installiert Maven
-code --install-extension  vscjava.vscode-java-pack # Installiert Java Extension Pack für Visual Studio Code
-code --install-extension  vmware.vscode-boot-dev-pack # Installiert Spring Boot Extension Pack für Visual S
+<h2 id="rust">Rust</h2>
+<pre><code>curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+code --install-extension rust-lang.rust-analyzer
+
+</code></pre>
+<h2 id="golang">Golang</h2>
+<pre><code>cd $HOME
+wget https://go.dev/dl/go1.24.2.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.24.2.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
+echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
+source ~/.bashrc
 </code></pre>
 <h2 id="dotnet">dotnet</h2>
 <pre><code>sudo apt-get update # Aktualisiert die Paketliste
