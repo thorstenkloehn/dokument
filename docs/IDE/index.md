@@ -234,3 +234,8 @@ code --install-extension  ms-vscode.remote-server
 #### Quellangabe
 * Quelle: [Download](https://www.python.org/downloads)
 * Quelle: [Installieren Anleitung](https://wiki.ubuntuusers.de/Python/)
+
+## Startmedienersteller
+```
+sudo apt-get install usb-creator-gtk 
+```
