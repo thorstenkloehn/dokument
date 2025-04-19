@@ -67,7 +67,7 @@ psql --version
 
 ### Postgis Installation in Ubuntu 23.04
 ```bash
-sudo apt install postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts postgresql-16-pgvector
+sudo apt install postgis postgresql-17-postgis-3 postgresql-17-postgis-3-scripts postgresql-17-pgvector
 ```
 ### Installation von osm2pgsql und osmosis
 ```bash
