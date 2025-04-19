@@ -5,6 +5,7 @@
 ```bash
 sudo apt-get update 
 sudo apt-get upgrade
+sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
 ```
 ## Google Chrome Installieren
 
