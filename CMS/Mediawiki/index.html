@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -702,15 +702,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#composer-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Composer installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#mediawiki-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Mediawiki installieren
@@ -723,51 +714,6 @@
   <a href="#lesbare-urls-konfiguriern-in-mediawiki" class="md-nav__link">
     <span class="md-ellipsis">
       Lesbare URLs konfiguriern in mediawiki
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mediawiki-extensions-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      mediawiki extensions installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#semantik-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      Semantik Web
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Maps
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-clone-extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git clone extensions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#weblinks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Weblinks
     </span>
   </a>
   
@@ -1112,15 +1058,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#composer-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Composer installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#mediawiki-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       Mediawiki installieren
@@ -1133,51 +1070,6 @@
   <a href="#lesbare-urls-konfiguriern-in-mediawiki" class="md-nav__link">
     <span class="md-ellipsis">
       Lesbare URLs konfiguriern in mediawiki
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mediawiki-extensions-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      mediawiki extensions installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#semantik-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      Semantik Web
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Maps
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-clone-extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git clone extensions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#weblinks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Weblinks
     </span>
   </a>
   
@@ -1211,14 +1103,6 @@ exit
 <h2 id="php-installieren">PHP installieren</h2>
 <pre><code class="language-bash">sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-intl -y
 </code></pre>
-<h2 id="composer-installieren">Composer installieren</h2>
-<pre><code class="language-bash">php -r &quot;copy('https://getcomposer.org/installer', 'composer-setup.php');&quot;
-php -r &quot;if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;&quot;
-php composer-setup.php
-php -r &quot;unlink('composer-setup.php');&quot;
-
-sudo mv composer.phar /usr/local/bin/composer
-</code></pre>
 <h2 id="mediawiki-installieren">Mediawiki installieren</h2>
 <pre><code class="language-bash">cd /var/www
 sudo git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
@@ -1241,52 +1125,16 @@ $wgArticlePath = &quot;/$1&quot;;
 $wgUsePathInfo = true;
 
 </code></pre>
-<h2 id="mediawiki-extensions-installieren">mediawiki extensions installieren</h2>
+<p>Erweiterung Registieren</p>
 <pre><code class="language-bash">sudo nano /var/www/mediawiki/LocalSettings.php
 </code></pre>
-<pre><code class="language-php">wfLoadSkin( 'MinervaNeue' );
-wfLoadSkin( 'MonoBook' );
-wfLoadSkin( 'Timeless' );
-wfLoadSkin( 'Vector' );
-wfLoadExtension( 'CookieWarning' );
-wfLoadExtension( 'SemanticMediaWiki' );
-enableSemantics( 'ahrensburg.city' );
-wfLoadExtension( 'Gadgets' );
-wfLoadExtension( 'Mermaid' );
-$mermaidgDefaultTheme = 'neutral';
+<pre><code>wfLoadExtension( 'CookieWarning' );
 $wgCookieWarningEnabled=true;
 $wgCookieWarningMoreUrl='';
 $wgCookieWarningGeoIPServiceURL='';
 $wgCookieWarningGeoIPLookup='none';
 $wgCookieWarningForCountryCodes=&quot;EU&quot;;
-$wgGroupPermissions['user']['move'] = false;
-wfLoadExtension( 'Maps' );
-$egMapsDefaultService = 'leaflet';
-wfLoadExtension( 'SyntaxHighlight_GeSHi' );
-wfLoadExtension( 'YouTube' ); 
-# End of automatically generated settings.
-# Add more configuration options below.
-;
 </code></pre>
-<h2 id="semantik-web">Semantik Web</h2>
-<pre><code class="language-bash">cd /var/www/mediawiki
-sudo COMPOSER=composer.local.json  composer require --no-update mediawiki/semantic-media-wiki
- sudo composer update --no-dev
- php maintenance/update.php
-</code></pre>
-<h2 id="maps">Maps</h2>
-<pre><code class="language-bash">cd /var/www/mediawiki
-COMPOSER=composer.local.json composer require --no-update mediawiki/maps:~10.1
-composer update mediawiki/maps --no-dev -o
-</code></pre>
-<h2 id="git-clone-extensions">Git clone extensions</h2>
-<pre><code class="language-bash">cd /var/www/mediawiki/extensions
-git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CookieWarning.git
-</code></pre>
-<h2 id="weblinks">Weblinks</h2>
-<ul>
-<li><a href="https://www.mediawiki.org/wiki/Download_from_Git">Git clone</a></li>
-</ul>
 
 
 
@@ -1380,10 +1228,10 @@ git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CookieWarning.git
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
