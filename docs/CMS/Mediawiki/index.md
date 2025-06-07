@@ -36,11 +36,27 @@ sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/va
 sudo nano /var/www/mediawiki/LocalSettings.php
 ```
 
+
+
+
 ```php
 $wgScriptPath = "";
 $wgArticlePath = "/$1";
 $wgUsePathInfo = true;
 
+```
+Erweiterung Registieren
+```bash
+sudo nano /var/www/mediawiki/LocalSettings.php
+```
+
+```
+wfLoadExtension( 'CookieWarning' );
+$wgCookieWarningEnabled=true;
+$wgCookieWarningMoreUrl='';
+$wgCookieWarningGeoIPServiceURL='';
+$wgCookieWarningGeoIPLookup='none';
+$wgCookieWarningForCountryCodes="EU";
 ```
 
 
