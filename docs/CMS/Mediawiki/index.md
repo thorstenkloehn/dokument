@@ -42,3 +42,5 @@ $wgArticlePath = "/$1";
 $wgUsePathInfo = true;
 
 ```
+
+
