@@ -63,11 +63,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#wiedererstellen" class="md-skip">
-          Zum Inhalt
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -631,7 +626,7 @@
   <span class="md-ellipsis">
     
   
-    CMS
+    Mediawiki
   
 
     
@@ -644,55 +639,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CMS
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mediawiki
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -772,24 +718,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Wiedererstellen
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -806,42 +734,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wiedererstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Wiedererstellen
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1147,25 +1039,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wiedererstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Wiedererstellen
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1183,15 +1056,12 @@
 
   <h1>Wiedererstellen</h1>
 
-<h2 id="wiedererstellen">Wiedererstellen</h2>
-<pre><code class="language-bash">sudo apt-get install gh
-gh auth login
-cd /home/thorsten
-sudo gh repo clone thorstenkloehn/Download
-sudo chmod 777 -R Download
-cd /home/thorsten/Download
-php /var/www/mediawiki/maintenance/run.php importDump.php &lt; /home/thorsten/Download/pagedump.xml
+<pre><code class="language-bash"># Repository klonen (ohne sudo, falls möglich)
+git clone https://github.com/thorstenkloehn/Download.git ~/Download
+cd ~/Download
 
+# MediaWiki-Dump importieren
+php /var/www/mediawiki/maintenance/run.php importDump.php &lt; pagedump.xml
 </code></pre>
 
 

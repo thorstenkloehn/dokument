@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tools-fur-backup-und-restore-von-mediawiki" class="md-skip">
+        <a href="#backup-erstellen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -631,7 +631,7 @@
   <span class="md-ellipsis">
     
   
-    CMS
+    Mediawiki
   
 
     
@@ -644,55 +644,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CMS
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mediawiki
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -793,63 +744,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tools-fur-backup-und-restore-von-mediawiki" class="md-nav__link">
+  <a href="#backup-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tools für Backup und Restore von MediaWiki
+        Backup erstellen
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Tools für Backup und Restore von MediaWiki">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Git installieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-cli-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub CLI installieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-cli-anmelden" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub CLI anmelden
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#backup-fur-mediawiki-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Backup für MediaWiki erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -885,14 +786,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1204,63 +1097,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tools-fur-backup-und-restore-von-mediawiki" class="md-nav__link">
+  <a href="#backup-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tools für Backup und Restore von MediaWiki
+        Backup erstellen
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Tools für Backup und Restore von MediaWiki">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Git installieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-cli-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub CLI installieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-cli-anmelden" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub CLI anmelden
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#backup-fur-mediawiki-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Backup für MediaWiki erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1283,37 +1126,14 @@
 
   <h1>Backup</h1>
 
-<h2 id="tools-fur-backup-und-restore-von-mediawiki">Tools für Backup und Restore von MediaWiki</h2>
-<h3 id="git-installieren">Git installieren</h3>
-<pre><code class="language-bash">sudo apt-get update 
-sudo apt-get upgrade
-
-sudo apt-get install git
-
-git config --global user.email &quot;you@example.com&quot;
-git config --global user.name &quot;Your Name&quot;
-</code></pre>
-<h3 id="github-cli-installieren">GitHub CLI installieren</h3>
-<pre><code class="language-bash">(type -p wget &gt;/dev/null || (sudo apt update &amp;&amp; sudo apt-get install wget -y)) \
-&amp;&amp; sudo mkdir -p -m 755 /etc/apt/keyrings \
-&amp;&amp; wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg &gt; /dev/null \
-&amp;&amp; sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
-&amp;&amp; echo &quot;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main&quot; | sudo tee /etc/apt/sources.list.d/github-cli.list &gt; /dev/null \
-&amp;&amp; sudo apt update \
-&amp;&amp; sudo apt install gh -y
-</code></pre>
-<h3 id="github-cli-anmelden">GitHub CLI anmelden</h3>
-<pre><code class="language-bash">gh auth login
-
-</code></pre>
-<h3 id="backup-fur-mediawiki-erstellen">Backup für MediaWiki erstellen</h3>
+<h2 id="backup-erstellen">Backup erstellen</h2>
 <pre><code class="language-bash">cd /home/thorsten
 gh repo clone thorstenkloehn/Download
 sudo chmod 777 -R Download
 cd /home/thorsten/Download
 sudo rm /home/thorsten/Download/pagedump.xml
-php /var/www/mediawiki/maintenance/dumpBackup.php --full &gt; /home/thorsten/Download/pagedump.xml
-git add .
+ssh root@ahrensburg.city &quot;php /var/www/mediawiki/mediawiki/maintenance/dumpBackup.php --full&quot; &gt; /home/thorsten/Download/pagedump.xml
+git add pagedump.xml
 git commit -m &quot;Backup&quot;
 git push
 </code></pre>
