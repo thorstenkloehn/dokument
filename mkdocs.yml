@@ -8,13 +8,10 @@ nav:
       - Server24.04: Server/Kachelserver/Server244.md
     - Apache-Server mit Nginx verbinden: Server/Apache_Nginx.md
     - Nginx SSL Zertifikat: Server/Nginx_SSL.md
-    - PHP: Server/PHP.md
     - Nginx Einstellung: Server/nginx.md
-
-    
+    - Weiter Software: Server/Software.md
   - IDE: IDE/index.md  
-  - Datenerfassung:
-    - OpenDataKit: Datenerfassung/OpenDataKit.md
+  
   - CMS:
     - Mediawiki: 
       - Installieren: CMS/Mediawiki/index.md

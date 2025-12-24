@@ -263,4 +263,64 @@ osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10
 
 osm2pgsql  -d thorsten --create  -G --hstore  ahrensburg.pbf
 ```
+---
+
+## Debug-Logging für renderd aktivieren
+Um detaillierte Fehlermeldungen und Debug-Ausgaben vom Renderd-Dienst zu erhalten, kann folgende Zeile in der Service-Datei ergänzt werden:
+
+```bash
+sudo nano /usr/lib/systemd/system/renderd.service
+```
+Füge unterhalb von `[Service]` diese Zeile ein:
+
+```
+Environment=G_MESSAGES_DEBUG=all
+```
+Danach die Konfiguration neu laden und Dienste neu starten:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart renderd
+sudo systemctl restart apache2
+```
+
+## Beispiel-HTML für Leaflet zum Testen der Tiles
+Um die Kacheln im Browser zu testen, kann eine Beispielseite mit Leaflet verwendet werden:
+
+```bash
+cd /var/www/html
+sudo wget https://raw.githubusercontent.com/SomeoneElseOSM/mod_tile/switch2osm/extra/sample_leaflet.html
+sudo nano sample_leaflet.html
+```
+Passe darin die IP-Adresse (`127.0.0.1`) auf die Adresse deines Servers an, damit du von anderen Geräten darauf zugreifen kannst. Rufe dann im Browser auf:
+
+```
+http://<deine-server-ip>/sample_leaflet.html
+```
+
+## Monitoring der Tile-Requests
+Um Tile-Anfragen und Render-Vorgänge live zu überwachen, kann folgender Befehl genutzt werden:
+
+```bash
+tail -f /var/log/syslog | grep " TILE "
+```
+So siehst du, wann Tiles angefragt und wann sie fertig gerendert werden.
+
+## ModTileMissingRequestTimeout erhöhen
+Falls Kacheln zu schnell als "grau" angezeigt werden, kann der Timeout in der Datei `/etc/apache2/conf-available/renderd.conf` angepasst werden:
+
+```bash
+sudo nano /etc/apache2/conf-available/renderd.conf
+```
+Erhöhe z.B.:
+
+```
+ModTileMissingRequestTimeout 30
+```
+Danach Renderd und Apache neu starten:
+
+```bash
+sudo systemctl restart renderd
+sudo systemctl restart apache2
+```
 
