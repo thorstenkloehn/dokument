@@ -15,8 +15,11 @@
         <link rel="next" href="../Nginx_SSL/">
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -24,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -49,7 +52,6 @@
 
     
     
-    
   </head>
   
   
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kachelserver-mit-apache-server-port-80-auf-8080-umleiten" class="md-skip">
+        <a href="#apache-auf-port-8080-betreiben-statt-80" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -199,9 +201,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Starseite
+  
+
     
   </span>
+  
   
 
       </a>
@@ -234,9 +241,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Server
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -245,7 +257,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Server
+            
+  
+    Server
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -272,9 +288,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Kachelserver
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -283,7 +304,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
-            Kachelserver
+            
+  
+    Kachelserver
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -299,9 +324,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Server20.04
+  
+
     
   </span>
+  
   
 
       </a>
@@ -322,9 +352,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Server22.04
+  
+
     
   </span>
+  
   
 
       </a>
@@ -345,9 +380,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Server24.04
+  
+
     
   </span>
+  
   
 
       </a>
@@ -383,9 +423,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Apache-Server mit Nginx verbinden
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -396,9 +441,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Apache-Server mit Nginx verbinden
+  
+
     
   </span>
+  
   
 
       </a>
@@ -417,9 +467,150 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#apache-auf-port-8080-betreiben-statt-80" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apache auf Port 8080 betreiben (statt 80)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Apache auf Port 8080 betreiben (statt 80)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-apache-port-andern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Apache-Port ändern
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 1: Apache-Port ändern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fur-ubuntu-2004-vhost-anpassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Für Ubuntu 20.04: VHost anpassen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fur-ubuntu-22042404-und-neuer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Für Ubuntu 22.04/24.04 und neuer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-apache-neu-starten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Apache neu starten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-firewall-anpassen-falls-aktiv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Firewall anpassen (falls aktiv)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hinweise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hinweise
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-als-reverse-proxy-vor-apache-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nginx als Reverse Proxy vor Apache (optional)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nginx als Reverse Proxy vor Apache (optional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-konfiguration-fur-etcnginxsites-availabledefault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel-Konfiguration für /etc/nginx/sites-available/default:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssl-mit-lets-encrypt-certbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSL mit Let's Encrypt (Certbot)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fehlerbehebung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fehlerbehebung
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#kachelserver-mit-apache-server-port-80-auf-8080-umleiten" class="md-nav__link">
     <span class="md-ellipsis">
-      Kachelserver mit Apache-Server Port 80 auf 8080 umleiten
+      
+        Kachelserver mit Apache-Server Port 80 auf 8080 umleiten
+      
     </span>
   </a>
   
@@ -429,7 +620,9 @@
           <li class="md-nav__item">
   <a href="#mit-ubuntu-2004-lts" class="md-nav__link">
     <span class="md-ellipsis">
-      Mit Ubuntu 20.04 LTS
+      
+        Mit Ubuntu 20.04 LTS
+      
     </span>
   </a>
   
@@ -438,7 +631,9 @@
           <li class="md-nav__item">
   <a href="#mit-ubuntu-2204-lts-oder-hoher" class="md-nav__link">
     <span class="md-ellipsis">
-      Mit Ubuntu 22.04 LTS oder höher
+      
+        Mit Ubuntu 22.04 LTS oder höher
+      
     </span>
   </a>
   
@@ -470,32 +665,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Nginx SSL Zertifikat
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PHP/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    PHP
-    
-  </span>
   
 
       </a>
@@ -516,9 +693,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Nginx Einstellung
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weiter Software
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -546,9 +756,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     IDE
+  
+
     
   </span>
+  
   
 
       </a>
@@ -579,9 +794,14 @@
   
   
   <span class="md-ellipsis">
-    Datenerfassung
+    
+  
+    CMS
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -590,7 +810,58 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Datenerfassung
+            
+  
+    CMS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mediawiki
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mediawiki
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -601,17 +872,86 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Datenerfassung/OpenDataKit/" class="md-nav__link">
+      <a href="../../CMS/Mediawiki/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OpenDataKit
+    
+  
+    Installieren
+  
+
     
   </span>
   
+  
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CMS/Mediawiki/Backup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CMS/Mediawiki/Wiederherstellen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wiedererstellen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -647,9 +987,14 @@
   
   
   <span class="md-ellipsis">
-    CMS
+    
+  
+    Tools
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -658,45 +1003,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            CMS
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
             
   
-  
-  <span class="md-ellipsis">
-    Mediawiki
-    
-  </span>
+    Tools
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_1">
-            <span class="md-nav__icon md-icon"></span>
-            Mediawiki
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -707,14 +1018,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CMS/Mediawiki/" class="md-nav__link">
+      <a href="../../Tools/Pandoc/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Installieren
+    
+  
+    Pandoc
+  
+
     
   </span>
+  
   
 
       </a>
@@ -730,14 +1046,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CMS/Mediawiki/Backup/" class="md-nav__link">
+      <a href="../../Tools/Analysetool/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Backup
+    
+  
+    Analysetool
+  
+
     
   </span>
+  
   
 
       </a>
@@ -753,25 +1074,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CMS/Mediawiki/Wiederherstellen/" class="md-nav__link">
+      <a href="../../Tools/Benchmark/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Wiedererstellen
+    
+  
+    Benchmark
+  
+
     
   </span>
   
-
-      </a>
-    </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
+      </a>
     </li>
   
 
@@ -807,9 +1125,14 @@
   
   
   <span class="md-ellipsis">
-    Tools
+    
+  
+    Archiv
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -818,121 +1141,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Tools
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Tools/Pandoc/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Pandoc
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Tools/Analysetool/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Analysetool
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Tools/Benchmark/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Benchmark
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
-  
-  <span class="md-ellipsis">
     Archiv
-    
-  </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Archiv
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -948,9 +1161,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Ollama
+  
+
     
   </span>
+  
   
 
       </a>
@@ -978,9 +1196,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Impressum
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1000,9 +1223,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Datenschutz
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1035,9 +1263,150 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#apache-auf-port-8080-betreiben-statt-80" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apache auf Port 8080 betreiben (statt 80)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Apache auf Port 8080 betreiben (statt 80)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-apache-port-andern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Apache-Port ändern
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 1: Apache-Port ändern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fur-ubuntu-2004-vhost-anpassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Für Ubuntu 20.04: VHost anpassen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fur-ubuntu-22042404-und-neuer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Für Ubuntu 22.04/24.04 und neuer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-apache-neu-starten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Apache neu starten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-firewall-anpassen-falls-aktiv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Firewall anpassen (falls aktiv)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hinweise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hinweise
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-als-reverse-proxy-vor-apache-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nginx als Reverse Proxy vor Apache (optional)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nginx als Reverse Proxy vor Apache (optional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-konfiguration-fur-etcnginxsites-availabledefault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beispiel-Konfiguration für /etc/nginx/sites-available/default:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssl-mit-lets-encrypt-certbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSL mit Let's Encrypt (Certbot)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fehlerbehebung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fehlerbehebung
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#kachelserver-mit-apache-server-port-80-auf-8080-umleiten" class="md-nav__link">
     <span class="md-ellipsis">
-      Kachelserver mit Apache-Server Port 80 auf 8080 umleiten
+      
+        Kachelserver mit Apache-Server Port 80 auf 8080 umleiten
+      
     </span>
   </a>
   
@@ -1047,7 +1416,9 @@
           <li class="md-nav__item">
   <a href="#mit-ubuntu-2004-lts" class="md-nav__link">
     <span class="md-ellipsis">
-      Mit Ubuntu 20.04 LTS
+      
+        Mit Ubuntu 20.04 LTS
+      
     </span>
   </a>
   
@@ -1056,7 +1427,9 @@
           <li class="md-nav__item">
   <a href="#mit-ubuntu-2204-lts-oder-hoher" class="md-nav__link">
     <span class="md-ellipsis">
-      Mit Ubuntu 22.04 LTS oder höher
+      
+        Mit Ubuntu 22.04 LTS oder höher
+      
     </span>
   </a>
   
@@ -1077,6 +1450,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -1085,6 +1459,71 @@
 
   <h1>Apache-Server mit Nginx verbinden</h1>
 
+<h2 id="apache-auf-port-8080-betreiben-statt-80">Apache auf Port 8080 betreiben (statt 80)</h2>
+<p>Diese Anleitung beschreibt, wie der Apache-Webserver auf Port 8080 statt dem Standard-Port 80 betrieben wird. Dies ist z.B. sinnvoll, wenn ein anderer Dienst (wie Nginx oder ein Reverse Proxy) Port 80 belegt oder Sie Apache absichern möchten.</p>
+<h3 id="schritt-1-apache-port-andern">Schritt 1: Apache-Port ändern</h3>
+<p>Öffne die Datei <code>/etc/apache2/ports.conf</code>:</p>
+<pre><code class="language-bash">sudo nano /etc/apache2/ports.conf
+</code></pre>
+<p>Füge (oder ändere) folgende Zeile:</p>
+<pre><code>Listen 8080
+</code></pre>
+<h4 id="fur-ubuntu-2004-vhost-anpassen">Für Ubuntu 20.04: VHost anpassen</h4>
+<p>Öffne die Datei <code>/etc/apache2/sites-available/000-default.conf</code> und passe den VirtualHost an:</p>
+<pre><code class="language-bash">sudo nano /etc/apache2/sites-available/000-default.conf
+</code></pre>
+<p>Ändere die Zeile zu:</p>
+<pre><code>&lt;VirtualHost *:8080&gt;
+</code></pre>
+<h4 id="fur-ubuntu-22042404-und-neuer">Für Ubuntu 22.04/24.04 und neuer</h4>
+<p>Meist reicht es, nur die <code>ports.conf</code> zu ändern. Prüfe aber, ob in den VHost-Dateien noch explizit auf Port 80 verwiesen wird.</p>
+<h3 id="schritt-2-apache-neu-starten">Schritt 2: Apache neu starten</h3>
+<pre><code class="language-bash">sudo systemctl restart apache2
+</code></pre>
+<h3 id="schritt-3-firewall-anpassen-falls-aktiv">Schritt 3: Firewall anpassen (falls aktiv)</h3>
+<p>Erlaube Port 8080:</p>
+<pre><code class="language-bash">sudo ufw allow 8080/tcp
+</code></pre>
+<h3 id="hinweise">Hinweise</h3>
+<ul>
+<li>Nach der Umstellung ist Apache unter http://<server-ip>:8080 erreichbar.</li>
+<li>Prüfe, ob andere Dienste Port 80 nutzen (z.B. Nginx, Certbot, etc.).</li>
+</ul>
+<hr />
+<h2 id="nginx-als-reverse-proxy-vor-apache-optional">Nginx als Reverse Proxy vor Apache (optional)</h2>
+<p>Wenn du möchtest, dass Anfragen an Port 80 (und ggf. 443) von Nginx entgegengenommen und an Apache auf Port 8080 weitergeleitet werden, kannst du Nginx als Reverse Proxy konfigurieren:</p>
+<h3 id="beispiel-konfiguration-fur-etcnginxsites-availabledefault">Beispiel-Konfiguration für <code>/etc/nginx/sites-available/default</code>:</h3>
+<pre><code class="language-nginx">server {
+    listen 80;
+    server_name _;
+
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+</code></pre>
+<p>Danach Nginx neu starten:</p>
+<pre><code class="language-bash">sudo systemctl restart nginx
+</code></pre>
+<hr />
+<h2 id="ssl-mit-lets-encrypt-certbot">SSL mit Let's Encrypt (Certbot)</h2>
+<p>Wenn du HTTPS nutzen möchtest, kannst du Certbot verwenden. Beispiel für Nginx:</p>
+<pre><code class="language-bash">sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot --nginx
+</code></pre>
+<p>Folge den Anweisungen, um ein Zertifikat zu erhalten.</p>
+<hr />
+<h2 id="fehlerbehebung">Fehlerbehebung</h2>
+<ul>
+<li>Prüfe mit <code>sudo netstat -tulpen | grep 80</code>, ob Port 80 noch von einem anderen Dienst belegt ist.</li>
+<li>Apache-Logs findest du unter <code>/var/log/apache2/</code>.</li>
+<li>Nginx-Logs unter <code>/var/log/nginx/</code>.</li>
+</ul>
 <h2 id="kachelserver-mit-apache-server-port-80-auf-8080-umleiten">Kachelserver mit Apache-Server Port 80 auf 8080 umleiten</h2>
 <h3 id="mit-ubuntu-2004-lts">Mit Ubuntu 20.04 LTS</h3>
 <p>Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:</p>
@@ -1210,10 +1649,11 @@ Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
