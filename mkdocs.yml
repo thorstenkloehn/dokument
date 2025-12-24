@@ -11,7 +11,7 @@ nav:
     - Nginx SSL Zertifikat: Server/Nginx_SSL.md
     - Nginx Einstellung: Server/nginx.md
     - Weiter Software: Server/Software.md
-    - Gitea: Server/Gitea.md
+    - Forgejo: Server/Forgejo.md
   - IDE: IDE/index.md  
   - Mediawiki: 
     - Installieren: CMS/Mediawiki/index.md
