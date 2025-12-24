@@ -1,242 +1,173 @@
-## Aktualisieren
+# Entwicklungsumgebung unter Ubuntu einrichten
 
-- Öffne Sie das Terminal und auf ihrem Ubuntu-Desktop
-- Führen Sie folgenden Befehl aus,um System zu aktualisieren.
+## System aktualisieren
+
+Öffnen Sie das Terminal und führen Sie folgende Befehle aus, um Ihr System zu aktualisieren:
+
 ```bash
-sudo apt-get update 
+sudo apt-get update
 sudo apt-get upgrade
 sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
 ```
-## Google Chrome Installieren
+
+## Google Chrome installieren
 
 ```bash
-
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-
 ```
 
-## Git Installieren
+## Git installieren und konfigurieren
+
 ```bash
-sudo apt-get install git  gh
+sudo apt-get install git gh
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
-## gh Konfigurieren
+
+## GitHub CLI (gh) konfigurieren
 
 ```bash
 gh auth login
 ```
-## Nodejs Installieren
+
+## Node.js installieren
+
 ```bash
 sudo apt-get install curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 source ~/.bashrc
 nvm install 22
-# Verify the Node.js version:
-node -v # Should print "v22.12.0".
-nvm current # Should print "v22.12.0".
-# Verify npm version:
-npm -v # Should print "10.9.0".
+node -v    # Sollte "v22.12.0" ausgeben
+nvm current # Sollte "v22.12.0" ausgeben
+npm -v     # Sollte "10.9.0" ausgeben
 ```
-## Visual Studio Code 
-### Installieren
+
+## Visual Studio Code und Neovim installieren
+
 ```bash
 sudo snap install code --classic
+sudo apt-get install neovim
 ```
-### Pflugin
-In Visual Studio Code, öffnen Sie das Terminal und führen Sie folgende Befehle aus.
+
+### Wichtige VS Code Erweiterungen installieren
+
 ```bash
 code --install-extension GitHub.copilot
-code --install-extension ckolkman.vscode-postgres
-code --install-extension  ms-ossdata.vscode-postgresql
 code --install-extension RoweWilsonFrederiskHolme.wikitext
 code --install-extension ms-windows-ai-studio.windows-ai-studio
 ```
-## Datenbank
-### PostgreSQL
-#### Installation
+
+## Datenbank: PostgreSQL und PostGIS
+
+### PostgreSQL installieren und Benutzer einrichten
 
 ```bash
 sudo apt-get install postgresql-all
+sudo -u postgres -i
+createuser thorsten
+createdb -E UTF8 -O thorsten thorsten
+psql -c "\password thorsten"
+psql -c "ALTER USER dein_benutzername CREATEDB;"
+exit
 ```
-### PosgreSQL Version zeigen
+
+### PostgreSQL Version anzeigen
+
 ```bash
 psql --version
 ```
 
-### Postgis Installation in Ubuntu 23.04
-```bash
-sudo apt install postgis postgresql-17-postgis-3 postgresql-17-postgis-3-scripts postgresql-17-pgvector
-```
-### Installation von osm2pgsql und osmosis
-```bash
-sudo apt-get install osm2pgsql osmosis
-```
+### PostGIS Installation (Ubuntu 23.04)
 
-### Datenbank erstellen
 ```bash
-sudo adduser thorsten
-sudo usermod -aG sudo thorsten
-```
-
-## Benutzer thorsten zu Gruppe postgres hinzufügen
-```bash
-
-ssh thorsten@
-cd $HOME
+sudo apt-get install postgis postgresql-16-postgis-3
 sudo -u postgres -i
-createuser thorsten
-createdb -E UTF8 -O thorsten thorsten
-psql -d thorsten -c "CREATE EXTENSION postgis;" # Erweiterung hinzufügen
-psql -d thorsten -c "CREATE EXTENSION hstore;" # Erweiterung hinzufügen
-psql -d thorsten -c "CREATE EXTENSION vector;" # Erweiterung hinzufügen
-psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO thorsten;" # Rechte setzen
-psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO thorsten;" # Rechte setzen
-psql -d thorsten -c "\password thorsten"
-exit # Ausloggen
-```
-## Passwort für den Benutzer postgres setzen
-```bash
-\password thorsten
-\q
+psql -d thorsten -c "CREATE EXTENSION postgis;"
+psql -d thorsten -c "CREATE EXTENSION postgis_topology;"
 exit
-
-```
-Herunterladen der Daten
-```bash
-cd $HOME
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
-osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
-
-osm2pgsql  -d thorsten --create  -G --hstore  ahrensburg.pbf
-```
-### Datenbank Löschen
-```bash
-sudo -u postgres -i
-psql
-GRANT ALL PRIVILEGES ON DATABASE thorsten TO postgres;
-drop database thorsten;
-\q
 ```
 
-## C und C++ Installieren
+## C und C++ Entwicklungsumgebung
+
 ```bash
-sudo apt  install curl 
+sudo apt install curl
 sudo apt install build-essential
-code --install-extension  ms-vscode.cpptools-extension-pack
+code --install-extension ms-vscode.cpptools-extension-pack
 sudo apt-get install cmake
 sudo apt-get install gdb
 ```
-## Python Installieren
+
+## Python installieren
+
 ```bash
-sudo apt install python3 python3-pip python3-venv  python-is-python3
-code --install-extension  ms-python.python
+sudo apt install python3 python3-pip python3-venv python-is-python3
+code --install-extension ms-python.python
 ```
-## Rust 
-```
+
+## Rust installieren
+
+```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 code --install-extension rust-lang.rust-analyzer
-
 ```
-## Golang
 
-```
+## Go (Golang) installieren
+
+```bash
 cd $HOME
-wget https://go.dev/dl/go1.24.2.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.24.2.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.25.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.25.5.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## dotnet
+## .NET installieren und konfigurieren
 
-```
-sudo apt-get update # Aktualisiert die Paketliste
-sudo apt-get install -y dotnet-sdk-9.0 # Installation des .NET SDK
-sudo apt-get install -y dotnet-sdk-8.0 # Installation des .NET SDK
-echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc # Hinzufügen des Pfads zum .bashrc
-source ~/.bashrc  # Aktualisierung der .bashrc
-code --install-extension ms-dotnettools.csdevkit # Installiert die C# Dev Kit Erweiterung
-
-```
-
-
-
-
-## Anki
-Anki ist ein Programm zum Lernen von Vokabeln und anderen Inhalten. Es ist für Windows, Linux und Mac OS X verfügbar. Anki ist Open Source und kostenlos. Es ist auch für Android und iOS verfügbar, aber diese Versionen sind nicht kostenlos.
-
-### Anforderungen
 ```bash
-sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
-
-```
-### Anki herunterladen
-```bash
-cd $HOME
-wget https://github.com/ankitects/anki/releases/download/25.02/anki-25.02-linux-qt6.tar.zst
-```
-### Anki installieren
-```bash
-tar xaf anki-25.02-linux-qt6.tar.zst
-cd  anki-25.02-linux-qt6
-sudo ./install.sh
-QT_DEBUG_PLUGINS=1 anki
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-10.0
+sudo apt-get install -y dotnet-sdk-9.0
+sudo apt-get install -y dotnet-sdk-8.0
+dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-aspnet-codegenerator
+dotnet tool install -g Microsoft.Web.LibraryManager.Cli
+echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc
+source ~/.bashrc
+code --install-extension ms-dotnettools.csdevkit
+dotnet new install OrchardCore.ProjectTemplates::2.2.1
 ```
 
-### Erweiterungen
+## PHP installieren
 
-#### Erweiterungen installieren
 ```bash
-1436550454 1933645497 1463041493 1190756458
-```
-
-## Python Virtual Environment
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
+sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-zip php-intl php-json php-cli php-common php-apcu php-bcmath php-soap php-ldap php-imagick php-zip php-gmp -y
 ```
 
+## Composer installieren
 
-## Python Voraussetzung
-### Ubuntu
 ```bash
-sudo apt-get install build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev  libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev uuid-dev#
-```
-#### hinunterladen von Python
-```bash
-cd /home/thorsten
-wget https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz
-```
-#### entpacken von Python
-```bash
-tar -xvf Python-3.12.2.tgz
-```
-#### wechseln in das Python Verzeichnis
-```bash
-cd Python-3.12.2
-```
-#### Installieren von Python
-```bash
-./configure
-make
-sudo make altinstall 
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+sudo mv composer.phar /usr/local/bin/composer
 ```
 
-## Visual Studio Code Erweiterungen
+## nginx installieren
+
 ```bash
-
-code --install-extension  ms-vscode-remote.remote-ssh
-code --install-extension  ms-vscode.remote-server
+sudo apt-get install nginx
+sudo rm /etc/nginx/sites-enabled/default
 ```
-#### Quellangabe
-* Quelle: [Download](https://www.python.org/downloads)
-* Quelle: [Installieren Anleitung](https://wiki.ubuntuusers.de/Python/)
 
-## Startmedienersteller
-```
-sudo apt-get install usb-creator-gtk 
+## Java und Entwicklungswerkzeuge installieren
+
+```bash
+sudo apt install openjdk-26-jdk
+sudo apt install maven
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vmware.vscode-boot-dev-pack
+
 ```

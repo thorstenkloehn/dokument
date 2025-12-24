@@ -2,6 +2,7 @@ site_name: Dokument
 nav:
   - Starseite: index.md
   - Server:
+    - Postgresql: Server/Postgresql.md
     - Kachelserver:
       - Server20.04: Server/Kachelserver/Server204.md
       - Server22.04:  Server/Kachelserver/Server224.md
@@ -10,13 +11,12 @@ nav:
     - Nginx SSL Zertifikat: Server/Nginx_SSL.md
     - Nginx Einstellung: Server/nginx.md
     - Weiter Software: Server/Software.md
+    - Gitea: Server/Gitea.md
   - IDE: IDE/index.md  
-  
-  - CMS:
-    - Mediawiki: 
-      - Installieren: CMS/Mediawiki/index.md
-      - Backup: CMS/Mediawiki/Backup.md
-      - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
+  - Mediawiki: 
+    - Installieren: CMS/Mediawiki/index.md
+    - Backup: CMS/Mediawiki/Backup.md
+    - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
   - Tools:
     - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
