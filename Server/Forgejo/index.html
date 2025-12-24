@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Nginx_SSL/">
+        <link rel="prev" href="../Software/">
       
       
-        <link rel="next" href="../Software/">
+        <link rel="next" href="../../IDE/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Nginx Einstellung - Dokument</title>
+        <title>Forgejo - Dokument</title>
       
     
     
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nginx Einstellung
+              Forgejo
             
           </span>
         </div>
@@ -487,17 +487,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../nginx/" class="md-nav__link">
         
   
   
@@ -513,7 +506,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -551,10 +543,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Forgejo/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -570,6 +569,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1054,51 +1054,9 @@
 
 
 
-  <h1>Nginx Einstellung</h1>
+  <h1>Forgejo</h1>
 
-<pre><code>sudo nano /etc/nginx/conf.d/start.conf
-</code></pre>
-<pre><code>server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    server_name ahrensburg.city;
-    ssl_certificate /etc/letsencrypt/live/ahrensburg.city/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/ahrensburg.city/privkey.pem;
-     root /var/www/mediawiki;
-    index index.php index.html index.htm;
-   location /hot {
-        proxy_pass http://localhost:8080/hot;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-
-location /karte {
-    alias /var/www/karte;
-    autoindex on;
-}
- location / {
-        try_files $uri $uri/ /index.php?$args;
-    }
-    location ~ \.php$ {
-        include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
-    }
-
-    location ~ /\.ht {
-
-           deny all;
-    }
-
-}
-server {
-    listen 80;
-    listen [::]:80;
-    server_name ahrensburg.city;
-    return 301 https://$host$request_uri;
-}
-</code></pre>
+<p>hallo</p>
 
 
 
