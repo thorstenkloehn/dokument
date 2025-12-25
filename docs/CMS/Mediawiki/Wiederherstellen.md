@@ -5,4 +5,7 @@ cd ~/Download
 
 # MediaWiki-Dump importieren
 php /var/www/mediawiki/maintenance/run.php importDump.php < pagedump.xml
+php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
+php /var/www/mediawiki/maintenance/run.php initSiteStats.php
 ```
+
