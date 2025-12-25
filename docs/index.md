@@ -6,6 +6,7 @@ Mein Server verwendet Ubuntu 24.04 als Betriebssystem, während mein Entwicklung
 Der Produktionsserver setzt folgende Technologien ein:
 
 - **Forgejo**: Selbstgehostete Git-Server-Lösung zur Verwaltung von Quellcode-Repositories.
+- **Wiki.js**: Moderne, webbasierte Wiki-Software mit Markdown-Unterstützung und einfacher Verwaltung von Inhalten.
 - **Git**: Versionskontrollsystem für die Quellcodeverwaltung.
 - **GitHub CLI (`gh`)**: Kommandozeilenwerkzeug zur Interaktion mit GitHub-Repositories.
 - **ASP.NET Core 10**: Framework für die Entwicklung und Bereitstellung von Webanwendungen.
