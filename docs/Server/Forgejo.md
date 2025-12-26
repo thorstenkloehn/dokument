@@ -68,6 +68,55 @@ Aktivieren und starten Sie nun den Forgejo-Dienst, um mit der Installation fortz
 sudo systemctl enable forgejo.service
 sudo systemctl start forgejo.service
 ```
+## Forgejo hinter einem Reverse Proxy (Nginx)
+
+Um Forgejo über HTTP git.ahrensburg.city erreichbar zu machen, empfiehlt sich die Nutzung eines Reverse Proxys wie Nginx. Erstellen Sie dazu eine neue Server-Block-Konfiguration, z. B. unter `/etc/nginx/sites-available/forgejo`:
+
+**Hinweis:** Falls Ihre Nginx-Installation die Konfigurationen im Verzeichnis `/etc/nginx/conf.d/` erwartet, können Sie die Forgejo-Konfiguration auch in einer Datei wie `/etc/nginx/conf.d/git.conf` ablegen. Öffnen Sie dazu die Datei mit:
+
+```bash
+sudo nano /etc/nginx/conf.d/git.conf
+```
+
+Fügen Sie dort den oben gezeigten `server`-Block ein und speichern Sie die Datei. Starten Sie anschließend Nginx neu, damit die Änderungen wirksam werden:
+
+```bash
+sudo systemctl reload nginx
+```
+
+```nginx
+server {
+   listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name git.ahrensburg.city;
+        ssl_certificate /etc/letsencrypt/live/ahrensburg.city/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ahrensburg.city/privkey.pem;
+
+    location / {
+        proxy_pass http://127.0.0.1:3000; # Port 3000 is the default Forgejo port
+
+        proxy_set_header Connection $http_connection;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        client_max_body_size 512M;
+    }
+}
+```
+
+Aktivieren Sie die Konfiguration und starten Sie Nginx neu:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/forgejo /etc/nginx/sites-enabled/
+sudo systemctl reload nginx
+```
+
+Passen Sie `server_name` an Ihre Domain an. Weitere Hinweise zur Absicherung (z. B. HTTPS mit Let's Encrypt) finden Sie in der Forgejo-Dokumentation.
+
+
 ## Weitere Konfiguration in der app.ini
 
 Bevor Sie weitere Änderungen an der Konfiguration vornehmen, stoppen Sie zunächst den Forgejo-Dienst:
@@ -88,6 +137,9 @@ Bearbeiten Sie nun als root die Datei `/etc/forgejo/app.ini`, um weitere Einstel
 ```bash
 sudo nano /etc/forgejo/app.ini
 ```
+
+
+
 ## Port ändern
 
 
