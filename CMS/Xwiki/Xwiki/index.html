@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Backup/">
+        <link rel="prev" href="../../Mediawiki/Wiederherstellen/">
       
       
-        <link rel="next" href="../../Xwiki/Xwiki/">
+        <link rel="next" href="../../../Tools/Pandoc/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Wiedererstellen - Dokument</title>
+        <title>Xwiki - Dokument</title>
       
     
     
@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#xwiki-installation-auf-ubuntu-mit-apt-get-und-postgresql" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -95,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Wiedererstellen
+              Xwiki
             
           </span>
         </div>
@@ -602,20 +607,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -636,7 +639,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -654,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../Mediawiki/" class="md-nav__link">
         
   
   
@@ -682,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Backup/" class="md-nav__link">
+      <a href="../../Mediawiki/Backup/" class="md-nav__link">
         
   
   
@@ -707,17 +710,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Mediawiki/Wiederherstellen/" class="md-nav__link">
         
   
   
@@ -733,7 +729,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -750,10 +745,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Xwiki/Xwiki/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Xwiki
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -769,6 +791,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#voraussetzungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voraussetzungen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-system-aktualisieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. System aktualisieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-postgresql-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. PostgreSQL installieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. PostgreSQL installieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-datenbank-und-benutzer-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL-Datenbank und Benutzer anlegen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-xwiki-repository-hinzufugen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. XWiki Repository hinzufügen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-verfugbare-xwiki-pakete-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Verfügbare XWiki-Pakete anzeigen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-xwiki-und-benotigte-pakete-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. XWiki und benötigte Pakete installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-xwiki-starten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. XWiki starten
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-xwiki-im-browser-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. XWiki im Browser aufrufen
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1064,6 +1211,121 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#voraussetzungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voraussetzungen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-system-aktualisieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. System aktualisieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-postgresql-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. PostgreSQL installieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. PostgreSQL installieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-datenbank-und-benutzer-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL-Datenbank und Benutzer anlegen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-xwiki-repository-hinzufugen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. XWiki Repository hinzufügen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-verfugbare-xwiki-pakete-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Verfügbare XWiki-Pakete anzeigen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-xwiki-und-benotigte-pakete-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. XWiki und benötigte Pakete installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-xwiki-starten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. XWiki starten
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-xwiki-im-browser-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. XWiki im Browser aufrufen
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1080,17 +1342,52 @@
 
 
 
-  <h1>Wiedererstellen</h1>
-
-<pre><code class="language-bash"># Repository klonen (ohne sudo, falls möglich)
-git clone https://github.com/thorstenkloehn/Download.git ~/Download
-cd ~/Download
-
-# MediaWiki-Dump importieren
-php /var/www/mediawiki/maintenance/run.php importDump.php &lt; pagedump.xml
-php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
-php /var/www/mediawiki/maintenance/run.php initSiteStats.php
+<h1 id="xwiki-installation-auf-ubuntu-mit-apt-get-und-postgresql">XWiki Installation auf Ubuntu mit apt-get und PostgreSQL</h1>
+<h2 id="voraussetzungen">Voraussetzungen</h2>
+<ul>
+<li>Ubuntu Server (empfohlen: 20.04 oder neuer)</li>
+<li>Root- oder Sudo-Rechte</li>
+</ul>
+<h2 id="1-system-aktualisieren">1. System aktualisieren</h2>
+<pre><code class="language-bash">sudo apt update
+sudo apt upgrade
 </code></pre>
+<h2 id="2-postgresql-installieren">2. PostgreSQL installieren</h2>
+<pre><code class="language-bash">sudo apt install postgresql postgresql-contrib
+</code></pre>
+<h3 id="postgresql-datenbank-und-benutzer-anlegen">PostgreSQL-Datenbank und Benutzer anlegen</h3>
+<pre><code>sudo -u postgres -i
+createdb -E UTF8 -O thorsten xwiki
+exit
+</code></pre>
+<h2 id="3-xwiki-repository-hinzufugen">3. XWiki Repository hinzufügen</h2>
+<pre><code class="language-bash">Zuerst muss der Paketmanager so konfiguriert werden, dass das XWiki-Repository verwendet wird. Dies geschieht einfach mit folgendem Befehl:
+
+```bash
+sudo wget https://maven.xwiki.org/xwiki-keyring.gpg -O /usr/share/keyrings/xwiki-keyring.gpg
+sudo wget &quot;https://maven.xwiki.org/stable/xwiki-stable.list&quot; -O /etc/apt/sources.list.d/xwiki-stable.list
+</code></pre>
+<p>Jetzt kann die Paketdatenbank aktualisiert werden, um die Daten aus diesem Repository zu laden:</p>
+<pre><code class="language-bash">sudo apt-get update
+</code></pre>
+<h2 id="31-verfugbare-xwiki-pakete-anzeigen">3.1. Verfügbare XWiki-Pakete anzeigen</h2>
+<p>Um zu sehen, welche XWiki-Pakete im Repository verfügbar sind, kannst du folgenden Befehl verwenden:</p>
+<pre><code class="language-bash">apt-cache search xwiki
+</code></pre>
+<p>Dies listet alle XWiki-bezogenen Pakete auf, z.B. verschiedene Versionen für Tomcat und Datenbanken oder zusätzliche Erweiterungen.</p>
+<h2 id="4-xwiki-und-benotigte-pakete-installieren">4. XWiki und benötigte Pakete installieren</h2>
+<pre><code class="language-bash">sudo apt install xwiki-tomcat10-pgsql
+</code></pre>
+<h2 id="5-xwiki-starten">5. XWiki starten</h2>
+<p>Der Dienst startet automatisch. Prüfen mit:</p>
+<pre><code class="language-bash">sudo systemctl status tomcat10
+</code></pre>
+<h2 id="6-xwiki-im-browser-aufrufen">6. XWiki im Browser aufrufen</h2>
+<p>Gehe zu: <code>http://&lt;deine-server-ip&gt;:8080/xwiki</code></p>
+<p>Folge dem Einrichtungsassistenten.</p>
+<hr />
+<p><strong>Weitere Infos:</strong><br />
+<a href="https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Installation/InstallationViaAPT/">XWiki Installationsanleitung</a></p>
 
 
 
