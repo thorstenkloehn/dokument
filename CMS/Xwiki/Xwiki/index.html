@@ -1361,10 +1361,8 @@ createdb -E UTF8 -O thorsten xwiki
 exit
 </code></pre>
 <h2 id="3-xwiki-repository-hinzufugen">3. XWiki Repository hinzufügen</h2>
-<pre><code class="language-bash">Zuerst muss der Paketmanager so konfiguriert werden, dass das XWiki-Repository verwendet wird. Dies geschieht einfach mit folgendem Befehl:
-
-```bash
-sudo wget https://maven.xwiki.org/xwiki-keyring.gpg -O /usr/share/keyrings/xwiki-keyring.gpg
+<p>Zuerst muss der Paketmanager so konfiguriert werden, dass das XWiki-Repository verwendet wird. Dies geschieht einfach mit folgendem Befehl:</p>
+<pre><code class="language-bash">sudo wget https://maven.xwiki.org/xwiki-keyring.gpg -O /usr/share/keyrings/xwiki-keyring.gpg
 sudo wget &quot;https://maven.xwiki.org/stable/xwiki-stable.list&quot; -O /etc/apt/sources.list.d/xwiki-stable.list
 </code></pre>
 <p>Jetzt kann die Paketdatenbank aktualisiert werden, um die Daten aus diesem Repository zu laden:</p>
