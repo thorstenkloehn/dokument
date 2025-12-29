@@ -76,3 +76,44 @@ Folge dem Einrichtungsassistenten.
 
 **Weitere Infos:**  
 [XWiki Installationsanleitung](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Installation/InstallationViaAPT/)
+
+
+## Backup erstellen
+
+Um ein Backup der XWiki-Datenbank zu erstellen, verwende folgenden Befehl:
+
+```bash
+sudo -u postgres pg_dump xwiki > /home/thorsten/xwiki_backup.sql
+```
+
+Optional kannst du auch das Verzeichnis mit den Anhängen sichern (Standardpfad):
+
+```bash
+sudo tar czvf /home/thorsten/xwiki_files_backup.tar.gz /var/lib/xwiki/data
+```
+
+**Hinweis:**  
+Stelle sicher, dass XWiki während des Backups keine Schreibzugriffe auf die Datenbank oder Dateien durchführt, um Konsistenz zu gewährleisten.
+
+## Backup wiederherstellen
+
+Um ein Backup der XWiki-Datenbank wiederherzustellen, führe folgende Schritte aus:
+
+1. **Datenbank zurückspielen:**
+
+```bash
+sudo -u postgres dropdb xwiki
+sudo -u postgres createdb -E UTF8 -O thorsten xwiki
+sudo -u postgres psql xwiki < /home/thorsten/xwiki_backup.sql
+```
+
+2. **Dateianhänge zurückkopieren:**
+
+```bash
+sudo systemctl stop tomcat10
+sudo tar xzvf /home/thorsten/xwiki_files_backup.tar.gz -C /
+sudo systemctl start tomcat10
+```
+
+**Hinweis:**  
+Stelle sicher, dass XWiki während der Wiederherstellung gestoppt ist, um Dateninkonsistenzen zu vermeiden.
