@@ -29,7 +29,6 @@ exit
 
 ## 3. XWiki Repository hinzufügen
 
-```bash
 Zuerst muss der Paketmanager so konfiguriert werden, dass das XWiki-Repository verwendet wird. Dies geschieht einfach mit folgendem Befehl:
 
 ```bash
