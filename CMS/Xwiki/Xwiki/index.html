@@ -912,6 +912,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#backup-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backup erstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-wiederherstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backup wiederherstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1325,6 +1347,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#backup-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backup erstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-wiederherstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backup wiederherstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1386,6 +1430,33 @@ sudo wget &quot;https://maven.xwiki.org/stable/xwiki-stable.list&quot; -O /etc/a
 <hr />
 <p><strong>Weitere Infos:</strong><br />
 <a href="https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Installation/InstallationViaAPT/">XWiki Installationsanleitung</a></p>
+<h2 id="backup-erstellen">Backup erstellen</h2>
+<p>Um ein Backup der XWiki-Datenbank zu erstellen, verwende folgenden Befehl:</p>
+<pre><code class="language-bash">sudo -u postgres pg_dump xwiki &gt; /home/thorsten/xwiki_backup.sql
+</code></pre>
+<p>Optional kannst du auch das Verzeichnis mit den Anhängen sichern (Standardpfad):</p>
+<pre><code class="language-bash">sudo tar czvf /home/thorsten/xwiki_files_backup.tar.gz /var/lib/xwiki/data
+</code></pre>
+<p><strong>Hinweis:</strong><br />
+Stelle sicher, dass XWiki während des Backups keine Schreibzugriffe auf die Datenbank oder Dateien durchführt, um Konsistenz zu gewährleisten.</p>
+<h2 id="backup-wiederherstellen">Backup wiederherstellen</h2>
+<p>Um ein Backup der XWiki-Datenbank wiederherzustellen, führe folgende Schritte aus:</p>
+<ol>
+<li><strong>Datenbank zurückspielen:</strong></li>
+</ol>
+<pre><code class="language-bash">sudo -u postgres dropdb xwiki
+sudo -u postgres createdb -E UTF8 -O thorsten xwiki
+sudo -u postgres psql xwiki &lt; /home/thorsten/xwiki_backup.sql
+</code></pre>
+<ol>
+<li><strong>Dateianhänge zurückkopieren:</strong></li>
+</ol>
+<pre><code class="language-bash">sudo systemctl stop tomcat10
+sudo tar xzvf /home/thorsten/xwiki_files_backup.tar.gz -C /
+sudo systemctl start tomcat10
+</code></pre>
+<p><strong>Hinweis:</strong><br />
+Stelle sicher, dass XWiki während der Wiederherstellung gestoppt ist, um Dateninkonsistenzen zu vermeiden.</p>
 
 
 
