@@ -17,8 +17,7 @@ Der Produktionsserver setzt folgende Technologien ein:
 - **MediaWiki**: Open-Source-Wiki-Software zur Erstellung und Verwaltung von Wissensdatenbanken und Dokumentationen.
 - **Xwiki**: Open-Source-Wiki-Software zur Verwaltung und Dokumentation von Wissen, ähnlich wie MediaWiki, aber mit 
 erweiterten Funktionen für Zusammenarbeit und Anpassung.
-- **Wiki.js**: Moderne, benutzerfreundliche Wiki-Software zur Erstellung, Verwaltung und Veröffentlichung von Dokumentationen. Wiki.js bietet eine intuitive Weboberfläche, unterstützt Markdown und verschiedene Authentifizierungsmethoden und lässt sich leicht anpassen sowie in bestehende Systeme integrieren.
-**Switch2OSM Tileserver**: OpenStreetMap-Tileserver-Lösung zur Bereitstellung von Kartendaten für Webanwendungen.
+- **Switch2OSM Tileserver**: OpenStreetMap-Tileserver-Lösung zur Bereitstellung von Kartendaten für Webanwendungen.
 
 **Hinweis:** Der Produktionsserver ist so konfiguriert, dass möglichst keine Cookie-Banner erforderlich sind, da alle Daten ausschließlich auf dem eigenen Server verarbeitet und gespeichert werden. Externe Dienste werden vermieden, um Datenschutz und Kontrolle über die Daten zu gewährleisten.
 
@@ -41,7 +40,7 @@ Auf meinem Entwicklungsrechner kommen folgende Technologien zum Einsatz:
 - **C/C++**: Klassische Programmiersprachen für System- und Anwendungsentwicklung, werden in meiner Umgebung jedoch nur selten genutzt, z. B. für spezielle Performance- oder Kompatibilitätsanforderungen.
 ### Testen von CMS-Funktionen und Datenbanken
 
-Ich teste regelmäßig neue Funktionen in den Content-Management-Systemen **MediaWiki**, **Drupal**, **Typo3** und **Orchard** auf meinem Entwicklungsrechner. Dabei prüfe ich gezielt die Kompatibilität und das Verhalten sowohl mit **SQLite3** als auch mit **PostgreSQL** als Datenbank-Backend. Bisher traten dabei keine Probleme auf; beide Datenbanksysteme funktionieren zuverlässig mit den genannten CMS-Lösungen.
+Ich teste regelmäßig neue Funktionen in den Content-Management-Systemen **MediaWiki** und **XWiki** auf meinem Entwicklungsrechner. Dabei prüfe ich gezielt die Kompatibilität und das Verhalten sowohl mit **SQLite3** als auch mit **PostgreSQL** als Datenbank-Backend. Bisher sind dabei keine Probleme aufgetreten; beide Datenbanksysteme funktionieren zuverlässig mit den genannten CMS-Lösungen.
 
 **Hinweis:** Die Entwicklungsumgebung ist so konfiguriert, dass sie möglichst nah an der Produktionsumgebung arbeitet, um Kompatibilitätsprobleme zu vermeiden.Verwendete Technologien auf mein Entwicklungsrechner
 
