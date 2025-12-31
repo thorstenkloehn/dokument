@@ -117,3 +117,48 @@ sudo systemctl start tomcat10
 
 **Hinweis:**  
 Stelle sicher, dass XWiki während der Wiederherstellung gestoppt ist, um Dateninkonsistenzen zu vermeiden.
+
+
+## XWiki mit Nginx als Reverse Proxy (HTTPS, Port 8080)
+
+Um XWiki unter `https://xwiki.ahrensburg` erreichbar zu machen, kannst du Nginx als Reverse Proxy vor Tomcat einrichten.
+
+
+### 3. Nginx-Konfiguration für XWiki
+
+Erstelle eine neue Konfigurationsdatei, z.B. `sudo nano /etc/nginx/conf.d/start.conf`:
+
+```nginx
+
+server {
+    listen 443 ssl;
+    server_name xwiki.ahrensburg;
+
+    ssl_certificate /etc/letsencrypt/live/ahrensburg/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ahrensburg/privkey.pem;
+
+    location / {
+        proxy_pass http://localhost:8080/xwiki/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_redirect off;
+    }
+}
+```
+
+
+
+```bash
+sudo 
+```
+
+### 4. Tomcat für Proxy-Betrieb anpassen
+
+Passe ggf. in `/etc/xwiki/xwiki.cfg` oder `/etc/tomcat10/server.xml` die Einstellungen für den Proxy-Betrieb an, z.B. `xwiki.url.protocol=https` und `xwiki.url.port=443`.
+
+---
+
+**Hinweis:**  
+Stelle sicher, dass die Firewall Port 443 (HTTPS) und ggf. 80 (HTTP) erlaubt.
