@@ -934,6 +934,45 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#xwiki-mit-nginx-als-reverse-proxy-https-port-8080" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XWiki mit Nginx als Reverse Proxy (HTTPS, Port 8080)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XWiki mit Nginx als Reverse Proxy (HTTPS, Port 8080)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-nginx-konfiguration-fur-xwiki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Nginx-Konfiguration für XWiki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-tomcat-fur-proxy-betrieb-anpassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Tomcat für Proxy-Betrieb anpassen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1369,6 +1408,45 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#xwiki-mit-nginx-als-reverse-proxy-https-port-8080" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XWiki mit Nginx als Reverse Proxy (HTTPS, Port 8080)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XWiki mit Nginx als Reverse Proxy (HTTPS, Port 8080)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-nginx-konfiguration-fur-xwiki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Nginx-Konfiguration für XWiki
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-tomcat-fur-proxy-betrieb-anpassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Tomcat für Proxy-Betrieb anpassen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1457,6 +1535,35 @@ sudo systemctl start tomcat10
 </code></pre>
 <p><strong>Hinweis:</strong><br />
 Stelle sicher, dass XWiki während der Wiederherstellung gestoppt ist, um Dateninkonsistenzen zu vermeiden.</p>
+<h2 id="xwiki-mit-nginx-als-reverse-proxy-https-port-8080">XWiki mit Nginx als Reverse Proxy (HTTPS, Port 8080)</h2>
+<p>Um XWiki unter <code>https://xwiki.ahrensburg</code> erreichbar zu machen, kannst du Nginx als Reverse Proxy vor Tomcat einrichten.</p>
+<h3 id="3-nginx-konfiguration-fur-xwiki">3. Nginx-Konfiguration für XWiki</h3>
+<p>Erstelle eine neue Konfigurationsdatei, z.B. <code>sudo nano /etc/nginx/conf.d/start.conf</code>:</p>
+<pre><code class="language-nginx">
+server {
+    listen 443 ssl;
+    server_name xwiki.ahrensburg;
+
+    ssl_certificate /etc/letsencrypt/live/ahrensburg/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ahrensburg/privkey.pem;
+
+    location / {
+        proxy_pass http://localhost:8080/xwiki/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_redirect off;
+    }
+}
+</code></pre>
+<pre><code class="language-bash">sudo 
+</code></pre>
+<h3 id="4-tomcat-fur-proxy-betrieb-anpassen">4. Tomcat für Proxy-Betrieb anpassen</h3>
+<p>Passe ggf. in <code>/etc/xwiki/xwiki.cfg</code> oder <code>/etc/tomcat10/server.xml</code> die Einstellungen für den Proxy-Betrieb an, z.B. <code>xwiki.url.protocol=https</code> und <code>xwiki.url.port=443</code>.</p>
+<hr />
+<p><strong>Hinweis:</strong><br />
+Stelle sicher, dass die Firewall Port 443 (HTTPS) und ggf. 80 (HTTP) erlaubt.</p>
 
 
 
