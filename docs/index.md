@@ -15,8 +15,7 @@ Der Produktionsserver setzt folgende Technologien ein:
 - **Nginx**: Webserver und Reverse Proxy zur Auslieferung von Webinhalten.
 - **Python**: Programmiersprache für Automatisierung, Skripte und Webanwendungen.
 - **MediaWiki**: Open-Source-Wiki-Software zur Erstellung und Verwaltung von Wissensdatenbanken und Dokumentationen.
-- **Xwiki**: Open-Source-Wiki-Software zur Verwaltung und Dokumentation von Wissen, ähnlich wie MediaWiki, aber mit 
-erweiterten Funktionen für Zusammenarbeit und Anpassung.
+
 - **Switch2OSM Tileserver**: OpenStreetMap-Tileserver-Lösung zur Bereitstellung von Kartendaten für Webanwendungen.
 
 **Hinweis:** Der Produktionsserver ist so konfiguriert, dass möglichst keine Cookie-Banner erforderlich sind, da alle Daten ausschließlich auf dem eigenen Server verarbeitet und gespeichert werden. Externe Dienste werden vermieden, um Datenschutz und Kontrolle über die Daten zu gewährleisten.

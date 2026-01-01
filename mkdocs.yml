@@ -17,7 +17,6 @@ nav:
     - Installieren: CMS/Mediawiki/index.md
     - Backup: CMS/Mediawiki/Backup.md
     - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
-  - Xwiki: CMS/Xwiki/Xwiki.md
   - Tools:
     - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
