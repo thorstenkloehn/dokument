@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../../Mediawiki/Wiederherstellen/">
-      
-      
-        <link rel="next" href="../../../Tools/Pandoc/">
       
       
         
@@ -23,7 +19,7 @@
     
     
       
-        <title>Xwiki - Dokument</title>
+        <title>XWiki Installation auf Ubuntu mit apt-get und PostgreSQL - Dokument</title>
       
     
     
@@ -100,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Xwiki
+              XWiki Installation auf Ubuntu mit apt-get und PostgreSQL
             
           </span>
         </div>
@@ -745,246 +741,6 @@
       
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Xwiki
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Xwiki
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#voraussetzungen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Voraussetzungen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-system-aktualisieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. System aktualisieren
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-postgresql-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. PostgreSQL installieren
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. PostgreSQL installieren">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#postgresql-datenbank-und-benutzer-anlegen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PostgreSQL-Datenbank und Benutzer anlegen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-xwiki-repository-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. XWiki Repository hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#31-verfugbare-xwiki-pakete-anzeigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1. Verfügbare XWiki-Pakete anzeigen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-xwiki-und-benotigte-pakete-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. XWiki und benötigte Pakete installieren
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-xwiki-starten" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. XWiki starten
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-xwiki-im-browser-aufrufen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. XWiki im Browser aufrufen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backup-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Backup erstellen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backup-wiederherstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Backup wiederherstellen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#xwiki-mit-nginx-als-reverse-proxy-https-port-8080" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        XWiki mit Nginx als Reverse Proxy (HTTPS, Port 8080)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="XWiki mit Nginx als Reverse Proxy (HTTPS, Port 8080)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3-nginx-konfiguration-fur-xwiki" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Nginx-Konfiguration für XWiki
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-tomcat-fur-proxy-betrieb-anpassen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Tomcat für Proxy-Betrieb anpassen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
   
   
     
@@ -996,10 +752,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1017,8 +773,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1134,10 +890,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1155,8 +911,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1524,13 +1280,15 @@ Stelle sicher, dass XWiki während des Backups keine Schreibzugriffe auf die Dat
 </ol>
 <pre><code class="language-bash">sudo -u postgres dropdb xwiki
 sudo -u postgres createdb -E UTF8 -O thorsten xwiki
-sudo -u postgres psql xwiki &lt; /home/thorsten/xwiki_backup.sql
+rsync /home/thorsten/xwiki_backup.sql user@prod:/root/xwiki_backup.sql
+sudo -u postgres psql xwiki &lt; root/xwiki_backup.sql
 </code></pre>
 <ol>
 <li><strong>Dateianhänge zurückkopieren:</strong></li>
 </ol>
 <pre><code class="language-bash">sudo systemctl stop tomcat10
-sudo tar xzvf /home/thorsten/xwiki_files_backup.tar.gz -C /
+
+
 sudo systemctl start tomcat10
 </code></pre>
 <p><strong>Hinweis:</strong><br />
