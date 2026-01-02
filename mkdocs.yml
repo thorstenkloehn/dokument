@@ -12,6 +12,8 @@ nav:
     - Nginx Einstellung: Server/nginx.md
     - Weiter Software: Server/Software.md
   - Forgejo: Server/Forgejo.md
+  - Xwiki : 
+    - Installieren: Xwiki/Installieren.md
   - IDE: IDE/index.md  
   - Mediawiki: 
     - Installieren: CMS/Mediawiki/index.md
