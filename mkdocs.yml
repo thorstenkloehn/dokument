@@ -22,6 +22,7 @@ nav:
   - Semantisches MediaWiki:
     - Installieren: Semantisches/Installieren.md
     - Installieren in Kurzform: Semantisches/Kurzform.md
+    - Wichtige Erweiterungen: Semantisches/Wichtige_Erweiterungen.md
   - Tools:
     - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
