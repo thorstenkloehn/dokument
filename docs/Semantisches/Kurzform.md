@@ -34,6 +34,8 @@ mkdir /semanticmediawikidownload
 cd /semanticmediawikidownload
 wget https://extdist.wmflabs.org/dist/extensions/CookieWarning-REL1_44-00d6718.tar.gz
 tar -xzf CookieWarning-REL1_44-00d6718.tar.gz -C /var/www/semanticmediawiki/extensions
+wget https://extdist.wmflabs.org/dist/extensions/Wikibase-REL1_44-afac81c.tar.gz
+tar -xzf Wikibase-REL1_44-afac81c.tar.gz -C /var/www/semanticmediawiki/extensions
 sudo nano /etc/nginx/conf.d/semanticmediawiki.conf
 ```
 Folgendes Eingeben Text
