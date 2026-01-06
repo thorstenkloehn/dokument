@@ -19,6 +19,9 @@ nav:
     - Installieren: CMS/Mediawiki/index.md
     - Backup: CMS/Mediawiki/Backup.md
     - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
+  - Semantisches MediaWiki:
+    - Installieren: Semantisches/Installieren.md
+    - Installieren in Kurzform: Semantisches/Kurzform.md
   - Tools:
     - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
