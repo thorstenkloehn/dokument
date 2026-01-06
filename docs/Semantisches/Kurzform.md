@@ -77,3 +77,33 @@ exit
 ```
 sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/var/www/semanticmediawiki/LocalSettings.php
 ```
+Öffne die Datei `LocalSettings.php` im Hauptverzeichnis deiner MediaWiki-Installation und füge folgende Zeilen hinzu:
+
+```
+wfLoadExtension( 'SemanticMediaWiki' );
+enableSemantics( 'smw.ahrensburg.city' ); # Ersetze
+wfLoadExtension( 'Maps' );
+$egMapsDefaultService = 'leaflet';
+wfLoadExtension( 'Cargo' );
+wfLoadExtension( 'ExternalData' );
+wfLoadExtension( 'DataTransfer' );
+wfLoadExtension( 'PageForms' );
+wfLoadExtension( 'SemanticResultFormats' );
+wfLoadExtension( 'SemanticCompoundQueries' );
+wfLoadExtension( 'SemanticExtraSpecialProperties' );
+wfLoadExtension( 'Mermaid' );
+$mermaidgDefaultTheme = 'neutral';
+# Cookie-Warnung aktivieren
+wfLoadExtension( 'CookieWarning' );
+wfLoadExtension( 'SyntaxHighlight_GeSHi' );
+$wgCookieWarningEnabled=true;
+$wgCookieWarningMoreUrl='';
+$wgCookieWarningGeoIPServiceURL='';
+$wgCookieWarningGeoIPLookup='none';
+$wgCookieWarningForCountryCodes="EU";
+$wgNamespacesWithSubpages[NS_MAIN] = true;
+```
+
+```
+php maintenance/update.php
+```
