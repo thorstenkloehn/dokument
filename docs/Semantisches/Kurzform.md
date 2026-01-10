@@ -13,11 +13,6 @@ composer require --no-update mediawiki/maps:~12.0
 composer update mediawiki/maps --no-dev
 composer require --no-update mediawiki/cargo
 composer update mediawiki/cargo --no-dev
-
-git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ExternalData /var/www/semanticmediawiki/extensions/ExternalData
-cd /var/www/semanticmediawiki/extensions/ExternalData
-composer install
-npm install
 mkdir /semanticmediawikidownload
 cd /semanticmediawikidownload
 wget https://extdist.wmflabs.org/dist/extensions/CookieWarning-REL1_44-00d6718.tar.gz
@@ -84,6 +79,13 @@ $wgCookieWarningGeoIPServiceURL='';
 $wgCookieWarningGeoIPLookup='none';
 $wgCookieWarningForCountryCodes="EU";
 $wgNamespacesWithSubpages[NS_MAIN] = true;
+
+$wgHooks['CanonicalNamespaces'][] = static function ( &$list ) {
+    global $wgExtraNamespaces;
+    $wgExtraNamespaces[WB_NS_PROPERTY] = $list[WB_NS_PROPERTY] = 'Wikibase_property';
+    $wgExtraNamespaces[WB_NS_PROPERTY_TALK] = $list[WB_NS_PROPERTY_TALK] = 'Wikibase_property_talk';
+};
+```
 ```
 
 ```
