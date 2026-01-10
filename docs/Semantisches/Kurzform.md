@@ -13,18 +13,6 @@ composer require --no-update mediawiki/maps:~12.0
 composer update mediawiki/maps --no-dev
 composer require --no-update mediawiki/cargo
 composer update mediawiki/cargo --no-dev
-composer require mediawiki/data-transfer
-composer update
-composer require mediawiki/page-forms
-composer update
-composer require mediawiki/semantic-result-formats
-composer update
-composer require mediawiki/semantic-compound-queries
-composer update
-composer require mediawiki/semantic-extra-special-properties
-composer  update
-composer require mediawiki/mermaid
-composer  update
 
 git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ExternalData /var/www/semanticmediawiki/extensions/ExternalData
 cd /var/www/semanticmediawiki/extensions/ExternalData
@@ -87,14 +75,6 @@ enableSemantics( 'smw.ahrensburg.city' ); # Ersetze
 wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
 wfLoadExtension( 'Cargo' );
-wfLoadExtension( 'ExternalData' );
-wfLoadExtension( 'DataTransfer' );
-wfLoadExtension( 'PageForms' );
-wfLoadExtension( 'SemanticResultFormats' );
-wfLoadExtension( 'SemanticCompoundQueries' );
-wfLoadExtension( 'SemanticExtraSpecialProperties' );
-wfLoadExtension( 'Mermaid' );
-$mermaidgDefaultTheme = 'neutral';
 # Cookie-Warnung aktivieren
 wfLoadExtension( 'CookieWarning' );
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
