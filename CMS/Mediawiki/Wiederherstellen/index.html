@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mediawiki-dump-importieren" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -716,6 +721,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1175,6 +1182,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1191,14 +1200,19 @@
 
 
 
-  <h1>Wiedererstellen</h1>
-
 <pre><code class="language-bash"># Repository klonen (ohne sudo, falls möglich)
 git clone https://github.com/thorstenkloehn/Download.git ~/Download
 cd ~/Download
 
-# MediaWiki-Dump importieren
-php /var/www/mediawiki/maintenance/run.php importDump.php &lt; pagedump.xml
+</code></pre>
+<p>sudo nano /var/www/mediawiki/LocalSettings.php</p>
+<pre><code>Geben Sie folgende Zeile am Ende der Datei ein, um den Import von Entitäten zu erlauben:
+
+```php
+$wgWBRepoSettings['allowEntityImport'] = true;
+</code></pre>
+<h1 id="mediawiki-dump-importieren">MediaWiki-Dump importieren</h1>
+<pre><code class="language-bash">php /var/www/mediawiki/maintenance/run.php importDump.php &lt; pagedump.xml
 php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
 php /var/www/mediawiki/maintenance/run.php initSiteStats.php
 </code></pre>
