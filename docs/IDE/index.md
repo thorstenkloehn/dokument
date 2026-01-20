@@ -155,8 +155,8 @@ code --install-extension rust-lang.rust-analyzer
 
 ```bash
 cd $HOME
-wget https://go.dev/dl/go1.25.5.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.25.5.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.25.6.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.25.6.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
