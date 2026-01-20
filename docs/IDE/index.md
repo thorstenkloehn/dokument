@@ -16,7 +16,21 @@ sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
+## PostgreSQL installieren
+```
+# Import the repository signing key:
+sudo apt install curl ca-certificates
+sudo install -d /usr/share/postgresql-common/pgdg
+sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://www.postgresql.org/media/keys/ACCC4CF8.asc
 
+# Create the repository configuration file:
+. /etc/os-release
+sudo sh -c "echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
+
+# Update the package lists:
+sudo apt update
+
+```
 
 ## Git installieren und konfigurieren
 
@@ -35,13 +49,21 @@ gh auth login
 ## Node.js installieren
 
 ```bash
-sudo apt-get install curl
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-source ~/.bashrc
-nvm install 22
-node -v    # Sollte "v22.12.0" ausgeben
-nvm current # Sollte "v22.12.0" ausgeben
-npm -v     # Sollte "10.9.0" ausgeben
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 25
+
+# Verify the Node.js version:
+node -v # Should print "v25.4.0".
+
+# Verify npm version:
+npm -v # Should print "11.7.0".
+
 ```
 
 ## Visual Studio Code und Neovim installieren
@@ -64,7 +86,7 @@ code --install-extension ms-windows-ai-studio.windows-ai-studio
 ### PostgreSQL installieren und Benutzer einrichten
 
 ```bash
-sudo apt-get install postgresql-all
+sudo apt-get install postgresql-18
 sudo -u postgres -i
 createuser thorsten
 createdb -E UTF8 -O thorsten thorsten
@@ -82,11 +104,27 @@ psql --version
 ### PostGIS Installation (Ubuntu 23.04)
 
 ```bash
-sudo apt-get install postgis postgresql-16-postgis-3
+sudo apt-get install postgis postgresql-18-postgis-3
 sudo -u postgres -i
 psql -d thorsten -c "CREATE EXTENSION postgis;"
 psql -d thorsten -c "CREATE EXTENSION postgis_topology;"
 exit
+
+cd $HOME
+sudo -u postgres -i
+createuser thorsten
+createdb -E UTF8 -O thorsten thorsten
+psql -d thorsten -c "CREATE EXTENSION postgis;" # Erweiterung hinzufügen
+psql -d thorsten -c "CREATE EXTENSION hstore;" # Erweiterung hinzufügen
+psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO thorsten;" # Rechte setzen
+psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO thorsten;" # Rechte setzen
+psql -d thorsten -c "\password thorsten"
+exit # Ausloggen
+cd $HOME
+wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+
+osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
 ```
 
 ## C und C++ Entwicklungsumgebung

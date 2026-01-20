@@ -5,7 +5,6 @@ Mein Server verwendet Ubuntu 24.04 als Betriebssystem, während mein Entwicklung
 
 Der Produktionsserver setzt folgende Technologien ein:
 
-- **Forgejo**: Selbstgehostete Git-Server-Lösung zur Verwaltung von Quellcode-Repositories.
 - **Git**: Versionskontrollsystem für die Quellcodeverwaltung.
 - **GitHub CLI (`gh`)**: Kommandozeilenwerkzeug zur Interaktion mit GitHub-Repositories.
 - **ASP.NET Core 10**: Framework für die Entwicklung und Bereitstellung von Webanwendungen.
@@ -15,7 +14,10 @@ Der Produktionsserver setzt folgende Technologien ein:
 - **Nginx**: Webserver und Reverse Proxy zur Auslieferung von Webinhalten.
 - **Python**: Programmiersprache für Automatisierung, Skripte und Webanwendungen.
 - **MediaWiki**: Open-Source-Wiki-Software zur Erstellung und Verwaltung von Wissensdatenbanken und Dokumentationen.
-
+- **XWiki**: Open-Source-Wiki-Plattform mit umfangreichen Funktionen für Wissensmanagement, Zusammenarbeit und Dokumentation. XWiki bietet eine flexible Rechteverwaltung, Unterstützung für Makros und Skripte sowie die Möglichkeit, Inhalte strukturiert zu erfassen und zu durchsuchen. Es eignet sich besonders für Teams und Organisationen, die komplexe Dokumentationsanforderungen haben und Wert auf Anpassbarkeit legen.
+- **Wiki.js**: Moderne Open-Source-Wiki-Software, die auf Node.js basiert. Wiki.js bietet eine benutzerfreundliche Oberfläche, integrierte Versionskontrolle, Unterstützung für verschiedene Authentifizierungsmethoden und eine Vielzahl von Editor-Optionen (Markdown, WYSIWYG, Code). Dank modularer Architektur lässt sich Wiki.js flexibel erweitern und an individuelle Anforderungen anpassen. Es eignet sich besonders für Teams, die eine leistungsfähige, einfach zu verwaltende Wissensdatenbank suchen.
+- **Moodle**: Open-Source-Lernplattform (Learning Management System) für die Erstellung und Verwaltung von Online-Kursen, Lernmaterialien und Prüfungen 
+- **Drupal**: Flexibles Open-Source-CMS zur Erstellung komplexer Websites und Webanwendungen, das durch ein modulares System und zahlreiche Erweiterungen an individuelle Anforderungen angepasst werden kann.
 - **Switch2OSM Tileserver**: OpenStreetMap-Tileserver-Lösung zur Bereitstellung von Kartendaten für Webanwendungen.
 
 **Hinweis:** Der Produktionsserver ist so konfiguriert, dass möglichst keine Cookie-Banner erforderlich sind, da alle Daten ausschließlich auf dem eigenen Server verarbeitet und gespeichert werden. Externe Dienste werden vermieden, um Datenschutz und Kontrolle über die Daten zu gewährleisten.
