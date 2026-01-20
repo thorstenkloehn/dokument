@@ -710,10 +710,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mediawiki-installieren" class="md-nav__link">
+  <a href="#mediawiki-installieren-auf-entwicklungs-rechner" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mediawiki installieren
+        Mediawiki installieren auf Entwicklungs Rechner
       
     </span>
   </a>
@@ -725,6 +725,17 @@
     <span class="md-ellipsis">
       
         Lesbare URLs konfiguriern in mediawiki
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auf-den-server-ubertragen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auf den Server übertragen
       
     </span>
   </a>
@@ -1124,10 +1135,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mediawiki-installieren" class="md-nav__link">
+  <a href="#mediawiki-installieren-auf-entwicklungs-rechner" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mediawiki installieren
+        Mediawiki installieren auf Entwicklungs Rechner
       
     </span>
   </a>
@@ -1139,6 +1150,17 @@
     <span class="md-ellipsis">
       
         Lesbare URLs konfiguriern in mediawiki
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auf-den-server-ubertragen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auf den Server übertragen
       
     </span>
   </a>
@@ -1174,7 +1196,7 @@ exit
 <h2 id="php-installieren">PHP installieren</h2>
 <pre><code class="language-bash">sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-xmlrpc php-zip php-intl -y
 </code></pre>
-<h2 id="mediawiki-installieren">Mediawiki installieren</h2>
+<h2 id="mediawiki-installieren-auf-entwicklungs-rechner">Mediawiki installieren auf Entwicklungs Rechner</h2>
 <pre><code class="language-bash">cd /var/www
 sudo git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
 sudo cd mediawiki
@@ -1220,6 +1242,18 @@ $wgCookieWarningForCountryCodes=&quot;EU&quot;;
 
 php maintenance/rebuildLocalisationCache.php
 php maintenance/update.php 
+</code></pre>
+<h2 id="auf-den-server-ubertragen">Auf den Server übertragen</h2>
+<pre><code class="language-bash">
+
+# Oder nur bestimmte Dateien/Verzeichnisse synchronisieren
+rsync -avz --delete \
+  --exclude='LocalSettings.php' \
+  --exclude='.git' \
+  --exclude='cache/*' \
+  --exclude='images/temp/*' \
+  --exclude='images/thumb/*' \
+  /var/www/mediawiki/ user@server:/var/www/mediawiki/
 </code></pre>
 
 
