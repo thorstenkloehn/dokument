@@ -13,7 +13,7 @@ sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlr
 
 
 
-## Mediawiki installieren
+## Mediawiki installieren auf Entwicklungs Rechner
 ```bash
 cd /var/www
 sudo git clone https://gerrit.wikimedia.org/r/mediawiki/core.git mediawiki
@@ -74,4 +74,18 @@ php maintenance/rebuildLocalisationCache.php
 php maintenance/update.php 
 ```
 
+## Auf den Server übertragen
+
+```bash
+
+
+# Oder nur bestimmte Dateien/Verzeichnisse synchronisieren
+rsync -avz --delete \
+  --exclude='LocalSettings.php' \
+  --exclude='.git' \
+  --exclude='cache/*' \
+  --exclude='images/temp/*' \
+  --exclude='images/thumb/*' \
+  /var/www/mediawiki/ user@server:/var/www/mediawiki/
+```
 
