@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mediawiki-dump-importieren" class="md-skip">
+        <a href="#datei-herunterladen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -694,8 +694,24 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wiedererstellen
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -713,6 +729,56 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datei-herunterladen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datei herunterladen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namensraume-in-der-localsettingsphp-auf-httpsahrensburgcity-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Namensräume in der LocalSettings.php auf https://ahrensburg.city anlegen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namensraume-in-der-localsettingsphp-auf-httpsdocsahrensburgcity-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Namensräume in der LocalSettings.php auf https://docs.ahrensburg.city anlegen
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1017,8 +1083,47 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datei-herunterladen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datei herunterladen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namensraume-in-der-localsettingsphp-auf-httpsahrensburgcity-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Namensräume in der LocalSettings.php auf https://ahrensburg.city anlegen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namensraume-in-der-localsettingsphp-auf-httpsdocsahrensburgcity-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Namensräume in der LocalSettings.php auf https://docs.ahrensburg.city anlegen
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1035,21 +1140,49 @@
 
 
 
-<pre><code class="language-bash"># Repository klonen (ohne sudo, falls möglich)
+  <h1>Wiedererstellen</h1>
+
+<h2 id="datei-herunterladen">Datei herunterladen</h2>
+<p>```bash Repository klonen (ohne sudo, falls möglich)
 git clone https://github.com/thorstenkloehn/Download.git ~/Download
-cd ~/Download
-
-</code></pre>
-<p>sudo nano /var/www/mediawiki/LocalSettings.php</p>
-<pre><code>Geben Sie folgende Zeile am Ende der Datei ein, um den Import von Entitäten zu erlauben:
-
-```php
-$wgWBRepoSettings['allowEntityImport'] = true;
-</code></pre>
-<h1 id="mediawiki-dump-importieren">MediaWiki-Dump importieren</h1>
-<pre><code class="language-bash">php /var/www/mediawiki/maintenance/run.php importDump.php &lt; pagedump.xml
+cd ~/Download</p>
+<pre><code>## MediaWiki-Dump auf MediaWiki-Instanzen importieren
+```bash
+php /var/www/mediawiki/maintenance/run.php importDump.php &lt; pagedump.xml
 php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
 php /var/www/mediawiki/maintenance/run.php initSiteStats.php
+php /var/www/mediawiki/maintenance/run.php importDump.php &lt; docs.xml
+php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
+php /var/www/mediawiki/maintenance/run.php initSiteStats.php
+</code></pre>
+<h2 id="namensraume-in-der-localsettingsphp-auf-httpsahrensburgcity-anlegen">Namensräume in der LocalSettings.php auf https://ahrensburg.city anlegen</h2>
+<pre><code>define(&quot;NS_Nachrichten&quot;, 3000);
+define(&quot;NS_Nachrichten_TALK&quot;, 3001);
+
+$wgExtraNamespaces[NS_Nachrichten] = &quot;Nachrichten&quot;;
+$wgExtraNamespaces[NS_Nachrichten_TALK] = &quot;Nachrichten_Diskussion&quot;;
+$wgVisualEditorAvailableNamespaces[] = NS_Nachrichten;
+define(&quot;NS_BLOG&quot;, 3002);
+define(&quot;NS_BLOG_TALK&quot;, 3003);
+
+$wgExtraNamespaces[NS_BLOG] = &quot;Blog&quot;;
+$wgExtraNamespaces[NS_BLOG_TALK] = &quot;Blog_Diskussion&quot;;
+$wgVisualEditorAvailableNamespaces[] = NS_BLOG;
+$wgVisualEditorAvailableNamespaces[NS_BLOG] = true;
+</code></pre>
+<h2 id="namensraume-in-der-localsettingsphp-auf-httpsdocsahrensburgcity-anlegen">Namensräume in der LocalSettings.php auf https://docs.ahrensburg.city anlegen</h2>
+<pre><code>$wgNamespacesWithSubpages[NS_MAIN] = true;
+# End of automatically generated settings.
+# Add more configuration options below.
+
+define(&quot;NS_BLOG&quot;, 4000);
+define(&quot;NS_BLOG_TALK&quot;, 4001);
+
+$wgExtraNamespaces[NS_BLOG] = &quot;Blog&quot;;
+$wgExtraNamespaces[NS_BLOG_TALK] = &quot;Blog_Diskussion&quot;;
+$wgVisualEditorAvailableNamespaces[] = NS_BLOG;
+$wgVisualEditorAvailableNamespaces[NS_BLOG] = true;
+
 </code></pre>
 
 
