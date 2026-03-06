@@ -91,13 +91,13 @@ sudo apt-get install neovim
 ```bash
 code --install-extension GitHub.copilot
 code --install-extension RoweWilsonFrederiskHolme.wikitext
-code --install Google.geminicodeassist
-code --install openai.chatgpt
-code --install anthropic.claude-code
+code --install-extension Google.geminicodeassist
+code --install-extension openai.chatgpt
+code --install-extension anthropic.claude-code
 ```
 
 ## Datenbank: PostgreSQL und PostGIS
-
+--install-extension
 ### PostgreSQL installieren und Benutzer einrichten
 
 ```bash
