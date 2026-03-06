@@ -14,7 +14,6 @@ Der Produktionsserver setzt folgende Technologien ein:
 - **Nginx**: Webserver und Reverse Proxy zur Auslieferung von Webinhalten.
 - **Python**: Programmiersprache für Automatisierung, Skripte und Webanwendungen.
 - **MediaWiki**: Open-Source-Wiki-Software zur Erstellung und Verwaltung von Wissensdatenbanken und Dokumentationen.
-- **Moodle**: Open-Source-Lernplattform (Learning Management System) für die Erstellung und Verwaltung von Online-Kursen, Lernmaterialien und Prüfungen 
 - **Switch2OSM Tileserver**: OpenStreetMap-Tileserver-Lösung zur Bereitstellung von Kartendaten für Webanwendungen.
 
 **Hinweis:** Der Produktionsserver ist so konfiguriert, dass möglichst keine Cookie-Banner erforderlich sind, da alle Daten ausschließlich auf dem eigenen Server verarbeitet und gespeichert werden. Externe Dienste werden vermieden, um Datenschutz und Kontrolle über die Daten zu gewährleisten.
@@ -24,6 +23,19 @@ Der Produktionsserver setzt folgende Technologien ein:
 Auf meinem Entwicklungsrechner kommen folgende Technologien zum Einsatz:
 
 - **Visual Studio Code**: Quelltexteditor mit zahlreichen Erweiterungen für verschiedene Programmiersprachen.
+- **Cursor AI**: KI-gestützter Code-Editor zur Unterstützung bei Codegenerierung, Refactoring und Fehlersuche.
+- **Google Antigravity**: Im November 2025 vorgestellte, KI-gestützte Entwicklungsumgebung (IDE), die speziell für die Arbeit mit autonomen KI-Agenten entwickelt wurde.
+- **VS Code-Erweiterung**
+    - **GitHub Copilot**: KI-gestützte Unterstützung bei Code-Vervollständigung, Refactoring und dem Erstellen von Funktionsvorschlägen direkt im Editor.
+    - **Gemini Code Assist**: KI-Assistent für Code-Erklärung, Generierung und Optimierung sowie Unterstützung bei der Fehlersuche in verschiedenen Programmiersprachen.
+    - **Claude Code**: Ein KI-gestützter Coding-Assistent von Anthropic, der Entwickler:innen beim Schreiben, Verstehen, Refaktorisieren und Dokumentieren von Code direkt im Entwicklungsworkflow unterstützt.
+    - **OpenAI Codex**: KI-gestützte Unterstützung direkt in Visual Studio Code für Codegenerierung, Refactoring, Erklärungen zu bestehendem Code und die schnelle Umsetzung von Entwicklungsaufgaben per natürlicher Sprache.
+- **Kommandozeilen-KI (`CLI-Tools`)**: KI-gestützte Assistenten im Terminal zur Codegenerierung, Analyse und Automatisierung von Entwicklungsaufgaben. 
+    - **Gemini CLI** ist ein Kommandozeilen-Tool für Google Gemini, mit dem du KI-Funktionen direkt im Terminal nutzen kannst
+    (z. B. Prompting, Code-Unterstützung, Automatisierung in Skripten und Workflows).
+    - **GitHub Copilot CLI (`gh copilot`)**: KI-gestützte Erweiterung der GitHub CLI, die per natürlicher Sprache Shell-Befehle, Git-Workflows und passende Kommandozeilenvorschläge liefert und so wiederkehrende Aufgaben im Terminal beschleunigt.
+    - **OpenAI Codex CLI (`codex`)**: Kommandozeilen-Tool für KI-gestützte Entwicklungsaufgaben direkt im Terminal, z. B. Codegenerierung, Refactoring, Erklärungen zu bestehendem Code und Unterstützung bei wiederkehrenden Workflows.
+    - **Claude Code CLI (`claude`)**: Kommandozeilen-Tool von Anthropic für KI-gestützte Entwicklungsaufgaben direkt im Terminal, z. B. Codegenerierung, Refactoring, Analyse bestehender Projekte und Unterstützung bei wiederkehrenden Workflows.
 - **Git**: Versionskontrollsystem zur Verwaltung von Quellcode.
 - **Node.js**: JavaScript-Laufzeitumgebung für serverseitige Anwendungen und Tools.
 - **Python**: Programmiersprache für Skripte, Automatisierung und Webentwicklung.

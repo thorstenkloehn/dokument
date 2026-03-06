@@ -1,4 +1,3 @@
-# Entwicklungsumgebung unter Ubuntu einrichten
 
 ## System aktualisieren
 
@@ -92,7 +91,9 @@ sudo apt-get install neovim
 ```bash
 code --install-extension GitHub.copilot
 code --install-extension RoweWilsonFrederiskHolme.wikitext
-code --install-extension ms-windows-ai-studio.windows-ai-studio
+code --install Google.geminicodeassist
+code --install openai.chatgpt
+code --install anthropic.claude-code
 ```
 
 ## Datenbank: PostgreSQL und PostGIS
@@ -164,7 +165,6 @@ code --install-extension ms-python.python
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 code --install-extension rust-lang.rust-analyzer
 ```
-
 ## Go (Golang) installieren
 
 ```bash
@@ -222,5 +222,12 @@ sudo apt install openjdk-26-jdk
 sudo apt install maven
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vmware.vscode-boot-dev-pack
+```
+## KI Cli
 
+```
+npm install -g @google/gemini-cli
+npm i -g @openai/codex
+npm install -g @github/copilot
+curl -fsSL https://claude.ai/install.sh | bash
 ```
