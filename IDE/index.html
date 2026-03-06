@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
     
       
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entwicklungsumgebung-unter-ubuntu-einrichten" class="md-skip">
+        <a href="#system-aktualisieren" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -562,8 +562,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -605,8 +603,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -863,6 +859,17 @@
     <span class="md-ellipsis">
       
         Java und Entwicklungswerkzeuge installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ki-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KI Cli
       
     </span>
   </a>
@@ -1306,8 +1313,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1569,6 +1574,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ki-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KI Cli
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1586,7 +1602,8 @@
 
 
 
-<h1 id="entwicklungsumgebung-unter-ubuntu-einrichten">Entwicklungsumgebung unter Ubuntu einrichten</h1>
+  <h1>IDE</h1>
+
 <h2 id="system-aktualisieren">System aktualisieren</h2>
 <p>Öffnen Sie das Terminal und führen Sie folgende Befehle aus, um Ihr System zu aktualisieren:</p>
 <pre><code class="language-bash">sudo apt-get update
@@ -1656,7 +1673,9 @@ sudo apt-get install neovim
 <h3 id="wichtige-vs-code-erweiterungen-installieren">Wichtige VS Code Erweiterungen installieren</h3>
 <pre><code class="language-bash">code --install-extension GitHub.copilot
 code --install-extension RoweWilsonFrederiskHolme.wikitext
-code --install-extension ms-windows-ai-studio.windows-ai-studio
+code --install Google.geminicodeassist
+code --install openai.chatgpt
+code --install anthropic.claude-code
 </code></pre>
 <h2 id="datenbank-postgresql-und-postgis">Datenbank: PostgreSQL und PostGIS</h2>
 <h3 id="postgresql-installieren-und-benutzer-einrichten">PostgreSQL installieren und Benutzer einrichten</h3>
@@ -1749,7 +1768,12 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo apt install maven
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vmware.vscode-boot-dev-pack
-
+</code></pre>
+<h2 id="ki-cli">KI Cli</h2>
+<pre><code>npm install -g @google/gemini-cli
+npm i -g @openai/codex
+npm install -g @github/copilot
+curl -fsSL https://claude.ai/install.sh | bash
 </code></pre>
 
 
