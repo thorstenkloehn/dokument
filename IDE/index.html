@@ -887,17 +887,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#add-the-repository-to-apt-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Add the repository to Apt sources:
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1618,17 +1607,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#add-the-repository-to-apt-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Add the repository to Apt sources:
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1645,6 +1623,8 @@
                   
 
 
+
+  <h1>IDE</h1>
 
 <h2 id="system-aktualisieren">System aktualisieren</h2>
 <p>Öffnen Sie das Terminal und führen Sie folgende Befehle aus, um Ihr System zu aktualisieren:</p>
@@ -1821,22 +1801,26 @@ npm install -g @github/copilot
 curl -fsSL https://claude.ai/install.sh | bash
 </code></pre>
 <h2 id="docknerio-installieren">dockner.io Installieren</h2>
-<p>```
-sudo apt update
+<pre><code>sudo apt update
 sudo apt install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-sudo chmod a+r /etc/apt/keyrings/docker.asc</p>
-<h1 id="add-the-repository-to-apt-sources">Add the repository to Apt sources:</h1>
-<p>sudo tee /etc/apt/sources.list.d/docker.sources &lt;&lt;EOF
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+sudo tee /etc/apt/sources.list.d/docker.sources &lt;&lt;EOF
 Types: deb
 URIs: https://download.docker.com/linux/ubuntu
-Suites: $(. /etc/os-release &amp;&amp; echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Suites: $(. /etc/os-release &amp;&amp; echo &quot;${UBUNTU_CODENAME:-$VERSION_CODENAME}&quot;)
 Components: stable
 Signed-By: /etc/apt/keyrings/docker.asc
-EOF</p>
-<p>sudo apt update</p>
-<p>sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</p>
+EOF
+
+sudo apt update
+
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+</code></pre>
 
 
 
