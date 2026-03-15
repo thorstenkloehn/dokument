@@ -20,8 +20,6 @@ nav:
     - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
     - Benchmark: Tools/Benchmark.md
-  - Archiv:
-    - Ollama: Archiv/ollama.md
   - Impressum: Impressum.md
   - Datenschutz: Datenschutz.md
 

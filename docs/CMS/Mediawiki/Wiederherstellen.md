@@ -1,9 +1,12 @@
 ## Datei herunterladen
+
 ```bash Repository klonen (ohne sudo, falls möglich)
 git clone https://github.com/thorstenkloehn/Download.git ~/Download
 cd ~/Download
 ```
+
 ## MediaWiki-Dump auf MediaWiki-Instanzen importieren
+
 ```bash
 php /var/www/mediawiki/maintenance/run.php importDump.php < pagedump.xml
 php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
@@ -13,6 +16,7 @@ php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
 php /var/www/mediawiki/maintenance/run.php initSiteStats.php
 ```
 ## Namensräume in der LocalSettings.php auf https://ahrensburg.city anlegen
+
 ```
 define("NS_Nachrichten", 3000);
 define("NS_Nachrichten_TALK", 3001);
@@ -29,6 +33,7 @@ $wgVisualEditorAvailableNamespaces[] = NS_BLOG;
 $wgVisualEditorAvailableNamespaces[NS_BLOG] = true;
 ```
 ## Namensräume in der LocalSettings.php auf https://docs.ahrensburg.city anlegen
+
 ```
 $wgNamespacesWithSubpages[NS_MAIN] = true;
 # End of automatically generated settings.
