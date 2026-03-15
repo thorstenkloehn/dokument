@@ -755,6 +755,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mediawiki-dump-auf-mediawiki-instanzen-importieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MediaWiki-Dump auf MediaWiki-Instanzen importieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#namensraume-in-der-localsettingsphp-auf-httpsahrensburgcity-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1020,6 +1031,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mediawiki-dump-auf-mediawiki-instanzen-importieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MediaWiki-Dump auf MediaWiki-Instanzen importieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#namensraume-in-der-localsettingsphp-auf-httpsahrensburgcity-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1061,14 +1083,12 @@
   <h1>Wiedererstellen</h1>
 
 <h2 id="datei-herunterladen">Datei herunterladen</h2>
-<p>```bash Repository klonen (ohne sudo, falls möglich)
+<pre><code>Repository klonen (ohne sudo, falls möglich)
 git clone https://github.com/thorstenkloehn/Download.git ~/Download
-cd ~/Download</p>
-<pre><code>
-## MediaWiki-Dump auf MediaWiki-Instanzen importieren
-
-```bash
-php /var/www/mediawiki/maintenance/run.php importDump.php &lt; pagedump.xml
+cd ~/Download
+</code></pre>
+<h2 id="mediawiki-dump-auf-mediawiki-instanzen-importieren">MediaWiki-Dump auf MediaWiki-Instanzen importieren</h2>
+<pre><code>php /var/www/mediawiki/maintenance/run.php importDump.php &lt; pagedump.xml
 php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
 php /var/www/mediawiki/maintenance/run.php initSiteStats.php
 php /var/www/mediawiki/maintenance/run.php importDump.php &lt; docs.xml
