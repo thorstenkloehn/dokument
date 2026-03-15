@@ -17,7 +17,3 @@ git push
 ```
 
 
-## Datenbank Backup
-```
-ssh root@ahrensburg.city "pg_dump -U thorsten -h localhost steffi" > steffi.sql
-

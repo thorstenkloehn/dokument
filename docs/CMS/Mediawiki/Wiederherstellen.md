@@ -1,13 +1,13 @@
 ## Datei herunterladen
-
-```bash Repository klonen (ohne sudo, falls möglich)
+```
+Repository klonen (ohne sudo, falls möglich)
 git clone https://github.com/thorstenkloehn/Download.git ~/Download
 cd ~/Download
 ```
 
 ## MediaWiki-Dump auf MediaWiki-Instanzen importieren
 
-```bash
+```
 php /var/www/mediawiki/maintenance/run.php importDump.php < pagedump.xml
 php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
 php /var/www/mediawiki/maintenance/run.php initSiteStats.php
