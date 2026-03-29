@@ -210,3 +210,82 @@ npm install -g @google/gemini-cli
 npm install -g @github/copilot
 curl -fsSL https://claude.ai/install.sh | bash
 ```
+
+
+In dieser Anleitung wird erklärt, wie das Geoinformationssystem **QGIS Desktop** auf Ubuntu 25.10 installiert wird.
+
+## Wichtiger Hinweis: Wayland vs. X11
+QGIS in einer Wayland-Sitzung zu verwenden beeinträchtigt das Nutzungserlebnis durch Beschränkungen der zugrundeliegenden Qt-Bibliothek und den aktuellen Versionen des Wayland-Protokolls. Es wird empfohlen, für ein besseres Nutzungserlebnis auf eine traditionelle X11-Sitzung umzuschalten.
+
+**So wechseln Sie zu einer X11-Sitzung in Ubuntu:**
+1. Speichern Sie Ihre Arbeit und **melden Sie sich** von Ihrer aktuellen Ubuntu-Sitzung ab.
+2. Klicken Sie auf dem Anmeldebildschirm auf Ihren **Benutzernamen**.
+3. Bevor Sie Ihr Passwort eingeben, klicken Sie auf das kleine **Zahnrad-Symbol** (meist unten rechts).
+4. Wählen Sie aus dem Menü **"Ubuntu on Xorg"** (oder ähnlich) anstelle der standardmäßigen "Ubuntu"-Option (welche Wayland nutzt).
+5. Geben Sie Ihr Passwort ein und melden Sie sich an. Sie verwenden nun eine X11-Sitzung, mit der QGIS optimal funktioniert.
+
+## Voraussetzungen
+* Ein installiertes Ubuntu 25.10 System.
+* Administratorrechte (sudo), um Pakete installieren zu können.
+* Eine aktive Internetverbindung.
+
+## Installationsschritte
+
+Die Installation von QGIS erfolgt am besten über die offiziellen Paketquellen von QGIS, um stets die aktuelle Version zu erhalten, oder alternativ direkt aus den Ubuntu-Standardquellen.
+
+### 1. System aktualisieren & Open Sans Schriftart installieren
+Vor jeder Installation sollten die bestehenden Systempakete auf den neuesten Stand gebracht werden. Zudem ist es **zwingend erforderlich**, die Schriftart **Open Sans** zu installieren, da QGIS andernfalls nicht fehlerfrei startet. 
+
+Öffnen Sie ein Terminal (`Strg + Alt + T`) und führen Sie folgenden Befehl aus, um das System zu aktualisieren und die Schriftart zu installieren:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install fonts-open-sans -y
+```
+
+### 2. Installation über die Standardpaketquellen (Empfohlen für einfache Setups)
+Ubuntu 25.10 bringt QGIS bereits in seinen Repositories mit. Dies ist der unkomplizierteste Weg:
+
+```bash
+sudo apt install qgis qgis-plugin-grass -y
+```
+Das `qgis-plugin-grass` Paket wird installiert, um erweiterte Geoverarbeitungsfunktionen nutzen zu können.
+
+### 3. Offizielles QGIS-Repository (Für spezifische oder LTR-Versionen)
+Möchten Sie sicherstellen, dass Sie immer die aktuellste "Long Term Release" (LTR) Version oder das neueste Release von den QGIS-Entwicklern erhalten:
+
+Installieren Sie zuerst benötigte Werkzeuge und laden Sie den GPG-Schlüssel herunter:
+```bash
+sudo apt install software-properties-common gnupg -y
+curl -fsSL https://qgis.org/downloads/qgis-archive.key | sudo gpg --dearmor -o /etc/apt/keyrings/qgis-archive-keyring.gpg
+```
+
+Fügen Sie danach das QGIS-Repository in Ihre Quellenliste ein und aktualisieren Sie den Paket-Cache:
+```bash
+sudo bash -c 'cat << EOF > /etc/apt/sources.list.d/qgis.sources
+Types: deb deb-src
+URIs: https://qgis.org/ubuntu-ltr
+Suites: plucky
+Architectures: amd64
+Components: main
+Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
+EOF'
+
+sudo apt update
+sudo apt install qgis qgis-plugin-grass -y
+```
+*Hinweis: "plucky" fungiert hierbei als Codename für die Ubuntu 25.10 Veröffentlichung.*
+
+## Das QGIS Browser-Bedienfeld
+
+Nach der erfolgreichen Installation und dem Start von QGIS finden Sie auf der linken Seite das sogenannte **Browser-Bedienfeld** (Browser Panel). Es fungiert als eine Art „Datei-Explorer“ oder „Adressbuch“ für QGIS, in dem Sie festlegen, woher die Software ihre Kartendaten beziehen soll. In dieser Liste werden alle verschiedenen Datenquellen und Verbindungsarten aufgeführt, aus denen QGIS geografische Daten (Karten, Punkte, Linien, Satellitenbilder) laden kann:
+
+Für Ihre Arbeit mit eigenen Karten-Servern (wie z. B. einem lokalen OSM-Tileserver wie Martin) sind besonders folgende Punkte wichtig:
+
+* **Vektorkacheln (Vector Tiles):** Hier können Sie Verbindungen zu Vektor-Tileservern einrichten. Wenn Sie hier einen Rechtsklick machen und „Neue generische Verbindung“ wählen, können Sie die URL Ihres lokalen Servers (z. B. `http://localhost:3000/IhrLayer/{z}/{x}/{y}.pbf`) eintragen, um Ihre selbst gehosteten OpenStreetMap-Daten in QGIS als Ebene hereinzuladen und beliebig zu stylen.
+* **XYZ-Kacheln (XYZ Tiles):** Hierüber binden Sie Raster-Kacheln (fertig gerenderte Bildchen) ein. Dies ist der typische Weg, um einfache Hintergrundkarten (Basemaps) wie die Standard-OpenStreetMap-Karte oder Satellitenbilder aus dem Internet in QGIS anzuzeigen (oft in Form von Links wie `https://tile.openstreetmap.org/{z}/{x}/{y}.png`).
+* **PostgreSQL:** Verbindungen zu vollwertigen Datenbank-Servern. Diese werden genutzt, wenn man mit riesigen Mengen an Geodaten in einem Netzwerk arbeitet (z. B. mit der Erweiterung *PostGIS* für PostgreSQL).
+* **WMS/WMTS / WFS / WCS:** Standardisierte Web-Dienste (OGC-Dienste). Viele Behörden und staatliche Stellen veröffentlichen darüber offizielle Daten, wie bspw. freie Luftbilder, die Sie direkt in QGIS laden können, ohne sie vorher herunterladen zu müssen.
+* **Cloud:** Erlaubt den direkten Zugriff auf Cloud-Speicherdienste (wie Amazon S3, Google Cloud Storage), auf denen häufig enorme Mengen an Geodaten gespeichert sind.
+* **Szenen (Scenes):** Dieser Punkt wird für komplexe 3D-Daten und dreidimensionale Gebäude- und Stadtmodelle genutzt. Man spricht hierbei oft von "3D Tiles" (z.B. von Cäsiium), um ganze Städte begehbar und räumlich darzustellen.
+
