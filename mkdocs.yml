@@ -12,11 +12,7 @@ nav:
     - Nginx Einstellung: Server/nginx.md
     - Weiter Software: Server/Software.md
   - IDE: IDE/index.md  
-  - Mediawiki: 
-    - Installieren: CMS/Mediawiki/index.md
-    - Backup: CMS/Mediawiki/Backup.md
-    - Wiedererstellen: CMS/Mediawiki/Wiederherstellen.md
-  - Tools:
+    - Tools:
     - Pandoc: Tools/Pandoc.md
     - Analysetool: Tools/Analysetool.md
     - Benchmark: Tools/Benchmark.md

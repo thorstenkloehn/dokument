@@ -64,76 +64,8 @@ node -v # Should print "v25.4.0".
 npm -v # Should print "11.7.0".
 
 ```
-## Google Antigravity
-```
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://us-central1-apt.pkg.dev/doc/repo-signing-key.gpg | \
-  sudo gpg --dearmor --yes -o /etc/apt/keyrings/antigravity-repo-key.gpg
-echo "deb [signed-by=/etc/apt/keyrings/antigravity-repo-key.gpg] https://us-central1-apt.pkg.## System aktualisieren
 
-Öffnen Sie das Terminal und führen Sie folgende Befehle aus, um Ihr System zu aktualisieren:
 
-```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
-```
-
-## Google Chrome installieren
-
-```bash
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-```
-## PostgreSQL installieren
-```
-# Import the repository signing key:
-sudo apt install curl ca-certificates
-sudo install -d /usr/share/postgresql-common/pgdg
-sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://www.postgresql.org/media/keys/ACCC4CF8.asc
-
-# Create the repository configuration file:
-. /etc/os-release
-sudo sh -c "echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
-
-# Update the package lists:
-sudo apt update
-
-```
-
-## Git installieren und konfigurieren
-
-```bash
-sudo apt-get install git gh
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-```
-
-## GitHub CLI (gh) konfigurieren
-
-```bash
-gh auth login
-```
-
-## Node.js installieren
-
-```bash
-# Download and install nvm:
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
-
-# in lieu of restarting the shell
-\. "$HOME/.nvm/nvm.sh"
-
-# Download and install Node.js:
-nvm install 25
-
-# Verify the Node.js version:
-node -v # Should print "v25.4.0".
-
-# Verify npm version:
-npm -v # Should print "11.7.0".
-
-```
 ## Google Antigravity
 ```
 sudo mkdir -p /etc/apt/keyrings
@@ -168,7 +100,6 @@ code --install-extension Google.gemini-cli-vscode-ide-companion
 ```
 
 ## Datenbank: PostgreSQL und PostGIS
---install-extension
 ### PostgreSQL installieren und Benutzer einrichten
 
 ```bash
@@ -261,30 +192,9 @@ dotnet tool install -g Microsoft.Web.LibraryManager.Cli
 echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc
 source ~/.bashrc
 code --install-extension ms-dotnettools.csdevkit
-dotnet new install OrchardCore.ProjectTemplates::2.2.1
+
 ```
 
-## PHP installieren
-
-```bash
-sudo apt install php-fpm php-pgsql php-xml php-curl php-gd php-mbstring php-xmlrpc php-zip php-intl php-json php-cli php-common php-apcu php-bcmath php-soap php-ldap php-imagick php-zip php-gmp -y
-```
-
-## Composer installieren
-
-```bash
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-sudo mv composer.phar /usr/local/bin/composer
-```
-
-## nginx installieren
-
-```bash
-sudo apt-get install nginx
-sudo rm /etc/nginx/sites-enabled/default
-```
 
 ## Java und Entwicklungswerkzeuge installieren
 
