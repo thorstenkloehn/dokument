@@ -10,6 +10,7 @@ nav:
       - Apache-Server mit Nginx verbinden: Server/Apache_Nginx.md
       - Nginx SSL Zertifikat: Server/Nginx_SSL.md
       - Nginx Einstellung: Server/nginx.md
+      - Tomcat: Server/Tomcat.md
       - Weiter Software: Server/Software.md
   - IDE: IDE/index.md
   - Tools:

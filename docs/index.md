@@ -12,6 +12,7 @@ Der Produktionsserver setzt folgende Technologien ein:
 - **PostgreSQL**: Relationale Datenbank für die Speicherung und Verwaltung von Daten.
 - **Nginx**: Webserver und Reverse Proxy zur Auslieferung von Webinhalten.
 - **Python**: Programmiersprache für Automatisierung, Skripte und Webanwendungen.
+- **Tomcat**: Apache Tomcat 10 ist ein Open-Source-Webserver und Servlet-Container für Java-Anwendungen.
 - **Switch2OSM Tileserver**: OpenStreetMap-Tileserver-Lösung zur Bereitstellung von Kartendaten für Webanwendungen.
 
 **Hinweis:** Der Produktionsserver ist so konfiguriert, dass möglichst keine Cookie-Banner erforderlich sind, da alle Daten ausschließlich auf dem eigenen Server verarbeitet und gespeichert werden. Externe Dienste werden vermieden, um Datenschutz und Kontrolle über die Daten zu gewährleisten.
