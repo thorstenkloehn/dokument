@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../IDE/">
+        <link rel="prev" href="../nginx/">
       
       
-        <link rel="next" href="../Analysetool/">
+        <link rel="next" href="../Software/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Pandoc - Dokument</title>
+        <title>Tomcat - Dokument</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pandoc-installieren" class="md-skip">
+        <a href="#tomcat-10-auf-ubuntu-installieren" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pandoc
+              Tomcat
             
           </span>
         </div>
@@ -220,18 +220,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -252,7 +254,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -270,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Server/Postgresql/" class="md-nav__link">
+      <a href="../Postgresql/" class="md-nav__link">
         
   
   
@@ -345,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Server/Kachelserver/Server204/" class="md-nav__link">
+      <a href="../Kachelserver/Server204/" class="md-nav__link">
         
   
   
@@ -373,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Server/Kachelserver/Server224/" class="md-nav__link">
+      <a href="../Kachelserver/Server224/" class="md-nav__link">
         
   
   
@@ -401,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Server/Kachelserver/Server244/" class="md-nav__link">
+      <a href="../Kachelserver/Server244/" class="md-nav__link">
         
   
   
@@ -437,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Server/Apache_Nginx/" class="md-nav__link">
+      <a href="../Apache_Nginx/" class="md-nav__link">
         
   
   
@@ -465,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Server/Nginx_SSL/" class="md-nav__link">
+      <a href="../Nginx_SSL/" class="md-nav__link">
         
   
   
@@ -493,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Server/nginx/" class="md-nav__link">
+      <a href="../nginx/" class="md-nav__link">
         
   
   
@@ -518,10 +520,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Server/Tomcat/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tomcat
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -537,6 +566,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-system-aktualisieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. System aktualisieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-java-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Java installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tomcat-10-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Tomcat 10 installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-status-uberprufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Status überprüfen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-deployment-manuell-via-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Deployment (Manuell via SSH)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-unix-domain-sockets-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Unix Domain Sockets (Optional)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Unix Domain Sockets (Optional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konfiguration-in-der-serverxml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konfiguration in der server.xml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungen-und-systemd-konfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Berechtigungen und Systemd-Konfiguration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungen-fur-nginx-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Berechtigungen für Nginx (Reverse Proxy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -549,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Server/Software/" class="md-nav__link">
+      <a href="../Software/" class="md-nav__link">
         
   
   
@@ -608,20 +762,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -642,7 +794,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -657,35 +809,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Pandoc
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Tools/Pandoc/" class="md-nav__link">
         
   
   
@@ -701,52 +828,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pandoc-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pandoc Installieren
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Pandoc Installieren">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installieren-unter-ubuntu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installieren unter Ubuntu
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -759,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Analysetool/" class="md-nav__link">
+      <a href="../../Tools/Analysetool/" class="md-nav__link">
         
   
   
@@ -787,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Benchmark/" class="md-nav__link">
+      <a href="../../Tools/Benchmark/" class="md-nav__link">
         
   
   
@@ -886,6 +967,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -894,22 +977,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pandoc-installieren" class="md-nav__link">
+  <a href="#1-system-aktualisieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pandoc Installieren
+        1. System aktualisieren
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Pandoc Installieren">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-java-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Java installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tomcat-10-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Tomcat 10 installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-status-uberprufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Status überprüfen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-deployment-manuell-via-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Deployment (Manuell via SSH)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-unix-domain-sockets-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Unix Domain Sockets (Optional)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Unix Domain Sockets (Optional)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installieren-unter-ubuntu" class="md-nav__link">
+  <a href="#konfiguration-in-der-serverxml" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installieren unter Ubuntu
+        Konfiguration in der server.xml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungen-und-systemd-konfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Berechtigungen und Systemd-Konfiguration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungen-fur-nginx-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Berechtigungen für Nginx (Reverse Proxy)
       
     </span>
   </a>
@@ -938,18 +1098,64 @@
 
 
 
-  <h1>Pandoc</h1>
-
-<h2 id="pandoc-installieren">Pandoc Installieren</h2>
-<p>Pandoc ist ein universeller Dokumentenkonverter, der von John MacFarlane entwickelt wurde. Er kann unter anderem Markdown, HTML, LaTeX und viele andere Formate ineinander umwandeln.</p>
-<h3 id="installieren-unter-ubuntu">Installieren unter Ubuntu</h3>
-<p>Pandoc kann unter Ubuntu mit dem folgenden Befehl installiert werden:</p>
-<pre><code class="language-bash">sudo apt-get install pandoc
+<h1 id="tomcat-10-auf-ubuntu-installieren">Tomcat 10 auf Ubuntu installieren</h1>
+<p>Diese Anleitung beschreibt die Installation von Apache Tomcat 10 auf einem Ubuntu-System.</p>
+<h2 id="1-system-aktualisieren">1. System aktualisieren</h2>
+<p>Zuerst sollten die Paketlisten und das System aktualisiert werden:</p>
+<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt upgrade -y
 </code></pre>
-<p>Mardown zu mediawiki:</p>
-<pre><code class="language-bash">
-pandoc -f markdown -t mediawiki -o Datenschutz.wiki Datenschutz.md
+<h2 id="2-java-installieren">2. Java installieren</h2>
+<p>Tomcat 10 erfordert Java 11 oder höher. Wir installieren OpenJDK 17:</p>
+<pre><code class="language-bash">sudo apt install openjdk-17-jdk -y
+java -version
 </code></pre>
+<h2 id="3-tomcat-10-installieren">3. Tomcat 10 installieren</h2>
+<p>Installieren Sie Tomcat 10 sowie die Native-Bibliothek (für bessere Performance und OpenSSL-Support) über die Paketverwaltung. Das Administrationspaket (<code>tomcat10-admin</code>) ist optional:</p>
+<pre><code class="language-bash">sudo apt update
+sudo apt install tomcat10 libtcnative-1 -y
+# Optional für Web-Manager: sudo apt install tomcat10-admin
+</code></pre>
+<h2 id="4-status-uberprufen">4. Status überprüfen</h2>
+<p>Nach der Installation sollte der Tomcat-Dienst automatisch gestartet sein. Dies kann wie folgt überprüft werden:</p>
+<pre><code class="language-bash">sudo systemctl status tomcat10
+</code></pre>
+<h2 id="5-deployment-manuell-via-ssh">5. Deployment (Manuell via SSH)</h2>
+<p>Wenn Sie kein Web-Interface nutzen möchten (aus Sicherheitsgründen oft bevorzugt), können Sie Ihre <code>.war</code>-Dateien direkt per SCP oder SFTP in das Webapps-Verzeichnis kopieren:</p>
+<pre><code class="language-bash"># Beispiel für den Upload via SCP
+scp meine_app.war root@dein-server-ip:/var/lib/tomcat10/webapps/
+</code></pre>
+<p>Tomcat erkennt neue Dateien im <code>webapps</code>-Ordner normalerweise automatisch und entpackt sie.</p>
+<h2 id="6-unix-domain-sockets-optional">6. Unix Domain Sockets (Optional)</h2>
+<p>Wenn Sie Tomcat hinter einem Reverse Proxy wie Nginx betreiben, kann die Kommunikation über Unix Domain Sockets effizienter sein als über TCP.</p>
+<h3 id="konfiguration-in-der-serverxml">Konfiguration in der <code>server.xml</code></h3>
+<p>Fügen Sie einen speziellen <code>&lt;Connector&gt;</code> in der Datei <code>/etc/tomcat10/server.xml</code> hinzu. Anstatt eines <code>port</code>-Attributs verwenden Sie <code>unixDomainSocketPath</code>:</p>
+<pre><code class="language-xml">&lt;Connector 
+    protocol=&quot;org.apache.coyote.http11.Http11NioProtocol&quot; 
+    unixDomainSocketPath=&quot;/var/run/tomcat10/tomcat.sock&quot;
+    unixDomainSocketPathPermissions=&quot;rw-rw----&quot;
+    maxThreads=&quot;200&quot;
+    connectionTimeout=&quot;20000&quot; /&gt;
+</code></pre>
+<h3 id="berechtigungen-und-systemd-konfiguration">Berechtigungen und Systemd-Konfiguration</h3>
+<p>Standardmäßig schränkt die Systemd-Unit von Tomcat unter Ubuntu die Schreibrechte ein (<code>ReadOnlyPaths</code>). Damit Tomcat den Socket in <code>/var/run/tomcat10/</code> anlegen darf, müssen wir einen Override erstellen.</p>
+<p>Führen Sie folgenden Befehl aus:</p>
+<pre><code class="language-bash">sudo systemctl edit tomcat10
+</code></pre>
+<p>Fügen Sie im Editor folgende Zeilen ein:</p>
+<pre><code class="language-ini">[Service]
+RuntimeDirectory=tomcat10
+RuntimeDirectoryMode=0770
+ReadWritePaths=/var/run/tomcat10
+</code></pre>
+<p><em>Hinweis: Dies erstellt das Verzeichnis <code>/run/tomcat10</code> (was ein Symlink auf <code>/var/run/tomcat10</code> ist) automatisch beim Start des Dienstes mit den korrekten Rechten für den Tomcat-Benutzer.</em></p>
+<h3 id="berechtigungen-fur-nginx-reverse-proxy">Berechtigungen für Nginx (Reverse Proxy)</h3>
+<p>Damit Nginx auf den Unix-Socket zugreifen darf, muss der Nginx-Benutzer (<code>www-data</code>) zur Gruppe <code>tomcat</code> hinzugefügt werden:</p>
+<pre><code class="language-bash">sudo usermod -aG tomcat www-data
+</code></pre>
+<p>Stellen Sie nach der Änderung sicher, dass der Dienst neu gestartet wird:</p>
+<pre><code class="language-bash">sudo systemctl restart tomcat10
+</code></pre>
+<p><em>(Eventuell muss auch Nginx neu gestartet werden, damit die Gruppenänderung wirksam wird: <code>sudo systemctl restart nginx</code>)</em></p>
 
 
 
