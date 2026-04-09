@@ -9,6 +9,24 @@ sudo apt-get upgrade
 sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
 ```
 
+## Sudo ohne Passwort konfigurieren (NOPASSWD)
+
+Statt das Passwort für `sudo` Befehle jedes Mal einzugeben, können Sie Ihren Benutzer so konfigurieren, dass kein Passwort abgefragt wird.
+
+Öffnen Sie die Konfigurationsdatei mit:
+
+```bash
+sudo visudo
+```
+
+Fügen Sie am Ende der Datei folgende Zeile für Ihren Benutzer hinzu:
+
+```text
+dein_benutzername ALL=(ALL) NOPASSWD:ALL
+```
+
+Speichern und schließen Sie den Editor.
+
 ## Google Chrome installieren
 
 ```bash
@@ -88,12 +106,7 @@ antigravity --install-extension Google.gemini-cli-vscode-ide-companion
 sudo snap install code --classic
 sudo apt-get install neovim
 ```
-## JetBrains IDEs installieren
 
-```bash
-sudo snap install intellij-idea-ultimate --classic
-sudo snap install rider --classic
-```
 ### Wichtige VS Code Erweiterungen installieren
 
 ```bash
