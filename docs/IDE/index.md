@@ -121,14 +121,6 @@ curl -f https://zed.dev/install.sh | sh
 
 ```
 
-## Datenbank: PostgreSQL und PostGIS
-
-
-### PostgreSQL Version anzeigen
-
-```bash
-psql --version
-```
 
 ### PostGIS Installation ()
 
