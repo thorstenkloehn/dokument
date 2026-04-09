@@ -817,6 +817,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#postgresql-authentifizierung-pg_hbaconf-anpassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL Authentifizierung (pg_hba.conf) anpassen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#c-und-c-entwicklungsumgebung" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1295,6 +1306,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#postgresql-authentifizierung-pg_hbaconf-anpassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL Authentifizierung (pg_hba.conf) anpassen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#c-und-c-entwicklungsumgebung" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1495,7 +1517,24 @@ sudo -u postgres -i
 psql -d thorsten -c &quot;CREATE EXTENSION postgis;&quot;
 psql -d thorsten -c &quot;CREATE EXTENSION postgis_topology;&quot;
 exit
-
+</code></pre>
+<h2 id="postgresql-authentifizierung-pg_hbaconf-anpassen">PostgreSQL Authentifizierung (pg_hba.conf) anpassen</h2>
+<p>Wenn Sie auf Ihrem lokalen Rechner arbeiten und kein Passwort eingeben möchten, können Sie die Authentifizierungsmethode auf <code>trust</code> ändern.</p>
+<blockquote>
+<p>[!CAUTION]
+Niemals auf produktiven Servern verwenden! Jeder lokale Nutzer kann sich dann ohne Passwort als jeder Datenbank-Nutzer anmelden.</p>
+</blockquote>
+<p>Suchen Sie die Datei (Pfad variiert je nach Version, z. B. <code>/etc/postgresql/18/main/pg_hba.conf</code>).</p>
+<p>Ändern Sie die Zeile für lokale Verbindungen:</p>
+<pre><code class="language-text"># Vorher:
+local   all             all                                     scram-sha-256
+# Nachher:
+local   all             all                                     trust
+</code></pre>
+<p>Starten Sie PostgreSQL neu:</p>
+<pre><code class="language-bash">sudo systemctl restart postgresql
+</code></pre>
+<pre><code>
 cd $HOME
 sudo -u postgres -i
 createuser thorsten
