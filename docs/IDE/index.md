@@ -122,17 +122,7 @@ curl -f https://zed.dev/install.sh | sh
 ```
 
 ## Datenbank: PostgreSQL und PostGIS
-### PostgreSQL installieren und Benutzer einrichten
 
-```bash
-sudo apt-get install postgresql-18
-sudo -u postgres -i
-createuser thorsten
-createdb -E UTF8 -O thorsten thorsten
-psql -c "\password thorsten"
-psql -c "ALTER USER dein_benutzername CREATEDB;"
-exit
-```
 
 ### PostgreSQL Version anzeigen
 
