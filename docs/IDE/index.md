@@ -140,41 +140,11 @@ exit
 psql --version
 ```
 
-### PostGIS Installation (Ubuntu 23.04)
+### PostGIS Installation ()
 
 ```bash
-sudo apt-get install postgis postgresql-18-postgis-3
-sudo -u postgres -i
-psql -d thorsten -c "CREATE EXTENSION postgis;"
-psql -d thorsten -c "CREATE EXTENSION postgis_topology;"
-exit
-```
-## PostgreSQL Authentifizierung (pg_hba.conf) anpassen
 
-Wenn Sie auf Ihrem lokalen Rechner arbeiten und kein Passwort eingeben möchten, können Sie die Authentifizierungsmethode auf `trust` ändern.
-
-> [!CAUTION]
-> Niemals auf produktiven Servern verwenden! Jeder lokale Nutzer kann sich dann ohne Passwort als jeder Datenbank-Nutzer anmelden.
-
-Suchen Sie die Datei (Pfad variiert je nach Version, z. B. `/etc/postgresql/18/main/pg_hba.conf`).
-
-Ändern Sie die Zeile für lokale Verbindungen:
-
-```text
-# Vorher:
-local   all             all                                     scram-sha-256
-# Nachher:
-local   all             all                                     trust
-```
-
-Starten Sie PostgreSQL neu:
-
-```bash
-sudo systemctl restart postgresql
-```
-
-```
-
+sudo apt-get install postgis postgresql-18-postgis-3 postgresql-18
 cd $HOME
 sudo -u postgres -i
 createuser thorsten
@@ -184,12 +154,15 @@ psql -d thorsten -c "CREATE EXTENSION hstore;" # Erweiterung hinzufügen
 psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO thorsten;" # Rechte setzen
 psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO thorsten;" # Rechte setzen
 psql -d thorsten -c "\password thorsten"
+psql -c "ALTER USER dein_benutzername CREATEDB;"
 exit # Ausloggen
 cd $HOME
 wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
 osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
 
 osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
+dotnet ef dbcontext scaffold "Host=localhost;Database=meine_gis_db;Username=postgres;Password=mein_passwort" Npgsql.EntityFrameworkCore.PostgreSQL -o Models
+
 ```
 
 ## C und C++ Entwicklungsumgebung
