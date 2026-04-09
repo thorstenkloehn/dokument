@@ -651,6 +651,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sudo-ohne-passwort-konfigurieren-nopasswd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sudo ohne Passwort konfigurieren (NOPASSWD)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#google-chrome-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -725,18 +736,7 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jetbrains-ides-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        JetBrains IDEs installieren
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="JetBrains IDEs installieren">
+    <nav class="md-nav" aria-label="Visual Studio Code und Neovim installieren">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1129,6 +1129,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sudo-ohne-passwort-konfigurieren-nopasswd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sudo ohne Passwort konfigurieren (NOPASSWD)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#google-chrome-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1203,18 +1214,7 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jetbrains-ides-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        JetBrains IDEs installieren
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="JetBrains IDEs installieren">
+    <nav class="md-nav" aria-label="Visual Studio Code und Neovim installieren">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1396,6 +1396,15 @@
 sudo apt-get upgrade
 sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
 </code></pre>
+<h2 id="sudo-ohne-passwort-konfigurieren-nopasswd">Sudo ohne Passwort konfigurieren (NOPASSWD)</h2>
+<p>Statt das Passwort für <code>sudo</code> Befehle jedes Mal einzugeben, können Sie Ihren Benutzer so konfigurieren, dass kein Passwort abgefragt wird.</p>
+<p>Öffnen Sie die Konfigurationsdatei mit:</p>
+<pre><code class="language-bash">sudo visudo
+</code></pre>
+<p>Fügen Sie am Ende der Datei folgende Zeile für Ihren Benutzer hinzu:</p>
+<pre><code class="language-text">dein_benutzername ALL=(ALL) NOPASSWD:ALL
+</code></pre>
+<p>Speichern und schließen Sie den Editor.</p>
 <h2 id="google-chrome-installieren">Google Chrome installieren</h2>
 <pre><code class="language-bash">wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
@@ -1456,10 +1465,6 @@ antigravity --install-extension Google.gemini-cli-vscode-ide-companion
 <h2 id="visual-studio-code-und-neovim-installieren">Visual Studio Code und Neovim installieren</h2>
 <pre><code class="language-bash">sudo snap install code --classic
 sudo apt-get install neovim
-</code></pre>
-<h2 id="jetbrains-ides-installieren">JetBrains IDEs installieren</h2>
-<pre><code class="language-bash">sudo snap install intellij-idea-ultimate --classic
-sudo snap install rider --classic
 </code></pre>
 <h3 id="wichtige-vs-code-erweiterungen-installieren">Wichtige VS Code Erweiterungen installieren</h3>
 <pre><code class="language-bash">code --install-extension GitHub.copilot
