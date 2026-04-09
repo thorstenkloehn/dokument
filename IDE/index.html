@@ -801,10 +801,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#postgis-installation-ubuntu-2304" class="md-nav__link">
+  <a href="#postgis-installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PostGIS Installation (Ubuntu 23.04)
+        PostGIS Installation ()
       
     </span>
   </a>
@@ -813,17 +813,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgresql-authentifizierung-pg_hbaconf-anpassen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PostgreSQL Authentifizierung (pg_hba.conf) anpassen
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1290,10 +1279,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#postgis-installation-ubuntu-2304" class="md-nav__link">
+  <a href="#postgis-installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PostGIS Installation (Ubuntu 23.04)
+        PostGIS Installation ()
       
     </span>
   </a>
@@ -1302,17 +1291,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#postgresql-authentifizierung-pg_hbaconf-anpassen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PostgreSQL Authentifizierung (pg_hba.conf) anpassen
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1511,30 +1489,9 @@ exit
 <h3 id="postgresql-version-anzeigen">PostgreSQL Version anzeigen</h3>
 <pre><code class="language-bash">psql --version
 </code></pre>
-<h3 id="postgis-installation-ubuntu-2304">PostGIS Installation (Ubuntu 23.04)</h3>
-<pre><code class="language-bash">sudo apt-get install postgis postgresql-18-postgis-3
-sudo -u postgres -i
-psql -d thorsten -c &quot;CREATE EXTENSION postgis;&quot;
-psql -d thorsten -c &quot;CREATE EXTENSION postgis_topology;&quot;
-exit
-</code></pre>
-<h2 id="postgresql-authentifizierung-pg_hbaconf-anpassen">PostgreSQL Authentifizierung (pg_hba.conf) anpassen</h2>
-<p>Wenn Sie auf Ihrem lokalen Rechner arbeiten und kein Passwort eingeben möchten, können Sie die Authentifizierungsmethode auf <code>trust</code> ändern.</p>
-<blockquote>
-<p>[!CAUTION]
-Niemals auf produktiven Servern verwenden! Jeder lokale Nutzer kann sich dann ohne Passwort als jeder Datenbank-Nutzer anmelden.</p>
-</blockquote>
-<p>Suchen Sie die Datei (Pfad variiert je nach Version, z. B. <code>/etc/postgresql/18/main/pg_hba.conf</code>).</p>
-<p>Ändern Sie die Zeile für lokale Verbindungen:</p>
-<pre><code class="language-text"># Vorher:
-local   all             all                                     scram-sha-256
-# Nachher:
-local   all             all                                     trust
-</code></pre>
-<p>Starten Sie PostgreSQL neu:</p>
-<pre><code class="language-bash">sudo systemctl restart postgresql
-</code></pre>
-<pre><code>
+<h3 id="postgis-installation">PostGIS Installation ()</h3>
+<pre><code class="language-bash">
+sudo apt-get install postgis postgresql-18-postgis-3 postgresql-18
 cd $HOME
 sudo -u postgres -i
 createuser thorsten
@@ -1544,12 +1501,15 @@ psql -d thorsten -c &quot;CREATE EXTENSION hstore;&quot; # Erweiterung hinzufüg
 psql -d thorsten -c &quot;ALTER TABLE geometry_columns OWNER TO thorsten;&quot; # Rechte setzen
 psql -d thorsten -c &quot;ALTER TABLE spatial_ref_sys OWNER TO thorsten;&quot; # Rechte setzen
 psql -d thorsten -c &quot;\password thorsten&quot;
+psql -c &quot;ALTER USER dein_benutzername CREATEDB;&quot;
 exit # Ausloggen
 cd $HOME
 wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
 osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
 
 osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
+dotnet ef dbcontext scaffold &quot;Host=localhost;Database=meine_gis_db;Username=postgres;Password=mein_passwort&quot; Npgsql.EntityFrameworkCore.PostgreSQL -o Models
+
 </code></pre>
 <h2 id="c-und-c-entwicklungsumgebung">C und C++ Entwicklungsumgebung</h2>
 <pre><code class="language-bash">sudo apt install curl
