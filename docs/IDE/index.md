@@ -148,6 +148,32 @@ sudo -u postgres -i
 psql -d thorsten -c "CREATE EXTENSION postgis;"
 psql -d thorsten -c "CREATE EXTENSION postgis_topology;"
 exit
+```
+## PostgreSQL Authentifizierung (pg_hba.conf) anpassen
+
+Wenn Sie auf Ihrem lokalen Rechner arbeiten und kein Passwort eingeben möchten, können Sie die Authentifizierungsmethode auf `trust` ändern.
+
+> [!CAUTION]
+> Niemals auf produktiven Servern verwenden! Jeder lokale Nutzer kann sich dann ohne Passwort als jeder Datenbank-Nutzer anmelden.
+
+Suchen Sie die Datei (Pfad variiert je nach Version, z. B. `/etc/postgresql/18/main/pg_hba.conf`).
+
+Ändern Sie die Zeile für lokale Verbindungen:
+
+```text
+# Vorher:
+local   all             all                                     scram-sha-256
+# Nachher:
+local   all             all                                     trust
+```
+
+Starten Sie PostgreSQL neu:
+
+```bash
+sudo systemctl restart postgresql
+```
+
+```
 
 cd $HOME
 sudo -u postgres -i
@@ -201,6 +227,8 @@ echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
+
+
 
 ## .NET installieren und konfigurieren
 
