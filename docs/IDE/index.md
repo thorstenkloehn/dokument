@@ -143,9 +143,35 @@ wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.
 osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
 
 osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
-dotnet ef dbcontext scaffold "Host=localhost;Database=meine_gis_db;Username=postgres;Password=mein_passwort" Npgsql.EntityFrameworkCore.PostgreSQL -o Models
 
 ```
+
+## PostgreSQL Passwort-Authentifizierung konfigurieren
+
+### Die .pgpass Datei (Sicherster & Standard-Weg)
+
+Dies ist die offizielle Methode für benutzerspezifische Passwörter. PostgreSQL sucht im Home-Verzeichnis nach einer versteckten Datei namens `.pgpass`.
+
+Erstelle die Datei in deinem Home-Verzeichnis:
+
+```bash
+nano ~/.pgpass
+```
+
+Füge die Daten im folgenden Format ein:
+
+```text
+localhost:5432:*:dein_user:dein_passwort
+```
+
+Wildcards `*` sind erlaubt, falls das Passwort für alle Datenbanken gilt.
+
+Wichtig: Setze die korrekten Berechtigungen (PostgreSQL verweigert die Datei, wenn sie für andere lesbar ist):
+
+```bash
+chmod 0600 ~/.pgpass
+```
+
 
 ## C und C++ Entwicklungsumgebung
 
