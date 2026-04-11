@@ -784,6 +784,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#postgresql-passwort-authentifizierung-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL Passwort-Authentifizierung konfigurieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PostgreSQL Passwort-Authentifizierung konfigurieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-pgpass-datei-sicherster-standard-weg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Die .pgpass Datei (Sicherster &amp; Standard-Weg)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#c-und-c-entwicklungsumgebung" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1229,6 +1257,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#postgresql-passwort-authentifizierung-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL Passwort-Authentifizierung konfigurieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PostgreSQL Passwort-Authentifizierung konfigurieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-pgpass-datei-sicherster-standard-weg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Die .pgpass Datei (Sicherster &amp; Standard-Weg)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#c-und-c-entwicklungsumgebung" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1429,8 +1485,20 @@ wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.
 osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
 
 osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
-dotnet ef dbcontext scaffold &quot;Host=localhost;Database=meine_gis_db;Username=postgres;Password=mein_passwort&quot; Npgsql.EntityFrameworkCore.PostgreSQL -o Models
 
+</code></pre>
+<h2 id="postgresql-passwort-authentifizierung-konfigurieren">PostgreSQL Passwort-Authentifizierung konfigurieren</h2>
+<h3 id="die-pgpass-datei-sicherster-standard-weg">Die .pgpass Datei (Sicherster &amp; Standard-Weg)</h3>
+<p>Dies ist die offizielle Methode für benutzerspezifische Passwörter. PostgreSQL sucht im Home-Verzeichnis nach einer versteckten Datei namens <code>.pgpass</code>.</p>
+<p>Erstelle die Datei in deinem Home-Verzeichnis:</p>
+<pre><code class="language-bash">nano ~/.pgpass
+</code></pre>
+<p>Füge die Daten im folgenden Format ein:</p>
+<pre><code class="language-text">localhost:5432:*:dein_user:dein_passwort
+</code></pre>
+<p>Wildcards <code>*</code> sind erlaubt, falls das Passwort für alle Datenbanken gilt.</p>
+<p>Wichtig: Setze die korrekten Berechtigungen (PostgreSQL verweigert die Datei, wenn sie für andere lesbar ist):</p>
+<pre><code class="language-bash">chmod 0600 ~/.pgpass
 </code></pre>
 <h2 id="c-und-c-entwicklungsumgebung">C und C++ Entwicklungsumgebung</h2>
 <pre><code class="language-bash">sudo apt install curl
