@@ -7,6 +7,7 @@
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
+sudo ubuntu-drivers install
 ```
 
 ## Sudo ohne Passwort konfigurieren (NOPASSWD)
@@ -242,9 +243,15 @@ npm install -g @google/gemini-cli
 npm install -g @github/copilot
 curl -fsSL https://claude.ai/install.sh | bash
 ```
-
-
-
+## Jetbrains Installieren
+```
+sudo snap install rider --classic
+sudo snap install intellij-idea --classic
+```
+## Weiter IDE Agent
+```
+* https://cursor.com/download
+* 
 In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.
 
 * **Vektorkacheln (Vector Tiles):** Hier können Sie Verbindungen zu Vektor-Tileservern einrichten. Wenn Sie hier einen Rechtsklick machen und „Neue generische Verbindung" wählen, können Sie die URL Ihres lokalen Servers (z. B. `http://localhost:3000/IhrLayer/{z}/{x}/{y}.pbf`) eintragen, um Ihre selbst gehosteten OpenStreetMap-Daten in QGIS als Ebene hereinzuladen und beliebig zu stylen.
