@@ -248,6 +248,10 @@ curl -fsSL https://claude.ai/install.sh | bash
 sudo snap install rider --classic
 sudo snap install intellij-idea --classic
 ```
+## Ollama
+```
+curl -fsSL https://ollama.com/install.sh | sh
+```
 
 In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.
 
