@@ -248,10 +248,7 @@ curl -fsSL https://claude.ai/install.sh | bash
 sudo snap install rider --classic
 sudo snap install intellij-idea --classic
 ```
-## Weiter IDE Agent
-```
-* https://cursor.com/download
-* 
+
 In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.
 
 * **Vektorkacheln (Vector Tiles):** Hier können Sie Verbindungen zu Vektor-Tileservern einrichten. Wenn Sie hier einen Rechtsklick machen und „Neue generische Verbindung" wählen, können Sie die URL Ihres lokalen Servers (z. B. `http://localhost:3000/IhrLayer/{z}/{x}/{y}.pbf`) eintragen, um Ihre selbst gehosteten OpenStreetMap-Daten in QGIS als Ebene hereinzuladen und beliebig zu stylen.
