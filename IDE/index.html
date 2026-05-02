@@ -888,6 +888,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#jetbrains-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jetbrains Installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiter-ide-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weiter IDE Agent
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1361,6 +1383,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#jetbrains-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jetbrains Installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiter-ide-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weiter IDE Agent
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1385,6 +1429,7 @@
 <pre><code class="language-bash">sudo apt-get update
 sudo apt-get upgrade
 sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
+sudo ubuntu-drivers install
 </code></pre>
 <h2 id="sudo-ohne-passwort-konfigurieren-nopasswd">Sudo ohne Passwort konfigurieren (NOPASSWD)</h2>
 <p>Statt das Passwort für <code>sudo</code> Befehle jedes Mal einzugeben, können Sie Ihren Benutzer so konfigurieren, dass kein Passwort abgefragt wird.</p>
@@ -1549,7 +1594,15 @@ code --install-extension vmware.vscode-boot-dev-pack
 npm install -g @github/copilot
 curl -fsSL https://claude.ai/install.sh | bash
 </code></pre>
-<p>In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.</p>
+<h2 id="jetbrains-installieren">Jetbrains Installieren</h2>
+<pre><code>sudo snap install rider --classic
+sudo snap install intellij-idea --classic
+</code></pre>
+<h2 id="weiter-ide-agent">Weiter IDE Agent</h2>
+<p>```
+* https://cursor.com/download
+* 
+In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.</p>
 <ul>
 <li><strong>Vektorkacheln (Vector Tiles):</strong> Hier können Sie Verbindungen zu Vektor-Tileservern einrichten. Wenn Sie hier einen Rechtsklick machen und „Neue generische Verbindung" wählen, können Sie die URL Ihres lokalen Servers (z. B. <code>http://localhost:3000/IhrLayer/{z}/{x}/{y}.pbf</code>) eintragen, um Ihre selbst gehosteten OpenStreetMap-Daten in QGIS als Ebene hereinzuladen und beliebig zu stylen.</li>
 <li><strong>XYZ-Kacheln (XYZ Tiles):</strong> Hierüber binden Sie Raster-Kacheln (fertig gerenderte Bildchen) ein. Dies ist der typische Weg, um einfache Hintergrundkarten (Basemaps) wie die Standard-OpenStreetMap-Karte oder Satellitenbilder aus dem Internet in QGIS anzuzeigen (oft in Form von Links wie <code>https://tile.openstreetmap.org/{z}/{x}/{y}.png</code>).</li>
