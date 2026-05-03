@@ -252,6 +252,10 @@ sudo snap install intellij-idea --classic
 ```
 curl -fsSL https://ollama.com/install.sh | sh
 ```
+## IDE AI
+* [Cursor](https://cursor.com)
+* [Windsurf](https://windsurf.ai)
+
 
 In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.
 
