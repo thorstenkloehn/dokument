@@ -140,6 +140,7 @@ psql -c "ALTER USER dein_benutzername CREATEDB;"
 exit # Ausloggen
 cd $HOME
 wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+sudo apt-get install osmosis osm2pgsql
 osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
 
 osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
