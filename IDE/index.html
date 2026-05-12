@@ -900,17 +900,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ollama" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ollama
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ide-ai" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1406,17 +1395,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ollama" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ollama
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ide-ai" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1527,7 +1505,6 @@ sudo apt-get install neovim
 <pre><code class="language-bash">code --install-extension GitHub.copilot
 code --install-extension anthropic.claude-code
 code --install-extension Google.gemini-cli-vscode-ide-companion
-code --install-extension formulahendry.acp-client
 </code></pre>
 <h2 id="zed">Zed</h2>
 <pre><code>curl -f https://zed.dev/install.sh | sh
@@ -1585,8 +1562,8 @@ code --install-extension rust-lang.rust-analyzer
 <h2 id="go-golang-installieren">Go (Golang) installieren</h2>
 <pre><code class="language-bash">cd $HOME
 sudo rm -rf /usr/local/go
-wget https://go.dev/dl/go1.26.2.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.26.2.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.26.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.26.3.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
 echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
@@ -1595,8 +1572,6 @@ source ~/.bashrc
 <h2 id="net-installieren-und-konfigurieren">.NET installieren und konfigurieren</h2>
 <pre><code class="language-bash">sudo apt-get update
 sudo apt-get install -y dotnet-sdk-10.0
-sudo apt-get install -y dotnet-sdk-9.0
-sudo apt-get install -y dotnet-sdk-8.0
 dotnet tool install --global dotnet-ef
 dotnet tool install --global dotnet-aspnet-codegenerator
 dotnet tool install -g Microsoft.Web.LibraryManager.Cli
@@ -1606,7 +1581,7 @@ code --install-extension ms-dotnettools.csdevkit
 
 </code></pre>
 <h2 id="java-und-entwicklungswerkzeuge-installieren">Java und Entwicklungswerkzeuge installieren</h2>
-<pre><code class="language-bash">sudo apt install openjdk-26-jdk
+<pre><code class="language-bash">sudo apt install openjdk-25-jdk
 sudo apt install maven
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vmware.vscode-boot-dev-pack
@@ -1617,11 +1592,7 @@ npm install -g @github/copilot
 curl -fsSL https://claude.ai/install.sh | bash
 </code></pre>
 <h2 id="jetbrains-installieren">Jetbrains Installieren</h2>
-<pre><code>sudo snap install rider --classic
-sudo snap install intellij-idea --classic
-</code></pre>
-<h2 id="ollama">Ollama</h2>
-<pre><code>curl -fsSL https://ollama.com/install.sh | sh
+<pre><code>sudo snap install intellij-idea --classic
 </code></pre>
 <h2 id="ide-ai">IDE AI</h2>
 <ul>
