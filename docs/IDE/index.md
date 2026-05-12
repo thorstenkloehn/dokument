@@ -114,7 +114,6 @@ sudo apt-get install neovim
 code --install-extension GitHub.copilot
 code --install-extension anthropic.claude-code
 code --install-extension Google.gemini-cli-vscode-ide-companion
-code --install-extension formulahendry.acp-client
 ```
 ## Zed
 ```
@@ -202,8 +201,8 @@ code --install-extension rust-lang.rust-analyzer
 ```bash
 cd $HOME
 sudo rm -rf /usr/local/go
-wget https://go.dev/dl/go1.26.2.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.26.2.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.26.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.26.3.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
@@ -217,8 +216,6 @@ source ~/.bashrc
 ```bash
 sudo apt-get update
 sudo apt-get install -y dotnet-sdk-10.0
-sudo apt-get install -y dotnet-sdk-9.0
-sudo apt-get install -y dotnet-sdk-8.0
 dotnet tool install --global dotnet-ef
 dotnet tool install --global dotnet-aspnet-codegenerator
 dotnet tool install -g Microsoft.Web.LibraryManager.Cli
@@ -232,7 +229,7 @@ code --install-extension ms-dotnettools.csdevkit
 ## Java und Entwicklungswerkzeuge installieren
 
 ```bash
-sudo apt install openjdk-26-jdk
+sudo apt install openjdk-25-jdk
 sudo apt install maven
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vmware.vscode-boot-dev-pack
@@ -245,13 +242,9 @@ curl -fsSL https://claude.ai/install.sh | bash
 ```
 ## Jetbrains Installieren
 ```
-sudo snap install rider --classic
 sudo snap install intellij-idea --classic
 ```
-## Ollama
-```
-curl -fsSL https://ollama.com/install.sh | sh
-```
+
 ## IDE AI
 * [Cursor](https://cursor.com)
 * [Windsurf](https://windsurf.ai)
