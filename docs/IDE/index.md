@@ -219,10 +219,12 @@ sudo apt-get install -y dotnet-sdk-10.0
 dotnet tool install --global dotnet-ef
 dotnet tool install --global dotnet-aspnet-codegenerator
 dotnet tool install -g Microsoft.Web.LibraryManager.Cli
+mkdir -p ~/dotnet_temp
+echo "alias dotnet-install='TMPDIR=~/dotnet_temp dotnet workload install'" >> ~/.bashrc && source ~/.bashrc
 echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc
 source ~/.bashrc
 code --install-extension ms-dotnettools.csdevkit
-
+dotnet-install android
 ```
 
 
