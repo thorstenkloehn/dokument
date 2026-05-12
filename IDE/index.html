@@ -1526,6 +1526,7 @@ psql -c &quot;ALTER USER dein_benutzername CREATEDB;&quot;
 exit # Ausloggen
 cd $HOME
 wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+sudo apt-get install osmosis osm2pgsql
 osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
 
 osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
@@ -1575,10 +1576,12 @@ sudo apt-get install -y dotnet-sdk-10.0
 dotnet tool install --global dotnet-ef
 dotnet tool install --global dotnet-aspnet-codegenerator
 dotnet tool install -g Microsoft.Web.LibraryManager.Cli
+mkdir -p ~/dotnet_temp
+echo &quot;alias dotnet-install='TMPDIR=~/dotnet_temp dotnet workload install'&quot; &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc
 echo 'export PATH=$HOME/.dotnet/tools:$PATH' &gt;&gt; ~/.bashrc
 source ~/.bashrc
 code --install-extension ms-dotnettools.csdevkit
-
+dotnet-install android
 </code></pre>
 <h2 id="java-und-entwicklungswerkzeuge-installieren">Java und Entwicklungswerkzeuge installieren</h2>
 <pre><code class="language-bash">sudo apt install openjdk-25-jdk
