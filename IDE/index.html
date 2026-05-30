@@ -12,7 +12,7 @@
         <link rel="prev" href="../Server/Software/">
       
       
-        <link rel="next" href="Android/">
+        <link rel="next" href="../Video/">
       
       
         
@@ -651,6 +651,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#java-und-entwicklungswerkzeuge-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Java und Entwicklungswerkzeuge installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sudo-ohne-passwort-konfigurieren-nopasswd" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -867,17 +878,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#java-und-entwicklungswerkzeuge-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Java und Entwicklungswerkzeuge installieren
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ki-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -925,6 +925,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../Video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="Android/" class="md-nav__link">
         
   
@@ -960,10 +987,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -981,8 +1008,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1173,6 +1200,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#java-und-entwicklungswerkzeuge-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Java und Entwicklungswerkzeuge installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sudo-ohne-passwort-konfigurieren-nopasswd" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1389,17 +1427,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#java-und-entwicklungswerkzeuge-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Java und Entwicklungswerkzeuge installieren
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ki-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1458,6 +1485,12 @@ sudo apt-get upgrade
 sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
 sudo ubuntu-drivers install
 </code></pre>
+<h2 id="java-und-entwicklungswerkzeuge-installieren">Java und Entwicklungswerkzeuge installieren</h2>
+<pre><code class="language-bash">sudo apt install openjdk-26-jdk
+sudo apt install maven
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vmware.vscode-boot-dev-pack
+</code></pre>
 <h2 id="sudo-ohne-passwort-konfigurieren-nopasswd">Sudo ohne Passwort konfigurieren (NOPASSWD)</h2>
 <p>Statt das Passwort für <code>sudo</code> Befehle jedes Mal einzugeben, können Sie Ihren Benutzer so konfigurieren, dass kein Passwort abgefragt wird.</p>
 <p>Öffnen Sie die Konfigurationsdatei mit:</p>
@@ -1511,18 +1544,35 @@ npm -v # Should print &quot;11.7.0&quot;.
 
 </code></pre>
 <h2 id="google-antigravity">Google Antigravity</h2>
-<pre><code>sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://us-central1-apt.pkg.dev/doc/repo-signing-key.gpg | \
-  sudo gpg --dearmor --yes -o /etc/apt/keyrings/antigravity-repo-key.gpg
-echo &quot;deb [signed-by=/etc/apt/keyrings/antigravity-repo-key.gpg] https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev/ antigravity-debian main&quot; | \
-  sudo tee /etc/apt/sources.list.d/antigravity.list &gt; /dev/null
+<pre><code class="language-bash"># 1. In das temporäre Verzeichnis wechseln
+cd /tmp
 
-  sudo apt update
+# 2. Download mit fest definiertem Dateinamen (-O)
+wget &quot;https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.0.3-6242596486512640/linux-x64/Antigravity%20IDE.tar.gz&quot; -O antigravity.tar.gz
 
+# 3. Zielverzeichnis erstellen
+sudo mkdir -p /opt/Antigravity_IDE
 
-sudo apt install antigravity
-antigravity --install-extension Google.geminicodeassist
-antigravity --install-extension Google.gemini-cli-vscode-ide-companion
+# 4. Jetzt findet tar die Datei garantiert, weil sie &quot;antigravity.tar.gz&quot; heißt
+sudo tar -xzf antigravity.tar.gz -C /opt/Antigravity_IDE --strip-components=1
+
+# 5. Desktop-Datei erstellen
+sudo bash -c 'cat &gt; /usr/share/applications/antigravity.desktop' &lt;&lt; 'EOF'
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Antigravity IDE
+Comment=Google Antigravity Development Platform
+Exec=/opt/Antigravity_IDE/antigravity-ide --no-sandbox
+Icon=/opt/Antigravity_IDE/icon.svg
+Terminal=false
+Categories=Development;IDE;
+StartupWMClass=antigravity-ide
+EOF
+
+# 6. Datenbank aktualisieren
+sudo update-desktop-database
+
 </code></pre>
 <h2 id="visual-studio-code-und-neovim-installieren">Visual Studio Code und Neovim installieren</h2>
 <pre><code class="language-bash">sudo snap install code --classic
@@ -1610,14 +1660,8 @@ source ~/.bashrc
 code --install-extension ms-dotnettools.csdevkit
 dotnet-install android
 </code></pre>
-<h2 id="java-und-entwicklungswerkzeuge-installieren">Java und Entwicklungswerkzeuge installieren</h2>
-<pre><code class="language-bash">sudo apt install openjdk-25-jdk
-sudo apt install maven
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vmware.vscode-boot-dev-pack
-</code></pre>
 <h2 id="ki-cli">KI Cli</h2>
-<pre><code>npm install -g @google/gemini-cli
+<pre><code>
 npm install -g @github/copilot
 curl -fsSL https://claude.ai/install.sh | bash
 </code></pre>
