@@ -13,6 +13,7 @@ nav:
       - Tomcat: Server/Tomcat.md
       - Weiter Software: Server/Software.md
   - IDE: IDE/index.md
+  - Video: Video/index.md
   - Android: IDE/Android.md
   - Tools:
       - Pandoc: Tools/Pandoc.md

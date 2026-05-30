@@ -9,7 +9,14 @@ sudo apt-get upgrade
 sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
 sudo ubuntu-drivers install
 ```
+## Java und Entwicklungswerkzeuge installieren
 
+```bash
+sudo apt install openjdk-26-jdk
+sudo apt install maven
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vmware.vscode-boot-dev-pack
+```
 ## Sudo ohne Passwort konfigurieren (NOPASSWD)
 
 Statt das Passwort für `sudo` Befehle jedes Mal einzugeben, können Sie Ihren Benutzer so konfigurieren, dass kein Passwort abgefragt wird.
@@ -86,19 +93,36 @@ npm -v # Should print "11.7.0".
 
 
 ## Google Antigravity
-```
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://us-central1-apt.pkg.dev/doc/repo-signing-key.gpg | \
-  sudo gpg --dearmor --yes -o /etc/apt/keyrings/antigravity-repo-key.gpg
-echo "deb [signed-by=/etc/apt/keyrings/antigravity-repo-key.gpg] https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev/ antigravity-debian main" | \
-  sudo tee /etc/apt/sources.list.d/antigravity.list > /dev/null
+```bash
+# 1. In das temporäre Verzeichnis wechseln
+cd /tmp
 
-  sudo apt update
+# 2. Download mit fest definiertem Dateinamen (-O)
+wget "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.0.3-6242596486512640/linux-x64/Antigravity%20IDE.tar.gz" -O antigravity.tar.gz
 
+# 3. Zielverzeichnis erstellen
+sudo mkdir -p /opt/Antigravity_IDE
 
-sudo apt install antigravity
-antigravity --install-extension Google.geminicodeassist
-antigravity --install-extension Google.gemini-cli-vscode-ide-companion
+# 4. Jetzt findet tar die Datei garantiert, weil sie "antigravity.tar.gz" heißt
+sudo tar -xzf antigravity.tar.gz -C /opt/Antigravity_IDE --strip-components=1
+
+# 5. Desktop-Datei erstellen
+sudo bash -c 'cat > /usr/share/applications/antigravity.desktop' << 'EOF'
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Antigravity IDE
+Comment=Google Antigravity Development Platform
+Exec=/opt/Antigravity_IDE/antigravity-ide --no-sandbox
+Icon=/opt/Antigravity_IDE/icon.svg
+Terminal=false
+Categories=Development;IDE;
+StartupWMClass=antigravity-ide
+EOF
+
+# 6. Datenbank aktualisieren
+sudo update-desktop-database
+
 ```
 
 ## Visual Studio Code und Neovim installieren
@@ -229,17 +253,10 @@ dotnet-install android
 ```
 
 
-## Java und Entwicklungswerkzeuge installieren
 
-```bash
-sudo apt install openjdk-25-jdk
-sudo apt install maven
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vmware.vscode-boot-dev-pack
-```
 ## KI Cli
 ```
-npm install -g @google/gemini-cli
+
 npm install -g @github/copilot
 curl -fsSL https://claude.ai/install.sh | bash
 ```
