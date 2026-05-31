@@ -30,13 +30,20 @@ sudo apt-get update && sudo apt-get install obs-studio
 ## Motion Graphics & Erklärvideos (Die besten Allrounder)
 * Enve (2D Vector Animation)
 * Synfig Studio
+* OpenToonz
+* Manim (Community Edition)
 ## Der "Profis-Weg": Blender (Grease Pencil & Motion Graphics)
+* Natron
+* Blender 3d
 ## Whiteboard-Animationen (Hand-zeichnet-Stil)
 * OpenBoard 
-
+## Offices
+* ONLYOFFICE
 
 ## Moderner "Docs-as-Code" & KI-Workflow
 
 * Autocut / LosslessCut: Für den schnellen Rohschnitt. LosslessCut erlaubt das superschnelle, verlustfreie Schneiden direkt anhand der Keyframes ohne langes Rendern.
 * Whisper (KI-Transkription): Wer Untertitel oder textbasierten Schnitt sucht, nutzt lokale Tools wie whisper.cpp oder Subtitle Composer mit integriertem Whisper-Modell. Damit lassen sich präzise deutsche Untertitel komplett offline generieren (optimal über die GPU).
+
+
 
