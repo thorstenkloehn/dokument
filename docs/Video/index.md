@@ -1,6 +1,6 @@
 ## Konzeption & Scripting (Zwei-Spalten-Skript)
 
- - LibreOffice Writer: Klingt banal, ist aber mit einer sauberen, zweispaltigen Tabellenvorlage der stabilste Profi-Weg unter Ubuntu.
+ - ONLYOFFICE Writer: Klingt banal, ist aber mit einer sauberen, zweispaltigen Tabellenvorlage der stabilste Profi-Weg unter Ubuntu.
  
  - VS Code / VSCodium + Markdown-Table-Extensions: Ideal, wenn du Skripte und technische Notizen direkt am gleichen Ort verwalten willst wie deine Code-Beispiele.
  
@@ -44,6 +44,7 @@ sudo apt-get update && sudo apt-get install obs-studio
 
 * Autocut / LosslessCut: Für den schnellen Rohschnitt. LosslessCut erlaubt das superschnelle, verlustfreie Schneiden direkt anhand der Keyframes ohne langes Rendern.
 * Whisper (KI-Transkription): Wer Untertitel oder textbasierten Schnitt sucht, nutzt lokale Tools wie whisper.cpp oder Subtitle Composer mit integriertem Whisper-Modell. Damit lassen sich präzise deutsche Untertitel komplett offline generieren (optimal über die GPU).
+
 
 
 
