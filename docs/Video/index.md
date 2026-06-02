@@ -25,7 +25,9 @@ sudo apt-get update && sudo apt-get install obs-studio
 * Multi-Spur-Schnitt: Importiere die OBS-Aufnahme. Wenn du getrennte Spuren genutzt hast, liegen Video, Facecam und Mikrofon direkt sauber untereinander.
 * Animation & Zoom: Über den Effekt "Transformieren" lassen sich Keyframes setzen. Damit baut man das typische "Heranzoomen an ein Software-Detail" perfekt nach.
 * Callouts & Text: Das integrierte Titel-Werkzeug (Titler) erlaubt das Erstellen von Textboxen, Pfeilen und Unschärfe-Masken (zum Verpixeln von Passwörtern).
-
+## 2d Grafik
+* Krita Software
+* Inkscape
 
 ## Motion Graphics & Erklärvideos (Die besten Allrounder)
 * Enve (2D Vector Animation)
@@ -37,8 +39,7 @@ sudo apt-get update && sudo apt-get install obs-studio
 * Blender 3d
 ## Whiteboard-Animationen (Hand-zeichnet-Stil)
 * OpenBoard 
-## Offices
-* ONLYOFFICE
+
 
 ## Moderner "Docs-as-Code" & KI-Workflow
 
