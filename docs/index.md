@@ -29,6 +29,7 @@ Auf meinem Entwicklungsrechner kommen folgende Technologien zum Einsatz:
 - **Kommandozeilen-KI (`CLI-Tools`)**: KI-gestützte Assistenten im Terminal zur Codegenerierung, Analyse und Automatisierung von Entwicklungsaufgaben. 
     - **Antigravity CLI**: Kommandozeilen-Tool von Google Antigravity für KI-gestützte Entwicklungsaufgaben direkt im Terminal, z. B. die Verwaltung und Interaktion mit autonomen KI-Agenten, Codegenerierung, Analyse und Automatisierung von Entwicklungsaufgaben.
     - **Claude Code CLI (`claude`)**: Kommandozeilen-Tool von Anthropic für KI-gestützte Entwicklungsaufgaben direkt im Terminal, z. B. Codegenerierung, Refactoring, Analyse bestehender Projekte und Unterstützung bei wiederkehrenden Workflows.
+    - **CODEX CLI**: Ein fortschrittliches KI-Tool für die Kommandozeile, das speziell für die schnelle Codegenerierung, Fehlerbehebung und Optimierung von Algorithmen entwickelt wurde. Es unterstützt Entwickler dabei, komplexe Probleme effizient zu lösen und Prototypen schnell zu erstellen.
 - **Git**: Versionskontrollsystem zur Verwaltung von Quellcode.
 - **Node.js**: JavaScript-Laufzeitumgebung für serverseitige Anwendungen und Tools.
 - **Python**: Programmiersprache für Skripte, Automatisierung und Webentwicklung.
