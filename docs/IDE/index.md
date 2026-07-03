@@ -98,7 +98,7 @@ npm -v # Should print "11.7.0".
 cd /tmp
 
 # 2. Download mit fest definiertem Dateinamen (-O)
-wget "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.0.3-6242596486512640/linux-x64/Antigravity%20IDE.tar.gz" -O antigravity.tar.gz
+wget "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.2.1-5287492581195776/linux-x64/Antigravity.tar.gz" -O antigravity.tar.gz
 
 # 3. Zielverzeichnis erstellen
 sudo mkdir -p /opt/Antigravity_IDE
@@ -226,8 +226,8 @@ code --install-extension rust-lang.rust-analyzer
 ```bash
 cd $HOME
 sudo rm -rf /usr/local/go
-wget https://go.dev/dl/go1.26.3.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.26.3.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.26.4.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.26.4.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
@@ -244,12 +244,11 @@ sudo apt-get install -y dotnet-sdk-10.0
 dotnet tool install --global dotnet-ef
 dotnet tool install --global dotnet-aspnet-codegenerator
 dotnet tool install -g Microsoft.Web.LibraryManager.Cli
-mkdir -p ~/dotnet_temp
-echo "alias dotnet-install='TMPDIR=~/dotnet_temp dotnet workload install'" >> ~/.bashrc && source ~/.bashrc
 echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc
 source ~/.bashrc
 code --install-extension ms-dotnettools.csdevkit
-dotnet-install android
+sudo dotnet workload install android
+dotnet workload update
 ```
 
 
