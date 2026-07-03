@@ -1466,8 +1466,6 @@ sudo ubuntu-drivers install
 <h2 id="java-und-entwicklungswerkzeuge-installieren">Java und Entwicklungswerkzeuge installieren</h2>
 <pre><code class="language-bash">sudo apt install openjdk-26-jdk
 sudo apt install maven
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vmware.vscode-boot-dev-pack
 </code></pre>
 <h2 id="sudo-ohne-passwort-konfigurieren-nopasswd">Sudo ohne Passwort konfigurieren (NOPASSWD)</h2>
 <p>Statt das Passwort für <code>sudo</code> Befehle jedes Mal einzugeben, können Sie Ihren Benutzer so konfigurieren, dass kein Passwort abgefragt wird.</p>
@@ -1526,7 +1524,7 @@ npm -v # Should print &quot;11.7.0&quot;.
 cd /tmp
 
 # 2. Download mit fest definiertem Dateinamen (-O)
-wget &quot;https://storage.googleapis.com/antigravity-public/antigravity-hub/2.2.1-5287492581195776/linux-x64/Antigravity.tar.gz&quot; -O antigravity.tar.gz
+wget &quot;https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.1.1-6123990880747520/linux-x64/Antigravity%20IDE.tar.gz&quot; -O antigravity.tar.gz
 
 # 3. Zielverzeichnis erstellen
 sudo mkdir -p /opt/Antigravity_IDE
@@ -1560,6 +1558,8 @@ sudo apt-get install neovim
 <pre><code class="language-bash">code --install-extension GitHub.copilot
 code --install-extension anthropic.claude-code
 code --install-extension openai.chatgpt
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vmware.vscode-boot-dev-pack
 </code></pre>
 <h2 id="zed">Zed</h2>
 <pre><code>curl -f https://zed.dev/install.sh | sh
@@ -1640,6 +1640,8 @@ dotnet workload update
 <h2 id="ki-cli">KI Cli</h2>
 <pre><code>curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
+curl -fsSL https://antigravity.google/cli/install.sh | bash
+
 
 </code></pre>
 <h2 id="jetbrains-installieren">Jetbrains Installieren</h2>
