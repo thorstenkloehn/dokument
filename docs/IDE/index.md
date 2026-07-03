@@ -255,18 +255,12 @@ dotnet workload update
 
 ## KI Cli
 ```
-
-npm install -g @github/copilot
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 ## Jetbrains Installieren
 ```
 sudo snap install intellij-idea --classic
 ```
-
-## IDE AI
-* [Cursor](https://cursor.com)
-* [Windsurf](https://windsurf.ai)
 
 
 In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.
