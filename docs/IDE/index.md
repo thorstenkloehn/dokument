@@ -137,7 +137,7 @@ sudo apt-get install neovim
 ```bash
 code --install-extension GitHub.copilot
 code --install-extension anthropic.claude-code
-code --install-extension Google.gemini-cli-vscode-ide-companion
+code --install-extension openai.chatgpt
 ```
 ## Zed
 ```
@@ -256,6 +256,8 @@ dotnet workload update
 ## KI Cli
 ```
 curl -fsSL https://claude.ai/install.sh | bash
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+
 ```
 ## Jetbrains Installieren
 ```
