@@ -27,9 +27,7 @@ Auf meinem Entwicklungsrechner kommen folgende Technologien zum Einsatz:
     - **GitHub Copilot**: KI-gestützte Unterstützung bei Code-Vervollständigung, Refactoring und dem Erstellen von Funktionsvorschlägen direkt im Editor.
      - **Claude Code**: Ein KI-gestützter Coding-Assistent von Anthropic, der Entwickler:innen beim Schreiben, Verstehen, Refaktorisieren und Dokumentieren von Code direkt im Entwicklungsworkflow unterstützt.
 - **Kommandozeilen-KI (`CLI-Tools`)**: KI-gestützte Assistenten im Terminal zur Codegenerierung, Analyse und Automatisierung von Entwicklungsaufgaben. 
-    - **Gemini CLI** ist ein Kommandozeilen-Tool für Google Gemini, mit dem du KI-Funktionen direkt im Terminal nutzen kannst
-    (z. B. Prompting, Code-Unterstützung, Automatisierung in Skripten und Workflows).
-    - **GitHub Copilot CLI (`gh copilot`)**: KI-gestützte Erweiterung der GitHub CLI, die per natürlicher Sprache Shell-Befehle, Git-Workflows und passende Kommandozeilenvorschläge liefert und so wiederkehrende Aufgaben im Terminal beschleunigt.
+    - **Antigravity CLI**: Kommandozeilen-Tool von Google Antigravity für KI-gestützte Entwicklungsaufgaben direkt im Terminal, z. B. die Verwaltung und Interaktion mit autonomen KI-Agenten, Codegenerierung, Analyse und Automatisierung von Entwicklungsaufgaben.
     - **Claude Code CLI (`claude`)**: Kommandozeilen-Tool von Anthropic für KI-gestützte Entwicklungsaufgaben direkt im Terminal, z. B. Codegenerierung, Refactoring, Analyse bestehender Projekte und Unterstützung bei wiederkehrenden Workflows.
 - **Git**: Versionskontrollsystem zur Verwaltung von Quellcode.
 - **Node.js**: JavaScript-Laufzeitumgebung für serverseitige Anwendungen und Tools.
