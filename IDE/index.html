@@ -899,17 +899,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#ide-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IDE AI
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1448,17 +1437,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#ide-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IDE AI
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1548,7 +1526,7 @@ npm -v # Should print &quot;11.7.0&quot;.
 cd /tmp
 
 # 2. Download mit fest definiertem Dateinamen (-O)
-wget &quot;https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.0.3-6242596486512640/linux-x64/Antigravity%20IDE.tar.gz&quot; -O antigravity.tar.gz
+wget &quot;https://storage.googleapis.com/antigravity-public/antigravity-hub/2.2.1-5287492581195776/linux-x64/Antigravity.tar.gz&quot; -O antigravity.tar.gz
 
 # 3. Zielverzeichnis erstellen
 sudo mkdir -p /opt/Antigravity_IDE
@@ -1640,8 +1618,8 @@ code --install-extension rust-lang.rust-analyzer
 <h2 id="go-golang-installieren">Go (Golang) installieren</h2>
 <pre><code class="language-bash">cd $HOME
 sudo rm -rf /usr/local/go
-wget https://go.dev/dl/go1.26.3.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.26.3.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.26.4.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.26.4.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
 echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
@@ -1653,26 +1631,18 @@ sudo apt-get install -y dotnet-sdk-10.0
 dotnet tool install --global dotnet-ef
 dotnet tool install --global dotnet-aspnet-codegenerator
 dotnet tool install -g Microsoft.Web.LibraryManager.Cli
-mkdir -p ~/dotnet_temp
-echo &quot;alias dotnet-install='TMPDIR=~/dotnet_temp dotnet workload install'&quot; &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc
 echo 'export PATH=$HOME/.dotnet/tools:$PATH' &gt;&gt; ~/.bashrc
 source ~/.bashrc
 code --install-extension ms-dotnettools.csdevkit
-dotnet-install android
+sudo dotnet workload install android
+dotnet workload update
 </code></pre>
 <h2 id="ki-cli">KI Cli</h2>
-<pre><code>
-npm install -g @github/copilot
-curl -fsSL https://claude.ai/install.sh | bash
+<pre><code>curl -fsSL https://claude.ai/install.sh | bash
 </code></pre>
 <h2 id="jetbrains-installieren">Jetbrains Installieren</h2>
 <pre><code>sudo snap install intellij-idea --classic
 </code></pre>
-<h2 id="ide-ai">IDE AI</h2>
-<ul>
-<li><a href="https://cursor.com">Cursor</a></li>
-<li><a href="https://windsurf.ai">Windsurf</a></li>
-</ul>
 <p>In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.</p>
 <ul>
 <li><strong>Vektorkacheln (Vector Tiles):</strong> Hier können Sie Verbindungen zu Vektor-Tileservern einrichten. Wenn Sie hier einen Rechtsklick machen und „Neue generische Verbindung" wählen, können Sie die URL Ihres lokalen Servers (z. B. <code>http://localhost:3000/IhrLayer/{z}/{x}/{y}.pbf</code>) eintragen, um Ihre selbst gehosteten OpenStreetMap-Daten in QGIS als Ebene hereinzuladen und beliebig zu stylen.</li>
