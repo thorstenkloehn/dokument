@@ -1163,54 +1163,72 @@
 <h1 id="programmatische-videogenerierung-animation">Programmatische Videogenerierung &amp; Animation</h1>
 <p>Diese Übersicht listet Werkzeuge, Frameworks und Bibliotheken auf, die zur programmatischen Generierung, Bearbeitung und Animation von Videos und 3D-Grafiken verwendet werden können.</p>
 <h2 id="1-web-frontend-frameworks-dom-basiert">1. Web- &amp; Frontend-Frameworks (DOM-basiert)</h2>
-<p>Tools, die Videos direkt aus HTML, CSS und JavaScript/TypeScript (oft über React) aufbauen.
-* <strong>Remotion</strong> (React / TypeScript): Ermöglicht das Erstellen von Videos mit React. Entwickler können Standard-Webtechnologien nutzen, um dynamische Animationen zu programmieren, und diese über eine integrierte Server-Komponente rendern.
-* <strong>Revideo</strong> (TypeScript): Ein Open-Source-Framework zur programmatischen Videobearbeitung und Template-Erstellung unter Verwendung von TypeScript. Es basiert auf HTML5 Canvas und bietet eine modernere Alternative zu herkömmlichen Node-basierten Renderern.
-* <strong>Hyperframes</strong> (HTML / CSS / JS): Ein von HeyGen entwickeltes, "Agent-First" Open-Source-Framework. Es nutzt reines HTML, CSS und JS (z. B. mit CSS-Animationen, Lottie oder GSAP) sowie <code>data-*</code>-Attribute für das Timing. Das Rendering erfolgt deterministisch über Puppeteer und FFmpeg, ideal für die Automatisierung durch KI-Entwickler.</p>
+<p>Tools, die Videos direkt aus HTML, CSS und JavaScript/TypeScript (oft über React) aufbauen.</p>
+<ul>
+<li><strong>Remotion</strong> (React / TypeScript): Ermöglicht das Erstellen von Videos mit React. Entwickler können Standard-Webtechnologien nutzen, um dynamische Animationen zu programmieren, und diese über eine integrierte Server-Komponente rendern.</li>
+<li><strong>Revideo</strong> (TypeScript): Ein Open-Source-Framework zur programmatischen Videobearbeitung und Template-Erstellung unter Verwendung von TypeScript. Es basiert auf HTML5 Canvas und bietet eine modernere Alternative zu herkömmlichen Node-basierten Renderern.</li>
+<li><strong>Hyperframes</strong> (HTML / CSS / JS): Ein von HeyGen entwickeltes, "Agent-First" Open-Source-Framework. Es nutzt reines HTML, CSS und JS (z. B. mit CSS-Animationen, Lottie oder GSAP) sowie <code>data-*</code>-Attribute für das Timing. Das Rendering erfolgt deterministisch über Puppeteer und FFmpeg, ideal für die Automatisierung durch KI-Entwickler.</li>
+</ul>
 <h2 id="2-browser-automation-headless-rendering">2. Browser-Automation &amp; Headless Rendering</h2>
-<p>Die Brücke, um Webinhalte (wie die Tools aus Kategorie 1) automatisiert im Hintergrund als Frames aufzunehmen.
-* <strong>Puppeteer</strong>: Eine Node.js-Bibliothek zur Steuerung von headless Chrome/Chromium, oft genutzt, um Webseiten-Frames für Videos präzise zu rendern.
-* <strong>Playwright</strong>: Eine moderne Alternative zu Puppeteer von Microsoft, die das Steuern und Rendern über verschiedene Browser-Engines (Chromium, Firefox, WebKit) hinweg ermöglicht.</p>
+<p>Die Brücke, um Webinhalte (wie die Tools aus Kategorie 1) automatisiert im Hintergrund als Frames aufzunehmen.</p>
+<ul>
+<li><strong>Puppeteer</strong>: Eine Node.js-Bibliothek zur Steuerung von headless Chrome/Chromium, oft genutzt, um Webseiten-Frames für Videos präzise zu rendern.</li>
+<li><strong>Playwright</strong>: Eine moderne Alternative zu Puppeteer von Microsoft, die das Steuern und Rendern über verschiedene Browser-Engines (Chromium, Firefox, WebKit) hinweg ermöglicht.</li>
+</ul>
 <h2 id="3-programmatische-2d3d-animation-mathematik">3. Programmatische 2D/3D-Animation &amp; Mathematik</h2>
-<p>Tools, die Grafiken und Animationen direkt über mathematischen Code oder algorithmische Skripte erzeugen.
-* <strong>MoviePy</strong> (Python): Eine Python-Bibliothek für den klassischen Videoschnitt und einfache Videobearbeitungen per Code (Schneiden, Zusammenfügen, Einblendungen).
-* <strong>Manim (Community Edition)</strong> (Python): Eine von 3Blue1Brown initiierte Engine zur Erstellung präziser mathematischer und erklärender Animationen mittels Python-Code.
-* <strong>Motion Canvas</strong> (TypeScript): Ein spezialisiertes Tool für programmatische Animationen, das eine Echtzeit-Vorschau im Browser mit der präzisen Kontrolle von TypeScript kombiniert.
-* <strong>P5.js / Processing</strong>: Frameworks für kreatives Coding (Creative Coding), die das Zeichnen und Animieren von 2D- und 3D-Grafiken per JavaScript (p5.js) oder Java/Python (Processing) erleichtern.
-* <strong>Taichi</strong> (Python): Eine Hochleistungs-Programmiersprache, die in Python eingebettet ist und für physikalische Simulationen und GPU-beschleunigte Grafikberechnungen genutzt wird.
-* <strong>Skia / CanvasKit</strong>: Eine Open-Source-2D-Grafikbibliothek (wird u. a. in Chrome und Flutter genutzt), die plattformübergreifende Zeichenoperationen mit hoher Performance bereitstellt.</p>
+<p>Tools, die Grafiken und Animationen direkt über mathematischen Code oder algorithmische Skripte erzeugen.</p>
+<ul>
+<li><strong>MoviePy</strong> (Python): Eine Python-Bibliothek für den klassischen Videoschnitt und einfache Videobearbeitungen per Code (Schneiden, Zusammenfügen, Einblendungen).</li>
+<li><strong>Manim (Community Edition)</strong> (Python): Eine von 3Blue1Brown initiierte Engine zur Erstellung präziser mathematischer und erklärender Animationen mittels Python-Code.</li>
+<li><strong>Motion Canvas</strong> (TypeScript): Ein spezialisiertes Tool für programmatische Animationen, das eine Echtzeit-Vorschau im Browser mit der präzisen Kontrolle von TypeScript kombiniert.</li>
+<li><strong>P5.js / Processing</strong>: Frameworks für kreatives Coding (Creative Coding), die das Zeichnen und Animieren von 2D- und 3D-Grafiken per JavaScript (p5.js) oder Java/Python (Processing) erleichtern.</li>
+<li><strong>Taichi</strong> (Python): Eine Hochleistungs-Programmiersprache, die in Python eingebettet ist und für physikalische Simulationen und GPU-beschleunigte Grafikberechnungen genutzt wird.</li>
+<li><strong>Skia / CanvasKit</strong>: Eine Open-Source-2D-Grafikbibliothek (wird u. a. in Chrome und Flutter genutzt), die plattformübergreifende Zeichenoperationen mit hoher Performance bereitstellt.</li>
+</ul>
 <h2 id="4-low-level-core-medienverarbeitung">4. Low-Level Core &amp; Medienverarbeitung</h2>
-<p>Das Fundament. Keine Animations-Engines, sondern Werkzeuge für schnelles Encoding, Decoding, Schneiden und Zusammenfügen von Frames und Streams.
-* <strong>FFmpeg</strong>: Das absolute Standardwerkzeug für die Verarbeitung, Konvertierung, das Streaming und Muxing von Audio- und Videodateien über die Kommandozeile.
-* <strong>OpenCV</strong> (Python / C++): Eine mächtige Bibliothek für Computer Vision und Echtzeit-Bildverarbeitung, die sich hervorragend eignet, um Video-Frames programmatisch zu manipulieren.
-* <strong>GStreamer</strong>: Ein modulares, Pipeline-basiertes Multimedia-Framework für die Verarbeitung und das Streaming komplexer Medienströme.
-* <strong>ImageMagick</strong>: Ein Open-Source-Kommandozeilenwerkzeug zur Bildbearbeitung, das häufig in automatisierten Pipelines verwendet wird, um Video-Frames vorzuentwickeln oder zu manipulieren.
-* <strong>VapourSynth</strong> (Python): Ein modernes Videoschnitt- und Post-Processing-Framework per Python-Scripting, das als Nachfolger für AviSynth entwickelt wurde.</p>
+<p>Das Fundament. Keine Animations-Engines, sondern Werkzeuge für schnelles Encoding, Decoding, Schneiden und Zusammenfügen von Frames und Streams.</p>
+<ul>
+<li><strong>FFmpeg</strong>: Das absolute Standardwerkzeug für die Verarbeitung, Konvertierung, das Streaming und Muxing von Audio- und Videodateien über die Kommandozeile.</li>
+<li><strong>OpenCV</strong> (Python / C++): Eine mächtige Bibliothek für Computer Vision und Echtzeit-Bildverarbeitung, die sich hervorragend eignet, um Video-Frames programmatisch zu manipulieren.</li>
+<li><strong>GStreamer</strong>: Ein modulares, Pipeline-basiertes Multimedia-Framework für die Verarbeitung und das Streaming komplexer Medienströme.</li>
+<li><strong>ImageMagick</strong>: Ein Open-Source-Kommandozeilenwerkzeug zur Bildbearbeitung, das häufig in automatisierten Pipelines verwendet wird, um Video-Frames vorzuentwickeln oder zu manipulieren.</li>
+<li><strong>VapourSynth</strong> (Python): Ein modernes Videoschnitt- und Post-Processing-Framework per Python-Scripting, das als Nachfolger für AviSynth entwickelt wurde.</li>
+</ul>
 <h2 id="5-professionelle-3d-compositing-suiten">5. Professionelle 3D- &amp; Compositing-Suiten</h2>
-<p>Ausgewachsene Grafiksoftware mit GUI, die sich extrem stark über Skripte steuern und in automatisierte Pipelines integrieren lässt.
-* <strong>Blender 3D</strong> (Python): Eine komplette 3D-Erstellungs-Suite (Modellierung, Animation, Rendering), deren gesamte Funktionalität über eine integrierte Python-API automatisiert und headless ausgeführt werden kann.
-* <strong>Natron</strong> (Python): Ein knotenbasiertes Open-Source-Compositing-Tool für visuelle Effekte, das stark über Python-Skripte gesteuert werden kann.
-* <strong>Godot 4</strong> (GDScript / C#): Eine Open-Source-Spiel-Engine, die über den "Movie Maker"-Modus und Skripting (GDScript/C#) auch für die schnelle Echtzeit-Generierung von 2D/3D-Animationen verwendet werden kann.</p>
+<p>Ausgewachsene Grafiksoftware mit GUI, die sich extrem stark über Skripte steuern und in automatisierte Pipelines integrieren lässt.</p>
+<ul>
+<li><strong>Blender 3D</strong> (Python): Eine komplette 3D-Erstellungs-Suite (Modellierung, Animation, Rendering), deren gesamte Funktionalität über eine integrierte Python-API automatisiert und headless ausgeführt werden kann.</li>
+<li><strong>Natron</strong> (Python): Ein knotenbasiertes Open-Source-Compositing-Tool für visuelle Effekte, das stark über Python-Skripte gesteuert werden kann.</li>
+<li><strong>Godot 4</strong> (GDScript / C#): Eine Open-Source-Spiel-Engine, die über den "Movie Maker"-Modus und Skripting (GDScript/C#) auch für die schnelle Echtzeit-Generierung von 2D/3D-Animationen verwendet werden kann.</li>
+</ul>
 <h2 id="6-programmatisches-3d-rendering-webglwebgpu-engines">6. Programmatisches 3D-Rendering &amp; WebGL/WebGPU-Engines</h2>
-<p>Frameworks, um 3D-Szenen direkt im Browser über Web-APIs zu steuern und zu rendern.
-* <strong>Three.js / React Three Fiber</strong>: Die populärste JavaScript-Bibliothek für 3D-Grafiken im Web (React Three Fiber ist der entsprechende React-Wrapper).
-* <strong>Babylon.js</strong>: Eine leistungsstarke, Feature-reiche 3D-Engine von Microsoft für anspruchsvolle WebGL/WebGPU-Szenen im Browser.</p>
+<p>Frameworks, um 3D-Szenen direkt im Browser über Web-APIs zu steuern und zu rendern.</p>
+<ul>
+<li><strong>Three.js / React Three Fiber</strong>: Die populärste JavaScript-Bibliothek für 3D-Grafiken im Web (React Three Fiber ist der entsprechende React-Wrapper).</li>
+<li><strong>Babylon.js</strong>: Eine leistungsstarke, Feature-reiche 3D-Engine von Microsoft für anspruchsvolle WebGL/WebGPU-Szenen im Browser.</li>
+</ul>
 <h2 id="7-web-animationsbibliotheken-vektor-svg">7. Web-Animationsbibliotheken (Vektor &amp; SVG)</h2>
-<p>Bibliotheken zur Erstellung von interaktiven und timeline-basierten 2D-Animationen direkt im Webbrowser.
-* <strong>GSAP (GreenSock)</strong>: Die leistungsstärkste und stabilste JavaScript-Animationsbibliothek für HTML-Elemente, SVG und WebGL.
-* <strong>Lottie</strong> (Airbnb): Ermöglicht das performante Abspielen und Steuern von JSON-basierten Vektor-Animationen (z. B. aus Adobe After Effects exportiert) im Browser.
-* <strong>Anime.js</strong>: Eine extrem schlanke und einfach zu bedienende JavaScript-Animationsbibliothek.</p>
+<p>Bibliotheken zur Erstellung von interaktiven und timeline-basierten 2D-Animationen direkt im Webbrowser.</p>
+<ul>
+<li><strong>GSAP (GreenSock)</strong>: Die leistungsstärkste und stabilste JavaScript-Animationsbibliothek für HTML-Elemente, SVG und WebGL.</li>
+<li><strong>Lottie</strong> (Airbnb): Ermöglicht das performante Abspielen und Steuern von JSON-basierten Vektor-Animationen (z. B. aus Adobe After Effects exportiert) im Browser.</li>
+<li><strong>Anime.js</strong>: Eine extrem schlanke und einfach zu bedienende JavaScript-Animationsbibliothek.</li>
+</ul>
 <h2 id="8-creative-coding-interaktive-medien-c-js">8. Creative Coding &amp; Interaktive Medien (C++ / JS)</h2>
-<p>Frameworks für performante 2D/3D-Grafiken, Audio-Synthese und Echtzeit-Installationen.
-* <strong>openFrameworks</strong> (C++): Ein vielseitiges Open-Source-Toolkit für kreative Programmierung, optimiert für Hochleistungsgrafik und interaktive Installationen.
-* <strong>Cinder</strong> (C++): Eine professionelle C++-Bibliothek für kreatives Programmieren, die stark auf Hochleistungs-Grafik-Rendering ausgerichtet ist.</p>
+<p>Frameworks für performante 2D/3D-Grafiken, Audio-Synthese und Echtzeit-Installationen.</p>
+<ul>
+<li><strong>openFrameworks</strong> (C++): Ein vielseitiges Open-Source-Toolkit für kreative Programmierung, optimiert für Hochleistungsgrafik und interaktive Installationen.</li>
+<li><strong>Cinder</strong> (C++): Eine professionelle C++-Bibliothek für kreatives Programmieren, die stark auf Hochleistungs-Grafik-Rendering ausgerichtet ist.</li>
+</ul>
 <h2 id="9-terminal-recording-desktop-automatisierung-software-simulation-aufzeichnung">9. Terminal-Recording &amp; Desktop-Automatisierung (Software-Simulation &amp; Aufzeichnung)</h2>
-<p>Werkzeuge, um Betriebssysteme, Terminals und Benutzeroberflächen programmatisch zu steuern, Interaktionen zu simulieren und diese für Demos aufzuzeichnen.
-* <strong>Asciinema</strong>: Zeichnet Terminal-Sitzungen textbasiert (als leichtgewichtige asciicast-Dateien) auf. Diese können im Webbrowser via Javascript-Player verlustfrei und interaktiv abgespielt werden.
-* <strong>Terminalizer</strong>: Simuliert Terminal-Eingaben über Skripte und generiert daraus hochqualitative animierte GIFs oder Videos.
-* <strong>OBS Studio</strong> (automatisiert): Lässt sich über Python-Skripte oder eine Websocket-Schnittstelle komplett programmatisch steuern, um Desktop-Aufnahmen vollautomatisch zu starten, Szenen zu wechseln oder Quellen einzublenden.
-* <strong>PyAutoGUI</strong> (Python) / <strong>RobotJS</strong> (Node.js): Ermöglicht die programmatische Steuerung von Maus und Tastatur, um menschliche Interaktionen mit Software auf dem Desktop zu simulieren.
-* <strong>Xvfb (X virtual framebuffer)</strong>: Erzeugt einen virtuellen Bildschirm im Arbeitsspeicher, wodurch grafische Benutzeroberflächen auf Headless-Servern ohne physischen Monitor ausgeführt und aufgezeichnet werden können.</p>
+<p>Werkzeuge, um Betriebssysteme, Terminals und Benutzeroberflächen programmatisch zu steuern, Interaktionen zu simulieren und diese für Demos aufzuzeichnen.</p>
+<ul>
+<li><strong>Asciinema</strong>: Zeichnet Terminal-Sitzungen textbasiert (als leichtgewichtige asciicast-Dateien) auf. Diese können im Webbrowser via Javascript-Player verlustfrei und interaktiv abgespielt werden.</li>
+<li><strong>Terminalizer</strong>: Simuliert Terminal-Eingaben über Skripte und generiert daraus hochqualitative animierte GIFs oder Videos.</li>
+<li><strong>OBS Studio</strong> (automatisiert): Lässt sich über Python-Skripte oder eine Websocket-Schnittstelle komplett programmatisch steuern, um Desktop-Aufnahmen vollautomatisch zu starten, Szenen zu wechseln oder Quellen einzublenden.</li>
+<li><strong>PyAutoGUI</strong> (Python) / <strong>RobotJS</strong> (Node.js): Ermöglicht die programmatische Steuerung von Maus und Tastatur, um menschliche Interaktionen mit Software auf dem Desktop zu simulieren.</li>
+<li><strong>Xvfb (X virtual framebuffer)</strong>: Erzeugt einen virtuellen Bildschirm im Arbeitsspeicher, wodurch grafische Benutzeroberflächen auf Headless-Servern ohne physischen Monitor ausgeführt und aufgezeichnet werden können.</li>
+</ul>
 <h2 id="ki-agenten-tauglichkeit-automatisierte-filmerstellung">KI-Agenten-Tauglichkeit (Automatisierte Filmerstellung)</h2>
 <p>Empfehlung, welche der oben gelisteten Tools sich am besten eignen, um von KI-Agenten gesteuert zu werden, um eigenständig Videos oder Filme zu erstellen:</p>
 <ul>
