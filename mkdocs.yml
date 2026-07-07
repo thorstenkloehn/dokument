@@ -14,6 +14,7 @@ nav:
       - Weiter Software: Server/Software.md
   - IDE: IDE/index.md
   - Video: Video/index.md
+  - Audio: Audio/index.md
   - Android: IDE/Android.md
   - Tools:
       - Pandoc: Tools/Pandoc.md
