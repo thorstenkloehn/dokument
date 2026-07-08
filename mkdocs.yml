@@ -18,7 +18,18 @@ nav:
   - E-Learning-Autorentool: E-Learning-Autorentool/index.md
   - Audio: Audio/index.md
   - Android: IDE/Android.md
-  - Dokument Erstellen: Dokument_Erstellen/index.md
+  - Dokument Erstellen:
+      - Übersicht: Dokument_Erstellen/index.md
+      - Mediawiki:
+          - Installieren: Dokument_Erstellen/Mediawiki/index.md
+          - Backup: Dokument_Erstellen/Mediawiki/Backup.md
+          - Wiederherstellen: Dokument_Erstellen/Mediawiki/Wiederherstellen.md
+      - Semantisches MediaWiki:
+          - Installieren: Dokument_Erstellen/Semantisches_Mediawiki/Installieren.md
+          - Kurzform: Dokument_Erstellen/Semantisches_Mediawiki/Kurzform.md
+          - Erweiterungen: Dokument_Erstellen/Semantisches_Mediawiki/Wichtige_Erweiterungen.md
+      - Xwiki:
+          - Installieren: Dokument_Erstellen/Xwiki/Installieren.md
   - Tools:
       - Pandoc: Tools/Pandoc.md
       - Analysetool: Tools/Analysetool.md

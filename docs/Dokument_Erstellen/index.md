@@ -72,8 +72,9 @@ Systeme zur Organisation und Durchsuchung von Notizen, firmeninternem Wissen ode
 * **Quartz (v4)** (TypeScript): Ein statischer Generator, der Obsidian-Tresore (Markdown-Dateien mit Wiki-Links) direkt in eine schnelle, interaktive Website übersetzt.
 
 ### Die Schwergewichte (Multi-Tenancy & Strukturierte Daten)
-* **MediaWiki**: Das PHP-Schwergewicht hinter Wikipedia. Perfekt für riesige Enzyklopädien und stark strukturierte Wikitext-Inhalte.
-* **XWiki**: Ein Enterprise-Wiki auf Java-Basis, das strukturierte Daten, eigene Applikationen innerhalb von Wiki-Seiten und tiefgreifende Rechteverwaltung unterstützt.
+* **MediaWiki**: Das PHP-Schwergewicht hinter Wikipedia. Perfekt für riesige Enzyklopädien und stark strukturierte Wikitext-Inhalte. (Siehe [Installationsanleitung](Mediawiki/index.md), [Backup](Mediawiki/Backup.md) und [Wiederherstellung](Mediawiki/Wiederherstellen.md)).
+* **Semantic MediaWiki**: Eine Erweiterung für MediaWiki, die es ermöglicht, Wiki-Seiten mit strukturierten Daten (Semantik) zu versehen und diese abzufragen. (Siehe [Installationsanleitung](Semantisches_Mediawiki/Installieren.md), [Kurzform](Semantisches_Mediawiki/Kurzform.md) und [Erweiterungen](Semantisches_Mediawiki/Wichtige_Erweiterungen.md)).
+* **XWiki**: Ein Enterprise-Wiki auf Java-Basis, das strukturierte Daten, eigene Applikationen innerhalb von Wiki-Seiten und tiefgreifende Rechteverwaltung unterstützt. (Siehe [Installationsanleitung](Xwiki/Installieren.md)).
 * **Tiptap / Tiptap Collab**: Eine headless WYSIWYG-Editor-Bibliothek für moderne Web-UIs, die kollaboratives Schreiben in Echtzeit (wie in Google Docs oder Notion) ermöglicht.
 
 ---
@@ -81,6 +82,10 @@ Systeme zur Organisation und Durchsuchung von Notizen, firmeninternem Wissen ode
 ## 4. RAG- & KI-Zentrierte Wissensdatenbanken (RAG-Co-Wikis)
 
 Systeme und Pipelines, die Wikis und Dokumente für Large Language Models (LLMs) aufbereiten oder als intelligente Co-Wikis mit RAG-Anbindung fungieren.
+
+### KI- & LLM-Wiki-Konzepte (LLM-Wikis & Co-Wikis)
+* **LLM-Wiki (Large Language Model Wiki)**: Ein Konzept zur Wissensstrukturierung, bei dem KI-Modelle Dokumente und Notizen autonom einlesen, zusammenfassen, kategorisieren und untereinander verlinken. Es entsteht ein sich selbst organisierendes, wachsendes Wissensnetzwerk.
+* **Co-Wiki (Collaborative AI Wiki)**: Plattformen, auf denen menschliche Autoren und autonome KI-Agenten (z. B. via Google Antigravity SDK) Hand in Hand arbeiten. Agenten können Lücken in der Dokumentation füllen, Links korrigieren, Begrifflichkeiten vereinheitlichen oder direkt auf Fragen antworten, während der Mensch die didaktische und fachliche Kontrolle behält.
 
 ### RAG- & KI-Wiki-Tools
 * **Anytype** (Local-First): Ein verschlüsseltes, objektbasiertes Wiki (Notion-Alternative), das auf dem IPFS-Netzwerk basiert.
