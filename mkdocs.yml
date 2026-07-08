@@ -18,6 +18,7 @@ nav:
   - E-Learning-Autorentool: E-Learning-Autorentool/index.md
   - Audio: Audio/index.md
   - Android: IDE/Android.md
+  - Dokument Erstellen: Dokument_Erstellen/index.md
   - Tools:
       - Pandoc: Tools/Pandoc.md
       - Analysetool: Tools/Analysetool.md
