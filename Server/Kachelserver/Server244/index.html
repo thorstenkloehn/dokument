@@ -1624,29 +1624,29 @@
 <p>Öffnen Sie ein Terminalfenster.</p>
 </li>
 <li>
-<p>Führen Sie den folgenden Befehl aus, um einen neuen Nutzer zu erstellen:</p>
+<p>Führen Sie den folgenden Befehl aus, um einen neuen Nutzer zu erstellen:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>adduser<span class="w"> </span>--force-badname<span class="w"> </span>_renderd
+sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>_renderd
+<span class="nb">exit</span>
+</code></pre></div></p>
 </li>
 </ol>
-<pre><code class="language-bash">sudo adduser --force-badname _renderd
-sudo usermod -aG sudo _renderd
-exit
-</code></pre>
 <h3 id="login-als-neuer-nutzer">Login als neuer Nutzer</h3>
 <p>Der gegebene Codeblock zeigt, wie man sich als ein bestimmter Nutzer in einem Linux-System einloggt. Der Befehl <code>ssh</code> wird verwendet, um eine sichere Shell-Sitzung zu starten.</p>
-<pre><code class="language-bash">ssh _renderd@localhost
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>_renderd@localhost
+</code></pre></div>
 <h3 id="system-aktualisieren-und-upgraden">System aktualisieren und upgraden</h3>
 <p>Um Ihr Ubuntu-System zu aktualisieren und zu upgraden, können Sie die folgenden Befehle verwenden:</p>
 <ol>
 <li><strong>System aktualisieren</strong></li>
 </ol>
 <p>Der Befehl <code>sudo apt update</code> wird verwendet, um die Paketlisten für Upgrades für Pakete zu aktualisieren, die installiert werden müssen, und neue Pakete, die installiert werden können.</p>
-<pre><code class="language-bash">  sudo apt update
-  sudo apt upgrade
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<span class="w">  </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+</code></pre></div>
 <h2 id="nodjs-installation">Nodjs Installation</h2>
-<p>Anleitung zur Installation von Node.js auf Ubuntu 24.04 LTS</p>
-<pre><code># Download and install nvm:
+<p>Anleitung zur Installation von Node.js auf Ubuntu 24.04 LTS
+<div class="highlight"><pre><span></span><code># Download and install nvm:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 # in lieu of restarting the shell
@@ -1663,219 +1663,217 @@ npm -v # Should print &quot;11.7.0&quot;.
 
 
 sudo apt-get install nodejs
-</code></pre>
+</code></pre></div></p>
 <h2 id="postgresql-installieren">PostgreSQL installieren</h2>
-<pre><code># Import the repository signing key:
+<div class="highlight"><pre><span></span><code># Import the repository signing key:
 sudo apt install curl ca-certificates
 sudo install -d /usr/share/postgresql-common/pgdg
 sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://www.postgresql.org/media/keys/ACCC4CF8.asc
 
 # Create the repository configuration file:
 . /etc/os-release
-sudo sh -c &quot;echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main' &gt; /etc/apt/sources.list.d/pgdg.list&quot;
+sudo sh -c &quot;echo &#39;deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main&#39; &gt; /etc/apt/sources.list.d/pgdg.list&quot;
 
 # Update the package lists:
 sudo apt update
-</code></pre>
+</code></pre></div>
 <h2 id="installation-weitere-pakete">Installation weitere Pakete</h2>
-<pre><code class="language-bash">sudo apt update
-sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin postgresql-18 postgresql-contrib-18 postgis postgresql-18-postgis-3 postgresql-18-postgis-3-scripts osm2pgsql net-tools curl osmosis snapd
-</code></pre>
-<p>An diesem Punkt wurden einige neue Konten hinzugefügt. Sie können sie mit "tail /etc/passwd" sehen. "postgres" wird zur Verwaltung der Datenbanken verwendet, die wir zur Speicherung von Daten für das Rendering verwenden. "_renderd" wird für den Renderd-Daemon verwendet, und wir müssen sicherstellen, dass viele der unten aufgeführten Befehle als dieser Benutzer ausgeführt werden.</p>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>screen<span class="w"> </span>locate<span class="w"> </span>libapache2-mod-tile<span class="w"> </span>renderd<span class="w"> </span>git<span class="w"> </span>tar<span class="w"> </span>unzip<span class="w"> </span>wget<span class="w"> </span>bzip2<span class="w"> </span>apache2<span class="w"> </span>lua5.1<span class="w"> </span>mapnik-utils<span class="w"> </span>python3-mapnik<span class="w"> </span>python3-psycopg2<span class="w"> </span>python3-yaml<span class="w"> </span>gdal-bin<span class="w"> </span>postgresql-18<span class="w"> </span>postgresql-contrib-18<span class="w"> </span>postgis<span class="w"> </span>postgresql-18-postgis-3<span class="w"> </span>postgresql-18-postgis-3-scripts<span class="w"> </span>osm2pgsql<span class="w"> </span>net-tools<span class="w"> </span>curl<span class="w"> </span>osmosis<span class="w"> </span>snapd
+</code></pre></div>
+An diesem Punkt wurden einige neue Konten hinzugefügt. Sie können sie mit "tail /etc/passwd" sehen. "postgres" wird zur Verwaltung der Datenbanken verwendet, die wir zur Speicherung von Daten für das Rendering verwenden. "_renderd" wird für den Renderd-Daemon verwendet, und wir müssen sicherstellen, dass viele der unten aufgeführten Befehle als dieser Benutzer ausgeführt werden.</p>
 <p>Jetzt müssen Sie eine PostGIS-Datenbank erstellen. Die Standardwerte verschiedener Programme gehen davon aus, dass die Datenbank "gis" heißt und wir werden in diesem Tutorial die gleiche Konvention verwenden, obwohl dies nicht notwendig ist. Beachten Sie, dass "_renderd" unten dem Benutzer entspricht, unter dem der Renderd-Daemon ausgeführt wird.</p>
-<pre><code class="language-bash">sudo -u postgres -i
-createuser _renderd
-createdb -E UTF8 -O _renderd gis
-psql -d gis -c &quot;CREATE EXTENSION postgis;&quot; # Erweiterung hinzufügen
-psql -d gis -c &quot;CREATE EXTENSION hstore;&quot; # Erweiterung hinzufügen
-psql -d gis -c &quot;ALTER TABLE geometry_columns OWNER TO _renderd;&quot; # Rechte setzen
-psql -d gis -c &quot;ALTER TABLE spatial_ref_sys OWNER TO _renderd;&quot; # Rechte setzen
-exit
-</code></pre>
-<p>(Das wird Sie aus dem Benutzer "postgres" herausbringen)</p>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>-i
+createuser<span class="w"> </span>_renderd
+createdb<span class="w"> </span>-E<span class="w"> </span>UTF8<span class="w"> </span>-O<span class="w"> </span>_renderd<span class="w"> </span>gis
+psql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION postgis;&quot;</span><span class="w"> </span><span class="c1"># Erweiterung hinzufügen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION hstore;&quot;</span><span class="w"> </span><span class="c1"># Erweiterung hinzufügen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;ALTER TABLE geometry_columns OWNER TO _renderd;&quot;</span><span class="w"> </span><span class="c1"># Rechte setzen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;ALTER TABLE spatial_ref_sys OWNER TO _renderd;&quot;</span><span class="w"> </span><span class="c1"># Rechte setzen</span>
+<span class="nb">exit</span>
+</code></pre></div>
+(Das wird Sie aus dem Benutzer "postgres" herausbringen)</p>
 <h2 id="mapnik">Mapnik</h2>
-<p>Mapnik wurde oben installiert. Wir werden überprüfen, ob es korrekt installiert wurde, indem wir Folgendes tun:</p>
-<pre><code class="language-bash">python3
-&gt;&gt;&gt; import mapnik
+<p>Mapnik wurde oben installiert. Wir werden überprüfen, ob es korrekt installiert wurde, indem wir Folgendes tun:
+<div class="highlight"><pre><span></span><code>python3
+&gt;&gt;&gt;<span class="w"> </span>import<span class="w"> </span>mapnik
 &gt;&gt;&gt;
-</code></pre>
-<p>Wenn Sie keine Fehlermeldung erhalten, ist Mapnik korrekt installiert. Drücken Sie "Ctrl-D", um Python zu verlassen.</p>
+</code></pre></div>
+Wenn Sie keine Fehlermeldung erhalten, ist Mapnik korrekt installiert. Drücken Sie "Ctrl-D", um Python zu verlassen.</p>
 <h2 id="konfiguration-des-stylesheets">Konfiguration des Stylesheets</h2>
 <p>Jetzt, da alle notwendige Software installiert ist, müssen Sie ein Stylesheet herunterladen und konfigurieren.</p>
 <p>Der Stil, den wir hier verwenden, ist der, der von der "Standard"-Karte auf der Website openstreetmap.org verwendet wird. Er wurde gewählt, weil er gut dokumentiert ist und überall auf der Welt funktionieren sollte (einschließlich an Orten mit nicht-lateinischen Ortsnamen). Es gibt jedoch ein paar Nachteile - es ist sehr viel ein Kompromiss, der global funktionieren soll, und es ist ziemlich kompliziert zu verstehen und zu modifizieren, falls Sie das tun müssen.</p>
 <p>Die Heimat von "OpenStreetMap Carto" im Web ist https://github.com/gravitystorm/openstreetmap-carto/ und es hat seine eigenen Installationsanweisungen unter https://github.com/gravitystorm/openstreetmap-carto/blob/master/INSTALL.md , obwohl wir hier alles abdecken, was getan werden muss.</p>
 <p>Hier gehen wir davon aus, dass wir die Details des Stylesheets in einem Verzeichnis unter "src" im Home-Verzeichnis des jeweiligen Nicht-Root-Benutzerkontos speichern, das Sie verwenden; wir werden den Zugriff so ändern, dass der Benutzer "_renderd" darauf zugreifen kann.</p>
-<pre><code class="language-bash">mkdir ~/src
-cd ~/src
-git clone https://github.com/gravitystorm/openstreetmap-carto
-cd openstreetmap-carto
-git pull --all
-git switch --detach v5.9.0
-</code></pre>
-<p>Als nächstes installieren wir eine geeignete Version des "carto"-Compilers.</p>
-<pre><code class="language-bash">npm install -g carto
-carto -v
-</code></pre>
-<p>Das sollte mit einer Zahl antworten, die mindestens so hoch ist wie:</p>
-<pre><code class="language-bash">    1.2.0
-</code></pre>
-<p>Dann konvertieren wir das Carto-Projekt in ein Format, das Mapnik verstehen kann:</p>
-<pre><code class="language-bash">carto project.mml &gt; mapnik.xml
-</code></pre>
-<p>Sie haben jetzt ein Mapnik XML-Stylesheet unter /home/IhrBenutzerkonto/src/openstreetmap-carto/mapnik.xml .</p>
+<p><div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/src
+<span class="nb">cd</span><span class="w"> </span>~/src
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/gravitystorm/openstreetmap-carto
+<span class="nb">cd</span><span class="w"> </span>openstreetmap-carto
+git<span class="w"> </span>pull<span class="w"> </span>--all
+git<span class="w"> </span>switch<span class="w"> </span>--detach<span class="w"> </span>v5.9.0
+</code></pre></div>
+Als nächstes installieren wir eine geeignete Version des "carto"-Compilers.</p>
+<p><div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>carto
+carto<span class="w"> </span>-v
+</code></pre></div>
+Das sollte mit einer Zahl antworten, die mindestens so hoch ist wie:</p>
+<p><div class="highlight"><pre><span></span><code><span class="w">    </span><span class="m">1</span>.2.0
+</code></pre></div>
+Dann konvertieren wir das Carto-Projekt in ein Format, das Mapnik verstehen kann:</p>
+<p><div class="highlight"><pre><span></span><code>carto<span class="w"> </span>project.mml<span class="w"> </span>&gt;<span class="w"> </span>mapnik.xml
+</code></pre></div>
+Sie haben jetzt ein Mapnik XML-Stylesheet unter /home/IhrBenutzerkonto/src/openstreetmap-carto/mapnik.xml .</p>
 <h2 id="daten-laden">Daten laden</h2>
 <p>Zunächst laden wir nur eine kleine Menge an Testdaten. Es sind andere Download-Standorte verfügbar, aber "download.geofabrik.de" bietet eine breite Palette an Optionen. In diesem Beispiel laden wir die Daten für Schlewig Holstein herunter, die derzeit etwa 32Mb groß sind.</p>
 <p>Navigieren Sie zu https://download.geofabrik.de/europe/germany/schleswig-holstein.html und beachten Sie das Datum "Diese Datei wurde zuletzt geändert" (z.B. "2024-04-24T20:21:40Z"). Wir werden das später benötigen, wenn wir die Datenbank mit den nachfolgenden Änderungen der Menschen an OpenStreetMap aktualisieren wollen. Laden Sie es wie folgt herunter:</p>
-<pre><code class="language-bash">mkdir ~/data
-cd ~/data
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
-osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
-
-</code></pre>
-<p>Als nächstes müssen wir sicherstellen, dass der Benutzer "_renderd" auf das Stylesheet zugreifen kann. Um dies zu ermöglichen, benötigt er Zugriff auf den Ort, an dem Sie es heruntergeladen haben, und standardmäßig hat er keinen Zugriff auf Ihr Home-Verzeichnis. Wenn es sich in "src" unter Ihrem Benutzerkonto befindet, dann</p>
-<pre><code class="language-bash">chmod a+rx ~
-</code></pre>
-<p>wird funktionieren. Wenn Sie dies nicht tun möchten, können Sie es verschieben und die Verweise auf die Dateiorte in den nachfolgenden Befehlen ändern.</p>
+<p><div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/data
+<span class="nb">cd</span><span class="w"> </span>~/data
+wget<span class="w"> </span>https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis<span class="w"> </span>--read-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>schleswig-holstein-latest.osm.pbf<span class="w"> </span>--bounding-box<span class="w"> </span><span class="nv">left</span><span class="o">=</span><span class="m">10</span>.1141<span class="w"> </span><span class="nv">right</span><span class="o">=</span><span class="m">10</span>.3716<span class="w"> </span><span class="nv">top</span><span class="o">=</span><span class="m">53</span>.7136<span class="w"> </span><span class="nv">bottom</span><span class="o">=</span><span class="m">53</span>.6249<span class="w"> </span>--write-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>ahrensburg.pbf
+</code></pre></div>
+Als nächstes müssen wir sicherstellen, dass der Benutzer "_renderd" auf das Stylesheet zugreifen kann. Um dies zu ermöglichen, benötigt er Zugriff auf den Ort, an dem Sie es heruntergeladen haben, und standardmäßig hat er keinen Zugriff auf Ihr Home-Verzeichnis. Wenn es sich in "src" unter Ihrem Benutzerkonto befindet, dann</p>
+<p><div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>a+rx<span class="w"> </span>~
+</code></pre></div>
+wird funktionieren. Wenn Sie dies nicht tun möchten, können Sie es verschieben und die Verweise auf die Dateiorte in den nachfolgenden Befehlen ändern.</p>
 <p>Der folgende Befehl wird die zuvor heruntergeladenen OpenStreetMap-Daten in die Datenbank einfügen. Dieser Schritt ist sehr intensiv in Bezug auf die Festplatten-I/O; der Import des gesamten Planeten kann je nach Hardware viele Stunden, Tage oder Wochen dauern. Für kleinere Extrakte ist die Importzeit entsprechend viel schneller, und Sie müssen möglicherweise mit verschiedenen -C-Werten experimentieren, um in den verfügbaren Speicher Ihres Rechners zu passen. Beachten Sie, dass der Benutzer "_renderd" für diesen Prozess verwendet wird.</p>
-<pre><code class="language-bash">sudo -u _renderd osm2pgsql -d gis --create --slim  -G --hstore --tag-transform-script ~/src/openstreetmap-carto/openstreetmap-carto.lua -C 2500 --number-processes 1 -S ~/src/openstreetmap-carto/openstreetmap-carto.style ~/data/ahrensburg.pbf
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>-u<span class="w"> </span>_renderd<span class="w"> </span>osm2pgsql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>--create<span class="w"> </span>--slim<span class="w">  </span>-G<span class="w"> </span>--hstore<span class="w"> </span>--tag-transform-script<span class="w"> </span>~/src/openstreetmap-carto/openstreetmap-carto.lua<span class="w"> </span>-C<span class="w"> </span><span class="m">2500</span><span class="w"> </span>--number-processes<span class="w"> </span><span class="m">1</span><span class="w"> </span>-S<span class="w"> </span>~/src/openstreetmap-carto/openstreetmap-carto.style<span class="w"> </span>~/data/ahrensburg.pbf
+</code></pre></div>
 <h2 id="erstellen-von-indizes">Erstellen von Indizes</h2>
-<p>Seit der Version v5.3.0 müssen einige zusätzliche Indizes manuell angewendet werden:</p>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
-sudo -u _renderd psql -d gis -f indexes.sql
-</code></pre>
-<p>Es sollte 16 Mal mit "CREATE INDEX" antworten.</p>
+<p>Seit der Version v5.3.0 müssen einige zusätzliche Indizes manuell angewendet werden:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
+sudo<span class="w"> </span>-u<span class="w"> </span>_renderd<span class="w"> </span>psql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>-f<span class="w"> </span>indexes.sql
+</code></pre></div>
+Es sollte 16 Mal mit "CREATE INDEX" antworten.</p>
 <h2 id="datenbankfunktionen">Datenbankfunktionen</h2>
-<p>In Version 5.9.0 von "OSM Carto" (veröffentlicht im Oktober 2024) müssen einige Funktionen manuell in die Datenbank geladen werden. Diese können jederzeit hinzugefügt / neu geladen werden mit:</p>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
-sudo -u _renderd psql -d gis -f functions.sql
-</code></pre>
+<p>In Version 5.9.0 von "OSM Carto" (veröffentlicht im Oktober 2024) müssen einige Funktionen manuell in die Datenbank geladen werden. Diese können jederzeit hinzugefügt / neu geladen werden mit:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
+sudo<span class="w"> </span>-u<span class="w"> </span>_renderd<span class="w"> </span>psql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>-f<span class="w"> </span>functions.sql
+</code></pre></div></p>
 <h2 id="shapefile-download">Shapefile-Download</h2>
 <p>Obwohl die meisten Daten, die zur Erstellung der Karte verwendet werden, direkt aus der oben heruntergeladenen OpenStreetMap-Datendatei stammen, werden immer noch einige Shapefiles für Dinge wie Ländergrenzen bei niedriger Zoomstufe benötigt. Um diese herunterzuladen und zu indizieren, verwenden wir das gleiche Konto wie zuvor:</p>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
-mkdir data
-sudo chown _renderd data
-sudo -u _renderd scripts/get-external-data.py
-</code></pre>
-<p>Dieser Prozess beinhaltet einen erheblichen Download und kann einige Zeit in Anspruch nehmen - während er läuft, wird nicht viel auf dem Bildschirm angezeigt. Einige Daten gehen direkt in die Datenbank, und einige gehen in ein "data"-Verzeichnis unter "openstreetmap-carto". Wenn hier ein Problem auftritt, dann sind die Natural Earth Daten möglicherweise verschoben worden - schauen Sie sich dieses Problem und andere Probleme bei Natural Earth für weitere Details an. Wenn Sie den Download-Ort von Natural Earth ändern müssen, ist Ihre Kopie dieser Datei diejenige, die Sie bearbeiten sollten.</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
+mkdir<span class="w"> </span>data
+sudo<span class="w"> </span>chown<span class="w"> </span>_renderd<span class="w"> </span>data
+sudo<span class="w"> </span>-u<span class="w"> </span>_renderd<span class="w"> </span>scripts/get-external-data.py
+</code></pre></div>
+Dieser Prozess beinhaltet einen erheblichen Download und kann einige Zeit in Anspruch nehmen - während er läuft, wird nicht viel auf dem Bildschirm angezeigt. Einige Daten gehen direkt in die Datenbank, und einige gehen in ein "data"-Verzeichnis unter "openstreetmap-carto". Wenn hier ein Problem auftritt, dann sind die Natural Earth Daten möglicherweise verschoben worden - schauen Sie sich dieses Problem und andere Probleme bei Natural Earth für weitere Details an. Wenn Sie den Download-Ort von Natural Earth ändern müssen, ist Ihre Kopie dieser Datei diejenige, die Sie bearbeiten sollten.</p>
 <h2 id="schriftarten">Schriftarten</h2>
-<p>In der Version v5.6.0 und höher von Carto müssen Schriftarten manuell installiert werden:</p>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+<p>In der Version v5.6.0 und höher von Carto müssen Schriftarten manuell installiert werden:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
 scripts/get-fonts.sh
-</code></pre>
-<p>Unser Testdatenbereich (Ahrensburg) wurde sowohl wegen seiner geringen Größe als auch wegen einiger Ortsnamen in dieser Region ausgewählt, die Namen mit nicht-lateinischen Zeichen enthalten.</p>
+</code></pre></div>
+Unser Testdatenbereich (Ahrensburg) wurde sowohl wegen seiner geringen Größe als auch wegen einiger Ortsnamen in dieser Region ausgewählt, die Namen mit nicht-lateinischen Zeichen enthalten.</p>
 <h2 id="einrichten-ihres-webservers">Einrichten Ihres Webservers</h2>
 <h3 id="konfigurieren-von-renderd">Konfigurieren von renderd</h3>
-<p>Die Konfigurationsdatei für "renderd" unter Ubuntu 24.04 ist "/etc/renderd.conf". Bearbeiten Sie diese mit einem Texteditor wie nano:</p>
-<pre><code class="language-bash">sudo nano /etc/renderd.conf
-</code></pre>
-<p>Ändern Sie die folgenden Zeilen, um sie an Ihre Umgebung anzupassen:</p>
-<pre><code class="language-bash">[s2o]
-URI=/hot/
-XML=/home/_renderd/src/openstreetmap-carto/mapnik.xml
-HOST=localhost
-TILESIZE=256
-MAXZOOM=20
-</code></pre>
-<p>Der Pfad zur XML-Datei "/home/accountname/src/openstreetmap-carto/mapnik.xml" muss auf den tatsächlichen Pfad auf Ihrem System geändert werden. Sie können auch "[s2o]" und "URI=/hot/" ändern, wenn Sie möchten. Wenn Sie mehr als einen Satz von Kacheln von einem Server rendern möchten, können Sie das tun - fügen Sie einfach einen weiteren Abschnitt wie "[s2o]" mit einem anderen Namen hinzu, der auf einen anderen Kartenstil verweist. Wenn Sie möchten, dass es sich auf eine andere Datenbank als die Standarddatenbank "gis" bezieht, können Sie das tun, aber das liegt außerhalb des Rahmens dieses Dokuments. Wenn Sie nur etwa 2Gb Speicher haben, sollten Sie auch "num_threads" auf 2 reduzieren. "URI=/hot/" wurde gewählt, damit die hier generierten Kacheln leichter anstelle der HOT-Kachel-Ebene auf OpenStreetMap.org verwendet werden können. Sie können hier etwas anderes verwenden, aber "/hot/" ist genauso gut wie alles andere.</p>
+<p>Die Konfigurationsdatei für "renderd" unter Ubuntu 24.04 ist "/etc/renderd.conf". Bearbeiten Sie diese mit einem Texteditor wie nano:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/renderd.conf
+</code></pre></div>
+Ändern Sie die folgenden Zeilen, um sie an Ihre Umgebung anzupassen:
+<div class="highlight"><pre><span></span><code><span class="o">[</span>s2o<span class="o">]</span>
+<span class="nv">URI</span><span class="o">=</span>/hot/
+<span class="nv">XML</span><span class="o">=</span>/home/_renderd/src/openstreetmap-carto/mapnik.xml
+<span class="nv">HOST</span><span class="o">=</span>localhost
+<span class="nv">TILESIZE</span><span class="o">=</span><span class="m">256</span>
+<span class="nv">MAXZOOM</span><span class="o">=</span><span class="m">20</span>
+</code></pre></div>
+Der Pfad zur XML-Datei "/home/accountname/src/openstreetmap-carto/mapnik.xml" muss auf den tatsächlichen Pfad auf Ihrem System geändert werden. Sie können auch "[s2o]" und "URI=/hot/" ändern, wenn Sie möchten. Wenn Sie mehr als einen Satz von Kacheln von einem Server rendern möchten, können Sie das tun - fügen Sie einfach einen weiteren Abschnitt wie "[s2o]" mit einem anderen Namen hinzu, der auf einen anderen Kartenstil verweist. Wenn Sie möchten, dass es sich auf eine andere Datenbank als die Standarddatenbank "gis" bezieht, können Sie das tun, aber das liegt außerhalb des Rahmens dieses Dokuments. Wenn Sie nur etwa 2Gb Speicher haben, sollten Sie auch "num_threads" auf 2 reduzieren. "URI=/hot/" wurde gewählt, damit die hier generierten Kacheln leichter anstelle der HOT-Kachel-Ebene auf OpenStreetMap.org verwendet werden können. Sie können hier etwas anderes verwenden, aber "/hot/" ist genauso gut wie alles andere.</p>
 <p>Als dieser Leitfaden zum ersten Mal geschrieben wurde, war die von Ubuntu 24.04 bereitgestellte Version von Mapnik 3.1, und die Einstellung "plugins_dir" im Abschnitt "[mapnik]" der Datei war "/usr/lib/mapnik/3.1/input". Dieses "3.1" könnte sich in der Zukunft wieder ändern. Wenn beim Versuch, Kacheln zu rendern, ein Fehler auftritt, wie dieser:</p>
-<pre><code class="language-bash">An error occurred while loading the map layer 's2o': Could not create datasource for type: 'postgis' (no datasource plugin directories have been successfully registered)  encountered during parsing of layer 'landcover-low-zoom'
-</code></pre>
-<p>Dann schauen Sie in "/usr/lib/mapnik" und sehen Sie, welche Versionsverzeichnisse es gibt, und schauen Sie auch in "/usr/lib/mapnik/(version)/input", um sicherzustellen, dass dort eine Datei "postgis.input" existiert.</p>
+<p><div class="highlight"><pre><span></span><code>An<span class="w"> </span>error<span class="w"> </span>occurred<span class="w"> </span><span class="k">while</span><span class="w"> </span>loading<span class="w"> </span>the<span class="w"> </span>map<span class="w"> </span>layer<span class="w"> </span><span class="s1">&#39;s2o&#39;</span>:<span class="w"> </span>Could<span class="w"> </span>not<span class="w"> </span>create<span class="w"> </span>datasource<span class="w"> </span><span class="k">for</span><span class="w"> </span>type:<span class="w"> </span><span class="s1">&#39;postgis&#39;</span><span class="w"> </span><span class="o">(</span>no<span class="w"> </span>datasource<span class="w"> </span>plugin<span class="w"> </span>directories<span class="w"> </span>have<span class="w"> </span>been<span class="w"> </span>successfully<span class="w"> </span>registered<span class="o">)</span><span class="w">  </span>encountered<span class="w"> </span>during<span class="w"> </span>parsing<span class="w"> </span>of<span class="w"> </span>layer<span class="w"> </span><span class="s1">&#39;landcover-low-zoom&#39;</span>
+</code></pre></div>
+Dann schauen Sie in "/usr/lib/mapnik" und sehen Sie, welche Versionsverzeichnisse es gibt, und schauen Sie auch in "/usr/lib/mapnik/(version)/input", um sicherzustellen, dass dort eine Datei "postgis.input" existiert.</p>
 <p>Jetzt, da wir "renderd" gesagt haben, wie es auf Kachelrendering-Anfragen reagieren soll, müssen wir dem Apache-Webserver sagen, dass er sie senden soll. Leider wurde die Konfiguration dafür aus den neuesten Versionen von mod_tile entfernt. Sie kann jedoch derzeit von hier installiert werden</p>
-<pre><code class="language-bash">cd /etc/apache2/conf-available/
-sudo wget https://raw.githubusercontent.com/openstreetmap/mod_tile/python-implementation/etc/apache2/renderd.conf
-sudo a2enconf renderd
-sudo systemctl reload apache2
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/etc/apache2/conf-available/
+sudo<span class="w"> </span>wget<span class="w"> </span>https://raw.githubusercontent.com/openstreetmap/mod_tile/python-implementation/etc/apache2/renderd.conf
+sudo<span class="w"> </span>a2enconf<span class="w"> </span>renderd
+sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>apache2
+</code></pre></div>
 <h3 id="reload-apache">Reload Apache</h3>
-<pre><code class="language-bash">sudo nano /usr/lib/systemd/system/renderd.service
-sudo systemctl daemon-reload
-sudo systemctl restart renderd
-sudo systemctl restart apache2
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/usr/lib/systemd/system/renderd.service
+sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>renderd
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div>
 <h3 id="apache-port-andern">Apache Port ändern</h3>
-<pre><code class="language-bash">sudo nano /etc/apache2/ports.conf
-</code></pre>
-<p>Ändern Sie den Port von 80 auf 8080</p>
-<pre><code class="language-bash">Listen 8080
-</code></pre>
-<p>Apache restarten</p>
-<pre><code class="language-bash">sudo systemctl restart apache2
-sudo apt-get install nginx
-sudo rm /etc/nginx/sites-enabled/default
-sudo systemctl stop nginx
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo systemctl stop nginx
-sudo certbot certonly --standalone -d ahrensburg.city -d www.ahrensburg.city
-
-</code></pre>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/ports.conf
+</code></pre></div>
+Ändern Sie den Port von 80 auf 8080
+<div class="highlight"><pre><span></span><code>Listen<span class="w"> </span><span class="m">8080</span>
+</code></pre></div>
+Apache restarten
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>nginx
+sudo<span class="w"> </span>rm<span class="w"> </span>/etc/nginx/sites-enabled/default
+sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>nginx
+sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>--classic<span class="w"> </span>certbot
+sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/snap/bin/certbot<span class="w"> </span>/usr/bin/certbot
+sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>nginx
+sudo<span class="w"> </span>certbot<span class="w"> </span>certonly<span class="w"> </span>--standalone<span class="w"> </span>-d<span class="w"> </span>ahrensburg.city<span class="w"> </span>-d<span class="w"> </span>www.ahrensburg.city
+</code></pre></div></p>
 <h2 id="neue-nutzer-hinzufugen">Neue Nutzer hinzufügen</h2>
-<pre><code class="language-bash">sudo adduser thorsten
-sudo usermod -aG sudo thorsten
-exit
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>adduser<span class="w"> </span>thorsten
+sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>thorsten
+<span class="nb">exit</span>
+</code></pre></div>
 <h3 id="postgis-installation-ubuntu-2304">PostGIS Installation (Ubuntu 23.04)</h3>
-<pre><code class="language-bash">sudo apt-get install postgis postgresql-18-postgis-3
-sudo -u postgres -i
-psql -d thorsten -c &quot;CREATE EXTENSION postgis;&quot;
-psql -d thorsten -c &quot;CREATE EXTENSION postgis_topology;&quot;
-exit
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>postgis<span class="w"> </span>postgresql-18-postgis-3
+sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>-i
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION postgis;&quot;</span>
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION postgis_topology;&quot;</span>
+<span class="nb">exit</span>
 
-cd $HOME
-sudo -u postgres -i
-createuser thorsten
-createdb -E UTF8 -O thorsten thorsten
-psql -d thorsten -c &quot;CREATE EXTENSION postgis;&quot; # Erweiterung hinzufügen
-psql -d thorsten -c &quot;CREATE EXTENSION hstore;&quot; # Erweiterung hinzufügen
-psql -d thorsten -c &quot;ALTER TABLE geometry_columns OWNER TO thorsten;&quot; # Rechte setzen
-psql -d thorsten -c &quot;ALTER TABLE spatial_ref_sys OWNER TO thorsten;&quot; # Rechte setzen
-psql -d thorsten -c &quot;\password thorsten&quot;
-exit # Ausloggen
-cd $HOME
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
-osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>-i
+createuser<span class="w"> </span>thorsten
+createdb<span class="w"> </span>-E<span class="w"> </span>UTF8<span class="w"> </span>-O<span class="w"> </span>thorsten<span class="w"> </span>thorsten
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION postgis;&quot;</span><span class="w"> </span><span class="c1"># Erweiterung hinzufügen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION hstore;&quot;</span><span class="w"> </span><span class="c1"># Erweiterung hinzufügen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;ALTER TABLE geometry_columns OWNER TO thorsten;&quot;</span><span class="w"> </span><span class="c1"># Rechte setzen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;ALTER TABLE spatial_ref_sys OWNER TO thorsten;&quot;</span><span class="w"> </span><span class="c1"># Rechte setzen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;\password thorsten&quot;</span>
+<span class="nb">exit</span><span class="w"> </span><span class="c1"># Ausloggen</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+wget<span class="w"> </span>https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis<span class="w"> </span>--read-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>schleswig-holstein-latest.osm.pbf<span class="w"> </span>--bounding-box<span class="w"> </span><span class="nv">left</span><span class="o">=</span><span class="m">10</span>.1141<span class="w"> </span><span class="nv">right</span><span class="o">=</span><span class="m">10</span>.3716<span class="w"> </span><span class="nv">top</span><span class="o">=</span><span class="m">53</span>.7136<span class="w"> </span><span class="nv">bottom</span><span class="o">=</span><span class="m">53</span>.6249<span class="w"> </span>--write-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>ahrensburg.pbf
 
-osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
-</code></pre>
+osm2pgsql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-H<span class="w"> </span>localhost<span class="w"> </span>-U<span class="w"> </span>thorsten<span class="w"> </span>--create<span class="w"> </span>-G<span class="w"> </span>--hstore<span class="w"> </span>-W<span class="w"> </span>ahrensburg.pbf
+</code></pre></div>
 <h2 id="debug-logging-fur-renderd-aktivieren">Debug-Logging für renderd aktivieren</h2>
 <p>Um detaillierte Fehlermeldungen und Debug-Ausgaben vom Renderd-Dienst zu erhalten, kann folgende Zeile in der Service-Datei ergänzt werden:</p>
-<pre><code class="language-bash">sudo nano /usr/lib/systemd/system/renderd.service
-</code></pre>
-<p>Füge unterhalb von <code>[Service]</code> diese Zeile ein:</p>
-<pre><code>Environment=G_MESSAGES_DEBUG=all
-</code></pre>
-<p>Danach die Konfiguration neu laden und Dienste neu starten:</p>
-<pre><code class="language-bash">sudo systemctl daemon-reload
-sudo systemctl restart renderd
-sudo systemctl restart apache2
-</code></pre>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/usr/lib/systemd/system/renderd.service
+</code></pre></div>
+Füge unterhalb von <code>[Service]</code> diese Zeile ein:</p>
+<p><div class="highlight"><pre><span></span><code>Environment=G_MESSAGES_DEBUG=all
+</code></pre></div>
+Danach die Konfiguration neu laden und Dienste neu starten:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>renderd
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div>
 <h2 id="beispiel-html-fur-leaflet-zum-testen-der-tiles">Beispiel-HTML für Leaflet zum Testen der Tiles</h2>
 <p>Um die Kacheln im Browser zu testen, kann eine Beispielseite mit Leaflet verwendet werden:</p>
-<pre><code class="language-bash">cd /var/www/html
-sudo wget https://raw.githubusercontent.com/SomeoneElseOSM/mod_tile/switch2osm/extra/sample_leaflet.html
-sudo nano sample_leaflet.html
-</code></pre>
-<p>Passe darin die IP-Adresse (<code>127.0.0.1</code>) auf die Adresse deines Servers an, damit du von anderen Geräten darauf zugreifen kannst. Rufe dann im Browser auf:</p>
-<pre><code>http://&lt;deine-server-ip&gt;/sample_leaflet.html
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/var/www/html
+sudo<span class="w"> </span>wget<span class="w"> </span>https://raw.githubusercontent.com/SomeoneElseOSM/mod_tile/switch2osm/extra/sample_leaflet.html
+sudo<span class="w"> </span>nano<span class="w"> </span>sample_leaflet.html
+</code></pre></div>
+Passe darin die IP-Adresse (<code>127.0.0.1</code>) auf die Adresse deines Servers an, damit du von anderen Geräten darauf zugreifen kannst. Rufe dann im Browser auf:</p>
+<div class="highlight"><pre><span></span><code>http://&lt;deine-server-ip&gt;/sample_leaflet.html
+</code></pre></div>
 <h2 id="monitoring-der-tile-requests">Monitoring der Tile-Requests</h2>
 <p>Um Tile-Anfragen und Render-Vorgänge live zu überwachen, kann folgender Befehl genutzt werden:</p>
-<pre><code class="language-bash">tail -f /var/log/syslog | grep &quot; TILE &quot;
-</code></pre>
-<p>So siehst du, wann Tiles angefragt und wann sie fertig gerendert werden.</p>
+<p><div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/syslog<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot; TILE &quot;</span>
+</code></pre></div>
+So siehst du, wann Tiles angefragt und wann sie fertig gerendert werden.</p>
 <h2 id="modtilemissingrequesttimeout-erhohen">ModTileMissingRequestTimeout erhöhen</h2>
 <p>Falls Kacheln zu schnell als "grau" angezeigt werden, kann der Timeout in der Datei <code>/etc/apache2/conf-available/renderd.conf</code> angepasst werden:</p>
-<pre><code class="language-bash">sudo nano /etc/apache2/conf-available/renderd.conf
-</code></pre>
-<p>Erhöhe z.B.:</p>
-<pre><code>ModTileMissingRequestTimeout 30
-</code></pre>
-<p>Danach Renderd und Apache neu starten:</p>
-<pre><code class="language-bash">sudo systemctl restart renderd
-sudo systemctl restart apache2
-</code></pre>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/conf-available/renderd.conf
+</code></pre></div>
+Erhöhe z.B.:</p>
+<p><div class="highlight"><pre><span></span><code>ModTileMissingRequestTimeout 30
+</code></pre></div>
+Danach Renderd und Apache neu starten:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>renderd
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div>
 
 
 

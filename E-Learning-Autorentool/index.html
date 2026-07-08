@@ -1575,7 +1575,7 @@
 <hr />
 <h2 id="5-optimales-zusammenspiel-referenz-architektur">5. Optimales Zusammenspiel (Referenz-Architektur)</h2>
 <p>Um eine voll funktionsfähige, interaktive Programmier-Lernumgebung mit KI-Unterstützung aufzubauen, arbeiten die folgenden Komponenten am besten als integriertes Ökosystem zusammen:</p>
-<pre><code class="language-mermaid">graph TD
+<pre class="mermaid"><code>graph TD
     User([Lernender]) --&gt;|1. Schreibt Code / Fragt Tutor| Frontend[Frontend: Next.js Framework]
     Frontend --&gt;|Nutzt| EditorLib[Monaco Editor Library]
     Frontend --&gt;|Nutzt| TerminalLib[Xterm.js Library]
@@ -1585,8 +1585,7 @@
 
     Frontend --&gt;|4. Sendet Code &amp; Fehler| Agent[KI-Agent: Tutor / Google Antigravity SDK]
     Agent --&gt;|5. Analysiert &amp; Generiert didaktischen Hinweis| Frontend
-    Frontend --&gt;|6. Zeigt Hinweis an| User
-</code></pre>
+    Frontend --&gt;|6. Zeigt Hinweis an| User</code></pre>
 <h3 id="die-rollenverteilung-im-detail">Die Rollenverteilung im Detail:</h3>
 <ol>
 <li><strong>Die Software (Laufzeit-Sicherheit &amp; Anwendung):</strong><ul>

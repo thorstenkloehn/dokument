@@ -1465,110 +1465,110 @@
 
 <h2 id="installieren-ubuntu-2204">Installieren Ubuntu 22.04</h2>
 <h3 id="nutzer-erstellen">Nutzer erstellen</h3>
-<p>Neuen Nutzer erstellen</p>
-<pre><code class="language-bash">sudo adduser --force-badname _renderd
-sudo usermod -aG sudo _renderd
-exit
-</code></pre>
+<p>Neuen Nutzer erstellen
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>adduser<span class="w"> </span>--force-badname<span class="w"> </span>_renderd
+sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>_renderd
+<span class="nb">exit</span>
+</code></pre></div></p>
 <h3 id="ssh-_renderd">ssh _renderd</h3>
-<pre><code class="language-bash">ssh _renderd@
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>_renderd@
+</code></pre></div>
 <h3 id="vorbereitung">Vorbereitung</h3>
 <h4 id="gaanze-neue-postgrs-datenbank">Gaanze Neue Postgrs Datenbank</h4>
-<pre><code class="language-bash">sudo apt install -y postgresql-common
-sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
-sudo apt update
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>postgresql-common
+sudo<span class="w"> </span>/usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
 <h4 id="nodejs">Nodejs</h4>
 <ul>
 <li><a href="https://github.com/nodesource/distributions">Anleitung</a> Erste Eineichrichtung</li>
 </ul>
 <h4 id="weitere-pakete">Weitere Pakete</h4>
-<pre><code class="language-bash">sudo apt update
-sudo apt upgrade
-sudo apt install screen locate libapache2-mod-tile renderd git tar unzip wget bzip2 apache2 lua5.1 mapnik-utils python3-mapnik python3-psycopg2 python3-yaml gdal-bin fonts-noto-cjk fonts-noto-hinted fonts-noto-unhinted fonts-unifont fonts-hanazono postgresql postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osm2pgsql net-tools curl osmosis
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>screen<span class="w"> </span>locate<span class="w"> </span>libapache2-mod-tile<span class="w"> </span>renderd<span class="w"> </span>git<span class="w"> </span>tar<span class="w"> </span>unzip<span class="w"> </span>wget<span class="w"> </span>bzip2<span class="w"> </span>apache2<span class="w"> </span>lua5.1<span class="w"> </span>mapnik-utils<span class="w"> </span>python3-mapnik<span class="w"> </span>python3-psycopg2<span class="w"> </span>python3-yaml<span class="w"> </span>gdal-bin<span class="w"> </span>fonts-noto-cjk<span class="w"> </span>fonts-noto-hinted<span class="w"> </span>fonts-noto-unhinted<span class="w"> </span>fonts-unifont<span class="w"> </span>fonts-hanazono<span class="w"> </span>postgresql<span class="w"> </span>postgresql-contrib<span class="w"> </span>postgis<span class="w"> </span>postgresql-16-postgis-3<span class="w"> </span>postgresql-16-postgis-3-scripts<span class="w"> </span>osm2pgsql<span class="w"> </span>net-tools<span class="w"> </span>curl<span class="w"> </span>osmosis
+</code></pre></div>
 <h3 id="postgres">Postgres</h3>
-<p>Posdtgres Datenbank erstellen</p>
-<pre><code class="language-bash">sudo -u postgres -i
-createuser _renderd
-createdb -E UTF8 -O _renderd gis
-</code></pre>
-<p>Postgres Datenbank konfigurieren</p>
-<pre><code class="language-bash">psql
-\c gis
-CREATE EXTENSION postgis;
-CREATE EXTENSION hstore;
-ALTER TABLE geometry_columns OWNER TO _renderd;
-ALTER TABLE spatial_ref_sys OWNER TO _renderd;
-\q
-exit
-</code></pre>
+<p>Posdtgres Datenbank erstellen
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>-i
+createuser<span class="w"> </span>_renderd
+createdb<span class="w"> </span>-E<span class="w"> </span>UTF8<span class="w"> </span>-O<span class="w"> </span>_renderd<span class="w"> </span>gis
+</code></pre></div>
+Postgres Datenbank konfigurieren
+<div class="highlight"><pre><span></span><code>psql
+<span class="se">\c</span><span class="w"> </span>gis
+CREATE<span class="w"> </span>EXTENSION<span class="w"> </span>postgis<span class="p">;</span>
+CREATE<span class="w"> </span>EXTENSION<span class="w"> </span>hstore<span class="p">;</span>
+ALTER<span class="w"> </span>TABLE<span class="w"> </span>geometry_columns<span class="w"> </span>OWNER<span class="w"> </span>TO<span class="w"> </span>_renderd<span class="p">;</span>
+ALTER<span class="w"> </span>TABLE<span class="w"> </span>spatial_ref_sys<span class="w"> </span>OWNER<span class="w"> </span>TO<span class="w"> </span>_renderd<span class="p">;</span>
+<span class="se">\q</span>
+<span class="nb">exit</span>
+</code></pre></div></p>
 <h3 id="mapnik-testen">Mapnik Testen</h3>
-<pre><code class="language-bash">python3
-import mapnik
-exit()
-</code></pre>
+<div class="highlight"><pre><span></span><code>python3
+import<span class="w"> </span>mapnik
+exit<span class="o">()</span>
+</code></pre></div>
 <h3 id="stylesheet-configuration">Stylesheet configuration</h3>
-<pre><code class="language-bash">mkdir ~/src
-cd ~/src
-git clone https://github.com/gravitystorm/openstreetmap-carto
-cd openstreetmap-carto
-sudo npm install -g carto
-carto -v
-carto project.mml &gt; mapnik.xml
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/src
+<span class="nb">cd</span><span class="w"> </span>~/src
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/gravitystorm/openstreetmap-carto
+<span class="nb">cd</span><span class="w"> </span>openstreetmap-carto
+sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>carto
+carto<span class="w"> </span>-v
+carto<span class="w"> </span>project.mml<span class="w"> </span>&gt;<span class="w"> </span>mapnik.xml
+</code></pre></div>
 <h3 id="loading-data">Loading data</h3>
-<pre><code class="language-bash">mkdir ~/data
-cd ~/data
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
-osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/data
+<span class="nb">cd</span><span class="w"> </span>~/data
+wget<span class="w"> </span>https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis<span class="w"> </span>--read-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>schleswig-holstein-latest.osm.pbf<span class="w"> </span>--bounding-box<span class="w"> </span><span class="nv">left</span><span class="o">=</span><span class="m">10</span>.1141<span class="w"> </span><span class="nv">right</span><span class="o">=</span><span class="m">10</span>.3716<span class="w"> </span><span class="nv">top</span><span class="o">=</span><span class="m">53</span>.7136<span class="w"> </span><span class="nv">bottom</span><span class="o">=</span><span class="m">53</span>.6249<span class="w"> </span>--write-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>ahrensburg.pbf
 
-chmod o+rx ~
-sudo -u _renderd osm2pgsql -d gis --create --slim  -G --hstore --tag-transform-script ~/src/openstreetmap-carto/openstreetmap-carto.lua -C 2500 --number-processes 1 -S ~/src/openstreetmap-carto/openstreetmap-carto.style ~/data/ahrensburg.pbf
-</code></pre>
+chmod<span class="w"> </span>o+rx<span class="w"> </span>~
+sudo<span class="w"> </span>-u<span class="w"> </span>_renderd<span class="w"> </span>osm2pgsql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>--create<span class="w"> </span>--slim<span class="w">  </span>-G<span class="w"> </span>--hstore<span class="w"> </span>--tag-transform-script<span class="w"> </span>~/src/openstreetmap-carto/openstreetmap-carto.lua<span class="w"> </span>-C<span class="w"> </span><span class="m">2500</span><span class="w"> </span>--number-processes<span class="w"> </span><span class="m">1</span><span class="w"> </span>-S<span class="w"> </span>~/src/openstreetmap-carto/openstreetmap-carto.style<span class="w"> </span>~/data/ahrensburg.pbf
+</code></pre></div>
 <h3 id="index-erstellen">Index erstellen</h3>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
-sudo -u _renderd psql -d gis -f indexes.sql
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
+sudo<span class="w"> </span>-u<span class="w"> </span>_renderd<span class="w"> </span>psql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>-f<span class="w"> </span>indexes.sql
+</code></pre></div>
 <h3 id="shapefile-download">Shapefile download</h3>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
-mkdir data
-sudo chown _renderd data
-sudo -u _renderd scripts/get-external-data.py
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
+mkdir<span class="w"> </span>data
+sudo<span class="w"> </span>chown<span class="w"> </span>_renderd<span class="w"> </span>data
+sudo<span class="w"> </span>-u<span class="w"> </span>_renderd<span class="w"> </span>scripts/get-external-data.py
+</code></pre></div>
 <h3 id="fonts">Fonts</h3>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
 scripts/get-fonts.sh
-</code></pre>
+</code></pre></div>
 <h3 id="einstellung-renderd">Einstellung renderd</h3>
-<pre><code class="language-bash">sudo nano /etc/renderd.conf
-</code></pre>
-<pre><code class="language-bash">[s2o]
-URI=/hot/
-XML=/home/_renderd/src/openstreetmap-carto/mapnik.xml
-HOST=localhost
-TILESIZE=256
-MAXZOOM=20
-</code></pre>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/renderd.conf
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>s2o<span class="o">]</span>
+<span class="nv">URI</span><span class="o">=</span>/hot/
+<span class="nv">XML</span><span class="o">=</span>/home/_renderd/src/openstreetmap-carto/mapnik.xml
+<span class="nv">HOST</span><span class="o">=</span>localhost
+<span class="nv">TILESIZE</span><span class="o">=</span><span class="m">256</span>
+<span class="nv">MAXZOOM</span><span class="o">=</span><span class="m">20</span>
+</code></pre></div></p>
 <h3 id="making-sure-that-you-can-see-debug-messages">Making sure that you can see debug messages</h3>
-<pre><code class="language-bash">sudo nano /usr/lib/systemd/system/renderd.service
-</code></pre>
-<pre><code class="language-bash">sudo systemctl daemon-reload
-sudo systemctl restart renderd
-sudo systemctl restart apache2
-</code></pre>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/usr/lib/systemd/system/renderd.service
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>renderd
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div></p>
 <h3 id="apache2">Apache2</h3>
-<pre><code class="language-bash">sudo /etc/init.d/apache2 restart
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>/etc/init.d/apache2<span class="w"> </span>restart
+</code></pre></div>
 <h3 id="apache2-port-andern">Apache2 Port ändern</h3>
-<pre><code class="language-bash">sudo nano /etc/apache2/ports.conf
-</code></pre>
-<pre><code class="language-bash">Listen 8080
-</code></pre>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/ports.conf
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Listen<span class="w"> </span><span class="m">8080</span>
+</code></pre></div></p>
 <h3 id="apache2-reatart">Apache2 Reatart</h3>
-<pre><code class="language-bash">sudo /etc/init.d/apache2 restart
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>/etc/init.d/apache2<span class="w"> </span>restart
+</code></pre></div>
 
 
 

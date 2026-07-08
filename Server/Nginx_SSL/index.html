@@ -1098,16 +1098,16 @@
   <h1>Nginx SSL Zertifikat</h1>
 
 <h2 id="nginx-mit-ssl-zertifikat-einrichten-auf-ubuntu-2004-lts-oder-hoher">Nginx mit SSL-Zertifikat einrichten auf Ubuntu 20.04 LTS oder höher</h2>
-<pre><code class="language-bash">sudo apt install snapd
-sudo apt-get install nginx
-sudo rm /etc/nginx/sites-enabled/default
-sudo systemctl stop nginx
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo systemctl stop nginx
-sudo certbot certonly --manual --preferred-challenges dns \
-  -d *.ahrensburg.city -d ahrensburg.city
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>snapd
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>nginx
+sudo<span class="w"> </span>rm<span class="w"> </span>/etc/nginx/sites-enabled/default
+sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>nginx
+sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>--classic<span class="w"> </span>certbot
+sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/snap/bin/certbot<span class="w"> </span>/usr/bin/certbot
+sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>nginx
+sudo<span class="w"> </span>certbot<span class="w"> </span>certonly<span class="w"> </span>--manual<span class="w"> </span>--preferred-challenges<span class="w"> </span>dns<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span>*.ahrensburg.city<span class="w"> </span>-d<span class="w"> </span>ahrensburg.city
+</code></pre></div>
 <!--
     Dokumentation: Dieses Dokument beschreibt, wie eine TXT-Domain für SSL-Zertifikate (z.B. Let's Encrypt) eingerichtet wird. Es enthält eine Schritt-für-Schritt-Anleitung zur Konfiguration eines TXT-Records im DNS, um die Domain-Verifizierung für SSL-Zertifikate mit Nginx zu ermöglichen. Die Anleitung richtet sich an Administratoren, die ihre Server mit SSL absichern möchten.
 -->

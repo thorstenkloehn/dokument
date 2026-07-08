@@ -1100,20 +1100,20 @@
 </ul>
 <h2 id="verbindung-unter-ubuntu-herstellen">Verbindung unter Ubuntu herstellen</h2>
 <p>Öffne dein Terminal. Du nutzt das Tool adb (Android Debug Bridge). Falls noch nicht installiert:</p>
-<pre><code class="language-bash">sudo apt install adb
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>adb
+</code></pre></div>
 <p>Klicke im Handy auf "Wireless Debugging" und dann auf "Gerät mit Kopplungscode koppeln".</p>
 <p>Du siehst eine IP-Adresse, einen Port und einen Code.</p>
 <p>Gib im Ubuntu-Terminal ein:</p>
-<pre><code class="language-bash">adb pair [DEINE_IP]:[PORT_ZUM_KOPPELN] [DER_CODE]
-</code></pre>
+<div class="highlight"><pre><span></span><code>adb<span class="w"> </span>pair<span class="w"> </span><span class="o">[</span>DEINE_IP<span class="o">]</span>:<span class="o">[</span>PORT_ZUM_KOPPELN<span class="o">]</span><span class="w"> </span><span class="o">[</span>DER_CODE<span class="o">]</span>
+</code></pre></div>
 <p>Danach verbindest du dich (mit dem Port, der auf der Hauptseite von Wireless Debugging steht):</p>
-<pre><code class="language-bash">adb connect [DEINE_IP]:[PORT]
-</code></pre>
+<div class="highlight"><pre><span></span><code>adb<span class="w"> </span>connect<span class="w"> </span><span class="o">[</span>DEINE_IP<span class="o">]</span>:<span class="o">[</span>PORT<span class="o">]</span>
+</code></pre></div>
 <h2 id="c-app-full-power-kabellos-ubertragen">C# App "Full Power" kabellos übertragen</h2>
 <p>Wenn die Verbindung steht, erkennt dotnet dein Redmi 9A als Zielgerät. Du kannst die App direkt aus dem Terminal oder deiner IDE (Rider/VS Code) starten:</p>
-<pre><code class="language-bash">dotnet build -t:Run -f net9.0-android
-</code></pre>
+<div class="highlight"><pre><span></span><code>dotnet<span class="w"> </span>build<span class="w"> </span>-t:Run<span class="w"> </span>-f<span class="w"> </span>net9.0-android
+</code></pre></div>
 
 
 

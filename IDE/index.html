@@ -1539,195 +1539,187 @@
 
 <h2 id="system-aktualisieren">System aktualisieren</h2>
 <p>Öffnen Sie das Terminal und führen Sie folgende Befehle aus, um Ihr System zu aktualisieren:</p>
-<pre><code class="language-bash">sudo apt-get update
-sudo apt-get upgrade
-sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
-sudo ubuntu-drivers install
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>upgrade
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libsecret-1-0<span class="w"> </span>libsecret-tools<span class="w"> </span>libsecret-1-dev<span class="w"> </span>libglib2.0-dev
+sudo<span class="w"> </span>ubuntu-drivers<span class="w"> </span>install
+</code></pre></div>
 <h2 id="java-und-entwicklungswerkzeuge-installieren">Java und Entwicklungswerkzeuge installieren</h2>
-<pre><code class="language-bash">sudo apt install openjdk-26-jdk
-sudo apt install maven
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>openjdk-26-jdk
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>maven
+</code></pre></div>
 <h2 id="sudo-ohne-passwort-konfigurieren-nopasswd">Sudo ohne Passwort konfigurieren (NOPASSWD)</h2>
 <p>Statt das Passwort für <code>sudo</code> Befehle jedes Mal einzugeben, können Sie Ihren Benutzer so konfigurieren, dass kein Passwort abgefragt wird.</p>
 <p>Öffnen Sie die Konfigurationsdatei mit:</p>
-<pre><code class="language-bash">sudo visudo
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>visudo
+</code></pre></div>
 <p>Fügen Sie am Ende der Datei folgende Zeile für Ihren Benutzer hinzu:</p>
-<pre><code class="language-text">dein_benutzername ALL=(ALL) NOPASSWD:ALL
-</code></pre>
+<div class="highlight"><pre><span></span><code>dein_benutzername ALL=(ALL) NOPASSWD:ALL
+</code></pre></div>
 <p>Speichern und schließen Sie den Editor.</p>
 <h2 id="google-chrome-installieren">Google Chrome installieren</h2>
-<pre><code class="language-bash">wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-</code></pre>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>google-chrome-stable_current_amd64.deb
+</code></pre></div>
 <h2 id="postgresql-installieren">PostgreSQL installieren</h2>
-<pre><code># Import the repository signing key:
+<div class="highlight"><pre><span></span><code># Import the repository signing key:
 sudo apt install curl ca-certificates
 sudo install -d /usr/share/postgresql-common/pgdg
 sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://www.postgresql.org/media/keys/ACCC4CF8.asc
 
 # Create the repository configuration file:
 . /etc/os-release
-sudo sh -c &quot;echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main' &gt; /etc/apt/sources.list.d/pgdg.list&quot;
+sudo sh -c &quot;echo &#39;deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main&#39; &gt; /etc/apt/sources.list.d/pgdg.list&quot;
 
 # Update the package lists:
 sudo apt update
-
-</code></pre>
+</code></pre></div>
 <h2 id="git-installieren-und-konfigurieren">Git installieren und konfigurieren</h2>
-<pre><code class="language-bash">sudo apt-get install git gh
-git config --global user.email &quot;you@example.com&quot;
-git config --global user.name &quot;Your Name&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>gh
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;you@example.com&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Your Name&quot;</span>
+</code></pre></div>
 <h2 id="github-cli-gh-konfigurieren">GitHub CLI (gh) konfigurieren</h2>
-<pre><code class="language-bash">gh auth login
-</code></pre>
+<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>auth<span class="w"> </span>login
+</code></pre></div>
 <h2 id="nodejs-installieren">Node.js installieren</h2>
-<pre><code class="language-bash"># Download and install nvm:
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+<div class="highlight"><pre><span></span><code><span class="c1"># Download and install nvm:</span>
+curl<span class="w"> </span>-o-<span class="w"> </span>https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 
-# in lieu of restarting the shell
-\. &quot;$HOME/.nvm/nvm.sh&quot;
+<span class="c1"># in lieu of restarting the shell</span>
+<span class="se">\.</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.nvm/nvm.sh&quot;</span>
 
-# Download and install Node.js:
-nvm install 25
+<span class="c1"># Download and install Node.js:</span>
+nvm<span class="w"> </span>install<span class="w"> </span><span class="m">25</span>
 
-# Verify the Node.js version:
-node -v # Should print &quot;v25.4.0&quot;.
+<span class="c1"># Verify the Node.js version:</span>
+node<span class="w"> </span>-v<span class="w"> </span><span class="c1"># Should print &quot;v25.4.0&quot;.</span>
 
-# Verify npm version:
-npm -v # Should print &quot;11.7.0&quot;.
-
-</code></pre>
+<span class="c1"># Verify npm version:</span>
+npm<span class="w"> </span>-v<span class="w"> </span><span class="c1"># Should print &quot;11.7.0&quot;.</span>
+</code></pre></div>
 <h2 id="google-antigravity">Google Antigravity</h2>
-<pre><code class="language-bash"># 1. In das temporäre Verzeichnis wechseln
-cd /tmp
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. In das temporäre Verzeichnis wechseln</span>
+<span class="nb">cd</span><span class="w"> </span>/tmp
 
-# 2. Download mit fest definiertem Dateinamen (-O)
-wget &quot;https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.1.1-6123990880747520/linux-x64/Antigravity%20IDE.tar.gz&quot; -O antigravity.tar.gz
+<span class="c1"># 2. Download mit fest definiertem Dateinamen (-O)</span>
+wget<span class="w"> </span><span class="s2">&quot;https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.1.1-6123990880747520/linux-x64/Antigravity%20IDE.tar.gz&quot;</span><span class="w"> </span>-O<span class="w"> </span>antigravity.tar.gz
 
-# 3. Zielverzeichnis erstellen
-sudo mkdir -p /opt/Antigravity_IDE
+<span class="c1"># 3. Zielverzeichnis erstellen</span>
+sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/opt/Antigravity_IDE
 
-# 4. Jetzt findet tar die Datei garantiert, weil sie &quot;antigravity.tar.gz&quot; heißt
-sudo tar -xzf antigravity.tar.gz -C /opt/Antigravity_IDE --strip-components=1
+<span class="c1"># 4. Jetzt findet tar die Datei garantiert, weil sie &quot;antigravity.tar.gz&quot; heißt</span>
+sudo<span class="w"> </span>tar<span class="w"> </span>-xzf<span class="w"> </span>antigravity.tar.gz<span class="w"> </span>-C<span class="w"> </span>/opt/Antigravity_IDE<span class="w"> </span>--strip-components<span class="o">=</span><span class="m">1</span>
 
-# 5. Desktop-Datei erstellen
-sudo bash -c 'cat &gt; /usr/share/applications/antigravity.desktop' &lt;&lt; 'EOF'
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Antigravity IDE
-Comment=Google Antigravity Development Platform
-Exec=/opt/Antigravity_IDE/antigravity-ide --no-sandbox
-Icon=/opt/Antigravity_IDE/icon.svg
-Terminal=false
-Categories=Development;IDE;
-StartupWMClass=antigravity-ide
-EOF
+<span class="c1"># 5. Desktop-Datei erstellen</span>
+sudo<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;cat &gt; /usr/share/applications/antigravity.desktop&#39;</span><span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+<span class="s">[Desktop Entry]</span>
+<span class="s">Version=1.0</span>
+<span class="s">Type=Application</span>
+<span class="s">Name=Antigravity IDE</span>
+<span class="s">Comment=Google Antigravity Development Platform</span>
+<span class="s">Exec=/opt/Antigravity_IDE/antigravity-ide --no-sandbox</span>
+<span class="s">Icon=/opt/Antigravity_IDE/icon.svg</span>
+<span class="s">Terminal=false</span>
+<span class="s">Categories=Development;IDE;</span>
+<span class="s">StartupWMClass=antigravity-ide</span>
+<span class="s">EOF</span>
 
-# 6. Datenbank aktualisieren
-sudo update-desktop-database
-
-</code></pre>
+<span class="c1"># 6. Datenbank aktualisieren</span>
+sudo<span class="w"> </span>update-desktop-database
+</code></pre></div>
 <h2 id="visual-studio-code-und-neovim-installieren">Visual Studio Code und Neovim installieren</h2>
-<pre><code class="language-bash">sudo snap install code --classic
-sudo apt-get install neovim
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>code<span class="w"> </span>--classic
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>neovim
+</code></pre></div>
 <h3 id="wichtige-vs-code-erweiterungen-installieren">Wichtige VS Code Erweiterungen installieren</h3>
-<pre><code class="language-bash">code --install-extension GitHub.copilot
-code --install-extension anthropic.claude-code
-code --install-extension openai.chatgpt
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vmware.vscode-boot-dev-pack
-</code></pre>
+<div class="highlight"><pre><span></span><code>code<span class="w"> </span>--install-extension<span class="w"> </span>GitHub.copilot
+code<span class="w"> </span>--install-extension<span class="w"> </span>anthropic.claude-code
+code<span class="w"> </span>--install-extension<span class="w"> </span>openai.chatgpt
+code<span class="w"> </span>--install-extension<span class="w"> </span>vscjava.vscode-java-pack
+code<span class="w"> </span>--install-extension<span class="w"> </span>vmware.vscode-boot-dev-pack
+</code></pre></div>
 <h2 id="zed">Zed</h2>
-<pre><code>curl -f https://zed.dev/install.sh | sh
-
-</code></pre>
+<div class="highlight"><pre><span></span><code>curl -f https://zed.dev/install.sh | sh
+</code></pre></div>
 <h3 id="postgis-installation">PostGIS Installation ()</h3>
-<pre><code class="language-bash">
-sudo apt-get install postgis postgresql-18-postgis-3 postgresql-18
-cd $HOME
-sudo -u postgres -i
-createuser thorsten
-createdb -E UTF8 -O thorsten thorsten
-psql -d thorsten -c &quot;CREATE EXTENSION postgis;&quot; # Erweiterung hinzufügen
-psql -d thorsten -c &quot;CREATE EXTENSION hstore;&quot; # Erweiterung hinzufügen
-psql -d thorsten -c &quot;ALTER TABLE geometry_columns OWNER TO thorsten;&quot; # Rechte setzen
-psql -d thorsten -c &quot;ALTER TABLE spatial_ref_sys OWNER TO thorsten;&quot; # Rechte setzen
-psql -d thorsten -c &quot;\password thorsten&quot;
-psql -c &quot;ALTER USER dein_benutzername CREATEDB;&quot;
-exit # Ausloggen
-cd $HOME
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
-sudo apt-get install osmosis osm2pgsql
-osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>postgis<span class="w"> </span>postgresql-18-postgis-3<span class="w"> </span>postgresql-18
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>-i
+createuser<span class="w"> </span>thorsten
+createdb<span class="w"> </span>-E<span class="w"> </span>UTF8<span class="w"> </span>-O<span class="w"> </span>thorsten<span class="w"> </span>thorsten
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION postgis;&quot;</span><span class="w"> </span><span class="c1"># Erweiterung hinzufügen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE EXTENSION hstore;&quot;</span><span class="w"> </span><span class="c1"># Erweiterung hinzufügen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;ALTER TABLE geometry_columns OWNER TO thorsten;&quot;</span><span class="w"> </span><span class="c1"># Rechte setzen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;ALTER TABLE spatial_ref_sys OWNER TO thorsten;&quot;</span><span class="w"> </span><span class="c1"># Rechte setzen</span>
+psql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;\password thorsten&quot;</span>
+psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;ALTER USER dein_benutzername CREATEDB;&quot;</span>
+<span class="nb">exit</span><span class="w"> </span><span class="c1"># Ausloggen</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+wget<span class="w"> </span>https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>osmosis<span class="w"> </span>osm2pgsql
+osmosis<span class="w"> </span>--read-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>schleswig-holstein-latest.osm.pbf<span class="w"> </span>--bounding-box<span class="w"> </span><span class="nv">left</span><span class="o">=</span><span class="m">10</span>.1141<span class="w"> </span><span class="nv">right</span><span class="o">=</span><span class="m">10</span>.3716<span class="w"> </span><span class="nv">top</span><span class="o">=</span><span class="m">53</span>.7136<span class="w"> </span><span class="nv">bottom</span><span class="o">=</span><span class="m">53</span>.6249<span class="w"> </span>--write-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>ahrensburg.pbf
 
-osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
-
-</code></pre>
+osm2pgsql<span class="w"> </span>-d<span class="w"> </span>thorsten<span class="w"> </span>-H<span class="w"> </span>localhost<span class="w"> </span>-U<span class="w"> </span>thorsten<span class="w"> </span>--create<span class="w"> </span>-G<span class="w"> </span>--hstore<span class="w"> </span>-W<span class="w"> </span>ahrensburg.pbf
+</code></pre></div>
 <h2 id="postgresql-passwort-authentifizierung-konfigurieren">PostgreSQL Passwort-Authentifizierung konfigurieren</h2>
 <h3 id="die-pgpass-datei-sicherster-standard-weg">Die .pgpass Datei (Sicherster &amp; Standard-Weg)</h3>
 <p>Dies ist die offizielle Methode für benutzerspezifische Passwörter. PostgreSQL sucht im Home-Verzeichnis nach einer versteckten Datei namens <code>.pgpass</code>.</p>
 <p>Erstelle die Datei in deinem Home-Verzeichnis:</p>
-<pre><code class="language-bash">nano ~/.pgpass
-</code></pre>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>~/.pgpass
+</code></pre></div>
 <p>Füge die Daten im folgenden Format ein:</p>
-<pre><code class="language-text">localhost:5432:*:dein_user:dein_passwort
-</code></pre>
+<div class="highlight"><pre><span></span><code>localhost:5432:*:dein_user:dein_passwort
+</code></pre></div>
 <p>Wildcards <code>*</code> sind erlaubt, falls das Passwort für alle Datenbanken gilt.</p>
 <p>Wichtig: Setze die korrekten Berechtigungen (PostgreSQL verweigert die Datei, wenn sie für andere lesbar ist):</p>
-<pre><code class="language-bash">chmod 0600 ~/.pgpass
-</code></pre>
+<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span><span class="m">0600</span><span class="w"> </span>~/.pgpass
+</code></pre></div>
 <h2 id="c-und-c-entwicklungsumgebung">C und C++ Entwicklungsumgebung</h2>
-<pre><code class="language-bash">sudo apt install curl
-sudo apt install build-essential
-code --install-extension ms-vscode.cpptools-extension-pack
-sudo apt-get install cmake
-sudo apt-get install gdb
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>curl
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>build-essential
+code<span class="w"> </span>--install-extension<span class="w"> </span>ms-vscode.cpptools-extension-pack
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>cmake
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>gdb
+</code></pre></div>
 <h2 id="python-installieren">Python installieren</h2>
-<pre><code class="language-bash">sudo apt install python3 python3-pip python3-venv python-is-python3
-code --install-extension ms-python.python
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3<span class="w"> </span>python3-pip<span class="w"> </span>python3-venv<span class="w"> </span>python-is-python3
+code<span class="w"> </span>--install-extension<span class="w"> </span>ms-python.python
+</code></pre></div>
 <h2 id="rust-installieren">Rust installieren</h2>
-<pre><code class="language-bash">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-code --install-extension rust-lang.rust-analyzer
-</code></pre>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>--proto<span class="w"> </span><span class="s1">&#39;=https&#39;</span><span class="w"> </span>--tlsv1.2<span class="w"> </span>-sSf<span class="w"> </span>https://sh.rustup.rs<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+code<span class="w"> </span>--install-extension<span class="w"> </span>rust-lang.rust-analyzer
+</code></pre></div>
 <h2 id="go-golang-installieren">Go (Golang) installieren</h2>
-<pre><code class="language-bash">cd $HOME
-sudo rm -rf /usr/local/go
-wget https://go.dev/dl/go1.26.4.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.26.4.linux-amd64.tar.gz
-echo 'export PATH=$PATH:/usr/local/go/bin' &gt;&gt; ~/.bashrc
-echo 'export GOPATH=$HOME/go' &gt;&gt; ~/.bashrc
-echo 'export PATH=$PATH:$GOPATH/bin' &gt;&gt; ~/.bashrc
-source ~/.bashrc
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/usr/local/go
+wget<span class="w"> </span>https://go.dev/dl/go1.26.4.linux-amd64.tar.gz
+sudo<span class="w"> </span>tar<span class="w"> </span>-C<span class="w"> </span>/usr/local<span class="w"> </span>-xzf<span class="w"> </span>go1.26.4.linux-amd64.tar.gz
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PATH=$PATH:/usr/local/go/bin&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export GOPATH=$HOME/go&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PATH=$PATH:$GOPATH/bin&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+<span class="nb">source</span><span class="w"> </span>~/.bashrc
+</code></pre></div>
 <h2 id="net-installieren-und-konfigurieren">.NET installieren und konfigurieren</h2>
-<pre><code class="language-bash">sudo apt-get update
-sudo apt-get install -y dotnet-sdk-10.0
-dotnet tool install --global dotnet-ef
-dotnet tool install --global dotnet-aspnet-codegenerator
-dotnet tool install -g Microsoft.Web.LibraryManager.Cli
-echo 'export PATH=$HOME/.dotnet/tools:$PATH' &gt;&gt; ~/.bashrc
-source ~/.bashrc
-code --install-extension ms-dotnettools.csdevkit
-sudo dotnet workload install android
-dotnet workload update
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>dotnet-sdk-10.0
+dotnet<span class="w"> </span>tool<span class="w"> </span>install<span class="w"> </span>--global<span class="w"> </span>dotnet-ef
+dotnet<span class="w"> </span>tool<span class="w"> </span>install<span class="w"> </span>--global<span class="w"> </span>dotnet-aspnet-codegenerator
+dotnet<span class="w"> </span>tool<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>Microsoft.Web.LibraryManager.Cli
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PATH=$HOME/.dotnet/tools:$PATH&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+<span class="nb">source</span><span class="w"> </span>~/.bashrc
+code<span class="w"> </span>--install-extension<span class="w"> </span>ms-dotnettools.csdevkit
+sudo<span class="w"> </span>dotnet<span class="w"> </span>workload<span class="w"> </span>install<span class="w"> </span>android
+dotnet<span class="w"> </span>workload<span class="w"> </span>update
+</code></pre></div>
 <h2 id="ki-cli">KI Cli</h2>
-<pre><code>curl -fsSL https://claude.ai/install.sh | bash
+<div class="highlight"><pre><span></span><code>curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
 curl -fsSL https://antigravity.google/cli/install.sh | bash
-
-
-</code></pre>
+</code></pre></div>
 <h2 id="jetbrains-installieren">Jetbrains Installieren</h2>
-<pre><code>sudo snap install intellij-idea --classic
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo snap install intellij-idea --classic
+</code></pre></div>
 <p>In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.</p>
 <ul>
 <li><strong>Vektorkacheln (Vector Tiles):</strong> Hier können Sie Verbindungen zu Vektor-Tileservern einrichten. Wenn Sie hier einen Rechtsklick machen und „Neue generische Verbindung" wählen, können Sie die URL Ihres lokalen Servers (z. B. <code>http://localhost:3000/IhrLayer/{z}/{x}/{y}.pbf</code>) eintragen, um Ihre selbst gehosteten OpenStreetMap-Daten in QGIS als Ebene hereinzuladen und beliebig zu stylen.</li>

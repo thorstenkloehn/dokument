@@ -1379,27 +1379,27 @@
 <p>Diese Anleitung beschreibt, wie der Apache-Webserver auf Port 8080 statt dem Standard-Port 80 betrieben wird. Dies ist z.B. sinnvoll, wenn ein anderer Dienst (wie Nginx oder ein Reverse Proxy) Port 80 belegt oder Sie Apache absichern möchten.</p>
 <h3 id="schritt-1-apache-port-andern">Schritt 1: Apache-Port ändern</h3>
 <p>Öffne die Datei <code>/etc/apache2/ports.conf</code>:</p>
-<pre><code class="language-bash">sudo nano /etc/apache2/ports.conf
-</code></pre>
-<p>Füge (oder ändere) folgende Zeile:</p>
-<pre><code>Listen 8080
-</code></pre>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/ports.conf
+</code></pre></div>
+Füge (oder ändere) folgende Zeile:</p>
+<div class="highlight"><pre><span></span><code>Listen 8080
+</code></pre></div>
 <h4 id="fur-ubuntu-2004-vhost-anpassen">Für Ubuntu 20.04: VHost anpassen</h4>
 <p>Öffne die Datei <code>/etc/apache2/sites-available/000-default.conf</code> und passe den VirtualHost an:</p>
-<pre><code class="language-bash">sudo nano /etc/apache2/sites-available/000-default.conf
-</code></pre>
-<p>Ändere die Zeile zu:</p>
-<pre><code>&lt;VirtualHost *:8080&gt;
-</code></pre>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/sites-available/000-default.conf
+</code></pre></div>
+Ändere die Zeile zu:</p>
+<div class="highlight"><pre><span></span><code>&lt;VirtualHost *:8080&gt;
+</code></pre></div>
 <h4 id="fur-ubuntu-22042404-und-neuer">Für Ubuntu 22.04/24.04 und neuer</h4>
 <p>Meist reicht es, nur die <code>ports.conf</code> zu ändern. Prüfe aber, ob in den VHost-Dateien noch explizit auf Port 80 verwiesen wird.</p>
 <h3 id="schritt-2-apache-neu-starten">Schritt 2: Apache neu starten</h3>
-<pre><code class="language-bash">sudo systemctl restart apache2
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div>
 <h3 id="schritt-3-firewall-anpassen-falls-aktiv">Schritt 3: Firewall anpassen (falls aktiv)</h3>
 <p>Erlaube Port 8080:</p>
-<pre><code class="language-bash">sudo ufw allow 8080/tcp
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">8080</span>/tcp
+</code></pre></div>
 <h3 id="hinweise">Hinweise</h3>
 <ul>
 <li>Nach der Umstellung ist Apache unter http://<server-ip>:8080 erreichbar.</li>
@@ -1409,30 +1409,30 @@
 <h2 id="nginx-als-reverse-proxy-vor-apache-optional">Nginx als Reverse Proxy vor Apache (optional)</h2>
 <p>Wenn du möchtest, dass Anfragen an Port 80 (und ggf. 443) von Nginx entgegengenommen und an Apache auf Port 8080 weitergeleitet werden, kannst du Nginx als Reverse Proxy konfigurieren:</p>
 <h3 id="beispiel-konfiguration-fur-etcnginxsites-availabledefault">Beispiel-Konfiguration für <code>/etc/nginx/sites-available/default</code>:</h3>
-<pre><code class="language-nginx">server {
-    listen 80;
-    server_name _;
+<p><div class="highlight"><pre><span></span><code><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">_</span><span class="p">;</span>
 
-    location / {
-        proxy_pass http://127.0.0.1:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-</code></pre>
-<p>Danach Nginx neu starten:</p>
-<pre><code class="language-bash">sudo systemctl restart nginx
-</code></pre>
+<span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://127.0.0.1:8080</span><span class="p">;</span>
+<span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Host</span><span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
+<span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Real-IP</span><span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
+<span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-For</span><span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+<span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-Proto</span><span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+Danach Nginx neu starten:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>nginx
+</code></pre></div>
 <hr />
 <h2 id="ssl-mit-lets-encrypt-certbot">SSL mit Let's Encrypt (Certbot)</h2>
 <p>Wenn du HTTPS nutzen möchtest, kannst du Certbot verwenden. Beispiel für Nginx:</p>
-<pre><code class="language-bash">sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo certbot --nginx
-</code></pre>
-<p>Folge den Anweisungen, um ein Zertifikat zu erhalten.</p>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>--classic<span class="w"> </span>certbot
+sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/snap/bin/certbot<span class="w"> </span>/usr/bin/certbot
+sudo<span class="w"> </span>certbot<span class="w"> </span>--nginx
+</code></pre></div>
+Folge den Anweisungen, um ein Zertifikat zu erhalten.</p>
 <hr />
 <h2 id="fehlerbehebung">Fehlerbehebung</h2>
 <ul>
@@ -1442,36 +1442,36 @@ sudo certbot --nginx
 </ul>
 <h2 id="kachelserver-mit-apache-server-port-80-auf-8080-umleiten">Kachelserver mit Apache-Server Port 80 auf 8080 umleiten</h2>
 <h3 id="mit-ubuntu-2004-lts">Mit Ubuntu 20.04 LTS</h3>
-<p>Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:</p>
-<pre><code class="language-bash">sudo nano /etc/apache2/ports.conf
-</code></pre>
-<p>Fügen Sie die folgende Zeile hinzu, um den Port 80 auf den Port 8080 umzuleiten:</p>
-<pre><code class="language-bash">Listen 8080
-</code></pre>
-<p>Speichern Sie die Datei.</p>
-<p>Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:</p>
-<pre><code class="language-bash">sudo nano /etc/apache2/sites-available/000-default.conf
-</code></pre>
-<p>Fügen Sie die folgende Zeile hinzu, um den Port 80 auf den Port 8080 umzuleiten:</p>
-<pre><code class="language-bash">&lt;VirtualHost *:8080&gt;
-</code></pre>
-<p>Speichern Sie die Datei.</p>
-<p>Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:</p>
-<pre><code class="language-bash">sudo systemctl restart apache2
-</code></pre>
-<p>Der Apache-Server leitet jetzt den Port 80 auf den Port 8080 um.</p>
+<p>Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/ports.conf
+</code></pre></div>
+Fügen Sie die folgende Zeile hinzu, um den Port 80 auf den Port 8080 umzuleiten:
+<div class="highlight"><pre><span></span><code>Listen<span class="w"> </span><span class="m">8080</span>
+</code></pre></div>
+Speichern Sie die Datei.</p>
+<p>Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/sites-available/000-default.conf
+</code></pre></div>
+Fügen Sie die folgende Zeile hinzu, um den Port 80 auf den Port 8080 umzuleiten:
+<div class="highlight"><pre><span></span><code>&lt;VirtualHost<span class="w"> </span>*:8080&gt;
+</code></pre></div>
+Speichern Sie die Datei.</p>
+<p>Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div>
+Der Apache-Server leitet jetzt den Port 80 auf den Port 8080 um.</p>
 <h3 id="mit-ubuntu-2204-lts-oder-hoher">Mit Ubuntu 22.04 LTS oder höher</h3>
 <p>Brauchen Sie nicht /etc/apache2/sites-available/000-default.conf ändern, nur /etc/apache2/ports.conf ändern.
 Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:</p>
-<pre><code class="language-bash">sudo nano /etc/apache2/ports.conf
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/ports.conf
+</code></pre></div>
 <p>Fügen Sie die folgende Zeile hinzu, um den Port 80 auf den Port 8080 umzuleiten:</p>
-<pre><code class="language-bash">Listen 8080
-</code></pre>
+<div class="highlight"><pre><span></span><code>Listen<span class="w"> </span><span class="m">8080</span>
+</code></pre></div>
 <p>Speichern Sie die Datei.</p>
 <p>Geben Sie den folgenden Befehl ein, um den Apache-Server zu installieren:</p>
-<pre><code class="language-bash">sudo systemctl restart apache2
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
+</code></pre></div>
 
 
 

@@ -1236,61 +1236,61 @@
 <h1 id="tomcat-10-auf-ubuntu-installieren">Tomcat 10 auf Ubuntu installieren</h1>
 <p>Diese Anleitung beschreibt die Installation von Apache Tomcat 10 auf einem Ubuntu-System.</p>
 <h2 id="1-system-aktualisieren">1. System aktualisieren</h2>
-<p>Zuerst sollten die Paketlisten und das System aktualisiert werden:</p>
-<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt upgrade -y
-</code></pre>
+<p>Zuerst sollten die Paketlisten und das System aktualisiert werden:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+</code></pre></div></p>
 <h2 id="2-java-installieren">2. Java installieren</h2>
-<p>Tomcat 10 erfordert Java 11 oder höher. Wir installieren OpenJDK 17:</p>
-<pre><code class="language-bash">sudo apt install openjdk-17-jdk -y
-java -version
-</code></pre>
+<p>Tomcat 10 erfordert Java 11 oder höher. Wir installieren OpenJDK 17:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>openjdk-17-jdk<span class="w"> </span>-y
+java<span class="w"> </span>-version
+</code></pre></div></p>
 <h2 id="3-tomcat-10-installieren">3. Tomcat 10 installieren</h2>
-<p>Installieren Sie Tomcat 10 sowie die Native-Bibliothek (für bessere Performance und OpenSSL-Support) über die Paketverwaltung. Das Administrationspaket (<code>tomcat10-admin</code>) ist optional:</p>
-<pre><code class="language-bash">sudo apt update
-sudo apt install tomcat10 libtcnative-1 -y
-# Optional für Web-Manager: sudo apt install tomcat10-admin
-</code></pre>
+<p>Installieren Sie Tomcat 10 sowie die Native-Bibliothek (für bessere Performance und OpenSSL-Support) über die Paketverwaltung. Das Administrationspaket (<code>tomcat10-admin</code>) ist optional:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>tomcat10<span class="w"> </span>libtcnative-1<span class="w"> </span>-y
+<span class="c1"># Optional für Web-Manager: sudo apt install tomcat10-admin</span>
+</code></pre></div></p>
 <h2 id="4-status-uberprufen">4. Status überprüfen</h2>
-<p>Nach der Installation sollte der Tomcat-Dienst automatisch gestartet sein. Dies kann wie folgt überprüft werden:</p>
-<pre><code class="language-bash">sudo systemctl status tomcat10
-</code></pre>
+<p>Nach der Installation sollte der Tomcat-Dienst automatisch gestartet sein. Dies kann wie folgt überprüft werden:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>tomcat10
+</code></pre></div></p>
 <h2 id="5-deployment-manuell-via-ssh">5. Deployment (Manuell via SSH)</h2>
 <p>Wenn Sie kein Web-Interface nutzen möchten (aus Sicherheitsgründen oft bevorzugt), können Sie Ihre <code>.war</code>-Dateien direkt per SCP oder SFTP in das Webapps-Verzeichnis kopieren:</p>
-<pre><code class="language-bash"># Beispiel für den Upload via SCP
-scp meine_app.war root@dein-server-ip:/var/lib/tomcat10/webapps/
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># Beispiel für den Upload via SCP</span>
+scp<span class="w"> </span>meine_app.war<span class="w"> </span>root@dein-server-ip:/var/lib/tomcat10/webapps/
+</code></pre></div>
 <p>Tomcat erkennt neue Dateien im <code>webapps</code>-Ordner normalerweise automatisch und entpackt sie.</p>
 <h2 id="6-unix-domain-sockets-optional">6. Unix Domain Sockets (Optional)</h2>
 <p>Wenn Sie Tomcat hinter einem Reverse Proxy wie Nginx betreiben, kann die Kommunikation über Unix Domain Sockets effizienter sein als über TCP.</p>
 <h3 id="konfiguration-in-der-serverxml">Konfiguration in der <code>server.xml</code></h3>
 <p>Fügen Sie einen speziellen <code>&lt;Connector&gt;</code> in der Datei <code>/etc/tomcat10/server.xml</code> hinzu. Anstatt eines <code>port</code>-Attributs verwenden Sie <code>unixDomainSocketPath</code>:</p>
-<pre><code class="language-xml">&lt;Connector 
-    protocol=&quot;org.apache.coyote.http11.Http11NioProtocol&quot; 
-    unixDomainSocketPath=&quot;/var/run/tomcat10/tomcat.sock&quot;
-    unixDomainSocketPathPermissions=&quot;rw-rw----&quot;
-    maxThreads=&quot;200&quot;
-    connectionTimeout=&quot;20000&quot; /&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;Connector</span><span class="w"> </span>
+<span class="w">    </span><span class="na">protocol=</span><span class="s">&quot;org.apache.coyote.http11.Http11NioProtocol&quot;</span><span class="w"> </span>
+<span class="w">    </span><span class="na">unixDomainSocketPath=</span><span class="s">&quot;/var/run/tomcat10/tomcat.sock&quot;</span>
+<span class="w">    </span><span class="na">unixDomainSocketPathPermissions=</span><span class="s">&quot;rw-rw----&quot;</span>
+<span class="w">    </span><span class="na">maxThreads=</span><span class="s">&quot;200&quot;</span>
+<span class="w">    </span><span class="na">connectionTimeout=</span><span class="s">&quot;20000&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</code></pre></div>
 <h3 id="berechtigungen-und-systemd-konfiguration">Berechtigungen und Systemd-Konfiguration</h3>
 <p>Standardmäßig schränkt die Systemd-Unit von Tomcat unter Ubuntu die Schreibrechte ein (<code>ReadOnlyPaths</code>). Damit Tomcat den Socket in <code>/var/run/tomcat10/</code> anlegen darf, müssen wir einen Override erstellen.</p>
-<p>Führen Sie folgenden Befehl aus:</p>
-<pre><code class="language-bash">sudo systemctl edit tomcat10
-</code></pre>
-<p>Fügen Sie im Editor folgende Zeilen ein:</p>
-<pre><code class="language-ini">[Service]
-RuntimeDirectory=tomcat10
-RuntimeDirectoryMode=0770
-ReadWritePaths=/var/run/tomcat10
-</code></pre>
-<p><em>Hinweis: Dies erstellt das Verzeichnis <code>/run/tomcat10</code> (was ein Symlink auf <code>/var/run/tomcat10</code> ist) automatisch beim Start des Dienstes mit den korrekten Rechten für den Tomcat-Benutzer.</em></p>
+<p>Führen Sie folgenden Befehl aus:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>edit<span class="w"> </span>tomcat10
+</code></pre></div></p>
+<p>Fügen Sie im Editor folgende Zeilen ein:
+<div class="highlight"><pre><span></span><code><span class="k">[Service]</span>
+<span class="na">RuntimeDirectory</span><span class="o">=</span><span class="s">tomcat10</span>
+<span class="na">RuntimeDirectoryMode</span><span class="o">=</span><span class="s">0770</span>
+<span class="na">ReadWritePaths</span><span class="o">=</span><span class="s">/var/run/tomcat10</span>
+</code></pre></div>
+<em>Hinweis: Dies erstellt das Verzeichnis <code>/run/tomcat10</code> (was ein Symlink auf <code>/var/run/tomcat10</code> ist) automatisch beim Start des Dienstes mit den korrekten Rechten für den Tomcat-Benutzer.</em></p>
 <h3 id="berechtigungen-fur-nginx-reverse-proxy">Berechtigungen für Nginx (Reverse Proxy)</h3>
 <p>Damit Nginx auf den Unix-Socket zugreifen darf, muss der Nginx-Benutzer (<code>www-data</code>) zur Gruppe <code>tomcat</code> hinzugefügt werden:</p>
-<pre><code class="language-bash">sudo usermod -aG tomcat www-data
-</code></pre>
-<p>Stellen Sie nach der Änderung sicher, dass der Dienst neu gestartet wird:</p>
-<pre><code class="language-bash">sudo systemctl restart tomcat10
-</code></pre>
-<p><em>(Eventuell muss auch Nginx neu gestartet werden, damit die Gruppenänderung wirksam wird: <code>sudo systemctl restart nginx</code>)</em></p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>tomcat<span class="w"> </span>www-data
+</code></pre></div>
+<p>Stellen Sie nach der Änderung sicher, dass der Dienst neu gestartet wird:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>tomcat10
+</code></pre></div>
+<em>(Eventuell muss auch Nginx neu gestartet werden, damit die Gruppenänderung wirksam wird: <code>sudo systemctl restart nginx</code>)</em></p>
 
 
 

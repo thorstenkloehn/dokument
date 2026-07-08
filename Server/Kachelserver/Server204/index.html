@@ -1541,260 +1541,256 @@
 <p>Beachten Sie, dass diese Anweisungen gegen einen neu installierten Ubuntu 20.04 Server geschrieben und getestet wurden. Wenn Sie bereits andere Versionen einiger Software installiert haben (vielleicht haben Sie von einer früheren Ubuntu-Version aktualisiert, oder Sie haben einige PPAs zum Laden eingerichtet), dann müssen Sie möglicherweise einige Anpassungen vornehmen.</p>
 <p>Dieser Leitfaden geht davon aus, dass Sie alles von einem Nicht-Root-Benutzer über "sudo" ausführen. Der standardmäßig verwendete Nicht-Root-Benutzername ist unten "renderaccount" - Sie können diesen lokal erstellen, wenn Sie möchten, oder Skripte bearbeiten, um auf einen anderen Benutzernamen zu verweisen, wenn Sie möchten. Wenn Sie den Benutzer "renderaccount" erstellen, müssen Sie ihn zur Gruppe der Benutzer hinzufügen, die zu Root sudo können. Von Ihrem normalen Nicht-Root-Benutzerkonto aus:</p>
 <h3 id="ganze-neue-postgrs-datenbank">Ganze Neue Postgrs Datenbank</h3>
-<pre><code class="language-bash">sudo apt install -y postgresql-common
-sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
-sudo apt update
-</code></pre>
-<pre><code class="language-bash">sudo -i
-sudo adduser renderaccount
-usermod -aG sudo renderaccount
-exit
-exit
-ssh renderaccount@yourserver
-sudo apt-get update 
-sudo apt-get upgrade
-sudo apt-get install curl
-</code></pre>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>postgresql-common
+sudo<span class="w"> </span>/usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>-i
+sudo<span class="w"> </span>adduser<span class="w"> </span>renderaccount
+usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>renderaccount
+<span class="nb">exit</span>
+<span class="nb">exit</span>
+ssh<span class="w"> </span>renderaccount@yourserver
+sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span>
+sudo<span class="w"> </span>apt-get<span class="w"> </span>upgrade
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>curl
+</code></pre></div></p>
 <h2 id="nodejs-installation">Nodejs Installation</h2>
 <ul>
 <li><a href="https://github.com/nodesource/distributions">Anleitung</a></li>
 </ul>
-<p>Um diese Komponenten zu erstellen, müssen zunächst eine Vielzahl von Abhängigkeiten installiert werden:</p>
-<pre><code class="language-bash">sudo apt install libboost-all-dev git tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin protobuf-c-compiler libfreetype6-dev libtiff5-dev libicu-dev libgdal-dev libcairo2-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-0-dev
-</code></pre>
-<p>Stimmen Sie der Installation zu. Dies wird eine Weile dauern, also gehen Sie und trinken Sie eine Tasse Tee. Diese Liste enthält verschiedene Dienstprogramme und Bibliotheken, den Apache-Webserver und "carto", das zur Umwandlung von Carto-CSS-Stylesheets in ein Format verwendet wird, das der Kartenrenderer "mapnik" verstehen kann. Wenn das abgeschlossen ist, installieren Sie die zweite Reihe von Voraussetzungen:</p>
+<p>Um diese Komponenten zu erstellen, müssen zunächst eine Vielzahl von Abhängigkeiten installiert werden:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libboost-all-dev<span class="w"> </span>git<span class="w"> </span>tar<span class="w"> </span>unzip<span class="w"> </span>wget<span class="w"> </span>bzip2<span class="w"> </span>build-essential<span class="w"> </span>autoconf<span class="w"> </span>libtool<span class="w"> </span>libxml2-dev<span class="w"> </span>libgeos-dev<span class="w"> </span>libgeos++-dev<span class="w"> </span>libpq-dev<span class="w"> </span>libbz2-dev<span class="w"> </span>libproj-dev<span class="w"> </span>munin-node<span class="w"> </span>munin<span class="w"> </span>protobuf-c-compiler<span class="w"> </span>libfreetype6-dev<span class="w"> </span>libtiff5-dev<span class="w"> </span>libicu-dev<span class="w"> </span>libgdal-dev<span class="w"> </span>libcairo2-dev<span class="w"> </span>libcairomm-1.0-dev<span class="w"> </span>apache2<span class="w"> </span>apache2-dev<span class="w"> </span>libagg-dev<span class="w"> </span>liblua5.2-dev<span class="w"> </span>ttf-unifont<span class="w"> </span>lua5.1<span class="w"> </span>liblua5.1-0-dev
+</code></pre></div>
+Stimmen Sie der Installation zu. Dies wird eine Weile dauern, also gehen Sie und trinken Sie eine Tasse Tee. Diese Liste enthält verschiedene Dienstprogramme und Bibliotheken, den Apache-Webserver und "carto", das zur Umwandlung von Carto-CSS-Stylesheets in ein Format verwendet wird, das der Kartenrenderer "mapnik" verstehen kann. Wenn das abgeschlossen ist, installieren Sie die zweite Reihe von Voraussetzungen:</p>
 <h2 id="installation-von-postgresql-postgis">Installation von PostgreSQL / PostGIS</h2>
-<p>Auf Ubuntu gibt es vorgepackte Versionen von sowohl PostGIS als auch PostgreSQL, diese können einfach über den Ubuntu-Paketmanager installiert werden.</p>
-<pre><code class="language-bash">
-sudo apt install postgresql-16 postgresql-client-16 postgresql-contrib postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts osmosis
-
-</code></pre>
-<p>Hier ist "postgresql" die Datenbank, in der wir Kartendaten speichern, und "postgis" fügt ihr zusätzliche grafische Unterstützung hinzu. Stimmen Sie erneut zu, um die Installation durchzuführen.</p>
+<p>Auf Ubuntu gibt es vorgepackte Versionen von sowohl PostGIS als auch PostgreSQL, diese können einfach über den Ubuntu-Paketmanager installiert werden.
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>postgresql-16<span class="w"> </span>postgresql-client-16<span class="w"> </span>postgresql-contrib<span class="w"> </span>postgis<span class="w"> </span>postgresql-16-postgis-3<span class="w"> </span>postgresql-16-postgis-3-scripts<span class="w"> </span>osmosis
+</code></pre></div>
+Hier ist "postgresql" die Datenbank, in der wir Kartendaten speichern, und "postgis" fügt ihr zusätzliche grafische Unterstützung hinzu. Stimmen Sie erneut zu, um die Installation durchzuführen.</p>
 <p>Jetzt müssen Sie eine PostGIS-Datenbank erstellen. Die Standardwerte verschiedener Programme gehen davon aus, dass die Datenbank "gis" heißt und wir werden in diesem Tutorial die gleiche Konvention verwenden, obwohl dies nicht notwendig ist. Ersetzen Sie Ihren Benutzernamen durch "renderaccount", wo er unten verwendet wird. Dies sollte der Benutzername sein, der Karten mit Mapnik rendert.</p>
-<pre><code class="language-bash">sudo -u postgres -i
-createuser renderaccount # answer yes for superuser (although this isn't strictly necessary)
-createdb -E UTF8 -O renderaccount gis
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>-i
+createuser<span class="w"> </span>renderaccount<span class="w"> </span><span class="c1"># answer yes for superuser (although this isn&#39;t strictly necessary)</span>
+createdb<span class="w"> </span>-E<span class="w"> </span>UTF8<span class="w"> </span>-O<span class="w"> </span>renderaccount<span class="w"> </span>gis
 psql
-\c gis
-CREATE EXTENSION postgis;
-CREATE EXTENSION hstore;
-ALTER TABLE geometry_columns OWNER TO renderaccount;
-ALTER TABLE spatial_ref_sys OWNER TO renderaccount;
-\q
-exit
-</code></pre>
+<span class="se">\c</span><span class="w"> </span>gis
+CREATE<span class="w"> </span>EXTENSION<span class="w"> </span>postgis<span class="p">;</span>
+CREATE<span class="w"> </span>EXTENSION<span class="w"> </span>hstore<span class="p">;</span>
+ALTER<span class="w"> </span>TABLE<span class="w"> </span>geometry_columns<span class="w"> </span>OWNER<span class="w"> </span>TO<span class="w"> </span>renderaccount<span class="p">;</span>
+ALTER<span class="w"> </span>TABLE<span class="w"> </span>spatial_ref_sys<span class="w"> </span>OWNER<span class="w"> </span>TO<span class="w"> </span>renderaccount<span class="p">;</span>
+<span class="se">\q</span>
+<span class="nb">exit</span>
+</code></pre></div>
 <h2 id="installation-von-osm2pgsql-und-osmosis">Installation von osm2pgsql und osmosis</h2>
-<pre><code class="language-bash">sudo apt-get install osm2pgsql osmosis
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>osm2pgsql<span class="w"> </span>osmosis
+</code></pre></div>
 <h2 id="installation-von-mapnik">Installation von Mapnik</h2>
-<pre><code class="language-bash">sudo apt install autoconf apache2-dev libtool libxml2-dev libbz2-dev libgeos-dev libgeos++-dev libproj-dev gdal-bin libmapnik-dev mapnik-utils python3-mapnik python3-psycopg2 python3-yaml
-
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>autoconf<span class="w"> </span>apache2-dev<span class="w"> </span>libtool<span class="w"> </span>libxml2-dev<span class="w"> </span>libbz2-dev<span class="w"> </span>libgeos-dev<span class="w"> </span>libgeos++-dev<span class="w"> </span>libproj-dev<span class="w"> </span>gdal-bin<span class="w"> </span>libmapnik-dev<span class="w"> </span>mapnik-utils<span class="w"> </span>python3-mapnik<span class="w"> </span>python3-psycopg2<span class="w"> </span>python3-yaml
+</code></pre></div>
 <h2 id="installation-von-mod_tile-und-renderd">Installation von mod_tile und renderd</h2>
 <p>Als nächstes installieren wir mod_tile und renderd. "mod_tile" ist ein Apache-Modul, das Anfragen nach Kacheln bearbeitet; "renderd" ist ein Daemon, der tatsächlich Kacheln rendert, wenn "mod_tile" sie anfordert. Wir verwenden den "switch2osm"-Zweig von https://github.com/SomeoneElseOSM/mod_tile, der selbst von https://github.com/openstreetmap/mod_tile abgezweigt ist, aber so modifiziert wurde, dass er Ubuntu 20.04 unterstützt, und mit ein paar anderen Änderungen, um auf einem Standard-Ubuntu-Server zu arbeiten, anstatt auf einem der OSM-Rendering-Server.</p>
 <h2 id="kompilieren-sie-den-mod_tile-quellcode">Kompilieren Sie den mod_tile-Quellcode:</h2>
-<pre><code class="language-bash">mkdir ~/src
-cd ~/src
-git clone -b switch2osm https://github.com/SomeoneElseOSM/mod_tile.git
-cd mod_tile
+<p><div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/src
+<span class="nb">cd</span><span class="w"> </span>~/src
+git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>switch2osm<span class="w"> </span>https://github.com/SomeoneElseOSM/mod_tile.git
+<span class="nb">cd</span><span class="w"> </span>mod_tile
 ./autogen.sh
-</code></pre>
-<p>(Das sollte mit "autoreconf: Verlassen des Verzeichnisses '.'" enden.)</p>
-<pre><code class="language-bash">./configure
-</code></pre>
-<p>(Das sollte mit "config.status: erstelle Makefile" enden.)</p>
-<pre><code class="language-bash">make
-</code></pre>
-<p>Beachten Sie, dass hier einige "beunruhigende" Nachrichten über den Bildschirm scrollen werden. Es sollte jedoch mit "make[1]: Verlassen des Verzeichnisses '/home/renderaccount/src/mod_tile'" enden.</p>
-<pre><code class="language-bash">sudo make install
-</code></pre>
-<p>(Das sollte mit "make[1]: Verlassen des Verzeichnisses '/home/renderaccount/src/mod_tile'" enden.)</p>
-<pre><code class="language-bash">sudo make install-mod_tile
-</code></pre>
-<p>(Das sollte mit "chmod 644 /usr/lib/apache2/modules/mod_tile.so" enden.)</p>
-<pre><code class="language-bash">sudo ldconfig
-</code></pre>
-<p>(das sollte nichts zurückgeben)</p>
+</code></pre></div>
+(Das sollte mit "autoreconf: Verlassen des Verzeichnisses '.'" enden.)
+<div class="highlight"><pre><span></span><code>./configure
+</code></pre></div>
+(Das sollte mit "config.status: erstelle Makefile" enden.)
+<div class="highlight"><pre><span></span><code>make
+</code></pre></div>
+Beachten Sie, dass hier einige "beunruhigende" Nachrichten über den Bildschirm scrollen werden. Es sollte jedoch mit "make[1]: Verlassen des Verzeichnisses '/home/renderaccount/src/mod_tile'" enden.
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>make<span class="w"> </span>install
+</code></pre></div>
+(Das sollte mit "make[1]: Verlassen des Verzeichnisses '/home/renderaccount/src/mod_tile'" enden.)
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>make<span class="w"> </span>install-mod_tile
+</code></pre></div>
+(Das sollte mit "chmod 644 /usr/lib/apache2/modules/mod_tile.so" enden.)
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ldconfig
+</code></pre></div>
+(das sollte nichts zurückgeben)</p>
 <h2 id="konfiguration-des-stylesheets">Konfiguration des Stylesheets</h2>
 <p>Jetzt, da alle notwendige Software installiert ist, müssen Sie ein Stylesheet herunterladen und konfigurieren.</p>
 <p>Der Stil, den wir hier verwenden, ist derjenige, der von der "Standard"-Karte auf der openstreetmap.org-Website verwendet wird. Er wird gewählt, weil er gut dokumentiert ist und überall auf der Welt funktionieren sollte (einschließlich an Orten mit nicht-lateinischen Ortsnamen). Es gibt jedoch ein paar Nachteile - es ist sehr viel ein Kompromiss, der global funktionieren soll, und es ist ziemlich kompliziert zu verstehen und zu modifizieren, falls Sie das tun müssen.</p>
 <p>Die Heimat von "OpenStreetMap Carto" im Web ist https://github.com/gravitystorm/openstreetmap-carto/ und es hat seine eigenen Installationsanweisungen unter https://github.com/gravitystorm/openstreetmap-carto/blob/master/INSTALL.md, obwohl wir hier alles abdecken, was getan werden muss.</p>
 <p>Hier gehen wir davon aus, dass wir die Details des Stylesheets in einem Verzeichnis unter "src" im Home-Verzeichnis des Benutzers "renderaccount" (oder welchen anderen Sie verwenden) speichern.</p>
-<pre><code class="language-bash">cd ~/src
-git clone https://github.com/gravitystorm/openstreetmap-carto
-cd openstreetmap-carto
-</code></pre>
-<p>Als nächstes installieren wir eine geeignete Version des "carto"-Compilers.</p>
-<pre><code class="language-bash">sudo npm install -g carto
-carto -v
-</code></pre>
-<p>Das sollte eine Versionsnummer zurückgeben, die größer als 1.2.0 ist. Wenn das nicht der Fall ist, müssen Sie möglicherweise eine neuere Version von "carto" installieren. Wenn Sie das tun müssen, können Sie dies mit dem folgenden Befehl tun:
-Dann konvertieren wir das Carto-Projekt in etwas, das Mapnik verstehen kann</p>
-<pre><code class="language-bash">carto project.mml &gt; mapnik.xml
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/gravitystorm/openstreetmap-carto
+<span class="nb">cd</span><span class="w"> </span>openstreetmap-carto
+</code></pre></div>
+Als nächstes installieren wir eine geeignete Version des "carto"-Compilers.
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>carto
+carto<span class="w"> </span>-v
+</code></pre></div>
+Das sollte eine Versionsnummer zurückgeben, die größer als 1.2.0 ist. Wenn das nicht der Fall ist, müssen Sie möglicherweise eine neuere Version von "carto" installieren. Wenn Sie das tun müssen, können Sie dies mit dem folgenden Befehl tun:
+Dann konvertieren wir das Carto-Projekt in etwas, das Mapnik verstehen kann
+<div class="highlight"><pre><span></span><code>carto<span class="w"> </span>project.mml<span class="w"> </span>&gt;<span class="w"> </span>mapnik.xml
+</code></pre></div></p>
 <h2 id="daten-laden">Daten laden</h2>
-<pre><code class="language-bash">mkdir ~/data
-cd ~/data
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
-osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
-osm2pgsql -d gis --create --slim  -G --hstore --tag-transform-script ~/src/openstreetmap-carto/openstreetmap-carto.lua -C 2500 --number-processes 1 -S ~/src/openstreetmap-carto/openstreetmap-carto.style ~/data/ahrensburg.pbf
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/data
+<span class="nb">cd</span><span class="w"> </span>~/data
+wget<span class="w"> </span>https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis<span class="w"> </span>--read-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>schleswig-holstein-latest.osm.pbf<span class="w"> </span>--bounding-box<span class="w"> </span><span class="nv">left</span><span class="o">=</span><span class="m">10</span>.1141<span class="w"> </span><span class="nv">right</span><span class="o">=</span><span class="m">10</span>.3716<span class="w"> </span><span class="nv">top</span><span class="o">=</span><span class="m">53</span>.7136<span class="w"> </span><span class="nv">bottom</span><span class="o">=</span><span class="m">53</span>.6249<span class="w"> </span>--write-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>ahrensburg.pbf
+osm2pgsql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>--create<span class="w"> </span>--slim<span class="w">  </span>-G<span class="w"> </span>--hstore<span class="w"> </span>--tag-transform-script<span class="w"> </span>~/src/openstreetmap-carto/openstreetmap-carto.lua<span class="w"> </span>-C<span class="w"> </span><span class="m">2500</span><span class="w"> </span>--number-processes<span class="w"> </span><span class="m">1</span><span class="w"> </span>-S<span class="w"> </span>~/src/openstreetmap-carto/openstreetmap-carto.style<span class="w"> </span>~/data/ahrensburg.pbf
+</code></pre></div>
 <h2 id="erstellen-von-indizes">Erstellen von Indizes</h2>
-<p>Seit Version v5.3.0 müssen einige zusätzliche Indizes nun manuell angewendet werden.</p>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
-psql -d gis -f indexes.sql
-</code></pre>
-<p>Es sollte 14 Mal mit "CREATE INDEX" antworten.</p>
+<p>Seit Version v5.3.0 müssen einige zusätzliche Indizes nun manuell angewendet werden.
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
+psql<span class="w"> </span>-d<span class="w"> </span>gis<span class="w"> </span>-f<span class="w"> </span>indexes.sql
+</code></pre></div>
+Es sollte 14 Mal mit "CREATE INDEX" antworten.</p>
 <h2 id="shapefile-download">Shapefile-Download</h2>
-<p>Obwohl die meisten Daten zur Erstellung der Karte direkt aus der oben heruntergeladenen OpenStreetMap-Datendatei stammen, werden immer noch einige Shapefiles für Dinge wie Ländergrenzen bei geringer Zoomstufe benötigt. Um diese herunterzuladen und zu indizieren:</p>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+<p>Obwohl die meisten Daten zur Erstellung der Karte direkt aus der oben heruntergeladenen OpenStreetMap-Datendatei stammen, werden immer noch einige Shapefiles für Dinge wie Ländergrenzen bei geringer Zoomstufe benötigt. Um diese herunterzuladen und zu indizieren:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
 scripts/get-external-data.py
-</code></pre>
-<p>Dieser Prozess beinhaltet einen erheblichen Download und kann einige Zeit in Anspruch nehmen - während er läuft, wird nicht viel auf dem Bildschirm angezeigt. Tatsächlich wird ein "data"-Verzeichnis unter "openstreetmap-carto" gefüllt.</p>
+</code></pre></div>
+Dieser Prozess beinhaltet einen erheblichen Download und kann einige Zeit in Anspruch nehmen - während er läuft, wird nicht viel auf dem Bildschirm angezeigt. Tatsächlich wird ein "data"-Verzeichnis unter "openstreetmap-carto" gefüllt.</p>
 <h2 id="schriftarten">Schriftarten</h2>
-<p>In der Version v5.6.0 und höher von Carto müssen Schriftarten manuell installiert werden:</p>
-<pre><code class="language-bash">cd ~/src/openstreetmap-carto/
+<p>In der Version v5.6.0 und höher von Carto müssen Schriftarten manuell installiert werden:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/src/openstreetmap-carto/
 scripts/get-fonts.sh
-</code></pre>
+</code></pre></div></p>
 <h2 id="einrichten-ihres-webservers">Einrichten Ihres Webservers</h2>
 <h3 id="konfigurieren-von-renderd">Konfigurieren von renderd</h3>
-<p>Die Konfigurationsdatei für "renderd" ist "/usr/local/etc/renderd.conf". Bearbeiten Sie diese mit einem Texteditor wie nano:</p>
-<pre><code class="language-bash">sudo nano /usr/local/etc/renderd.conf
-</code></pre>
+<p>Die Konfigurationsdatei für "renderd" ist "/usr/local/etc/renderd.conf". Bearbeiten Sie diese mit einem Texteditor wie nano:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/usr/local/etc/renderd.conf
+</code></pre></div></p>
 <h2 id="apache-konfigurieren">Apache konfigurieren</h2>
-<pre><code class="language-bash">sudo mkdir /var/lib/mod_tile
-sudo chown renderaccount /var/lib/mod_tile
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mkdir<span class="w"> </span>/var/lib/mod_tile
+sudo<span class="w"> </span>chown<span class="w"> </span>renderaccount<span class="w"> </span>/var/lib/mod_tile
 
-sudo mkdir /var/run/renderd
-sudo chown renderaccount /var/run/renderd
-</code></pre>
-<p>Jetzt müssen wir Apache über "mod_tile" informieren, also mit nano (oder einem anderen Editor):</p>
-<pre><code class="language-bash">sudo nano /etc/apache2/conf-available/mod_tile.conf
-</code></pre>
-<p>Fügen Sie die folgende Zeile in diese Datei ein:</p>
-<pre><code class="language-bash">LoadModule tile_module /usr/lib/apache2/modules/mod_tile.so
-</code></pre>
-<p>und speichern Sie es, und führen Sie dann aus:</p>
-<pre><code class="language-bash">sudo a2enconf mod_tile
-</code></pre>
-<p>Das wird Ihnen sagen, dass Sie "service apache2 reload" ausführen müssen, um die neue Konfiguration zu aktivieren; das werden wir noch nicht gleich tun.</p>
-<p>Wir müssen jetzt Apache über "renderd" informieren. Mit nano (oder einem anderen Editor):</p>
-<pre><code class="language-bash">sudo nano /etc/apache2/sites-available/000-default.conf
-</code></pre>
-<p>Fügen Sie das Folgende zwischen den Zeilen "ServerAdmin" und "DocumentRoot" ein:</p>
-<pre><code class="language-bash">LoadTileConfigFile /usr/local/etc/renderd.conf
-ModTileRenderdSocketName /var/run/renderd/renderd.sock
-# Timeout before giving up for a tile to be rendered
-ModTileRequestTimeout 0
-# Timeout before giving up for a tile to be rendered that is otherwise missing
-ModTileMissingRequestTimeout 30
-
-</code></pre>
-<p>und laden Sie Apache zweimal neu:</p>
-<pre><code class="language-bash">sudo service apache2 reload
-sudo service apache2 reload
-</code></pre>
-<p>(Ich vermute, dass es zweimal gemacht werden muss, weil Apache "verwirrt" wird, wenn es beim Laufen neu konfiguriert wird)</p>
+sudo<span class="w"> </span>mkdir<span class="w"> </span>/var/run/renderd
+sudo<span class="w"> </span>chown<span class="w"> </span>renderaccount<span class="w"> </span>/var/run/renderd
+</code></pre></div>
+Jetzt müssen wir Apache über "mod_tile" informieren, also mit nano (oder einem anderen Editor):
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/conf-available/mod_tile.conf
+</code></pre></div>
+Fügen Sie die folgende Zeile in diese Datei ein:
+<div class="highlight"><pre><span></span><code>LoadModule<span class="w"> </span>tile_module<span class="w"> </span>/usr/lib/apache2/modules/mod_tile.so
+</code></pre></div>
+und speichern Sie es, und führen Sie dann aus:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>a2enconf<span class="w"> </span>mod_tile
+</code></pre></div>
+Das wird Ihnen sagen, dass Sie "service apache2 reload" ausführen müssen, um die neue Konfiguration zu aktivieren; das werden wir noch nicht gleich tun.</p>
+<p>Wir müssen jetzt Apache über "renderd" informieren. Mit nano (oder einem anderen Editor):
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/sites-available/000-default.conf
+</code></pre></div>
+Fügen Sie das Folgende zwischen den Zeilen "ServerAdmin" und "DocumentRoot" ein:</p>
+<p><div class="highlight"><pre><span></span><code>LoadTileConfigFile<span class="w"> </span>/usr/local/etc/renderd.conf
+ModTileRenderdSocketName<span class="w"> </span>/var/run/renderd/renderd.sock
+<span class="c1"># Timeout before giving up for a tile to be rendered</span>
+ModTileRequestTimeout<span class="w"> </span><span class="m">0</span>
+<span class="c1"># Timeout before giving up for a tile to be rendered that is otherwise missing</span>
+ModTileMissingRequestTimeout<span class="w"> </span><span class="m">30</span>
+</code></pre></div>
+und laden Sie Apache zweimal neu:</p>
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>service<span class="w"> </span>apache2<span class="w"> </span>reload
+sudo<span class="w"> </span>service<span class="w"> </span>apache2<span class="w"> </span>reload
+</code></pre></div>
+(Ich vermute, dass es zweimal gemacht werden muss, weil Apache "verwirrt" wird, wenn es beim Laufen neu konfiguriert wird)</p>
 <p>Wenn Sie einen Webbrowser auf: http://ihreserveripadresse/index.html richten, sollten Sie die "Es funktioniert!" Seite von Ubuntu / Apache bekommen.</p>
 <p>(Wenn Sie nicht wissen, welche IP-Adresse zugewiesen wurde, können Sie wahrscheinlich "ifconfig" verwenden, um es herauszufinden - wenn die Netzwerkkonfiguration nicht zu kompliziert ist, wird es wahrscheinlich die "inet addr" sein, die nicht "127.0.0.1" ist). Wenn Sie einen Server bei einem Hosting-Anbieter verwenden, dann ist es wahrscheinlich, dass die interne Adresse Ihres Servers anders sein wird als die externe Adresse, die Ihnen zugewiesen wurde, aber diese externe IP-Adresse wird Ihnen bereits zugesandt worden sein und es wird wahrscheinlich diejenige sein, auf der Sie den Server derzeit zugreifen.</p>
 <p>Beachten Sie, dass dies nur die "http" (Port 80) Seite ist - Sie müssen ein wenig mehr Apache-Konfiguration machen, wenn Sie https aktivieren wollen, aber das ist außerhalb des Rahmens dieser Anweisungen. Wenn Sie jedoch "Let's Encrypt" verwenden, um Zertifikate auszustellen, dann kann der Prozess der Einrichtung davon auch die Apache HTTPS-Seite konfigurieren.</p>
 <h2 id="erstmaliges-ausfuhren-von-renderd">Erstmaliges Ausführen von renderd</h2>
-<p>Als nächstes führen wir renderd aus, um einige Kacheln zu rendern. Zunächst führen wir es im Vordergrund aus, damit wir Fehler sofort sehen können:</p>
-<pre><code class="language-bash">renderd -f -c /usr/local/etc/renderd.conf
-</code></pre>
-<p>Hier können einige Warnungen auftreten - machen Sie sich darüber vorerst keine Sorgen. Sie sollten keine Fehler erhalten. Wenn doch, speichern Sie die vollständige Ausgabe in einem Pastebin und stellen Sie eine Frage zu dem Problem irgendwo wie help.openstreetmap.org (verlinken Sie auf das Pastebin - fügen Sie nicht den gesamten Text in die Frage ein).</p>
+<p>Als nächstes führen wir renderd aus, um einige Kacheln zu rendern. Zunächst führen wir es im Vordergrund aus, damit wir Fehler sofort sehen können:
+<div class="highlight"><pre><span></span><code>renderd<span class="w"> </span>-f<span class="w"> </span>-c<span class="w"> </span>/usr/local/etc/renderd.conf
+</code></pre></div>
+Hier können einige Warnungen auftreten - machen Sie sich darüber vorerst keine Sorgen. Sie sollten keine Fehler erhalten. Wenn doch, speichern Sie die vollständige Ausgabe in einem Pastebin und stellen Sie eine Frage zu dem Problem irgendwo wie help.openstreetmap.org (verlinken Sie auf das Pastebin - fügen Sie nicht den gesamten Text in die Frage ein).</p>
 <p>Richten Sie einen Webbrowser auf: http://ihreserveripadresse/hot/0/0/0.png</p>
 <p>Sie sollten eine Weltkarte in Ihrem Browser sehen und einige weitere Debug-Informationen auf der Kommandozeile, einschließlich "DEBUG: START TILE" und "DEBUG: DONE TILE". Ignorieren Sie jede "DEBUG: Failed to read cmd on fd" Nachricht - es ist kein Fehler. Wenn Sie kein Kachel erhalten und andere Fehler auftreten, speichern Sie erneut die vollständige Ausgabe in einem Pastebin und stellen Sie eine Frage zu dem Problem irgendwo wie help.openstreetmap.org.</p>
 <p>Wenn das alles funktioniert, drücken Sie Strg-C, um den Rendering-Prozess im Vordergrund zu stoppen.</p>
 <h2 id="renderd-im-hintergrund-ausfuhren">Renderd im Hintergrund ausführen</h2>
-<p>Als nächstes richten wir "renderd" ein, um im Hintergrund zu laufen. Zuerst bearbeiten Sie die Datei "~/src/mod_tile/debian/renderd.init", so dass "RUNASUSER" auf das Nicht-Root-Konto eingestellt ist, das Sie zuvor verwendet haben, wie zum Beispiel "renderaccount", und kopieren Sie es dann in das Systemverzeichnis:</p>
-<pre><code class="language-bash">nano ~/src/mod_tile/debian/renderd.init
-sudo cp ~/src/mod_tile/debian/renderd.init /etc/init.d/renderd
-sudo chmod u+x /etc/init.d/renderd
-sudo cp ~/src/mod_tile/debian/renderd.service /lib/systemd/system/
-</code></pre>
-<p>Die Datei "renderd.service" ist eine "systemd"-Service-Datei. Die hier verwendete Version ruft lediglich alte init-Befehle auf. Um zu testen, ob der Startbefehl funktioniert:</p>
-<pre><code class="language-bash">sudo /etc/init.d/renderd start
-</code></pre>
-<p>(Das sollte mit "[ ok ] Starten von renderd (über systemctl): renderd.service" antworten.)</p>
-<p>Um es jedes Mal automatisch zu starten:</p>
-<pre><code class="language-bash">sudo systemctl enable renderd
-</code></pre>
+<p>Als nächstes richten wir "renderd" ein, um im Hintergrund zu laufen. Zuerst bearbeiten Sie die Datei "~/src/mod_tile/debian/renderd.init", so dass "RUNASUSER" auf das Nicht-Root-Konto eingestellt ist, das Sie zuvor verwendet haben, wie zum Beispiel "renderaccount", und kopieren Sie es dann in das Systemverzeichnis:
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>~/src/mod_tile/debian/renderd.init
+sudo<span class="w"> </span>cp<span class="w"> </span>~/src/mod_tile/debian/renderd.init<span class="w"> </span>/etc/init.d/renderd
+sudo<span class="w"> </span>chmod<span class="w"> </span>u+x<span class="w"> </span>/etc/init.d/renderd
+sudo<span class="w"> </span>cp<span class="w"> </span>~/src/mod_tile/debian/renderd.service<span class="w"> </span>/lib/systemd/system/
+</code></pre></div>
+Die Datei "renderd.service" ist eine "systemd"-Service-Datei. Die hier verwendete Version ruft lediglich alte init-Befehle auf. Um zu testen, ob der Startbefehl funktioniert:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>/etc/init.d/renderd<span class="w"> </span>start
+</code></pre></div>
+(Das sollte mit "[ ok ] Starten von renderd (über systemctl): renderd.service" antworten.)</p>
+<p>Um es jedes Mal automatisch zu starten:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>renderd
+</code></pre></div></p>
 <h2 id="apache-port-andern">Apache port ändern</h2>
-<p>Wenn Sie Apache auf einem anderen Port als 80 laufen lassen möchten, können Sie dies tun, indem Sie die Datei "/etc/apache2/ports.conf" bearbeiten. Zum Beispiel, um es auf Port 8090 zu ändern:</p>
-<pre><code class="language-bash">sudo nano /etc/apache2/ports.conf
-</code></pre>
-<p>Ändern Sie die Zeile "Listen 80" in "Listen 8090" und speichern Sie die Datei. Starten Sie dann Apache neu:</p>
+<p>Wenn Sie Apache auf einem anderen Port als 80 laufen lassen möchten, können Sie dies tun, indem Sie die Datei "/etc/apache2/ports.conf" bearbeiten. Zum Beispiel, um es auf Port 8090 zu ändern:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apache2/ports.conf
+</code></pre></div>
+Ändern Sie die Zeile "Listen 80" in "Listen 8090" und speichern Sie die Datei. Starten Sie dann Apache neu:</p>
 <p>und sudo nano /etc/apache2/sites-available/000-default.conf</p>
-<p>Ändern Sie die Zeile "Listen 80" in "Listen 8090" und speichern Sie die Datei. Starten Sie dann Apache neu:</p>
-<pre><code class="language-bash">sudo /etc/init.d/apache2 restart
-</code></pre>
+<p>Ändern Sie die Zeile "Listen 80" in "Listen 8090" und speichern Sie die Datei. Starten Sie dann Apache neu:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>/etc/init.d/apache2<span class="w"> </span>restart
+</code></pre></div></p>
 <h2 id="ahrensburgcity-installieren">ahrensburg.city installieren</h2>
-<pre><code class="language-bash">sudo apt install snapd
-sudo apt-get install nginx
-sudo rm /etc/nginx/sites-enabled/default
-sudo systemctl stop nginx
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo systemctl stop nginx
-sudo certbot certonly --standalone -d ahrensburg.city -d www.ahrensburg.city
-sudo certbot certonly --standalone -d karte.ahrensburg.city
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>snapd
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>nginx
+sudo<span class="w"> </span>rm<span class="w"> </span>/etc/nginx/sites-enabled/default
+sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>nginx
+sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>--classic<span class="w"> </span>certbot
+sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/snap/bin/certbot<span class="w"> </span>/usr/bin/certbot
+sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>nginx
+sudo<span class="w"> </span>certbot<span class="w"> </span>certonly<span class="w"> </span>--standalone<span class="w"> </span>-d<span class="w"> </span>ahrensburg.city<span class="w"> </span>-d<span class="w"> </span>www.ahrensburg.city
+sudo<span class="w"> </span>certbot<span class="w"> </span>certonly<span class="w"> </span>--standalone<span class="w"> </span>-d<span class="w"> </span>karte.ahrensburg.city
 
-sudo nano /etc/nginx/conf.d/karte.conf
-</code></pre>
-<pre><code class="language-bash"> server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    server_name karte.ahrensburg.city;
-    ssl_certificate /etc/letsencrypt/live/karte.ahrensburg.city/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/karte.ahrensburg.city/privkey.pem;
+sudo<span class="w"> </span>nano<span class="w"> </span>/etc/nginx/conf.d/karte.conf
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="w"> </span>server<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>listen<span class="w"> </span><span class="m">443</span><span class="w"> </span>ssl<span class="w"> </span>http2<span class="p">;</span>
+<span class="w">    </span>listen<span class="w"> </span><span class="o">[</span>::<span class="o">]</span>:443<span class="w"> </span>ssl<span class="w"> </span>http2<span class="p">;</span>
+<span class="w">    </span>server_name<span class="w"> </span>karte.ahrensburg.city<span class="p">;</span>
+<span class="w">    </span>ssl_certificate<span class="w"> </span>/etc/letsencrypt/live/karte.ahrensburg.city/fullchain.pem<span class="p">;</span>
+<span class="w">    </span>ssl_certificate_key<span class="w"> </span>/etc/letsencrypt/live/karte.ahrensburg.city/privkey.pem<span class="p">;</span>
 
-   location / {
-        proxy_pass http://localhost:8090;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-}
-server {
-    listen 80;
-    listen [::]:80;
-    server_name karte.ahrensburg.city;
-    return 301 https://$host$request_uri;
-}
-</code></pre>
-<pre><code class="language-bash">## Neuen Nutzer erstellen
-```bash
-sudo adduser thorsten
-sudo usermod -aG sudo thorsten
-exit
-</code></pre>
+<span class="w">   </span>location<span class="w"> </span>/<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span>proxy_pass<span class="w"> </span>http://localhost:8090<span class="p">;</span>
+<span class="w">        </span>proxy_http_version<span class="w"> </span><span class="m">1</span>.1<span class="p">;</span>
+<span class="w">        </span>proxy_set_header<span class="w"> </span>Upgrade<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+<span class="w">        </span>proxy_set_header<span class="w"> </span>Connection<span class="w"> </span><span class="s1">&#39;upgrade&#39;</span><span class="p">;</span>
+<span class="w">        </span>proxy_set_header<span class="w"> </span>Host<span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
+<span class="w">        </span>proxy_cache_bypass<span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="o">}</span>
+server<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>listen<span class="w"> </span><span class="m">80</span><span class="p">;</span>
+<span class="w">    </span>listen<span class="w"> </span><span class="o">[</span>::<span class="o">]</span>:80<span class="p">;</span>
+<span class="w">    </span>server_name<span class="w"> </span>karte.ahrensburg.city<span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="m">301</span><span class="w"> </span>https://<span class="nv">$host$request_uri</span><span class="p">;</span>
+<span class="o">}</span>
+</code></pre></div></p>
+<div class="highlight"><pre><span></span><code><span class="c1">## Neuen Nutzer erstellen</span>
+<span class="sb">```</span>bash
+sudo<span class="w"> </span>adduser<span class="w"> </span>thorsten
+sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>thorsten
+<span class="nb">exit</span>
+</code></pre></div>
 <h2 id="ssh-thorsten">ssh thorsten</h2>
-<pre><code class="language-bash">ssh thorsten@
-cd $HOME
-sudo -u postgres -i
-createuser thorsten
-createdb -E UTF8 -O thorsten thorsten
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>thorsten@
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>-i
+createuser<span class="w"> </span>thorsten
+createdb<span class="w"> </span>-E<span class="w"> </span>UTF8<span class="w"> </span>-O<span class="w"> </span>thorsten<span class="w"> </span>thorsten
 psql
-\c thorsten
-CREATE EXTENSION postgis;
-CREATE EXTENSION hstore;
-ALTER TABLE geometry_columns OWNER TO thorsten;
-ALTER TABLE spatial_ref_sys OWNER TO thorsten;
-## Passwort für den Benutzer postgres setzen
-\password thorsten
-\q
-exit
-</code></pre>
+<span class="se">\c</span><span class="w"> </span>thorsten
+CREATE<span class="w"> </span>EXTENSION<span class="w"> </span>postgis<span class="p">;</span>
+CREATE<span class="w"> </span>EXTENSION<span class="w"> </span>hstore<span class="p">;</span>
+ALTER<span class="w"> </span>TABLE<span class="w"> </span>geometry_columns<span class="w"> </span>OWNER<span class="w"> </span>TO<span class="w"> </span>thorsten<span class="p">;</span>
+ALTER<span class="w"> </span>TABLE<span class="w"> </span>spatial_ref_sys<span class="w"> </span>OWNER<span class="w"> </span>TO<span class="w"> </span>thorsten<span class="p">;</span>
+<span class="c1">## Passwort für den Benutzer postgres setzen</span>
+<span class="se">\p</span>assword<span class="w"> </span>thorsten
+<span class="se">\q</span>
+<span class="nb">exit</span>
+</code></pre></div>
 <h2 id="herunterladen-der-daten">Herunterladen der Daten</h2>
-<pre><code class="language-bash">cd $HOME
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
-osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+wget<span class="w"> </span>https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+osmosis<span class="w"> </span>--read-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>schleswig-holstein-latest.osm.pbf<span class="w"> </span>--bounding-box<span class="w"> </span><span class="nv">left</span><span class="o">=</span><span class="m">10</span>.1141<span class="w"> </span><span class="nv">right</span><span class="o">=</span><span class="m">10</span>.3716<span class="w"> </span><span class="nv">top</span><span class="o">=</span><span class="m">53</span>.7136<span class="w"> </span><span class="nv">bottom</span><span class="o">=</span><span class="m">53</span>.6249<span class="w"> </span>--write-pbf<span class="w"> </span><span class="nv">file</span><span class="o">=</span>ahrensburg.pbf
 
-osm2pgsql  -d thorsten --create  -G --hstore  ahrensburg.pbf
-</code></pre>
+osm2pgsql<span class="w">  </span>-d<span class="w"> </span>thorsten<span class="w"> </span>--create<span class="w">  </span>-G<span class="w"> </span>--hstore<span class="w">  </span>ahrensburg.pbf
+</code></pre></div>
 
 
 
