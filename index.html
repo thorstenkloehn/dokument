@@ -1340,61 +1340,81 @@
 <h2 id="dokumentationskategorien">📁 Dokumentationskategorien</h2>
 <p>Diese Dokumentation ist in die folgenden Hauptbereiche unterteilt. Jede Kategorie deckt einen spezifischen Bereich ab:</p>
 <h3 id="1-server">1. <a href="Server/Software/">Server</a></h3>
-<p>Dieser Bereich befasst sich mit der Konfiguration, Installation und Absicherung von Serverdiensten auf dem Produktionsserver (Ubuntu 24.04 LTS). Er umfasst:
-* <strong>Datenbanken</strong>: Einrichtung und Verwaltung von <a href="Server/Postgresql/">PostgreSQL</a>.
-* <strong>Kachelserver (Tileserver)</strong>: Detaillierte Schritt-für-Schritt-Anleitungen zur Einrichtung eines OpenStreetMap-Kachelservers unter verschiedenen Ubuntu-Versionen (<a href="Server/Kachelserver/Server204/">Ubuntu 20.04</a>, <a href="Server/Kachelserver/Server224/">Ubuntu 22.04</a> und <a href="Server/Kachelserver/Server244/">Ubuntu 24.04</a>).
-* <strong>Webserver &amp; Reverse Proxy</strong>: Konfiguration von <a href="Server/nginx/">Nginx</a>, Einbindung von <a href="Server/Nginx_SSL/">SSL-Zertifikaten (Let's Encrypt)</a> und die <a href="Server/Apache_Nginx/">Kopplung von Nginx mit dem Apache-Webserver</a>.
-* <strong>Servlet-Container</strong>: Installation und Verwaltung von Apache <a href="Server/Tomcat/">Tomcat</a> für Java-Webanwendungen.
-* <strong>Zusatzsoftware</strong>: Verwaltung <a href="Server/Software/">weiterer Softwarekomponenten</a>.</p>
+<p>Dieser Bereich befasst sich mit der Konfiguration, Installation und Absicherung von Serverdiensten auf dem Produktionsserver (Ubuntu 24.04 LTS). Er umfasst:</p>
+<ul>
+<li><strong>Datenbanken</strong>: Einrichtung und Verwaltung von <a href="Server/Postgresql/">PostgreSQL</a>.</li>
+<li><strong>Kachelserver (Tileserver)</strong>: Detaillierte Schritt-für-Schritt-Anleitungen zur Einrichtung eines OpenStreetMap-Kachelservers unter verschiedenen Ubuntu-Versionen (<a href="Server/Kachelserver/Server204/">Ubuntu 20.04</a>, <a href="Server/Kachelserver/Server224/">Ubuntu 22.04</a> und <a href="Server/Kachelserver/Server244/">Ubuntu 24.04</a>).</li>
+<li><strong>Webserver &amp; Reverse Proxy</strong>: Konfiguration von <a href="Server/nginx/">Nginx</a>, Einbindung von <a href="Server/Nginx_SSL/">SSL-Zertifikaten (Let's Encrypt)</a> und die <a href="Server/Apache_Nginx/">Kopplung von Nginx mit dem Apache-Webserver</a>.</li>
+<li><strong>Servlet-Container</strong>: Installation und Verwaltung von Apache <a href="Server/Tomcat/">Tomcat</a> für Java-Webanwendungen.</li>
+<li><strong>Zusatzsoftware</strong>: Verwaltung <a href="Server/Software/">weiterer Softwarekomponenten</a>.</li>
+</ul>
 <h3 id="2-ide-entwicklungsumgebung">2. <a href="IDE/">IDE &amp; Entwicklungsumgebung</a></h3>
-<p>Dokumentation zur Einrichtung des lokalen Entwicklungsrechners unter Ubuntu 25.10.
-* <strong>System-Setup</strong>: Paketinstallationen, Einrichtung von passwortlosem <code>sudo</code>, Installation von Google Chrome und PostgreSQL.
-* <strong>KI-Unterstützung</strong>: Integration moderner KI-Coding-Assistenten wie GitHub Copilot, Claude Code sowie der <a href="IDE/#ki-cli">Antigravity CLI</a> und CODEX CLI.
-* <strong>Android-Entwicklung</strong>: Einrichtung der SDKs und IDEs für die mobile <a href="IDE/Android/">Android-Entwicklung</a>.</p>
+<p>Dokumentation zur Einrichtung des lokalen Entwicklungsrechners unter Ubuntu 25.10.</p>
+<ul>
+<li><strong>System-Setup</strong>: Paketinstallationen, Einrichtung von passwortlosem <code>sudo</code>, Installation von Google Chrome und PostgreSQL.</li>
+<li><strong>KI-Unterstützung</strong>: Integration moderner KI-Coding-Assistenten wie GitHub Copilot, Claude Code sowie der <a href="IDE/#ki-cli">Antigravity CLI</a> und CODEX CLI.</li>
+<li><strong>Android-Entwicklung</strong>: Einrichtung der SDKs und IDEs für die mobile <a href="IDE/Android/">Android-Entwicklung</a>.</li>
+</ul>
 <h3 id="3-video-animation">3. <a href="Video/">Video &amp; Animation</a></h3>
-<p>Eine umfassende Übersicht über Frameworks und Tools zur programmatischen Generierung, Bearbeitung und Animation von Videos und 3D-Grafiken.
-* <strong>DOM-basierte Generierung</strong>: Vorstellung von Remotion, Revideo und Hyperframes.
-* <strong>Browser-Automatisierung</strong>: Headless-Rendering mittels Puppeteer und Playwright.
-* <strong>Mathematische &amp; 2D/3D-Animation</strong>: Einsatz von Manim, Motion Canvas, p5.js und Processing.
-* <strong>Medienverarbeitung &amp; 3D-Suiten</strong>: Low-Level-Tools wie FFmpeg und OpenCV sowie fortgeschrittene Automatisierung in Blender und Godot 4.</p>
+<p>Eine umfassende Übersicht über Frameworks und Tools zur programmatischen Generierung, Bearbeitung und Animation von Videos und 3D-Grafiken.</p>
+<ul>
+<li><strong>DOM-basierte Generierung</strong>: Vorstellung von Remotion, Revideo und Hyperframes.</li>
+<li><strong>Browser-Automatisierung</strong>: Headless-Rendering mittels Puppeteer und Playwright.</li>
+<li><strong>Mathematische &amp; 2D/3D-Animation</strong>: Einsatz von Manim, Motion Canvas, p5.js und Processing.</li>
+<li><strong>Medienverarbeitung &amp; 3D-Suiten</strong>: Low-Level-Tools wie FFmpeg und OpenCV sowie fortgeschrittene Automatisierung in Blender und Godot 4.</li>
+</ul>
 <h3 id="4-desktop-automation">4. <a href="Desktop_Automation/">Desktop Automation</a></h3>
-<p>Fokus auf Desktop- und GUI-Automatisierung sowie die Interaktion mit dem Betriebssystem.
-* <strong>KI-Agenten-Kompatibilität</strong>: Bewertung der Eignung von Automatisierungstools für autonome LLM-Agenten.
-* <strong>GUI-Frameworks</strong>: Bibliotheken für Python (PyAutoGUI, pywinauto, Dogtail), Node.js (Nut.js, RobotJS), Go (RobotGo) und Rust (Enigo).
-* <strong>Linux-Plattformen</strong>: Werkzeuge für Wayland (<code>ydotool</code>, <code>wtype</code>) und X11 (<code>xdotool</code>).</p>
+<p>Fokus auf Desktop- und GUI-Automatisierung sowie die Interaktion mit dem Betriebssystem.</p>
+<ul>
+<li><strong>KI-Agenten-Kompatibilität</strong>: Bewertung der Eignung von Automatisierungstools für autonome LLM-Agenten.</li>
+<li><strong>GUI-Frameworks</strong>: Bibliotheken für Python (PyAutoGUI, pywinauto, Dogtail), Node.js (Nut.js, RobotJS), Go (RobotGo) und Rust (Enigo).</li>
+<li><strong>Linux-Plattformen</strong>: Werkzeuge für Wayland (<code>ydotool</code>, <code>wtype</code>) und X11 (<code>xdotool</code>).</li>
+</ul>
 <h3 id="5-e-learning-autorentools">5. <a href="E-Learning-Autorentool/">E-Learning-Autorentools</a></h3>
-<p>Konzepte und Werkzeuge zur Erstellung interaktiver Lerninhalte und moderner Lernumgebungen.
-* <strong>Klassifizierung</strong>: Abgrenzung von Software, Bibliotheken, Frameworks und KI-Agenten.
-* <strong>KI-Tutoren</strong>: Einsatz und Steuerung autonomer Lernagenten (z. B. via Google Antigravity SDK oder LangGraph).
-* <strong>Architektur &amp; Lücken</strong>: Analyse aktueller Herausforderungen wie z. B. der nahtlosen Integration von Code-Sandboxes.</p>
+<p>Konzepte und Werkzeuge zur Erstellung interaktiver Lerninhalte und moderner Lernumgebungen.</p>
+<ul>
+<li><strong>Klassifizierung</strong>: Abgrenzung von Software, Bibliotheken, Frameworks und KI-Agenten.</li>
+<li><strong>KI-Tutoren</strong>: Einsatz und Steuerung autonomer Lernagenten (z. B. via Google Antigravity SDK oder LangGraph).</li>
+<li><strong>Architektur &amp; Lücken</strong>: Analyse aktueller Herausforderungen wie z. B. der nahtlosen Integration von Code-Sandboxes.</li>
+</ul>
 <h3 id="6-audio-musik">6. <a href="Audio/">Audio &amp; Musik</a></h3>
-<p>Programmatische Erzeugung, Synthese, Bearbeitung und wissenschaftliche Analyse von Audiodaten.
-* <strong>Python-Libraries</strong>: Feature-Extraktion und Signalverarbeitung mit Librosa, PyDub und SciPy.
-* <strong>Sprachsynthese</strong>: Lokale Offline-Sprachgenerierung mittels Kokoro-ONNX.
-* <strong>Systemnahe Programmierung</strong>: High-Performance-Audiomanipulation in C++ (JUCE, libsndfile) und Rust (symphonia, hound) sowie FAUST.
-* <strong>Web-Audio &amp; Live Coding</strong>: Interaktive Web-Audio-Bibliotheken (Tone.js) und Echtzeit-Live-Coding (SuperCollider, Sonic Pi, TidalCycles).</p>
+<p>Programmatische Erzeugung, Synthese, Bearbeitung und wissenschaftliche Analyse von Audiodaten.</p>
+<ul>
+<li><strong>Python-Libraries</strong>: Feature-Extraktion und Signalverarbeitung mit Librosa, PyDub und SciPy.</li>
+<li><strong>Sprachsynthese</strong>: Lokale Offline-Sprachgenerierung mittels Kokoro-ONNX.</li>
+<li><strong>Systemnahe Programmierung</strong>: High-Performance-Audiomanipulation in C++ (JUCE, libsndfile) und Rust (symphonia, hound) sowie FAUST.</li>
+<li><strong>Web-Audio &amp; Live Coding</strong>: Interaktive Web-Audio-Bibliotheken (Tone.js) und Echtzeit-Live-Coding (SuperCollider, Sonic Pi, TidalCycles).</li>
+</ul>
 <h3 id="7-dokument-erstellen-notebooks">7. <a href="Dokument_Erstellen/">Dokument Erstellen &amp; Notebooks</a></h3>
-<p>Pipelines, Generatoren und Notebook-Systeme zur Erstellung von strukturierten Dokumenten, Büchern und Wissensdatenbanken.
-* <strong>Book-Generators</strong>: MkDocs, mdBook, Antora, Starlight und Docusaurus.
-* <strong>Notebook-Systeme</strong>: Quarto, JupyterLab, JupyterLite, Voila, Papermill und Marimo.
-* <strong>Local Wikis</strong>: DokuWiki, BookStack und dateibasierte Wissensdatenbanken (Obsidian, Quartz).</p>
+<p>Pipelines, Generatoren und Notebook-Systeme zur Erstellung von strukturierten Dokumenten, Büchern und Wissensdatenbanken.</p>
+<ul>
+<li><strong>Book-Generators</strong>: MkDocs, mdBook, Antora, Starlight und Docusaurus.</li>
+<li><strong>Notebook-Systeme</strong>: Quarto, JupyterLab, JupyterLite, Voila, Papermill und Marimo.</li>
+<li><strong>Local Wikis</strong>: DokuWiki, BookStack und dateibasierte Wissensdatenbanken (Obsidian, Quartz).</li>
+</ul>
 <h3 id="8-tools-hilfswerkzeuge">8. <a href="Tools/Pandoc/">Tools &amp; Hilfswerkzeuge</a></h3>
-<p>Spezialisierte Hilfsmittel zur Entwicklungsunterstützung und Code-Analyse.
-* <strong>Dokumenten-Konvertierung</strong>: Nutzung von <a href="Tools/Pandoc/">Pandoc</a> zum Konvertieren von Formaten (z. B. Markdown zu MediaWiki).
-* <strong>Abhängigkeiten &amp; Sicherheit</strong>: Analyse von Abhängigkeiten und Schwachstellenscans mit <a href="Tools/Analysetool/">Snyk &amp; OSV Scanner</a>.
-* <strong>Performance</strong>: Benchmarking-Plattformen für Web-Frameworks (<a href="Tools/Benchmark/">TechEmpower &amp; Web Frameworks Benchmark</a>).</p>
+<p>Spezialisierte Hilfsmittel zur Entwicklungsunterstützung und Code-Analyse.</p>
+<ul>
+<li><strong>Dokumenten-Konvertierung</strong>: Nutzung von <a href="Tools/Pandoc/">Pandoc</a> zum Konvertieren von Formaten (z. B. Markdown zu MediaWiki).</li>
+<li><strong>Abhängigkeiten &amp; Sicherheit</strong>: Analyse von Abhängigkeiten und Schwachstellenscans mit <a href="Tools/Analysetool/">Snyk &amp; OSV Scanner</a>.</li>
+<li><strong>Performance</strong>: Benchmarking-Plattformen für Web-Frameworks (<a href="Tools/Benchmark/">TechEmpower &amp; Web Frameworks Benchmark</a>).</li>
+</ul>
 <hr />
 <h2 id="serverlandschaft-technologieubersicht">🖥️ Serverlandschaft: Technologieübersicht</h2>
 <h3 id="produktionsserver-ubuntu-2404-lts">Produktionsserver (Ubuntu 24.04 LTS)</h3>
-<p>Der Produktionsserver ist darauf ausgelegt, maximale Datenkontrolle und Datenschutz zu gewährleisten. Durch die lokale Datenverarbeitung sind keine Cookie-Banner erforderlich.
-* <strong>Web- &amp; Application-Server</strong>: Nginx (Webserver/Reverse Proxy), Tomcat 10 (Java Servlet Container), Switch2OSM Tileserver (OSM-Kartendaten).
-* <strong>Datenbank</strong>: PostgreSQL.
-* <strong>Laufzeiten &amp; Tools</strong>: ASP.NET Core 10, Java, Python, Git &amp; GitHub CLI (<code>gh</code>).</p>
+<p>Der Produktionsserver ist darauf ausgelegt, maximale Datenkontrolle und Datenschutz zu gewährleisten. Durch die lokale Datenverarbeitung sind keine Cookie-Banner erforderlich.</p>
+<ul>
+<li><strong>Web- &amp; Application-Server</strong>: Nginx (Webserver/Reverse Proxy), Tomcat 10 (Java Servlet Container), Switch2OSM Tileserver (OSM-Kartendaten).</li>
+<li><strong>Datenbank</strong>: PostgreSQL.</li>
+<li><strong>Laufzeiten &amp; Tools</strong>: ASP.NET Core 10, Java, Python, Git &amp; GitHub CLI (<code>gh</code>).</li>
+</ul>
 <h3 id="entwicklungsrechner-ubuntu-2510">Entwicklungsrechner (Ubuntu 25.10)</h3>
-<p>Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Bereitstellung von Anwendungen.
-* <strong>Sprachen &amp; Frameworks</strong>: .NET SDK, Node.js, Python, Java, Golang, Rust, C/C++.
-* <strong>Editoren &amp; KI-Assistenten</strong>: Visual Studio Code, Google Antigravity IDE, GitHub Copilot, Claude Code, Antigravity CLI, Claude CLI (<code>claude</code>), CODEX CLI.
-* <strong>Lokale Dienste &amp; Web</strong>: PostgreSQL, Nginx, Google Chrome.</p>
+<p>Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Bereitstellung von Anwendungen.</p>
+<ul>
+<li><strong>Sprachen &amp; Frameworks</strong>: .NET SDK, Node.js, Python, Java, Golang, Rust, C/C++.</li>
+<li><strong>Editoren &amp; KI-Assistenten</strong>: Visual Studio Code, Google Antigravity IDE, GitHub Copilot, Claude Code, Antigravity CLI, Claude CLI (<code>claude</code>), CODEX CLI.</li>
+<li><strong>Lokale Dienste &amp; Web</strong>: PostgreSQL, Nginx, Google Chrome.</li>
+</ul>
 
 
 
