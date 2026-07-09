@@ -17,7 +17,7 @@ graph TD
     D --> D1[Quarto / Jupyter / Marimo]
     H --> H1[Hugo / Astro / Jekyll / Eleventy]
     E --> E1[Flat-File / MediaWiki / XWiki]
-    F --> F1[Danswer / Dify / MCP-Server]
+    F --> F1[Danswer / NotebookLM / AnythingLLM / Dify]
     G --> G1[python-docx / OpenPyXL / Pandoc]
 ```
 
@@ -127,11 +127,16 @@ Die technische Umsetzung von LLM- und Co-Wikis basiert auf der Kombination moder
    - **Git-Kollaboration (Human-in-the-Loop)**: Agenten arbeiten meist in isolierten Branches. Wenn sie Fehler korrigieren oder Lücken füllen, erstellen sie einen Pull Request (PR). Ein menschlicher Reviewer validiert die Änderung vor dem Merge in die Live-Dokumentation.
    - **Proaktive Qualitätskontrolle**: Agenten scannen die Dokumentation kontinuierlich auf veraltete Links, logische Widersprüche oder sprachliche Inkonsistenzen und schlagen Korrekturen vor.
 
-### RAG- & KI-Wiki-Tools
+### RAG- & KI-gestützte Dokumenten- & Wiki-Tools
 * **Anytype** (Local-First): Ein verschlüsseltes, objektbasiertes Wiki (Notion-Alternative), das auf dem IPFS-Netzwerk basiert.
 * **Affine.pro**: Ein kollaborativer Workspace, der klassischen Text-Editor (Notion-Style) und unendliches Whiteboard (Miro-Style) in einem Open-Source-Tool vereint.
 * **Outline**: Ein wunderschönes, schnelles Open-Source-Wiki für Teams mit nativer Markdown-Unterstützung und exzellenter API.
 * **Danswer**: Ein Open-Source-RAG-System, das sich mit all deinen Datenquellen (Slack, Google Drive, Wikis) verbindet und direkte Antworten auf Nutzerfragen liefert.
+* **NotebookLM** (Google): Ein webbasierter, persönlicher KI-Kollaborations-Workspace. Erlaubt den Upload verschiedenster Dokumentenquellen (PDFs, Google Docs, Links) und generiert automatische Zusammenfassungen, strukturierte Studienführer und Audio-Podcasts.
+* **AnythingLLM**: Eine All-in-One-Desktop- und Docker-Anwendung, die lokale Dokumente in private, isolierte Chat-Kontexte übersetzt. Unterstützt lokale LLMs (via Ollama) und integrierte Vektordatenbanken.
+* **Khoj**: Ein Open-Source-KI-Assistent, der lokale Dokumente (PDF, Markdown, Org-mode) indiziert und offline-first durchsuchbar und abfragbar macht.
+* **Open WebUI**: Ein Web-Frontend für LLMs mit integriertem RAG-System. Ermöglicht das Hochladen, Verwalten und Abfragen von Dokumenten direkt im Chat.
+* **PrivateGPT**: Ein Open-Source-Projekt zur rein lokalen, datenschutzkonformen Dokumentenabfrage und -verwaltung mittels lokaler Sprachmodelle.
 
 ### Orchestrierung & RAG-Pipelines
 * **Dify.ai / Flowise**: Visuelle Editoren zum Erstellen von LLM-Anwendungen, RAG-Pipelines und KI-Agenten, die direkt auf Dokumenten-Repositorys zugreifen.
