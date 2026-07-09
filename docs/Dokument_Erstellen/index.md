@@ -7,13 +7,15 @@ graph TD
     A[Dokumentenerstellung] --> B[1. Book-First Generatoren]
     A --> C[2. Docs-First Frameworks]
     A --> D[3. Notebook-Systeme]
-    A --> E[4. Wikis & Wissensdatenbanken]
-    A --> F[5. RAG & KI-Co-Wikis]
-    A --> G[6. Programmatische Office-Automation]
+    A --> H[4. Allgemeine Webseiten-Generatoren]
+    A --> E[5. Wikis & Wissensdatenbanken]
+    A --> F[6. RAG & KI-Co-Wikis]
+    A --> G[7. Programmatische Office-Automation]
     
     B --> B1[mdBook / Antora / Sphinx / HonKit]
     C --> C1[MkDocs / Docusaurus / Starlight / Nextra]
     D --> D1[Quarto / Jupyter / Marimo]
+    H --> H1[Hugo / Astro / Jekyll / Eleventy]
     E --> E1[Flat-File / MediaWiki / XWiki]
     F --> F1[Danswer / Dify / MCP-Server]
     G --> G1[python-docx / OpenPyXL / Pandoc]
@@ -65,29 +67,43 @@ Systeme, die ausführbaren Code, Visualisierungen und erklärenden Text in einem
 
 ---
 
-## 4. Lokale Dokumentations-Wikis & Wissensdatenbanken
+## 4. Generatoren für allgemeine Webseiten & Blogs ("Eher Webseiten")
 
-Systeme zur Organisation und Durchsuchung von Notizen, firmeninternem Wissen oder technischen Wikis.
+Tools zur schnellen Erstellung von klassischen, inhaltsfokussierten Webseiten, Blogs, Portfolios oder Landingpages ohne den primären Fokus auf Dokumentationen oder Notizsysteme.
 
-### Flat-File-Wikis (Ohne relationale Datenbank)
-* **DokuWiki**: Ein bewährtes, PHP-basiertes Wiki, das alle Seiten als einfache Textdateien speichert. Extrem wartungsfreundlich und ohne Datenbank-Overhead.
-* **BookStack**: Ein modernes, einfach zu bedienendes Wiki mit einer hierarchischen Struktur (Bücher, Kapitel, Seiten), das sich hervorragend für Teamblogs und strukturierte Anleitungen eignet.
-* **Wiki.js**: Ein mächtiges, modernes Wiki auf Node.js-Basis. Bietet Git-Sync, Markdown-Editoren und flexible Suchmaschinen wie **FlexSearch** oder lokale Front-Matter-Parser.
+* **Hugo** (Go): Einer der schnellsten statischen Website-Generatoren der Welt. Basiert auf Go und eignet sich hervorragend für inhaltsreiche Webseiten, Blogs und Landingpages.
+* **Astro** (TypeScript/JavaScript): Ein modernes Web-Framework für inhaltsfokussierte Webseiten. Liefert standardmäßig 0 % JavaScript (Zero-JS-by-default) an den Client und bietet flexible Integrationen für React, Vue, Svelte und Markdown.
+* **Jekyll** (Ruby): Der bewährte Klassiker für statische Webseiten und einfache Blogs, der nativ von GitHub Pages unterstützt wird.
+* **Eleventy (11ty)** (JavaScript): Ein extrem flexibler und performanter Node.js-basierter Generator, der ohne schweres clientseitiges JavaScript auskommt und verschiedenste Template-Engines (Nunjucks, Liquid, etc.) unterstützt.
+* **Gatsby** (React/GraphQL): Ein mächtiges React-basiertes Framework für statische und dynamische Websites mit integriertem GraphQL-Daten-Layer zum Zusammenführen verschiedenster Datenquellen.
 
-### Rein statische Generatoren (Git-basiert / Local-First)
-* **Obsidian**: Eine hochgradig anpassbare Local-First-Notiz-App, die auf einem lokalen Ordner von Markdown-Dateien basiert und Verknüpfungen (Backlinks) visualisieren kann.
-* **Logseq**: Eine datenschutzfreundliche Outliner-Wissensdatenbank (Local-First) mit PDF-Annotationen und Flashcards, basierend auf Markdown- oder Org-Mode-Dateien.
-* **Quartz (v4)** (TypeScript): Ein statischer Generator, der Obsidian-Tresore (Markdown-Dateien mit Wiki-Links) direkt in eine schnelle, interaktive Website übersetzt.
+---
 
-### Die Schwergewichte (Multi-Tenancy & Strukturierte Daten)
+## 5. Lokale Dokumentations-Wikis & Wissensdatenbanken
+
+### Klassische & Datenbank-gestützte Wikis (Relationales Backend)
+* **BookStack**: Ein modernes, einfach zu bedienendes Wiki mit einer hierarchischen Struktur (Bücher, Kapitel, Seiten), das auf PHP/Laravel basiert und eine MySQL/MariaDB-Datenbank erfordert.
+* **Wiki.js**: Ein mächtiges, modernes Wiki auf Node.js-Basis. Bietet Git-Sync, Markdown-Editoren und flexible Suchmaschinen wie **FlexSearch** sowie ein relationales Datenbank-Backend.
 * **MediaWiki**: Das PHP-Schwergewicht hinter Wikipedia. Perfekt für riesige Enzyklopädien und stark strukturierte Wikitext-Inhalte. (Siehe [Installationsanleitung](Mediawiki/index.md), [Backup](Mediawiki/Backup.md) und [Wiederherstellung](Mediawiki/Wiederherstellen.md)).
 * **Semantic MediaWiki**: Eine Erweiterung für MediaWiki, die es ermöglicht, Wiki-Seiten mit strukturierten Daten (Semantik) zu versehen und diese abzufragen. (Siehe [Installationsanleitung](Semantisches_Mediawiki/Installieren.md), [Kurzform](Semantisches_Mediawiki/Kurzform.md) und [Erweiterungen](Semantisches_Mediawiki/Wichtige_Erweiterungen.md)).
 * **XWiki**: Ein Enterprise-Wiki auf Java-Basis, das strukturierte Daten, eigene Applikationen innerhalb von Wiki-Seiten und tiefgreifende Rechteverwaltung unterstützt. (Siehe [Installationsanleitung](Xwiki/Installieren.md)).
+
+### Flat-File-Wikis (Dateibasiert, ohne Datenbank)
+* **DokuWiki**: Ein bewährtes, PHP-basiertes Wiki, das alle Seiten als einfache Textdateien speichert. Extrem wartungsfreundlich und ohne Datenbank-Overhead.
+
+### Local-First & Personal Knowledge Management (PKM)
+* **Obsidian**: Eine hochgradig anpassbare Local-First-Notiz-App, die auf einem lokalen Ordner von Markdown-Dateien basiert und Verknüpfungen (Backlinks) visualisieren kann.
+* **Logseq**: Eine datenschutzfreundliche Outliner-Wissensdatenbank (Local-First) mit PDF-Annotationen und Flashcards, basierend auf Markdown- oder Org-Mode-Dateien.
+
+### Static-Site-Generatoren für lokale Notizen
+* **Quartz (v4)** (TypeScript): Ein statischer Generator, der Obsidian-Tresore (Markdown-Dateien mit Wiki-Links) direkt in eine schnelle, interaktive Website übersetzt.
+
+### Headless Editoren & Echtzeit-Kollaboration (Editor-Frameworks)
 * **Tiptap / Tiptap Collab**: Eine headless WYSIWYG-Editor-Bibliothek für moderne Web-UIs, die kollaboratives Schreiben in Echtzeit (wie in Google Docs oder Notion) ermöglicht.
 
 ---
 
-## 5. RAG- & KI-Zentrierte Wissensdatenbanken (RAG-Co-Wikis)
+## 6. RAG- & KI-Zentrierte Wissensdatenbanken (RAG-Co-Wikis)
 
 Systeme und Pipelines, die Wikis und Dokumente für Large Language Models (LLMs) aufbereiten oder als intelligente Co-Wikis mit RAG-Anbindung fungieren.
 
@@ -126,7 +142,7 @@ Die technische Umsetzung von LLM- und Co-Wikis basiert auf der Kombination moder
 
 ---
 
-## 6. Office Suites & Programmatische Dokumentenerstellung
+## 7. Office Suites & Programmatische Dokumentenerstellung
 
 Werkzeuge zur automatisierten Generierung und Bearbeitung von Office-Dokumenten (Word, Excel, PowerPoint) direkt aus Code heraus.
 
@@ -145,7 +161,7 @@ Werkzeuge zur automatisierten Generierung und Bearbeitung von Office-Dokumenten 
 
 ---
 
-## 7. 🤖 KI-Agenten-Tauglichkeit & RAG-Integration
+## 8. 🤖 KI-Agenten-Tauglichkeit & RAG-Integration
 
 Für autonome Entwickler-Agenten (wie Claude Code, Antigravity CLI) und RAG-Systeme eignen sich die dokumentenbasierten Pipelines unterschiedlich gut:
 
