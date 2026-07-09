@@ -4,15 +4,19 @@ Diese Kategorie bietet eine strukturierte Übersicht über Systeme zur Dokumente
 
 ```mermaid
 graph TD
-    A[Dokumentenerstellung] --> B[Book-First Generatoren]
-    A --> C[Notebook-Systeme]
-    A --> D[Wikis & Wissensdatenbanken]
-    A --> E[Programmatische Office-Automation]
+    A[Dokumentenerstellung] --> B[1. Book-First Generatoren]
+    A --> C[2. Docs-First Frameworks]
+    A --> D[3. Notebook-Systeme]
+    A --> E[4. Wikis & Wissensdatenbanken]
+    A --> F[5. RAG & KI-Co-Wikis]
+    A --> G[6. Programmatische Office-Automation]
     
-    B --> B1[mdBook / MkDocs / Docusaurus]
-    C --> C1[Quarto / Jupyter / Marimo]
-    D --> D1[Flat-File / RAG-Co-Wikis]
-    E --> E1[python-docx / OpenPyXL / Pandoc]
+    B --> B1[mdBook / Antora / Sphinx / HonKit]
+    C --> C1[MkDocs / Docusaurus / Starlight / Nextra]
+    D --> D1[Quarto / Jupyter / Marimo]
+    E --> E1[Flat-File / MediaWiki / XWiki]
+    F --> F1[Danswer / Dify / MCP-Server]
+    G --> G1[python-docx / OpenPyXL / Pandoc]
 ```
 
 ---
@@ -23,25 +27,29 @@ Tools, die speziell für das Erstellen strukturierter Bücher, Handbücher und l
 
 * **mdBook** (Rust): Ein extrem schneller, in Rust geschriebener Generator. Erzeugt schlanke, durchsuchbare HTML-Bücher aus Markdown-Dateien. Ideal für technische Handbücher.
 * **Antora** (JavaScript): Ein professioneller Generator für Multi-Repository-Dokumentationen. Basiert auf **AsciiDoc** statt Markdown, was erweiterte Features für Cross-Referenzen und modulare Strukturierung bietet.
-* **Starlight** (Astro/TypeScript): Ein modernes, auf Astro basierendes Dokumentations-Framework. Bietet hervorragende Performance (Zero-JS-Standard), integrierte Suche, Internationalisierung und ein modernes UI.
-* **MkDocs** (Python): Ein statischer Site-Generator, der einfach über YAML konfiguriert wird. Mit dem **Material for MkDocs** Theme (wie in diesem Projekt genutzt) gehört es zu den optisch ansprechendsten und funktionalsten Lösungen.
-* **Docusaurus** (React/TypeScript): Ein von Meta entwickeltes Dokumentations-Framework. Ermöglicht die nahtlose Integration von React-Komponenten in Markdown (MDX), ideal für komplexe Web-Dokumentationen.
 * **HonKit** (TypeScript): Ein moderner, aktiv gepflegter Fork von GitBook (Legacy CLI), um Bücher aus Markdown-Dateien zu generieren.
+* **Sphinx** (Python): Der traditionelle Standard für technische Großprojekte. Nutzt standardmäßig reStructuredText (reST) oder Markdown (via MyST) und glänzt bei komplexen Querverweisen und automatischer API-Generierung.
 
 ---
 
-## 2. Interaktive & "Executable" Notebook-Systeme
+## 2. "Docs-First" Frameworks (Fokus: Moderne Web-Dokumentation, Komponenten, API-Docs)
+
+* **MkDocs** (Python): Ein statischer Site-Generator, der einfach über YAML konfiguriert wird. Mit dem **Material for MkDocs** Theme (wie in diesem Projekt genutzt) gehört es zu den optisch ansprechendsten und funktionalsten Lösungen.
+* **Docusaurus** (React/TypeScript): Ein von Meta entwickeltes Dokumentations-Framework. Ermöglicht die nahtlose Integration von React-Komponenten in Markdown (MDX), ideal für komplexe Web-Dokumentationen.
+* **Starlight** (Astro/TypeScript): Ein modernes, auf Astro basierendes Dokumentations-Framework. Bietet hervorragende Performance (Zero-JS-Standard), integrierte Suche, Internationalisierung und ein modernes UI.
+* **Nextra** (React/Next.js): Ein sehr populäres Dokumentations-Framework von Vercel, das die Stärken von Next.js und MDX kombiniert.
+## 3. Interaktive & "Executable" Notebook-Systeme
 
 Systeme, die ausführbaren Code, Visualisierungen und erklärenden Text in einem interaktiven Dokument vereinen.
 
 * **Quarto** (CLI): Das moderne Nachfolgesystem von R Markdown. Unterstützt Python, R, Julia und Observable JS. Ermöglicht das Rendern von Notebooks in hochqualitative PDFs, HTML-Seiten, wissenschaftliche Arbeiten und Präsentationen.
 * **JupyterLab / Jupyter Book**: Der Industriestandard für Data Science. JupyterLab bietet eine vollständige Entwicklungsumgebung im Browser, während Jupyter Book eine Sammlung von Notebooks als schönes Online-Buch veröffentlicht.
 * **Livebook** (Elixir): Ein kollaboratives, interaktives Notebook-System für Elixir mit integrierter Echtzeit-Zusammenarbeit und Unterstützung für Machine-Learning-Pipelines.
-
+* **Marimo** (Python): Ein moderner, reaktiver Ersatz für klassische Jupyter-Notebooks. Zellen verhalten sich wie Excel-Zellen (Änderungen triggern abhängige Zellen automatisch). Speichert als saubere .py-Dateien – extrem Git-freundlich.
 ### Eigene Notebook-UIs bauen (Core Web Components)
 * **JupyterLab Components**: Wiederverwendbare Webkomponenten direkt aus dem JupyterLab-Ökosystem, um eigene Web-UIs mit Notebook-Support zu erstellen.
 * **nteract**: Ein Set aus React-Komponenten und SDKs für den Bau individueller Notebook-Anwendungen.
-
+* Starboard (JavaScript): Ein leichtgewichtiges, komplett im Browser (in-browser) laufendes Notebook-System. Lässt sich ohne Backend-Infrastruktur als Web-Komponente einbetten (nutzt WebAssembly für die Code-Ausführung).
 ### In-Browser Execution (Ausführung ohne Server-Backend)
 * **JupyterLite**: Ein JupyterLab-Derivat, das vollständig im Browser läuft (via WebAssembly / Pyodide). Es benötigt keinen Jupyter-Server im Hintergrund.
 * **Marimo** (Python): Ein reaktives Notebook für Python. Im Gegensatz zu Jupyter führt Marimo Code-Zellen bei Änderungen automatisch aus (ähnlich wie eine Excel-Tabelle), verhindert veraltete Zustände und läuft via Pyodide auch komplett serverlos im Browser.
@@ -57,7 +65,7 @@ Systeme, die ausführbaren Code, Visualisierungen und erklärenden Text in einem
 
 ---
 
-## 3. Lokale Dokumentations-Wikis & Wissensdatenbanken
+## 4. Lokale Dokumentations-Wikis & Wissensdatenbanken
 
 Systeme zur Organisation und Durchsuchung von Notizen, firmeninternem Wissen oder technischen Wikis.
 
@@ -79,13 +87,29 @@ Systeme zur Organisation und Durchsuchung von Notizen, firmeninternem Wissen ode
 
 ---
 
-## 4. RAG- & KI-Zentrierte Wissensdatenbanken (RAG-Co-Wikis)
+## 5. RAG- & KI-Zentrierte Wissensdatenbanken (RAG-Co-Wikis)
 
 Systeme und Pipelines, die Wikis und Dokumente für Large Language Models (LLMs) aufbereiten oder als intelligente Co-Wikis mit RAG-Anbindung fungieren.
 
 ### KI- & LLM-Wiki-Konzepte (LLM-Wikis & Co-Wikis)
 * **LLM-Wiki (Large Language Model Wiki)**: Ein Konzept zur Wissensstrukturierung, bei dem KI-Modelle Dokumente und Notizen autonom einlesen, zusammenfassen, kategorisieren und untereinander verlinken. Es entsteht ein sich selbst organisierendes, wachsendes Wissensnetzwerk.
 * **Co-Wiki (Collaborative AI Wiki)**: Plattformen, auf denen menschliche Autoren und autonome KI-Agenten (z. B. via Google Antigravity SDK) Hand in Hand arbeiten. Agenten können Lücken in der Dokumentation füllen, Links korrigieren, Begrifflichkeiten vereinheitlichen oder direkt auf Fragen antworten, während der Mensch die didaktische und fachliche Kontrolle behält.
+
+#### Funktionsweise & Technische Prinzipien
+Die technische Umsetzung von LLM- und Co-Wikis basiert auf der Kombination moderner KI-Architekturen, RAG-Pipelines (Retrieval-Augmented Generation) und agentischen Workflows:
+
+1. **RAG-Pipelines (Die Datenbasis)**
+   - **Ingestion & Semantic Chunking**: Sobald Dokumente erstellt oder geändert werden (z. B. getriggert über Git-Webhooks), spaltet ein Service den Text in sinnvolle, inhaltlich zusammenhängende Abschnitte (Chunks).
+   - **Vektorisierung**: Ein Embedding-Modell übersetzt diese Chunks in hochdimensionale Vektoren und speichert sie in einer Vektordatenbank (z. B. LanceDB, Qdrant oder Chroma).
+   - **Semantische Suche (Retrieval)**: Stellt ein Benutzer eine Frage, ermittelt das System über die Vektordatenbank die relevantesten Textabschnitte und stellt sie dem LLM als Kontext zur Verfügung.
+
+2. **Graph-basierte Wissensnetze (Die Struktur)**
+   - Ein LLM analysiert neue Texte und vergleicht sie mit dem bestehenden Wissensgraph. Es generiert automatisch **Backlinks** (Querverweise) und fügt semantische Tags in den Metadaten (Front Matter) der Markdown-Dateien ein. So entsteht ein dynamisches, sich selbst verlinkendes Wiki.
+
+3. **Agentische Workflows & Tool Use (Die Interaktion)**
+   - **Model Context Protocol (MCP)**: KI-Agenten greifen nicht auf rohen Text zu, sondern nutzen standardisierte MCP-Schnittstellen (wie `search_wiki` oder `read_document`), was die API-Interaktion deterministischer und effizienter macht.
+   - **Git-Kollaboration (Human-in-the-Loop)**: Agenten arbeiten meist in isolierten Branches. Wenn sie Fehler korrigieren oder Lücken füllen, erstellen sie einen Pull Request (PR). Ein menschlicher Reviewer validiert die Änderung vor dem Merge in die Live-Dokumentation.
+   - **Proaktive Qualitätskontrolle**: Agenten scannen die Dokumentation kontinuierlich auf veraltete Links, logische Widersprüche oder sprachliche Inkonsistenzen und schlagen Korrekturen vor.
 
 ### RAG- & KI-Wiki-Tools
 * **Anytype** (Local-First): Ein verschlüsseltes, objektbasiertes Wiki (Notion-Alternative), das auf dem IPFS-Netzwerk basiert.
@@ -102,7 +126,7 @@ Systeme und Pipelines, die Wikis und Dokumente für Large Language Models (LLMs)
 
 ---
 
-## 5. Office Suites & Programmatische Dokumentenerstellung
+## 6. Office Suites & Programmatische Dokumentenerstellung
 
 Werkzeuge zur automatisierten Generierung und Bearbeitung von Office-Dokumenten (Word, Excel, PowerPoint) direkt aus Code heraus.
 
@@ -121,7 +145,7 @@ Werkzeuge zur automatisierten Generierung und Bearbeitung von Office-Dokumenten 
 
 ---
 
-## 🤖 KI-Agenten-Tauglichkeit & RAG-Integration
+## 7. 🤖 KI-Agenten-Tauglichkeit & RAG-Integration
 
 Für autonome Entwickler-Agenten (wie Claude Code, Antigravity CLI) und RAG-Systeme eignen sich die dokumentenbasierten Pipelines unterschiedlich gut:
 
