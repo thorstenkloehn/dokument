@@ -1,0 +1,7212 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Content/ki-content-creation/">
+      
+      
+        <link rel="next" href="../../Coding/ki-coding/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>KI Websites entwickeln - Dokument</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#websites-entwickeln-mit-ki" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="../.." title="Dokument" class="md-header__button md-logo" aria-label="Dokument" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dokument
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              KI Websites entwickeln
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Dokument" class="md-nav__button md-logo" aria-label="Dokument" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Dokument
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Starseite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Server
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Server
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Server/Postgresql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Postgresql
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kachelserver
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Kachelserver
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Server/Kachelserver/Server204/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Server20.04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Server/Kachelserver/Server224/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Server22.04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Server/Kachelserver/Server244/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Server24.04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Server/Apache_Nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apache-Server mit Nginx verbinden
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Server/Nginx_SSL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nginx SSL Zertifikat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Server/nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nginx Einstellung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Server/Tomcat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tomcat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Server/Software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weiter Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Video
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Video/ki-filmproduktion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KI in der Film- und Videoproduktion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Content
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Content
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Content/ki-content-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KI Content Creation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Webentwicklung
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Webentwicklung
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KI Websites entwickeln
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KI Websites entwickeln
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#legende" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legende
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernpfad-ubersicht" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernpfad-Übersicht
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsverzeichnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inhaltsverzeichnis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-1-grundlagen-konzeption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟢 Phase 1 – Grundlagen &amp; Konzeption
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟢 Phase 1 – Grundlagen &amp; Konzeption">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-was-bedeutet-ki-gestutzte-webentwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Was bedeutet KI-gestützte Webentwicklung?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 Was bedeutet KI-gestützte Webentwicklung?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-drei-rollen-von-ki-in-der-webentwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Drei Rollen von KI in der Webentwicklung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ki-in-der-webentwicklung-noch-nicht-kann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was KI in der Webentwicklung (noch) nicht kann
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-typen-in-der-webentwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-Typen in der Webentwicklung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#einstiegs-software-llm-immer-gelistet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Einstiegs-Software (LLM – immer gelistet):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-konzept-ki-als-coding-assistent-verstehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Konzept: KI als Coding-Assistent verstehen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Konzept: KI als Coding-Assistent verstehen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wie-ein-ki-code-assistent-arbeitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Wie ein KI-Code-Assistent arbeitet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-prompt-engineering-fur-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Prompt-Engineering für Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-der-ki-entwicklungszyklus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Der KI-Entwicklungszyklus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-lokale-llms-vs-cloud-llms-fur-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Lokale LLMs vs. Cloud-LLMs für Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-thema-entwicklungsumgebung-mit-ki-aufsetzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Thema: Entwicklungsumgebung mit KI aufsetzen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Thema: Entwicklungsumgebung mit KI aufsetzen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ist-eine-ide-und-warum-ist-die-wahl-wichtig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was ist eine IDE und warum ist die Wahl wichtig?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-plugins-vs-ki-native-editoren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-Plugins vs. KI-native Editoren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-thema-website-konzeption-wireframing-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Thema: Website-Konzeption &amp; Wireframing mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 Thema: Website-Konzeption &amp; Wireframing mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ist-ein-wireframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was ist ein Wireframe?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-informationsarchitektur-mit-ki-planen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Informationsarchitektur mit KI planen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-user-flows-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: User Flows &amp; KI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-thema-uiux-design-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Thema: UI/UX-Design mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5 Thema: UI/UX-Design mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ist-der-unterschied-zwischen-ui-und-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was ist der Unterschied zwischen UI und UX?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-design-tokens-ki-freundliches-design-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Design Tokens – KI-freundliches Design-System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wichtige-begriffe-fur-ki-design-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Wichtige Begriffe für KI-Design-Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-2-umsetzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 Phase 2 – Umsetzung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟡 Phase 2 – Umsetzung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-konzept-der-ki-gestutzte-entwicklungsworkflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Konzept: Der KI-gestützte Entwicklungsworkflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Konzept: Der KI-gestützte Entwicklungsworkflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-vollstandige-ki-webentwicklungs-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Der vollständige KI-Webentwicklungs-Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-vibe-coding-was-steckt-dahinter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Vibe Coding – was steckt dahinter?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-thema-html-css-mit-ki-generieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Thema: HTML &amp; CSS mit KI generieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Thema: HTML &amp; CSS mit KI generieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-semantisches-html-warum-es-fur-ki-code-wichtig-ist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Semantisches HTML – warum es für KI-Code wichtig ist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-css-methodologien-fur-ki-generierten-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: CSS-Methodologien für KI-generierten Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-thema-javascript-interaktivitat-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Thema: JavaScript &amp; Interaktivität mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Thema: JavaScript &amp; Interaktivität mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-vanilla-js-vs-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Vanilla JS vs. Frameworks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-typescript-warum-ki-code-davon-profitiert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: TypeScript – warum KI-Code davon profitiert
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-thema-backend-apis-mit-ki-entwickeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Thema: Backend &amp; APIs mit KI entwickeln
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Thema: Backend &amp; APIs mit KI entwickeln">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wann-brauche-ich-ein-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Wann brauche ich ein Backend?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-generierter-backend-code-sicherheits-checkliste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-generierter Backend-Code – Sicherheits-Checkliste
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-thema-cms-website-builder-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Thema: CMS &amp; Website-Builder mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Thema: CMS &amp; Website-Builder mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-cms-typen-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: CMS-Typen im Überblick
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-statische-websites-unterschatzte-ki-anwendung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Statische Websites – unterschätzte KI-Anwendung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-thema-datenbanken-mit-ki-unterstutzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Thema: Datenbanken mit KI-Unterstützung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6 Thema: Datenbanken mit KI-Unterstützung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-welche-datenbank-fur-welchen-anwendungsfall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Welche Datenbank für welchen Anwendungsfall?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-generiert-sql-aber-vorsicht" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI generiert SQL – aber Vorsicht!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-thema-barrierefreiheit-accessibility-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 Thema: Barrierefreiheit (Accessibility) mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.7 Thema: Barrierefreiheit (Accessibility) mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wcag-richtlinien-die-vier-prinzipien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: WCAG-Richtlinien – die vier Prinzipien
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ki-code-typisch-vergisst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was KI-Code typisch vergisst
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-optimierung-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Phase 3 – Optimierung &amp; Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔴 Phase 3 – Optimierung &amp; Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-konzept-von-der-entwicklung-zum-produktiven-betrieb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Konzept: Von der Entwicklung zum produktiven Betrieb
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Konzept: Von der Entwicklung zum produktiven Betrieb">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-web-produktions-stack-vollstandig-open-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Der Web-Produktions-Stack (vollständig Open Source)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-thema-testing-debugging-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Thema: Testing &amp; Debugging mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Thema: Testing &amp; Debugging mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-test-typen-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Test-Typen im Überblick
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-debugging-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-Debugging-Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-thema-performance-optimierung-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Thema: Performance-Optimierung mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Thema: Performance-Optimierung mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-core-web-vitals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Core Web Vitals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-gestutzte-lighthouse-analyse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-gestützte Lighthouse-Analyse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wichtige-performance-techniken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Wichtige Performance-Techniken
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-thema-seo-optimierung-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Thema: SEO-Optimierung mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 Thema: SEO-Optimierung mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-technisches-seo-vs-content-seo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Technisches SEO vs. Content-SEO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-structured-data-schemaorg-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Structured Data (Schema.org) mit KI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-thema-deployment-hosting-mit-ki-unterstutzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Thema: Deployment &amp; Hosting mit KI-Unterstützung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5 Thema: Deployment &amp; Hosting mit KI-Unterstützung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-hosting-optionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Hosting-Optionen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-generiert-docker-cicd-konfigurationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI generiert Docker &amp; CI/CD-Konfigurationen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-cicd-automatisiert-deployen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: CI/CD – automatisiert deployen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-thema-sicherheit-datenschutz-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Thema: Sicherheit &amp; Datenschutz mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.6 Thema: Sicherheit &amp; Datenschutz mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-haufige-sicherheitslucken-in-ki-generiertem-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Häufige Sicherheitslücken in KI-generiertem Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-dsgvo-konforme-webentwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: DSGVO-konforme Webentwicklung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#praxisprojekte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Praxisprojekte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Praxisprojekte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einsteiger-portfolio-website-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟢 Einsteiger: Portfolio-Website mit KI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fortgeschritten-blog-mit-hugo-ki-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 Fortgeschritten: Blog mit Hugo &amp; KI-Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fortgeschritten-headless-cms-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 Fortgeschritten: Headless CMS Website
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experte-ki-web-app-mit-vektor-suche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Experte: KI-Web-App mit Vektor-Suche
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vollstandige-softwareubersicht-vergleich" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📦 Vollständige Softwareübersicht &amp; Vergleich
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 Vollständige Softwareübersicht &amp; Vergleich">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#llm-modelle-immer-gelistet-unabhangig-vom-preis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LLM-Modelle (immer gelistet – unabhängig vom Preis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entwicklungsumgebung-code-assistenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entwicklungsumgebung &amp; Code-Assistenten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-prototyping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design &amp; Prototyping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-datenbank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend &amp; Datenbank
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cms-static-generators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CMS &amp; Static Generators
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-qualitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing &amp; Qualität
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-seo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance &amp; SEO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment-hosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment &amp; Hosting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sicherheit-datenschutz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sicherheit &amp; Datenschutz
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiterfuhrende-ressourcen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weiterführende Ressourcen
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coding
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Coding
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Coding/ki-coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KI Coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Desktop_Automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desktop Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../E-Learning-Autorentool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E-Learning-Autorentool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IDE/Android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dokument Erstellen
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dokument Erstellen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Dokument_Erstellen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_2" id="__nav_12_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mediawiki
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mediawiki
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Dokument_Erstellen/Mediawiki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installieren
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Dokument_Erstellen/Mediawiki/Backup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Dokument_Erstellen/Mediawiki/Wiederherstellen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wiederherstellen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semantisches MediaWiki
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Semantisches MediaWiki
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Dokument_Erstellen/Semantisches_Mediawiki/Installieren/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installieren
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Dokument_Erstellen/Semantisches_Mediawiki/Kurzform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kurzform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Dokument_Erstellen/Semantisches_Mediawiki/Wichtige_Erweiterungen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Erweiterungen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_4" id="__nav_12_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Xwiki
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Xwiki
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Dokument_Erstellen/Xwiki/Installieren/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installieren
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tools/Pandoc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandoc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tools/Analysetool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysetool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tools/Benchmark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Impressum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Impressum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Datenschutz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datenschutz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#legende" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legende
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernpfad-ubersicht" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernpfad-Übersicht
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsverzeichnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inhaltsverzeichnis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-1-grundlagen-konzeption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟢 Phase 1 – Grundlagen &amp; Konzeption
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟢 Phase 1 – Grundlagen &amp; Konzeption">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-was-bedeutet-ki-gestutzte-webentwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Was bedeutet KI-gestützte Webentwicklung?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 Was bedeutet KI-gestützte Webentwicklung?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-drei-rollen-von-ki-in-der-webentwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Drei Rollen von KI in der Webentwicklung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ki-in-der-webentwicklung-noch-nicht-kann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was KI in der Webentwicklung (noch) nicht kann
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-typen-in-der-webentwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-Typen in der Webentwicklung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#einstiegs-software-llm-immer-gelistet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Einstiegs-Software (LLM – immer gelistet):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-konzept-ki-als-coding-assistent-verstehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Konzept: KI als Coding-Assistent verstehen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Konzept: KI als Coding-Assistent verstehen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wie-ein-ki-code-assistent-arbeitet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Wie ein KI-Code-Assistent arbeitet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-prompt-engineering-fur-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Prompt-Engineering für Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-der-ki-entwicklungszyklus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Der KI-Entwicklungszyklus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-lokale-llms-vs-cloud-llms-fur-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Lokale LLMs vs. Cloud-LLMs für Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-thema-entwicklungsumgebung-mit-ki-aufsetzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Thema: Entwicklungsumgebung mit KI aufsetzen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Thema: Entwicklungsumgebung mit KI aufsetzen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ist-eine-ide-und-warum-ist-die-wahl-wichtig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was ist eine IDE und warum ist die Wahl wichtig?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-plugins-vs-ki-native-editoren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-Plugins vs. KI-native Editoren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-thema-website-konzeption-wireframing-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Thema: Website-Konzeption &amp; Wireframing mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 Thema: Website-Konzeption &amp; Wireframing mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ist-ein-wireframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was ist ein Wireframe?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-informationsarchitektur-mit-ki-planen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Informationsarchitektur mit KI planen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-user-flows-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: User Flows &amp; KI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-thema-uiux-design-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Thema: UI/UX-Design mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.5 Thema: UI/UX-Design mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ist-der-unterschied-zwischen-ui-und-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was ist der Unterschied zwischen UI und UX?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-design-tokens-ki-freundliches-design-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Design Tokens – KI-freundliches Design-System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wichtige-begriffe-fur-ki-design-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Wichtige Begriffe für KI-Design-Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-2-umsetzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 Phase 2 – Umsetzung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟡 Phase 2 – Umsetzung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-konzept-der-ki-gestutzte-entwicklungsworkflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Konzept: Der KI-gestützte Entwicklungsworkflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Konzept: Der KI-gestützte Entwicklungsworkflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-vollstandige-ki-webentwicklungs-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Der vollständige KI-Webentwicklungs-Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-vibe-coding-was-steckt-dahinter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Vibe Coding – was steckt dahinter?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-thema-html-css-mit-ki-generieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Thema: HTML &amp; CSS mit KI generieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Thema: HTML &amp; CSS mit KI generieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-semantisches-html-warum-es-fur-ki-code-wichtig-ist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Semantisches HTML – warum es für KI-Code wichtig ist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-css-methodologien-fur-ki-generierten-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: CSS-Methodologien für KI-generierten Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-thema-javascript-interaktivitat-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Thema: JavaScript &amp; Interaktivität mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Thema: JavaScript &amp; Interaktivität mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-vanilla-js-vs-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Vanilla JS vs. Frameworks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-typescript-warum-ki-code-davon-profitiert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: TypeScript – warum KI-Code davon profitiert
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-thema-backend-apis-mit-ki-entwickeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Thema: Backend &amp; APIs mit KI entwickeln
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Thema: Backend &amp; APIs mit KI entwickeln">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wann-brauche-ich-ein-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Wann brauche ich ein Backend?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-generierter-backend-code-sicherheits-checkliste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-generierter Backend-Code – Sicherheits-Checkliste
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-thema-cms-website-builder-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Thema: CMS &amp; Website-Builder mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Thema: CMS &amp; Website-Builder mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-cms-typen-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: CMS-Typen im Überblick
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-statische-websites-unterschatzte-ki-anwendung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Statische Websites – unterschätzte KI-Anwendung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-thema-datenbanken-mit-ki-unterstutzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Thema: Datenbanken mit KI-Unterstützung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6 Thema: Datenbanken mit KI-Unterstützung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-welche-datenbank-fur-welchen-anwendungsfall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Welche Datenbank für welchen Anwendungsfall?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-generiert-sql-aber-vorsicht" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI generiert SQL – aber Vorsicht!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-thema-barrierefreiheit-accessibility-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 Thema: Barrierefreiheit (Accessibility) mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.7 Thema: Barrierefreiheit (Accessibility) mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wcag-richtlinien-die-vier-prinzipien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: WCAG-Richtlinien – die vier Prinzipien
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-was-ki-code-typisch-vergisst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Was KI-Code typisch vergisst
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-optimierung-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Phase 3 – Optimierung &amp; Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔴 Phase 3 – Optimierung &amp; Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-konzept-von-der-entwicklung-zum-produktiven-betrieb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Konzept: Von der Entwicklung zum produktiven Betrieb
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Konzept: Von der Entwicklung zum produktiven Betrieb">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-web-produktions-stack-vollstandig-open-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Der Web-Produktions-Stack (vollständig Open Source)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-thema-testing-debugging-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Thema: Testing &amp; Debugging mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Thema: Testing &amp; Debugging mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-test-typen-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Test-Typen im Überblick
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-debugging-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-Debugging-Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-thema-performance-optimierung-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Thema: Performance-Optimierung mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Thema: Performance-Optimierung mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-core-web-vitals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Core Web Vitals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-gestutzte-lighthouse-analyse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI-gestützte Lighthouse-Analyse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-wichtige-performance-techniken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Wichtige Performance-Techniken
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-thema-seo-optimierung-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Thema: SEO-Optimierung mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 Thema: SEO-Optimierung mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-technisches-seo-vs-content-seo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Technisches SEO vs. Content-SEO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-structured-data-schemaorg-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Structured Data (Schema.org) mit KI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-thema-deployment-hosting-mit-ki-unterstutzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Thema: Deployment &amp; Hosting mit KI-Unterstützung
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5 Thema: Deployment &amp; Hosting mit KI-Unterstützung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-hosting-optionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Hosting-Optionen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-ki-generiert-docker-cicd-konfigurationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: KI generiert Docker &amp; CI/CD-Konfigurationen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-cicd-automatisiert-deployen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: CI/CD – automatisiert deployen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-thema-sicherheit-datenschutz-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Thema: Sicherheit &amp; Datenschutz mit KI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.6 Thema: Sicherheit &amp; Datenschutz mit KI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konzept-haufige-sicherheitslucken-in-ki-generiertem-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: Häufige Sicherheitslücken in KI-generiertem Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konzept-dsgvo-konforme-webentwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Konzept: DSGVO-konforme Webentwicklung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-open-source-zuerst_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software – Open Source zuerst:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vergleich-open-source-vs-kommerziell_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vergleich: Open Source vs. Kommerziell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#praxisprojekte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Praxisprojekte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Praxisprojekte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einsteiger-portfolio-website-mit-ki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟢 Einsteiger: Portfolio-Website mit KI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fortgeschritten-blog-mit-hugo-ki-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 Fortgeschritten: Blog mit Hugo &amp; KI-Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fortgeschritten-headless-cms-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 Fortgeschritten: Headless CMS Website
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experte-ki-web-app-mit-vektor-suche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Experte: KI-Web-App mit Vektor-Suche
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vollstandige-softwareubersicht-vergleich" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📦 Vollständige Softwareübersicht &amp; Vergleich
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 Vollständige Softwareübersicht &amp; Vergleich">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#llm-modelle-immer-gelistet-unabhangig-vom-preis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LLM-Modelle (immer gelistet – unabhängig vom Preis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entwicklungsumgebung-code-assistenten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entwicklungsumgebung &amp; Code-Assistenten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-prototyping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design &amp; Prototyping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-datenbank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend &amp; Datenbank
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cms-static-generators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CMS &amp; Static Generators
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-qualitat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing &amp; Qualität
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-seo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance &amp; SEO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deployment-hosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment &amp; Hosting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sicherheit-datenschutz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sicherheit &amp; Datenschutz
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiterfuhrende-ressourcen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weiterführende Ressourcen
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="websites-entwickeln-mit-ki">Websites entwickeln mit KI</h1>
+<blockquote>
+<p><strong>Hinweis zur Software-Auswahl:</strong><br />
+Diese Dokumentation priorisiert <strong>Open-Source-Software</strong>, die unter Ubuntu läuft.<br />
+Bei kostenpflichtiger Software wird immer eine <strong>Open-Source-Alternative</strong> mit gleichem Funktionsumfang gegenübergestellt.<br />
+<strong>LLM-Modelle</strong> werden unabhängig vom Preis gelistet – sie sind die Grundlage KI-gestützter Webentwicklung.</p>
+</blockquote>
+<hr />
+<h2 id="legende">Legende</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩</td>
+<td>Open Source – kostenlos</td>
+</tr>
+<tr>
+<td>💰</td>
+<td>Kostenpflichtig</td>
+</tr>
+<tr>
+<td>🤖</td>
+<td>LLM-Modell – bleibt immer gelistet</td>
+</tr>
+<tr>
+<td>🐧</td>
+<td>Linux / Ubuntu nativ</td>
+</tr>
+<tr>
+<td>🌐</td>
+<td>Nur Web-Browser</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="lernpfad-ubersicht">Lernpfad-Übersicht</h2>
+<pre class="mermaid"><code>graph LR
+    A["🟢 Phase 1\nGrundlagen"] --&gt; B["🟡 Phase 2\nUmsetzung"]
+    B --&gt; C["🔴 Phase 3\nOptimierung"]
+    A --&gt; A1["KI &amp; Web verstehen\nErste Seiten mit KI"]
+    B --&gt; B1["Design · Frontend\nBackend · CMS"]
+    C --&gt; C1["Testing · SEO\nPerformance · Deployment"]</code></pre>
+<hr />
+<h2 id="inhaltsverzeichnis">Inhaltsverzeichnis</h2>
+<ul>
+<li><a href="#phase-1-grundlagen-konzeption">🟢 Phase 1 – Grundlagen &amp; Konzeption</a><ul>
+<li><a href="#11-was-bedeutet-ki-gestutzte-webentwicklung">1.1 Was bedeutet KI-gestützte Webentwicklung?</a></li>
+<li><a href="#12-konzept-ki-als-coding-assistent-verstehen">1.2 Konzept: KI als Coding-Assistent verstehen</a></li>
+<li><a href="#13-thema-entwicklungsumgebung-mit-ki-aufsetzen">1.3 Thema: Entwicklungsumgebung mit KI aufsetzen</a></li>
+<li><a href="#14-thema-website-konzeption-wireframing-mit-ki">1.4 Thema: Website-Konzeption &amp; Wireframing mit KI</a></li>
+<li><a href="#15-thema-uiux-design-mit-ki">1.5 Thema: UI/UX-Design mit KI</a></li>
+</ul>
+</li>
+<li><a href="#phase-2-umsetzung">🟡 Phase 2 – Umsetzung</a><ul>
+<li><a href="#21-konzept-der-ki-gestutzte-entwicklungsworkflow">2.1 Konzept: Der KI-gestützte Entwicklungsworkflow</a></li>
+<li><a href="#22-thema-html-css-mit-ki-generieren">2.2 Thema: HTML &amp; CSS mit KI generieren</a></li>
+<li><a href="#23-thema-javascript-interaktivitat-mit-ki">2.3 Thema: JavaScript &amp; Interaktivität mit KI</a></li>
+<li><a href="#24-thema-backend-apis-mit-ki-entwickeln">2.4 Thema: Backend &amp; APIs mit KI entwickeln</a></li>
+<li><a href="#25-thema-cms-website-builder-mit-ki">2.5 Thema: CMS &amp; Website-Builder mit KI</a></li>
+<li><a href="#26-thema-datenbanken-mit-ki-unterstutzung">2.6 Thema: Datenbanken mit KI-Unterstützung</a></li>
+<li><a href="#27-thema-barrierefreiheit-accessibility-mit-ki">2.7 Thema: Barrierefreiheit (Accessibility) mit KI</a></li>
+</ul>
+</li>
+<li><a href="#phase-3-optimierung-deployment">🔴 Phase 3 – Optimierung &amp; Deployment</a><ul>
+<li><a href="#31-konzept-von-der-entwicklung-zum-produktiven-betrieb">3.1 Konzept: Von der Entwicklung zum produktiven Betrieb</a></li>
+<li><a href="#32-thema-testing-debugging-mit-ki">3.2 Thema: Testing &amp; Debugging mit KI</a></li>
+<li><a href="#33-thema-performance-optimierung-mit-ki">3.3 Thema: Performance-Optimierung mit KI</a></li>
+<li><a href="#34-thema-seo-optimierung-mit-ki">3.4 Thema: SEO-Optimierung mit KI</a></li>
+<li><a href="#35-thema-deployment-hosting-mit-ki-unterstutzung">3.5 Thema: Deployment &amp; Hosting mit KI-Unterstützung</a></li>
+<li><a href="#36-thema-sicherheit-datenschutz-mit-ki">3.6 Thema: Sicherheit &amp; Datenschutz mit KI</a></li>
+</ul>
+</li>
+<li><a href="#praxisprojekte">📋 Praxisprojekte</a></li>
+<li><a href="#vollstandige-softwareubersicht-vergleich">📦 Vollständige Softwareübersicht &amp; Vergleich</a></li>
+</ul>
+<hr />
+<h2 id="phase-1-grundlagen-konzeption">🟢 Phase 1 – Grundlagen &amp; Konzeption</h2>
+<blockquote>
+<p><strong>Was lerne ich hier?</strong><br />
+Wie KI in der Webentwicklung eingesetzt wird, welche Werkzeuge es gibt und wie man eine Website konzipiert und designed – mit KI als Assistent.<br />
+<strong>Voraussetzungen:</strong> Grundlegendes Verständnis von Websites (kein Code nötig).</p>
+</blockquote>
+<hr />
+<h3 id="11-was-bedeutet-ki-gestutzte-webentwicklung">1.1 Was bedeutet KI-gestützte Webentwicklung?</h3>
+<h4 id="konzept-drei-rollen-von-ki-in-der-webentwicklung">Konzept: Drei Rollen von KI in der Webentwicklung</h4>
+<table>
+<thead>
+<tr>
+<th>Rolle</th>
+<th>Was KI tut</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Code generieren</strong></td>
+<td>Schreibt HTML, CSS, JavaScript aus Beschreibungen</td>
+<td>„Erstelle ein responsives Navigationsmenü"</td>
+</tr>
+<tr>
+<td><strong>Code erklären</strong></td>
+<td>Erklärt unbekannten Code verständlich</td>
+<td>„Was macht diese JavaScript-Funktion?"</td>
+</tr>
+<tr>
+<td><strong>Code optimieren</strong></td>
+<td>Verbessert, refaktoriert und debuggt Code</td>
+<td>„Mach diesen Code schneller und lesbarer"</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-was-ki-in-der-webentwicklung-noch-nicht-kann">Konzept: Was KI in der Webentwicklung (noch) nicht kann</h4>
+<ul>
+<li>Komplexe <strong>Architekturentscheidungen</strong> eigenständig treffen</li>
+<li><strong>Sicherheitslücken</strong> vollständig erkennen und schließen</li>
+<li><strong>Nutzerbedürfnisse</strong> aus eigener Erfahrung verstehen</li>
+<li><strong>Designgeschmack</strong> und ästhetisches Urteilsvermögen entwickeln</li>
+</ul>
+<h4 id="konzept-ki-typen-in-der-webentwicklung">Konzept: KI-Typen in der Webentwicklung</h4>
+<table>
+<thead>
+<tr>
+<th>KI-Typ</th>
+<th>Anwendung</th>
+<th>Beispiel-Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Code-Completion</strong></td>
+<td>Satz-für-Satz-Vervollständigung beim Tippen</td>
+<td>Continue.dev + Ollama</td>
+</tr>
+<tr>
+<td><strong>Chat-basierte Assistenz</strong></td>
+<td>Dialog: Frage → Code → Erklärung</td>
+<td>ChatGPT, Claude</td>
+</tr>
+<tr>
+<td><strong>Automatisierte Analyse</strong></td>
+<td>Lighthouse analysiert Performance automatisch</td>
+<td>Lighthouse</td>
+</tr>
+<tr>
+<td><strong>Generative KI</strong></td>
+<td>Komplette Seiten aus Beschreibungen</td>
+<td>Aider + Ollama</td>
+</tr>
+</tbody>
+</table>
+<h4 id="einstiegs-software-llm-immer-gelistet">Einstiegs-Software (LLM – immer gelistet):</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 🤖 <a href="https://ollama.com">Ollama</a></td>
+<td>LLM lokal</td>
+<td>CodeLlama, DeepSeek Coder lokal ausführen</td>
+<td>🐧 Ja</td>
+<td>ollama.com</td>
+</tr>
+<tr>
+<td>🟩 🤖 <a href="https://lmstudio.ai">LM Studio</a></td>
+<td>LLM lokal</td>
+<td>Grafische Oberfläche für lokale Code-LLMs</td>
+<td>🐧 Ja</td>
+<td>lmstudio.ai</td>
+</tr>
+<tr>
+<td>🟩 🤖 <a href="https://continue.dev">Continue.dev</a></td>
+<td>KI-IDE-Plugin</td>
+<td>Open-Source Copilot-Alternative für VS Code</td>
+<td>🐧 Ja</td>
+<td>continue.dev</td>
+</tr>
+<tr>
+<td>🤖 <a href="https://chat.openai.com">ChatGPT</a></td>
+<td>LLM Cloud</td>
+<td>Code generieren, erklären, debuggen</td>
+<td>🌐 Web</td>
+<td>openai.com</td>
+</tr>
+<tr>
+<td>🤖 <a href="https://claude.ai">Claude</a></td>
+<td>LLM Cloud</td>
+<td>Großes Kontextfenster für komplexe Codebasen</td>
+<td>🌐 Web</td>
+<td>claude.ai</td>
+</tr>
+<tr>
+<td>🤖 <a href="https://gemini.google.com">Gemini</a></td>
+<td>LLM Cloud</td>
+<td>Google-Integration, Multimodal</td>
+<td>🌐 Web</td>
+<td>gemini.google.com</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="12-konzept-ki-als-coding-assistent-verstehen">1.2 Konzept: KI als Coding-Assistent verstehen</h3>
+<h4 id="konzept-wie-ein-ki-code-assistent-arbeitet">Konzept: Wie ein KI-Code-Assistent arbeitet</h4>
+<p>KI-Code-Assistenten sind auf <strong>Milliarden von Code-Zeilen</strong> aus öffentlichen Repositories trainiert. Sie erzeugen <strong>statistisch wahrscheinlichen</strong> Code – nicht unbedingt korrekten oder sicheren Code.</p>
+<div class="highlight"><pre><span></span><code>Wichtige Regel: KI-generierten Code immer verstehen,
+bevor man ihn einsetzt – nie blind copy-pasten!
+</code></pre></div>
+<h4 id="konzept-prompt-engineering-fur-code">Konzept: Prompt-Engineering für Code</h4>
+<table>
+<thead>
+<tr>
+<th>Prompt-Element</th>
+<th>Beispiel</th>
+<th>Wirkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Technologie nennen</strong></td>
+<td>„In vanilla HTML und CSS ohne Framework..."</td>
+<td>Vermeidet unerwünschte Dependencies</td>
+</tr>
+<tr>
+<td><strong>Kontext geben</strong></td>
+<td>„Das ist Teil einer E-Commerce-Seite..."</td>
+<td>Passenderer Code</td>
+</tr>
+<tr>
+<td><strong>Einschränkungen setzen</strong></td>
+<td>„Ohne externe Bibliotheken, nur ES6+"</td>
+<td>Kontrollierter Output</td>
+</tr>
+<tr>
+<td><strong>Ausgabe-Format</strong></td>
+<td>„Gib nur den CSS-Teil aus, kommentiert"</td>
+<td>Fokussierter Code</td>
+</tr>
+<tr>
+<td><strong>Fehler beschreiben</strong></td>
+<td>„Folgender Fehler tritt auf: [Fehlermeldung]"</td>
+<td>Gezieltes Debugging</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-der-ki-entwicklungszyklus">Konzept: Der KI-Entwicklungszyklus</h4>
+<pre class="mermaid"><code>graph LR
+    A["💡 Anforderung\nbeschreiben"] --&gt; B["🤖 KI generiert\nCode-Entwurf"]
+    B --&gt; C["👤 Entwickler\nversteht &amp; prüft"]
+    C --&gt; D["🔧 Anpassen &amp;\nVerfeinern"]
+    D --&gt; E["🧪 Testen"]
+    E --&gt; F{Fehler?}
+    F --&gt;|Ja| B
+    F --&gt;|Nein| G["✅ Fertig"]</code></pre>
+<h4 id="konzept-lokale-llms-vs-cloud-llms-fur-code">Konzept: Lokale LLMs vs. Cloud-LLMs für Code</h4>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>Lokal (Ollama + DeepSeek) 🟩</th>
+<th>Cloud (ChatGPT, Copilot) 🤖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datenschutz</td>
+<td>✅ Code verlässt nie den Rechner</td>
+<td>❌ Code geht in Cloud</td>
+</tr>
+<tr>
+<td>Kosten</td>
+<td>✅ Kostenlos</td>
+<td>💰 Ab 10–20$/Monat</td>
+</tr>
+<tr>
+<td>Codequalität</td>
+<td>🟡 Sehr gut (DeepSeek Coder V3)</td>
+<td>✅ Ausgezeichnet</td>
+</tr>
+<tr>
+<td>Kontextfenster</td>
+<td>🟡 Begrenzt (je nach Modell)</td>
+<td>✅ Sehr groß (Claude: 200K)</td>
+</tr>
+<tr>
+<td>Offline-Nutzung</td>
+<td>✅ Vollständig offline</td>
+<td>❌ Internetverbindung nötig</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13-thema-entwicklungsumgebung-mit-ki-aufsetzen">1.3 Thema: Entwicklungsumgebung mit KI aufsetzen</h3>
+<h4 id="konzept-was-ist-eine-ide-und-warum-ist-die-wahl-wichtig">Konzept: Was ist eine IDE und warum ist die Wahl wichtig?</h4>
+<p>Eine <strong>IDE (Integrated Development Environment)</strong> ist der Arbeitsplatz des Entwicklers – Editor, Terminal, Debugger und KI-Assistent in einem.</p>
+<h4 id="konzept-ki-plugins-vs-ki-native-editoren">Konzept: KI-Plugins vs. KI-native Editoren</h4>
+<table>
+<thead>
+<tr>
+<th>Ansatz</th>
+<th>Beschreibung</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KI-Plugin in Editor</strong></td>
+<td>Standard-Editor + KI-Erweiterung</td>
+<td>VSCodium + Continue.dev</td>
+</tr>
+<tr>
+<td><strong>KI-nativer Editor</strong></td>
+<td>Editor mit eingebauter KI</td>
+<td>Cursor, Windsurf</td>
+</tr>
+<tr>
+<td><strong>Terminal + LLM</strong></td>
+<td>CLI-basierte KI-Assistenz</td>
+<td>Aider + Ollama</td>
+</tr>
+</tbody>
+</table>
+<h4 id="software-open-source-zuerst">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://vscodium.com">VSCodium</a></td>
+<td>Editor</td>
+<td>Open-Source VS Code ohne Microsoft-Telemetrie</td>
+<td>🐧 Ja</td>
+<td>vscodium.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://continue.dev">Continue.dev</a></td>
+<td>KI-Plugin</td>
+<td>Open-Source KI-Assistent für VSCodium/VS Code</td>
+<td>🐧 Ja</td>
+<td>continue.dev</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://aider.chat">Aider</a></td>
+<td>KI-CLI</td>
+<td>Terminal-basierter KI-Code-Assistent</td>
+<td>🐧 Ja</td>
+<td>aider.chat</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://neovim.io">Neovim + LLM-Plugins</a></td>
+<td>Editor</td>
+<td>Vim-basierter Editor mit KI-Plugins</td>
+<td>🐧 Ja</td>
+<td>neovim.io</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://ollama.com">Ollama</a></td>
+<td>LLM-Backend</td>
+<td>Lokaler LLM-Server für alle KI-Plugins</td>
+<td>🐧 Ja</td>
+<td>ollama.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://git-scm.com">Git</a></td>
+<td>Versionierung</td>
+<td>Versionskontrolle (Basis jedes Projekts)</td>
+<td>🐧 Ja</td>
+<td>git-scm.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://gitea.io/de-de/">Gitea</a></td>
+<td>Git-Server</td>
+<td>Self-hosted GitHub-Alternative</td>
+<td>🐧 Ja</td>
+<td>gitea.io</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code-Editor</td>
+<td>VSCodium + Continue.dev</td>
+<td>VS Code + GitHub Copilot, Cursor</td>
+</tr>
+<tr>
+<td>KI-Code-Assistent</td>
+<td>Continue.dev + Ollama/DeepSeek</td>
+<td>GitHub Copilot, Tabnine, Codeium</td>
+</tr>
+<tr>
+<td>Terminal-KI</td>
+<td>Aider + Ollama</td>
+<td>Cursor Terminal, Warp</td>
+</tr>
+<tr>
+<td>Git-Hosting</td>
+<td>Gitea (self-hosted)</td>
+<td>GitHub, GitLab</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="14-thema-website-konzeption-wireframing-mit-ki">1.4 Thema: Website-Konzeption &amp; Wireframing mit KI</h3>
+<h4 id="konzept-was-ist-ein-wireframe">Konzept: Was ist ein Wireframe?</h4>
+<p>Ein <strong>Wireframe</strong> ist eine schematische Skizze einer Webseite – ohne Farben oder finales Design. Es zeigt nur: Wo ist was?</p>
+<div class="highlight"><pre><span></span><code>Idee → Wireframe (Struktur) → Mockup (Design) → Prototyp (Interaktion) → Code
+</code></pre></div>
+<h4 id="konzept-informationsarchitektur-mit-ki-planen">Konzept: Informationsarchitektur mit KI planen</h4>
+<p><strong>Informationsarchitektur (IA)</strong> definiert, wie Inhalte einer Website strukturiert werden. KI kann:
+- Sitemaps aus Zielgruppen-Beschreibungen generieren
+- Nutzerflüsse (User Flows) vorschlagen
+- Navigationsstrukturen auf Usability prüfen</p>
+<h4 id="konzept-user-flows-ki">Konzept: User Flows &amp; KI</h4>
+<pre class="mermaid"><code>graph LR
+    A["🏠 Startseite"] --&gt; B["📦 Produktseite"]
+    B --&gt; C["🛒 Warenkorb"]
+    C --&gt; D["📝 Checkout"]
+    D --&gt; E["✅ Bestellung"]
+    A --&gt; F["🔍 Suche"]
+    F --&gt; B</code></pre>
+<h4 id="software-open-source-zuerst_1">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://penpot.app">Penpot</a></td>
+<td>Design/Wireframe</td>
+<td>Open-Source Figma-Alternative, self-hosted</td>
+<td>🐧 Ja</td>
+<td>penpot.app</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://excalidraw.com">Excalidraw</a></td>
+<td>Wireframe</td>
+<td>Open-Source Skizzen-Tool, self-hostable</td>
+<td>🐧 Ja</td>
+<td>excalidraw.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://www.diagrams.net">draw.io / diagrams.net</a></td>
+<td>Diagramme</td>
+<td>Sitemaps, Flows, Wireframes</td>
+<td>🐧 Ja</td>
+<td>diagrams.net</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://inkscape.org/de/">Inkscape</a></td>
+<td>Vektorgrafik</td>
+<td>Statische Wireframes als SVG</td>
+<td>🐧 Ja</td>
+<td>inkscape.org</td>
+</tr>
+<tr>
+<td>🟩 🤖 <a href="https://ollama.com">Ollama</a></td>
+<td>LLM</td>
+<td>Sitemap &amp; IA aus Beschreibungen generieren</td>
+<td>🐧 Ja</td>
+<td>ollama.com</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_1">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wireframing &amp; Design</td>
+<td>Penpot (self-hosted), Excalidraw</td>
+<td>Figma, Sketch, Adobe XD</td>
+</tr>
+<tr>
+<td>Sitemap-Erstellung</td>
+<td>draw.io + Ollama-Prompt</td>
+<td>Slickplan, Lucidchart</td>
+</tr>
+<tr>
+<td>User-Flow-Diagramme</td>
+<td>draw.io</td>
+<td>Miro, FigJam</td>
+</tr>
+<tr>
+<td>Prototyping</td>
+<td>Penpot</td>
+<td>Figma, InVision</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="15-thema-uiux-design-mit-ki">1.5 Thema: UI/UX-Design mit KI</h3>
+<h4 id="konzept-was-ist-der-unterschied-zwischen-ui-und-ux">Konzept: Was ist der Unterschied zwischen UI und UX?</h4>
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Definition</th>
+<th>KI hilft mit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>UI (User Interface)</strong></td>
+<td>Wie die Website aussieht</td>
+<td>Farbpaletten, Layouts generieren</td>
+</tr>
+<tr>
+<td><strong>UX (User Experience)</strong></td>
+<td>Wie sich die Nutzung anfühlt</td>
+<td>Usability-Probleme erkennen</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-design-tokens-ki-freundliches-design-system">Konzept: Design Tokens – KI-freundliches Design-System</h4>
+<p><strong>Design Tokens</strong> sind Variablen für Farben, Abstände, Schriftgrößen als CSS Custom Properties. KI kann sie aus einem Briefing generieren:</p>
+<div class="highlight"><pre><span></span><code><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nv">--color-primary</span><span class="p">:</span><span class="w"> </span><span class="mh">#2563eb</span><span class="p">;</span>
+<span class="w">  </span><span class="nv">--font-heading</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Inter&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
+<span class="w">  </span><span class="nv">--spacing-md</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">rem</span><span class="p">;</span>
+<span class="w">  </span><span class="nv">--border-radius</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="konzept-wichtige-begriffe-fur-ki-design-prompts">Konzept: Wichtige Begriffe für KI-Design-Prompts</h4>
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Bedeutung</th>
+<th>Prompt-Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WCAG-Kontrast</strong></td>
+<td>Mindestkontrast für Barrierefreiheit</td>
+<td>„Kontrastverhältnis min. 4,5:1"</td>
+</tr>
+<tr>
+<td><strong>Typografische Hierarchie</strong></td>
+<td>Visuelle Gewichtung der Textelemente</td>
+<td>„H1 &gt; H2 &gt; Body, klar abgestuft"</td>
+</tr>
+<tr>
+<td><strong>Whitespace</strong></td>
+<td>Bewusst eingesetzter Leerraum</td>
+<td>„Großzügige Abstände, luftiges Layout"</td>
+</tr>
+<tr>
+<td><strong>Responsive Grid</strong></td>
+<td>Flexibles Rastersystem</td>
+<td>„12-Spalten-Grid, mobil-first"</td>
+</tr>
+</tbody>
+</table>
+<h4 id="software-open-source-zuerst_2">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://penpot.app">Penpot</a></td>
+<td>Design</td>
+<td>Open-Source UI-Design &amp; Prototyping</td>
+<td>🐧 Ja</td>
+<td>penpot.app</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://www.gimp.org">GIMP</a></td>
+<td>Bildbearbeitung</td>
+<td>Assets erstellen &amp; anpassen</td>
+<td>🐧 Ja</td>
+<td>gimp.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://inkscape.org/de/">Inkscape</a></td>
+<td>Vektorgrafik</td>
+<td>Icons, Logos, SVG-Grafiken</td>
+<td>🐧 Ja</td>
+<td>inkscape.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI + Flux</a></td>
+<td>Bild-KI</td>
+<td>Hero-Images lokal generieren</td>
+<td>🐧 Ja</td>
+<td>github.com/comfyanonymous</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://fontsource.org">fontsource</a></td>
+<td>Typografie</td>
+<td>Self-hosted Google Fonts</td>
+<td>🐧 Ja</td>
+<td>fontsource.org</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_2">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI-Design-Tool</td>
+<td>Penpot</td>
+<td>Figma, Adobe XD, Sketch</td>
+</tr>
+<tr>
+<td>Icon-Sets</td>
+<td>Lucide, Heroicons (open source)</td>
+<td>FontAwesome Pro</td>
+</tr>
+<tr>
+<td>KI-Bildgenerierung</td>
+<td>ComfyUI + Flux</td>
+<td>Midjourney, Adobe Firefly</td>
+</tr>
+<tr>
+<td>Design-Systeme</td>
+<td>Penpot Design Tokens</td>
+<td>Figma Variables</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="phase-2-umsetzung">🟡 Phase 2 – Umsetzung</h2>
+<blockquote>
+<p><strong>Was lerne ich hier?</strong><br />
+Den gesamten Entwicklungs-Stack mit KI umsetzen – von HTML/CSS bis Backend und CMS.<br />
+<strong>Voraussetzungen:</strong> Phase 1 abgeschlossen. Erste HTML-/CSS-Kenntnisse hilfreich.</p>
+</blockquote>
+<hr />
+<h3 id="21-konzept-der-ki-gestutzte-entwicklungsworkflow">2.1 Konzept: Der KI-gestützte Entwicklungsworkflow</h3>
+<h4 id="der-vollstandige-ki-webentwicklungs-stack">Der vollständige KI-Webentwicklungs-Stack</h4>
+<pre class="mermaid"><code>graph TD
+    A["🎨 Design\n(Penpot)"] --&gt; B["📄 HTML / CSS\n(VSCodium + Continue.dev)"]
+    B --&gt; C["⚡ JavaScript\n(Ollama + Continue.dev)"]
+    C --&gt; D["🔧 Backend / API\n(FastAPI / Express.js)"]
+    D --&gt; E["🗄️ Datenbank\n(PostgreSQL)"]
+    E --&gt; F["📝 CMS\n(Strapi / Hugo)"]
+    F --&gt; G["🧪 Testing\n(Playwright)"]
+    G --&gt; H["🚀 Deployment\n(Docker + Nginx)"]</code></pre>
+<h4 id="konzept-vibe-coding-was-steckt-dahinter">Konzept: Vibe Coding – was steckt dahinter?</h4>
+<p><strong>Vibe Coding</strong> bezeichnet das Entwickeln durch natürlichsprachliche Beschreibungen – ohne selbst Code zu schreiben:</p>
+<ul>
+<li>✅ Sehr nützlich für <strong>Prototypen und MVPs</strong></li>
+<li>✅ Senkt die <strong>Einstiegshürde</strong> für Nicht-Entwickler</li>
+<li>❌ Erzeugt oft <strong>technische Schulden</strong> (schwer wartbarer Code)</li>
+<li>❌ <strong>Sicherheitslücken</strong> bleiben unbemerkt ohne Code-Verständnis</li>
+</ul>
+<hr />
+<h3 id="22-thema-html-css-mit-ki-generieren">2.2 Thema: HTML &amp; CSS mit KI generieren</h3>
+<h4 id="konzept-semantisches-html-warum-es-fur-ki-code-wichtig-ist">Konzept: Semantisches HTML – warum es für KI-Code wichtig ist</h4>
+<p><strong>Semantisches HTML</strong> verwendet bedeutungsvolle Tags – nicht nur <code>&lt;div&gt;</code>. KI tendiert ohne explizite Anweisung zu unsemantischem Code:</p>
+<div class="highlight"><pre><span></span><code><span class="cm">&lt;!-- ❌ Nicht semantisch (häufiger KI-Output ohne Anweisung) --&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;header&quot;</span><span class="p">&gt;&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- ✅ Semantisch (mit explizitem Prompt-Hinweis) --&gt;</span>
+<span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;&lt;</span><span class="nt">nav</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Hauptnavigation&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="konzept-css-methodologien-fur-ki-generierten-code">Konzept: CSS-Methodologien für KI-generierten Code</h4>
+<table>
+<thead>
+<tr>
+<th>Methodik</th>
+<th>Beschreibung</th>
+<th>Prompt-Hinweis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BEM</strong></td>
+<td>Block-Element-Modifier Namensgebung</td>
+<td>„Nutze BEM-Konventionen"</td>
+</tr>
+<tr>
+<td><strong>Utility-First</strong></td>
+<td>Kleine Hilfsklassen (Tailwind-Stil)</td>
+<td>„Tailwind-CSS-Klassen"</td>
+</tr>
+<tr>
+<td><strong>CSS Custom Properties</strong></td>
+<td>Variablen für Designsystem</td>
+<td>„Design Tokens als CSS-Variablen"</td>
+</tr>
+<tr>
+<td><strong>CSS Grid + Flexbox</strong></td>
+<td>Moderne Layout-Systeme</td>
+<td>„Nur CSS Grid und Flexbox, kein Float"</td>
+</tr>
+</tbody>
+</table>
+<h4 id="software-open-source-zuerst_3">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://vscodium.com">VSCodium + Continue.dev</a></td>
+<td>Editor + KI</td>
+<td>HTML/CSS mit KI-Assistent schreiben</td>
+<td>🐧 Ja</td>
+<td>vscodium.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://ollama.com">Ollama + DeepSeek Coder</a></td>
+<td>LLM</td>
+<td>HTML/CSS lokal generieren</td>
+<td>🐧 Ja</td>
+<td>ollama.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://stylelint.io">Stylelint</a></td>
+<td>Linter</td>
+<td>CSS-Qualität prüfen</td>
+<td>🐧 Ja</td>
+<td>stylelint.io</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://prettier.io">Prettier</a></td>
+<td>Formatter</td>
+<td>Code-Formatierung automatisch</td>
+<td>🐧 Ja</td>
+<td>prettier.io</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://postcss.org">PostCSS</a></td>
+<td>CSS-Tool</td>
+<td>CSS transformieren &amp; optimieren</td>
+<td>🐧 Ja</td>
+<td>postcss.org</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_3">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KI-HTML/CSS-Generierung</td>
+<td>Continue.dev + Ollama</td>
+<td>GitHub Copilot, Cursor</td>
+</tr>
+<tr>
+<td>CSS-Framework</td>
+<td>Tailwind CSS, Bootstrap (beide OS)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>No-Code Builder</td>
+<td>—</td>
+<td>Webflow, Framer</td>
+</tr>
+<tr>
+<td>Vollständige Seiten aus Prompt</td>
+<td>Aider + Ollama</td>
+<td>v0.dev (Vercel)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="23-thema-javascript-interaktivitat-mit-ki">2.3 Thema: JavaScript &amp; Interaktivität mit KI</h3>
+<h4 id="konzept-vanilla-js-vs-frameworks">Konzept: Vanilla JS vs. Frameworks</h4>
+<p>KI empfiehlt oft Frameworks – auch wenn sie nicht nötig sind:</p>
+<table>
+<thead>
+<tr>
+<th>Ansatz</th>
+<th>Wann sinnvoll</th>
+<th>KI-Prompt-Tipp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vanilla JS</strong></td>
+<td>Einfache Interaktionen</td>
+<td>„Nur reines JavaScript, kein Framework"</td>
+</tr>
+<tr>
+<td><strong>Alpine.js</strong></td>
+<td>Leichte Reaktivität</td>
+<td>„Alpine.js für einfache Reaktivität"</td>
+</tr>
+<tr>
+<td><strong>Vue.js</strong></td>
+<td>Mittlere Komplexität</td>
+<td>„Vue 3 Composition API"</td>
+</tr>
+<tr>
+<td><strong>React</strong></td>
+<td>Komplexe SPAs</td>
+<td>„React mit TypeScript, Hooks"</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-typescript-warum-ki-code-davon-profitiert">Konzept: TypeScript – warum KI-Code davon profitiert</h4>
+<p><strong>TypeScript</strong> fügt JavaScript Typen hinzu – KI-generierter Code ist damit selbstdokumentierender und weniger fehleranfällig.</p>
+<h4 id="software-open-source-zuerst_4">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://nodejs.org/de">Node.js</a></td>
+<td>Runtime</td>
+<td>JavaScript serverseitig ausführen</td>
+<td>🐧 Ja</td>
+<td>nodejs.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://deno.land">Deno</a></td>
+<td>Runtime</td>
+<td>Sichere JS/TS-Runtime</td>
+<td>🐧 Ja</td>
+<td>deno.land</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://bun.sh">Bun</a></td>
+<td>Runtime</td>
+<td>Sehr schnelle JS-Runtime</td>
+<td>🐧 Ja</td>
+<td>bun.sh</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://eslint.org">ESLint</a></td>
+<td>Linter</td>
+<td>JS/TS-Qualität prüfen</td>
+<td>🐧 Ja</td>
+<td>eslint.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://vitejs.dev">Vite</a></td>
+<td>Build Tool</td>
+<td>Schneller Dev-Server &amp; Build</td>
+<td>🐧 Ja</td>
+<td>vitejs.dev</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://alpinejs.dev">Alpine.js</a></td>
+<td>Framework</td>
+<td>Leichtes Reaktivitäts-Framework</td>
+<td>🐧 Ja</td>
+<td>alpinejs.dev</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_4">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JS-KI-Assistent</td>
+<td>Continue.dev + Ollama (lokal)</td>
+<td>GitHub Copilot, Cursor</td>
+</tr>
+<tr>
+<td>Build-Tool</td>
+<td>Vite, esbuild, Rollup</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Frameworks</td>
+<td>React, Vue, Svelte, Alpine.js</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="24-thema-backend-apis-mit-ki-entwickeln">2.4 Thema: Backend &amp; APIs mit KI entwickeln</h3>
+<h4 id="konzept-wann-brauche-ich-ein-backend">Konzept: Wann brauche ich ein Backend?</h4>
+<table>
+<thead>
+<tr>
+<th>Website-Typ</th>
+<th>Backend nötig?</th>
+<th>Empfehlung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Portfolio / Visitenkarte</td>
+<td>❌ Nein</td>
+<td>Hugo, Astro (statisch)</td>
+</tr>
+<tr>
+<td>Blog</td>
+<td>🟡 Optional</td>
+<td>Ghost oder Hugo</td>
+</tr>
+<tr>
+<td>E-Commerce</td>
+<td>✅ Ja</td>
+<td>WooCommerce oder Strapi</td>
+</tr>
+<tr>
+<td>Web-App</td>
+<td>✅ Ja</td>
+<td>FastAPI oder Express.js</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-ki-generierter-backend-code-sicherheits-checkliste">Konzept: KI-generierter Backend-Code – Sicherheits-Checkliste</h4>
+<p>KI vergisst häufig kritische Sicherheitsaspekte:</p>
+<ul>
+<li>✅ <strong>Input-Validierung</strong> – Alle Nutzereingaben prüfen</li>
+<li>✅ <strong>SQL-Injection-Schutz</strong> – Prepared Statements verwenden</li>
+<li>✅ <strong>CORS</strong> – Korrekt konfigurieren</li>
+<li>✅ <strong>Rate Limiting</strong> – Brute-Force-Schutz aktivieren</li>
+<li>✅ <strong>Authentifizierung</strong> – JWT oder Session korrekt implementieren</li>
+</ul>
+<h4 id="software-open-source-zuerst_5">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://fastapi.tiangolo.com">FastAPI</a></td>
+<td>Framework</td>
+<td>Python-API-Framework</td>
+<td>🐧 Ja</td>
+<td>fastapi.tiangolo.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://expressjs.com/de/">Express.js</a></td>
+<td>Framework</td>
+<td>Node.js-Web-Framework</td>
+<td>🐧 Ja</td>
+<td>expressjs.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://hono.dev">Hono</a></td>
+<td>Framework</td>
+<td>Ultraschnelles Web-Framework (TS)</td>
+<td>🐧 Ja</td>
+<td>hono.dev</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://strapi.io">Strapi</a></td>
+<td>Headless CMS</td>
+<td>Open-Source Headless CMS mit API</td>
+<td>🐧 Ja</td>
+<td>strapi.io</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://directus.io">Directus</a></td>
+<td>Headless CMS</td>
+<td>Self-hosted Data Platform</td>
+<td>🐧 Ja</td>
+<td>directus.io</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://www.usebruno.com">Bruno</a></td>
+<td>API-Client</td>
+<td>Open-Source Postman-Alternative</td>
+<td>🐧 Ja</td>
+<td>usebruno.com</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_5">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backend-Framework</td>
+<td>FastAPI, Express.js, Hono</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Headless CMS</td>
+<td>Strapi, Directus, Ghost</td>
+<td>Contentful, Sanity</td>
+</tr>
+<tr>
+<td>Backend-as-a-Service</td>
+<td>Supabase (self-hosted), PocketBase</td>
+<td>Firebase, Supabase Cloud</td>
+</tr>
+<tr>
+<td>API-Testing</td>
+<td>Bruno, Insomnia (Open)</td>
+<td>Postman</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="25-thema-cms-website-builder-mit-ki">2.5 Thema: CMS &amp; Website-Builder mit KI</h3>
+<h4 id="konzept-cms-typen-im-uberblick">Konzept: CMS-Typen im Überblick</h4>
+<table>
+<thead>
+<tr>
+<th>CMS-Typ</th>
+<th>Beschreibung</th>
+<th>Open-Source-Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Traditionelles CMS</strong></td>
+<td>Frontend und Backend gekoppelt</td>
+<td>WordPress, Joomla</td>
+</tr>
+<tr>
+<td><strong>Headless CMS</strong></td>
+<td>Nur Backend/API</td>
+<td>Strapi, Directus</td>
+</tr>
+<tr>
+<td><strong>Statischer Generator</strong></td>
+<td>Baut HTML aus Markdown</td>
+<td>Hugo, Eleventy, Astro</td>
+</tr>
+<tr>
+<td><strong>No-Code-Builder</strong></td>
+<td>Visuelles Drag-and-Drop</td>
+<td>meist kommerziell</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-statische-websites-unterschatzte-ki-anwendung">Konzept: Statische Websites – unterschätzte KI-Anwendung</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Hugo + KI-Workflow</span>
+ollama<span class="w"> </span>run<span class="w"> </span>llama3<span class="w"> </span><span class="s2">&quot;Schreibe einen Blogartikel über...&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>content/posts/artikel.md
+hugo<span class="w"> </span>build<span class="w">  </span><span class="c1"># Statische Seite wird generiert</span>
+</code></pre></div>
+<h4 id="software-open-source-zuerst_6">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://gohugo.io">Hugo</a></td>
+<td>Static Generator</td>
+<td>Schnellster statischer Website-Generator</td>
+<td>🐧 Ja</td>
+<td>gohugo.io</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://astro.build">Astro</a></td>
+<td>Static Generator</td>
+<td>Moderner Multi-Framework-Generator</td>
+<td>🐧 Ja</td>
+<td>astro.build</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://www.11ty.dev">Eleventy (11ty)</a></td>
+<td>Static Generator</td>
+<td>Flexibler statischer Generator</td>
+<td>🐧 Ja</td>
+<td>11ty.dev</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://de.wordpress.org">WordPress (self-hosted)</a></td>
+<td>CMS</td>
+<td>Meistgenutztes CMS weltweit</td>
+<td>🐧 Ja</td>
+<td>wordpress.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://ghost.org">Ghost (self-hosted)</a></td>
+<td>CMS</td>
+<td>Open-Source Blog &amp; Newsletter CMS</td>
+<td>🐧 Ja</td>
+<td>ghost.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://strapi.io">Strapi</a></td>
+<td>Headless CMS</td>
+<td>Open-Source API-first CMS</td>
+<td>🐧 Ja</td>
+<td>strapi.io</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_6">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blog/CMS</td>
+<td>WordPress (self-hosted), Ghost</td>
+<td>WordPress.com, Squarespace</td>
+</tr>
+<tr>
+<td>Headless CMS</td>
+<td>Strapi, Directus</td>
+<td>Contentful, Sanity, Prismic</td>
+</tr>
+<tr>
+<td>Static Generator</td>
+<td>Hugo, Astro, Eleventy</td>
+<td>—</td>
+</tr>
+<tr>
+<td>No-Code Builder</td>
+<td>Penpot + Astro</td>
+<td>Webflow, Framer</td>
+</tr>
+<tr>
+<td>E-Commerce</td>
+<td>WooCommerce (WordPress OS)</td>
+<td>Shopify</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="26-thema-datenbanken-mit-ki-unterstutzung">2.6 Thema: Datenbanken mit KI-Unterstützung</h3>
+<h4 id="konzept-welche-datenbank-fur-welchen-anwendungsfall">Konzept: Welche Datenbank für welchen Anwendungsfall?</h4>
+<table>
+<thead>
+<tr>
+<th>Datenbanktyp</th>
+<th>Wann nutzen</th>
+<th>Open-Source-Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Relational (SQL)</strong></td>
+<td>Strukturierte Daten, Beziehungen</td>
+<td>PostgreSQL, SQLite</td>
+</tr>
+<tr>
+<td><strong>Dokument (NoSQL)</strong></td>
+<td>Flexible Strukturen, JSON</td>
+<td>CouchDB</td>
+</tr>
+<tr>
+<td><strong>Key-Value</strong></td>
+<td>Caching, Sessions</td>
+<td>Valkey (Redis OS-Fork)</td>
+</tr>
+<tr>
+<td><strong>Vektor-DB</strong></td>
+<td>KI-Embeddings, Semantic Search</td>
+<td>pgvector, Chroma</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-ki-generiert-sql-aber-vorsicht">Konzept: KI generiert SQL – aber Vorsicht!</h4>
+<div class="highlight"><pre><span></span><code><span class="c1">-- ❌ KI-generiert ohne Sicherheitshinweis (SQL-Injection-Risiko)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&quot; + userInput + &quot;&#39;</span><span class="err">&quot;</span><span class="p">;</span>
+
+<span class="c1">-- ✅ Korrekt: Prepared Statement</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">$</span><span class="mi">1</span><span class="w">  </span><span class="c1">-- PostgreSQL</span>
+</code></pre></div>
+<h4 id="software-open-source-zuerst_7">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://www.postgresql.org">PostgreSQL</a></td>
+<td>SQL-DB</td>
+<td>Leistungsfähigste Open-Source-Datenbank</td>
+<td>🐧 Ja</td>
+<td>postgresql.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://sqlite.org">SQLite</a></td>
+<td>SQL-DB</td>
+<td>Dateibasierte Datenbank</td>
+<td>🐧 Ja</td>
+<td>sqlite.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://mariadb.org">MariaDB</a></td>
+<td>SQL-DB</td>
+<td>Open-Source MySQL-Alternative</td>
+<td>🐧 Ja</td>
+<td>mariadb.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://github.com/pgvector/pgvector">pgvector</a></td>
+<td>Vektor-DB</td>
+<td>KI-Embeddings in PostgreSQL</td>
+<td>🐧 Ja</td>
+<td>github.com/pgvector</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://www.trychroma.com">Chroma</a></td>
+<td>Vektor-DB</td>
+<td>Open-Source Vektor-Datenbank</td>
+<td>🐧 Ja</td>
+<td>trychroma.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://dbeaver.io">DBeaver</a></td>
+<td>DB-Client</td>
+<td>Universal-Datenbank-GUI</td>
+<td>🐧 Ja</td>
+<td>dbeaver.io</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_7">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SQL-Datenbank</td>
+<td>PostgreSQL, MariaDB, SQLite</td>
+<td>Oracle DB, MS SQL Server</td>
+</tr>
+<tr>
+<td>Vektor-Datenbank</td>
+<td>pgvector, Chroma, Weaviate</td>
+<td>Pinecone, Qdrant Cloud</td>
+</tr>
+<tr>
+<td>DB-GUI</td>
+<td>DBeaver, Adminer</td>
+<td>DataGrip, TablePlus</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="27-thema-barrierefreiheit-accessibility-mit-ki">2.7 Thema: Barrierefreiheit (Accessibility) mit KI</h3>
+<h4 id="konzept-wcag-richtlinien-die-vier-prinzipien">Konzept: WCAG-Richtlinien – die vier Prinzipien</h4>
+<table>
+<thead>
+<tr>
+<th>Prinzip</th>
+<th>Bedeutung</th>
+<th>KI-Unterstützung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wahrnehmbar</strong></td>
+<td>Inhalte für alle Sinne</td>
+<td>Alt-Texte, Kontrast prüfen lassen</td>
+</tr>
+<tr>
+<td><strong>Bedienbar</strong></td>
+<td>Nur mit Tastatur nutzbar</td>
+<td>Tab-Reihenfolge per Prompt prüfen</td>
+</tr>
+<tr>
+<td><strong>Verständlich</strong></td>
+<td>Klare Sprache</td>
+<td>Formulare &amp; Fehlertexte mit KI verbessern</td>
+</tr>
+<tr>
+<td><strong>Robust</strong></td>
+<td>Kompatibel mit Hilfstechnologien</td>
+<td>ARIA-Attribute im Prompt einfordern</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-was-ki-code-typisch-vergisst">Konzept: Was KI-Code typisch vergisst</h4>
+<ul>
+<li><code>alt</code>-Attribute bei Bildern</li>
+<li><code>aria-label</code> bei Icon-Buttons</li>
+<li>Ausreichende Farbkontraste (WCAG 4,5:1)</li>
+<li><code>label</code>-Verknüpfungen bei Formularen</li>
+<li>Focus-Styles für Tastaturnavigation</li>
+</ul>
+<p><strong>Lösung:</strong> Im Prompt immer „WCAG 2.1 AA konform" als Anforderung nennen!</p>
+<h4 id="software-open-source-zuerst_8">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://github.com/dequelabs/axe-core">axe-core</a></td>
+<td>A11y-Test</td>
+<td>Open-Source Accessibility-Testing-Engine</td>
+<td>🐧 Ja</td>
+<td>github.com/dequelabs</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://pa11y.org">Pa11y</a></td>
+<td>A11y-CLI</td>
+<td>Automatisierte A11y-Tests per CLI</td>
+<td>🐧 Ja</td>
+<td>pa11y.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://developer.chrome.com/docs/lighthouse/">Lighthouse</a></td>
+<td>Audit</td>
+<td>Accessibility-Audit in Chrome DevTools</td>
+<td>🐧 Ja</td>
+<td>developer.chrome.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://wiki.gnome.org/Projects/Orca">Orca</a></td>
+<td>Screenreader</td>
+<td>Linux Screenreader (GNOME)</td>
+<td>🐧 Ja</td>
+<td>wiki.gnome.org</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_8">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A11y-Testing</td>
+<td>axe-core, Pa11y, Lighthouse</td>
+<td>Deque axe Pro, Siteimprove</td>
+</tr>
+<tr>
+<td>Screenreader-Test</td>
+<td>Orca (Linux)</td>
+<td>JAWS</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="phase-3-optimierung-deployment">🔴 Phase 3 – Optimierung &amp; Deployment</h2>
+<blockquote>
+<p><strong>Was lerne ich hier?</strong><br />
+Websites testen, optimieren und produktiv betreiben – mit KI als Analyse-Assistent.<br />
+<strong>Voraussetzungen:</strong> Phase 1 &amp; 2 abgeschlossen.</p>
+</blockquote>
+<hr />
+<h3 id="31-konzept-von-der-entwicklung-zum-produktiven-betrieb">3.1 Konzept: Von der Entwicklung zum produktiven Betrieb</h3>
+<h4 id="der-web-produktions-stack-vollstandig-open-source">Der Web-Produktions-Stack (vollständig Open Source)</h4>
+<pre class="mermaid"><code>graph TD
+    A["💻 Entwicklung\n(VSCodium + Continue.dev)"] --&gt; B["🧪 Testing\n(Playwright, Vitest)"]
+    B --&gt; C["🔍 Code-Review\n(Gitea)"]
+    C --&gt; D["⚙️ CI/CD\n(Woodpecker CI)"]
+    D --&gt; E["📦 Build\n(Docker)"]
+    E --&gt; F["🌐 Webserver\n(Nginx / Caddy)"]
+    F --&gt; G["🔒 SSL\n(Let's Encrypt)"]
+    G --&gt; H["📊 Monitoring\n(Grafana + Prometheus)"]</code></pre>
+<hr />
+<h3 id="32-thema-testing-debugging-mit-ki">3.2 Thema: Testing &amp; Debugging mit KI</h3>
+<h4 id="konzept-test-typen-im-uberblick">Konzept: Test-Typen im Überblick</h4>
+<table>
+<thead>
+<tr>
+<th>Test-Typ</th>
+<th>Was wird getestet</th>
+<th>Open-Source-Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unit-Test</strong></td>
+<td>Einzelne Funktionen</td>
+<td>Vitest, pytest</td>
+</tr>
+<tr>
+<td><strong>Integrations-Test</strong></td>
+<td>Zusammenspiel von Komponenten</td>
+<td>Jest, pytest</td>
+</tr>
+<tr>
+<td><strong>E2E-Test</strong></td>
+<td>Kompletter Nutzerfluss</td>
+<td>Playwright, Cypress</td>
+</tr>
+<tr>
+<td><strong>A11y-Test</strong></td>
+<td>Barrierefreiheit</td>
+<td>axe-core, Pa11y</td>
+</tr>
+<tr>
+<td><strong>Performance-Test</strong></td>
+<td>Ladezeiten</td>
+<td>Lighthouse, k6</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-ki-debugging-workflow">Konzept: KI-Debugging-Workflow</h4>
+<pre class="mermaid"><code>graph LR
+    A["🐛 Fehler tritt auf"] --&gt; B["📋 Fehlermeldung kopieren"]
+    B --&gt; C["🤖 KI fragen\n(Ollama lokal)"]
+    C --&gt; D["💡 Erklärung &amp; Fix"]
+    D --&gt; E["🧪 Test ausführen"]
+    E --&gt; F{Behoben?}
+    F --&gt;|Nein| B
+    F --&gt;|Ja| G["✅ Fertig"]</code></pre>
+<h4 id="software-open-source-zuerst_9">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://playwright.dev">Playwright</a></td>
+<td>E2E-Testing</td>
+<td>Browser-Automatisierung &amp; E2E-Tests</td>
+<td>🐧 Ja</td>
+<td>playwright.dev</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://www.cypress.io">Cypress</a></td>
+<td>E2E-Testing</td>
+<td>Interaktive E2E-Tests</td>
+<td>🐧 Ja</td>
+<td>cypress.io</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://vitest.dev">Vitest</a></td>
+<td>Unit-Testing</td>
+<td>Schnelles Unit-Testing</td>
+<td>🐧 Ja</td>
+<td>vitest.dev</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://pytest.org">pytest</a></td>
+<td>Unit-Testing</td>
+<td>Python-Testing</td>
+<td>🐧 Ja</td>
+<td>pytest.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://k6.io">k6</a></td>
+<td>Last-Test</td>
+<td>Performance-/Last-Testing</td>
+<td>🐧 Ja</td>
+<td>k6.io</td>
+</tr>
+<tr>
+<td>🟩 🤖 <a href="https://ollama.com">Ollama</a></td>
+<td>LLM</td>
+<td>Fehlermeldungen lokal erklären</td>
+<td>🐧 Ja</td>
+<td>ollama.com</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_9">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E2E-Testing</td>
+<td>Playwright, Cypress</td>
+<td>TestComplete, Mabl</td>
+</tr>
+<tr>
+<td>KI-Debugging</td>
+<td>Ollama + Continue.dev</td>
+<td>GitHub Copilot Chat, Cursor</td>
+</tr>
+<tr>
+<td>Last-Test</td>
+<td>k6, Gatling</td>
+<td>Loader.io</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33-thema-performance-optimierung-mit-ki">3.3 Thema: Performance-Optimierung mit KI</h3>
+<h4 id="konzept-core-web-vitals">Konzept: Core Web Vitals</h4>
+<table>
+<thead>
+<tr>
+<th>Metrik</th>
+<th>Was es misst</th>
+<th>Guter Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>LCP</strong> (Largest Contentful Paint)</td>
+<td>Ladezeit des größten Inhalts</td>
+<td>&lt; 2,5 Sek.</td>
+</tr>
+<tr>
+<td><strong>INP</strong> (Interaction to Next Paint)</td>
+<td>Reaktionszeit auf Klicks</td>
+<td>&lt; 200 ms</td>
+</tr>
+<tr>
+<td><strong>CLS</strong> (Cumulative Layout Shift)</td>
+<td>Visuelle Stabilität</td>
+<td>&lt; 0,1</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-ki-gestutzte-lighthouse-analyse">Konzept: KI-gestützte Lighthouse-Analyse</h4>
+<div class="highlight"><pre><span></span><code>Prompt: &quot;Hier ist mein Lighthouse-Bericht: [Bericht].
+         Erkläre die drei wichtigsten Probleme und wie ich sie löse.&quot;
+</code></pre></div>
+<h4 id="konzept-wichtige-performance-techniken">Konzept: Wichtige Performance-Techniken</h4>
+<table>
+<thead>
+<tr>
+<th>Technik</th>
+<th>Was es bewirkt</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lazy Loading</strong></td>
+<td>Bilder erst laden wenn sichtbar</td>
+<td><code>loading="lazy"</code> (nativ)</td>
+</tr>
+<tr>
+<td><strong>Image-Optimierung</strong></td>
+<td>WebP statt PNG/JPEG</td>
+<td>Squoosh, Sharp</td>
+</tr>
+<tr>
+<td><strong>Code-Splitting</strong></td>
+<td>JS in kleine Chunks</td>
+<td>Vite, Rollup</td>
+</tr>
+<tr>
+<td><strong>Caching</strong></td>
+<td>Browser- &amp; Server-Cache</td>
+<td>Nginx-Konfiguration</td>
+</tr>
+</tbody>
+</table>
+<h4 id="software-open-source-zuerst_10">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://developer.chrome.com/docs/lighthouse/">Lighthouse</a></td>
+<td>Audit</td>
+<td>Performance, SEO, A11y Audit</td>
+<td>🐧 Ja</td>
+<td>developer.chrome.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://github.com/WPO-Foundation/webpagetest">WebPageTest (self-hosted)</a></td>
+<td>Performance</td>
+<td>Detaillierte Ladezeit-Analyse</td>
+<td>🐧 Ja</td>
+<td>github.com/WPO-Foundation</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://github.com/GoogleChromeLabs/squoosh">Squoosh</a></td>
+<td>Bilder</td>
+<td>Bildoptimierung</td>
+<td>🐧 Ja</td>
+<td>github.com/GoogleChromeLabs</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://sharp.pixelplumbing.com">Sharp</a></td>
+<td>Bilder</td>
+<td>Node.js-Bildverarbeitung</td>
+<td>🐧 Ja</td>
+<td>sharp.pixelplumbing.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://nginx.org/de/">Nginx</a></td>
+<td>Webserver</td>
+<td>Hochperformanter Webserver</td>
+<td>🐧 Ja</td>
+<td>nginx.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://caddyserver.com">Caddy</a></td>
+<td>Webserver</td>
+<td>Auto-HTTPS, einfache Konfiguration</td>
+<td>🐧 Ja</td>
+<td>caddyserver.com</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_10">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Performance-Audit</td>
+<td>Lighthouse, WebPageTest</td>
+<td>SpeedCurve, Calibre</td>
+</tr>
+<tr>
+<td>Bildoptimierung</td>
+<td>Squoosh, Sharp, ImageMagick</td>
+<td>Cloudinary, Imgix</td>
+</tr>
+<tr>
+<td>CDN</td>
+<td>Nginx + Proxy / Varnish</td>
+<td>Cloudflare, Fastly</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="34-thema-seo-optimierung-mit-ki">3.4 Thema: SEO-Optimierung mit KI</h3>
+<h4 id="konzept-technisches-seo-vs-content-seo">Konzept: Technisches SEO vs. Content-SEO</h4>
+<table>
+<thead>
+<tr>
+<th>SEO-Bereich</th>
+<th>Was es ist</th>
+<th>KI-Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Technisches SEO</strong></td>
+<td>Crawlbarkeit, Ladezeit, Struktur</td>
+<td>Lighthouse, Screaming Frog</td>
+</tr>
+<tr>
+<td><strong>On-Page-SEO</strong></td>
+<td>Keywords, Meta-Tags, Überschriften</td>
+<td>Ollama + Prompt</td>
+</tr>
+<tr>
+<td><strong>Content-SEO</strong></td>
+<td>Inhaltliche Relevanz</td>
+<td>Google Search Console</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-structured-data-schemaorg-mit-ki">Konzept: Structured Data (Schema.org) mit KI</h4>
+<div class="highlight"><pre><span></span><code><span class="c1">// Prompt: &quot;Erstelle JSON-LD für einen Blogartikel&quot;</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Article&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;headline&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Websites entwickeln mit KI&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;datePublished&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-07-15&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="software-open-source-zuerst_11">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://search.google.com/search-console">Google Search Console</a></td>
+<td>SEO</td>
+<td>Kostenlose Keyword-Analyse</td>
+<td>🌐 Web</td>
+<td>search.google.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://www.screamingfrog.co.uk/seo-spider/">Screaming Frog (Free)</a></td>
+<td>SEO-Crawler</td>
+<td>Crawling bis 500 URLs</td>
+<td>🐧 Ja</td>
+<td>screamingfrog.co.uk</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://developer.chrome.com/docs/lighthouse/">Lighthouse</a></td>
+<td>SEO-Audit</td>
+<td>SEO-Score &amp; Verbesserungen</td>
+<td>🐧 Ja</td>
+<td>developer.chrome.com</td>
+</tr>
+<tr>
+<td>🟩 🤖 <a href="https://ollama.com">Ollama</a></td>
+<td>LLM</td>
+<td>Meta-Tags, Schema.org generieren</td>
+<td>🐧 Ja</td>
+<td>ollama.com</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_11">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source / Kostenlos 🟩</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keyword-Analyse</td>
+<td>Google Search Console</td>
+<td>SEMrush, Ahrefs</td>
+</tr>
+<tr>
+<td>Website-Crawling</td>
+<td>Screaming Frog Free</td>
+<td>Screaming Frog Pro</td>
+</tr>
+<tr>
+<td>On-Page-Optimierung</td>
+<td>Lighthouse + Ollama</td>
+<td>Surfer SEO, NeuronWriter</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="35-thema-deployment-hosting-mit-ki-unterstutzung">3.5 Thema: Deployment &amp; Hosting mit KI-Unterstützung</h3>
+<h4 id="konzept-hosting-optionen">Konzept: Hosting-Optionen</h4>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Kontrolle</th>
+<th>Aufwand</th>
+<th>Open-Source-Weg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Shared Hosting</strong></td>
+<td>Gering</td>
+<td>Gering</td>
+<td>WordPress bei Anbieter</td>
+</tr>
+<tr>
+<td><strong>VPS / Root-Server</strong></td>
+<td>Hoch</td>
+<td>Mittel</td>
+<td>Nginx + Docker selbst</td>
+</tr>
+<tr>
+<td><strong>Self-hosted PaaS</strong></td>
+<td>Sehr hoch</td>
+<td>Mittel</td>
+<td>Coolify, Caprover</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-ki-generiert-docker-cicd-konfigurationen">Konzept: KI generiert Docker &amp; CI/CD-Konfigurationen</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Prompt: &quot;Erstelle ein Dockerfile für FastAPI + PostgreSQL&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">FROM python:3.12-slim</span>
+<span class="l l-Scalar l-Scalar-Plain">WORKDIR /app</span>
+<span class="l l-Scalar l-Scalar-Plain">COPY requirements.txt .</span>
+<span class="l l-Scalar l-Scalar-Plain">RUN pip install -r requirements.txt</span>
+<span class="l l-Scalar l-Scalar-Plain">COPY . .</span>
+<span class="l l-Scalar l-Scalar-Plain">CMD [&quot;uvicorn&quot;, &quot;main:app&quot;, &quot;--host&quot;, &quot;0.0.0.0&quot;]</span>
+</code></pre></div>
+<h4 id="konzept-cicd-automatisiert-deployen">Konzept: CI/CD – automatisiert deployen</h4>
+<pre class="mermaid"><code>graph LR
+    A["git push"] --&gt; B["Woodpecker CI:\nTests laufen"]
+    B --&gt; C{Tests OK?}
+    C --&gt;|Ja| D["Docker Image\nbauen &amp; deployen"]
+    C --&gt;|Nein| E["❌ Push abgelehnt"]</code></pre>
+<h4 id="software-open-source-zuerst_12">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://www.docker.com">Docker</a></td>
+<td>Container</td>
+<td>Anwendungen containerisieren</td>
+<td>🐧 Ja</td>
+<td>docker.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://podman.io">Podman</a></td>
+<td>Container</td>
+<td>Rootless Docker-Alternative</td>
+<td>🐧 Ja</td>
+<td>podman.io</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://nginx.org/de/">Nginx</a></td>
+<td>Webserver</td>
+<td>Reverse Proxy, SSL, Hosting</td>
+<td>🐧 Ja</td>
+<td>nginx.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://caddyserver.com">Caddy</a></td>
+<td>Webserver</td>
+<td>Auto-HTTPS via Let's Encrypt</td>
+<td>🐧 Ja</td>
+<td>caddyserver.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://coolify.io">Coolify</a></td>
+<td>Self-hosted PaaS</td>
+<td>Open-Source Heroku/Vercel-Alternative</td>
+<td>🐧 Ja</td>
+<td>coolify.io</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://caprover.com">Caprover</a></td>
+<td>Self-hosted PaaS</td>
+<td>Docker-basierte App-Plattform</td>
+<td>🐧 Ja</td>
+<td>caprover.com</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://woodpecker-ci.org">Woodpecker CI</a></td>
+<td>CI/CD</td>
+<td>Leichtes Open-Source CI/CD</td>
+<td>🐧 Ja</td>
+<td>woodpecker-ci.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://gitea.io/de-de/">Gitea Actions</a></td>
+<td>CI/CD</td>
+<td>Self-hosted GitHub Actions</td>
+<td>🐧 Ja</td>
+<td>gitea.io</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_12">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Container</td>
+<td>Docker, Podman</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Self-hosted PaaS</td>
+<td>Coolify, Caprover</td>
+<td>Heroku, Railway, Render</td>
+</tr>
+<tr>
+<td>Managed Hosting</td>
+<td>—</td>
+<td>Vercel, Netlify</td>
+</tr>
+<tr>
+<td>Webserver</td>
+<td>Nginx, Caddy, Apache</td>
+<td>—</td>
+</tr>
+<tr>
+<td>CI/CD</td>
+<td>Woodpecker CI, Gitea Actions</td>
+<td>GitHub Actions, CircleCI</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="36-thema-sicherheit-datenschutz-mit-ki">3.6 Thema: Sicherheit &amp; Datenschutz mit KI</h3>
+<h4 id="konzept-haufige-sicherheitslucken-in-ki-generiertem-code">Konzept: Häufige Sicherheitslücken in KI-generiertem Code</h4>
+<table>
+<thead>
+<tr>
+<th>Lücke</th>
+<th>Beschreibung</th>
+<th>Schutzmaßnahme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SQL-Injection</strong></td>
+<td>Ungeprüfte Eingaben in SQL</td>
+<td>Prepared Statements</td>
+</tr>
+<tr>
+<td><strong>XSS</strong></td>
+<td>JavaScript in Nutzereingaben</td>
+<td>Input-Sanitization, CSP-Header</td>
+</tr>
+<tr>
+<td><strong>CSRF</strong></td>
+<td>Gefälschte Anfragen</td>
+<td>CSRF-Token</td>
+</tr>
+<tr>
+<td><strong>Unsichere Passwörter</strong></td>
+<td>Schwache Hash-Algorithmen</td>
+<td>bcrypt, Argon2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konzept-dsgvo-konforme-webentwicklung">Konzept: DSGVO-konforme Webentwicklung</h4>
+<table>
+<thead>
+<tr>
+<th>Anforderung</th>
+<th>Umsetzung</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cookie-Einwilligung</strong></td>
+<td>Konformer Cookie-Banner</td>
+<td>Orejime, Klaro (OS)</td>
+</tr>
+<tr>
+<td><strong>Datensparsamkeit</strong></td>
+<td>Nur nötige Daten</td>
+<td>KI-Audit der Formulare</td>
+</tr>
+<tr>
+<td><strong>Datensicherheit</strong></td>
+<td>Verschlüsselung</td>
+<td>Let's Encrypt, bcrypt</td>
+</tr>
+<tr>
+<td><strong>Recht auf Löschung</strong></td>
+<td>Löschfunktion implementieren</td>
+<td>KI generiert den Code</td>
+</tr>
+</tbody>
+</table>
+<h4 id="software-open-source-zuerst_13">Software – Open Source zuerst:</h4>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Typ</th>
+<th>Funktion</th>
+<th>Ubuntu</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 <a href="https://www.zaproxy.org">OWASP ZAP</a></td>
+<td>Sicherheit</td>
+<td>Open-Source Web-Security-Scanner</td>
+<td>🐧 Ja</td>
+<td>zaproxy.org</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://github.com/aquasecurity/trivy">Trivy</a></td>
+<td>Sicherheit</td>
+<td>Container- &amp; Code-Vulnerability-Scanner</td>
+<td>🐧 Ja</td>
+<td>github.com/aquasecurity</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://github.com/fail2ban/fail2ban">Fail2ban</a></td>
+<td>Sicherheit</td>
+<td>Brute-Force-Schutz</td>
+<td>🐧 Ja</td>
+<td>github.com/fail2ban</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://github.com/empreinte-digitale/orejime">Orejime</a></td>
+<td>Datenschutz</td>
+<td>DSGVO-konformer Cookie-Banner</td>
+<td>🐧 Ja</td>
+<td>github.com/empreinte-digitale</td>
+</tr>
+<tr>
+<td>🟩 <a href="https://github.com/kiprotect/klaro">Klaro</a></td>
+<td>Datenschutz</td>
+<td>Open-Source Consent Manager</td>
+<td>🐧 Ja</td>
+<td>github.com/kiprotect</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vergleich-open-source-vs-kommerziell_13">Vergleich: Open Source vs. Kommerziell</h4>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Web-Security-Scan</td>
+<td>OWASP ZAP</td>
+<td>Burp Suite Pro</td>
+</tr>
+<tr>
+<td>Container-Scan</td>
+<td>Trivy</td>
+<td>Snyk Pro, Aqua Security</td>
+</tr>
+<tr>
+<td>Cookie-Consent (DSGVO)</td>
+<td>Orejime, Klaro</td>
+<td>Cookiebot, Usercentrics</td>
+</tr>
+<tr>
+<td>SSL-Zertifikat</td>
+<td>Let's Encrypt (kostenlos)</td>
+<td>Kommerziell</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="praxisprojekte">📋 Praxisprojekte</h2>
+<h3 id="einsteiger-portfolio-website-mit-ki">🟢 Einsteiger: Portfolio-Website mit KI</h3>
+<pre class="mermaid"><code>graph LR
+    A["📋 Konzept\nOllama + draw.io"] --&gt; B["🎨 Design\nPenpot"]
+    B --&gt; C["💻 HTML/CSS\nVSCodium + Continue.dev"]
+    C --&gt; D["🧪 Audit\nLighthouse"]
+    D --&gt; E["🚀 Deploy\nCaddy + Let's Encrypt"]
+    E --&gt; F["✅ Portfolio online"]</code></pre>
+<p><strong>Software (alle Open Source):</strong> Ollama · draw.io · Penpot · VSCodium · Continue.dev · Lighthouse · Caddy</p>
+<hr />
+<h3 id="fortgeschritten-blog-mit-hugo-ki-content">🟡 Fortgeschritten: Blog mit Hugo &amp; KI-Content</h3>
+<pre class="mermaid"><code>graph LR
+    A["💡 Keyword\nGoogle Search Console"] --&gt; B["📝 Artikel\nOllama + Markdown"]
+    B --&gt; C["🏗️ Build\nHugo"]
+    C --&gt; D["🖼️ Bilder\nComfyUI"]
+    D --&gt; E["🔍 SEO\nLighthouse"]
+    E --&gt; F["🚀 Deploy\nWoodpecker CI + Nginx"]
+    F --&gt; G["✅ Blog live"]</code></pre>
+<p><strong>Software (alle Open Source):</strong> Google Search Console · Ollama · Hugo · ComfyUI · Lighthouse · Woodpecker CI · Nginx</p>
+<hr />
+<h3 id="fortgeschritten-headless-cms-website">🟡 Fortgeschritten: Headless CMS Website</h3>
+<pre class="mermaid"><code>graph TD
+    A["📝 Inhalte\nStrapi CMS"] --&gt; B["🔌 API\nStrapi REST/GraphQL"]
+    B --&gt; C["🎨 Frontend\nAstro + Alpine.js"]
+    C --&gt; D["🧪 E2E-Tests\nPlaywright"]
+    D --&gt; E["🚀 CI/CD\nWoodpecker CI"]
+    E --&gt; F["🐳 Docker + Coolify"]
+    F --&gt; G["✅ Website live"]</code></pre>
+<p><strong>Software (alle Open Source):</strong> Strapi · Astro · Alpine.js · VSCodium · Continue.dev · Playwright · Woodpecker CI · Docker · Coolify</p>
+<hr />
+<h3 id="experte-ki-web-app-mit-vektor-suche">🔴 Experte: KI-Web-App mit Vektor-Suche</h3>
+<pre class="mermaid"><code>graph TD
+    A["💡 KI-Suche Website"] --&gt; B["🔧 Backend\nFastAPI + Python"]
+    B --&gt; C["🗄️ Datenbank\nPostgreSQL + pgvector"]
+    C --&gt; D["🤖 Embeddings\nOllama lokal"]
+    D --&gt; E["🎨 Frontend\nAstro + Alpine.js"]
+    E --&gt; F["🧪 Tests\nPlaywright + pytest"]
+    F --&gt; G["🚀 Deploy\nDocker + Coolify"]
+    G --&gt; H["✅ KI-Suche live"]</code></pre>
+<p><strong>Software (alle Open Source):</strong> FastAPI · PostgreSQL · pgvector · Ollama · Astro · Alpine.js · Playwright · pytest · Docker · Coolify</p>
+<hr />
+<h2 id="vollstandige-softwareubersicht-vergleich">📦 Vollständige Softwareübersicht &amp; Vergleich</h2>
+<h3 id="llm-modelle-immer-gelistet-unabhangig-vom-preis">LLM-Modelle (immer gelistet – unabhängig vom Preis)</h3>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Lokal / Cloud</th>
+<th>Ubuntu</th>
+<th>Preis</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟩 🤖 <a href="https://ollama.com">Ollama</a></td>
+<td>Lokal</td>
+<td>🐧 Ja</td>
+<td>Kostenlos</td>
+<td>ollama.com</td>
+</tr>
+<tr>
+<td>🟩 🤖 <a href="https://lmstudio.ai">LM Studio</a></td>
+<td>Lokal</td>
+<td>🐧 Ja</td>
+<td>Kostenlos</td>
+<td>lmstudio.ai</td>
+</tr>
+<tr>
+<td>🟩 🤖 <a href="https://continue.dev">Continue.dev</a></td>
+<td>IDE-Plugin lokal</td>
+<td>🐧 Ja</td>
+<td>Kostenlos</td>
+<td>continue.dev</td>
+</tr>
+<tr>
+<td>🟩 🤖 <a href="https://aider.chat">Aider</a></td>
+<td>CLI lokal</td>
+<td>🐧 Ja</td>
+<td>Kostenlos</td>
+<td>aider.chat</td>
+</tr>
+<tr>
+<td>🤖 <a href="https://chat.openai.com">ChatGPT</a></td>
+<td>Cloud</td>
+<td>🌐 Web</td>
+<td>Freemium</td>
+<td>openai.com</td>
+</tr>
+<tr>
+<td>🤖 <a href="https://claude.ai">Claude</a></td>
+<td>Cloud</td>
+<td>🌐 Web</td>
+<td>Freemium</td>
+<td>claude.ai</td>
+</tr>
+<tr>
+<td>🤖 <a href="https://gemini.google.com">Gemini</a></td>
+<td>Cloud</td>
+<td>🌐 Web</td>
+<td>Freemium</td>
+<td>gemini.google.com</td>
+</tr>
+</tbody>
+</table>
+<h3 id="entwicklungsumgebung-code-assistenten">Entwicklungsumgebung &amp; Code-Assistenten</h3>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code-Editor</td>
+<td>VSCodium, Neovim</td>
+<td>Cursor, Windsurf</td>
+</tr>
+<tr>
+<td>KI-Code-Assistent</td>
+<td>Continue.dev + Ollama</td>
+<td>GitHub Copilot, Tabnine</td>
+</tr>
+<tr>
+<td>Terminal-KI</td>
+<td>Aider + Ollama</td>
+<td>Warp</td>
+</tr>
+<tr>
+<td>Git-Hosting</td>
+<td>Gitea (self-hosted)</td>
+<td>GitHub, GitLab</td>
+</tr>
+</tbody>
+</table>
+<h3 id="design-prototyping">Design &amp; Prototyping</h3>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI-Design</td>
+<td>Penpot (self-hosted)</td>
+<td>Figma, Sketch</td>
+</tr>
+<tr>
+<td>Wireframing</td>
+<td>Excalidraw, draw.io</td>
+<td>Miro, Balsamiq</td>
+</tr>
+<tr>
+<td>Vektorgrafiken</td>
+<td>Inkscape</td>
+<td>Adobe Illustrator</td>
+</tr>
+<tr>
+<td>Bildbearbeitung</td>
+<td>GIMP</td>
+<td>Adobe Photoshop</td>
+</tr>
+<tr>
+<td>KI-Bildgenerierung</td>
+<td>ComfyUI + Flux</td>
+<td>Midjourney, Adobe Firefly</td>
+</tr>
+</tbody>
+</table>
+<h3 id="frontend">Frontend</h3>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Build-Tool</td>
+<td>Vite, esbuild, Rollup</td>
+<td>—</td>
+</tr>
+<tr>
+<td>CSS-Framework</td>
+<td>Tailwind CSS, Bootstrap</td>
+<td>—</td>
+</tr>
+<tr>
+<td>JS-Framework</td>
+<td>Alpine.js, Vue, Svelte, React</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Linter / Formatter</td>
+<td>ESLint, Prettier, Stylelint</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Vollständige Seiten aus Prompt</td>
+<td>Aider + Ollama</td>
+<td>v0.dev</td>
+</tr>
+</tbody>
+</table>
+<h3 id="backend-datenbank">Backend &amp; Datenbank</h3>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backend-Framework</td>
+<td>FastAPI, Express.js, Hono</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Headless CMS</td>
+<td>Strapi, Directus, Ghost</td>
+<td>Contentful, Sanity</td>
+</tr>
+<tr>
+<td>BaaS</td>
+<td>Supabase (self-hosted), PocketBase</td>
+<td>Firebase</td>
+</tr>
+<tr>
+<td>SQL-Datenbank</td>
+<td>PostgreSQL, MariaDB, SQLite</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Vektor-Datenbank</td>
+<td>pgvector, Chroma</td>
+<td>Pinecone</td>
+</tr>
+<tr>
+<td>DB-GUI</td>
+<td>DBeaver, Adminer</td>
+<td>DataGrip</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cms-static-generators">CMS &amp; Static Generators</h3>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Static Generator</td>
+<td>Hugo, Astro, Eleventy</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Blog/CMS</td>
+<td>WordPress (self-hosted), Ghost</td>
+<td>WordPress.com</td>
+</tr>
+<tr>
+<td>E-Commerce</td>
+<td>WooCommerce</td>
+<td>Shopify</td>
+</tr>
+<tr>
+<td>No-Code Builder</td>
+<td>—</td>
+<td>Webflow, Framer</td>
+</tr>
+</tbody>
+</table>
+<h3 id="testing-qualitat">Testing &amp; Qualität</h3>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E2E-Testing</td>
+<td>Playwright, Cypress</td>
+<td>TestComplete, Mabl</td>
+</tr>
+<tr>
+<td>Unit-Testing</td>
+<td>Vitest, Jest, pytest</td>
+<td>—</td>
+</tr>
+<tr>
+<td>A11y-Testing</td>
+<td>axe-core, Pa11y, Lighthouse</td>
+<td>Deque axe Pro</td>
+</tr>
+<tr>
+<td>Performance-Test</td>
+<td>k6, Gatling</td>
+<td>Loader.io</td>
+</tr>
+</tbody>
+</table>
+<h3 id="performance-seo">Performance &amp; SEO</h3>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Performance-Audit</td>
+<td>Lighthouse, WebPageTest (self-hosted)</td>
+<td>SpeedCurve</td>
+</tr>
+<tr>
+<td>Bildoptimierung</td>
+<td>Squoosh, Sharp</td>
+<td>Cloudinary</td>
+</tr>
+<tr>
+<td>SEO-Analyse</td>
+<td>Google Search Console, Lighthouse</td>
+<td>SEMrush, Ahrefs</td>
+</tr>
+<tr>
+<td>Website-Crawling</td>
+<td>Screaming Frog Free</td>
+<td>Screaming Frog Pro</td>
+</tr>
+</tbody>
+</table>
+<h3 id="deployment-hosting">Deployment &amp; Hosting</h3>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Container</td>
+<td>Docker, Podman</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Self-hosted PaaS</td>
+<td>Coolify, Caprover</td>
+<td>Heroku, Railway</td>
+</tr>
+<tr>
+<td>Webserver</td>
+<td>Nginx, Caddy, Apache</td>
+<td>—</td>
+</tr>
+<tr>
+<td>CI/CD</td>
+<td>Woodpecker CI, Gitea Actions</td>
+<td>GitHub Actions</td>
+</tr>
+<tr>
+<td>Monitoring</td>
+<td>Grafana + Prometheus</td>
+<td>Datadog</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sicherheit-datenschutz">Sicherheit &amp; Datenschutz</h3>
+<table>
+<thead>
+<tr>
+<th>Funktion</th>
+<th>Open Source 🟩 (Ubuntu)</th>
+<th>Kommerziell 💰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Security-Scanner</td>
+<td>OWASP ZAP, Trivy</td>
+<td>Burp Suite Pro</td>
+</tr>
+<tr>
+<td>Brute-Force-Schutz</td>
+<td>Fail2ban</td>
+<td>Cloudflare</td>
+</tr>
+<tr>
+<td>Cookie-Consent (DSGVO)</td>
+<td>Orejime, Klaro</td>
+<td>Cookiebot</td>
+</tr>
+<tr>
+<td>SSL-Zertifikat</td>
+<td>Let's Encrypt (kostenlos)</td>
+<td>Kommerziell</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="weiterfuhrende-ressourcen">Weiterführende Ressourcen</h2>
+<ul>
+<li><strong><a href="https://developer.mozilla.org/de/">MDN Web Docs</a></strong> – Offizielle Web-Referenz (Open Source) 🟩</li>
+<li><strong><a href="https://web.dev">web.dev</a></strong> – Google-Ressource für moderne Webentwicklung</li>
+<li><strong><a href="https://owasp.org/www-project-top-ten/">OWASP Top 10</a></strong> – Die 10 häufigsten Sicherheitslücken</li>
+<li><strong><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a></strong> – Barrierefreiheits-Richtlinien</li>
+<li><strong><a href="https://ollama.com/library">Ollama Library</a></strong> – Verfügbare lokale Code-LLMs 🟩</li>
+<li><strong><a href="https://github.com/awesome-selfhosted/awesome-selfhosted">awesome-selfhosted</a></strong> – Self-hosted Open-Source-Apps 🟩</li>
+</ul>
+<hr />
+<p><em>Letzte Aktualisierung: Juli 2026</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie-Zustimmung</h4>
+<p>Wir verwenden Cookies, um Ihre Besuche und Präferenzen zu erkennen und die Effektivität unserer Dokumentation zu messen.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Akzeptieren</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Einstellungen</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
