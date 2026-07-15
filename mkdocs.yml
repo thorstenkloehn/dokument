@@ -12,13 +12,33 @@ nav:
       - Nginx Einstellung: Server/nginx.md
       - Tomcat: Server/Tomcat.md
       - Weiter Software: Server/Software.md
+      - Skalierbare KI/ML-Infrastrukturen: Server/ki-ml-infrastrukturen.md
   - IDE: IDE/index.md
   - Video:
       - Übersicht: Video/index.md
       - KI in der Film- und Videoproduktion: Video/ki-filmproduktion.md
+  - Content:
+      - KI Content Creation: Content/ki-content-creation.md
+  - Design:
+      - Design nach KI: Design/design-nach-ki.md
+      - Ideenfindung mit KI: Design/ideenfindung-ki.md
+      - 'Leseprobe: KI für Kreative': Design/leseprobe-ki-kreative.md
+  - Webentwicklung:
+      - KI Websites entwickeln: Webentwicklung/ki-webentwicklung.md
+  - Coding:
+      - KI Coding: Coding/ki-coding.md
+      - Eigene KI-Anwendungen: Coding/ki-anwendungen-programmieren.md
+      - Schrödinger programmiert KI: Coding/schroedinger-programmiert-ki.md
+      - Programmieren lernen mit KI: Coding/programmieren-lernen-ki.md
+      - Programmieren mit KI: Coding/programmieren-mit-ki.md
+      - Vibe Coding & Engineering: Coding/vibe-coding-engineering.md
   - Desktop Automation: Desktop_Automation/index.md
-  - E-Learning-Autorentool: E-Learning-Autorentool/index.md
-  - Audio: Audio/index.md
+  - E-Learning & Training:
+      - Übersicht: E-Learning-Autorentool/index.md
+      - KI in Lehre & Weiterbildung: E-Learning-Autorentool/ki-lehre-weiterbildung.md
+  - Audio & Musik:
+      - Übersicht: Audio/index.md
+      - KI und Audio: Audio/ki-audio.md
   - Android: IDE/Android.md
   - Dokument Erstellen:
       - Übersicht: Dokument_Erstellen/index.md
