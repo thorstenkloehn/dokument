@@ -13,7 +13,9 @@ nav:
       - Tomcat: Server/Tomcat.md
       - Weiter Software: Server/Software.md
   - IDE: IDE/index.md
-  - Video: Video/index.md
+  - Video:
+      - Übersicht: Video/index.md
+      - KI in der Film- und Videoproduktion: Video/ki-filmproduktion.md
   - Desktop Automation: Desktop_Automation/index.md
   - E-Learning-Autorentool: E-Learning-Autorentool/index.md
   - Audio: Audio/index.md
