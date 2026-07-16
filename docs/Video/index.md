@@ -78,6 +78,53 @@ Werkzeuge, um Betriebssysteme, Terminals und Benutzeroberflächen programmatisch
 * **PyAutoGUI** (Python) / **RobotJS** (Node.js): Ermöglicht die programmatische Steuerung von Maus und Tastatur, um menschliche Interaktionen mit Software auf dem Desktop zu simulieren.
 * **Xvfb (X virtual framebuffer)**: Erzeugt einen virtuellen Bildschirm im Arbeitsspeicher, wodurch grafische Benutzeroberflächen auf Headless-Servern ohne physischen Monitor ausgeführt und aufgezeichnet werden können.
 
+---
+
+## 10. KI-gestützte Videogenerierung & Bearbeitung
+
+Tools und Frameworks, die künstliche Intelligenz zur automatischen Erstellung, Bearbeitung und Verbesserung von Videos nutzen.
+
+* **Stable Video Diffusion** (Python): Ein Diffusionsmodell von Stability AI zur Generierung von Videos aus Textprompts oder Bild-zu-Video-Transformationen.
+* **AnimateDiff**: Eine Erweiterung für Stable Diffusion, die Bewegungen in generierten Videos verbessert und flüssigere Animationen ermöglicht.
+* **Deforum** (Stable Diffusion): Ein Automations-Toolkit für Stable Diffusion, das automatische Video-Generierung mit Keyframe-Animation und Prompt-Scheduling ermöglicht.
+* **RunwayML** (Cloud/On-Premise): Eine Plattform für KI-gestützte Videobearbeitung inklusive Green-Screen-Entfernung, Stil-Transfer und Content-Aware Editing.
+
+---
+
+## 11. Video-Analyse & Computer Vision
+
+Bibliotheken und Tools zur Extraktion von Informationen aus Videos mittels Computer Vision und KI.
+
+* **MediaPipe** (Python/C++/JS): Google's Framework für multimodale Analyse (Gesichtserkennung, Pose-Estimation, Hand-Tracking, Objekterkennung) in Echtzeit.
+* **YOLO (You Only Look Once)** (Python): Echtzeit-Objekterkennung in Videos für verschiedene Kategorien.
+* **DeepFace**: Gesichtserkennung und -analyse für Videos (Emotionen, Alter, Geschlecht).
+* **OpenPose**: Multi-Person Pose-Estimation für Bewegungsanalyse in Videos.
+* **EasyOCR**: Texterkennung (OCR) in Videos für Untertitel-Generierung oder Dokumenten-Digitalisierung.
+
+---
+
+## 12. Video-Transkription & Untertitelung
+
+Automatisierte Generierung von Untertiteln, Transkriptionen und Übersetzungen für Videos.
+
+* **Whisper** (Python): OpenAI's Sprachmodell für hochgenaue Speech-to-Text-Transkription in über 100 Sprachen.
+* **Vosk**: Offline-fähige Spracherkennung für Transkriptionen ohne Cloud-Abhängigkeit.
+* **PyAnnote** (Python): Audio/Speaker-Diarization für die Trennung verschiedener Sprecher in Aufzeichnungen.
+* **Aeneas**: Automatische Synchronisation von Text und Audio für präzise Untertitel.
+
+---
+
+## 13. Live-Streaming & Broadcast-Automatisierung
+
+Tools zur Automatisierung von Live-Übertragungen und Broadcast-Workflows.
+
+* **FFmpeg für Live-Streaming**: RTMP/Streaming zu Plattformen wie YouTube, Twitch, oder eigene RTMP-Server.
+* **NGINX-RTMP-Module**: Eigener RTMP-Server für Live-Streaming mit HLS/DASH-Adaptive Streaming.
+* **SRS (Simple Realtime Server)**: Hochperformanter RTMP/WebRTC-Server für Live-Streaming.
+* **MistServer**: Open-Source Streaming Server für adaptive Bitrate-Streaming (HLS, DASH).
+
+---
+
 ## KI-Agenten-Tauglichkeit (Automatisierte Filmerstellung)
 
 Empfehlung, welche der oben gelisteten Tools sich am besten eignen, um von KI-Agenten gesteuert zu werden, um eigenständig Videos oder Filme zu erstellen:
@@ -87,4 +134,7 @@ Empfehlung, welche der oben gelisteten Tools sich am besten eignen, um von KI-Ag
 * **Asciinema / Terminalizer** (Kategorie 9) – **Hervorragend geeignet:** KI-Agenten können Terminal-Befehle oder Eingabesimulationen sehr einfach als Text bzw. Konfigurationsdatei schreiben, um perfekte Terminal-Demos zu erstellen.
 * **MoviePy** (Kategorie 3) – **Sehr gut geeignet:** Die intuitive Python-Syntax erlaubt es KI-Agenten, klassische Videoschnitt-Aufgaben (Schneiden, Zusammenfügen, Audio-Mischung) fehlerfrei direkt über ausführbare Skripte durchzuführen.
 * **Manim** (Kategorie 3) – **Sehr gut geeignet:** Perfekt für mathematische und logische Animationen, da der Aufbau streng logisch im Python-Code erfolgt und kein GUI-Editor benötigt wird.
+* **Stable Video Diffusion / AnimateDiff** (Kategorie 10) – **Sehr gut geeignet:** Python-basierte KI-Videogenerierung, die durch KI-Agenten über Prompt-Engineering und Parameter-Optimierung gesteuert werden kann.
+* **Whisper / Vosk** (Kategorie 12) – **Hervorragend geeignet:** Python-Skripte für automatische Transkription können von KI-Agenten leicht generiert und in Video-Pipelines integriert werden.
+* **FFmpeg** (Kategorie 4/13) – **Hervorragend geeignet:** Komplexe FFmpeg-Befehle für Encoding, Streaming und Format-Konvertierung können von KI-Agenten deterministisch generiert werden.
 * **Remotion / Revideo** (Kategorie 1) – **Bedingt geeignet:** Äußerst mächtig für komponentenbasierte Web-Videos, allerdings ist das Node.js- und React-Setup für KI-Agenten fehleranfälliger in der eigenständigen Konfiguration als reines HTML/CSS oder Python-Skripte.

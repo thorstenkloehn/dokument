@@ -1,279 +1,256 @@
+# IDE & Entwicklungsumgebung: Übersicht
 
-## System aktualisieren
+Eine zentralisierte Übersicht über Entwicklungsumgebungen, Editoren, KI-Assistenten und Tools zur Einrichtung einer produktiven lokalen Entwicklungsumgebung unter Ubuntu.
 
-Öffnen Sie das Terminal und führen Sie folgende Befehle aus, um Ihr System zu aktualisieren:
+---
 
-```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt install libsecret-1-0 libsecret-tools libsecret-1-dev libglib2.0-dev
-sudo ubuntu-drivers install
-```
-## Java und Entwicklungswerkzeuge installieren
+## Entwicklungsumgebungen im Überblick
 
-```bash
-sudo apt install openjdk-26-jdk
-sudo apt install maven
-```
-## Sudo ohne Passwort konfigurieren (NOPASSWD)
+Moderne IDEs (Integrated Development Environments) und Code-Editoren bieten Entwicklern mächtige Werkzeuge zur effizienten Softwareentwicklung. Mit der Integration von KI-Assistenten wird die Produktivität noch einmal deutlich gesteigert.
 
-Statt das Passwort für `sudo` Befehle jedes Mal einzugeben, können Sie Ihren Benutzer so konfigurieren, dass kein Passwort abgefragt wird.
+### Entwicklungsumgebungs-Kategorien
 
-Öffnen Sie die Konfigurationsdatei mit:
+| Kategorie | Beschreibung | Typische Tools |
+|-----------|--------------|----------------|
+| **Full-featured IDEs** | Komplette Entwicklungsumgebungen mit Debugging, Refactoring, Projektmanagement | IntelliJ IDEA, VS Code, PyCharm, WebStorm |
+| **Code Editoren** | Leichte, schnelle Editoren mit Erweiterungsmöglichkeiten | VS Code, Sublime Text, Neovim, Zed |
+| **Cloud IDEs** | Browser-basierte Entwicklungsumgebungen | GitHub Codespaces, Gitpod, Replit |
+| **KI-IDE** | IDEs mit integrierter KI-Unterstützung | Google Antigravity, Cursor, GitHub Copilot |
 
-```bash
-sudo visudo
-```
+---
 
-Fügen Sie am Ende der Datei folgende Zeile für Ihren Benutzer hinzu:
+## Hauptthemen
 
-```text
-dein_benutzername ALL=(ALL) NOPASSWD:ALL
-```
+### 1. [System-Setup und Installation](setup.md)
+**Detaillierte Anleitungen zur Einrichtung des lokalen Entwicklungsrechners** unter Ubuntu 25.10.
 
-Speichern und schließen Sie den Editor.
+* **Systemvoraussetzungen**: Paketinstallationen, Updates, Abhängigkeiten
+* **System-Setup**: passwortloses sudo, Treiber, Bibliotheken
+* **Sprachruntimes**: Java, .NET, Python, Node.js, Go, Rust, C/C++
+* **Datenbanken**: PostgreSQL, PostGIS, OSM-Datenverarbeitung
+* **Entwicklungstools**: Git, GitHub CLI, Chrome, VS Code
 
-## Google Chrome installieren
+**Unterstützte Sprachen & Frameworks:**
+- .NET SDK, Node.js, Python, Java, Golang, Rust, C/C++
+- Maven, npm, pip, cargo, etc.
 
-```bash
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-```
-## PostgreSQL installieren
-```
-# Import the repository signing key:
-sudo apt install curl ca-certificates
-sudo install -d /usr/share/postgresql-common/pgdg
-sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://www.postgresql.org/media/keys/ACCC4CF8.asc
+**Ideal für:** Entwickler, die eine lokale Entwicklungsumgebung einrichten wollen.
 
-# Create the repository configuration file:
-. /etc/os-release
-sudo sh -c "echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
+---
 
-# Update the package lists:
-sudo apt update
+### 2. [Lokale KI-Frontends](lokale-ki-frontends.md)
+**Open-Source Web-UIs für lokale KI-Modelle** – Professionelle Alternativen zu Cloud-basierten KI-Assistenten.
 
-```
+* **Open WebUI** – Beste Integration für Ollama mit RAG und Dokumenten-Upload
+* **LibreChat** – Multi-Provider-Unterstützung (OpenAI, Anthropic, Ollama, etc.)
+* **Text-generation-webui (Oobabooga)** – Für Power-User mit manueller Modell-Kontrolle
 
-## Git installieren und konfigurieren
-
-```bash
-sudo apt-get install git gh
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+**Architektur-Übersicht:**
+```mermaid
+graph TD
+    A[Benutzer-Anfrage] --> B[Web-UI]
+    B -->|API-Schnittstelle| C[Docker-Netzwerk]
+    C -->|Port 11434| D[Ollama (lokale Modelle)]
+    C -->|Externe API| E[Cloud APIs]
 ```
 
-## GitHub CLI (gh) konfigurieren
+**Hauptmerkmale:**
+- Direkte Ollama-Integration: Automatische Modell-Erkennung
+- Integriertes RAG: Dokumenten-Upload und Vektorisierung
+- Web-Search: Integration mit Suchmaschinen
+- Benutzerverwaltung: Admin/User Rollen, Authentifizierung
 
-```bash
-gh auth login
+---
+
+### 3. Android-Entwicklung
+
+[Detaillierte Anleitung zur Android-Entwicklung](Android.md)
+
+* **Android Studio**: Offizielle IDE für Android-Entwicklung
+* **SDK & Tools**: Android SDK, Emulator, Build-Tools
+* **Sprachen**: Kotlin (bevorzugt), Java
+* **Frameworks**: Jetpack Compose, AndroidX, Material Design
+* **.NET MAUI**: Cross-Platform mit .NET für mobile Apps
+
+---
+
+## Editoren & IDEs im Detail
+
+### Full-featured IDEs
+
+#### JetBrains Familie
+
+| IDE | Primäre Sprache | Hauptmerkmale | Preis |
+|-----|-----------------|---------------|-------|
+| **IntelliJ IDEA** | Java, Kotlin | Java-Entwicklung, Spring, Android | Kostenlos / Ultimate |
+| **PyCharm** | Python | Data Science, Web-Development | Kostenlos / Professional |
+| **WebStorm** | JavaScript/TypeScript | Frontend-Entwicklung | Kostenpflichtig |
+| **GoLand** | Go | Go-Entwicklung, Debugging | Kostenpflichtig |
+| **RustRover** | Rust | Rust-Entwicklung | Kostenpflichtig |
+| **CLion** | C/C++ | C/C++-Entwicklung | Kostenpflichtig |
+
+#### Microsoft Visual Studio Familie
+
+| IDE | Plattform | Hauptmerkmale |
+|-----|-----------|---------------|
+| **Visual Studio** | Windows | .NET, C++, Windows-Apps |
+| **Visual Studio Code** | Cross-Platform | Erweiterbar, leicht, KI-Integration |
+
+### Code Editoren
+
+#### Visual Studio Code (VS Code)
+
+**Vorteile:**
+- Cross-Platform (Windows, macOS, Linux)
+- Leicht und schnell
+- Große Erweiterungbibliothek
+- Integrierte Terminal- und Debugging-Tools
+- Git-Integration
+
+**Wichtige Erweiterungen:**
+- **GitHub Copilot** – KI-gestützte Code-Vervollständigung
+- **Claude Code** – Intelligente Code-Assistenz
+- **OpenAI ChatGPT** – ChatGPT-Integration
+- **Java Extension Pack** – Java-Unterstützung
+- **Python** – Python-Sprachunterstützung
+- **C/C++** – C/C++-Entwicklung
+- **ESLint** – JavaScript-Linting
+- **Prettier** – Code-Formatierung
+
+#### Neovim
+
+**Vorteile:**
+- Terminal-basiert
+- Extrem anpassbar (VimScript, Lua)
+- Plugin-System (LSP, Treesitter, etc.)
+- Leicht und schnell
+- Cross-Platform
+
+**Beliebte Plugins:**
+- **coc.nvim**: Intellisense Engine
+- **nvim-treesitter**: Syntax-Highlighting
+- **telescope.nvim**: Fuzzy Finder
+- **nvim-lspconfig**: LSP-Konfiguration
+
+#### Zed
+
+**Vorteile:**
+- Moderner, schneller Editor
+- Kollaboratives Coding
+- KI-Integration (Zed AI)
+- Rust-basiert
+- Cross-Platform
+
+---
+
+## KI-Assistenten für Entwickler
+
+### KI-Integration in IDEs
+
+| KI-Tool | IDE/Editor | Hauptmerkmale | Preis |
+|---------|------------|---------------|-------|
+| **GitHub Copilot** | VS Code, JetBrains, Neovim | Code-Vervollständigung, Chat | $10/Monat |
+| **Claude Code** | VS Code, JetBrains | Intelligente Assistenz, Chat | $20/Monat |
+| **Antigravity CLI** | Terminal, Antigravity IDE | Lokale & Cloud-KI | Kostenlos |
+| **CODEX CLI** | Terminal | Code-Generierung | Kostenlos |
+| **Tabnine** | VS Code, JetBrains | Enterprise-KI | Ab $15/Monat |
+| **Amazon CodeWhisperer** | VS Code, JetBrains | AWS-integriert | Kostenlos |
+
+### KI-Funktionen in der Entwicklung
+
+#### Code-Generierung
+- Automatische Funktionenerstellung basierend auf Kommentaren
+- Boilerplate-Code-Generierung (Classes, Interfaces, DTOs)
+- Test-Generierung (Unit Tests, Integration Tests)
+- Dokumentations-Generierung (Kommentare, READMEs)
+
+#### Code-Analyse & Verbesserung
+- Fehlererkennung und Vorschläge zur Behebung
+- Code-Refactoring und Optimierungsvorschläge
+- Sicherheitsanalysen und Schwachstellenerkennung
+- Performance-Optimierungen
+
+---
+
+## Entwicklungs-Workflows mit KI
+
+### Typischer Entwicklungsprozess mit KI
+
+1. **Idee** → 2. **Anforderungen** → 3. **Architektur** → 4. **Code mit KI** → 5. **KI-Review** → 6. **KI-Tests** → 7. **Deployment** → 8. **KI-Monitoring**
+
+### Praxisbeispiel: Feature-Entwicklung
+
+**Schritte:**
+1. Anforderungsbeschreibung in natürlicher Sprache
+2. KI-gestützte Zerlegung in Aufgaben
+3. Code-Generierung für Boilerplate
+4. Implementierung mit KI-Assistenz
+5. Automatisierte Tests mit KI-Generierung
+6. Code-Review mit KI-Analyse
+7. Deployment mit KI-Optimierung
+
+**Zeitersparnis:** 40-60% gegenüber traditioneller Entwicklung
+
+---
+
+## IDE-Konfiguration & Best Practices
+
+### VS Code Einstellungen
+
+**Empfohlene Einstellungen (`settings.json`):**
+```json
+{
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange"
+}
 ```
 
-## Node.js installieren
+---
 
-```bash
-# Download and install nvm:
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+## Remote-Entwicklung
 
-# in lieu of restarting the shell
-\. "$HOME/.nvm/nvm.sh"
+### SSH Remote Development
 
-# Download and install Node.js:
-nvm install 25
+**VS Code Remote-SSH:**
+- Remote SSH Extension installieren
+- Konfiguration in ~/.ssh/config
+- Mit Remote Server verbinden
 
-# Verify the Node.js version:
-node -v # Should print "v25.4.0".
+### Container-Entwicklung
 
-# Verify npm version:
-npm -v # Should print "11.7.0".
+**VS Code Dev Containers:**
+- Docker-Container als Entwicklungsumgebung
+- Konsistente Umgebungen für das Team
 
-```
+---
 
+## Verwandte Themen
 
-## Google Antigravity
-```bash
-# 1. In das temporäre Verzeichnis wechseln
-cd /tmp
+* [Tools & Hilfswerkzeuge](../Tools/index.md) – Entwicklungs- und Analyse-Tools
+* [Server/Konfiguration](../Server/Software.md) – Server-Setup und -Verwaltung
+* [Webentwicklung/KI Webentwicklung](../Webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
+* [Desktop Automation](../Desktop_Automation/index.md) – Automatisierung von GUI-Interaktionen
+* [Content/KI-gestützte Inhalte](../Content/index.md) – KI für Content-Erstellung
 
-# 2. Download mit fest definiertem Dateinamen (-O)
-wget "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.1.1-6123990880747520/linux-x64/Antigravity%20IDE.tar.gz" -O antigravity.tar.gz
+---
 
-# 3. Zielverzeichnis erstellen
-sudo mkdir -p /opt/Antigravity_IDE
+## Weiterführende Ressourcen
 
-# 4. Jetzt findet tar die Datei garantiert, weil sie "antigravity.tar.gz" heißt
-sudo tar -xzf antigravity.tar.gz -C /opt/Antigravity_IDE --strip-components=1
+### Offizielle Dokumentationen
+- [Visual Studio Code](https://code.visualstudio.com/docs)
+- [JetBrains IDEs](https://www.jetbrains.com/help/)
+- [Neovim](https://neovim.io/doc/)
+- [Zed](https://zed.dev/docs)
 
-# 5. Desktop-Datei erstellen
-sudo bash -c 'cat > /usr/share/applications/antigravity.desktop' << 'EOF'
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Antigravity IDE
-Comment=Google Antigravity Development Platform
-Exec=/opt/Antigravity_IDE/antigravity-ide --no-sandbox
-Icon=/opt/Antigravity_IDE/icon.svg
-Terminal=false
-Categories=Development;IDE;
-StartupWMClass=antigravity-ide
-EOF
+### KI-Entwicklungstools
+- [GitHub Copilot](https://github.com/features/copilot)
+- [Claude Code](https://claude.ai/code)
+- [Antigravity IDE](https://antigravity.google/)
+- [Open WebUI](https://github.com/open-webui/open-webui)
+- [LibreChat](https://github.com/danny-avila/LibreChat)
 
-# 6. Datenbank aktualisieren
-sudo update-desktop-database
+---
 
-```
-
-## Visual Studio Code und Neovim installieren
-
-```bash
-sudo snap install code --classic
-sudo apt-get install neovim
-```
-
-### Wichtige VS Code Erweiterungen installieren
-
-```bash
-code --install-extension GitHub.copilot
-code --install-extension anthropic.claude-code
-code --install-extension openai.chatgpt
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vmware.vscode-boot-dev-pack
-```
-## Zed
-```
-curl -f https://zed.dev/install.sh | sh
-
-```
-
-
-### PostGIS Installation ()
-
-```bash
-
-sudo apt-get install postgis postgresql-18-postgis-3 postgresql-18
-cd $HOME
-sudo -u postgres -i
-createuser thorsten
-createdb -E UTF8 -O thorsten thorsten
-psql -d thorsten -c "CREATE EXTENSION postgis;" # Erweiterung hinzufügen
-psql -d thorsten -c "CREATE EXTENSION hstore;" # Erweiterung hinzufügen
-psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO thorsten;" # Rechte setzen
-psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO thorsten;" # Rechte setzen
-psql -d thorsten -c "\password thorsten"
-psql -c "ALTER USER dein_benutzername CREATEDB;"
-exit # Ausloggen
-cd $HOME
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
-sudo apt-get install osmosis osm2pgsql
-osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
-
-osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
-
-```
-
-## PostgreSQL Passwort-Authentifizierung konfigurieren
-
-### Die .pgpass Datei (Sicherster & Standard-Weg)
-
-Dies ist die offizielle Methode für benutzerspezifische Passwörter. PostgreSQL sucht im Home-Verzeichnis nach einer versteckten Datei namens `.pgpass`.
-
-Erstelle die Datei in deinem Home-Verzeichnis:
-
-```bash
-nano ~/.pgpass
-```
-
-Füge die Daten im folgenden Format ein:
-
-```text
-localhost:5432:*:dein_user:dein_passwort
-```
-
-Wildcards `*` sind erlaubt, falls das Passwort für alle Datenbanken gilt.
-
-Wichtig: Setze die korrekten Berechtigungen (PostgreSQL verweigert die Datei, wenn sie für andere lesbar ist):
-
-```bash
-chmod 0600 ~/.pgpass
-```
-
-
-## C und C++ Entwicklungsumgebung
-
-```bash
-sudo apt install curl
-sudo apt install build-essential
-code --install-extension ms-vscode.cpptools-extension-pack
-sudo apt-get install cmake
-sudo apt-get install gdb
-```
-
-## Python installieren
-
-```bash
-sudo apt install python3 python3-pip python3-venv python-is-python3
-code --install-extension ms-python.python
-```
-
-## Rust installieren
-
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-code --install-extension rust-lang.rust-analyzer
-```
-## Go (Golang) installieren
-
-```bash
-cd $HOME
-sudo rm -rf /usr/local/go
-wget https://go.dev/dl/go1.26.4.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.26.4.linux-amd64.tar.gz
-echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
-echo 'export GOPATH=$HOME/go' >> ~/.bashrc
-echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
-source ~/.bashrc
-```
-
-
-
-## .NET installieren und konfigurieren
-
-```bash
-sudo apt-get update
-sudo apt-get install -y dotnet-sdk-10.0
-dotnet tool install --global dotnet-ef
-dotnet tool install --global dotnet-aspnet-codegenerator
-dotnet tool install -g Microsoft.Web.LibraryManager.Cli
-echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc
-source ~/.bashrc
-code --install-extension ms-dotnettools.csdevkit
-sudo dotnet workload install android
-dotnet workload update
-```
-
-
-
-## KI Cli
-```
-curl -fsSL https://claude.ai/install.sh | bash
-curl -fsSL https://chatgpt.com/codex/install.sh | sh
-curl -fsSL https://antigravity.google/cli/install.sh | bash
-
-
-```
-## Jetbrains Installieren
-```
-sudo snap install intellij-idea --classic
-```
-
-
-In dieser Anleitung wird erklärt, wie das Geoinformationssystem auf Ubuntu 25.10 installiert wird.
-
-* **Vektorkacheln (Vector Tiles):** Hier können Sie Verbindungen zu Vektor-Tileservern einrichten. Wenn Sie hier einen Rechtsklick machen und „Neue generische Verbindung" wählen, können Sie die URL Ihres lokalen Servers (z. B. `http://localhost:3000/IhrLayer/{z}/{x}/{y}.pbf`) eintragen, um Ihre selbst gehosteten OpenStreetMap-Daten in QGIS als Ebene hereinzuladen und beliebig zu stylen.
-* **XYZ-Kacheln (XYZ Tiles):** Hierüber binden Sie Raster-Kacheln (fertig gerenderte Bildchen) ein. Dies ist der typische Weg, um einfache Hintergrundkarten (Basemaps) wie die Standard-OpenStreetMap-Karte oder Satellitenbilder aus dem Internet in QGIS anzuzeigen (oft in Form von Links wie `https://tile.openstreetmap.org/{z}/{x}/{y}.png`).
-* **PostgreSQL:** Verbindungen zu vollwertigen Datenbank-Servern. Diese werden genutzt, wenn man mit riesigen Mengen an Geodaten in einem Netzwerk arbeitet (z. B. mit der Erweiterung *PostGIS* für PostgreSQL).
-* **WMS/WMTS / WFS / WCS:** Standardisierte Web-Dienste (OGC-Dienste). Viele Behörden und staatliche Stellen veröffentlichen darüber offizielle Daten, wie beispielsweise freie Luftbilder, die Sie direkt in QGIS laden können, ohne sie vorher herunterladen zu müssen.
-* **Cloud:** Erlaubt den direkten Zugriff auf Cloud-Speicherdienste (wie Amazon S3, Google Cloud Storage), auf denen häufig enorme Mengen an Geodaten gespeichert sind.
-* **Szenen (Scenes):** Dieser Punkt wird für komplexe 3D-Daten und dreidimensionale Gebäude- und Stadtmodelle genutzt. Man spricht hierbei oft von „3D Tiles" (z. B. von Cesium), um ganze Städte begehbar und räumlich darzustellen.
-
-
+*Letzte Aktualisierung: Juli 2026*
