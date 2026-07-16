@@ -24,7 +24,15 @@ Dokumentation zur Einrichtung des lokalen Entwicklungsrechners unter Ubuntu 25.1
 * **KI-Unterstützung**: Integration moderner KI-Coding-Assistenten wie GitHub Copilot, Claude Code sowie der [Antigravity CLI](IDE/index.md#ki-cli) und CODEX CLI.
 * **Android-Entwicklung**: Einrichtung der SDKs und IDEs für die mobile [Android-Entwicklung](IDE/Android.md).
 
-### 3. [Video & Animation](Video/index.md)
+### 3. [Content & KI-gestützte Inhalte](Content/ki-content-creation.md)
+Strategien, Tools und Best Practices für die Erstellung, Optimierung und Verwaltung von digitalen Inhalten mit KI-Unterstützung.
+
+* **Content-Strategie mit KI**: [Planung, Erstellung und Optimierung von Inhalten](Content/content-strategie.md) mit KI-Tools
+* **KI-gestützte SEO-Optimierung**: [Suchmaschinenoptimierung mit künstlicher Intelligenz](Content/ki-seo-optimierung.md) – von Keyword-Recherche bis zur technischen Analyse
+* **Multilinguale Inhalte mit KI**: [Automatisierte Übersetzungen, Lokalisierung und kulturelle Anpassung](Content/multilinguale-inhalte.md) für globale Zielgruppen
+* **Social Media Automatisierung**: [KI-gestützte Planung, Erstellung und Analyse](Content/social-media-ki.md) für soziale Netzwerke
+
+### 4. [Video & Animation](Video/index.md)
 Eine umfassende Übersicht über Frameworks und Tools zur programmatischen Generierung, Bearbeitung und Animation von Videos und 3D-Grafiken.
 
 * **DOM-basierte Generierung**: Vorstellung von Remotion, Revideo und Hyperframes.
@@ -32,41 +40,63 @@ Eine umfassende Übersicht über Frameworks und Tools zur programmatischen Gener
 * **Mathematische & 2D/3D-Animation**: Einsatz von Manim, Motion Canvas, p5.js und Processing.
 * **Medienverarbeitung & 3D-Suiten**: Low-Level-Tools wie FFmpeg und OpenCV sowie fortgeschrittene Automatisierung in Blender und Godot 4.
 
-### 4. [Desktop Automation](Desktop_Automation/index.md)
+### 5. [Webentwicklung & KI](Webentwicklung/ki-webentwicklung.md)
+Wie künstliche Intelligenz die Entwicklung moderner Webanwendungen transformiert – von Frontend-Design bis Backend-Optimierung.
+
+* **Frontend mit KI**: [Moderne Web-Anwendungen](Webentwicklung/frontend-ki.md) mit KI-gestützter Code-Generierung, Design-Optimierung und automatisiertem Testing
+* **Backend-Integration mit KI**: [Intelligente Backend-Systeme](Webentwicklung/backend-integration.md) mit KI-basierten APIs, Datenverarbeitung und automatisierter Logik
+* **Deployment mit KI**: [Automatisierte Bereitstellung](Webentwicklung/deployment.md) und Skalierung von Webanwendungen mit KI-Unterstützung
+* **Performance-Optimierung mit KI**: [Ladezeiten, Caching und Ressourcen-Management](Webentwicklung/performance.md) durch KI-gestützte Analyse
+
+### 6. [Desktop Automation](Desktop_Automation/index.md)
 Fokus auf Desktop- und GUI-Automatisierung sowie die Interaktion mit dem Betriebssystem.
 
 * **KI-Agenten-Kompatibilität**: Bewertung der Eignung von Automatisierungstools für autonome LLM-Agenten.
 * **GUI-Frameworks**: Bibliotheken für Python (PyAutoGUI, pywinauto, Dogtail), Node.js (Nut.js, RobotJS), Go (RobotGo) und Rust (Enigo).
 * **Linux-Plattformen**: Werkzeuge für Wayland (`ydotool`, `wtype`) und X11 (`xdotool`).
 
-### 5. [E-Learning-Autorentools](E-Learning-Autorentool/index.md)
+### 7. [E-Learning-Autorentools](E-Learning-Autorentool/index.md)
 Konzepte und Werkzeuge zur Erstellung interaktiver Lerninhalte und moderner Lernumgebungen.
 
 * **Klassifizierung**: Abgrenzung von Software, Bibliotheken, Frameworks und KI-Agenten.
 * **KI-Tutoren**: Einsatz und Steuerung autonomer Lernagenten (z. B. via Google Antigravity SDK oder LangGraph).
 * **Architektur & Lücken**: Analyse aktueller Herausforderungen wie z. B. der nahtlosen Integration von Code-Sandboxes.
 
-### 6. [Audio & Musik](Audio/index.md)
-Programmatische Erzeugung, Synthese, Bearbeitung und wissenschaftliche Analyse von Audiodaten.
+### 8. [Audio & Musik](Audio/index.md)
+Programmatische Erzeugung, Synthese, Bearbeitung und wissenschaftliche Analyse von Audiodaten mit KI-Unterstützung.
 
+* **KI und Audio**: [Umfassende Übersicht](Audio/ki-audio.md) zu KI-Anwendungen in der Audio-Verarbeitung – von Sprachsynthese bis Musikgenerierung
+* **Audacity mit KI**: [Professionelle Audiobearbeitung](Audio/audacity-ki.md) mit KI-Plugins für Rauschunterdrückung, Stem-Separation und Transkription
+* **DAW-Integration mit KI**: [KI in Digital Audio Workstations](Audio/daw-integration.md) wie Ardour, LMMS, Qtractor und REAPER
+* **MIDI-Programmierung mit KI**: [Intelligente Musiksteuerung](Audio/midi-programmierung.md) durch KI-generierte und analysierte MIDI-Daten
+* **Audio-Processing mit KI**: [Signalverarbeitung mit neuronalen Netzen](Audio/audio-processing.md) für Spracherkennung, Musikgenerierung und Echtzeit-Effekte
 * **Python-Libraries**: Feature-Extraktion und Signalverarbeitung mit Librosa, PyDub und SciPy.
-* **Sprachsynthese**: Lokale Offline-Sprachgenerierung mittels Kokoro-ONNX.
 * **Systemnahe Programmierung**: High-Performance-Audiomanipulation in C++ (JUCE, libsndfile) und Rust (symphonia, hound) sowie FAUST.
 * **Web-Audio & Live Coding**: Interaktive Web-Audio-Bibliotheken (Tone.js) und Echtzeit-Live-Coding (SuperCollider, Sonic Pi, TidalCycles).
 
-### 7. [Dokument Erstellen & Notebooks](Dokument_Erstellen/index.md)
+### 12. [Datenerfassung](Datenerfassung/index.md)
+Tools, Methoden und Workflows zur systematischen Erfassung, Validierung und Verarbeitung von Daten – für Feldstudien, Forschung und betriebliche Anwendungen.
+
+* **Mobile Datenerfassung**: [OpenDataKit (ODK)](Datenerfassung/OpenDataKit.md) für Offline-Datenerfassung auf Android
+* **Formular-Design**: XLSForm für Excel-basierte Formularerstellung
+* **Daten-Synchronisation**: Offline-First Ansatz mit späterer Synchronisation
+* **Datenvalidierung**: Constraints, Skip-Logik und automatische Prüfungen
+* **Server-Lösungen**: ODK Central für zentrale Datenverwaltung
+
+### 10. [Dokument Erstellen & Notebooks](Dokument_Erstellen/index.md)
 Pipelines, Generatoren und Notebook-Systeme zur Erstellung von strukturierten Dokumenten, Büchern und Wissensdatenbanken.
 
 * **Book-Generators**: MkDocs, mdBook, Antora, Starlight und Docusaurus.
 * **Notebook-Systeme**: Quarto, JupyterLab, JupyterLite, Voila, Papermill und Marimo.
 * **Local Wikis**: DokuWiki, BookStack und dateibasierte Wissensdatenbanken (Obsidian, Quartz).
 
-### 8. [Tools & Hilfswerkzeuge](Tools/Pandoc.md)
-Spezialisierte Hilfsmittel zur Entwicklungsunterstützung und Code-Analyse.
+### 11. [Tools & Hilfswerkzeuge](Tools/index.md)
+Spezialisierte Hilfsmittel zur Entwicklungsunterstützung, Code-Analyse, Performance-Optimierung und Systemverwaltung.
 
 * **Dokumenten-Konvertierung**: Nutzung von [Pandoc](Tools/Pandoc.md) zum Konvertieren von Formaten (z. B. Markdown zu MediaWiki).
 * **Abhängigkeiten & Sicherheit**: Analyse von Abhängigkeiten und Schwachstellenscans mit [Snyk & OSV Scanner](Tools/Analysetool.md).
 * **Performance**: Benchmarking-Plattformen für Web-Frameworks ([TechEmpower & Web Frameworks Benchmark](Tools/Benchmark.md)).
+* **Kategorien**: [Übersicht](Tools/index.md) aller Tools nach Anwendungsbereich (Containerisierung, Monitoring, CI/CD, Testing, etc.)
 
 ---
 

@@ -11,20 +11,33 @@ nav:
       - Nginx SSL Zertifikat: Server/Nginx_SSL.md
       - Nginx Einstellung: Server/nginx.md
       - Tomcat: Server/Tomcat.md
-      - Weiter Software: Server/Software.md
+      - Software: Server/Software.md
       - Skalierbare KI/ML-Infrastrukturen: Server/ki-ml-infrastrukturen.md
-  - IDE: IDE/index.md
+  - IDE:
+      - Übersicht: IDE/index.md
+      - Android: IDE/Android.md
+      - Lokale KI-Frontends: IDE/lokale-ki-frontends.md
   - Video:
       - Übersicht: Video/index.md
       - KI in der Film- und Videoproduktion: Video/ki-filmproduktion.md
   - Content:
+      - Übersicht: Content/ki-content-creation.md
       - KI Content Creation: Content/ki-content-creation.md
+      - Content-Strategie mit KI: Content/content-strategie.md
+      - KI-gestützte SEO-Optimierung: Content/ki-seo-optimierung.md
+      - Multilinguale Inhalte mit KI: Content/multilinguale-inhalte.md
+      - Social Media Automatisierung mit KI: Content/social-media-ki.md
   - Design:
       - Design nach KI: Design/design-nach-ki.md
       - Ideenfindung mit KI: Design/ideenfindung-ki.md
       - 'Leseprobe: KI für Kreative': Design/leseprobe-ki-kreative.md
   - Webentwicklung:
+      - Übersicht: Webentwicklung/ki-webentwicklung.md
       - KI Websites entwickeln: Webentwicklung/ki-webentwicklung.md
+      - Frontend mit KI: Webentwicklung/frontend-ki.md
+      - Backend-Integration mit KI: Webentwicklung/backend-integration.md
+      - Deployment mit KI: Webentwicklung/deployment.md
+      - Performance-Optimierung mit KI: Webentwicklung/performance.md
   - Coding:
       - KI Coding: Coding/ki-coding.md
       - Eigene KI-Anwendungen: Coding/ki-anwendungen-programmieren.md
@@ -39,7 +52,13 @@ nav:
   - Audio & Musik:
       - Übersicht: Audio/index.md
       - KI und Audio: Audio/ki-audio.md
-  - Android: IDE/Android.md
+      - Audacity mit KI: Audio/audacity-ki.md
+      - DAW-Integration mit KI: Audio/daw-integration.md
+      - MIDI-Programmierung mit KI: Audio/midi-programmierung.md
+      - Audio-Processing mit KI: Audio/audio-processing.md
+  - Datenerfassung:
+      - Übersicht: Datenerfassung/index.md
+      - OpenDataKit: Datenerfassung/OpenDataKit.md
   - Dokument Erstellen:
       - Übersicht: Dokument_Erstellen/index.md
       - Mediawiki:
@@ -53,6 +72,7 @@ nav:
       - Xwiki:
           - Installieren: Dokument_Erstellen/Xwiki/Installieren.md
   - Tools:
+      - Übersicht: Tools/index.md
       - Pandoc: Tools/Pandoc.md
       - Analysetool: Tools/Analysetool.md
       - Benchmark: Tools/Benchmark.md
