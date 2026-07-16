@@ -22,7 +22,6 @@ nav:
       - KI in der Film- und Videoproduktion: Video/ki-filmproduktion.md
   - Content:
       - Übersicht: Content/ki-content-creation.md
-      - KI Content Creation: Content/ki-content-creation.md
       - Content-Strategie mit KI: Content/content-strategie.md
       - KI-gestützte SEO-Optimierung: Content/ki-seo-optimierung.md
       - Multilinguale Inhalte mit KI: Content/multilinguale-inhalte.md
@@ -33,7 +32,6 @@ nav:
       - 'Leseprobe: KI für Kreative': Design/leseprobe-ki-kreative.md
   - Webentwicklung:
       - Übersicht: Webentwicklung/ki-webentwicklung.md
-      - KI Websites entwickeln: Webentwicklung/ki-webentwicklung.md
       - Frontend mit KI: Webentwicklung/frontend-ki.md
       - Backend-Integration mit KI: Webentwicklung/backend-integration.md
       - Deployment mit KI: Webentwicklung/deployment.md
