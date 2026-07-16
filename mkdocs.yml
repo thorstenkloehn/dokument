@@ -1,6 +1,12 @@
 site_name: Dokument 
 nav:
-  - Starseite: index.md
+  - Startseite: index.md
+  - Datenbanken:
+      - Übersicht: Datenbanken/index.md
+  - KI-Modelle:
+      - Übersicht: KI-Modelle/index.md
+  - Sicherheit:
+      - Übersicht: Sicherheit/index.md
   - Server:
       - Postgresql: Server/Postgresql.md
       - Kachelserver:
@@ -10,18 +16,21 @@ nav:
       - Apache-Server mit Nginx verbinden: Server/Apache_Nginx.md
       - Nginx SSL Zertifikat: Server/Nginx_SSL.md
       - Nginx Einstellung: Server/nginx.md
+      - Installation: Server/installation.md
       - Tomcat: Server/Tomcat.md
       - Software: Server/Software.md
       - Skalierbare KI/ML-Infrastrukturen: Server/ki-ml-infrastrukturen.md
   - IDE:
       - Übersicht: IDE/index.md
+      - Setup: IDE/setup.md
       - Android: IDE/Android.md
       - Lokale KI-Frontends: IDE/lokale-ki-frontends.md
   - Video:
       - Übersicht: Video/index.md
       - KI in der Film- und Videoproduktion: Video/ki-filmproduktion.md
   - Content:
-      - Übersicht: Content/ki-content-creation.md
+      - Übersicht: Content/index.md
+      - KI Content Creation: Content/ki-content-creation.md
       - Content-Strategie mit KI: Content/content-strategie.md
       - KI-gestützte SEO-Optimierung: Content/ki-seo-optimierung.md
       - Multilinguale Inhalte mit KI: Content/multilinguale-inhalte.md
@@ -31,7 +40,8 @@ nav:
       - Ideenfindung mit KI: Design/ideenfindung-ki.md
       - 'Leseprobe: KI für Kreative': Design/leseprobe-ki-kreative.md
   - Webentwicklung:
-      - Übersicht: Webentwicklung/ki-webentwicklung.md
+      - Übersicht: Webentwicklung/index.md
+      - KI Webentwicklung: Webentwicklung/ki-webentwicklung.md
       - Frontend mit KI: Webentwicklung/frontend-ki.md
       - Backend-Integration mit KI: Webentwicklung/backend-integration.md
       - Deployment mit KI: Webentwicklung/deployment.md
