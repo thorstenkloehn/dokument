@@ -45,7 +45,12 @@ nav:
       - Programmieren lernen mit KI: Coding/programmieren-lernen-ki.md
       - Programmieren mit KI: Coding/programmieren-mit-ki.md
       - Vibe Coding & Engineering: Coding/vibe-coding-engineering.md
-  - Desktop Automation: Desktop_Automation/index.md
+  - Desktop Automation:
+      - Übersicht: Desktop_Automation/index.md
+      - PyAutoGUI Anleitung: Desktop_Automation/pyautogui-anleitung.md
+      - Playwright Anleitung: Desktop_Automation/playwright-anleitung.md
+      - ydotool Anleitung: Desktop_Automation/ydotool-anleitung.md
+      - Robot Framework Anleitung: Desktop_Automation/robot-framework-anleitung.md
   - E-Learning & Training:
       - Übersicht: E-Learning-Autorentool/index.md
       - KI in Lehre & Weiterbildung: E-Learning-Autorentool/ki-lehre-weiterbildung.md

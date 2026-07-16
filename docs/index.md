@@ -49,11 +49,13 @@ Wie künstliche Intelligenz die Entwicklung moderner Webanwendungen transformier
 * **Performance-Optimierung mit KI**: [Ladezeiten, Caching und Ressourcen-Management](Webentwicklung/performance.md) durch KI-gestützte Analyse
 
 ### 6. [Desktop Automation](Desktop_Automation/index.md)
-Fokus auf Desktop- und GUI-Automatisierung sowie die Interaktion mit dem Betriebssystem.
+Automatisierung von Betriebssystemen, Benutzeroberflächen und GUI-Interaktionen – für Tests, RPA und Prozessautomatisierung.
 
-* **KI-Agenten-Kompatibilität**: Bewertung der Eignung von Automatisierungstools für autonome LLM-Agenten.
-* **GUI-Frameworks**: Bibliotheken für Python (PyAutoGUI, pywinauto, Dogtail), Node.js (Nut.js, RobotJS), Go (RobotGo) und Rust (Enigo).
-* **Linux-Plattformen**: Werkzeuge für Wayland (`ydotool`, `wtype`) und X11 (`xdotool`).
+* **Übersicht**: [Vollständige Tool-Übersicht](Desktop_Automation/index.md) mit KI-Agenten-Kompatibilität und Plattform-Unterstützung
+* **PyAutoGUI**: [Praktische Anleitung](Desktop_Automation/pyautogui-anleitung.md) zur plattformübergreifenden GUI-Automatisierung mit Python
+* **Playwright**: [Praktische Anleitung](Desktop_Automation/playwright-anleitung.md) für moderne Web-Automatisierung und Testing
+* **ydotool**: [Praktische Anleitung](Desktop_Automation/ydotool-anleitung.md) für Low-Level-Tastatur-/Maus-Steuerung unter Linux (Wayland & X11)
+* **Robot Framework**: [Praktische Anleitung](Desktop_Automation/robot-framework-anleitung.md) für keyword-basierte Testautomatisierung
 
 ### 7. [E-Learning-Autorentools](E-Learning-Autorentool/index.md)
 Konzepte und Werkzeuge zur Erstellung interaktiver Lerninhalte und moderner Lernumgebungen.
@@ -74,7 +76,7 @@ Programmatische Erzeugung, Synthese, Bearbeitung und wissenschaftliche Analyse v
 * **Systemnahe Programmierung**: High-Performance-Audiomanipulation in C++ (JUCE, libsndfile) und Rust (symphonia, hound) sowie FAUST.
 * **Web-Audio & Live Coding**: Interaktive Web-Audio-Bibliotheken (Tone.js) und Echtzeit-Live-Coding (SuperCollider, Sonic Pi, TidalCycles).
 
-### 12. [Datenerfassung](Datenerfassung/index.md)
+### 9. [Datenerfassung](Datenerfassung/index.md)
 Tools, Methoden und Workflows zur systematischen Erfassung, Validierung und Verarbeitung von Daten – für Feldstudien, Forschung und betriebliche Anwendungen.
 
 * **Mobile Datenerfassung**: [OpenDataKit (ODK)](Datenerfassung/OpenDataKit.md) für Offline-Datenerfassung auf Android
