@@ -346,8 +346,8 @@ Tools für Design, Prototyping und UI-Entwicklung.
 ## 🔗 Verwandte Dokumentationsbereiche
 
 * [Server-Konfiguration](../../entwicklung/infrastruktur/software.md) – Server-Tools und -Einstellungen
-* [IDE & Entwicklungsumgebung](../../ide/index.md) – Entwicklungs-Tools
-* [Datenerfassung](../../daten/datenerfassung/index.md) – Datenerfassungstools
+* [IDE & Entwicklungsumgebung](../../entwicklung/ide/index.md) – Entwicklungs-Tools
+* [Datenerfassung](../daten/datenerfassung/index.md) – Datenerfassungstools
 * [Dokumentation](../dokumentation/index.md) – Dokumentations-Tools
 
 ---

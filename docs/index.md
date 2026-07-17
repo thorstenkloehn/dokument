@@ -4,6 +4,35 @@ Willkommen in meiner zentralen Dokumentation. Diese Wissensdatenbank dient der S
 
 ---
 
+```mermaid
+graph TD
+    Root["📚 Dokumentations-Zentrale"]
+    
+    Root --> KI["🤖 KI & Automatisierung"]
+    Root --> Dev["💻 Entwicklung & Infrastruktur"]
+    Root --> Creative["🎨 Kreativ & Design"]
+    Root --> Wissen["📚 Wissen & Dokumentation"]
+    
+    KI --> K1["Coding & Vibe Engineering"]
+    KI --> K2["Content-Creation & SEO"]
+    KI --> K3["Desktop & Web-Automatisierung"]
+
+    Dev --> D1["Webentwicklung (Frontend/Backend)"]
+    Dev --> D2["Server, Nginx, SSL & Kachelserver"]
+    Dev --> D3["Systemprogrammierung (C/Rust/Assembler)"]
+    Dev --> D4["IDE & Lokale KI-Frontends"]
+
+    Creative --> C1["KI-Design & Ideenfindung"]
+    Creative --> C2["Audio, DAW & MIDI-Processing"]
+    Creative --> C3["Film- & Videoproduktion"]
+
+    Wissen --> W1["Vektordatenbanken & Datenerfassung"]
+    Wissen --> W2["E-Learning & KI-Lehre"]
+    Wissen --> W3["MediaWiki, XWiki & Pandoc"]
+```
+
+---
+
 ## 📁 Dokumentationskategorien
 
 Diese Dokumentation ist in die folgenden Hauptbereiche unterteilt. Jede Kategorie deckt einen spezifischen Bereich ab:
@@ -81,10 +110,10 @@ Dokumentation zur Konfiguration, Installation und Absicherung von Serverdiensten
   * [Linux-Systemprogrammierung](entwicklung/system/linux-systemprogrammierung.md)
 
 * **IDE & Entwicklungsumgebung**:
-  * [Übersicht](ide/index.md) - Einrichtung des lokalen Entwicklungsrechners
-  * [System-Setup](ide/setup.md) - Paketinstallationen, passwortloses sudo, Chrome, PostgreSQL
-  * [KI-Unterstützung](ide/lokale-ki-frontends.md) - GitHub Copilot, Claude Code, CODEX CLI, Antigravity CLI
-  * [Android-Entwicklung](ide/android.md) - SDKs und IDEs für mobile Entwicklung
+  * [Übersicht](entwicklung/ide/index.md) - Einrichtung des lokalen Entwicklungsrechners
+  * [System-Setup](entwicklung/ide/setup.md) - Paketinstallationen, passwortloses sudo, Chrome, PostgreSQL
+  * [KI-Unterstützung](entwicklung/ide/lokale-ki-frontends.md) - GitHub Copilot, Claude Code, CODEX CLI, Antigravity CLI
+  * [Android-Entwicklung](entwicklung/ide/android.md) - SDKs und IDEs für mobile Entwicklung
 
 ---
 
@@ -116,9 +145,9 @@ Inspiration und Anleitungen zum Einsatz von KI in kreativen Designprozessen.
 Pipelines, Generatoren und Systeme zur Erstellung von strukturierten Dokumenten und Wissensdatenbanken.
 
 * **Daten & Datenerfassung**:
-  * [Datenbanken Übersicht](daten/datenbanken/index.md) - Vektordatenbanken, Zeitreihendatenbanken, Graphdatenbanken
-  * [Datenerfassung](daten/datenerfassung/index.md):
-    * [OpenDataKit (ODK)](daten/datenerfassung/opendatakit.md) für Offline-Datenerfassung auf Android
+  * [Datenbanken Übersicht](wissen/daten/datenbanken/index.md) - Vektordatenbanken, Zeitreihendatenbanken, Graphdatenbanken
+  * [Datenerfassung](wissen/daten/datenerfassung/index.md):
+    * [OpenDataKit (ODK)](wissen/daten/datenerfassung/opendatakit.md) für Offline-Datenerfassung auf Android
 
 * **E-Learning**:
   * [Übersicht](wissen/e-learning/index.md) - Konzepte und Werkzeuge für interaktive Lerninhalte

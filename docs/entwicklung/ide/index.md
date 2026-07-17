@@ -228,11 +228,11 @@ graph TD
 
 ## Verwandte Themen
 
-* [Tools & Hilfswerkzeuge](../wissen/tools/index.md) – Entwicklungs- und Analyse-Tools
-* [Server/Konfiguration](../entwicklung/infrastruktur/software.md) – Server-Setup und -Verwaltung
-* [Webentwicklung/KI Webentwicklung](../entwicklung/webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
-* [Desktop Automation](../künstliche-intelligenz/automatisierung/index.md) – Automatisierung von GUI-Interaktionen
-* [Content/KI-gestützte Inhalte](../künstliche-intelligenz/content/index.md) – KI für Content-Erstellung
+* [Tools & Hilfswerkzeuge](../../wissen/tools/index.md) – Entwicklungs- und Analyse-Tools
+* [Server/Konfiguration](../infrastruktur/software.md) – Server-Setup und -Verwaltung
+* [Webentwicklung/KI Webentwicklung](../webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
+* [Desktop Automation](../../künstliche-intelligenz/automatisierung/index.md) – Automatisierung von GUI-Interaktionen
+* [Content/KI-gestützte Inhalte](../../künstliche-intelligenz/content/index.md) – KI für Content-Erstellung
 
 ---
 

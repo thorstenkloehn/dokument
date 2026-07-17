@@ -371,7 +371,7 @@ Empfehlung, welche Tools sich am besten für die Automatisierung durch KI-Agente
 * [Webentwicklung/Frontend mit KI](../../entwicklung/webentwicklung/frontend-ki.md) – KI in der Webentwicklung
 * [Tools/Analysetool](../../wissen/tools/analysetool.md) – Audio-Analyse-Tools
 * [Desktop Automation](../../künstliche-intelligenz/automatisierung/index.md) – Automatisierung von Audio-Workflows
-* [IDE/Lokale KI-Frontends](../../ide/lokale-ki-frontends.md) – KI-Oberflächen für Audio-Anwendungen
+* [IDE/Lokale KI-Frontends](../../entwicklung/ide/lokale-ki-frontends.md) – KI-Oberflächen für Audio-Anwendungen
 
 ---
 

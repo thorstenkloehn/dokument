@@ -13,6 +13,17 @@ nav:
           - Programmieren lernen mit KI: künstliche-intelligenz/coding/programmieren-lernen-ki.md
           - Programmieren mit KI: künstliche-intelligenz/coding/programmieren-mit-ki.md
           - Vibe Coding & Engineering: künstliche-intelligenz/coding/vibe-coding-engineering.md
+          - Lokales RAG & LLM-Serving: künstliche-intelligenz/coding/lokales-rag-ollama.md
+          - Agentic Workflows (LangGraph): künstliche-intelligenz/coding/agentic-workflows-langgraph.md
+          - Local LLM Fine-Tuning (Unsloth): künstliche-intelligenz/coding/lora-finetuning-unsloth.md
+          - Continue.dev & Tabby AI: künstliche-intelligenz/coding/continue-dev-setup.md
+          - vLLM High-Throughput Serving: künstliche-intelligenz/coding/vllm-high-throughput-serving.md
+          - Structured LLM Outputs (Pydantic): künstliche-intelligenz/coding/structured-outputs-pydantic.md
+          - Multimodale Vision Pipelines: künstliche-intelligenz/coding/multimodale-vision-pipelines.md
+          - Open-WebUI Pipelines: künstliche-intelligenz/coding/open-webui-pipelines.md
+          - AutoGen Multi-Agent Framework: künstliche-intelligenz/coding/autogen-multiagent-framework.md
+          - Microsoft Semantic Kernel: künstliche-intelligenz/coding/semantic-kernel-python.md
+          - LangChain LCEL Chains: künstliche-intelligenz/coding/langchain-lcel-chains.md
       - Content-Erstellung:
           - Übersicht: künstliche-intelligenz/content/index.md
           - KI Content Creation: künstliche-intelligenz/content/ki-content-creation.md
@@ -20,12 +31,23 @@ nav:
           - KI-gestützte SEO-Optimierung: künstliche-intelligenz/content/ki-seo-optimierung.md
           - Multilinguale Inhalte mit KI: künstliche-intelligenz/content/multilinguale-inhalte.md
           - Social Media Automatisierung: künstliche-intelligenz/content/social-media-ki.md
+          - KI Content-Pipeline: künstliche-intelligenz/content/ki-content-pipeline.md
       - Desktop-Automatisierung:
           - Übersicht: künstliche-intelligenz/automatisierung/index.md
           - PyAutoGUI Anleitung: künstliche-intelligenz/automatisierung/pyautogui-anleitung.md
           - Playwright Anleitung: künstliche-intelligenz/automatisierung/playwright-anleitung.md
           - ydotool Anleitung: künstliche-intelligenz/automatisierung/ydotool-anleitung.md
           - Robot Framework Anleitung: künstliche-intelligenz/automatisierung/robot-framework-anleitung.md
+          - Playwright & KI Web-Scraping: künstliche-intelligenz/automatisierung/playwright-ki-extraction.md
+          - Robot Framework API-Testing: künstliche-intelligenz/automatisierung/robot-framework-api-testing.md
+          - PyAutoGUI OpenCV & OCR: künstliche-intelligenz/automatisierung/pyautogui-ocr-vision.md
+          - Playwright Network Interception: künstliche-intelligenz/automatisierung/playwright-network-mocking.md
+          - Playwright Trace Viewer: künstliche-intelligenz/automatisierung/playwright-trace-viewer.md
+          - Playwright Visual Regression: künstliche-intelligenz/automatisierung/playwright-visual-regression.md
+          - Robot Framework Custom Keywords: künstliche-intelligenz/automatisierung/robot-framework-custom-keywords.md
+          - ydotool & Wayland Automatisierung: künstliche-intelligenz/automatisierung/ydotool-wayland-praxis.md
+          - Playwright Device & Geo Emulation: künstliche-intelligenz/automatisierung/playwright-device-emulation.md
+          - Playwright HAR Export & Metriken: künstliche-intelligenz/automatisierung/playwright-har-metrics.md
 
   # 💻 ENTWICKLUNG & INFRASTRUKTUR
   - Entwicklung & Infrastruktur:
@@ -47,6 +69,22 @@ nav:
           - Software: entwicklung/infrastruktur/software.md
           - Sicherheit: entwicklung/infrastruktur/sicherheit/index.md
           - Skalierbare KI/ML-Infrastrukturen: entwicklung/infrastruktur/ki-ml-infrastrukturen.md
+          - Docker KI-Stack: entwicklung/infrastruktur/docker-ki-stack.md
+          - Nginx Hardening & Sicherheit: entwicklung/infrastruktur/nginx-hardening.md
+          - PostgreSQL Backup & Recovery: entwicklung/infrastruktur/postgresql-backup-restore.md
+          - Nginx Load Balancing: entwicklung/infrastruktur/nginx-loadbalancing.md
+          - PostgreSQL Performance Tuning: entwicklung/infrastruktur/postgresql-tuning.md
+          - HTTP Server Benchmarking: entwicklung/infrastruktur/http-server-benchmarking.md
+          - Nginx FastCGI & Proxy Caching: entwicklung/infrastruktur/nginx-caching.md
+          - PostgreSQL PgBouncer Pooling: entwicklung/infrastruktur/postgresql-pgbouncer.md
+          - PostgreSQL Streaming Replication: entwicklung/infrastruktur/postgresql-streaming-replication.md
+          - PostgreSQL Table Partitioning: entwicklung/infrastruktur/postgresql-table-partitioning.md
+          - Nginx GeoIP Blocking: entwicklung/infrastruktur/nginx-geoip-blocking.md
+          - k6 API Load Testing: entwicklung/infrastruktur/k6-api-load-testing.md
+          - PostgreSQL JSONB & GIN-Indizes: entwicklung/infrastruktur/postgresql-jsonb-gin-indexes.md
+          - PostgreSQL Volltextsuche (tsvector): entwicklung/infrastruktur/postgresql-fulltext-search.md
+          - Nginx Rate Limiting: entwicklung/infrastruktur/nginx-rate-limiting.md
+          - PostgreSQL Logical Replication: entwicklung/infrastruktur/postgresql-logical-replication.md
           - Kachelserver:
               - Ubuntu 20.04: entwicklung/infrastruktur/kachelserver/server204.md
               - Ubuntu 22.04: entwicklung/infrastruktur/kachelserver/server224.md
@@ -59,11 +97,16 @@ nav:
           - Compiler: entwicklung/system/compiler.md
           - Rust, C & C++ Integration: entwicklung/system/rust-c-cpp-integration.md
           - Linux-Systemprogrammierung: entwicklung/system/linux-systemprogrammierung.md
+          - Rust & Python Bindings (PyO3): entwicklung/system/rust-python-bindings.md
+          - Systemd Service Creation: entwicklung/system/systemd-service-creation.md
+          - C++20 Modules & Modern CMake: entwicklung/system/cpp20-modules-cmake.md
+          - Linux Cgroups v2 Limits: entwicklung/system/linux-cgroups-limits.md
+          - Linux eBPF Performance Profiling: entwicklung/system/linux-ebpf-performance.md
       - IDE:
-          - Übersicht: ide/index.md
-          - Setup: ide/setup.md
-          - Android: ide/android.md
-          - Lokale KI-Frontends: ide/lokale-ki-frontends.md
+          - Übersicht: entwicklung/ide/index.md
+          - Setup: entwicklung/ide/setup.md
+          - Android: entwicklung/ide/android.md
+          - Lokale KI-Frontends: entwicklung/ide/lokale-ki-frontends.md
 
   # 🎨 KREATIV & DESIGN
   - Kreativ & Design:
@@ -72,6 +115,8 @@ nav:
           - Design nach KI: kreativ/design/design-nach-ki.md
           - Ideenfindung mit KI: kreativ/design/ideenfindung-ki.md
           - 'Leseprobe: KI für Kreative': kreativ/design/leseprobe-ki-kreative.md
+          - ComfyUI & SD Automatisierung: kreativ/design/comfyui-workflow-anleitung.md
+          - Blender 3D Python Automatisierung: kreativ/design/blender-python-automation.md
       - Audio & Musik:
           - Übersicht: kreativ/audio/index.md
           - KI und Audio: kreativ/audio/ki-audio.md
@@ -79,17 +124,28 @@ nav:
           - DAW-Integration mit KI: kreativ/audio/daw-integration.md
           - MIDI-Programmierung mit KI: kreativ/audio/midi-programmierung.md
           - Audio-Processing mit KI: kreativ/audio/audio-processing.md
+          - MIDI-Generierung mit Python: kreativ/audio/midi-python-automation.md
+          - Audacity Macro Automatisierung: kreativ/audio/audacity-macro-automatisierung.md
+          - WebAudio API JavaScript: kreativ/audio/webaudio-api-javascript.md
+          - AI Voice Cloning (XTTS v2): kreativ/audio/ai-voice-cloning-xtts.md
       - Video & Film:
           - Übersicht: kreativ/video/index.md
           - KI in der Film- und Videoproduktion: kreativ/video/ki-filmproduktion.md
+          - FFmpeg & Whisper Automatisierung: kreativ/video/ffmpeg-whisper-automatisierung.md
+          - Manim Animation Engine: kreativ/video/manim-animation-guide.md
+          - FFmpeg Advanced Filtering & AV1: kreativ/video/ffmpeg-advanced-filters.md
+          - FFmpeg HLS Video Streaming: kreativ/video/ffmpeg-hls-streaming.md
+          - Remotion React Video Generation: kreativ/video/remotion-react-video.md
+          - FFmpeg Video Contact Sheets: kreativ/video/ffmpeg-thumbnail-grid.md
 
   # 📚 WISSEN & DOKUMENTATION
   - Wissen & Dokumentation:
       - Daten:
-          - Datenbanken: daten/datenbanken/index.md
+          - Datenbanken: wissen/daten/datenbanken/index.md
+          - PostgreSQL + pgvector: wissen/daten/datenbanken/pgvector-anleitung.md
           - Datenerfassung:
-              - Übersicht: daten/datenerfassung/index.md
-              - OpenDataKit: daten/datenerfassung/opendatakit.md
+              - Übersicht: wissen/daten/datenerfassung/index.md
+              - OpenDataKit: wissen/daten/datenerfassung/opendatakit.md
       - E-Learning:
           - Übersicht: wissen/e-learning/index.md
           - KI in Lehre & Weiterbildung: wissen/e-learning/ki-lehre-weiterbildung.md
@@ -98,18 +154,26 @@ nav:
           - Pandoc: wissen/tools/pandoc.md
           - Analysetool: wissen/tools/analysetool.md
           - Benchmark: wissen/tools/benchmark.md
+          - Pandoc Export-Pipeline: wissen/tools/pandoc-export-pipeline.md
+          - Pandoc Custom Lua-Filter: wissen/tools/pandoc-lua-filters.md
       - Dokumentenerstellung:
           - Übersicht: wissen/dokumentation/index.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
               - Wiederherstellen: wissen/dokumentation/mediawiki/wiederherstellen.md
+              - Python Bot Automatisierung: wissen/dokumentation/mediawiki/mediawiki-python-bot.md
+              - MediaWiki Backup Skripte: wissen/dokumentation/mediawiki/mediawiki-backup-skripte.md
+              - MediaWiki PHP Extension: wissen/dokumentation/mediawiki/mediawiki-php-extension.md
           - Semantisches MediaWiki:
               - Installieren: wissen/dokumentation/semantische-mediawiki/installieren.md
               - Kurzform: wissen/dokumentation/semantische-mediawiki/kurzform.md
               - Erweiterungen: wissen/dokumentation/semantische-mediawiki/wichtige-erweiterungen.md
+              - SMW Inline Queries: wissen/dokumentation/semantische-mediawiki/smw-inline-queries.md
+              - SMW SPARQL Endpoint: wissen/dokumentation/semantische-mediawiki/smw-sparql-queries.md
           - XWiki:
               - Installieren: wissen/dokumentation/xwiki/installieren.md
+              - XWiki REST API & Python: wissen/dokumentation/xwiki/xwiki-rest-api.md
 
   # 🏷️ TAGS & KATEGORIEN
   - Tags & Kategorien: tags.md
@@ -127,9 +191,27 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.tabs
+    - navigation.path
     - search.suggest
     - search.highlight
     - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: In dunklen Modus wechseln
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: In hellen Modus wechseln
 
 plugins:
   - search:

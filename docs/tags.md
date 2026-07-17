@@ -37,7 +37,7 @@ Diese Seite listet alle Tags und die damit verknüpften Seiten auf. Die Tags hel
 
 - **datenbank** - Datenbanken
   - [PostgreSQL](entwicklung/infrastruktur/postgresql.md)
-  - [Datenbanken Übersicht](daten/datenbanken/index.md)
+  - [Datenbanken Übersicht](wissen/daten/datenbanken/index.md)
 
 - **webentwicklung** - Webentwicklung
   - [KI Webentwicklung](entwicklung/webentwicklung/ki-webentwicklung.md)
@@ -79,7 +79,7 @@ Diese Seite listet alle Tags und die damit verknüpften Seiten auf. Die Tags hel
 ### 📊 Daten
 
 - **datenerfassung** - Datenerfassung
-  - [OpenDataKit](daten/datenerfassung/opendatakit.md)
+  - [OpenDataKit](wissen/daten/datenerfassung/opendatakit.md)
 
 ### ⚡ Technologien & Plattformen
 

@@ -6,8 +6,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ver": "gh-pages -d site --nojekyll --cname dokument.wissen-ahrensburg.de"
+    "build": ".venv/bin/mkdocs build",
+    "serve": ".venv/bin/mkdocs serve",
+    "ver": ".venv/bin/mkdocs build && gh-pages -d site --nojekyll --cname dokument.wissen-ahrensburg.de",
+    "deploy": "npm run ver"
   },
   "author": "",
   "license": "ISC",

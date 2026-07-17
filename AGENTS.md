@@ -9,19 +9,25 @@ Diese Richtlinien müssen von allen KI-Agenten bei der Bearbeitung dieses Reposi
 
 ## 📁 Verzeichnisstruktur (unter `docs/`)
 Die Dokumentation ist in folgende Hauptbereiche unterteilt:
-* `docs/Server/` - Server-Konfigurationen (Nginx, PostgreSQL, Tomcat, Kachelserver etc.)
-* `docs/IDE/` - Lokale Entwicklungsumgebung, KI-Coding-Tools, Android Setup
-* `docs/Video/` - Video- & Animationstools (Remotion, FFmpeg, Blender, Manim etc.)
-* `docs/Content/` - KI-gestützte Content-Erstellung
-* `docs/Design/` - Design & Ideenfindung mit KI
-* `docs/Webentwicklung/` - Webentwicklung mit KI-Unterstützung
-* `docs/Coding/` - KI-Coding-Guides und Programmierkonzepte
-* `docs/Desktop_Automation/` - GUI- und Desktop-Automatisierung
-* `docs/E-Learning-Autorentool/` - Konzepte für digitales Lernen
-* `docs/Audio/` - Programmatische Audio- & Musikverarbeitung
-* `docs/Datenerfassung/` - Datenerhebungstools (z. B. OpenDataKit)
-* `docs/Dokument_Erstellen/` - Wissensdatenbanken & Generatoren (Mediawiki, Xwiki, Notebooks)
-* `docs/Tools/` - Allgemeine Hilfswerkzeuge (Pandoc, Analysetool, Benchmark)
+* `docs/künstliche-intelligenz/`
+  * `coding/` - KI-Coding, Vibe Coding, Programmieren lernen
+  * `content/` - KI Content-Creation, SEO, Social Media, Multilinguale Inhalte
+  * `automatisierung/` - PyAutoGUI, Playwright, ydotool, Robot Framework
+* `docs/entwicklung/`
+  * `webentwicklung/` - KI Webentwicklung, Frontend, Backend, Deployment, Performance
+  * `infrastruktur/` - Server-Konfigurationen (Nginx, PostgreSQL, Tomcat, Kachelserver etc.)
+  * `system/` - Assembler, Compiler, Rust/C/C++, Linux-Systemprogrammierung
+  * `ide/` - Lokale Entwicklungsumgebung, KI-Coding-Tools, Android Setup
+* `docs/kreativ/`
+  * `design/` - KI-gestützte Design-Ideenfindung & Methoden
+  * `audio/` - KI Audio, Audacity, DAW, MIDI, Audio-Processing
+  * `video/` - KI in Film- und Videoproduktion
+* `docs/wissen/`
+  * `daten/` - Datenbanken & Datenerfassung (OpenDataKit)
+  * `e-learning/` - Konzepte für digitales Lernen & KI in der Lehre
+  * `tools/` - Pandoc, Analysetool, Benchmark
+  * `dokumentation/` - MediaWiki, Semantisches MediaWiki, XWiki
+* `docs/rechtliches/` - Impressum & Datenschutz
 
 ## 📌 Wichtige Regeln & Best Practices
 

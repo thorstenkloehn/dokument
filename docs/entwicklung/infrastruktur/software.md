@@ -220,8 +220,8 @@ graph LR
 ## Verwandte Themen
 
 * [Tools & Hilfswerkzeuge](../../wissen/tools/index.md) – Entwicklungs- und Analyse-Tools
-* [IDE & Entwicklungsumgebung](../../ide/index.md) – Entwicklungs-Tools und KI-Assistenten
-* [Datenerfassung](../../daten/datenerfassung/index.md) – Datenerfassungstools für Server
+* [IDE & Entwicklungsumgebung](../ide/index.md) – Entwicklungs-Tools und KI-Assistenten
+* [Datenerfassung](../../wissen/daten/datenerfassung/index.md) – Datenerfassungstools für Server
 * [Dokumentation](../../wissen/dokumentation/index.md) – Dokumentation der Serverkonfiguration
 
 ---
