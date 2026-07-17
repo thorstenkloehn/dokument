@@ -89,6 +89,12 @@ nav:
       - Pandoc: Tools/Pandoc.md
       - Analysetool: Tools/Analysetool.md
       - Benchmark: Tools/Benchmark.md
+  - Systemprogrammierung:
+      - Übersicht: Systemprogrammierung/index.md
+      - Assembler: Systemprogrammierung/assembler.md
+      - Compiler: Systemprogrammierung/compiler.md
+      - Rust, C & C++ Integration: Systemprogrammierung/rust-c-cpp-integration.md
+      - Linux-Systemprogrammierung: Systemprogrammierung/linux-systemprogrammierung.md
   - Impressum: Impressum.md
   - Datenschutz: Datenschutz.md
 
