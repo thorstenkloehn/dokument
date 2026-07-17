@@ -1763,5 +1763,5 @@ setInterval(() => {
 * [Webentwicklung/Frontend mit KI](frontend-ki.md) – Frontend-Entwicklung
 * [Webentwicklung/Backend-Integration](backend-integration.md) – Backend-Services
 * [Webentwicklung/Deployment](deployment.md) – Bereitstellung mit KI
-* [Tools/index](../Tools/index.md) – Performance-Tools
-* [Server/Software](../Server/Software.md) – Server-Optimierung
+* [Tools/index](../../wissen/tools/index.md) – Performance-Tools
+* [Server/Software](../infrastruktur/software.md) – Server-Optimierung

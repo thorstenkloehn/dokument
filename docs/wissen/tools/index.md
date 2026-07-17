@@ -14,7 +14,7 @@ Die Tools sind nach ihren Hauptanwendungsbereichen organisiert:
 
 Tools zur Umwandlung, Bearbeitung und Verwaltung von Dokumenten in verschiedenen Formaten.
 
-### [Pandoc](Pandoc.md)
+### [Pandoc](pandoc.md)
 **Universeller Dokumentenkonverter** – Wandelt Formate ineinander um, darunter:
 
 * **Eingabeformate**: Markdown, HTML, LaTeX, DOCX, ODT, EPUB, Jupyter Notebooks
@@ -52,7 +52,7 @@ pandoc -f docx -t markdown -o output.md input.docx
 
 Tools zur Analyse von Code-Qualität, Abhängigkeiten und Sicherheitslücken.
 
-### [Analysetools](Analysetool.md)
+### [Analysetools](analysetool.md)
 **Abhängigkeits- und Sicherheitsanalyse** für Open-Source-Projekte.
 
 #### Abhängigkeitsanalyse
@@ -91,7 +91,7 @@ osv-scanner -r path/to/your/project
 
 Tools zur Leistungsmessung und Optimierung von Anwendungen und Frameworks.
 
-### [Web Frameworks Benchmark](Benchmark.md)
+### [Web Frameworks Benchmark](benchmark.md)
 **Leistungsvergleich von Web-Frameworks** – Messung und Visualisierung der Performance.
 
 #### Benchmark-Plattformen
@@ -345,10 +345,10 @@ Tools für Design, Prototyping und UI-Entwicklung.
 
 ## 🔗 Verwandte Dokumentationsbereiche
 
-* [Server-Konfiguration](/entwicklung/infrastruktur/software.md) – Server-Tools und -Einstellungen
-* [IDE & Entwicklungsumgebung](/ide/index.md) – Entwicklungs-Tools
-* [Datenerfassung](/daten/datenerfassung/index.md) – Datenerfassungstools
-* [Dokumentation](/wissen/dokumentation/index.md) – Dokumentations-Tools
+* [Server-Konfiguration](../../entwicklung/infrastruktur/software.md) – Server-Tools und -Einstellungen
+* [IDE & Entwicklungsumgebung](../../ide/index.md) – Entwicklungs-Tools
+* [Datenerfassung](../../daten/datenerfassung/index.md) – Datenerfassungstools
+* [Dokumentation](../dokumentation/index.md) – Dokumentations-Tools
 
 ---
 

@@ -750,7 +750,7 @@ graph TD
 * [Audio/KI und Audio](ki-audio.md) – Umfassende Übersicht zu KI in der Audio-Verarbeitung
 * [Audio/MIDI-Programmierung](midi-programmierung.md) – MIDI mit KI steuern
 * [Audio/Audio-Processing](audio-processing.md) – Signalverarbeitung mit KI
-* [Content/KI Content Creation](../Content/ki-content-creation.md) – KI für Content-Produktion
+* [Content/KI Content Creation](../../künstliche-intelligenz/content/ki-content-creation.md) – KI für Content-Produktion
 
 ---
 

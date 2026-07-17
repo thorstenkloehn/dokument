@@ -376,12 +376,12 @@ Empfehlung, welche Modelle und Frameworks sich am besten für die Automatisierun
 
 ## 🔗 Verwandte Themen
 
-* [Server/KI/ML-Infrastrukturen](../Server/ki-ml-infrastrukturen.md) – Infrastruktur für KI-Modelle
-* [IDE/Lokale KI-Frontends](../IDE/lokale-ki-frontends.md) – Web-UIs für lokale Modelle
-* [Tools & Hilfswerkzeuge](../Tools/index.md) – Entwicklungs- und Analyse-Tools
-* [Webentwicklung/KI Webentwicklung](../Webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
-* [Audio/KI und Audio](../Audio/index.md) – Sprach- und Audiomodelle
-* [Video/KI-gestützte Videogenerierung](../Video/index.md) – Diffusionsmodelle für Video
+* [Server/KI/ML-Infrastrukturen](../entwicklung/infrastruktur/ki-ml-infrastrukturen.md) – Infrastruktur für KI-Modelle
+* [IDE/Lokale KI-Frontends](../ide/lokale-ki-frontends.md) – Web-UIs für lokale Modelle
+* [Tools & Hilfswerkzeuge](../wissen/tools/index.md) – Entwicklungs- und Analyse-Tools
+* [Webentwicklung/KI Webentwicklung](../entwicklung/webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
+* [Audio/KI und Audio](../kreativ/audio/index.md) – Sprach- und Audiomodelle
+* [Video/KI-gestützte Videogenerierung](../kreativ/video/index.md) – Diffusionsmodelle für Video
 
 ---
 

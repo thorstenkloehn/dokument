@@ -5,22 +5,22 @@ Willkommen im Bereich **Server und Infrastruktur**! Hier finden Sie Anleitungen 
 ## Themen in diesem Bereich
 
 ### Datenbanken
-- [PostgreSQL](Postgresql.md) - Einrichtung und Verwaltung
+- [PostgreSQL](postgresql.md) - Einrichtung und Verwaltung
 
 ### Webserver
-- [Apache-Server mit Nginx verbinden](Apache_Nginx.md)
-- [Nginx SSL Zertifikat](Nginx_SSL.md)
+- [Apache-Server mit Nginx verbinden](apache-nginx.md)
+- [Nginx SSL Zertifikat](nginx-ssl.md)
 - [Nginx Einstellungen](nginx.md)
 
 ### Kachelserver
-- [Server 20.04](Kachelserver/Server204.md)
-- [Server 22.04](Kachelserver/Server224.md)
-- [Server 24.04](Kachelserver/Server244.md)
+- [Server 20.04](kachelserver/server204.md)
+- [Server 22.04](kachelserver/server224.md)
+- [Server 24.04](kachelserver/server244.md)
 
 ### Anwendungen
-- [Tomcat](Tomcat.md) - Java Application Server
+- [Tomcat](tomcat.md) - Java Application Server
 - [Installation](installation.md) - Allgemeine Installationsanleitungen
-- [Software](Software.md) - Software-Installation und -Konfiguration
+- [Software](software.md) - Software-Installation und -Konfiguration
 
 ### KI/ML-Infrastruktur
 - [Skalierbare KI/ML-Infrastrukturen](ki-ml-infrastrukturen.md)

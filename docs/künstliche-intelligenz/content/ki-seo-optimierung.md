@@ -486,5 +486,5 @@ Beispiel:
 ## 🔗 Verwandte Themen
 
 * [Content/KI Content Creation](ki-content-creation.md) – KI-gestützte Inhaltserstellung
-* [Webentwicklung/Frontend mit KI](../Webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
-* [Tools/Analysetool](../Tools/Analysetool.md) – Code-Analyse-Tools für SEO
+* [Webentwicklung/Frontend mit KI](../../entwicklung/webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
+* [Tools/Analysetool](../../wissen/tools/analysetool.md) – Code-Analyse-Tools für SEO

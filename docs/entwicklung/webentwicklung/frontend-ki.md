@@ -1386,5 +1386,5 @@ const monitor = new PerformanceMonitor();
 * [Webentwicklung/Backend-Integration](backend-integration.md) – Server-seitige Logik mit KI
 * [Webentwicklung/Deployment](deployment.md) – Bereitstellung mit KI
 * [Webentwicklung/Performance](performance.md) – Leistungsoptimierung mit KI
-* [Tools/index](../Tools/index.md) – Frontend-Entwicklungstools
-* [IDE/lokale-ki-frontends](../IDE/lokale-ki-frontends.md) – KI-Frontends für lokale Nutzung
+* [Tools/index](../../wissen/tools/index.md) – Frontend-Entwicklungstools
+* [IDE/lokale-ki-frontends](../../ide/lokale-ki-frontends.md) – KI-Frontends für lokale Nutzung

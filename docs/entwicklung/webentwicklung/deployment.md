@@ -1158,5 +1158,5 @@ for anomaly in anomalies:
 * [Webentwicklung/Frontend mit KI](frontend-ki.md) – Frontend-Entwicklung
 * [Webentwicklung/Backend-Integration](backend-integration.md) – Backend-Services
 * [Webentwicklung/Performance](performance.md) – Leistungsoptimierung
-* [Server/Software](../Server/Software.md) – Server-Konfiguration
-* [Tools/index](../Tools/index.md) – DevOps-Tools
+* [Server/Software](../infrastruktur/software.md) – Server-Konfiguration
+* [Tools/index](../../wissen/tools/index.md) – DevOps-Tools

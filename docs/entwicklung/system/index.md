@@ -152,9 +152,9 @@ cargo build --release
 
 ## 🔗 Verwandte Bereiche
 
-- [Coding](../Coding/index.md) – Allgemeine Programmierkonzepte
-- [Tools](../Tools/index.md) – Nützliche Werkzeuge für Entwickler
-- [Server](../Server/index.md) – Server-Administration und -Optimierung
+- [Coding](../../künstliche-intelligenz/coding/index.md) – Allgemeine Programmierkonzepte
+- [Tools](../../wissen/tools/index.md) – Nützliche Werkzeuge für Entwickler
+- [Server](../infrastruktur/index.md) – Server-Administration und -Optimierung
 
 
 

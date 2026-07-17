@@ -122,9 +122,9 @@ sudo systemctl start tileserver-gl
 - Weniger flexibel für moderne Stile
 
  Siehe die bestehenden Anleitungen:
-- [Ubuntu 20.04](Server204.md)
-- [Ubuntu 22.04](Server224.md)
-- [Ubuntu 24.04](Server244.md)
+- [Ubuntu 20.04](server204.md)
+- [Ubuntu 22.04](server224.md)
+- [Ubuntu 24.04](server244.md)
 
 ---
 

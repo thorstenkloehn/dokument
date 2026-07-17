@@ -741,5 +741,5 @@ print(f"Profit: ${result['Profit']}")
 * [Content/KI Content Creation](ki-content-creation.md) – KI-gestützte Inhaltserstellung
 * [Content/KI SEO-Optimierung](ki-seo-optimierung.md) – SEO für Social Media
 * [Content/Mehrsprachige Inhalte](multilinguale-inhalte.md) – Internationale Social Media
-* [Webentwicklung/Frontend mit KI](../Webentwicklung/ki-webentwicklung.md) – KI für Web-Apps
-* [Audio/KI und Audio](../Audio/ki-audio.md) – Audio-Content für Social Media
+* [Webentwicklung/Frontend mit KI](../../entwicklung/webentwicklung/ki-webentwicklung.md) – KI für Web-Apps
+* [Audio/KI und Audio](../../kreativ/audio/ki-audio.md) – Audio-Content für Social Media

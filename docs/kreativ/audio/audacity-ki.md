@@ -528,7 +528,7 @@ graph TD
 * [Audio/Daw-Integration](daw-integration.md) – KI in Digital Audio Workstations
 * [Audio/MIDI-Programmierung](midi-programmierung.md) – MIDI mit KI steuern
 * [Audio/Audio-Processing](audio-processing.md) – Signalverarbeitung mit KI
-* [Tools/Analysetool](../Tools/Analysetool.md) – Code-Analyse für Audio-Projekte
+* [Tools/Analysetool](../../wissen/tools/analysetool.md) – Code-Analyse für Audio-Projekte
 
 ---
 

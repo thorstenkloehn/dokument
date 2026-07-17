@@ -1754,6 +1754,6 @@ describe('Auth API', () => {
 * [Webentwicklung/Frontend mit KI](frontend-ki.md) – Frontend-Entwicklung mit KI
 * [Webentwicklung/Deployment](deployment.md) – Bereitstellung mit KI
 * [Webentwicklung/Performance](performance.md) – Leistungsoptimierung mit KI
-* [Tools/index](../Tools/index.md) – Backend-Entwicklungstools
-* [Server/Postgresql](../Server/Postgresql.md) – PostgreSQL mit KI
-* [Server/Software](../Server/Software.md) – Server-Konfiguration mit KI
+* [Tools/index](../../wissen/tools/index.md) – Backend-Entwicklungstools
+* [Server/Postgresql](../infrastruktur/postgresql.md) – PostgreSQL mit KI
+* [Server/Software](../infrastruktur/software.md) – Server-Konfiguration mit KI

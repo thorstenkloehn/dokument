@@ -639,5 +639,5 @@ def get_user_language(ip_address):
 
 * [Content/KI Content Creation](ki-content-creation.md) – KI-gestützte Inhaltserstellung
 * [Content/KI SEO-Optimierung](ki-seo-optimierung.md) – Mehrsprachige SEO-Strategien
-* [Webentwicklung/Frontend mit KI](../Webentwicklung/ki-webentwicklung.md) – Lokale KI-Frontends
-* [Tools/index](../Tools/index.md) – Übersetzungs- und Lokalisierungstools
+* [Webentwicklung/Frontend mit KI](../../entwicklung/webentwicklung/ki-webentwicklung.md) – Lokale KI-Frontends
+* [Tools/index](../../wissen/tools/index.md) – Übersetzungs- und Lokalisierungstools

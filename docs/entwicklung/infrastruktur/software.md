@@ -61,14 +61,14 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 - Load Balancing für Backend-Services
 - SSL/TLS-Terminierung mit Let's Encrypt
 
-#### [Apache Nginx Kopplung](Apache_Nginx.md)
+#### [Apache Nginx Kopplung](apache-nginx.md)
 **Integration von Apache HTTP Server mit Nginx** – Kombiniert die Stärken beider Webserver.
 
 * **Architektur**: Nginx als Frontend, Apache als Backend
 * **Vorteile**: Beste Performance für statische Inhalte + volle Apache-Kompatibilität
 * **Use Cases**: Legacy-Applikationen, .htaccess-Konfigurationen, spezielle Apache-Module
 
-#### [Nginx SSL](Nginx_SSL.md)
+#### [Nginx SSL](nginx-ssl.md)
 **SSL/TLS-Konfiguration für Nginx** – Sichere Kommunikation mit Let's Encrypt Zertifikaten.
 
 * **Zertifikatsmanagement**: Automatisierte Erneuerung mit Certbot
@@ -80,7 +80,7 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 
 ### 3. Servlet-Container
 
-#### [Tomcat](Tomcat.md)
+#### [Tomcat](tomcat.md)
 **Apache Tomcat 10 – Java Servlet Container** – Laufzeitumgebung für Java-Webanwendungen (Servlets, JSP, WebSockets).
 
 * **Version**: Tomcat 10.x (Jakarta EE 9+)
@@ -102,7 +102,7 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 
 ### 4. Datenbanken
 
-#### [PostgreSQL](Postgresql.md)
+#### [PostgreSQL](postgresql.md)
 **Objekt-relationales Datenbanksystem** – Robuste, erweiterbare Datenbank für Produktionsumgebungen.
 
 * **Version**: PostgreSQL 18 (aktuelle stabile Version)
@@ -130,9 +130,9 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 
 | Version | Beschreibung | Link |
 |---------|--------------|------|
-| [Ubuntu 20.04](Kachelserver/Server204.md) | Ältere LTS-Version | Detaillierte Anleitung |
-| [Ubuntu 22.04](Kachelserver/Server224.md) | Aktuelle LTS-Version | Detaillierte Anleitung |
-| [Ubuntu 24.04](Kachelserver/Server244.md) | Neueste LTS-Version | Detaillierte Anleitung |
+| [Ubuntu 20.04](kachelserver/server204.md) | Ältere LTS-Version | Detaillierte Anleitung |
+| [Ubuntu 22.04](kachelserver/server224.md) | Aktuelle LTS-Version | Detaillierte Anleitung |
+| [Ubuntu 24.04](kachelserver/server244.md) | Neueste LTS-Version | Detaillierte Anleitung |
 
 **Hauptkomponenten:**
 - **Datenquellen**: OpenStreetMap PBF-Dateien
@@ -219,10 +219,10 @@ graph LR
 
 ## Verwandte Themen
 
-* [Tools & Hilfswerkzeuge](../Tools/index.md) – Entwicklungs- und Analyse-Tools
-* [IDE & Entwicklungsumgebung](../IDE/index.md) – Entwicklungs-Tools und KI-Assistenten
-* [Datenerfassung](../Datenerfassung/index.md) – Datenerfassungstools für Server
-* [Dokument Erstellen](../Dokument_Erstellen/index.md) – Dokumentation der Serverkonfiguration
+* [Tools & Hilfswerkzeuge](../../wissen/tools/index.md) – Entwicklungs- und Analyse-Tools
+* [IDE & Entwicklungsumgebung](../../ide/index.md) – Entwicklungs-Tools und KI-Assistenten
+* [Datenerfassung](../../daten/datenerfassung/index.md) – Datenerfassungstools für Server
+* [Dokumentation](../../wissen/dokumentation/index.md) – Dokumentation der Serverkonfiguration
 
 ---
 

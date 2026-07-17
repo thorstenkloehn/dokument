@@ -462,12 +462,12 @@ Empfehlung, welche Datenbanken sich am besten für Automatisierung durch KI-Agen
 
 ## 🔗 Verwandte Themen
 
-* [KI-Modelle & Frameworks](/künstliche-intelligenz/index.md) – Modelle für KI-Anwendungen
-* [KI/ML-Infrastrukturen](/entwicklung/infrastruktur/ki-ml-infrastrukturen.md) – Infrastruktur für KI-Systeme
-* [Server-Software](/entwicklung/infrastruktur/software.md) – Server- und Datenbank-Konfiguration
-* [Tools & Hilfswerkzeuge](/wissen/tools/index.md) – Entwicklungs- und Analyse-Tools
-* [Lokale KI-Frontends](/ide/lokale-ki-frontends.md) – Web-UIs für lokale KI
-* [Datenerfassung](/daten/datenerfassung/index.md) – Datenerfassungstools
+* [KI-Modelle & Frameworks](../../künstliche-intelligenz/index.md) – Modelle für KI-Anwendungen
+* [KI/ML-Infrastrukturen](../../entwicklung/infrastruktur/ki-ml-infrastrukturen.md) – Infrastruktur für KI-Systeme
+* [Server-Software](../../entwicklung/infrastruktur/software.md) – Server- und Datenbank-Konfiguration
+* [Tools & Hilfswerkzeuge](../../wissen/tools/index.md) – Entwicklungs- und Analyse-Tools
+* [Lokale KI-Frontends](../../ide/lokale-ki-frontends.md) – Web-UIs für lokale KI
+* [Datenerfassung](../datenerfassung/index.md) – Datenerfassungstools
 
 ---
 

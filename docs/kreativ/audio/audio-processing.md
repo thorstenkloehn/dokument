@@ -946,7 +946,7 @@ graph TD
 * [Audio/Audacity mit KI](audacity-ki.md) – KI-Integration in Audacity
 * [Audio/Daw-Integration](daw-integration.md) – KI in Digital Audio Workstations
 * [Audio/MIDI-Programmierung](midi-programmierung.md) – MIDI mit KI steuern
-* [Coding/KI Coding](../Coding/ki-coding.md) – KI für Software-Entwicklung
+* [Coding/KI Coding](../../künstliche-intelligenz/coding/ki-coding.md) – KI für Software-Entwicklung
 
 ---
 

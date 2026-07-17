@@ -238,11 +238,11 @@ graph LR
 
 ## 🔗 Verwandte Themen
 
-* [Webentwicklung/KI Websites entwickeln](../Webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
-* [Audio/KI und Audio](../Audio/ki-audio.md) – KI für Audio- und Video-Inhalte
-* [Desktop Automation/PyAutoGUI Anleitung](../Desktop_Automation/pyautogui-anleitung.md) – Automatisierung von Content-Workflows
-* [Tools/Analysetool](../Tools/Analysetool.md) – Analyse-Tools für Content-Performance
-* [Server/Software](../Server/Software.md) – Server-Tools für Content-Management-Systeme
+* [Webentwicklung/KI Websites entwickeln](../../entwicklung/webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
+* [Audio/KI und Audio](../../kreativ/audio/ki-audio.md) – KI für Audio- und Video-Inhalte
+* [Desktop Automation/PyAutoGUI Anleitung](../automatisierung/pyautogui-anleitung.md) – Automatisierung von Content-Workflows
+* [Tools/Analysetool](../../wissen/tools/analysetool.md) – Analyse-Tools für Content-Performance
+* [Server/Software](../../entwicklung/infrastruktur/software.md) – Server-Tools für Content-Management-Systeme
 
 ---
 

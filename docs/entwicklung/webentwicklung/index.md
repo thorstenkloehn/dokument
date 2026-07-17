@@ -214,12 +214,12 @@ stages:
 
 ## 🔗 Verwandte Themen
 
-* [Content/KI-gestützte Inhalte](../Content/index.md) – KI für Content-Erstellung und -Optimierung
-* [Tools & Hilfswerkzeuge](../Tools/index.md) – Entwicklungs- und Analyse-Tools
-* [Server/Konfiguration](../Server/Software.md) – Server-Setup und -Verwaltung
-* [IDE & Entwicklungsumgebung](../IDE/index.md) – Entwicklungs-Tools und KI-Assistenten
-* [Audio/KI und Audio](../Audio/index.md) – Audio-Verarbeitung mit KI
-* [Desktop Automation](../Desktop_Automation/index.md) – Automatisierung von Web-Tests
+* [Content/KI-gestützte Inhalte](../../künstliche-intelligenz/content/index.md) – KI für Content-Erstellung und -Optimierung
+* [Tools & Hilfswerkzeuge](../../wissen/tools/index.md) – Entwicklungs- und Analyse-Tools
+* [Server/Konfiguration](../infrastruktur/software.md) – Server-Setup und -Verwaltung
+* [IDE & Entwicklungsumgebung](../../ide/index.md) – Entwicklungs-Tools und KI-Assistenten
+* [Audio/KI und Audio](../../kreativ/audio/index.md) – Audio-Verarbeitung mit KI
+* [Desktop Automation](../../künstliche-intelligenz/automatisierung/index.md) – Automatisierung von Web-Tests
 
 ---
 

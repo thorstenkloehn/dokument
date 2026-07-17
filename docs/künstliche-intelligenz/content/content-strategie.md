@@ -854,5 +854,5 @@ print(evergreen_content[['Title', 'Views', 'Age_Days', 'Shares']])
 * [Content/KI SEO-Optimierung](ki-seo-optimierung.md) – Suchmaschinenoptimierung mit KI
 * [Content/Mehrsprachige Inhalte](multilinguale-inhalte.md) – Internationale Content-Strategie
 * [Content/Social Media mit KI](social-media-ki.md) – Social Media Marketing mit KI
-* [Webentwicklung/Frontend mit KI](../Webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
-* [Tools/index](../Tools/index.md) – Content-Marketing-Tools
+* [Webentwicklung/Frontend mit KI](../../entwicklung/webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
+* [Tools/index](../../wissen/tools/index.md) – Content-Marketing-Tools

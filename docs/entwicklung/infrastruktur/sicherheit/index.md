@@ -609,12 +609,12 @@ Empfehlung, welche Sicherheits-Tools sich am besten für Automatisierung durch K
 
 ## 🔗 Verwandte Themen
 
-* [KI-Modelle & Frameworks](../KI-Modelle/index.md) – Modelle und ihre Sicherheitsaspekte
-* [Datenbanken & Big Data](../Datenbanken/index.md) – Sichere Datenspeicherung für KI
-* [Server/KI/ML-Infrastrukturen](../Server/ki-ml-infrastrukturen.md) – sichere Infrastruktur
-* [Server/Software](../Server/Software.md) – Server-Sicherheit
-* [IDE/Lokale KI-Frontends](../IDE/lokale-ki-frontends.md) – sichere lokale Ausführung
-* [Tools & Hilfswerkzeuge](../Tools/index.md) – Sicherheits-Tools
+* [KI-Modelle & Frameworks](../../../künstliche-intelligenz/index.md) – Modelle und ihre Sicherheitsaspekte
+* [Datenbanken & Big Data](../../../daten/datenbanken/index.md) – Sichere Datenspeicherung für KI
+* [Server/KI/ML-Infrastrukturen](../ki-ml-infrastrukturen.md) – sichere Infrastruktur
+* [Server/Software](../software.md) – Server-Sicherheit
+* [IDE/Lokale KI-Frontends](../../../ide/lokale-ki-frontends.md) – sichere lokale Ausführung
+* [Tools & Hilfswerkzeuge](../../../wissen/tools/index.md) – Sicherheits-Tools
 
 ---
 
