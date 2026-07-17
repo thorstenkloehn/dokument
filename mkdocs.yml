@@ -1,109 +1,154 @@
-site_name: Dokument 
+site_name: Dokument
 nav:
   - Startseite: index.md
-  - Datenbanken:
-      - Übersicht: Datenbanken/index.md
-  - KI-Modelle:
-      - Übersicht: KI-Modelle/index.md
-  - Sicherheit:
-      - Übersicht: Sicherheit/index.md
-  - Server:
-      - Postgresql: Server/Postgresql.md
-      - Kachelserver:
-          - Server20.04: Server/Kachelserver/Server204.md
-          - Server22.04: Server/Kachelserver/Server224.md
-          - Server24.04: Server/Kachelserver/Server244.md
-      - Apache-Server mit Nginx verbinden: Server/Apache_Nginx.md
-      - Nginx SSL Zertifikat: Server/Nginx_SSL.md
-      - Nginx Einstellung: Server/nginx.md
-      - Installation: Server/installation.md
-      - Tomcat: Server/Tomcat.md
-      - Software: Server/Software.md
-      - Skalierbare KI/ML-Infrastrukturen: Server/ki-ml-infrastrukturen.md
-  - IDE:
-      - Übersicht: IDE/index.md
-      - Setup: IDE/setup.md
-      - Android: IDE/Android.md
-      - Lokale KI-Frontends: IDE/lokale-ki-frontends.md
-  - Video:
-      - Übersicht: Video/index.md
-      - KI in der Film- und Videoproduktion: Video/ki-filmproduktion.md
-  - Content:
-      - Übersicht: Content/index.md
-      - KI Content Creation: Content/ki-content-creation.md
-      - Content-Strategie mit KI: Content/content-strategie.md
-      - KI-gestützte SEO-Optimierung: Content/ki-seo-optimierung.md
-      - Multilinguale Inhalte mit KI: Content/multilinguale-inhalte.md
-      - Social Media Automatisierung mit KI: Content/social-media-ki.md
-  - Design:
-      - Design nach KI: Design/design-nach-ki.md
-      - Ideenfindung mit KI: Design/ideenfindung-ki.md
-      - 'Leseprobe: KI für Kreative': Design/leseprobe-ki-kreative.md
-  - Webentwicklung:
-      - Übersicht: Webentwicklung/index.md
-      - KI Webentwicklung: Webentwicklung/ki-webentwicklung.md
-      - Frontend mit KI: Webentwicklung/frontend-ki.md
-      - Backend-Integration mit KI: Webentwicklung/backend-integration.md
-      - Deployment mit KI: Webentwicklung/deployment.md
-      - Performance-Optimierung mit KI: Webentwicklung/performance.md
-  - Coding:
-      - KI Coding: Coding/ki-coding.md
-      - Eigene KI-Anwendungen: Coding/ki-anwendungen-programmieren.md
-      - Schrödinger programmiert KI: Coding/schroedinger-programmiert-ki.md
-      - Programmieren lernen mit KI: Coding/programmieren-lernen-ki.md
-      - Programmieren mit KI: Coding/programmieren-mit-ki.md
-      - Vibe Coding & Engineering: Coding/vibe-coding-engineering.md
-  - Desktop Automation:
-      - Übersicht: Desktop_Automation/index.md
-      - PyAutoGUI Anleitung: Desktop_Automation/pyautogui-anleitung.md
-      - Playwright Anleitung: Desktop_Automation/playwright-anleitung.md
-      - ydotool Anleitung: Desktop_Automation/ydotool-anleitung.md
-      - Robot Framework Anleitung: Desktop_Automation/robot-framework-anleitung.md
-  - E-Learning & Training:
-      - Übersicht: E-Learning-Autorentool/index.md
-      - KI in Lehre & Weiterbildung: E-Learning-Autorentool/ki-lehre-weiterbildung.md
-  - Audio & Musik:
-      - Übersicht: Audio/index.md
-      - KI und Audio: Audio/ki-audio.md
-      - Audacity mit KI: Audio/audacity-ki.md
-      - DAW-Integration mit KI: Audio/daw-integration.md
-      - MIDI-Programmierung mit KI: Audio/midi-programmierung.md
-      - Audio-Processing mit KI: Audio/audio-processing.md
-  - Datenerfassung:
-      - Übersicht: Datenerfassung/index.md
-      - OpenDataKit: Datenerfassung/OpenDataKit.md
-  - Dokument Erstellen:
-      - Übersicht: Dokument_Erstellen/index.md
-      - Mediawiki:
-          - Installieren: Dokument_Erstellen/Mediawiki/index.md
-          - Backup: Dokument_Erstellen/Mediawiki/Backup.md
-          - Wiederherstellen: Dokument_Erstellen/Mediawiki/Wiederherstellen.md
-      - Semantisches MediaWiki:
-          - Installieren: Dokument_Erstellen/Semantisches_Mediawiki/Installieren.md
-          - Kurzform: Dokument_Erstellen/Semantisches_Mediawiki/Kurzform.md
-          - Erweiterungen: Dokument_Erstellen/Semantisches_Mediawiki/Wichtige_Erweiterungen.md
-      - Xwiki:
-          - Installieren: Dokument_Erstellen/Xwiki/Installieren.md
-  - Tools:
-      - Übersicht: Tools/index.md
-      - Pandoc: Tools/Pandoc.md
-      - Analysetool: Tools/Analysetool.md
-      - Benchmark: Tools/Benchmark.md
-  - Systemprogrammierung:
-      - Übersicht: Systemprogrammierung/index.md
-      - Assembler: Systemprogrammierung/assembler.md
-      - Assembler Fehler & Sicherheit: Systemprogrammierung/assembler-fehler-sicherheit.md
-      - Compiler: Systemprogrammierung/compiler.md
-      - Rust, C & C++ Integration: Systemprogrammierung/rust-c-cpp-integration.md
-      - Linux-Systemprogrammierung: Systemprogrammierung/linux-systemprogrammierung.md
-  - Impressum: Impressum.md
-  - Datenschutz: Datenschutz.md
+
+  # 🤖 KI & AUTOMATISIERUNG
+  - KI & Automatisierung:
+      - Übersicht: künstliche-intelligenz/index.md
+      - Coding:
+          - Übersicht: künstliche-intelligenz/coding/index.md
+          - KI Coding: künstliche-intelligenz/coding/ki-coding.md
+          - Eigene KI-Anwendungen: künstliche-intelligenz/coding/ki-anwendungen-programmieren.md
+          - Schrödinger programmiert KI: künstliche-intelligenz/coding/schroedinger-programmiert-ki.md
+          - Programmieren lernen mit KI: künstliche-intelligenz/coding/programmieren-lernen-ki.md
+          - Programmieren mit KI: künstliche-intelligenz/coding/programmieren-mit-ki.md
+          - Vibe Coding & Engineering: künstliche-intelligenz/coding/vibe-coding-engineering.md
+      - Content-Erstellung:
+          - Übersicht: künstliche-intelligenz/content/index.md
+          - KI Content Creation: künstliche-intelligenz/content/ki-content-creation.md
+          - Content-Strategie mit KI: künstliche-intelligenz/content/content-strategie.md
+          - KI-gestützte SEO-Optimierung: künstliche-intelligenz/content/ki-seo-optimierung.md
+          - Multilinguale Inhalte mit KI: künstliche-intelligenz/content/multilinguale-inhalte.md
+          - Social Media Automatisierung: künstliche-intelligenz/content/social-media-ki.md
+      - Desktop-Automatisierung:
+          - Übersicht: künstliche-intelligenz/automatisierung/index.md
+          - PyAutoGUI Anleitung: künstliche-intelligenz/automatisierung/pyautogui-anleitung.md
+          - Playwright Anleitung: künstliche-intelligenz/automatisierung/playwright-anleitung.md
+          - ydotool Anleitung: künstliche-intelligenz/automatisierung/ydotool-anleitung.md
+          - Robot Framework Anleitung: künstliche-intelligenz/automatisierung/robot-framework-anleitung.md
+
+  # 💻 ENTWICKLUNG & INFRASTRUKTUR
+  - Entwicklung & Infrastruktur:
+      - Webentwicklung:
+          - Übersicht: entwicklung/webentwicklung/index.md
+          - KI Webentwicklung: entwicklung/webentwicklung/ki-webentwicklung.md
+          - Frontend mit KI: entwicklung/webentwicklung/frontend-ki.md
+          - Backend-Integration mit KI: entwicklung/webentwicklung/backend-integration.md
+          - Deployment mit KI: entwicklung/webentwicklung/deployment.md
+          - Performance-Optimierung mit KI: entwicklung/webentwicklung/performance.md
+      - Server & Infrastruktur:
+          - Übersicht: entwicklung/infrastruktur/index.md
+          - PostgreSQL: entwicklung/infrastruktur/postgresql.md
+          - Apache + Nginx: entwicklung/infrastruktur/apache-nginx.md
+          - Nginx: entwicklung/infrastruktur/nginx.md
+          - Nginx SSL: entwicklung/infrastruktur/nginx-ssl.md
+          - Installation: entwicklung/infrastruktur/installation.md
+          - Tomcat: entwicklung/infrastruktur/tomcat.md
+          - Software: entwicklung/infrastruktur/software.md
+          - Sicherheit: entwicklung/infrastruktur/sicherheit/index.md
+          - Skalierbare KI/ML-Infrastrukturen: entwicklung/infrastruktur/ki-ml-infrastrukturen.md
+          - Kachelserver:
+              - Ubuntu 20.04: entwicklung/infrastruktur/kachelserver/server204.md
+              - Ubuntu 22.04: entwicklung/infrastruktur/kachelserver/server224.md
+              - Ubuntu 24.04: entwicklung/infrastruktur/kachelserver/server244.md
+              - Alternative Kachelserver: entwicklung/infrastruktur/kachelserver/alternative-kachelserver.md
+      - Systemprogrammierung:
+          - Übersicht: entwicklung/system/index.md
+          - Assembler: entwicklung/system/assembler.md
+          - Assembler Fehler & Sicherheit: entwicklung/system/assembler-fehler-sicherheit.md
+          - Compiler: entwicklung/system/compiler.md
+          - Rust, C & C++ Integration: entwicklung/system/rust-c-cpp-integration.md
+          - Linux-Systemprogrammierung: entwicklung/system/linux-systemprogrammierung.md
+      - IDE:
+          - Übersicht: ide/index.md
+          - Setup: ide/setup.md
+          - Android: ide/android.md
+          - Lokale KI-Frontends: ide/lokale-ki-frontends.md
+
+  # 🎨 KREATIV & DESIGN
+  - Kreativ & Design:
+      - Design:
+          - Übersicht: kreativ/design/index.md
+          - Design nach KI: kreativ/design/design-nach-ki.md
+          - Ideenfindung mit KI: kreativ/design/ideenfindung-ki.md
+          - 'Leseprobe: KI für Kreative': kreativ/design/leseprobe-ki-kreative.md
+      - Audio & Musik:
+          - Übersicht: kreativ/audio/index.md
+          - KI und Audio: kreativ/audio/ki-audio.md
+          - Audacity mit KI: kreativ/audio/audacity-ki.md
+          - DAW-Integration mit KI: kreativ/audio/daw-integration.md
+          - MIDI-Programmierung mit KI: kreativ/audio/midi-programmierung.md
+          - Audio-Processing mit KI: kreativ/audio/audio-processing.md
+      - Video & Film:
+          - Übersicht: kreativ/video/index.md
+          - KI in der Film- und Videoproduktion: kreativ/video/ki-filmproduktion.md
+
+  # 📚 WISSEN & DOKUMENTATION
+  - Wissen & Dokumentation:
+      - Daten:
+          - Datenbanken: daten/datenbanken/index.md
+          - Datenerfassung:
+              - Übersicht: daten/datenerfassung/index.md
+              - OpenDataKit: daten/datenerfassung/opendatakit.md
+      - E-Learning:
+          - Übersicht: wissen/e-learning/index.md
+          - KI in Lehre & Weiterbildung: wissen/e-learning/ki-lehre-weiterbildung.md
+      - Tools:
+          - Übersicht: wissen/tools/index.md
+          - Pandoc: wissen/tools/pandoc.md
+          - Analysetool: wissen/tools/analysetool.md
+          - Benchmark: wissen/tools/benchmark.md
+      - Dokumentenerstellung:
+          - Übersicht: wissen/dokumentation/index.md
+          - MediaWiki:
+              - Installieren: wissen/dokumentation/mediawiki/index.md
+              - Backup: wissen/dokumentation/mediawiki/backup.md
+              - Wiederherstellen: wissen/dokumentation/mediawiki/wiederherstellen.md
+          - Semantisches MediaWiki:
+              - Installieren: wissen/dokumentation/semantische-mediawiki/installieren.md
+              - Kurzform: wissen/dokumentation/semantische-mediawiki/kurzform.md
+              - Erweiterungen: wissen/dokumentation/semantische-mediawiki/wichtige-erweiterungen.md
+          - XWiki:
+              - Installieren: wissen/dokumentation/xwiki/installieren.md
+
+  # 🏷️ TAGS & KATEGORIEN
+  - Tags & Kategorien: tags.md
+
+  # ⚖️ RECHTLICHES
+  - Rechtliches:
+      - Impressum: rechtliches/impressum.md
+      - Datenschutz: rechtliches/datenschutz.md
 
 theme:
   name: 'material'
   language: de
+  features:
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: amber
+  font:
+    text: Roboto
+    code: Roboto Mono
+
 plugins:
-  - search
+  - search:
+      lang: de
+      separator: '[\s\-]+'
+      min_search_length: 3
+      prebuild_index: true
+  - git-revision-date
+  - git-authors
+  - minify:
+      minify_html: true
+
 extra:
   consent:
     title: Cookie-Zustimmung
@@ -111,9 +156,20 @@ extra:
       Wir verwenden Cookies, um Ihre Besuche und Präferenzen zu erkennen und die
       Effektivität unserer Dokumentation zu messen.
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji
+  - attr_list
+  - admonition
+  - toc:
+      permalink: true
+      baselevel: 1

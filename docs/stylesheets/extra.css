@@ -1,0 +1,303 @@
+/* ============================================================================
+   Custom CSS für Material for MkDocs Theme
+   ============================================================================ */
+
+/* ---------------------------------------------------------------------
+   Admonitions / Hinweisboxen
+   --------------------------------------------------------------------- */
+
+/* Note Box */
+.admonition-note {
+    border-left-color: #2196F3 !important;
+    background-color: #E3F2FD !important;
+}
+
+/* Warning Box */
+.admonition-warning {
+    border-left-color: #FF9800 !important;
+    background-color: #FFF3E0 !important;
+}
+
+/* Danger/Error Box */
+.admonition-danger, .admonition-error {
+    border-left-color: #F44336 !important;
+    background-color: #FFEBEE !important;
+}
+
+/* Success/Check Box */
+.admonition-success, .admonition-check {
+    border-left-color: #4CAF50 !important;
+    background-color: #E8F5E9 !important;
+}
+
+/* Info Box */
+.admonition-info {
+    border-left-color: #00BCD4 !important;
+    background-color: #E0F7FA !important;
+}
+
+/* Tip Box */
+.admonition-tip {
+    border-left-color: #9C27B0 !important;
+    background-color: #F3E5F5 !important;
+}
+
+/* Custom Admonition - Beispiel */
+.admonition-example {
+    border-left-color: #7C4DFF !important;
+    background-color: #F3E5F5 !important;
+}
+
+/* ---------------------------------------------------------------------
+   Code Blöcke
+   --------------------------------------------------------------------- */
+
+/* Code Block Background */
+pre {
+    background-color: #282C34 !important;
+    border-radius: 6px !important;
+    padding: 16px !important;
+    margin: 16px 0 !important;
+    overflow-x: auto !important;
+    font-size: 14px !important;
+}
+
+/* Inline Code */
+code {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.95em;
+}
+
+/* Code Block Language Label */
+.code-header {
+    background-color: #3E4451;
+    color: #abb2bf;
+    padding: 8px 12px;
+    border-radius: 6px 6px 0 0;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+/* ---------------------------------------------------------------------
+   Tabellen
+   --------------------------------------------------------------------- */
+
+/* Responsive Tables */
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    margin: 16px 0;
+}
+
+/* Table Header */
+th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Table Cells */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Table striped rows */
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #f5f5f5;
+}
+
+/* ---------------------------------------------------------------------
+   Links & Navigation
+   --------------------------------------------------------------------- */
+
+/* External Links - add icon */
+a[href^="http"]:not([href*="dokument"]):after {
+    content: " ";
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6V8H5V19H16V12H18V19C18 20.1046 17.1046 21 16 21H5C3.89543 21 3 20.1046 3 19V8H10V6ZM19 3H12V8H15V15H19V3Z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 12px;
+    padding-right: 16px;
+}
+
+/* ---------------------------------------------------------------------
+   Tabs (mit pymdownx.tabbed)
+   --------------------------------------------------------------------- */
+
+/* Tab Header */
+.tabbed-set {
+    margin: 16px 0;
+}
+
+.tabbed-block {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tabbed-labels {
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabbed-label {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+.tabbed-label:hover {
+    background-color: #e0e0e0;
+}
+
+.tabbed-label.active {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* ---------------------------------------------------------------------
+   Bilder & Medien
+   --------------------------------------------------------------------- */
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 16px auto;
+}
+
+/* Image with Shadow */
+img.shadow {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+/* ---------------------------------------------------------------------
+   Listen
+   --------------------------------------------------------------------- */
+
+/* Checklist Items */
+ul.contains-task-list li task-list-item {
+    list-style-type: none;
+}
+
+ul.contains-task-list li task-list-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* ---------------------------------------------------------------------
+   Blockquotes
+   --------------------------------------------------------------------- */
+
+blockquote {
+    border-left: 4px solid #2196F3;
+    background-color: #f8f9fa;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/* ---------------------------------------------------------------------
+   Material Theme Tweaks
+   --------------------------------------------------------------------- */
+
+/* TOC - Inhaltsverzeichnis */
+.toc-integrate {
+    position: sticky;
+    top: 20px;
+}
+
+/* Sidebar Width */
+.md-sidenav {
+    width: 280px !important;
+}
+
+/* Main Content Area */
+.md-main {
+    max-width: 900px !important;
+}
+
+/* Header Height */
+.md-header {
+    height: 64px !important;
+}
+
+/* ---------------------------------------------------------------------
+   Custom Classes
+   --------------------------------------------------------------------- */
+
+/* Highlight Box */
+.highlight {
+    background-color: #FFF9C4;
+    border-left: 4px solid #FBC02D;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Warning Box */
+.warning {
+    background-color: #FFEBEE;
+    border-left: 4px solid #EF5350;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Success Box */
+.success {
+    background-color: #E8F5E9;
+    border-left: 4px solid #2E7D32;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/* ---------------------------------------------------------------------
+   Print Styles
+   --------------------------------------------------------------------- */
+
+@media print {
+    /* Hide Navigation */
+    .md-sidenav,
+    ..md-header,
+    ..md-footer {
+        display: none !important;
+    }
+    
+    /* Full Width Content */
+    .md-main {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    /* Print Colors */
+    pre {
+        background-color: #f5f5f5 !important;
+        color: #333 !important;
+    }
+    
+    /* Links */
+    a {
+        text-decoration: none;
+        color: #000 !important;
+    }
+}
+
+/* ============================================================================
+   Ende Custom CSS
+   ============================================================================ */
