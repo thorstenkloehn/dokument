@@ -92,6 +92,7 @@ nav:
   - Systemprogrammierung:
       - Übersicht: Systemprogrammierung/index.md
       - Assembler: Systemprogrammierung/assembler.md
+      - Assembler Fehler & Sicherheit: Systemprogrammierung/assembler-fehler-sicherheit.md
       - Compiler: Systemprogrammierung/compiler.md
       - Rust, C & C++ Integration: Systemprogrammierung/rust-c-cpp-integration.md
       - Linux-Systemprogrammierung: Systemprogrammierung/linux-systemprogrammierung.md
