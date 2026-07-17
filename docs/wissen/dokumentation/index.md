@@ -8,17 +8,17 @@ graph TD
     A --> C[2. Docs-First Frameworks]
     A --> D[3. Notebook-Systeme]
     A --> H[4. Allgemeine Webseiten-Generatoren]
-    A --> E[5. Wikis & Wissensdatenbanken]
-    A --> F[6. RAG & KI-Co-Wikis]
+    A --> E["5. Wikis & Wissensdatenbanken"]
+    A --> F["6. RAG & KI-Co-Wikis"]
     A --> G[7. Programmatische Office-Automation]
     
-    B --> B1[mdBook / Antora / Sphinx / HonKit]
-    C --> C1[MkDocs / Docusaurus / Starlight / Nextra]
-    D --> D1[Quarto / Jupyter / Marimo]
-    H --> H1[Hugo / Astro / Jekyll / Eleventy]
-    E --> E1[Flat-File / MediaWiki / XWiki]
-    F --> F1[Danswer / NotebookLM / AnythingLLM / Dify]
-    G --> G1[python-docx / OpenPyXL / Pandoc]
+    B --> B1["mdBook / Antora / Sphinx / HonKit"]
+    C --> C1["MkDocs / Docusaurus / Starlight / Nextra"]
+    D --> D1["Quarto / Jupyter / Marimo"]
+    H --> H1["Hugo / Astro / Jekyll / Eleventy"]
+    E --> E1["Flat-File / MediaWiki / XWiki"]
+    F --> F1["Danswer / NotebookLM / AnythingLLM / Dify"]
+    G --> G1["python-docx / OpenPyXL / Pandoc"]
 ```
 
 ---

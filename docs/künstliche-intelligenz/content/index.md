@@ -10,10 +10,10 @@ KI unterstützt den gesamten Content-Lebenszyklus auf vielfältige Weise:
 
 ```mermaid
 graph LR
-    A[🧠 Strategie & Planung] --> B[📝 Erstellung & Redaktion]
-    B --> C[🎨 Design & Optimierung]
-    C --> D[🌍 Verbreitung & Marketing]
-    D --> E[📈 Analyse & Optimierung]
+    A["🧠 Strategie & Planung"] --> B["📝 Erstellung & Redaktion"]
+    B --> C["🎨 Design & Optimierung"]
+    C --> D["🌍 Verbreitung & Marketing"]
+    D --> E["📈 Analyse & Optimierung"]
     E --> A
 ```
 

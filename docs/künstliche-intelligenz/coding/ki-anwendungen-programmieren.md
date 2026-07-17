@@ -309,7 +309,7 @@ Moderne LLMs können entscheiden, **Funktionen in deinem Python-Code** auszufüh
 
 ```mermaid
 sequenceDiagram
-    Agent (LLM) ->> System: Soll ich Rechnen? Ja. Rufe Add(5, 3) auf.
+    Agent (LLM) ->> System: Soll ich Rechnen? Ja. Rufe Add("5, 3") auf.
     System -->> Agent (LLM): Ergebnis: 8
     Agent (LLM) ->> User: Das Ergebnis ist 8.
 ```

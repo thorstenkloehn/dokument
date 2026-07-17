@@ -17,9 +17,9 @@ graph TD
     KI --> K2["Content-Creation & SEO"]
     KI --> K3["Desktop & Web-Automatisierung"]
 
-    Dev --> D1["Webentwicklung (Frontend/Backend)"]
+    Dev --> D1["Webentwicklung ("Frontend/Backend")"]
     Dev --> D2["Server, Nginx, SSL & Kachelserver"]
-    Dev --> D3["Systemprogrammierung (C/Rust/Assembler)"]
+    Dev --> D3["Systemprogrammierung ("C/Rust/Assembler")"]
     Dev --> D4["IDE & Lokale KI-Frontends"]
 
     Creative --> C1["KI-Design & Ideenfindung"]

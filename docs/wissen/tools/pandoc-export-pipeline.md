@@ -7,7 +7,7 @@ Pandoc ermöglicht das hochpräzise Konvertieren deiner Markdown-Dokumentation i
 ```mermaid
 graph LR
     MD["📄 MkDocs Markdown (.md)"] --> Pandoc["🔄 Pandoc Converter"]
-    Pandoc --> PDF["📕 PDF (via Typst / XeLaTeX)"]
+    Pandoc --> PDF["📕 PDF ("via Typst / XeLaTeX")"]
     Pandoc --> EPUB["📱 E-Book (.epub)"]
     Pandoc --> DOCX["📘 Word (.docx)"]
 ```

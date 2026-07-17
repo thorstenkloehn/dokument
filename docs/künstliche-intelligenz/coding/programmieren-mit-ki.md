@@ -205,7 +205,7 @@ graph TD
     B --> C["🔍 Ruff Linter (PEP 8)"]
     B --> D["🧪 pytest (Unit Tests)"]
     B --> E["🔒 Semgrep Security Scan"]
-    C --> F{Alle Checks ok?}
+    C --> F{"Alle Checks ok?"}
     D --> F
     E --> F
     F -->|Ja| G["✅ Pull Request freigeben"]

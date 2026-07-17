@@ -92,8 +92,8 @@ Damit Applikationen die GPU nutzen können, muss der Stack korrekt installiert s
 
 ```mermaid
 graph TD
-    A["🐍 KI-Anwendung (PyTorch / vLLM)"] --> B["⚙️ CUDA Toolkit (Bibliotheken)"]
-    B --> C["📦 NVIDIA Container Toolkit (für Docker)"]
+    A["🐍 KI-Anwendung ("PyTorch / vLLM")"] --> B["⚙️ CUDA Toolkit (Bibliotheken)"]
+    B --> C["📦 NVIDIA Container Toolkit ("für Docker")"]
     C --> D["🐧 Kernel-Treiber (Ubuntu NVIDIA Driver)"]
     D --> E["🔌 Physische GPU"]
 ```
@@ -359,8 +359,8 @@ Wir setzen ein K3s-Kubernetes-Cluster auf Ubuntu auf, installieren den GPU-Opera
 ```mermaid
 graph TD
     A["git push config"] --> B["☸️ K3s Control Plane"]
-    B -->|GPU Operator| C["🖥️ Worker Node 1 (RTX 4090)\n[vLLM Pod läuft]"]
-    B -->|Keine GPU| D["🖥️ Worker Node 2 (No GPU)\n[Wird übersprungen]"]
+    B -->|GPU Operator| C["🖥️ Worker Node 1 (RTX 4090)\n["vLLM Pod läuft"]"]
+    B -->|Keine GPU| D["🖥️ Worker Node 2 (No GPU)\n["Wird übersprungen"]"]
 ```
 
 **Software (alle Open Source):** K3s · NVIDIA GPU Operator · vLLM · Docker/Containerd

@@ -50,7 +50,7 @@ Moderne IDEs (Integrated Development Environments) und Code-Editoren bieten Entw
 graph TD
     A[Benutzer-Anfrage] --> B[Web-UI]
     B -->|API-Schnittstelle| C[Docker-Netzwerk]
-    C -->|Port 11434| D[Ollama (lokale Modelle)]
+    C -->|Port 11434| D["Ollama (lokale Modelle)"]
     C -->|Externe API| E[Cloud APIs]
 ```
 

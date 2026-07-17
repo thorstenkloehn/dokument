@@ -7,7 +7,7 @@ Für produktive Anwendungen müssen KI-Modelle Daten in einem strikt definierten
 ```mermaid
 graph LR
     Prompt["📝 User Prompt / Eingabe"] --> Instructor["🛡️ Instructor + Pydantic Validator"]
-    Instructor --> LLM["🤖 LLM (Ollama / OpenAI)"]
+    Instructor --> LLM["🤖 LLM ("Ollama / OpenAI")"]
     LLM -->|Validierung fehlgeschlagen| ReTry["🔄 Auto-Retry Prompt mit Pydantic Fehler"]
     ReTry --> LLM
     LLM -->|Erfolgreich| VerifiedJSON["📊 Valides Pydantic Objekt / JSON"]

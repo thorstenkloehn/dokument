@@ -240,7 +240,7 @@ graph TD
     E --> F[Real-time Predictions]
     F --> G[Applications]
     B --> H[Monitoring]
-    H --> I[Grafana/Prometheus]
+    H --> I["Grafana/Prometheus"]
 ```
 
 ---

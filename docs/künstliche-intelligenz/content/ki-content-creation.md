@@ -272,7 +272,7 @@ KI **halluziniert** – sie erfindet plausibel klingende, aber falsche Fakten. B
 
 ```mermaid
 graph TD
-    A["📝 Core Content\n(Blog / Artikel)"] --> B["🔍 SEO"]
+    A["📝 Core Content\n("Blog / Artikel")"] --> B["🔍 SEO"]
     A --> C["📱 Social Media"]
     A --> D["📧 E-Mail-Newsletter"]
     A --> E["🎬 Video"]
@@ -396,8 +396,8 @@ Ein **Hook** ist die erste Zeile / die ersten 3 Sekunden, die entscheiden, ob je
 ```mermaid
 graph TD
     A["🔍 Keyword-Recherche\n(Google Search Console)"] --> B["📋 Content-Briefing\n(LLM-Prompt)"]
-    B --> C["✍️ KI-Erstentwurf\n(Ollama / ChatGPT)"]
-    C --> D["👤 Menschliche Überarbeitung\n(Fakten, Erfahrungen, Beispiele)"]
+    B --> C["✍️ KI-Erstentwurf\n("Ollama / ChatGPT")"]
+    C --> D["👤 Menschliche Überarbeitung\n("Fakten, Erfahrungen, Beispiele")"]
     D --> E["🔤 Sprachkorrektur\n(LanguageTool)"]
     E --> F["🖼️ Bilder generieren\n(ComfyUI)"]
     F --> G["✅ Veröffentlichen"]
@@ -572,7 +572,7 @@ Ein **Redaktionsplan** (Content-Kalender) definiert: Was wird wann auf welchem K
 
 ```mermaid
 graph TD
-    A["🏔️ Pillar Page\n(Hauptthema, 3.000+ Wörter)"] --> B["📄 Cluster 1\nUnter-Thema"]
+    A["🏔️ Pillar Page\n("Hauptthema, 3.000+ Wörter")"] --> B["📄 Cluster 1\nUnter-Thema"]
     A --> C["📄 Cluster 2\nUnter-Thema"]
     A --> D["📄 Cluster 3\nUnter-Thema"]
     B --> E["📱 Social Post"]
@@ -782,12 +782,12 @@ graph LR
 
 ```mermaid
 graph TD
-    A["📝 Blogartikel\n(Ollama + LibreOffice)"] --> B["📱 5 Social Posts\n(Ollama)"]
+    A["📝 Blogartikel\n("Ollama + LibreOffice")"] --> B["📱 5 Social Posts\n(Ollama)"]
     A --> C["📧 Newsletter\n(Listmonk)"]
     A --> D["🎬 Video-Skript\n(Ollama)"]
     A --> E["🎙️ Podcast-Skript\n(Ollama)"]
-    D --> F["🎥 Video\n(OBS + Kdenlive)"]
-    E --> G["🎙️ Audio\n(Audacity + Coqui)"]
+    D --> F["🎥 Video\n("OBS + Kdenlive")"]
+    E --> G["🎙️ Audio\n("Audacity + Coqui")"]
 ```
 
 **Software (alle Open Source):** Ollama · LibreOffice · Listmonk · OBS · Kdenlive · Audacity · Coqui XTTS

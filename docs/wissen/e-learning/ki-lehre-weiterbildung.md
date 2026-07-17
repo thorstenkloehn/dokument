@@ -163,7 +163,7 @@ Gute Prüfungsfragen sollten verschiedene Kognitionsstufen abdecken:
 ```mermaid
 graph TD
     A["📖 Lernender startet Modul"] --> B["📝 Einstiegstest"]
-    B --> C{Ergebnis?}
+    B --> C{"Ergebnis?"}
     C -->|Gut| D["🚀 Experte: Komplexe Programmieraufgabe"]
     C -->|Schwach| E["🧱 Einsteiger: Schritt-für-Schritt Erklärung"]
     D --> F["🔄 Fortlaufende Leistungsmessung"]

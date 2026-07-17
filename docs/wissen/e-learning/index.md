@@ -134,14 +134,14 @@ Um eine voll funktionsfähige, interaktive Programmier-Lernumgebung mit KI-Unter
 
 ```mermaid
 graph TD
-    User([Lernender]) -->|1. Schreibt Code / Fragt Tutor| Frontend[Frontend: Next.js Framework]
+    User([Lernender]) -->|1. Schreibt Code / Fragt Tutor| Frontend["Frontend: Next.js Framework"]
     Frontend -->|Nutzt| EditorLib[Monaco Editor Library]
     Frontend -->|Nutzt| TerminalLib[Xterm.js Library]
     
-    Frontend -->|2. Führt Code aus| Sandbox[Sandbox: Docker / Judge0 Software]
+    Frontend -->|2. Führt Code aus| Sandbox["Sandbox: Docker / Judge0 Software"]
     Sandbox -->|3. Liefert Testergebnis / Fehler| Frontend
     
-    Frontend -->|4. Sendet Code & Fehler| Agent[KI-Agent: Tutor / Google Antigravity SDK]
+    Frontend -->|4. Sendet Code & Fehler| Agent["KI-Agent: Tutor / Google Antigravity SDK"]
     Agent -->|5. Analysiert & Generiert didaktischen Hinweis| Frontend
     Frontend -->|6. Zeigt Hinweis an| User
 ```

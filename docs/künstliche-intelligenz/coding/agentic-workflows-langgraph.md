@@ -7,9 +7,9 @@ Multi-Agenten-Systeme ermöglichen die Aufteilung komplexer Aufgaben (z. B. Rech
 ```mermaid
 graph TD
     User["👤 Benutzer-Auftrag"] --> Router["🧠 Supervisor / Router Agent"]
-    Router --> Researcher["🔍 Research Agent (Web & Doku)"]
+    Router --> Researcher["🔍 Research Agent ("Web & Doku")"]
     Router --> Coder["💻 Coding Agent (Code-Erstellung)"]
-    Researcher --> Reviewer["📋 Review Agent (Qualitätsprüfung)"]
+    Researcher --> Reviewer["📋 Review Agent ("Qualitätsprüfung")"]
     Coder --> Reviewer
     Reviewer -->|Korrektur nötig| Coder
     Reviewer -->|Bestanden| FinalOutput["✨ Finales Ergebnis"]

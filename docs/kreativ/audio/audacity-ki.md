@@ -436,11 +436,11 @@ print(df)
 
 ```mermaid
 graph TD
-    A[🎙️ Rohaufnahme] --> B[🔊 Rauschunterdrückung mit DeepFilterNet]
-    B --> C[📊 Normalisierung & Kompression]
-    C --> D[🎚️ EQ-Optimierung für Sprache]
-    D --> E[📝 Automatische Transkription mit Whisper]
-    E --> F[🎧 Export als MP3 & SRT-Untertitel]
+    A["🎙️ Rohaufnahme"] --> B["🔊 Rauschunterdrückung mit DeepFilterNet"]
+    B --> C["📊 Normalisierung & Kompression"]
+    C --> D["🎚️ EQ-Optimierung für Sprache"]
+    D --> E["📝 Automatische Transkription mit Whisper"]
+    E --> F["🎧 Export als MP3 & SRT-Untertitel"]
 ```
 
 **Benötigte Tools:**
@@ -459,11 +459,11 @@ graph TD
 
 ```mermaid
 graph TD
-    A[🎵 Original-Song] --> B[🎛️ Demucs Stem-Separation]
-    B --> C[🎤 Vocals extrahieren]
-    B --> D[🥁 Instrumente extrahieren]
-    C --> E[🔇 Vocal-Removal (für Instrumental)]
-    D --> F[💾 Karaoke-Version speichern]
+    A["🎵 Original-Song"] --> B["🎛️ Demucs Stem-Separation"]
+    B --> C["🎤 Vocals extrahieren"]
+    B --> D["🥁 Instrumente extrahieren"]
+    C --> E["🔇 Vocal-Removal ("für Instrumental")"]
+    D --> F["💾 Karaoke-Version speichern"]
 ```
 
 **Benötigte Tools:**
@@ -481,11 +481,11 @@ graph TD
 
 ```mermaid
 graph TD
-    A[📼 Alte Aufnahme] --> B[🎚️ Spektralanalyse in Audacity]
-    B --> C[🤖 RNNoise für Echtzeit-Filterung]
-    C --> D[🔬 DeepFilterNet für hochwertige Bereinigung]
-    D --> E[✨ Manuelle Feinjustierung]
-    E --> F[💾 Restaurierte Version speichern]
+    A["📼 Alte Aufnahme"] --> B["🎚️ Spektralanalyse in Audacity"]
+    B --> C["🤖 RNNoise für Echtzeit-Filterung"]
+    C --> D["🔬 DeepFilterNet für hochwertige Bereinigung"]
+    D --> E["✨ Manuelle Feinjustierung"]
+    E --> F["💾 Restaurierte Version speichern"]
 ```
 
 **Benötigte Tools:**

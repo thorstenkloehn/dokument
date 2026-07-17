@@ -24,10 +24,10 @@ Wenn lokale LLMs über [Ollama](https://ollama.com) oder andere Inference-Server
 
 ```mermaid
 graph TD
-    A["👤 Benutzer-Anfrage"] --> B["🌐 Web-UI (Open WebUI / LibreChat)"]
+    A["👤 Benutzer-Anfrage"] --> B["🌐 Web-UI ("Open WebUI / LibreChat")"]
     B -->|API-Schnittstelle| C["🐳 Docker-Netzwerk"]
     C -->|Port 11434| D["🧠 Ollama (lokale Modelle)"]
-    C -->|Externe API| E["☁️ Cloud APIs (Claude, OpenAI)"]
+    C -->|Externe API| E["☁️ Cloud APIs ("Claude, OpenAI")"]
 ```
 
 ---

@@ -179,12 +179,14 @@ nav:
   - Tags & Kategorien: tags.md
 
   # ⚖️ RECHTLICHES
-  - Rechtliches:
-      - Impressum: rechtliches/impressum.md
-      - Datenschutz: rechtliches/datenschutz.md
+  - Impressum: rechtliches/impressum.md
+  - Datenschutz: rechtliches/datenschutz.md
+
+copyright: Copyright &copy; Wissen Ahrensburg
 
 theme:
   name: material
+  custom_dir: overrides
   language: de
   features:
     - navigation.top

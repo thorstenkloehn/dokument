@@ -70,9 +70,9 @@ Kreativität benötigt beide Denkrichtungen. KI kann beide Phasen gezielt unters
 
 ```mermaid
 graph TD
-    A["💡 Ausgangsfrage"] --> B["🟢 Divergente Phase\n(Breit fächern, viele Ideen)"]
+    A["💡 Ausgangsfrage"] --> B["🟢 Divergente Phase\n("Breit fächern, viele Ideen")"]
     B -->|Ollama / ChatGPT| B1["Idee 1, Idee 2, Idee 3, Idee 4, ..."]
-    B1 --> C["🟡 Konvergente Phase\n(Fokussieren, Bewerten, Auswählen)"]
+    B1 --> C["🟡 Konvergente Phase\n("Fokussieren, Bewerten, Auswählen")"]
     C -->|Menschliche Kuration| D["🎯 Das finale Konzept"]
 ```
 
@@ -240,7 +240,7 @@ KIs können Rohideen strukturiert analysieren und eine gewichtete Nutzwerttabell
 ```mermaid
 graph TD
     A["🌐 RSS Feeds / Tech-News"] --> B["⚙️ n8n Workflow (Scraper)"]
-    B --> C["🤖 Ollama (Filtert & analysiert Trends)"]
+    B --> C["🤖 Ollama ("Filtert & analysiert Trends")"]
     C --> D["📝 n8n (Generiert 3 Produktideen)"]
     D --> E["📧 E-Mail-Newsletter an das Kreativ-Team"]
 ```
@@ -330,7 +330,7 @@ Ein n8n-Workflow liest täglich Google-Trends, lässt Ollama Ideen generieren un
 
 ```mermaid
 graph TD
-    A["⏰ Cron-Trigger (Täglich)"] --> B["🌐 Google Trends Scraper"]
+    A["⏰ Cron-Trigger ("Täglich")"] --> B["🌐 Google Trends Scraper"]
     B --> C["🤖 Ollama Llama3 (Ideen-Entwurf)"]
     C --> D["🔌 n8n Trello Node"]
     D --> E["📋 Trello Board 'Ideen-Pool'"]

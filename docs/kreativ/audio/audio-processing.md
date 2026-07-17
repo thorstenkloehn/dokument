@@ -820,12 +820,12 @@ for key, value in emotion_features.items():
 
 ```mermaid
 graph TD
-    A[📼 Altes Audio laden] --> B[🔊 Rauschprofil analysieren]
-    B --> C[🤖 KI-Rauschunterdrückung anwenden]
-    C --> D[🎚️ Automatische EQ-Optimierung]
-    D --> E[📊 Dynamik-Korrektur]
-    E --> F[🔇 Normalisierung]
-    F --> G[💾 Restauriertes Audio speichern]
+    A["📼 Altes Audio laden"] --> B["🔊 Rauschprofil analysieren"]
+    B --> C["🤖 KI-Rauschunterdrückung anwenden"]
+    C --> D["🎚️ Automatische EQ-Optimierung"]
+    D --> E["📊 Dynamik-Korrektur"]
+    E --> F["🔇 Normalisierung"]
+    F --> G["💾 Restauriertes Audio speichern"]
 ```
 
 **Benötigte Tools:**
@@ -841,11 +841,11 @@ graph TD
 
 ```mermaid
 graph TD
-    A[🎤 Mikrofon-Input] --> B[🔊 Echtzeit-Rauschunterdrückung]
-    B --> C[🎚️ Pitch-Erkennung]
-    C --> D[🎹 Automatische Pitch-Korrektur]
-    D --> E[🔊 Hintergrundmusik mischen]
-    E --> F[🎧 Echtzeit-Output]
+    A["🎤 Mikrofon-Input"] --> B["🔊 Echtzeit-Rauschunterdrückung"]
+    B --> C["🎚️ Pitch-Erkennung"]
+    C --> D["🎹 Automatische Pitch-Korrektur"]
+    D --> E["🔊 Hintergrundmusik mischen"]
+    E --> F["🎧 Echtzeit-Output"]
 ```
 
 **Benötigte Tools:**
@@ -861,12 +861,12 @@ graph TD
 
 ```mermaid
 graph TD
-    A[🎵 Audio-Datei laden] --> B[📊 Audio-Analyse durchführen]
-    B --> C[🤖 KI-Mastering-Parameter empfehlen]
-    C --> D[🎚️ EQ anwenden]
-    D --> E[📊 Kompression anwenden]
-    E --> F[🔇 Limiting anwenden]
-    F --> G[💾 Mastered Audio speichern]
+    A["🎵 Audio-Datei laden"] --> B["📊 Audio-Analyse durchführen"]
+    B --> C["🤖 KI-Mastering-Parameter empfehlen"]
+    C --> D["🎚️ EQ anwenden"]
+    D --> E["📊 Kompression anwenden"]
+    E --> F["🔇 Limiting anwenden"]
+    F --> G["💾 Mastered Audio speichern"]
 ```
 
 **Benötigte Tools:**
@@ -882,11 +882,11 @@ graph TD
 
 ```mermaid
 graph TD
-    A[🎤 Sprachbefehl aufnehmen] --> B[🤖 Spracherkennung]
-    B --> C[🧠 Befehl interpretieren]
-    C --> D[🎹 MIDI generieren]
-    D --> E[🎵 Synthesizer abspielen]
-    E --> F[🔊 Audio-Output]
+    A["🎤 Sprachbefehl aufnehmen"] --> B["🤖 Spracherkennung"]
+    B --> C["🧠 Befehl interpretieren"]
+    C --> D["🎹 MIDI generieren"]
+    D --> E["🎵 Synthesizer abspielen"]
+    E --> F["🔊 Audio-Output"]
 ```
 
 **Benötigte Tools:**

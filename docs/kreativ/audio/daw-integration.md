@@ -458,11 +458,11 @@ tts.tts_to_file(
 
 ```mermaid
 graph TD
-    A[🎙️ Referenz-Audio aufnehmen] --> B[🤖 KI-Modell trainieren]
-    B --> C[💾 Modell speichern]
-    C --> D[📝 Text für neue Aufnahme vorbereiten]
-    D --> E[🎤 KI-Stimme generieren]
-    E --> F[🎛️ In DAW importieren und bearbeiten]
+    A["🎙️ Referenz-Audio aufnehmen"] --> B["🤖 KI-Modell trainieren"]
+    B --> C["💾 Modell speichern"]
+    C --> D["📝 Text für neue Aufnahme vorbereiten"]
+    D --> E["🎤 KI-Stimme generieren"]
+    E --> F["🎛️ In DAW importieren und bearbeiten"]
 ```
 
 ---
@@ -652,13 +652,13 @@ for key, value in result.items():
 
 ```mermaid
 graph TD
-    A[🎹 Akkordfortschreitung mit KI generieren] --> B[🥁 Drum-Pattern mit KI erstellen]
-    B --> C[🎶 Bassline mit KI generieren]
-    C --> D[🎤 Melodie/Vocals mit KI skizzieren]
-    D --> E[🎛️ Arrangement mit KI optimieren]
-    E --> F[🎚️ Mixing mit KI-Assistent]
-    F --> G[🎧 Mastering mit KI]
-    G --> H[💾 Fertiger Song exportieren]
+    A["🎹 Akkordfortschreitung mit KI generieren"] --> B["🥁 Drum-Pattern mit KI erstellen"]
+    B --> C["🎶 Bassline mit KI generieren"]
+    C --> D["🎤 Melodie/Vocals mit KI skizzieren"]
+    D --> E["🎛️ Arrangement mit KI optimieren"]
+    E --> F["🎚️ Mixing mit KI-Assistent"]
+    F --> G["🎧 Mastering mit KI"]
+    G --> H["💾 Fertiger Song exportieren"]
 ```
 
 **Benötigte Tools:**
@@ -678,12 +678,12 @@ graph TD
 
 ```mermaid
 graph TD
-    A[🎵 Original-Song analysieren] --> B[🎛️ Demucs Stem-Separation]
-    B --> C[🔄 Einzelne Spuren bearbeiten]
-    C --> D[🎚️ KI-Mixing-Assistent]
-    D --> E[🎤 Neue Vocals mit KI hinzufügen]
-    E --> F[🎧 KI-Mastering anwenden]
-    F --> G[💾 Remix exportieren]
+    A["🎵 Original-Song analysieren"] --> B["🎛️ Demucs Stem-Separation"]
+    B --> C["🔄 Einzelne Spuren bearbeiten"]
+    C --> D["🎚️ KI-Mixing-Assistent"]
+    D --> E["🎤 Neue Vocals mit KI hinzufügen"]
+    E --> F["🎧 KI-Mastering anwenden"]
+    F --> G["💾 Remix exportieren"]
 ```
 
 **Benötigte Tools:**
@@ -702,11 +702,11 @@ graph TD
 
 ```mermaid
 graph TD
-    A[🎚️ Parameter definieren] --> B[🤖 KI-Synthesizer generieren]
-    B --> C[🎛️ Effekte mit KI anwenden]
-    C --> D[🔊 Soundsample extrahieren]
-    D --> E[📁 In Bibliothek organisieren]
-    E --> F[🎹 In DAW nutzen]
+    A["🎚️ Parameter definieren"] --> B["🤖 KI-Synthesizer generieren"]
+    B --> C["🎛️ Effekte mit KI anwenden"]
+    C --> D["🔊 Soundsample extrahieren"]
+    D --> E["📁 In Bibliothek organisieren"]
+    E --> F["🎹 In DAW nutzen"]
 ```
 
 **Benötigte Tools:**

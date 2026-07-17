@@ -340,7 +340,7 @@ Die KI gibt dir den Rahmen vor, du programmierst das Spiel: Die KI wählt eine Z
 ```mermaid
 graph LR
     A["🎲 Zufallszahl generieren"] --> B["📥 Rate-Eingabe"]
-    B --> C{Richtig?}
+    B --> C{"Richtig?"}
     C -->|Zu hoch / niedrig| B
     C -->|Ja| D["🎉 Gewonnen!"]
 ```

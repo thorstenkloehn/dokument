@@ -8,7 +8,7 @@ Kombiniere Playwright zur Automatisierung von dynamischen Webseiten (SPA/JavaScr
 graph LR
     URL["🌐 Ziel-Webseite"] --> Playwright["🎭 Playwright Headless Browser"]
     Playwright --> HTML["📜 Gereinigtes HTML / DOM"]
-    HTML --> LLM["🤖 LLM (Ollama / DeepSeek)"]
+    HTML --> LLM["🤖 LLM ("Ollama / DeepSeek")"]
     LLM --> JSON["📊 Strukturiertes JSON Format"]
 ```
 

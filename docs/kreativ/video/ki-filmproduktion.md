@@ -112,10 +112,10 @@ graph LR
 
 ```mermaid
 graph TD
-    A["💡 Idee\n(Was will ich zeigen?)"] --> B["📝 Skript\n(Was wird gesagt?)"]
-    B --> C["🖼️ Storyboard\n(Wie sieht es aus?)"]
+    A["💡 Idee\n("Was will ich zeigen?")"] --> B["📝 Skript\n("Was wird gesagt?")"]
+    B --> C["🖼️ Storyboard\n("Wie sieht es aus?")"]
     C --> D["🎬 Produktion\n(Video generieren oder aufnehmen)"]
-    D --> E["✂️ Post-Produktion\n(Schnitt, Farbe, Audio)"]
+    D --> E["✂️ Post-Produktion\n("Schnitt, Farbe, Audio")"]
     E --> F["🚀 Veröffentlichung"]
 ```
 
@@ -301,7 +301,7 @@ Automatisches Anpassen der Lautstärke, damit das Audio auf allen Geräten gleic
 
 ```mermaid
 graph LR
-    A["📋 Pre-Production\n(Vorproduktion)"] --> B["🎬 Production\n(Dreh / Generierung)"]
+    A["📋 Pre-Production\n(Vorproduktion)"] --> B["🎬 Production\n("Dreh / Generierung")"]
     B --> C["🎞️ Post-Production\n(Nachbearbeitung)"]
     A --> A1["Idee · Skript\nStoryboard · Planung"]
     B --> B1["Kamera · KI-Video\nAudio aufnehmen"]
@@ -636,7 +636,7 @@ graph LR
     B --> C[TTS generiert Stimme]
     C --> D[KI generiert Bilder]
     D --> E[FFmpeg schneidet Video]
-    E --> F[Video veröffentlicht]
+    E --> F["Video veröffentlicht"]
     style A fill:#4caf50,color:#fff
     style F fill:#f44336,color:#fff
 ```
@@ -706,8 +706,8 @@ graph LR
     A[Ziel erhalten] --> B[Situation analysieren]
     B --> C[Schritt planen]
     C --> D[Tool aufrufen]
-    D --> E[Ergebnis prüfen]
-    E --> F{Ziel erreicht?}
+    D --> E["Ergebnis prüfen"]
+    E --> F{"Ziel erreicht?"}
     F -->|Nein| B
     F -->|Ja| G[Fertig]
 ```

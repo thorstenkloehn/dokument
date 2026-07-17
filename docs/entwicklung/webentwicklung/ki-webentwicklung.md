@@ -136,7 +136,7 @@ graph LR
     B --> C["👤 Entwickler\nversteht & prüft"]
     C --> D["🔧 Anpassen &\nVerfeinern"]
     D --> E["🧪 Testen"]
-    E --> F{Fehler?}
+    E --> F{"Fehler?"}
     F -->|Ja| B
     F -->|Nein| G["✅ Fertig"]
 ```
@@ -306,13 +306,13 @@ graph LR
 
 ```mermaid
 graph TD
-    A["🎨 Design\n(Penpot)"] --> B["📄 HTML / CSS\n(VSCodium + Continue.dev)"]
-    B --> C["⚡ JavaScript\n(Ollama + Continue.dev)"]
-    C --> D["🔧 Backend / API\n(FastAPI / Express.js)"]
+    A["🎨 Design\n(Penpot)"] --> B["📄 HTML / CSS\n("VSCodium + Continue.dev")"]
+    B --> C["⚡ JavaScript\n("Ollama + Continue.dev")"]
+    C --> D["🔧 Backend / API\n("FastAPI / Express.js")"]
     D --> E["🗄️ Datenbank\n(PostgreSQL)"]
-    E --> F["📝 CMS\n(Strapi / Hugo)"]
+    E --> F["📝 CMS\n("Strapi / Hugo")"]
     F --> G["🧪 Testing\n(Playwright)"]
-    G --> H["🚀 Deployment\n(Docker + Nginx)"]
+    G --> H["🚀 Deployment\n("Docker + Nginx")"]
 ```
 
 #### Konzept: Vibe Coding – was steckt dahinter?
@@ -588,13 +588,13 @@ SELECT * FROM users WHERE name = $1  -- PostgreSQL
 
 ```mermaid
 graph TD
-    A["💻 Entwicklung\n(VSCodium + Continue.dev)"] --> B["🧪 Testing\n(Playwright, Vitest)"]
+    A["💻 Entwicklung\n("VSCodium + Continue.dev")"] --> B["🧪 Testing\n("Playwright, Vitest")"]
     B --> C["🔍 Code-Review\n(Gitea)"]
     C --> D["⚙️ CI/CD\n(Woodpecker CI)"]
     D --> E["📦 Build\n(Docker)"]
-    E --> F["🌐 Webserver\n(Nginx / Caddy)"]
+    E --> F["🌐 Webserver\n("Nginx / Caddy")"]
     F --> G["🔒 SSL\n(Let's Encrypt)"]
-    G --> H["📊 Monitoring\n(Grafana + Prometheus)"]
+    G --> H["📊 Monitoring\n("Grafana + Prometheus")"]
 ```
 
 ---
@@ -619,7 +619,7 @@ graph LR
     B --> C["🤖 KI fragen\n(Ollama lokal)"]
     C --> D["💡 Erklärung & Fix"]
     D --> E["🧪 Test ausführen"]
-    E --> F{Behoben?}
+    E --> F{"Behoben?"}
     F -->|Nein| B
     F -->|Ja| G["✅ Fertig"]
 ```
@@ -760,7 +760,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
 ```mermaid
 graph LR
     A["git push"] --> B["Woodpecker CI:\nTests laufen"]
-    B --> C{Tests OK?}
+    B --> C{"Tests OK?"}
     C -->|Ja| D["Docker Image\nbauen & deployen"]
     C -->|Nein| E["❌ Push abgelehnt"]
 ```

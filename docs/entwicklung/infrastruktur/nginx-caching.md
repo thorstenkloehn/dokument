@@ -7,7 +7,7 @@ Nginx In-Memory Proxy-Caching reduziert die Serverlast und Datenbankabfragen um 
 ```mermaid
 graph LR
     Client["🌐 Client Request"] --> Nginx["⚡ Nginx Caching Layer"]
-    Nginx -->|HIT (Cache vorhanden)| ReturnCache["⚡ In-Memory Response (<2ms)"]
+    Nginx -->|HIT (Cache vorhanden)| ReturnCache["⚡ In-Memory Response ("<2ms")"]
     Nginx -->|MISS (Kein Cache)| Backend["🐘 PHP-FPM / Python / Node.js Backend"]
     Backend --> StoreCache["💾 Cache speichern & ausliefern"]
 ```

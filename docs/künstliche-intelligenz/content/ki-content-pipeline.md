@@ -8,7 +8,7 @@ In diesem Leitfaden bauen wir eine automatische Pipeline, die aus Stichpunkten o
 graph LR
     Input["💡 Themen-Idee / Stichpunkte"] --> Generator["🤖 Python & LLM API"]
     Generator --> MD["📄 Markdown Artikel"]
-    Generator --> Social["📱 Social Media Snippets (LinkedIn/X)"]
+    Generator --> Social["📱 Social Media Snippets ("LinkedIn/X")"]
     MD --> Frontmatter["🏷️ SEO Meta & Tags Integration"]
 ```
 

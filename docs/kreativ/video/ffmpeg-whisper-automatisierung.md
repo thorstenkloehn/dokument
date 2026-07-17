@@ -9,7 +9,7 @@ graph LR
     Video["🎬 Video-Datei (.mp4)"] --> Extract["🔊 FFmpeg Audio-Extraktion"]
     Extract --> Audio["🎵 Audio-Datei (.wav)"]
     Audio --> Whisper["🤖 OpenAI Whisper CLI"]
-    Whisper --> Subtitles["📝 Untertitel (.srt / .vtt)"]
+    Whisper --> Subtitles["📝 Untertitel (".srt / .vtt")"]
     Subtitles --> Burn["🎬 FFmpeg Subtitle-Burn"]
     Burn --> FinalVideo["✨ Finales Video mit Untertiteln"]
 ```

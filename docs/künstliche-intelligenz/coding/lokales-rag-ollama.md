@@ -6,11 +6,11 @@ Dieser Leitfaden beschreibt den Aufbau einer vollständig lokalen, datenschutzko
 
 ```mermaid
 graph LR
-    Doc["📄 Eigene Dokumente (PDF/MD/TXT)"] --> Embed["🔤 Embedding-Modell (nomic-embed-text)"]
+    Doc["📄 Eigene Dokumente ("PDF/MD/TXT")"] --> Embed["🔤 Embedding-Modell (nomic-embed-text)"]
     Embed --> VectorDB["📦 Vektordatenbank (ChromaDB)"]
     User["👤 Benutzer-Frage"] --> VectorDB
     VectorDB --> Context["🔍 Relevanter Kontext"]
-    Context --> Ollama["🤖 Ollama LLM (Llama 3 / DeepSeek)"]
+    Context --> Ollama["🤖 Ollama LLM ("Llama 3 / DeepSeek")"]
     Ollama --> Answer["💬 Präzise Antwort mit Quellen"]
 ```
 

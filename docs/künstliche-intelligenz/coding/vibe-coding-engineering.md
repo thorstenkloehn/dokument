@@ -232,7 +232,7 @@ graph TD
     B --> C["🔍 Ruff Linter"]
     B --> D["🧪 pytest Run"]
     B --> E["🔒 Semgrep Security Scan"]
-    C --> F{Checks bestanden?}
+    C --> F{"Checks bestanden?"}
     D --> F
     E --> F
     F -->|Ja| G["🚀 Automatisches Deployment"]

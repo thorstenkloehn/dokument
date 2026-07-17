@@ -99,7 +99,7 @@ graph TD
     D --> E[Model Inference]
     E --> F[Output Filtering]
     F --> G[Response]
-    E --> H[Logging & Monitoring]
+    E --> H["Logging & Monitoring"]
     H --> I[Alerting]
 ```
 

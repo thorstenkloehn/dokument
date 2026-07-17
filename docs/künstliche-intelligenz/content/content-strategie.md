@@ -346,8 +346,8 @@ graph TD
     C --> D[KI-generierten Entwurf erstellen]
     D --> E[Menschliche Bearbeitung]
     E --> F[SEO-Optimierung]
-    F --> G[Qualitätssicherung]
-    G --> H[Veröffentlichung]
+    F --> G["Qualitätssicherung"]
+    G --> H["Veröffentlichung"]
     H --> I[Performance-Tracking]
     I --> J[Optimierung]
 ```

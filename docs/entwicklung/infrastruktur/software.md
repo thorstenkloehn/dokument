@@ -159,8 +159,8 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 
 ```mermaid
 graph LR
-    A[Phase 1: Single-Node & CUDA] --> B[Phase 2: Container & MLOps]
-    B --> C[Phase 3: Cluster-Skalierung]
+    A["Phase 1: Single-Node & CUDA"] --> B["Phase 2: Container & MLOps"]
+    B --> C["Phase 3: Cluster-Skalierung"]
 ```
 
 **Phase 1 – Hardware, CUDA & Single-Node Serving:**

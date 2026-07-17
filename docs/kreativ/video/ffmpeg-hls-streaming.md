@@ -10,7 +10,7 @@ graph LR
     FFmpeg --> Segment1["📹 stream_720p.m3u8 + .ts Segmenten"]
     FFmpeg --> Segment2["📹 stream_1080p.m3u8 + .ts Segmenten"]
     FFmpeg --> MasterPlaylist["📜 master.m3u8 Playlist"]
-    MasterPlaylist --> Player["🌐 Web Player (hls.js / Video.js)"]
+    MasterPlaylist --> Player["🌐 Web Player ("hls.js / Video.js")"]
 ```
 
 ---

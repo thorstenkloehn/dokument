@@ -6,10 +6,10 @@
 
 ```mermaid
 graph LR
-    BaseModel["🤖 Base LLM (Llama 3.2 / Qwen 2.5)"] --> LoRA["⚡ LoRA Adapter (Fine-Tuning)"]
+    BaseModel["🤖 Base LLM ("Llama 3.2 / Qwen 2.5")"] --> LoRA["⚡ LoRA Adapter (Fine-Tuning)"]
     Dataset["📊 Eigene Trainingsdaten (JSONL)"] --> Unsloth["🚀 Unsloth Trainer"]
     Unsloth --> LoRA
-    LoRA --> GGUF["📦 GGUF Export (für Ollama)"]
+    LoRA --> GGUF["📦 GGUF Export ("für Ollama")"]
 ```
 
 ---

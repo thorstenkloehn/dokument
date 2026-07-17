@@ -355,7 +355,7 @@ graph TD
     A["🧑‍💻 Client sendet Text"] --> B["⚡ FastAPI Endpunkt"]
     B --> C["🔤 Hugging Face Tokenizer"]
     C --> D["🧠 BERT Model (PyTorch)"]
-    D --> E["📊 Score: 'Positiv (98%)'"]
+    D --> E["📊 Score: 'Positiv ("98%")'"]
     E --> F["📤 JSON-Antwort an Client"]
 ```
 

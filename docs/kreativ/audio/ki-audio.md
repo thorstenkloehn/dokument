@@ -258,7 +258,7 @@ Du lädst eine Roh-Audiodatei auf deinen Cloud-Speicher. Eine n8n-Pipeline verar
 ```mermaid
 graph TD
     A["📹 Neues Video / Audio auf Nextcloud"] --> B["⚙️ n8n Workflow startet"]
-    B --> C["🤖 Demucs (Trennt Musik & Stimme)"]
+    B --> C["🤖 Demucs ("Trennt Musik & Stimme")"]
     C --> D["🤖 DeepFilterNet (Bereinigt die Stimme)"]
     D --> E["🤖 Whisper.cpp (Generiert SRT-Untertitel)"]
     E --> F["🚀 Fertige Spur + Untertitel auf Nextcloud"]
@@ -315,7 +315,7 @@ Ein Python-Skript transkribiert eine Audio-Aufzeichnung lokal, bereinigt sie, l�
 graph TD
     A["🎙️ Vorlesungs-Audio"] --> B["⚡ DeepFilterNet (Bereinigung)"]
     B --> C["🔤 Whisper.cpp (Transkript)"]
-    C --> D["🤖 Ollama (Modell: Llama3 - Shownotes & Zusammenfassung)"]
+    C --> D["🤖 Ollama ("Modell: Llama3 - Shownotes & Zusammenfassung")"]
     D --> E["💾 Nextcloud Ordner"]
 ```
 

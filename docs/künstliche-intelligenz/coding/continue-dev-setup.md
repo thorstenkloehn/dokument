@@ -7,8 +7,8 @@
 ```mermaid
 graph LR
     IDE["💻 VS Code / JetBrains"] --> Continue["🔌 Continue.dev Extension"]
-    Continue -->|Autocompletion (StarCoder)| Ollama1["🤖 Ollama (qwen2.5-coder:1.5b)"]
-    Continue -->|Chat & Edit (DeepSeek)| Ollama2["🤖 Ollama (qwen2.5-coder:7b / deepseek-r1)"]
+    Continue -->|Autocompletion (StarCoder)| Ollama1["🤖 Ollama ("qwen2.5-coder:1.5b")"]
+    Continue -->|Chat & Edit (DeepSeek)| Ollama2["🤖 Ollama ("qwen2.5-coder:7b / deepseek-r1")"]
 ```
 
 ---

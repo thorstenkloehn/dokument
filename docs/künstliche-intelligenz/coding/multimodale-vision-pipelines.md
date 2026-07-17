@@ -6,8 +6,8 @@ Multimodale LLMs (z. B. **llava**, **qwen2-vl**) verarbeiten sowohl Text als auc
 
 ```mermaid
 graph LR
-    Image["🖼️ Bild / Screenshot (.png/.jpg)"] --> Base64["🔤 Base64 Encoding"]
-    Base64 --> OllamaVision["🤖 Vision-LLM (LLaVA / Qwen2-VL)"]
+    Image["🖼️ Bild / Screenshot (".png/.jpg")"] --> Base64["🔤 Base64 Encoding"]
+    Base64 --> OllamaVision["🤖 Vision-LLM ("LLaVA / Qwen2-VL")"]
     Prompt["💬 Fragen zum Bild"] --> OllamaVision
     OllamaVision --> Output["📊 Strukturierte Bildanalyse"]
 ```

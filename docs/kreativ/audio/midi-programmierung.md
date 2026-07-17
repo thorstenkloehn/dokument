@@ -955,12 +955,12 @@ midi_to_piano_roll('song.mid', 'piano_roll.png')
 
 ```mermaid
 graph TD
-    A[🎹 MIDI-Keyboard Input] --> B[🤖 KI analysiert Melodie]
-    B --> C[🎚️ Akkordfortschreitung erkennen]
-    C --> D[🥁 Drum-Pattern generieren]
-    D --> E[🎶 Bassline generieren]
-    E --> F[🎻 Begleit-Instrumente generieren]
-    F --> G[🎧 Alle Spuren kombinieren und abspielen]
+    A["🎹 MIDI-Keyboard Input"] --> B["🤖 KI analysiert Melodie"]
+    B --> C["🎚️ Akkordfortschreitung erkennen"]
+    C --> D["🥁 Drum-Pattern generieren"]
+    D --> E["🎶 Bassline generieren"]
+    E --> F["🎻 Begleit-Instrumente generieren"]
+    F --> G["🎧 Alle Spuren kombinieren und abspielen"]
 ```
 
 **Benötigte Tools:**
@@ -976,12 +976,12 @@ graph TD
 
 ```mermaid
 graph TD
-    A[🎵 Input-MIDI laden] --> B[🎨 Stil-Referenz laden]
-    B --> C[🤖 KI trainiert auf Stil-Referenz]
-    C --> D[🔄 Input-MIDI in latenten Raum kodieren]
-    D --> E[🎯 Stil-Parameter anwenden]
-    E --> F[🔄 Neue MIDI generieren]
-    F --> G[💾 Ergebnis speichern]
+    A["🎵 Input-MIDI laden"] --> B["🎨 Stil-Referenz laden"]
+    B --> C["🤖 KI trainiert auf Stil-Referenz"]
+    C --> D["🔄 Input-MIDI in latenten Raum kodieren"]
+    D --> E["🎯 Stil-Parameter anwenden"]
+    E --> F["🔄 Neue MIDI generieren"]
+    F --> G["💾 Ergebnis speichern"]
 ```
 
 **Benötigte Tools:**
@@ -996,11 +996,11 @@ graph TD
 
 ```mermaid
 graph TD
-    A[🎹 Nutzer spielt auf MIDI-Controller] --> B[🤖 KI analysiert Input]
-    B --> C[🎚️ Harmonische Analyse]
-    C --> D[🎛️ KI generiert passende Begleitung]
-    D --> E[🔊 Audio-Synthesizer abspielen]
-    E --> F[🎧 Mixed Output]
+    A["🎹 Nutzer spielt auf MIDI-Controller"] --> B["🤖 KI analysiert Input"]
+    B --> C["🎚️ Harmonische Analyse"]
+    C --> D["🎛️ KI generiert passende Begleitung"]
+    D --> E["🔊 Audio-Synthesizer abspielen"]
+    E --> F["🎧 Mixed Output"]
     F --> A
 ```
 
@@ -1017,10 +1017,10 @@ graph TD
 
 ```mermaid
 graph TD
-    A[🎵 Audio-Datei laden] --> B[🎤 Whisper für Sprach-/Instrument-Erkennung]
-    B --> C[🎚️ Pitch-Erkennung]
-    C --> D[🎹 MIDI-Events generieren]
-    D --> E[💾 MIDI-Datei speichern]
+    A["🎵 Audio-Datei laden"] --> B["🎤 Whisper für Sprach-/Instrument-Erkennung"]
+    B --> C["🎚️ Pitch-Erkennung"]
+    C --> D["🎹 MIDI-Events generieren"]
+    D --> E["💾 MIDI-Datei speichern"]
 ```
 
 **Benötigte Tools:**
