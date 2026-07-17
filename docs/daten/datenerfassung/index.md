@@ -26,7 +26,7 @@ Diese Dokumentation konzentriert sich auf **Open-Source-Lösungen**, die lokal i
 
 ## 🛠️ Hauptkategorien
 
-### 1. [OpenDataKit (ODK)](OpenDataKit.md)
+### 1. [OpenDataKit (ODK)](opendatakit.md)
 Ein Open-Source-Toolkit zur Erhebung von Daten in Feldstudien, speziell für den Einsatz in Entwicklungsländern und Ressourcen-begrenzten Umgebungen konzipiert.
 
 * **Plattform**: Android (primär), Web-Formulare
@@ -38,7 +38,7 @@ Ein Open-Source-Toolkit zur Erhebung von Daten in Feldstudien, speziell für den
 
 #### Android-basierte Lösungen
 
-* **[ODK Collect](OpenDataKit.md)** – Die Referenzimplementierung für ODK-Formulare auf Android
+* **[ODK Collect](opendatakit.md)** – Die Referenzimplementierung für ODK-Formulare auf Android
 * **KoBoCollect** – Kompatible Alternative mit zusätzlichen Funktionen
 * **QField** – Für GIS-basierte Datenerfassung mit QGIS
 * **ODK Central** – Server-Komponente zum Verwalten von Formularen und Daten
@@ -228,9 +228,9 @@ Ein Desktop-Tool zur Verwaltung der Synchronisation zwischen Feldgeräten und Se
 
 ### Tutorials & Guides
 
-* [ODK Getting Started Guide](https://docs.getodk.org/getting-started/)
+* [ODK Getting Started Gu/ide](https://docs.getodk.org/getting-started/)
 * [XLSForm Tutorial](https://xlsform.org/en/)
-* [ODK Central Setup Guide](https://docs.getodk.org/central-intro/)
+* [ODK Central Setup Gu/ide](https://docs.getodk.org/central-intro/)
 
 ### Community & Support
 
@@ -242,7 +242,7 @@ Ein Desktop-Tool zur Verwaltung der Synchronisation zwischen Feldgeräten und Se
 
 ## 🔗 Verwandte Themen
 
-* [Server/Kachelserver](../Server/Kachelserver/Server244.md) – Räumliche Datenverarbeitung
-* [Server/Postgresql](../Server/Postgresql.md) – Datenbankspeicherung
-* [Dokument_Erstellen](../Dokument_Erstellen/index.md) – Dokumentation der Datenerfassung
-* [Tools/Analysetool](../Tools/Analysetool.md) – Datenanalyse-Tools
+* [Kachelserver Ubuntu 24.04](/entwicklung/infrastruktur/kachelserver/server244.md) – Räumliche Datenverarbeitung
+* [PostgreSQL](/entwicklung/infrastruktur/postgresql.md) – Datenbankspeicherung
+* [Dokumentation](/wissen/dokumentation/index.md) – Dokumentation der Datenerfassung
+* [Analysetool](/wissen/tools/analysetool.md) – Datenanalyse-Tools

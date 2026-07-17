@@ -205,7 +205,7 @@ Tools für lokale Entwicklung, Debugging und Testing.
 | Tool | Beschreibung | Link |
 |------|--------------|------|
 | **Visual Studio Code** | Code-Editor | [code.visualstudio.com](https://code.visualstudio.com) |
-| **IntelliJ IDEA** | Java/Kotlin IDE | [jetbrains.com/idea](https://www.jetbrains.com/idea) |
+| **IntelliJ IDEA** | Java/Kotlin IDE | [jetbrains.com//idea](https://www.jetbrains.com/idea) |
 | **PyCharm** | Python IDE | [jetbrains.com/pycharm](https://www.jetbrains.com/pycharm) |
 | **WebStorm** | JavaScript/TypeScript IDE | [jetbrains.com/webstorm](https://www.jetbrains.com/webstorm) |
 | **VS Code Extensions** | Plugins für VS Code | [marketplace.visualstudio.com](https://marketplace.visualstudio.com) |
@@ -316,7 +316,7 @@ Tools für Design, Prototyping und UI-Entwicklung.
 | **Docusaurus** | Facebook Docs-Generator | [docusaurus.io](https://docusaurus.io) |
 | **Sphinx** | Python-Docs | [sphinx-doc.org](https://www.sphinx-doc.org) |
 | **GitBook** | Kollaborative Docs | [gitbook.com](https://www.gitbook.com) |
-| **Obsidian** | Wissensdatenbank | [obsidian.md](https://obsidian.md) |
+| **Obsidian** | Wissens/datenbank | [obsidian.md](https://obsidian.md) |
 | **Notion** | All-in-One Workspace | [notion.so](https://www.notion.so) |
 
 ---
@@ -345,10 +345,10 @@ Tools für Design, Prototyping und UI-Entwicklung.
 
 ## 🔗 Verwandte Dokumentationsbereiche
 
-* [Server-Konfiguration](../Server/Software.md) – Server-Tools und -Einstellungen
-* [IDE & Entwicklungsumgebung](../IDE/index.md) – Entwicklungs-Tools
-* [Datenerfassung](../Datenerfassung/index.md) – Datenerfassungstools
-* [Dokument Erstellen](../Dokument_Erstellen/index.md) – Dokumentations-Tools
+* [Server-Konfiguration](/entwicklung/infrastruktur/software.md) – Server-Tools und -Einstellungen
+* [IDE & Entwicklungsumgebung](/ide/index.md) – Entwicklungs-Tools
+* [Datenerfassung](/daten/datenerfassung/index.md) – Datenerfassungstools
+* [Dokumentation](/wissen/dokumentation/index.md) – Dokumentations-Tools
 
 ---
 

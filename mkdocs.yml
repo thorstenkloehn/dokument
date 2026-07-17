@@ -120,7 +120,7 @@ nav:
       - Datenschutz: rechtliches/datenschutz.md
 
 theme:
-  name: 'material'
+  name: material
   language: de
   features:
     - navigation.top
@@ -130,20 +130,11 @@ theme:
     - search.suggest
     - search.highlight
     - toc.integrate
-  palette:
-    - scheme: default
-      primary: deep purple
-      accent: amber
-  font:
-    text: Roboto
-    code: Roboto Mono
 
 plugins:
   - search:
       lang: de
       separator: '[\s\-]+'
-      min_search_length: 3
-      prebuild_index: true
   - git-revision-date
   - git-authors
   - minify:
