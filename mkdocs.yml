@@ -147,6 +147,7 @@ nav:
               - C++20 Modules & Modern CMake: entwicklung/system/cpp20-modules-cmake.md
           - Linux:
               - Linux Praxis-Handbuch: entwicklung/system/linux-praxis.md
+              - Shell & Bash Praxis-Handbuch: entwicklung/system/shell-bash-praxis.md
               - Linux-Systemprogrammierung: entwicklung/system/linux-systemprogrammierung.md
               - Systemd Service Creation: entwicklung/system/systemd-service-creation.md
               - Linux Cgroups v2 Limits: entwicklung/system/linux-cgroups-limits.md

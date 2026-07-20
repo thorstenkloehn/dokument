@@ -54,6 +54,9 @@ Interoperabilität zwischen den Sprachen auf Linux.
 ### [Linux Praxis-Handbuch](linux-praxis.md)
 Umfassendes Handbuch zur Linux-Administration, FHS, Rechteverwaltung, Textverarbeitung (grep/awk/sed), LVM, systemd, Netzwerk & Bash-Scripting.
 
+### [Shell & Bash Praxis-Handbuch](shell-bash-praxis.md)
+Praxis-Handbuch zu I/O-Redirection, Textverarbeitungs-Pipelines, Arrays, defensiver Fehlerbehandlung (set -euo pipefail), Traps & Cron-Jobs.
+
 ### [Linux-Systemprogrammierung](linux-systemprogrammierung.md)
 Niedrigstufige Programmierung mit Linux-spezifischen Features.
 
