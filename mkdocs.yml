@@ -152,6 +152,8 @@ nav:
               - Systemd Service Creation: entwicklung/system/systemd-service-creation.md
               - Linux Cgroups v2 Limits: entwicklung/system/linux-cgroups-limits.md
               - Linux eBPF Performance Profiling: entwicklung/system/linux-ebpf-performance.md
+          - Spiele-Entwicklung:
+              - Game Development Praxis-Handbuch: entwicklung/system/game-development-praxis.md
 
       - IDE & Tools:
           - Übersicht: entwicklung/ide/index.md

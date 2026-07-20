@@ -57,6 +57,9 @@ Umfassendes Handbuch zur Linux-Administration, FHS, Rechteverwaltung, Textverarb
 ### [Shell & Bash Praxis-Handbuch](shell-bash-praxis.md)
 Praxis-Handbuch zu I/O-Redirection, Textverarbeitungs-Pipelines, Arrays, defensiver Fehlerbehandlung (set -euo pipefail), Traps & Cron-Jobs.
 
+### [Game Development Praxis-Handbuch](game-development-praxis.md)
+Umfassendes Handbuch zu Game Engines, 3D-Mathematik (Quaternions), Physik-Simulationspipelines (SAT/GJK), Shaders (HLSL/GLSL), PBR-Rendering & Game-AI (Behavior Trees).
+
 ### [Linux-Systemprogrammierung](linux-systemprogrammierung.md)
 Niedrigstufige Programmierung mit Linux-spezifischen Features.
 
