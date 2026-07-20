@@ -108,6 +108,7 @@ nav:
               - Apache + Nginx: entwicklung/infrastruktur/apache-nginx.md
           - PostgreSQL:
               - Grundlagen: entwicklung/infrastruktur/postgresql.md
+              - DBA Praxis-Handbuch: entwicklung/infrastruktur/postgresql-dba-praxis.md
               - Backup & Recovery: entwicklung/infrastruktur/postgresql-backup-restore.md
               - Performance Tuning: entwicklung/infrastruktur/postgresql-tuning.md
               - PgBouncer Pooling: entwicklung/infrastruktur/postgresql-pgbouncer.md

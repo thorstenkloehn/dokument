@@ -6,6 +6,7 @@ Willkommen im Bereich **Server und Infrastruktur**! Hier finden Sie Anleitungen 
 
 ### Datenbanken
 - [PostgreSQL](postgresql.md) - Einrichtung und Verwaltung
+- [PostgreSQL DBA Praxis-Handbuch](postgresql-dba-praxis.md) - Komplettes Administrator-Handbuch
 
 ### Webserver
 - [Apache-Server mit Nginx verbinden](apache-nginx.md)
