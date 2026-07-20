@@ -64,8 +64,9 @@ graph TD
 
 ### 3. Android & Kotlin-Entwicklung
 
+* [Android Praxis-Handbuch](android-praxis.md) – App-Komponenten, Activity Lifecycle, Jetpack Compose, MVVM, Room & Hilt
 * [Kotlin Praxis-Handbuch](kotlin-praxis.md) – Sprache, Null-Safety, Coroutines, Multiplatform (KMP) & Ktor
-* [Android-Entwicklung mit IDEs](android.md) – Android Studio, Jetpack Compose, SDKs & Emulatoren
+* [Android ADB & Wireless Debugging](android.md) – Android Studio, ADB, Wireless Debugging & Emulatoren
 
 ---
 
