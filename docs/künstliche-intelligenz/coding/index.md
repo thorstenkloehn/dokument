@@ -10,6 +10,7 @@ Willkommen im Bereich **Coding mit KI**! Hier finden Sie Anleitungen und Ressour
 - [Programmieren lernen mit KI](programmieren-lernen-ki.md)
 - [Programmieren mit KI](programmieren-mit-ki.md)
 - [Vibe Coding & Engineering](vibe-coding-engineering.md)
+- [Vibe Coding Praxis-Handbuch](vibe-coding-praxis.md)
 - [Claude Code Praxis-Handbuch](claude-code-praxis.md)
 - [AI Agents Praxis-Handbuch](ai-agents-praxis.md)
 - [AI Engineer Praxis-Handbuch](ai-engineer-praxis.md)
