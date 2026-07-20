@@ -11,6 +11,7 @@ Willkommen im Bereich **Coding mit KI**! Hier finden Sie Anleitungen und Ressour
 - [Programmieren mit KI](programmieren-mit-ki.md)
 - [Vibe Coding & Engineering](vibe-coding-engineering.md)
 - [Claude Code Praxis-Handbuch](claude-code-praxis.md)
+- [AI Agents Praxis-Handbuch](ai-agents-praxis.md)
 - [Antigravity CLI 2 – Übersicht](antigravity-cli.md)
 - [Antigravity CLI 2 – Handbuch & Roadmap](antigravity-cli-roadmap-handbuch.md)
 - [Kapitel 1: Einführung & Grundlagen](antigravity-cli-einfuehrung-grundlagen.md)

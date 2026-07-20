@@ -26,6 +26,7 @@ nav:
               - Structured LLM Outputs (Pydantic): künstliche-intelligenz/coding/structured-outputs-pydantic.md
               - Multimodale Vision Pipelines: künstliche-intelligenz/coding/multimodale-vision-pipelines.md
           - Frameworks & Agenten:
+              - AI Agents Praxis-Handbuch: künstliche-intelligenz/coding/ai-agents-praxis.md
               - Agentic Workflows (LangGraph): künstliche-intelligenz/coding/agentic-workflows-langgraph.md
               - AutoGen Multi-Agent Framework: künstliche-intelligenz/coding/autogen-multiagent-framework.md
               - Microsoft Semantic Kernel: künstliche-intelligenz/coding/semantic-kernel-python.md
