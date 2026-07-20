@@ -228,10 +228,6 @@ sudo apt-get install neovim
 ```bash
 code --install-extension GitHub.copilot
 code --install-extension anthropic.claude-code
-code --install-extension openai.chatgpt
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vmware.vscode-boot-dev-pack
-code --install-extension ms-vscode.cpptools-extension-pack
 code --install-extension ms-python.python
 code --install-extension rust-lang.rust-analyzer
 ```
