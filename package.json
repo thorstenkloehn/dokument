@@ -6,9 +6,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": ".venv/bin/mkdocs build",
-    "serve": ".venv/bin/mkdocs serve",
-    "ver": ".venv/bin/mkdocs build && gh-pages -d site --nojekyll --cname dokument.wissen-ahrensburg.de",
+    "build": ".venv/bin/zensical build",
+    "serve": ".venv/bin/zensical serve",
+    "ver": ".venv/bin/zensical build && gh-pages -d site --nojekyll --cname dokument.wissen-ahrensburg.de",
     "deploy": "npm run ver"
   },
   "author": "",

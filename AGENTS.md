@@ -3,9 +3,12 @@
 Diese Richtlinien müssen von allen KI-Agenten bei der Bearbeitung dieses Repositories zwingend befolgt werden.
 
 ## 🛠️ Projektübersicht
-* **Projekt**: Statische Dokumentation basierend auf **MkDocs** mit dem **Material Theme**.
+* **Projekt**: Statische Dokumentation basierend auf **Zensical** (Nachfolger von Material for MkDocs, vom gleichen Team entwickelt).
+* **Konfiguration**: `mkdocs.yml` wird von Zensical nativ gelesen – keine separate Konfigurationsdatei nötig.
 * **Sprache**: Gesamter Content ist in deutscher Sprache (Ausnahme: technische Begriffe).
 * **Ziel**: Strukturierte Dokumentation der Serverlandschaft, lokalen Entwicklungsumgebung, Automatisierungstools, Video-/Audioverarbeitung und KI-Integration.
+
+> **Hinweis**: MkDocs 2.0 ist ein inkompatibler Rewrite ohne Plugin-Unterstützung und wird **nicht** verwendet. Zensical ist die empfohlene Nachfolge-Lösung.
 
 ## 📁 Verzeichnisstruktur (unter `docs/`)
 Die Dokumentation ist in folgende Hauptbereiche unterteilt:
@@ -33,7 +36,7 @@ Die Dokumentation ist in folgende Hauptbereiche unterteilt:
 
 ### 1. Navigation & Struktur (`mkdocs.yml`)
 * **Zwingendes Navigations-Update**: Jede neu hinzugefügte Markdown-Datei unter `docs/` **muss** im Navigations-Menü (`nav`) in `mkdocs.yml` eingetragen werden.
-* **Validierung**: Nach dem Hinzufügen von Seiten muss `.venv/bin/mkdocs build` ausgeführt werden. Es dürfen keine Warnungen wie `"The following pages exist in the docs directory, but are not included in the 'nav' configuration"` auftreten.
+* **Validierung**: Nach dem Hinzufügen von Seiten muss `.venv/bin/zensical build` ausgeführt werden. Es dürfen keine Fehler oder Warnungen auftreten.
 
 ### 2. Markdown & Mermaid
 * **Dateinamen**: Kleingeschrieben oder in CamelCase/Kebab-Case, passend zur Kategorie.
@@ -51,9 +54,11 @@ Die Dokumentation ist in folgende Hauptbereiche unterteilt:
   * Python: `.venv/bin/pip install -r requirements.txt`
   * Node.js: `npm install`
 * **Lokal testen**:
-  * Build erstellen: `.venv/bin/mkdocs build`
-  * Lokalen Server starten: `.venv/bin/mkdocs serve`
+  * Build erstellen: `.venv/bin/zensical build`
+  * Lokalen Server starten: `.venv/bin/zensical serve`
 * **Deployment**:
   * Deployment auf GitHub Pages: `npm run ver`
   *(Das Skript baut das Verzeichnis und stellt es online unter `dokument.wissen-ahrensburg.de`)*
+
+> **Nicht verwenden**: `.venv/bin/mkdocs build` oder `.venv/bin/mkdocs serve` – MkDocs wurde durch Zensical ersetzt.
 
