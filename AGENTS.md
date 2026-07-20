@@ -27,6 +27,10 @@ npm run ver                                # Deploy → GitHub Pages
 - Admonitions auf Deutsch: `!!! tip "Tipp"`, `!!! warning "Achtung"`
 - Mermaid: via ` ```mermaid ` in Superfences
 
+## Subagents & Skills
+- **Skill `zensical-docs`**: Vorlagen & Checkliste in `.gemini/skills/zensical-docs/SKILL.md`
+- **Subagent `doc-checker`**: Nutze `invoke_subagent` (Role: `Doc-Checker`), um `.venv/bin/zensical build` auszuführen und Navigations- & Relativlinks-Integrität zu prüfen.
+
 ## Struktur `docs/`
 ```
 künstliche-intelligenz/  coding/  content/  automatisierung/
