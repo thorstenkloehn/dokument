@@ -2706,9 +2706,9 @@
 <h2 id="standorte-hierarchie-von-agentsmd">📍 Standorte &amp; Hierarchie von <code>AGENTS.md</code><a class="headerlink" href="#standorte-hierarchie-von-agentsmd" title="Permanent link">&para;</a></h2>
 <p>Der Antigravity CLI sucht und kombiniert <code>AGENTS.md</code>-Dateien auf verschiedenen Ebenen des Dateisystems. Bei widersprüchlichen Anweisungen gilt eine klare Prioritätenordnung (Precedence).</p>
 <pre class="mermaid"><code>graph TD
-    A[1. System- &amp; App-Regeln] --&gt; B[2. Globale User-Regeln ~/.gemini/antigravity-cli/AGENTS.md]
+    A["1. System- &amp; App-Regeln"] --&gt; B["2. Globale User-Regeln ~/.gemini/antigravity-cli/AGENTS.md"]
     B --&gt; C[3. Workspace-Root AGENTS.md]
-    C --&gt; D[4. Unterverzeichnis AGENTS.md / sub-folder]
+    C --&gt; D["4. Unterverzeichnis AGENTS.md / sub-folder"]
 
     style D fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style C fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff</code></pre>

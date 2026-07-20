@@ -2952,16 +2952,16 @@
 <h3 id="ai-engineer-vs-ml-engineer">AI Engineer vs. ML Engineer<a class="headerlink" href="#ai-engineer-vs-ml-engineer" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph LR
     subgraph ML Engineer / Data Scientist
-        A[Daten-Preprocessing] --&gt; B[Modell-Training &amp; Architecture]
-        B --&gt; C[PyTorch / TensorFlow / CUDA]
+        A[Daten-Preprocessing] --&gt; B["Modell-Training &amp; Architecture"]
+        B --&gt; C["PyTorch / TensorFlow / CUDA"]
         C --&gt; D[Hyperparameter Tuning]
     end
 
     subgraph AI Engineer
-        E[Pre-trained Foundation Models] --&gt; F[API Integration &amp; Prompting]
-        F --&gt; G[RAG &amp; Vector DBs]
-        G --&gt; H[Agenten &amp; Tool Orchestration]
-        H --&gt; I[Produktivierung &amp; UI/UX]
+        E[Pre-trained Foundation Models] --&gt; F["API Integration &amp; Prompting"]
+        F --&gt; G["RAG &amp; Vector DBs"]
+        G --&gt; H["Agenten &amp; Tool Orchestration"]
+        H --&gt; I["Produktivierung &amp; UI/UX"]
     end</code></pre>
 <table>
 <thead>
@@ -3046,10 +3046,10 @@
 <p>Die Absicherung von KI-Pipelines ist eine Kernverantwortung des AI Engineers.</p>
 <h3 id="sicherheitsrisiken-best-practices">Sicherheitsrisiken &amp; Best Practices<a class="headerlink" href="#sicherheitsrisiken-best-practices" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    UserPrompt[Unbekannter User Prompt] --&gt; Filter[1. Input Moderation &amp; Sanitize]
+    UserPrompt[Unbekannter User Prompt] --&gt; Filter["1. Input Moderation &amp; Sanitize"]
     Filter --&gt; Guardrail[2. System Prompt Guardrails]
-    Guardrail --&gt; Execution[3. Tool Sandboxing &amp; Execution]
-    Execution --&gt; OutFilter[4. Output Filtering &amp; PII Redaction]
+    Guardrail --&gt; Execution["3. Tool Sandboxing &amp; Execution"]
+    Execution --&gt; OutFilter["4. Output Filtering &amp; PII Redaction"]
     OutFilter --&gt; SafeResponse[Sichere Antwort an den Nutzer]</code></pre>
 <ol>
 <li><strong>Prompt Injection Attacks</strong>:</li>

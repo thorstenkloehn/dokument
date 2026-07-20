@@ -2672,12 +2672,12 @@
 <h2 id="was-ist-ein-antigravity-skill">🎯 Was ist ein Antigravity Skill?<a class="headerlink" href="#was-ist-ein-antigravity-skill" title="Permanent link">&para;</a></h2>
 <p>Ein Skill kapselt Best Practices für wiederkehrende Entwicklungsaufgaben. Wenn ein Benutzer eine Aufgabe stellt, analysiert der Antigravity CLI die Beschreibung aller verfügbaren Skills und aktiviert automatisch das passende Skill-Paket.</p>
 <pre class="mermaid"><code>graph LR
-    UserPrompt[Benutzer-Prompt] --&gt; Router[Skill-Router / LLM]
-    Router --&gt;|Liest description| S1[Skill: zensical-docs]
-    Router --&gt;|Liest description| S2[Skill: db-migrator]
-    Router --&gt;|Liest description| S3[Skill: api-tester]
+    UserPrompt[Benutzer-Prompt] --&gt; Router["Skill-Router / LLM"]
+    Router --&gt;|Liest description| S1["Skill: zensical-docs"]
+    Router --&gt;|Liest description| S2["Skill: db-migrator"]
+    Router --&gt;|Liest description| S3["Skill: api-tester"]
 
-    S1 --&gt; Context[Injiziert SKILL.md &amp; Scripts in den Agenten-Kontext]</code></pre>
+    S1 --&gt; Context["Injiziert SKILL.md &amp; Scripts in den Agenten-Kontext"]</code></pre>
 <hr />
 <h2 id="verzeichnisstruktur-eines-skills">📂 Verzeichnisstruktur eines Skills<a class="headerlink" href="#verzeichnisstruktur-eines-skills" title="Permanent link">&para;</a></h2>
 <p>Skills können global (<code>~/.gemini/antigravity-cli/skills/</code>) oder lokal im Projekt (<code>.gemini/skills/</code>) abgelegt werden.</p>

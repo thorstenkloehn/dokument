@@ -997,8 +997,6 @@
       
         
       
-        
-      
     
     
     
@@ -1238,63 +1236,6 @@
     
   
   PostgreSQL
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../infrastruktur/tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
 
     
   </span>
@@ -3272,14 +3213,14 @@
 <h3 id="der-filesystem-hierarchy-standard-fhs">Der Filesystem Hierarchy Standard (FHS)<a class="headerlink" href="#der-filesystem-hierarchy-standard-fhs" title="Permanent link">&para;</a></h3>
 <p>Unter Linux ist alles eine Datei ("Everything is a file"). Die Ordnerstruktur folgt einem festen Standard:</p>
 <pre class="mermaid"><code>graph TD
-    Root[/ Root Directory] --&gt; etc[/etc - Konfigurationsdateien]
-    Root --&gt; var[/var - Logdateien &amp; Variable Daten]
-    Root --&gt; usr[/usr - Binaries &amp; Bibliotheken]
-    Root --&gt; home[/home - Benutzer-Heimatverzeichnisse]
-    Root --&gt; dev[/dev - Gerätedateien Hardware]
-    Root --&gt; proc[/proc - Virtuelles Prozess-Dateisystem]
-    Root --&gt; sys[/sys - Virtuelles Kernel- &amp; Hardware-System]
-    Root --&gt; tmp[/tmp - Temporäre Dateien]</code></pre>
+    Root["/ Root Directory"] --&gt; etc["/etc - Konfigurationsdateien"]
+    Root --&gt; var["/var - Logdateien &amp; Variable Daten"]
+    Root --&gt; usr["/usr - Binaries &amp; Bibliotheken"]
+    Root --&gt; home["/home - Benutzer-Heimatverzeichnisse"]
+    Root --&gt; dev["/dev - Gerätedateien Hardware"]
+    Root --&gt; proc["/proc - Virtuelles Prozess-Dateisystem"]
+    Root --&gt; sys["/sys - Virtuelles Kernel- &amp; Hardware-System"]
+    Root --&gt; tmp["/tmp - Temporäre Dateien"]</code></pre>
 <h3 id="die-wichtigsten-navigations-befehle">Die wichtigsten Navigations-Befehle<a class="headerlink" href="#die-wichtigsten-navigations-befehle" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Datei- &amp; Ordnerverwaltung</label><label for="__tabbed_1_2">Umgebungsvariablen &amp; Hilfe</label></div>
 <div class="tabbed-content">
@@ -3324,10 +3265,10 @@
 </ul>
 <h3 id="die-linux-textverarbeitungs-pipeline-pipe">Die Linux Textverarbeitungs-Pipeline (<code>pipe</code>)<a class="headerlink" href="#die-linux-textverarbeitungs-pipeline-pipe" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph LR
-    Input[Input File / Log] --&gt;|cat / tail| Stream[stdout Stream]
-    Stream --&gt;|grep 'ERROR'| Filter[Gefilterte Zeilen]
-    Filter --&gt;|awk '{print $1, $4}'| Transform[Spalten-Extraktion]
-    Transform --&gt;|sort | uniq -c| Count[Häufigkeits-Zählung]</code></pre>
+    Input["Input File / Log"] --&gt;|cat / tail| Stream["stdout Stream"]
+    Stream --&gt;|grep 'ERROR'| Filter["Gefilterte Zeilen"]
+    Filter --&gt;|awk '{print $1, $4}'| Transform["Spalten-Extraktion"]
+    Transform --&gt;|"sort | uniq -c"| Count["Häufigkeits-Zählung"]</code></pre>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Praxisbeispiele Text-Tools</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3398,12 +3339,12 @@
 <h2 id="5-speichermedien-dateisysteme-lvm">💽 5. Speichermedien, Dateisysteme &amp; LVM<a class="headerlink" href="#5-speichermedien-dateisysteme-lvm" title="Permanent link">&para;</a></h2>
 <h3 id="lvm-logical-volume-manager-struktur">LVM (Logical Volume Manager) Struktur<a class="headerlink" href="#lvm-logical-volume-manager-struktur" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    PV1[Physical Volume /dev/sda1] --&gt; VG[Volume Group: vg_data]
-    PV2[Physical Volume /dev/sdb1] --&gt; VG
-    VG --&gt; LV1[Logical Volume: lv_root]
-    VG --&gt; LV2[Logical Volume: lv_var]
-    LV1 --&gt; FS1[ext4 Dateisystem /]
-    LV2 --&gt; FS2[xfs Dateisystem /var]</code></pre>
+    PV1["Physical Volume /dev/sda1"] --&gt; VG["Volume Group: vg_data"]
+    PV2["Physical Volume /dev/sdb1"] --&gt; VG
+    VG --&gt; LV1["Logical Volume: lv_root"]
+    VG --&gt; LV2["Logical Volume: lv_var"]
+    LV1 --&gt; FS1["ext4 Dateisystem /"]
+    LV2 --&gt; FS2["xfs Dateisystem /var"]</code></pre>
 <h3 id="festplatten-einbinden-fdisk-mkfs-mount">Festplatten einbinden (<code>fdisk</code>, <code>mkfs</code>, <code>mount</code>)<a class="headerlink" href="#festplatten-einbinden-fdisk-mkfs-mount" title="Permanent link">&para;</a></h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Partitionierung &amp; Dateisystem erstellen</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>fdisk<span class="w"> </span>/dev/sdb<span class="w">             </span><span class="c1"># Neue Partition anlegen</span>

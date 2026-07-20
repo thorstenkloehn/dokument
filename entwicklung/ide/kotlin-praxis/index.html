@@ -997,8 +997,6 @@
       
         
       
-        
-      
     
     
     
@@ -1238,63 +1236,6 @@
     
   
   PostgreSQL
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../infrastruktur/tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
 
     
   </span>
@@ -2870,25 +2811,25 @@
 <li><strong>Multiplatform (KMP)</strong>: Business-Logik einmal schreiben und nativ auf Android, iOS, Desktop (JVM), Web (WASM) und Linux ausführen.</li>
 </ul>
 <pre class="mermaid"><code>graph TD
-    Source[Kotlin Code .kt] --&gt;|Kotlin Compiler kotlinc| Choice{Target Plattform}
-    Choice --&gt;|JVM Target| Bytecode[Java Bytecode .class / JAR]
-    Choice --&gt;|Native Target| Binary[Natives Executable via LLVM]
-    Choice --&gt;|JS / WASM Target| Web[JavaScript / WebAssembly]
-    Bytecode --&gt; Android[Android App / Spring Boot Server]
-    Binary --&gt; iOS[iOS App / Linux CLI]</code></pre>
+    Source["Kotlin Code .kt"] --&gt;|Kotlin Compiler kotlinc| Choice{"Target Plattform"}
+    Choice --&gt;|JVM Target| Bytecode["Java Bytecode .class / JAR"]
+    Choice --&gt;|Native Target| Binary["Natives Executable via LLVM"]
+    Choice --&gt;|JS / WASM Target| Web["JavaScript / WebAssembly"]
+    Bytecode --&gt; Android["Android App / Spring Boot Server"]
+    Binary --&gt; iOS["iOS App / Linux CLI"]</code></pre>
 <hr />
 <h2 id="2-null-safety-das-herzstuck-von-kotlin">🔒 2. Null Safety (Das Herzstück von Kotlin)<a class="headerlink" href="#2-null-safety-das-herzstuck-von-kotlin" title="Permanent link">&para;</a></h2>
 <p>In Kotlin wird im Typsystem strikt unterscheidet, ob eine Variable <code>null</code> enthalten darf oder nicht:</p>
 <pre class="mermaid"><code>graph TD
-    Types[Kotlin Typsystem] --&gt; NonNull[Non-Nullable Types String, Int]
-    Types --&gt; Nullable[Nullable Types String?, Int?]
+    Types["Kotlin Typsystem"] --&gt; NonNull["Non-Nullable Types String, Int"]
+    Types --&gt; Nullable["Nullable Types String?, Int?"]
 
-    NonNull --&gt;|Niemals null| Safe1[Sicher ohne Checks]
-    Nullable --&gt;|Kann null sein| Safe2[Nötigt zur expliziten Behandlung]
+    NonNull --&gt;|Niemals null| Safe1["Sicher ohne Checks"]
+    Nullable --&gt;|Kann null sein| Safe2["Nötigt zur expliziten Behandlung"]
 
-    Safe2 --&gt; SafeCall[Safe Call Operator ?.]
-    Safe2 --&gt; Elvis[Elvis Operator ?:]
-    Safe2 --&gt; SmartCast[Smart Cast nach Null-Check]</code></pre>
+    Safe2 --&gt; SafeCall["Safe Call Operator ?."]
+    Safe2 --&gt; Elvis["Elvis Operator ?:"]
+    Safe2 --&gt; SmartCast["Smart Cast nach Null-Check"]</code></pre>
 <h3 id="die-null-safety-operatoren-im-uberblick">Die Null-Safety-Operatoren im Überblick<a class="headerlink" href="#die-null-safety-operatoren-im-uberblick" title="Permanent link">&para;</a></h3>
 <table>
 <thead>

@@ -997,8 +997,6 @@
       
         
       
-        
-      
     
     
     
@@ -1238,63 +1236,6 @@
     
   
   PostgreSQL
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../infrastruktur/tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
 
     
   </span>
@@ -2852,10 +2793,10 @@
 <h2 id="1-android-kernkomponenten-lifecycle">🚀 1. Android Kernkomponenten &amp; Lifecycle<a class="headerlink" href="#1-android-kernkomponenten-lifecycle" title="Permanent link">&para;</a></h2>
 <h3 id="die-4-kernbausteine-app-components">Die 4 Kernbausteine (App Components)<a class="headerlink" href="#die-4-kernbausteine-app-components" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    AndroidApp[Android Application] --&gt; Activity[1. Activity: UI &amp; User Interaction]
-    AndroidApp --&gt; Service[2. Service: Background Processing]
-    AndroidApp --&gt; Receiver[3. Broadcast Receiver: System Events]
-    AndroidApp --&gt; Provider[4. Content Provider: Data Sharing]
+    AndroidApp["Android Application"] --&gt; Activity["1. Activity: UI &amp; User Interaction"]
+    AndroidApp --&gt; Service["2. Service: Background Processing"]
+    AndroidApp --&gt; Receiver["3. Broadcast Receiver: System Events"]
+    AndroidApp --&gt; Provider["4. Content Provider: Data Sharing"]
 
     Activity &lt;--&gt;|Explicit / Implicit Intents| Activity</code></pre>
 <ol>
@@ -2914,10 +2855,10 @@
 <h2 id="3-architektur-mvvm-hilt-stateflow">🏛️ 3. Architektur: MVVM, Hilt &amp; StateFlow<a class="headerlink" href="#3-architektur-mvvm-hilt-stateflow" title="Permanent link">&para;</a></h2>
 <p>Google empfiehlt eine klare Layer-Architektur mit Unidirectional Data Flow (UDF):</p>
 <pre class="mermaid"><code>graph TD
-    UI[UI Layer: Jetpack Compose / Screen] &lt;--&gt;|State &amp; User Events| VM[ViewModel Layer: StateFlow]
-    VM &lt;--&gt;|Use Cases / Repositories| Repo[Repository Layer]
-    Repo &lt;--&gt;|Local Data| Room[(Room SQLite DB)]
-    Repo &lt;--&gt;|Remote Data| Retrofit[Retrofit REST API]</code></pre>
+    UI["UI Layer: Jetpack Compose / Screen"] &lt;--&gt;|State &amp; User Events| VM["ViewModel Layer: StateFlow"]
+    VM &lt;--&gt;|Use Cases / Repositories| Repo["Repository Layer"]
+    Repo &lt;--&gt;|Local Data| Room["(\"Room SQLite DB\")"]
+    Repo &lt;--&gt;|Remote Data| Retrofit["Retrofit REST API"]</code></pre>
 <h3 id="1-viewmodel-stateflow">1. ViewModel &amp; StateFlow<a class="headerlink" href="#1-viewmodel-stateflow" title="Permanent link">&para;</a></h3>
 <p>Das <code>ViewModel</code> überlebt Konfigurationsänderungen (wie Bildschirm-Rotationen) und verwaltet den UI-Zustand via <code>StateFlow</code>:</p>
 <div class="language-kotlin highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="nn">androidx.lifecycle.ViewModel</span>

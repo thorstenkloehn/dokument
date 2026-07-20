@@ -2728,12 +2728,12 @@
 <h2 id="wie-der-antigravity-cli-2-kontext-verwaltet">🧠 Wie der Antigravity CLI 2 Kontext verwaltet<a class="headerlink" href="#wie-der-antigravity-cli-2-kontext-verwaltet" title="Permanent link">&para;</a></h2>
 <p>Jede Interaktion (Prompts, Dateiinhalte, Werkzeugausgaben und Systemantworten) verbraucht Speicherplatz im Kontextfenster des LLMs. </p>
 <pre class="mermaid"><code>graph LR
-    SystemPrompt[System-Prompt &amp; AGENTS.md] --&gt; ActiveContext[Aktiver Kontext]
+    SystemPrompt["System-Prompt &amp; AGENTS.md"] --&gt; ActiveContext[Aktiver Kontext]
     Skills[Aktive Skills] --&gt; ActiveContext
     UserPrompts[Benutzer-Prompts] --&gt; ActiveContext
-    ToolOutputs[Dateien &amp; Shell-Logs] --&gt; ActiveContext
+    ToolOutputs["Dateien &amp; Shell-Logs"] --&gt; ActiveContext
 
-    ActiveContext --&gt;|Nähert sich der Token-Grenze| Trimming[Automatic Trimming / /compact]</code></pre>
+    ActiveContext --&gt;|Nähert sich der Token-Grenze| Trimming["Automatic Trimming / /compact"]</code></pre>
 <hr />
 <h2 id="befehle-zur-kontext-steuerung">🛠️ Befehle zur Kontext-Steuerung<a class="headerlink" href="#befehle-zur-kontext-steuerung" title="Permanent link">&para;</a></h2>
 <h3 id="1-token-verbrauch-prufen-context-usage">1. Token-Verbrauch prüfen (<code>/context</code> &amp; <code>/usage</code>)<a class="headerlink" href="#1-token-verbrauch-prufen-context-usage" title="Permanent link">&para;</a></h3>

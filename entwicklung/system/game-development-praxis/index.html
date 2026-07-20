@@ -997,8 +997,6 @@
       
         
       
-        
-      
     
     
     
@@ -1238,63 +1236,6 @@
     
   
   PostgreSQL
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../infrastruktur/tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
 
     
   </span>
@@ -3026,12 +2967,12 @@
 <h2 id="1-game-engines-programmiersprachen">🚀 1. Game Engines &amp; Programmiersprachen<a class="headerlink" href="#1-game-engines-programmiersprachen" title="Permanent link">&para;</a></h2>
 <h3 id="architektur-einer-game-engine">Architektur einer Game Engine<a class="headerlink" href="#architektur-einer-game-engine" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    Engine[Game Engine Architecture] --&gt; Core[Core Subsystems: Memory, Loop, Math]
-    Engine --&gt; Graphics[Graphics Engine: Vulkan, DirectX, OpenGL]
-    Engine --&gt; Physics[Physics Engine: Rigidbodies, Collisions]
-    Engine --&gt; Audio[Audio Engine: Spatial 3D Audio]
-    Engine --&gt; AI[Game AI: NavMesh, Behavior Trees]
-    Engine --&gt; Scripting[Game Logic &amp; Scripting: C++, C#, GDScript]</code></pre>
+    Engine["Game Engine Architecture"] --&gt; Core["Core Subsystems: Memory, Loop, Math"]
+    Engine --&gt; Graphics["Graphics Engine: Vulkan, DirectX, OpenGL"]
+    Engine --&gt; Physics["Physics Engine: Rigidbodies, Collisions"]
+    Engine --&gt; Audio["Audio Engine: Spatial 3D Audio"]
+    Engine --&gt; AI["Game AI: NavMesh, Behavior Trees"]
+    Engine --&gt; Scripting["Game Logic &amp; Scripting: C++, C#, GDScript"]</code></pre>
 <h3 id="die-wichtigsten-engines-im-vergleich">Die wichtigsten Engines im Vergleich<a class="headerlink" href="#die-wichtigsten-engines-im-vergleich" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -3080,11 +3021,11 @@
 </ul>
 <h3 id="orientierung-euler-winkel-vs-quaternions">Orientierung: Euler-Winkel vs. Quaternions<a class="headerlink" href="#orientierung-euler-winkel-vs-quaternions" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph LR
-    Rotations[3D Rotation System] --&gt; Euler[Euler-Winkel Pitch, Yaw, Roll]
-    Rotations --&gt; Quat[Quaternions q = w + xi + yj + zk]
+    Rotations["3D Rotation System"] --&gt; Euler["Euler-Winkel Pitch, Yaw, Roll"]
+    Rotations --&gt; Quat["Quaternions q = w + xi + yj + zk"]
 
-    Euler --&gt;|Nachteil| Lock[Gimbal Lock Risiko]
-    Quat --&gt;|Vorteile| Smooth[Glatte Interpolation slerp &amp; Kein Gimbal Lock]</code></pre>
+    Euler --&gt;|Nachteil| Lock["Gimbal Lock Risiko"]
+    Quat --&gt;|Vorteile| Smooth["Glatte Interpolation slerp &amp; Kein Gimbal Lock"]</code></pre>
 <ul>
 <li><strong>Euler-Winkel (Pitch, Yaw, Roll)</strong>: Anschaulich, leidet jedoch unter dem <strong>Gimbal Lock</strong> (Verlust eines Freiheitsgrads bei 90°-Drehungen).</li>
 <li><strong>Quaternions (Vierer-Vektoren)</strong>: Verhindern den Gimbal Lock und erlauben glatte, fehlerfreie Kugel-Interpolationen (<strong>Slerp</strong>).</li>
@@ -3094,9 +3035,9 @@
 <p>Spiele-Physik simuliert Starre Körper (<em>Rigidbodies</em>), Kräfte, Reibung und Kollisionen in Echtzeit.</p>
 <h3 id="phasen-der-kollisionserkennung">Phasen der Kollisionserkennung<a class="headerlink" href="#phasen-der-kollisionserkennung" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    Collision[Collision Detection Pipeline] --&gt; BroadPhase[1. Broad Phase: Schnell &amp; Grob]
-    BroadPhase --&gt;|AABB / Bounding Spheres / BVH| NarrowPhase[2. Narrow Phase: Exakt]
-    NarrowPhase --&gt;|GJK / SAT Algorithm| Resolution[3. Collision Resolution &amp; Impulse]</code></pre>
+    Collision["Collision Detection Pipeline"] --&gt; BroadPhase["1. Broad Phase: Schnell &amp; Grob"]
+    BroadPhase --&gt;|AABB / Bounding Spheres / BVH| NarrowPhase["2. Narrow Phase: Exakt"]
+    NarrowPhase --&gt;|GJK / SAT Algorithm| Resolution["3. Collision Resolution &amp; Impulse"]</code></pre>
 <ol>
 <li><strong>Broad Phase</strong>: Schnelles Aussortieren weit entfernter Objekte mittels einfacher Bounding Volumes (AABB - Axis-Aligned Bounding Box, BVH - Bounding Volume Hierarchy).</li>
 <li><strong>Narrow Phase</strong>: Präzise Schnittpunktberechnung komplexer Geometrien mittels Algorithmen wie <strong>SAT</strong> (Separation Axis Theorem) oder <strong>GJK</strong> (Gilbert-Johnson-Keerthi).</li>
@@ -3107,10 +3048,10 @@
 <h3 id="die-graphics-pipeline">Die Graphics Pipeline<a class="headerlink" href="#die-graphics-pipeline" title="Permanent link">&para;</a></h3>
 <p>Die Grafikkarte (GPU) verarbeitet 3D-Geometrie in mehreren programmierbaren Stufen:</p>
 <pre class="mermaid"><code>graph LR
-    Vertices[Vertex Data] --&gt; VertexShader[Vertex Shader: Transformation]
-    VertexShader --&gt; Rasterizer[Rasterisierung &amp; Culling]
-    Rasterizer --&gt; FragmentShader[Fragment/Pixel Shader: Shading]
-    FragmentShader --&gt; Framebuffer[Framebuffer &amp; Screen]</code></pre>
+    Vertices["Vertex Data"] --&gt; VertexShader["Vertex Shader: Transformation"]
+    VertexShader --&gt; Rasterizer["Rasterisierung &amp; Culling"]
+    Rasterizer --&gt; FragmentShader["Fragment/Pixel Shader: Shading"]
+    FragmentShader --&gt; Framebuffer["Framebuffer &amp; Screen"]</code></pre>
 <h3 id="shader-programmiersprachen-apis">Shader-Programmiersprachen &amp; APIs<a class="headerlink" href="#shader-programmiersprachen-apis" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Shader Languages</strong>: HLSL (DirectX), GLSL (OpenGL/Vulkan), SPIR-V (Binärformat für Vulkan).</li>

@@ -2950,11 +2950,11 @@
 <h2 id="was-ist-der-antigravity-cli">🚀 Was ist der Antigravity CLI?<a class="headerlink" href="#was-ist-der-antigravity-cli" title="Permanent link">&para;</a></h2>
 <p>Der Antigravity CLI ist ein autonomes Agenten-Werkzeug für das Terminal, das auf modernen LLMs (wie Gemini 3.5 Pro/Flash) basiert. Im Gegensatz zu reinen Chat-Bots führt <code>agy</code> Befehle aus, liest und editiert Dateien im Projektverzeichnis, verwaltet Hintergrundaufgaben und orchestriert Subagenten.</p>
 <pre class="mermaid"><code>graph TD
-    User([Entwickler / CI-Pipeline]) --&gt;|CLI-Befehl / Prompt| AGY[Antigravity CLI 'agy']
-    AGY --&gt;|Instruktionen| AGENTS[AGENTS.md &amp; Rules]
-    AGY --&gt;|Kontext &amp; Skills| SKILLS[Skills &amp; MCP-Plugins]
-    AGY --&gt;|Tool Execution| TOOLS[Builtin Tools &amp; Shell Sandbox]
-    AGY --&gt;|Delegation| SUB[Subagents &amp; Background Tasks]</code></pre>
+    User(["Entwickler / CI-Pipeline"]) --&gt;|CLI-Befehl / Prompt| AGY[Antigravity CLI 'agy']
+    AGY --&gt;|Instruktionen| AGENTS["AGENTS.md &amp; Rules"]
+    AGY --&gt;|Kontext &amp; Skills| SKILLS["Skills &amp; MCP-Plugins"]
+    AGY --&gt;|Tool Execution| TOOLS["Builtin Tools &amp; Shell Sandbox"]
+    AGY --&gt;|Delegation| SUB["Subagents &amp; Background Tasks"]</code></pre>
 <h3 id="gegenuberstellung-cli-vs-ide-vs-antigravity-20">Gegenüberstellung: CLI vs. IDE vs. Antigravity 2.0<a class="headerlink" href="#gegenuberstellung-cli-vs-ide-vs-antigravity-20" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -3143,8 +3143,8 @@ Ideal für Skripte, CI/CD-Pipelines oder Automatisierungen ohne Benutzerinterakt
 <li><code>send_message</code>: Kommuniziert asynchron mit laufenden Subagenten.</li>
 </ul>
 <pre class="mermaid"><code>graph LR
-    Parent[Haupt-CLI Agent] --&gt;|invoke_subagent| Sub1[Subagent: Research]
-    Parent --&gt;|invoke_subagent| Sub2[Subagent: Doc-Checker]
+    Parent[Haupt-CLI Agent] --&gt;|invoke_subagent| Sub1["Subagent: Research"]
+    Parent --&gt;|invoke_subagent| Sub2["Subagent: Doc-Checker"]
     Sub1 --&gt;|send_message| Parent
     Sub2 --&gt;|send_message| Parent</code></pre>
 <hr />

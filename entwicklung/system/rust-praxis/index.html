@@ -997,8 +997,6 @@
       
         
       
-        
-      
     
     
     
@@ -1238,63 +1236,6 @@
     
   
   PostgreSQL
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../infrastruktur/tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
 
     
   </span>
@@ -3176,10 +3117,10 @@
 <li><strong>Hervorragendes Tooling</strong>: Integrierter Paketmanager und Build-Tool (<code>cargo</code>), Linter (<code>clippy</code>), Formatter (<code>rustfmt</code>) und Language Server (<code>rust-analyzer</code>).</li>
 </ul>
 <pre class="mermaid"><code>graph TD
-    User([Entwickler / CLI]) --&gt;|1. cargo build / run| Cargo[Cargo Build Tool]
-    Cargo --&gt;|2. Kompilierung &amp; Typprüfung| Rustc[rustc Compiler]
-    Rustc --&gt;|3. Ownership &amp; Lifetime Check| BorrowChecker[Borrow Checker]
-    BorrowChecker --&gt;|4. Generierung Maschinencode| Binary[Natives Binary / WASM]</code></pre>
+    User(["Entwickler / CLI"]) --&gt;|1. cargo build / run| Cargo["Cargo Build Tool"]
+    Cargo --&gt;|2. Kompilierung &amp; Typprüfung| Rustc["rustc Compiler"]
+    Rustc --&gt;|3. Ownership &amp; Lifetime Check| BorrowChecker["Borrow Checker"]
+    BorrowChecker --&gt;|4. Generierung Maschinencode| Binary["Natives Binary / WASM"]</code></pre>
 <h3 id="entwicklungsumgebung-einrichten">Entwicklungsumgebung einrichten<a class="headerlink" href="#entwicklungsumgebung-einrichten" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Installation (rustup)</label><label for="__tabbed_1_2">Nützliche Tools</label></div>
 <div class="tabbed-content">
@@ -3210,15 +3151,15 @@
 <h2 id="2-das-ownership-borrowing-system">🔒 2. Das Ownership- &amp; Borrowing-System<a class="headerlink" href="#2-das-ownership-borrowing-system" title="Permanent link">&para;</a></h2>
 <p>Das <strong>Ownership-Modell</strong> ist das zentralste Alleinstellungsmerkmal von Rust:</p>
 <pre class="mermaid"><code>graph TD
-    Ownership[Ownership System] --&gt; Rules[3 Goldene Ownership Regeln]
-    Ownership --&gt; Borrowing[Borrowing &amp; Referenzen]
-    Ownership --&gt; Memory[Stack vs. Heap Allocation]
+    Ownership["Ownership System"] --&gt; Rules["3 Goldene Ownership Regeln"]
+    Ownership --&gt; Borrowing["Borrowing &amp; Referenzen"]
+    Ownership --&gt; Memory["Stack vs. Heap Allocation"]
 
-    Borrowing --&gt; Shared[Unveränderbare Referenz &amp;T]
-    Borrowing --&gt; Mut[Veränderbare Referenz &amp;mut T]
+    Borrowing --&gt; Shared["Unveränderbare Referenz &amp;T"]
+    Borrowing --&gt; Mut["Veränderbare Referenz &amp;mut T"]
 
-    Shared --&gt;|Beliebig viele gleichzeitig| Valid1[Gültig]
-    Mut --&gt;|Exklusiv: Genau EINE gleichzeitig| Valid2[Gültig]</code></pre>
+    Shared --&gt;|Beliebig viele gleichzeitig| Valid1["Gültig"]
+    Mut --&gt;|Exklusiv: Genau EINE gleichzeitig| Valid2["Gültig"]</code></pre>
 <h3 id="die-3-goldenen-ownership-regeln">Die 3 goldenen Ownership-Regeln<a class="headerlink" href="#die-3-goldenen-ownership-regeln" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Jeder Wert in Rust hat genau <strong>einen Eigentümer</strong> (Owner, Variablenname).</li>

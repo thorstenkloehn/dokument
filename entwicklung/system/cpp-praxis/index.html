@@ -997,8 +997,6 @@
       
         
       
-        
-      
     
     
     
@@ -1238,63 +1236,6 @@
     
   
   PostgreSQL
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../infrastruktur/tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
 
     
   </span>
@@ -3110,10 +3051,10 @@
 <li><strong>Multi-Paradigmen-Sprache</strong>: Unterstützt prozedurale, objektorientierte, funktionale (Lambdas) und generische Programmierung (Templates).</li>
 </ul>
 <pre class="mermaid"><code>graph TD
-    Source[C++ Quellcode .cpp / .hpp] --&gt;|1. Preprocessor| Prep[Präprozessierter Code]
-    Prep --&gt;|2. Compiler g++ / clang++| ASM[Assembler Code .s]
-    ASM --&gt;|3. Assembler as| Obj[Objektdatei .o]
-    Obj --&gt;|4. Linker ld| Bin[Binäre Ausführbare Datei / Shared Library]</code></pre>
+    Source["C++ Quellcode .cpp / .hpp"] --&gt;|1. Preprocessor| Prep["Präprozessierter Code"]
+    Prep --&gt;|2. Compiler g++ / clang++| ASM["Assembler Code .s"]
+    ASM --&gt;|3. Assembler as| Obj["Objektdatei .o"]
+    Obj --&gt;|4. Linker ld| Bin["Binäre Ausführbare Datei / Shared Library"]</code></pre>
 <h3 id="compiler-toolchain-einrichten">Compiler &amp; Toolchain einrichten<a class="headerlink" href="#compiler-toolchain-einrichten" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Ubuntu / Linux</label><label for="__tabbed_1_2">Compiler-Flags Best Practices</label></div>
 <div class="tabbed-content">
@@ -3141,13 +3082,13 @@
 <p>Modernes C++ (C++11 bis C++23) vermeidet rohes <code>new</code> und <code>delete</code> vollständig zugunsten von <strong>Smart Pointern</strong> und <strong>RAII</strong>.</p>
 <h3 id="smart-pointer-im-uberblick-memory">Smart Pointer im Überblick (<code>&lt;memory&gt;</code>)<a class="headerlink" href="#smart-pointer-im-uberblick-memory" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    SmartPointer[Smart Pointers std::memory] --&gt; Unique[std::unique_ptr]
-    SmartPointer --&gt; Shared[std::shared_ptr]
-    SmartPointer --&gt; Weak[std::weak_ptr]
+    SmartPointer["Smart Pointers std::memory"] --&gt; Unique["std::unique_ptr"]
+    SmartPointer --&gt; Shared["std::shared_ptr"]
+    SmartPointer --&gt; Weak["std::weak_ptr"]
 
-    Unique --&gt;|Alleines Eigentum / Non-Copyable| UniqueDesc[Freigabe bei Scope-Ende]
-    Shared --&gt;|Geteiltes Eigentum / Ref Counting| SharedDesc[Freigabe wenn Ref-Count = 0]
-    Weak --&gt;|Nicht-besitzende Referenz| WeakDesc[Verhindert zyklische Referenzen]</code></pre>
+    Unique --&gt;|Alleines Eigentum / Non-Copyable| UniqueDesc["Freigabe bei Scope-Ende"]
+    Shared --&gt;|Geteiltes Eigentum / Ref Counting| SharedDesc["Freigabe wenn Ref-Count = 0"]
+    Weak --&gt;|Nicht-besitzende Referenz| WeakDesc["Verhindert zyklische Referenzen"]</code></pre>
 <table>
 <thead>
 <tr>

@@ -2750,8 +2750,8 @@
 <h2 id="das-subagenten-konzept-im-antigravity-cli">🤖 Das Subagenten-Konzept im Antigravity CLI<a class="headerlink" href="#das-subagenten-konzept-im-antigravity-cli" title="Permanent link">&para;</a></h2>
 <p>Ein Subagent läuft in einem separaten Ausführungskontext. Er kann über eigene Tools, ein spezialisiertes Modell (z. B. ein schnelleres <code>flash</code>-Modell für Suchen) und einen isolierten Workspace verfügen.</p>
 <pre class="mermaid"><code>graph TD
-    Parent[Haupt-CLI Agent 'agy'] --&gt;|1. invoke_subagent| Sub1[Subagent: Code-Researcher]
-    Parent --&gt;|1. invoke_subagent| Sub2[Subagent: Doc-Checker]
+    Parent[Haupt-CLI Agent 'agy'] --&gt;|1. invoke_subagent| Sub1["Subagent: Code-Researcher"]
+    Parent --&gt;|1. invoke_subagent| Sub2["Subagent: Doc-Checker"]
 
     Sub1 --&gt;|Liest Dateien &amp; sucht| Res1[Recherche-Ergebnis]
     Sub2 --&gt;|Führt Build aus| Res2[Build-Status]

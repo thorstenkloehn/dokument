@@ -1210,8 +1210,6 @@
       
         
       
-        
-      
     
     
     
@@ -1451,63 +1449,6 @@
     
   
   PostgreSQL
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../infrastruktur/tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
 
     
   </span>
@@ -2956,11 +2897,11 @@ Den angezeigten Schlüssel in deinem GitHub/GitLab-Konto unter <strong>Settings 
     A[🖥️ Frisches System] --&gt; B[Code-Editor installieren]
     B --&gt; C[Git konfigurieren]
     C --&gt; D[Terminal einrichten]
-    D --&gt; E{Welches Projekt?}
-    E --&gt; F[Python-Projekt → venv]
-    E --&gt; G[Web-Projekt → Node.js]
-    E --&gt; H[System-Projekt → Rust/C++]
-    E --&gt; I[Container-Projekt → Docker]
+    D --&gt; E{"Welches Projekt?"}
+    E --&gt; F["Python-Projekt → venv"]
+    E --&gt; G["Web-Projekt → Node.js"]
+    E --&gt; H["System-Projekt → Rust/C++"]
+    E --&gt; I["Container-Projekt → Docker"]
     F --&gt; J[✅ Bereit zum Entwickeln]
     G --&gt; J
     H --&gt; J
@@ -3154,28 +3095,28 @@ Den angezeigten Schlüssel in deinem GitHub/GitLab-Konto unter <strong>Settings 
 <hr />
 <h3 id="entscheidungsbaum">Entscheidungsbaum<a class="headerlink" href="#entscheidungsbaum" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    A[🤔 Welche Sprache?] --&gt; B{Was möchtest du bauen?}
-    B --&gt; C[🌐 Webseite / App]
-    B --&gt; D[🤖 KI / Daten]
-    B --&gt; E[⚙️ Systeme / Hardware]
+    A["🤔 Welche Sprache?"] --&gt; B{"Was möchtest du bauen?"}
+    B --&gt; C["🌐 Webseite / App"]
+    B --&gt; D["🤖 KI / Daten"]
+    B --&gt; E["⚙️ Systeme / Hardware"]
     B --&gt; F[📱 Mobile App]
     B --&gt; G[🔧 Automatisierung]
 
-    C --&gt; C1{Frontend oder Backend?}
-    C1 --&gt; C2[Frontend → JavaScript/TypeScript]
-    C1 --&gt; C3[Backend → Python / Go / Node.js]
+    C --&gt; C1{"Frontend oder Backend?"}
+    C1 --&gt; C2["Frontend → JavaScript/TypeScript"]
+    C1 --&gt; C3["Backend → Python / Go / Node.js"]
 
     D --&gt; D1[Python ist erste Wahl]
     D1 --&gt; D2[NumPy · PyTorch · scikit-learn]
 
-    E --&gt; E1{Sicherheit wichtig?}
-    E1 --&gt; E2[Ja → Rust]
-    E1 --&gt; E3[Nein / Legacy → C / C++]
+    E --&gt; E1{"Sicherheit wichtig?"}
+    E1 --&gt; E2["Ja → Rust"]
+    E1 --&gt; E3["Nein / Legacy → C / C++"]
 
-    F --&gt; F1{Welche Plattform?}
-    F1 --&gt; F2[Android → Kotlin]
-    F1 --&gt; F3[iOS → Swift]
-    F1 --&gt; F4[Beides → Flutter/Dart]
+    F --&gt; F1{"Welche Plattform?"}
+    F1 --&gt; F2["Android → Kotlin"]
+    F1 --&gt; F3["iOS → Swift"]
+    F1 --&gt; F4["Beides → Flutter/Dart"]
 
     G --&gt; G1[Bash für Systemscripts]
     G --&gt; G2[Python für komplexe Automation]</code></pre>

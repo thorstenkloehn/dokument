@@ -2896,9 +2896,9 @@
 <h3 id="was-ist-prompt-engineering">Was ist Prompt Engineering?<a class="headerlink" href="#was-ist-prompt-engineering" title="Permanent link">&para;</a></h3>
 <p>Ein <strong>Prompt</strong> ist die Text- oder Multimodal-Eingabe an ein Sprachmodell. <strong>Prompt Engineering</strong> umfasst das Design, das Testen, die Versionierung und die Optimierung dieser Eingaben für produktive KI-Pipelines.</p>
 <pre class="mermaid"><code>graph LR
-    Input[System &amp; User Prompt] --&gt; Model[LLM / Foundation Model]
-    Model --&gt; Parameters[Sampling &amp; Output Controls]
-    Parameters --&gt; Output[Strukturierte Antwort / Action]</code></pre>
+    Input["System &amp; User Prompt"] --&gt; Model["LLM / Foundation Model"]
+    Model --&gt; Parameters["Sampling &amp; Output Controls"]
+    Parameters --&gt; Output["Strukturierte Antwort / Action"]</code></pre>
 <h3 id="die-wichtigsten-begriffe-im-uberblick">Die wichtigsten Begriffe im Überblick<a class="headerlink" href="#die-wichtigsten-begriffe-im-uberblick" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -2946,9 +2946,9 @@
     Params --&gt; OutputCtrl[Output Control]
     Params --&gt; Penalties[Repetition Penalties]
 
-    Sampling --&gt; Temp[Temperature: 0.0 bis 1.0]
-    Sampling --&gt; TopP[Top-P / Nucleus: 0.1 bis 1.0]
-    Sampling --&gt; TopK[Top-K: Top N Tokens]
+    Sampling --&gt; Temp["Temperature: 0.0 bis 1.0"]
+    Sampling --&gt; TopP["Top-P / Nucleus: 0.1 bis 1.0"]
+    Sampling --&gt; TopK["Top-K: Top N Tokens"]
 
     OutputCtrl --&gt; MaxTokens[Max Tokens]
     OutputCtrl --&gt; StopSeq[Stop Sequences]
@@ -3001,9 +3001,9 @@
 </ul>
 <h3 id="3-fortgeschrittene-reasoning-techniken">3. Fortgeschrittene Reasoning-Techniken<a class="headerlink" href="#3-fortgeschrittene-reasoning-techniken" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    CoT[Chain of Thought CoT] --&gt;|Schritt-für-Schritt Begründung| SelfCon[Self-Consistency: Mehrere Pfade + Majority Vote]
+    CoT[Chain of Thought CoT] --&gt;|Schritt-für-Schritt Begründung| SelfCon["Self-Consistency: Mehrere Pfade + Majority Vote"]
     StepBack[Step-back Prompting] --&gt;|Abstraktion auf High-Level Konzepte| CoT
-    ToT[Tree of Thoughts ToT] --&gt;|Baumsuche mit Backtracking| ReAct[ReAct: Reason + Act Loop]</code></pre>
+    ToT[Tree of Thoughts ToT] --&gt;|Baumsuche mit Backtracking| ReAct["ReAct: Reason + Act Loop"]</code></pre>
 <ul>
 <li><strong>Chain of Thought (CoT)</strong>: Bitten Sie das Modell, "Schritt für Schritt zu denken" (<code>"Let's think step by step"</code>). Zwingt das Modell zur Zwischenberechnung vor der finalen Antwort.</li>
 <li><strong>Step-back Prompting</strong>: Bitten Sie das Modell zuerst, die zugrundeliegenden Prinzipien oder Konzepte der Frage zu abstrahieren, bevor es die konkrete Aufgabe löst.</li>

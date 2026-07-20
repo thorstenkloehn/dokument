@@ -997,8 +997,6 @@
       
         
       
-        
-      
     
     
     
@@ -1238,63 +1236,6 @@
     
   
   PostgreSQL
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../infrastruktur/tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
 
     
   </span>
@@ -3198,10 +3139,10 @@
 <li><strong>Stabile ABI &amp; Interoperabilität</strong>: C bildet die Lingua Franca für Sprach-Bindings (z. B. FFI in Rust, Python, Go, Java).</li>
 </ul>
 <pre class="mermaid"><code>graph TD
-    Source[C Quellcode .c / .h] --&gt;|1. Preprocessor cpp| Prep[Präprozessierter Code]
-    Prep --&gt;|2. Compiler gcc / clang| ASM[Assembler Code .s]
-    ASM --&gt;|3. Assembler as| Obj[Objektdatei .o]
-    Obj --&gt;|4. Linker ld| Bin[Binäre Ausführbare Datei]</code></pre>
+    Source["C Quellcode .c / .h"] --&gt;|1. Preprocessor cpp| Prep["Präprozessierter Code"]
+    Prep --&gt;|2. Compiler gcc / clang| ASM["Assembler Code .s"]
+    ASM --&gt;|3. Assembler as| Obj["Objektdatei .o"]
+    Obj --&gt;|4. Linker ld| Bin["Binäre Ausführbare Datei"]</code></pre>
 <h3 id="compiler-werkzeuge-installieren">Compiler &amp; Werkzeuge installieren<a class="headerlink" href="#compiler-werkzeuge-installieren" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Ubuntu / Debian</label><label for="__tabbed_1_2">Compiler-Flags Best Practices</label></div>
 <div class="tabbed-content">
@@ -3228,12 +3169,12 @@
 <h2 id="2-zeiger-speicher-dynamische-verwaltung">📍 2. Zeiger, Speicher &amp; Dynamische Verwaltung<a class="headerlink" href="#2-zeiger-speicher-dynamische-verwaltung" title="Permanent link">&para;</a></h2>
 <h3 id="das-speicher-modell-stack-vs-heap">Das Speicher-Modell: Stack vs. Heap<a class="headerlink" href="#das-speicher-modell-stack-vs-heap" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    Memory[Arbeitsspeicher RAM] --&gt; Stack[Stack Memory / Automatischer Speicher]
-    Memory --&gt; Heap[Heap Memory / Dynamischer Speicher]
+    Memory["Arbeitsspeicher RAM"] --&gt; Stack["Stack Memory / Automatischer Speicher"]
+    Memory --&gt; Heap["Heap Memory / Dynamischer Speicher"]
 
-    Stack --&gt;|Schnell, Festgröße, LIFO| StackVars[Lokale Variablen &amp; Funktions-Frames]
-    Heap --&gt;|Flexibel, Manuell| HeapVars[malloc / calloc / realloc]
-    HeapVars --&gt;|Zwingend aufräumen!| Free[free]</code></pre>
+    Stack --&gt;|Schnell, Festgröße, LIFO| StackVars["Lokale Variablen &amp; Funktions-Frames"]
+    Heap --&gt;|Flexibel, Manuell| HeapVars["malloc / calloc / realloc"]
+    HeapVars --&gt;|Zwingend aufräumen!| Free["free"]</code></pre>
 <h3 id="pointer-mechanics-zeiger-mechanik">Pointer Mechanics (Zeiger-Mechanik)<a class="headerlink" href="#pointer-mechanics-zeiger-mechanik" title="Permanent link">&para;</a></h3>
 <p>Ein <strong>Zeiger (Pointer)</strong> ist eine Variable, die die Speicheradresse einer anderen Variablen speichert:</p>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>

@@ -2740,11 +2740,11 @@
 <h2 id="berechtigungsmodi-permission-modes-sandbox">🔒 Berechtigungsmodi (Permission Modes) &amp; Sandbox<a class="headerlink" href="#berechtigungsmodi-permission-modes-sandbox" title="Permanent link">&para;</a></h2>
 <p>Der Antigravity CLI 2 führt Befehle und Dateiedits standardmäßig in einer geschützten Sandbox aus. Das Sicherheitsmodell unterscheidet drei Stufen:</p>
 <pre class="mermaid"><code>graph TD
-    Op[Agent will Werkzeug ausführen] --&gt; Check{Berechtigung vorhanden?}
+    Op[Agent will Werkzeug ausführen] --&gt; Check{"Berechtigung vorhanden?"}
     Check --&gt;|Ja| Exec[Aktion ausführen]
-    Check --&gt;|Nein| Ask[Benutzer-Freigabe anfordern / ask_permission]
+    Check --&gt;|Nein| Ask["Benutzer-Freigabe anfordern / ask_permission"]
     Ask --&gt;|Genehmigt| Exec
-    Ask --&gt;|Abgelehnt| Stop[Aktion abbrechen &amp; Ausweichlösung suchen]</code></pre>
+    Ask --&gt;|Abgelehnt| Stop["Aktion abbrechen &amp; Ausweichlösung suchen"]</code></pre>
 <h3 id="die-berechtigungsstufen-im-detail">Die Berechtigungsstufen im Detail<a class="headerlink" href="#die-berechtigungsstufen-im-detail" title="Permanent link">&para;</a></h3>
 <ol>
 <li><strong>Interactive Approval (Standard)</strong>:</li>

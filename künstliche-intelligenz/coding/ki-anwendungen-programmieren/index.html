@@ -4096,9 +4096,9 @@ Die Grundlagen der API-Kommunikation mit LLMs, das Einrichten von Python unter U
 <h4 id="konzept-client-server-prinzip-bei-llms">Konzept: Client-Server-Prinzip bei LLMs<a class="headerlink" href="#konzept-client-server-prinzip-bei-llms" title="Permanent link">&para;</a></h4>
 <p>Deine eigene Anwendung fungiert als <strong>Client</strong>, der Anfragen (Prompts) an den LLM-<strong>Server</strong> (lokal oder in der Cloud) schickt. Die Antwort kommt strukturiert zurück (meist als JSON).</p>
 <pre class="mermaid"><code>sequenceDiagram
-    Client (Deine App) -&gt;&gt; Server (LLM API): POST /chat/completions { "prompt": "Hallo" }
+    Client (Deine App) -&gt;&gt; Server (LLM API): POST /chat/completions{" \"prompt\": \"Hallo\" "}
     Note over Server: Generiert Antwort
-    Server --&gt;&gt; Client: 200 OK { "response": "Hallo! Wie kann ich helfen?" }</code></pre>
+    Server --&gt;&gt; Client: 200 OK{" \"response\": \"Hallo! Wie kann ich helfen?\" "}</code></pre>
 <h4 id="konzept-statuslose-kommunikation-stateless">Konzept: Statuslose Kommunikation (Stateless)<a class="headerlink" href="#konzept-statuslose-kommunikation-stateless" title="Permanent link">&para;</a></h4>
 <p>LLM-APIs haben standardmäßig <strong>kein Gedächtnis</strong>. Jede Anfrage ist isoliert. Um einen Chatverlauf zu ermöglichen, muss deine Anwendung die gesamte Historie mitsenden:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[</span>

@@ -997,8 +997,6 @@
       
         
       
-        
-      
     
     
     
@@ -1238,63 +1236,6 @@
     
   
   PostgreSQL
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../infrastruktur/tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
 
     
   </span>
@@ -3250,10 +3191,10 @@
 <h3 id="was-ist-die-shell">Was ist die Shell?<a class="headerlink" href="#was-ist-die-shell" title="Permanent link">&para;</a></h3>
 <p>Die <strong>Shell</strong> ist ein Befehlszeilen-Interpreter, der Benutzereingaben entgegennimmt und als Betriebssystem-Befehle ausführt.</p>
 <pre class="mermaid"><code>graph LR
-    User([Entwickler / CI Pipeline]) --&gt;|Befehl / Script| Shell[Bash Shell Interpreter]
-    Shell --&gt;|1. Expansion &amp; Parsing| Parser[Command Parser]
-    Parser --&gt;|2. System Calls| Kernel[Linux Kernel]
-    Kernel --&gt;|3. Output / Streams| Terminal[stdout / stderr]</code></pre>
+    User(["Entwickler / CI Pipeline"]) --&gt;|Befehl / Script| Shell["Bash Shell Interpreter"]
+    Shell --&gt;|1. Expansion &amp; Parsing| Parser["Command Parser"]
+    Parser --&gt;|2. System Calls| Kernel["Linux Kernel"]
+    Kernel --&gt;|3. Output / Streams| Terminal["stdout / stderr"]</code></pre>
 <h3 id="beliebte-shells-im-vergleich">Beliebte Shells im Vergleich<a class="headerlink" href="#beliebte-shells-im-vergleich" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Bash (<code>/bin/bash</code>)</strong>: Der weltweite De-facto Standard auf Linux-Servern.</li>

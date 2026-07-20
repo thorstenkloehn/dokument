@@ -999,8 +999,6 @@
       
         
       
-        
-      
     
     
     
@@ -1812,63 +1810,6 @@
             
           </ul>
         </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../tomcat/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Java & Tomcat
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
       
     </li>
   
@@ -3250,8 +3191,6 @@
       
         
       
-        
-      
     
     
     
@@ -3330,11 +3269,11 @@
 <h3 id="rdbms-high-level-architektur">RDBMS &amp; High-Level Architektur<a class="headerlink" href="#rdbms-high-level-architektur" title="Permanent link">&para;</a></h3>
 <p>PostgreSQL basiert auf einer <strong>Process-Per-Connection</strong> Architektur: Für jede Client-Verbindung wird ein eigener <code>postgres</code> Backend-Prozess gespannt.</p>
 <pre class="mermaid"><code>graph TD
-    Client[Client App / psql] --&gt;|TCP / Socket| Postmaster[Postmaster Main Process]
+    Client["Client App / psql"] --&gt;|TCP / Socket| Postmaster[Postmaster Main Process]
     Postmaster --&gt;|Fork| Backend[Backend Process]
-    Backend &lt;--&gt;|Read / Write| SharedMem[Shared Buffers / RAM]
+    Backend &lt;--&gt;|Read / Write| SharedMem["Shared Buffers / RAM"]
     SharedMem &lt;--&gt;|WAL Writer| WAL[Write-Ahead Log WAL]
-    SharedMem &lt;--&gt;|Checkpointer| Disk[(Physical Storage / Disk)]</code></pre>
+    SharedMem &lt;--&gt;|Checkpointer| Disk["(Physical Storage / Disk)"]</code></pre>
 <h3 id="die-wichtigsten-architekturkomponenten">Die wichtigsten Architekturkomponenten<a class="headerlink" href="#die-wichtigsten-architekturkomponenten" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>MVCC (Multi-Version Concurrency Control)</strong>: Lesende Zugriffe blockieren keine schreibenden Zugriffe und umgekehrt. Bei Updates wird eine neue Zeilenversion (<em>Tuple</em>) angelegt.</li>
@@ -3447,9 +3386,9 @@
 <h2 id="4-backup-recovery-high-availability-ha">💾 4. Backup, Recovery &amp; High Availability (HA)<a class="headerlink" href="#4-backup-recovery-high-availability-ha" title="Permanent link">&para;</a></h2>
 <h3 id="builtin-tools-vs-enterprise-backup">Builtin Tools vs. Enterprise Backup<a class="headerlink" href="#builtin-tools-vs-enterprise-backup" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
-    Backup[PostgreSQL Backup Strategien] --&gt; Logical[Logisches Backup: pg_dump / pg_dumpall]
-    Backup --&gt; Physical[Physikalisches Backup: pg_basebackup / Point-in-Time Recovery]
-    Physical --&gt; EnterpriseTools[Enterprise Tools: pgBackRest / Barman / WAL-G]</code></pre>
+    Backup[PostgreSQL Backup Strategien] --&gt; Logical["Logisches Backup: pg_dump / pg_dumpall"]
+    Backup --&gt; Physical["Physikalisches Backup: pg_basebackup / Point-in-Time Recovery"]
+    Physical --&gt; EnterpriseTools["Enterprise Tools: pgBackRest / Barman / WAL-G"]</code></pre>
 <ul>
 <li><strong><code>pg_dump</code></strong>: Erstellt ein SQL-Skript oder benutzerdefiniertes Archiv einer einzelnen Datenbank (Ideal für kleinere DBs &amp; Migrationen).</li>
 <li><strong><code>pg_basebackup</code></strong>: Erstellt eine binäre 1:1 Kopie des gesamten Datenverzeichnisses zur Einrichtung von Replikaten.</li>
