@@ -30,6 +30,9 @@ Wie Hochsprachen (C, C++, Rust) in Maschinencode übersetzt werden.
 
 
 
+### [Rust Praxis-Handbuch](rust-praxis.md)
+Das umfassende Handbuch zu Rust-Sprachkonzepten, Ownership, Lifetimes, Tokio Async und dem Rust-Ökosystem.
+
 ### [Rust, C++ & C Integration](rust-c-cpp-integration.md)
 Interoperabilität zwischen den Sprachen auf Linux.
 
