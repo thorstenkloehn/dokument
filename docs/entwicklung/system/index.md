@@ -33,6 +33,9 @@ Wie Hochsprachen (C, C++, Rust) in Maschinencode übersetzt werden.
 ### [C Praxis-Handbuch](c-praxis.md)
 Umfassendes Handbuch zur C-Systemprogrammierung, Pointer-Mechanik, Speicherverwaltung (malloc/free), Structs, Makefiles, GDB & Valgrind.
 
+### [C++ Praxis-Handbuch](cpp-praxis.md)
+Handbuch zu Modern C++, Smart Pointers (RAII), Rule of 0/3/5, Templates, Concepts, STL Ranges & CMake.
+
 ### [Rust Praxis-Handbuch](rust-praxis.md)
 Das umfassende Handbuch zu Rust-Sprachkonzepten, Ownership, Lifetimes, Tokio Async und dem Rust-Ökosystem.
 

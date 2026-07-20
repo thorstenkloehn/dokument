@@ -140,6 +140,7 @@ nav:
           - Compiler: entwicklung/system/compiler.md
           - Rust & C/C++:
               - C Praxis-Handbuch: entwicklung/system/c-praxis.md
+              - C++ Praxis-Handbuch: entwicklung/system/cpp-praxis.md
               - Rust Praxis-Handbuch: entwicklung/system/rust-praxis.md
               - Rust, C & C++ Integration: entwicklung/system/rust-c-cpp-integration.md
               - Rust & Python Bindings (PyO3): entwicklung/system/rust-python-bindings.md
