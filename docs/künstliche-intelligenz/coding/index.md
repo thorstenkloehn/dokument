@@ -10,6 +10,17 @@ Willkommen im Bereich **Coding mit KI**! Hier finden Sie Anleitungen und Ressour
 - [Programmieren lernen mit KI](programmieren-lernen-ki.md)
 - [Programmieren mit KI](programmieren-mit-ki.md)
 - [Vibe Coding & Engineering](vibe-coding-engineering.md)
+- [Antigravity CLI 2 – Übersicht](antigravity-cli.md)
+- [Antigravity CLI 2 – Handbuch & Roadmap](antigravity-cli-roadmap-handbuch.md)
+- [Kapitel 1: Einführung & Grundlagen](antigravity-cli-einfuehrung-grundlagen.md)
+- [Kapitel 2: Befehle, TUI & Cheatsheet](antigravity-cli-befehle-tui-cheatsheet.md)
+- [Kapitel 3: Workflows, Permissions & Sessions](antigravity-cli-workflow-sessions.md)
+- [Kapitel 4: AGENTS.md Struktur & Standorte](antigravity-cli-agents-md.md)
+- [Kapitel 5: Skills & Skill-Entwicklung](antigravity-cli-skills.md)
+- [Kapitel 6: Subagenten Orchestrierung](antigravity-cli-subagents.md)
+- [Kapitel 7: Hooks & Lifecycle Automatisierung](antigravity-cli-hooks-automatisierung.md)
+- [Kapitel 8: Kontext-Management & Performance](antigravity-cli-kontext-performance.md)
+- [Kapitel 9: Advanced Features – MCP, Headless & Security](antigravity-cli-advanced-mcp-cicd.md)
 
 ## Überblick
 

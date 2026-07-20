@@ -33,6 +33,18 @@ nav:
               - Open-WebUI Pipelines: künstliche-intelligenz/coding/open-webui-pipelines.md
           - Tools:
               - Continue.dev & Tabby AI: künstliche-intelligenz/coding/continue-dev-setup.md
+          - Antigravity CLI 2 Tutorials:
+              - Übersicht: künstliche-intelligenz/coding/antigravity-cli.md
+              - Handbuch & Roadmap: künstliche-intelligenz/coding/antigravity-cli-roadmap-handbuch.md
+              - Kapitel 1 – Einführung & Grundlagen: künstliche-intelligenz/coding/antigravity-cli-einfuehrung-grundlagen.md
+              - Kapitel 2 – Befehle, TUI & Cheatsheet: künstliche-intelligenz/coding/antigravity-cli-befehle-tui-cheatsheet.md
+              - Kapitel 3 – Workflows & Sessions: künstliche-intelligenz/coding/antigravity-cli-workflow-sessions.md
+              - Kapitel 4 – AGENTS.md Struktur: künstliche-intelligenz/coding/antigravity-cli-agents-md.md
+              - Kapitel 5 – Skills & Skill-Entwicklung: künstliche-intelligenz/coding/antigravity-cli-skills.md
+              - Kapitel 6 – Subagenten & Orchestrierung: künstliche-intelligenz/coding/antigravity-cli-subagents.md
+              - Kapitel 7 – Hooks & Lifecycle: künstliche-intelligenz/coding/antigravity-cli-hooks-automatisierung.md
+              - Kapitel 8 – Kontext-Management: künstliche-intelligenz/coding/antigravity-cli-kontext-performance.md
+              - Kapitel 9 – MCP, Headless & Security: künstliche-intelligenz/coding/antigravity-cli-advanced-mcp-cicd.md
 
       - Content-Erstellung:
           - Übersicht: künstliche-intelligenz/content/index.md
