@@ -16,6 +16,12 @@
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ki-coding/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ai-engineer-praxis/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/prompt-engineering-praxis/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/programmieren-lernen-ki/</loc>
       </url>
       <url>
@@ -23,6 +29,9 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/vibe-coding-engineering/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/vibe-coding-praxis/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ki-anwendungen-programmieren/</loc>
@@ -46,6 +55,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/multimodale-vision-pipelines/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ai-agents-praxis/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/agentic-workflows-langgraph/</loc>
       </url>
       <url>
@@ -62,6 +74,9 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/continue-dev-setup/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/claude-code-praxis/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/antigravity-cli/</loc>
@@ -220,6 +235,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/postgresql/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/postgresql-dba-praxis/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/postgresql-backup-restore/</loc>
       </url>
       <url>
@@ -286,6 +304,15 @@
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/compiler/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/c-praxis/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/cpp-praxis/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/rust-praxis/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/rust-c-cpp-integration/</loc>
       </url>
       <url>
@@ -293,6 +320,12 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/cpp20-modules-cmake/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/linux-praxis/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/shell-bash-praxis/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/linux-systemprogrammierung/</loc>
@@ -307,6 +340,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/linux-ebpf-performance/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/game-development-praxis/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/ide/</loc>
       </url>
       <url>
@@ -314,6 +350,12 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/ide/android/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/ide/android-praxis/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/ide/kotlin-praxis/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/ide/lokale-ki-frontends/</loc>
