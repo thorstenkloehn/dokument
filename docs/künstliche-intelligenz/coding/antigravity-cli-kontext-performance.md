@@ -10,12 +10,12 @@ Jede Interaktion (Prompts, Dateiinhalte, Werkzeugausgaben und Systemantworten) v
 
 ```mermaid
 graph LR
-    SystemPrompt[System-Prompt & AGENTS.md] --> ActiveContext[Aktiver Kontext]
+    SystemPrompt["System-Prompt & AGENTS.md"] --> ActiveContext[Aktiver Kontext]
     Skills[Aktive Skills] --> ActiveContext
     UserPrompts[Benutzer-Prompts] --> ActiveContext
-    ToolOutputs[Dateien & Shell-Logs] --> ActiveContext
+    ToolOutputs["Dateien & Shell-Logs"] --> ActiveContext
     
-    ActiveContext -->|Nähert sich der Token-Grenze| Trimming[Automatic Trimming / /compact]
+    ActiveContext -->|Nähert sich der Token-Grenze| Trimming["Automatic Trimming / /compact"]
 ```
 
 ---

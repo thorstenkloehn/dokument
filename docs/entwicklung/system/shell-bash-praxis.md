@@ -13,10 +13,10 @@ Die **Shell** ist ein Befehlszeilen-Interpreter, der Benutzereingaben entgegenni
 
 ```mermaid
 graph LR
-    User([Entwickler / CI Pipeline]) -->|Befehl / Script| Shell[Bash Shell Interpreter]
-    Shell -->|1. Expansion & Parsing| Parser[Command Parser]
-    Parser -->|2. System Calls| Kernel[Linux Kernel]
-    Kernel -->|3. Output / Streams| Terminal[stdout / stderr]
+    User(["Entwickler / CI Pipeline"]) -->|Befehl / Script| Shell["Bash Shell Interpreter"]
+    Shell -->|1. Expansion & Parsing| Parser["Command Parser"]
+    Parser -->|2. System Calls| Kernel["Linux Kernel"]
+    Kernel -->|3. Output / Streams| Terminal["stdout / stderr"]
 ```
 
 ### Beliebte Shells im Vergleich

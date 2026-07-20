@@ -13,11 +13,11 @@ PostgreSQL basiert auf einer **Process-Per-Connection** Architektur: Für jede C
 
 ```mermaid
 graph TD
-    Client[Client App / psql] -->|TCP / Socket| Postmaster[Postmaster Main Process]
+    Client["Client App / psql"] -->|TCP / Socket| Postmaster[Postmaster Main Process]
     Postmaster -->|Fork| Backend[Backend Process]
-    Backend <-->|Read / Write| SharedMem[Shared Buffers / RAM]
+    Backend <-->|Read / Write| SharedMem["Shared Buffers / RAM"]
     SharedMem <-->|WAL Writer| WAL[Write-Ahead Log WAL]
-    SharedMem <-->|Checkpointer| Disk[(Physical Storage / Disk)]
+    SharedMem <-->|Checkpointer| Disk["(Physical Storage / Disk)"]
 ```
 
 ### Die wichtigsten Architekturkomponenten
@@ -99,9 +99,9 @@ hostnossl all           all             0.0.0.0/0               reject
 
 ```mermaid
 graph TD
-    Backup[PostgreSQL Backup Strategien] --> Logical[Logisches Backup: pg_dump / pg_dumpall]
-    Backup --> Physical[Physikalisches Backup: pg_basebackup / Point-in-Time Recovery]
-    Physical --> EnterpriseTools[Enterprise Tools: pgBackRest / Barman / WAL-G]
+    Backup[PostgreSQL Backup Strategien] --> Logical["Logisches Backup: pg_dump / pg_dumpall"]
+    Backup --> Physical["Physikalisches Backup: pg_basebackup / Point-in-Time Recovery"]
+    Physical --> EnterpriseTools["Enterprise Tools: pgBackRest / Barman / WAL-G"]
 ```
 
 * **`pg_dump`**: Erstellt ein SQL-Skript oder benutzerdefiniertes Archiv einer einzelnen Datenbank (Ideal für kleinere DBs & Migrationen).

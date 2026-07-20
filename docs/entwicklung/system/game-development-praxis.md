@@ -12,12 +12,12 @@ Dieses Praxis-Handbuch bietet einen strukturierten Überblick über Game Engines
 
 ```mermaid
 graph TD
-    Engine[Game Engine Architecture] --> Core[Core Subsystems: Memory, Loop, Math]
-    Engine --> Graphics[Graphics Engine: Vulkan, DirectX, OpenGL]
-    Engine --> Physics[Physics Engine: Rigidbodies, Collisions]
-    Engine --> Audio[Audio Engine: Spatial 3D Audio]
-    Engine --> AI[Game AI: NavMesh, Behavior Trees]
-    Engine --> Scripting[Game Logic & Scripting: C++, C#, GDScript]
+    Engine["Game Engine Architecture"] --> Core["Core Subsystems: Memory, Loop, Math"]
+    Engine --> Graphics["Graphics Engine: Vulkan, DirectX, OpenGL"]
+    Engine --> Physics["Physics Engine: Rigidbodies, Collisions"]
+    Engine --> Audio["Audio Engine: Spatial 3D Audio"]
+    Engine --> AI["Game AI: NavMesh, Behavior Trees"]
+    Engine --> Scripting["Game Logic & Scripting: C++, C#, GDScript"]
 ```
 
 ### Die wichtigsten Engines im Vergleich
@@ -44,11 +44,11 @@ Ohne Vektor- und Matrizenrechnung ist 3D-Grafik und Physik unmöglich:
 
 ```mermaid
 graph LR
-    Rotations[3D Rotation System] --> Euler[Euler-Winkel Pitch, Yaw, Roll]
-    Rotations --> Quat[Quaternions q = w + xi + yj + zk]
+    Rotations["3D Rotation System"] --> Euler["Euler-Winkel Pitch, Yaw, Roll"]
+    Rotations --> Quat["Quaternions q = w + xi + yj + zk"]
 
-    Euler -->|Nachteil| Lock[Gimbal Lock Risiko]
-    Quat -->|Vorteile| Smooth[Glatte Interpolation slerp & Kein Gimbal Lock]
+    Euler -->|Nachteil| Lock["Gimbal Lock Risiko"]
+    Quat -->|Vorteile| Smooth["Glatte Interpolation slerp & Kein Gimbal Lock"]
 ```
 
 * **Euler-Winkel (Pitch, Yaw, Roll)**: Anschaulich, leidet jedoch unter dem **Gimbal Lock** (Verlust eines Freiheitsgrads bei 90°-Drehungen).
@@ -64,9 +64,9 @@ Spiele-Physik simuliert Starre Körper (*Rigidbodies*), Kräfte, Reibung und Kol
 
 ```mermaid
 graph TD
-    Collision[Collision Detection Pipeline] --> BroadPhase[1. Broad Phase: Schnell & Grob]
-    BroadPhase -->|AABB / Bounding Spheres / BVH| NarrowPhase[2. Narrow Phase: Exakt]
-    NarrowPhase -->|GJK / SAT Algorithm| Resolution[3. Collision Resolution & Impulse]
+    Collision["Collision Detection Pipeline"] --> BroadPhase["1. Broad Phase: Schnell & Grob"]
+    BroadPhase -->|AABB / Bounding Spheres / BVH| NarrowPhase["2. Narrow Phase: Exakt"]
+    NarrowPhase -->|GJK / SAT Algorithm| Resolution["3. Collision Resolution & Impulse"]
 ```
 
 1. **Broad Phase**: Schnelles Aussortieren weit entfernter Objekte mittels einfacher Bounding Volumes (AABB - Axis-Aligned Bounding Box, BVH - Bounding Volume Hierarchy).
@@ -82,10 +82,10 @@ Die Grafikkarte (GPU) verarbeitet 3D-Geometrie in mehreren programmierbaren Stuf
 
 ```mermaid
 graph LR
-    Vertices[Vertex Data] --> VertexShader[Vertex Shader: Transformation]
-    VertexShader --> Rasterizer[Rasterisierung & Culling]
-    Rasterizer --> FragmentShader[Fragment/Pixel Shader: Shading]
-    FragmentShader --> Framebuffer[Framebuffer & Screen]
+    Vertices["Vertex Data"] --> VertexShader["Vertex Shader: Transformation"]
+    VertexShader --> Rasterizer["Rasterisierung & Culling"]
+    Rasterizer --> FragmentShader["Fragment/Pixel Shader: Shading"]
+    FragmentShader --> Framebuffer["Framebuffer & Screen"]
 ```
 
 ### Shader-Programmiersprachen & APIs

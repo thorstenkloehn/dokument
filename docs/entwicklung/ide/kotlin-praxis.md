@@ -16,12 +16,12 @@ Dieses Praxis-Handbuch fasst die Sprachgrundlagen, Null-Safety-Mechanismen, Data
 
 ```mermaid
 graph TD
-    Source[Kotlin Code .kt] -->|Kotlin Compiler kotlinc| Choice{Target Plattform}
-    Choice -->|JVM Target| Bytecode[Java Bytecode .class / JAR]
-    Choice -->|Native Target| Binary[Natives Executable via LLVM]
-    Choice -->|JS / WASM Target| Web[JavaScript / WebAssembly]
-    Bytecode --> Android[Android App / Spring Boot Server]
-    Binary --> iOS[iOS App / Linux CLI]
+    Source["Kotlin Code .kt"] -->|Kotlin Compiler kotlinc| Choice{"Target Plattform"}
+    Choice -->|JVM Target| Bytecode["Java Bytecode .class / JAR"]
+    Choice -->|Native Target| Binary["Natives Executable via LLVM"]
+    Choice -->|JS / WASM Target| Web["JavaScript / WebAssembly"]
+    Bytecode --> Android["Android App / Spring Boot Server"]
+    Binary --> iOS["iOS App / Linux CLI"]
 ```
 
 ---
@@ -32,15 +32,15 @@ In Kotlin wird im Typsystem strikt unterscheidet, ob eine Variable `null` enthal
 
 ```mermaid
 graph TD
-    Types[Kotlin Typsystem] --> NonNull[Non-Nullable Types String, Int]
-    Types --> Nullable[Nullable Types String?, Int?]
+    Types["Kotlin Typsystem"] --> NonNull["Non-Nullable Types String, Int"]
+    Types --> Nullable["Nullable Types String?, Int?"]
 
-    NonNull -->|Niemals null| Safe1[Sicher ohne Checks]
-    Nullable -->|Kann null sein| Safe2[Nötigt zur expliziten Behandlung]
+    NonNull -->|Niemals null| Safe1["Sicher ohne Checks"]
+    Nullable -->|Kann null sein| Safe2["Nötigt zur expliziten Behandlung"]
     
-    Safe2 --> SafeCall[Safe Call Operator ?.]
-    Safe2 --> Elvis[Elvis Operator ?:]
-    Safe2 --> SmartCast[Smart Cast nach Null-Check]
+    Safe2 --> SafeCall["Safe Call Operator ?."]
+    Safe2 --> Elvis["Elvis Operator ?:"]
+    Safe2 --> SmartCast["Smart Cast nach Null-Check"]
 ```
 
 ### Die Null-Safety-Operatoren im Überblick

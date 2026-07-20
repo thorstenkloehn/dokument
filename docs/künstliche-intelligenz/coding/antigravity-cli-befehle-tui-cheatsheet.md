@@ -53,10 +53,10 @@ Slash-Commands werden direkt im TUI-Chat eingegeben und beginnen mit einem SchrÃ
 
 ```mermaid
 graph LR
-    Slash[Slash Commands] --> System[/help, /exit, /doctor, /status, /cost]
-    Slash --> Context[/context, /compact, /clear, /memory, /init]
-    Slash --> Config[/config, /permissions, /agents, /skills, /hooks, /mcp]
-    Slash --> Workflow[/plan, /learn, /export, /rewind]
+    Slash["Slash Commands"] --> System["/help, /exit, /doctor, /status, /cost"]
+    Slash --> Context["/context, /compact, /clear, /memory, /init"]
+    Slash --> Config["/config, /permissions, /agents, /skills, /hooks, /mcp"]
+    Slash --> Workflow["/plan, /learn, /export, /rewind"]
 ```
 
 ### 1. System- & Diagnose-Befehle

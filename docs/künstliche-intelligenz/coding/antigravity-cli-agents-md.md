@@ -10,9 +10,9 @@ Der Antigravity CLI sucht und kombiniert `AGENTS.md`-Dateien auf verschiedenen E
 
 ```mermaid
 graph TD
-    A[1. System- & App-Regeln] --> B[2. Globale User-Regeln ~/.gemini/antigravity-cli/AGENTS.md]
+    A["1. System- & App-Regeln"] --> B["2. Globale User-Regeln ~/.gemini/antigravity-cli/AGENTS.md"]
     B --> C[3. Workspace-Root AGENTS.md]
-    C --> D[4. Unterverzeichnis AGENTS.md / sub-folder]
+    C --> D["4. Unterverzeichnis AGENTS.md / sub-folder"]
     
     style D fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style C fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff

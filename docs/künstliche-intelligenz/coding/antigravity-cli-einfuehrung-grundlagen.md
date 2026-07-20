@@ -20,10 +20,10 @@ Der **Agentic Loop** ist der kontinuierliche Denk- und Handlungszyklus des Antig
 
 ```mermaid
 graph TD
-    A[1. User Prompt / Zielstellung] --> B[2. Wahrnehmung & Kontext-Analyse]
-    B --> C[3. Planung & Tool-Wahl]
-    C --> D[4. Aktion: Code-Edit / Shell-Befehl]
-    D --> E[5. Beobachtung: Output & Logs prüfen]
+    A["1. User Prompt / Zielstellung"] --> B["2. Wahrnehmung & Kontext-Analyse"]
+    B --> C["3. Planung & Tool-Wahl"]
+    C --> D["4. Aktion: Code-Edit / Shell-Befehl"]
+    D --> E["5. Beobachtung: Output & Logs prüfen"]
     E -->|Fehler aufgetreten| C
     E -->|Erfolgreich validiert| F[6. Ergebnis präsentiert]
 ```

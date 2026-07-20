@@ -10,8 +10,8 @@ Ein Subagent läuft in einem separaten Ausführungskontext. Er kann über eigene
 
 ```mermaid
 graph TD
-    Parent[Haupt-CLI Agent 'agy'] -->|1. invoke_subagent| Sub1[Subagent: Code-Researcher]
-    Parent -->|1. invoke_subagent| Sub2[Subagent: Doc-Checker]
+    Parent[Haupt-CLI Agent 'agy'] -->|1. invoke_subagent| Sub1["Subagent: Code-Researcher"]
+    Parent -->|1. invoke_subagent| Sub2["Subagent: Doc-Checker"]
     
     Sub1 -->|Liest Dateien & sucht| Res1[Recherche-Ergebnis]
     Sub2 -->|Führt Build aus| Res2[Build-Status]

@@ -13,9 +13,9 @@ Ein **Prompt** ist die Text- oder Multimodal-Eingabe an ein Sprachmodell. **Prom
 
 ```mermaid
 graph LR
-    Input[System & User Prompt] --> Model[LLM / Foundation Model]
-    Model --> Parameters[Sampling & Output Controls]
-    Parameters --> Output[Strukturierte Antwort / Action]
+    Input["System & User Prompt"] --> Model["LLM / Foundation Model"]
+    Model --> Parameters["Sampling & Output Controls"]
+    Parameters --> Output["Strukturierte Antwort / Action"]
 ```
 
 ### Die wichtigsten Begriffe im Überblick
@@ -42,9 +42,9 @@ graph TD
     Params --> OutputCtrl[Output Control]
     Params --> Penalties[Repetition Penalties]
 
-    Sampling --> Temp[Temperature: 0.0 bis 1.0]
-    Sampling --> TopP[Top-P / Nucleus: 0.1 bis 1.0]
-    Sampling --> TopK[Top-K: Top N Tokens]
+    Sampling --> Temp["Temperature: 0.0 bis 1.0"]
+    Sampling --> TopP["Top-P / Nucleus: 0.1 bis 1.0"]
+    Sampling --> TopK["Top-K: Top N Tokens"]
 
     OutputCtrl --> MaxTokens[Max Tokens]
     OutputCtrl --> StopSeq[Stop Sequences]
@@ -98,9 +98,9 @@ graph TD
 
 ```mermaid
 graph TD
-    CoT[Chain of Thought CoT] -->|Schritt-für-Schritt Begründung| SelfCon[Self-Consistency: Mehrere Pfade + Majority Vote]
+    CoT[Chain of Thought CoT] -->|Schritt-für-Schritt Begründung| SelfCon["Self-Consistency: Mehrere Pfade + Majority Vote"]
     StepBack[Step-back Prompting] -->|Abstraktion auf High-Level Konzepte| CoT
-    ToT[Tree of Thoughts ToT] -->|Baumsuche mit Backtracking| ReAct[ReAct: Reason + Act Loop]
+    ToT[Tree of Thoughts ToT] -->|Baumsuche mit Backtracking| ReAct["ReAct: Reason + Act Loop"]
 ```
 
 * **Chain of Thought (CoT)**: Bitten Sie das Modell, "Schritt für Schritt zu denken" (`"Let's think step by step"`). Zwingt das Modell zur Zwischenberechnung vor der finalen Antwort.

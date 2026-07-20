@@ -8,17 +8,17 @@ Dieses Handbuch ist die ultimative Referenz für den **Antigravity CLI 2** (`agy
 
 ```mermaid
 graph TD
-    Intro[1. Grundlagen & Einführung] --> Basics[2. Bausteine & Unterschiede]
-    Basics --> Usage[3. CLI TUI & Befehle]
-    Usage --> Workflow[4. Workflow & Berechtigungen]
+    Intro["1. Grundlagen & Einführung"] --> Basics["2. Bausteine & Unterschiede"]
+    Basics --> Usage["3. CLI TUI & Befehle"]
+    Usage --> Workflow["4. Workflow & Berechtigungen"]
     Workflow --> DeepDives[5. Vertiefungskapitel]
     
     DeepDives --> AGENTS[AGENTS.md Struktur]
     DeepDives --> SKILLS[Skills Entwicklung]
     DeepDives --> SUB[Subagenten Orchestrierung]
-    DeepDives --> HOOKS[Hooks & Lifecycle]
+    DeepDives --> HOOKS["Hooks & Lifecycle"]
     
-    DeepDives --> Advanced[6. Advanced Features: MCP, Headless, CI/CD]
+    DeepDives --> Advanced["6. Advanced Features: MCP, Headless, CI/CD"]
 ```
 
 ---

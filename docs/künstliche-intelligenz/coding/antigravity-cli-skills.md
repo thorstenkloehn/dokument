@@ -10,12 +10,12 @@ Ein Skill kapselt Best Practices für wiederkehrende Entwicklungsaufgaben. Wenn 
 
 ```mermaid
 graph LR
-    UserPrompt[Benutzer-Prompt] --> Router[Skill-Router / LLM]
-    Router -->|Liest description| S1[Skill: zensical-docs]
-    Router -->|Liest description| S2[Skill: db-migrator]
-    Router -->|Liest description| S3[Skill: api-tester]
+    UserPrompt[Benutzer-Prompt] --> Router["Skill-Router / LLM"]
+    Router -->|Liest description| S1["Skill: zensical-docs"]
+    Router -->|Liest description| S2["Skill: db-migrator"]
+    Router -->|Liest description| S3["Skill: api-tester"]
     
-    S1 --> Context[Injiziert SKILL.md & Scripts in den Agenten-Kontext]
+    S1 --> Context["Injiziert SKILL.md & Scripts in den Agenten-Kontext"]
 ```
 
 ---

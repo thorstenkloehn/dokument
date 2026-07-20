@@ -13,9 +13,9 @@ Vibe Coding verschiebt den Fokus der Softwareentwicklung: Weg von der Syntax-Ein
 
 ```mermaid
 graph TD
-    User([Entwickler / Architekt:in]) -->|1. Konzeption & Prompting| AI[KI Coding Assistant]
-    AI -->|2. Code-Generierung| Code[Modul & Codebase]
-    Code -->|3. Automatisiertes Testen| Test[Test-Suite / Linter]
+    User(["Entwickler / Architekt:in"]) -->|1. Konzeption & Prompting| AI[KI Coding Assistant]
+    AI -->|2. Code-Generierung| Code["Modul & Codebase"]
+    Code -->|3. Automatisiertes Testen| Test["Test-Suite / Linter"]
     Test -->|4. Feedback & Refactoring| User
 ```
 
@@ -62,8 +62,8 @@ Die Qualität der Code-Generierung steht in direktem Zusammenhang mit der Präzi
 
 ```mermaid
 graph LR
-    A[Spezifische Aufgabe] --> B[Kontext & Beispieldaten]
-    B --> C[Negativ-Leitplanken: Was NICHT tun]
+    A[Spezifische Aufgabe] --> B["Kontext & Beispieldaten"]
+    B --> C["Negativ-Leitplanken: Was NICHT tun"]
     C --> D[Rollen-Framing 'Act as...']
     D --> E[Reflektions-Phase 'Denke nach']
 ```

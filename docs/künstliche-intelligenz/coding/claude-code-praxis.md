@@ -13,13 +13,13 @@ Claude Code erweitert das klassische Terminal um ein autonomes Sprachmodell (wie
 
 ```mermaid
 graph TD
-    User([Entwickler / Terminal]) -->|CLI Input / Prompt| CC[Claude Code CLI]
+    User(["Entwickler / Terminal"]) -->|CLI Input / Prompt| CC[Claude Code CLI]
     CC -->|Projektregeln| CLMD[CLAUDE.md]
-    CC -->|Erweiterte Skills| SKILLS[Skills & Tools]
+    CC -->|Erweiterte Skills| SKILLS["Skills & Tools"]
     CC -->|Protokoll-Anbindung| MCP[MCP Server]
-    CC -->|Lifecycle Hooks| HOOKS[Pre-/Post-Tool Hooks]
+    CC -->|Lifecycle Hooks| HOOKS["Pre-/Post-Tool Hooks"]
     CC -->|Sub-Tasks| SUB[Subagenten]
-    CC -->|Model Execution| API[Anthropic Claude API / Models]
+    CC -->|Model Execution| API["Anthropic Claude API / Models"]
 ```
 
 ### Vibe Coding vs. Agentic Engineering

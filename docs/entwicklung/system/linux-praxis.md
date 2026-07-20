@@ -13,14 +13,14 @@ Unter Linux ist alles eine Datei ("Everything is a file"). Die Ordnerstruktur fo
 
 ```mermaid
 graph TD
-    Root[/ Root Directory] --> etc[/etc - Konfigurationsdateien]
-    Root --> var[/var - Logdateien & Variable Daten]
-    Root --> usr[/usr - Binaries & Bibliotheken]
-    Root --> home[/home - Benutzer-Heimatverzeichnisse]
-    Root --> dev[/dev - Gerätedateien Hardware]
-    Root --> proc[/proc - Virtuelles Prozess-Dateisystem]
-    Root --> sys[/sys - Virtuelles Kernel- & Hardware-System]
-    Root --> tmp[/tmp - Temporäre Dateien]
+    Root["/ Root Directory"] --> etc["/etc - Konfigurationsdateien"]
+    Root --> var["/var - Logdateien & Variable Daten"]
+    Root --> usr["/usr - Binaries & Bibliotheken"]
+    Root --> home["/home - Benutzer-Heimatverzeichnisse"]
+    Root --> dev["/dev - Gerätedateien Hardware"]
+    Root --> proc["/proc - Virtuelles Prozess-Dateisystem"]
+    Root --> sys["/sys - Virtuelles Kernel- & Hardware-System"]
+    Root --> tmp["/tmp - Temporäre Dateien"]
 ```
 
 ### Die wichtigsten Navigations-Befehle
@@ -72,10 +72,10 @@ chown nginx:www-data /var/www/html -R
 
 ```mermaid
 graph LR
-    Input[Input File / Log] -->|cat / tail| Stream[stdout Stream]
-    Stream -->|grep 'ERROR'| Filter[Gefilterte Zeilen]
-    Filter -->|awk '{print $1, $4}'| Transform[Spalten-Extraktion]
-    Transform -->|sort | uniq -c| Count[Häufigkeits-Zählung]
+    Input["Input File / Log"] -->|cat / tail| Stream["stdout Stream"]
+    Stream -->|grep 'ERROR'| Filter["Gefilterte Zeilen"]
+    Filter -->|awk '{print $1, $4}'| Transform["Spalten-Extraktion"]
+    Transform -->|"sort | uniq -c"| Count["Häufigkeits-Zählung"]
 ```
 
 === "Praxisbeispiele Text-Tools"
@@ -162,12 +162,12 @@ sudo journalctl -u mein-dienst -f -n 100# Echtzeit-Logs verfolgen
 
 ```mermaid
 graph TD
-    PV1[Physical Volume /dev/sda1] --> VG[Volume Group: vg_data]
-    PV2[Physical Volume /dev/sdb1] --> VG
-    VG --> LV1[Logical Volume: lv_root]
-    VG --> LV2[Logical Volume: lv_var]
-    LV1 --> FS1[ext4 Dateisystem /]
-    LV2 --> FS2[xfs Dateisystem /var]
+    PV1["Physical Volume /dev/sda1"] --> VG["Volume Group: vg_data"]
+    PV2["Physical Volume /dev/sdb1"] --> VG
+    VG --> LV1["Logical Volume: lv_root"]
+    VG --> LV2["Logical Volume: lv_var"]
+    LV1 --> FS1["ext4 Dateisystem /"]
+    LV2 --> FS2["xfs Dateisystem /var"]
 ```
 
 ### Festplatten einbinden (`fdisk`, `mkfs`, `mount`)

@@ -162,11 +162,11 @@ graph TD
     A[🖥️ Frisches System] --> B[Code-Editor installieren]
     B --> C[Git konfigurieren]
     C --> D[Terminal einrichten]
-    D --> E{Welches Projekt?}
-    E --> F[Python-Projekt → venv]
-    E --> G[Web-Projekt → Node.js]
-    E --> H[System-Projekt → Rust/C++]
-    E --> I[Container-Projekt → Docker]
+    D --> E{"Welches Projekt?"}
+    E --> F["Python-Projekt → venv"]
+    E --> G["Web-Projekt → Node.js"]
+    E --> H["System-Projekt → Rust/C++"]
+    E --> I["Container-Projekt → Docker"]
     F --> J[✅ Bereit zum Entwickeln]
     G --> J
     H --> J
@@ -237,28 +237,28 @@ Die Wahl der richtigen Programmiersprache hängt stark vom Anwendungsbereich ab.
 
 ```mermaid
 graph TD
-    A[🤔 Welche Sprache?] --> B{Was möchtest du bauen?}
-    B --> C[🌐 Webseite / App]
-    B --> D[🤖 KI / Daten]
-    B --> E[⚙️ Systeme / Hardware]
+    A["🤔 Welche Sprache?"] --> B{"Was möchtest du bauen?"}
+    B --> C["🌐 Webseite / App"]
+    B --> D["🤖 KI / Daten"]
+    B --> E["⚙️ Systeme / Hardware"]
     B --> F[📱 Mobile App]
     B --> G[🔧 Automatisierung]
 
-    C --> C1{Frontend oder Backend?}
-    C1 --> C2[Frontend → JavaScript/TypeScript]
-    C1 --> C3[Backend → Python / Go / Node.js]
+    C --> C1{"Frontend oder Backend?"}
+    C1 --> C2["Frontend → JavaScript/TypeScript"]
+    C1 --> C3["Backend → Python / Go / Node.js"]
 
     D --> D1[Python ist erste Wahl]
     D1 --> D2[NumPy · PyTorch · scikit-learn]
 
-    E --> E1{Sicherheit wichtig?}
-    E1 --> E2[Ja → Rust]
-    E1 --> E3[Nein / Legacy → C / C++]
+    E --> E1{"Sicherheit wichtig?"}
+    E1 --> E2["Ja → Rust"]
+    E1 --> E3["Nein / Legacy → C / C++"]
 
-    F --> F1{Welche Plattform?}
-    F1 --> F2[Android → Kotlin]
-    F1 --> F3[iOS → Swift]
-    F1 --> F4[Beides → Flutter/Dart]
+    F --> F1{"Welche Plattform?"}
+    F1 --> F2["Android → Kotlin"]
+    F1 --> F3["iOS → Swift"]
+    F1 --> F4["Beides → Flutter/Dart"]
 
     G --> G1[Bash für Systemscripts]
     G --> G2[Python für komplexe Automation]

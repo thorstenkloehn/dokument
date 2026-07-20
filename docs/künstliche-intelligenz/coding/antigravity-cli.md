@@ -10,11 +10,11 @@ Der Antigravity CLI ist ein autonomes Agenten-Werkzeug für das Terminal, das au
 
 ```mermaid
 graph TD
-    User([Entwickler / CI-Pipeline]) -->|CLI-Befehl / Prompt| AGY[Antigravity CLI 'agy']
-    AGY -->|Instruktionen| AGENTS[AGENTS.md & Rules]
-    AGY -->|Kontext & Skills| SKILLS[Skills & MCP-Plugins]
-    AGY -->|Tool Execution| TOOLS[Builtin Tools & Shell Sandbox]
-    AGY -->|Delegation| SUB[Subagents & Background Tasks]
+    User(["Entwickler / CI-Pipeline"]) -->|CLI-Befehl / Prompt| AGY[Antigravity CLI 'agy']
+    AGY -->|Instruktionen| AGENTS["AGENTS.md & Rules"]
+    AGY -->|Kontext & Skills| SKILLS["Skills & MCP-Plugins"]
+    AGY -->|Tool Execution| TOOLS["Builtin Tools & Shell Sandbox"]
+    AGY -->|Delegation| SUB["Subagents & Background Tasks"]
 ```
 
 ### Gegenüberstellung: CLI vs. IDE vs. Antigravity 2.0
@@ -164,8 +164,8 @@ Der CLI kann eigenständige Hintergrund-Agenten (Subagents) starten, um komplexe
 
 ```mermaid
 graph LR
-    Parent[Haupt-CLI Agent] -->|invoke_subagent| Sub1[Subagent: Research]
-    Parent -->|invoke_subagent| Sub2[Subagent: Doc-Checker]
+    Parent[Haupt-CLI Agent] -->|invoke_subagent| Sub1["Subagent: Research"]
+    Parent -->|invoke_subagent| Sub2["Subagent: Doc-Checker"]
     Sub1 -->|send_message| Parent
     Sub2 -->|send_message| Parent
 ```

@@ -70,9 +70,9 @@ Deine eigene Anwendung fungiert als **Client**, der Anfragen (Prompts) an den LL
 
 ```mermaid
 sequenceDiagram
-    Client (Deine App) ->> Server (LLM API): POST /chat/completions { "prompt": "Hallo" }
+    Client (Deine App) ->> Server (LLM API): POST /chat/completions{" \"prompt\": \"Hallo\" "}
     Note over Server: Generiert Antwort
-    Server -->> Client: 200 OK { "response": "Hallo! Wie kann ich helfen?" }
+    Server -->> Client: 200 OK{" \"response\": \"Hallo! Wie kann ich helfen?\" "}
 ```
 
 #### Konzept: Statuslose Kommunikation (Stateless)

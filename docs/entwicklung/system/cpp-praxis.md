@@ -15,10 +15,10 @@ Dieses Handbuch fasst die Sprachgrundlagen, modernes Speichermanagement (Smart P
 
 ```mermaid
 graph TD
-    Source[C++ Quellcode .cpp / .hpp] -->|1. Preprocessor| Prep[Präprozessierter Code]
-    Prep -->|2. Compiler g++ / clang++| ASM[Assembler Code .s]
-    ASM -->|3. Assembler as| Obj[Objektdatei .o]
-    Obj -->|4. Linker ld| Bin[Binäre Ausführbare Datei / Shared Library]
+    Source["C++ Quellcode .cpp / .hpp"] -->|1. Preprocessor| Prep["Präprozessierter Code"]
+    Prep -->|2. Compiler g++ / clang++| ASM["Assembler Code .s"]
+    ASM -->|3. Assembler as| Obj["Objektdatei .o"]
+    Obj -->|4. Linker ld| Bin["Binäre Ausführbare Datei / Shared Library"]
 ```
 
 ### Compiler & Toolchain einrichten
@@ -49,13 +49,13 @@ Modernes C++ (C++11 bis C++23) vermeidet rohes `new` und `delete` vollständig z
 
 ```mermaid
 graph TD
-    SmartPointer[Smart Pointers std::memory] --> Unique[std::unique_ptr]
-    SmartPointer --> Shared[std::shared_ptr]
-    SmartPointer --> Weak[std::weak_ptr]
+    SmartPointer["Smart Pointers std::memory"] --> Unique["std::unique_ptr"]
+    SmartPointer --> Shared["std::shared_ptr"]
+    SmartPointer --> Weak["std::weak_ptr"]
 
-    Unique -->|Alleines Eigentum / Non-Copyable| UniqueDesc[Freigabe bei Scope-Ende]
-    Shared -->|Geteiltes Eigentum / Ref Counting| SharedDesc[Freigabe wenn Ref-Count = 0]
-    Weak -->|Nicht-besitzende Referenz| WeakDesc[Verhindert zyklische Referenzen]
+    Unique -->|Alleines Eigentum / Non-Copyable| UniqueDesc["Freigabe bei Scope-Ende"]
+    Shared -->|Geteiltes Eigentum / Ref Counting| SharedDesc["Freigabe wenn Ref-Count = 0"]
+    Weak -->|Nicht-besitzende Referenz| WeakDesc["Verhindert zyklische Referenzen"]
 ```
 
 | Smart Pointer | Eigentum | Kopierbar? | Anwendungsfall |

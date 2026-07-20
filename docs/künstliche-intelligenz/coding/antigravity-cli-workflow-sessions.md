@@ -10,11 +10,11 @@ Der Antigravity CLI 2 führt Befehle und Dateiedits standardmäßig in einer ges
 
 ```mermaid
 graph TD
-    Op[Agent will Werkzeug ausführen] --> Check{Berechtigung vorhanden?}
+    Op[Agent will Werkzeug ausführen] --> Check{"Berechtigung vorhanden?"}
     Check -->|Ja| Exec[Aktion ausführen]
-    Check -->|Nein| Ask[Benutzer-Freigabe anfordern / ask_permission]
+    Check -->|Nein| Ask["Benutzer-Freigabe anfordern / ask_permission"]
     Ask -->|Genehmigt| Exec
-    Ask -->|Abgelehnt| Stop[Aktion abbrechen & Ausweichlösung suchen]
+    Ask -->|Abgelehnt| Stop["Aktion abbrechen & Ausweichlösung suchen"]
 ```
 
 ### Die Berechtigungsstufen im Detail

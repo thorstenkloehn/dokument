@@ -15,10 +15,10 @@ Dieses Handbuch bietet eine strukturierte Übersicht über die Sprachgrundlagen,
 
 ```mermaid
 graph TD
-    User([Entwickler / CLI]) -->|1. cargo build / run| Cargo[Cargo Build Tool]
-    Cargo -->|2. Kompilierung & Typprüfung| Rustc[rustc Compiler]
-    Rustc -->|3. Ownership & Lifetime Check| BorrowChecker[Borrow Checker]
-    BorrowChecker -->|4. Generierung Maschinencode| Binary[Natives Binary / WASM]
+    User(["Entwickler / CLI"]) -->|1. cargo build / run| Cargo["Cargo Build Tool"]
+    Cargo -->|2. Kompilierung & Typprüfung| Rustc["rustc Compiler"]
+    Rustc -->|3. Ownership & Lifetime Check| BorrowChecker["Borrow Checker"]
+    BorrowChecker -->|4. Generierung Maschinencode| Binary["Natives Binary / WASM"]
 ```
 
 ### Entwicklungsumgebung einrichten
@@ -51,15 +51,15 @@ Das **Ownership-Modell** ist das zentralste Alleinstellungsmerkmal von Rust:
 
 ```mermaid
 graph TD
-    Ownership[Ownership System] --> Rules[3 Goldene Ownership Regeln]
-    Ownership --> Borrowing[Borrowing & Referenzen]
-    Ownership --> Memory[Stack vs. Heap Allocation]
+    Ownership["Ownership System"] --> Rules["3 Goldene Ownership Regeln"]
+    Ownership --> Borrowing["Borrowing & Referenzen"]
+    Ownership --> Memory["Stack vs. Heap Allocation"]
 
-    Borrowing --> Shared[Unveränderbare Referenz &T]
-    Borrowing --> Mut[Veränderbare Referenz &mut T]
+    Borrowing --> Shared["Unveränderbare Referenz &T"]
+    Borrowing --> Mut["Veränderbare Referenz &mut T"]
     
-    Shared -->|Beliebig viele gleichzeitig| Valid1[Gültig]
-    Mut -->|Exklusiv: Genau EINE gleichzeitig| Valid2[Gültig]
+    Shared -->|Beliebig viele gleichzeitig| Valid1["Gültig"]
+    Mut -->|Exklusiv: Genau EINE gleichzeitig| Valid2["Gültig"]
 ```
 
 ### Die 3 goldenen Ownership-Regeln

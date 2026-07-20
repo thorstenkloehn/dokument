@@ -13,16 +13,16 @@ Dieses Handbuch fasst das komplette Berufsbild, Plattformen, Modell-Ökosysteme,
 ```mermaid
 graph LR
     subgraph ML Engineer / Data Scientist
-        A[Daten-Preprocessing] --> B[Modell-Training & Architecture]
-        B --> C[PyTorch / TensorFlow / CUDA]
+        A[Daten-Preprocessing] --> B["Modell-Training & Architecture"]
+        B --> C["PyTorch / TensorFlow / CUDA"]
         C --> D[Hyperparameter Tuning]
     end
 
     subgraph AI Engineer
-        E[Pre-trained Foundation Models] --> F[API Integration & Prompting]
-        F --> G[RAG & Vector DBs]
-        G --> H[Agenten & Tool Orchestration]
-        H --> I[Produktivierung & UI/UX]
+        E[Pre-trained Foundation Models] --> F["API Integration & Prompting"]
+        F --> G["RAG & Vector DBs"]
+        G --> H["Agenten & Tool Orchestration"]
+        H --> I["Produktivierung & UI/UX"]
     end
 ```
 
@@ -88,10 +88,10 @@ Die Absicherung von KI-Pipelines ist eine Kernverantwortung des AI Engineers.
 
 ```mermaid
 graph TD
-    UserPrompt[Unbekannter User Prompt] --> Filter[1. Input Moderation & Sanitize]
+    UserPrompt[Unbekannter User Prompt] --> Filter["1. Input Moderation & Sanitize"]
     Filter --> Guardrail[2. System Prompt Guardrails]
-    Guardrail --> Execution[3. Tool Sandboxing & Execution]
-    Execution --> OutFilter[4. Output Filtering & PII Redaction]
+    Guardrail --> Execution["3. Tool Sandboxing & Execution"]
+    Execution --> OutFilter["4. Output Filtering & PII Redaction"]
     OutFilter --> SafeResponse[Sichere Antwort an den Nutzer]
 ```
 

@@ -13,10 +13,10 @@ Ein **AI Agent** kombiniert ein Sprachmodell (als zentrales Gehirn) mit Speicher
 
 ```mermaid
 graph TD
-    User([Benutzer / Umgebung]) -->|1. Perception / User Input| Agent[AI Agent Core LLM]
+    User(["Benutzer / Umgebung"]) -->|1. Perception / User Input| Agent[AI Agent Core LLM]
     Agent -->|2. Reason & Plan| Plan[Schritt-für-Schritt Planung]
-    Plan -->|3. Acting / Tool Invocation| Tools[Tools & APIs]
-    Tools -->|4. Observation & Reflection| Feedback[Ergebnis-Bewertung & Reflektion]
+    Plan -->|3. Acting / Tool Invocation| Tools["Tools & APIs"]
+    Tools -->|4. Observation & Reflection| Feedback["Ergebnis-Bewertung & Reflektion"]
     Feedback -->|Schleifen-Iterierung| Agent
 ```
 
@@ -89,9 +89,9 @@ Das **Model Context Protocol** (MCP) von Anthropic ist ein offener Standard zur 
 
 ```mermaid
 graph LR
-    Host[MCP Host / Client Application] <-->|Standardisiertes JSON-RPC Protocol| Server1[MCP Server: PostgreSQL]
-    Host <-->|Standardisiertes JSON-RPC Protocol| Server2[MCP Server: GitHub API]
-    Host <-->|Standardisiertes JSON-RPC Protocol| Server3[MCP Server: File System]
+    Host["MCP Host / Client Application"] <-->|Standardisiertes JSON-RPC Protocol| Server1["MCP Server: PostgreSQL"]
+    Host <-->|Standardisiertes JSON-RPC Protocol| Server2["MCP Server: GitHub API"]
+    Host <-->|Standardisiertes JSON-RPC Protocol| Server3["MCP Server: File System"]
 ```
 
 #### MCP-Architekturkomponenten
@@ -108,10 +108,10 @@ Ein funktionierender Agent benötigt Strategien zur Speicherung von Gesprächsve
 
 ```mermaid
 graph TD
-    Memory[Agent Memory System] --> ShortTerm[Short-Term Memory / Prompt Context]
-    Memory --> LongTerm[Long-Term Memory / Persistent Storage]
-    LongTerm --> Episodic[Episodisches Gedächtnis / Vergangene Interaktionen]
-    LongTerm --> Semantic[Semantisches Gedächtnis / RAG & Vector DBs]
+    Memory[Agent Memory System] --> ShortTerm["Short-Term Memory / Prompt Context"]
+    Memory --> LongTerm["Long-Term Memory / Persistent Storage"]
+    LongTerm --> Episodic["Episodisches Gedächtnis / Vergangene Interaktionen"]
+    LongTerm --> Semantic["Semantisches Gedächtnis / RAG & Vector DBs"]
 ```
 
 ### Kurzzeit- vs. Langzeitgedächtnis

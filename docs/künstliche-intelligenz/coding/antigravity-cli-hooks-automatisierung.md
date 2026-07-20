@@ -14,7 +14,7 @@ graph TD
     UserPrompt --> PreTool[PreToolUse Event]
     PreTool --> Exec[Tool Execution]
     Exec --> PostTool[PostToolUse Event]
-    PostTool --> SStop[Stop Event / SessionEnd Event]
+    PostTool --> SStop["Stop Event / SessionEnd Event"]
 ```
 
 ### Die wichtigsten Hook Events

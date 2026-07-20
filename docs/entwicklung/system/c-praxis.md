@@ -15,10 +15,10 @@ Dieses Handbuch bietet eine strukturierte Übersicht über Sprachgrundlagen, Zei
 
 ```mermaid
 graph TD
-    Source[C Quellcode .c / .h] -->|1. Preprocessor cpp| Prep[Präprozessierter Code]
-    Prep -->|2. Compiler gcc / clang| ASM[Assembler Code .s]
-    ASM -->|3. Assembler as| Obj[Objektdatei .o]
-    Obj -->|4. Linker ld| Bin[Binäre Ausführbare Datei]
+    Source["C Quellcode .c / .h"] -->|1. Preprocessor cpp| Prep["Präprozessierter Code"]
+    Prep -->|2. Compiler gcc / clang| ASM["Assembler Code .s"]
+    ASM -->|3. Assembler as| Obj["Objektdatei .o"]
+    Obj -->|4. Linker ld| Bin["Binäre Ausführbare Datei"]
 ```
 
 ### Compiler & Werkzeuge installieren
@@ -47,12 +47,12 @@ graph TD
 
 ```mermaid
 graph TD
-    Memory[Arbeitsspeicher RAM] --> Stack[Stack Memory / Automatischer Speicher]
-    Memory --> Heap[Heap Memory / Dynamischer Speicher]
+    Memory["Arbeitsspeicher RAM"] --> Stack["Stack Memory / Automatischer Speicher"]
+    Memory --> Heap["Heap Memory / Dynamischer Speicher"]
 
-    Stack -->|Schnell, Festgröße, LIFO| StackVars[Lokale Variablen & Funktions-Frames]
-    Heap -->|Flexibel, Manuell| HeapVars[malloc / calloc / realloc]
-    HeapVars -->|Zwingend aufräumen!| Free[free]
+    Stack -->|Schnell, Festgröße, LIFO| StackVars["Lokale Variablen & Funktions-Frames"]
+    Heap -->|Flexibel, Manuell| HeapVars["malloc / calloc / realloc"]
+    HeapVars -->|Zwingend aufräumen!| Free["free"]
 ```
 
 ### Pointer Mechanics (Zeiger-Mechanik)
