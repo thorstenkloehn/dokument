@@ -26,12 +26,12 @@ Moderne IDEs (Integrated Development Environments) und Code-Editoren bieten Entw
 
 * **Systemvoraussetzungen**: Paketinstallationen, Updates, Abhängigkeiten
 * **System-Setup**: passwortloses sudo, Treiber, Bibliotheken
-* **Sprachruntimes**: Java, .NET, Python, Node.js, Go, Rust, C/C++
+* **Sprachruntimes**: Java, Python, Node.js, Go, Rust, C/C++
 * **Datenbanken**: PostgreSQL, PostGIS, OSM-Datenverarbeitung
 * **Entwicklungstools**: Git, GitHub CLI, Chrome, VS Code
 
 **Unterstützte Sprachen & Frameworks:**
-- .NET SDK, Node.js, Python, Java, Golang, Rust, C/C++
+- Node.js, Python, Java, Golang, Rust, C/C++
 - Maven, npm, pip, cargo, etc.
 
 **Ideal für:** Entwickler, die eine lokale Entwicklungsumgebung einrichten wollen.
@@ -70,7 +70,6 @@ graph TD
 * **SDK & Tools**: Android SDK, Emulator, Build-Tools
 * **Sprachen**: Kotlin (bevorzugt), Java
 * **Frameworks**: Jetpack Compose, AndroidX, Material Design
-* **.NET MAUI**: Cross-Platform mit .NET für mobile Apps
 
 ---
 
@@ -93,7 +92,6 @@ graph TD
 
 | IDE | Plattform | Hauptmerkmale |
 |-----|-----------|---------------|
-| **Visual Studio** | Windows | .NET, C++, Windows-Apps |
 | **Visual Studio Code** | Cross-Platform | Erweiterbar, leicht, KI-Integration |
 
 ### Code Editoren

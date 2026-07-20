@@ -14,14 +14,14 @@ Der Produktionsserver ist darauf ausgelegt, maximale Datenkontrolle und Datensch
 - **Web- & Application-Server**: Nginx (Webserver/Reverse Proxy), Tomcat 10 (Java Servlet Container)
 - **Datenbank**: PostgreSQL mit PostGIS-Erweiterung
 - **Kachelserver**: Switch2OSM Tileserver für OpenStreetMap-Daten
-- **Laufzeiten & Tools**: ASP.NET Core 10, Java, Python, Git & GitHub CLI
+- **Laufzeiten & Tools**: Java, Python, Git & GitHub CLI
 
 ### Entwicklungsrechner (Ubuntu 25.10)
 
 Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Bereitstellung von Anwendungen.
 
 **Sprachen & Frameworks:**
-- .NET SDK, Node.js, Python, Java, Golang, Rust, C/C++
+- Node.js, Python, Java, Golang, Rust, C/C++
 
 **Editoren & KI-Assistenten:**
 - Visual Studio Code, Google Antigravity IDE, GitHub Copilot, Claude Code, Antigravity CLI
@@ -36,7 +36,6 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 ### 1. [System-Installation & Paketmanagement](installation.md)
 **Grundlegende Softwareinstallation und Systemkonfiguration** für Ubuntu-Server und Entwicklungsumgebungen.
 
-* **.NET Runtime**: Installation von ASP.NET Core Runtime-Versionen (8.0, 9.0, 10.0)
 * **Java**: OpenJDK 21 JRE Headless
 * **Python**: Python 3 mit pip und venv
 * **Paketmanagement**: apt, software-properties-common

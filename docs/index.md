@@ -1,206 +1,267 @@
-# Dokumentation für meine Entwicklungsumgebung und den Einsatz von Servern
+---
+title: Wissen Ahrensburg – Dokumentations-Zentrale
+description: Zentrale Wissensdatenbank für KI, Entwicklung, Kreativ und Infrastruktur
+hide:
+  - navigation
+  - toc
+---
 
-Willkommen in meiner zentralen Dokumentation. Diese Wissensdatenbank dient der Strukturierung und Erfassung aller Konfigurationen, Installationsanleitungen und Technologie-Übersichten für meine Serverlandschaft und lokale Entwicklungsumgebung.
+# Dokumentations-Zentrale
+
+Willkommen in der zentralen Wissensdatenbank. Hier sind alle Konfigurationen,
+Anleitungen und Technologieübersichten zur Serverlandschaft, Entwicklungsumgebung
+und KI-Integration strukturiert dokumentiert.
 
 ---
+
+<div class="grid cards" markdown>
+
+-   :material-robot:{ .lg .middle } **KI & Automatisierung**
+
+    ---
+
+    Strategien, Frameworks und Best Practices für KI-gestützte Softwareentwicklung,
+    Content-Erstellung und Desktop-Automatisierung.
+
+    [:octicons-arrow-right-24: Zur Übersicht](künstliche-intelligenz/index.md)
+
+-   :material-server:{ .lg .middle } **Entwicklung & Infrastruktur**
+
+    ---
+
+    Konfiguration und Absicherung von Nginx, PostgreSQL, Tomcat und
+    weiteren Serverdiensten auf Ubuntu 24.04 LTS.
+
+    [:octicons-arrow-right-24: Zur Übersicht](entwicklung/infrastruktur/index.md)
+
+-   :material-palette:{ .lg .middle } **Kreativ & Design**
+
+    ---
+
+    KI in der Kreativarbeit: Bildgenerierung, Audio-Processing, DAW-Integration,
+    Videoproduktion und Animationen.
+
+    [:octicons-arrow-right-24: Zur Übersicht](kreativ/design/index.md)
+
+-   :material-bookshelf:{ .lg .middle } **Wissen & Dokumentation**
+
+    ---
+
+    MediaWiki, XWiki, Pandoc, E-Learning-Konzepte und
+    Vektordatenbanken für strukturiertes Wissensmanagement.
+
+    [:octicons-arrow-right-24: Zur Übersicht](wissen/dokumentation/index.md)
+
+</div>
+
+---
+
+## Systemübersicht
 
 ```mermaid
 graph TD
     Root["📚 Dokumentations-Zentrale"]
-    
+
     Root --> KI["🤖 KI & Automatisierung"]
     Root --> Dev["💻 Entwicklung & Infrastruktur"]
     Root --> Creative["🎨 Kreativ & Design"]
     Root --> Wissen["📚 Wissen & Dokumentation"]
-    
+
     KI --> K1["Coding & Vibe Engineering"]
     KI --> K2["Content-Creation & SEO"]
     KI --> K3["Desktop & Web-Automatisierung"]
 
-    Dev --> D1["Webentwicklung ("Frontend/Backend")"]
-    Dev --> D2["Server, Nginx, SSL & Kachelserver"]
-    Dev --> D3["Systemprogrammierung ("C/Rust/Assembler")"]
-    Dev --> D4["IDE & Lokale KI-Frontends"]
+    Dev --> D1["Webentwicklung"]
+    Dev --> D2["Server, Nginx & PostgreSQL"]
+    Dev --> D3["Systemprogrammierung"]
+    Dev --> D4["IDE & KI-Frontends"]
 
     Creative --> C1["KI-Design & Ideenfindung"]
-    Creative --> C2["Audio, DAW & MIDI-Processing"]
-    Creative --> C3["Film- & Videoproduktion"]
+    Creative --> C2["Audio, DAW & MIDI"]
+    Creative --> C3["Film & Videoproduktion"]
 
-    Wissen --> W1["Vektordatenbanken & Datenerfassung"]
+    Wissen --> W1["Vektordatenbanken"]
     Wissen --> W2["E-Learning & KI-Lehre"]
     Wissen --> W3["MediaWiki, XWiki & Pandoc"]
 ```
 
 ---
 
-## 📁 Dokumentationskategorien
+## KI & Automatisierung
 
-Diese Dokumentation ist in die folgenden Hauptbereiche unterteilt. Jede Kategorie deckt einen spezifischen Bereich ab:
+<div class="grid" markdown>
 
-### 1. [KI & Automatisierung](künstliche-intelligenz/index.md)
+<div markdown>
 
-Strategien, Tools und Best Practices für den Einsatz von künstlicher Intelligenz und Automatisierungstechnologien.
+### :material-code-braces: KI-Coding
 
-* **Coding mit KI**: [Übersicht](künstliche-intelligenz/coding/index.md) zu KI-gestützter Softwareentwicklung
-  * [KI Coding](künstliche-intelligenz/coding/ki-coding.md) - Grundlagen und Best Practices
-  * [Eigene KI-Anwendungen](künstliche-intelligenz/coding/ki-anwendungen-programmieren.md)
-  * [Schrödinger programmiert KI](künstliche-intelligenz/coding/schroedinger-programmiert-ki.md)
-  * [Programmieren lernen mit KI](künstliche-intelligenz/coding/programmieren-lernen-ki.md)
-  * [Programmieren mit KI](künstliche-intelligenz/coding/programmieren-mit-ki.md)
-  * [Vibe Coding & Engineering](künstliche-intelligenz/coding/vibe-coding-engineering.md)
+- [KI Coding](künstliche-intelligenz/coding/ki-coding.md) – Grundlagen und Best Practices
+- [Vibe Coding & Engineering](künstliche-intelligenz/coding/vibe-coding-engineering.md)
+- [Eigene KI-Anwendungen](künstliche-intelligenz/coding/ki-anwendungen-programmieren.md)
+- [Programmieren lernen mit KI](künstliche-intelligenz/coding/programmieren-lernen-ki.md)
+- [Lokales RAG & LLM-Serving](künstliche-intelligenz/coding/lokales-rag-ollama.md)
+- [Agentic Workflows (LangGraph)](künstliche-intelligenz/coding/agentic-workflows-langgraph.md)
 
-* **Content-Erstellung mit KI**:
-  * [KI Content Creation](künstliche-intelligenz/content/ki-content-creation.md)
-  * [Content-Strategie mit KI](künstliche-intelligenz/content/content-strategie.md)
-  * [KI-gestützte SEO-Optimierung](künstliche-intelligenz/content/ki-seo-optimierung.md)
-  * [Multilinguale Inhalte mit KI](künstliche-intelligenz/content/multilinguale-inhalte.md)
-  * [Social Media Automatisierung mit KI](künstliche-intelligenz/content/social-media-ki.md)
+</div>
 
-* **Desktop-Automatisierung**:
-  * [Übersicht](künstliche-intelligenz/automatisierung/index.md) mit KI-Agenten-Kompatibilität
-  * [PyAutoGUI Anleitung](künstliche-intelligenz/automatisierung/pyautogui-anleitung.md) für plattformübergreifende GUI-Automatisierung
-  * [Playwright Anleitung](künstliche-intelligenz/automatisierung/playwright-anleitung.md) für moderne Web-Automatisierung
-  * [ydotool Anleitung](künstliche-intelligenz/automatisierung/ydotool-anleitung.md) für Low-Level-Tastatur-/Maus-Steuerung
-  * [Robot Framework Anleitung](künstliche-intelligenz/automatisierung/robot-framework-anleitung.md) für keyword-basierte Testautomatisierung
+<div markdown>
 
-* **KI-Modelle & Frameworks**:
-  * Sprachmodelle (LLMs): Llama, Mistral, Phi, GPT, DeepSeek
-  * Diffusionsmodelle: Stable Diffusion, FLUX, Kandinsky
-  * Multimodale Modelle: CLIP, BLIP, GPT-4 Vision, LLaVA
-  * Embedding-Modelle: Sentence-Transformers, CLAP, BERT
-  * Bildverarbeitungsmodelle: YOLO, SAM, ResNet, ViT
-  * Sprachverarbeitungsmodelle: Whisper, Kokoro, Wav2Vec
+### :material-robot-outline: Automatisierung
+
+- [PyAutoGUI](künstliche-intelligenz/automatisierung/pyautogui-anleitung.md) – GUI-Automatisierung
+- [Playwright](künstliche-intelligenz/automatisierung/playwright-anleitung.md) – Web-Automatisierung
+- [Robot Framework](künstliche-intelligenz/automatisierung/robot-framework-anleitung.md) – Testautomatisierung
+- [ydotool](künstliche-intelligenz/automatisierung/ydotool-anleitung.md) – Wayland-Automatisierung
+
+### :material-text-box-outline: Content-Erstellung
+
+- [KI Content Creation](künstliche-intelligenz/content/ki-content-creation.md)
+- [KI-gestützte SEO](künstliche-intelligenz/content/ki-seo-optimierung.md)
+- [Multilinguale Inhalte](künstliche-intelligenz/content/multilinguale-inhalte.md)
+
+</div>
+
+</div>
 
 ---
 
-### 2. [Entwicklung & Infrastruktur](entwicklung/infrastruktur/index.md)
+## Entwicklung & Infrastruktur
 
-Dokumentation zur Konfiguration, Installation und Absicherung von Serverdiensten auf dem Produktionsserver (Ubuntu 24.04 LTS) und lokalen Entwicklungsumgebungen.
+<div class="grid" markdown>
 
-* **Server & Infrastruktur**:
-  * [PostgreSQL](entwicklung/infrastruktur/postgresql.md) mit PostGIS für räumliche Daten
-  * **Kachelserver (Tileserver)**: Detaillierte Anleitungen für OpenStreetMap-Kachelserver
-    * [Ubuntu 20.04](entwicklung/infrastruktur/kachelserver/server204.md)
-    * [Ubuntu 22.04](entwicklung/infrastruktur/kachelserver/server224.md)
-    * [Ubuntu 24.04](entwicklung/infrastruktur/kachelserver/server244.md)
-    * [Alternative Kachelserver](entwicklung/infrastruktur/kachelserver/alternative-kachelserver.md) (TileServer-GL, MapProxy, OSRM, etc.)
-  * **Webserver & Reverse Proxy**:
-    * [Nginx](entwicklung/infrastruktur/nginx.md)
-    * [Nginx SSL (Let's Encrypt)](entwicklung/infrastruktur/nginx-ssl.md)
-    * [Apache + Nginx Kopplung](entwicklung/infrastruktur/apache-nginx.md)
-  * [Tomcat](entwicklung/infrastruktur/tomcat.md) für Java-Webanwendungen
-  * [Skalierbare KI/ML-Infrastrukturen](entwicklung/infrastruktur/ki-ml-infrastrukturen.md)
-  * [Grundlegende Softwareinstallation](entwicklung/infrastruktur/installation.md)
-  * [Sicherheit](entwicklung/infrastruktur/sicherheit/index.md)
+<div markdown>
 
-* **Webentwicklung**:
-  * [Übersicht](entwicklung/webentwicklung/index.md)
-  * [KI Web/entwicklung](entwicklung/webentwicklung/ki-webentwicklung.md) - Grundlagen und Anwendungsfälle
-  * [Frontend mit KI](entwicklung/webentwicklung/frontend-ki.md) - Code-Generierung, Design-Optimierung, automatisiertes Testing
-  * [Backend-Integration mit KI](entwicklung/webentwicklung/backend-integration.md) - Intelligente Backend-Systeme
-  * [Deployment mit KI](entwicklung/webentwicklung/deployment.md) - Automatisierte Bereitstellung
-  * [Performance-Optimierung mit KI](entwicklung/webentwicklung/performance.md)
+### :material-web: Webentwicklung
 
-* **Systemprogrammierung**:
-  * [Übersicht](entwicklung/system/index.md)
-  * [Assembler](entwicklung/system/assembler.md)
-  * [Assembler Fehler & Sicherheit](entwicklung/system/assembler-fehler-sicherheit.md)
-  * [Compiler](entwicklung/system/compiler.md)
-  * [Rust, C & C++ Integration](entwicklung/system/rust-c-cpp-integration.md)
-  * [Linux-Systemprogrammierung](entwicklung/system/linux-systemprogrammierung.md)
+- [KI Webentwicklung](entwicklung/webentwicklung/ki-webentwicklung.md)
+- [Frontend mit KI](entwicklung/webentwicklung/frontend-ki.md)
+- [Backend-Integration](entwicklung/webentwicklung/backend-integration.md)
+- [Deployment mit KI](entwicklung/webentwicklung/deployment.md)
+- [Performance-Optimierung](entwicklung/webentwicklung/performance.md)
 
-* **IDE & Entwicklungsumgebung**:
-  * [Übersicht](entwicklung/ide/index.md) - Einrichtung des lokalen Entwicklungsrechners
-  * [System-Setup](entwicklung/ide/setup.md) - Paketinstallationen, passwortloses sudo, Chrome, PostgreSQL
-  * [KI-Unterstützung](entwicklung/ide/lokale-ki-frontends.md) - GitHub Copilot, Claude Code, CODEX CLI, Antigravity CLI
-  * [Android-Entwicklung](entwicklung/ide/android.md) - SDKs und IDEs für mobile Entwicklung
+### :material-chip: Systemprogrammierung
 
----
+- [Assembler](entwicklung/system/assembler.md)
+- [Rust, C & C++ Integration](entwicklung/system/rust-c-cpp-integration.md)
+- [Linux-Systemprogrammierung](entwicklung/system/linux-systemprogrammierung.md)
+- [Linux eBPF Performance](entwicklung/system/linux-ebpf-performance.md)
 
-### 3. [Kreativ & Design](kreativ/design/index.md)
+</div>
 
-Inspiration und Anleitungen zum Einsatz von KI in kreativen Designprozessen.
+<div markdown>
 
-* **Design mit KI**:
-  * [Design nach KI](kreativ/design/design-nach-ki.md) - Wie KI das Design entwickelt
-  * [Ideenfindung mit KI](kreativ/design/ideenfindung-ki.md) - Kreativität fördern
-  * [Leseprobe: KI für Kreative](kreativ/design/leseprobe-ki-kreative.md)
+### :material-server-network: Server & Infrastruktur
 
-* **Audio & Musik**:
-  * [Übersicht](kreativ/audio/index.md) - KI-Anwendungen in der Audio-Verarbeitung
-  * [KI und Audio](kreativ/audio/ki-audio.md) - Von Sprachsynthese bis Musikgenerierung
-  * [Audacity mit KI](kreativ/audio/audacity-ki.md) - Rauschunterdrückung, Stem-Separation, Transkription
-  * [DAW-Integration mit KI](kreativ/audio/daw-integration.md) - KI in Ardour, LMMS, REAPER
-  * [MIDI-Programmierung mit KI](kreativ/audio/midi-programmierung.md) - Intelligente Musiksteuerung
-  * [Audio-Processing mit KI](kreativ/audio/audio-processing.md) - Signalverarbeitung mit neuronalen Netzen
+**Nginx**
+- [Grundlagen](entwicklung/infrastruktur/nginx.md) · [SSL](entwicklung/infrastruktur/nginx-ssl.md) · [Hardening](entwicklung/infrastruktur/nginx-hardening.md)
+- [Load Balancing](entwicklung/infrastruktur/nginx-loadbalancing.md) · [Rate Limiting](entwicklung/infrastruktur/nginx-rate-limiting.md)
 
-* **Video & Film**:
-  * [Übersicht](kreativ/video/index.md)
-  * [KI in der Film- und V/ideoproduktion](kreativ/video/ki-filmproduktion.md)
+**PostgreSQL**
+- [Grundlagen](entwicklung/infrastruktur/postgresql.md) · [Backup](entwicklung/infrastruktur/postgresql-backup-restore.md)
+- [Performance Tuning](entwicklung/infrastruktur/postgresql-tuning.md) · [pgvector](wissen/daten/datenbanken/pgvector-anleitung.md)
+
+**Kachelserver**
+- [Ubuntu 22.04](entwicklung/infrastruktur/kachelserver/server224.md) · [Ubuntu 24.04](entwicklung/infrastruktur/kachelserver/server244.md)
+
+</div>
+
+</div>
 
 ---
 
-### 4. [Wissen & Dokumentation](wissen/dokumentation/index.md)
+## Kreativ & Design
 
-Pipelines, Generatoren und Systeme zur Erstellung von strukturierten Dokumenten und Wissensdatenbanken.
+<div class="grid" markdown>
 
-* **Daten & Datenerfassung**:
-  * [Datenbanken Übersicht](wissen/daten/datenbanken/index.md) - Vektordatenbanken, Zeitreihendatenbanken, Graphdatenbanken
-  * [Datenerfassung](wissen/daten/datenerfassung/index.md):
-    * [OpenDataKit (ODK)](wissen/daten/datenerfassung/opendatakit.md) für Offline-Datenerfassung auf Android
+<div markdown>
 
-* **E-Learning**:
-  * [Übersicht](wissen/e-learning/index.md) - Konzepte und Werkzeuge für interaktive Lerninhalte
-  * [KI in Lehre & Weiterbildung](wissen/e-learning/ki-lehre-weiterbildung.md) - KI-Tutoren, Lernagenten
+### :material-music: Audio & Musik
 
-* **Tools & Hilfswerkzeuge**:
-  * [Übersicht](wissen/tools/index.md) aller Tools nach Anwendungsbereich
-  * [Pandoc](wissen/tools/pandoc.md) - Dokumenten-Konvertierung
-  * [Analysetool](wissen/tools/analysetool.md) - Abhängigkeiten & Sicherheit mit Snyk & OSV Scanner
-  * [Benchmark](wissen/tools/benchmark.md) - Performance Benchmarking
+- [KI und Audio](kreativ/audio/ki-audio.md)
+- [Audacity mit KI](kreativ/audio/audacity-ki.md)
+- [DAW-Integration](kreativ/audio/daw-integration.md)
+- [MIDI-Programmierung](kreativ/audio/midi-programmierung.md)
+- [AI Voice Cloning (XTTS v2)](kreativ/audio/ai-voice-cloning-xtts.md)
 
-* **Dokumentenerstellung**:
-  * [Übersicht](wissen/dokumentation/index.md) - Book-Generators, Notebook-Systeme, Local Wikis
-  * **MediaWiki**:
-    * [Installieren](wissen/dokumentation/mediawiki/index.md)
-    * [Backup](wissen/dokumentation/mediawiki/backup.md)
-    * [Wiederherstellen](wissen/dokumentation/mediawiki/wiederherstellen.md)
-  * **Semantisches MediaWiki**:
-    * [Installieren](wissen/dokumentation/semantische-mediawiki/installieren.md)
-    * [Kurzform](wissen/dokumentation/semantische-mediawiki/kurzform.md)
-    * [Erweiterungen](wissen/dokumentation/semantische-mediawiki/wichtige-erweiterungen.md)
-  * **XWiki**:
-    * [Installieren](wissen/dokumentation/xwiki/installieren.md)
+</div>
 
----
+<div markdown>
 
-### 5. [Tags & Kategorien](tags.md)
+### :material-video: Video & Film
 
-Thematische Navigation durch alle Seiten mittels Tags.
+- [KI in der Videoproduktion](kreativ/video/ki-filmproduktion.md)
+- [FFmpeg & Whisper](kreativ/video/ffmpeg-whisper-automatisierung.md)
+- [FFmpeg HLS Streaming](kreativ/video/ffmpeg-hls-streaming.md)
+- [Manim Animation Engine](kreativ/video/manim-animation-guide.md)
+- [Remotion React Video](kreativ/video/remotion-react-video.md)
+
+### :material-brush: Design
+
+- [ComfyUI & SD Automatisierung](kreativ/design/comfyui-workflow-anleitung.md)
+- [Blender 3D Python](kreativ/design/blender-python-automation.md)
+
+</div>
+
+</div>
 
 ---
 
-### 6. [Rechtliches](rechtliches/impressum.md)
+## Wissen & Dokumentation
 
-* [Impressum](rechtliches/impressum.md)
-* [Datenschutz](rechtliches/datenschutz.md)
+<div class="grid" markdown>
+
+<div markdown>
+
+### :material-wikipedia: Wikis
+
+- [MediaWiki installieren](wissen/dokumentation/mediawiki/index.md)
+- [Semantisches MediaWiki](wissen/dokumentation/semantische-mediawiki/installieren.md)
+- [XWiki installieren](wissen/dokumentation/xwiki/installieren.md)
+
+</div>
+
+<div markdown>
+
+### :material-tools: Tools & Daten
+
+- [Pandoc](wissen/tools/pandoc.md) – Dokumentenkonvertierung
+- [OpenDataKit](wissen/daten/datenerfassung/opendatakit.md)
+- [KI in Lehre & Weiterbildung](wissen/e-learning/ki-lehre-weiterbildung.md)
+- [Analysetool & Benchmark](wissen/tools/analysetool.md)
+
+</div>
+
+</div>
 
 ---
 
-## 🖥️ Serverlandschaft: Technologieübersicht
+## Produktionsserver – Technologieübersicht
 
-### Produktionsserver (Ubuntu 24.04 LTS)
+=== "Produktionsserver"
 
-Der Produktionsserver ist darauf ausgelegt, maximale Datenkontrolle und Datenschutz zu gewährleisten. Durch die lokale Datenverarbeitung sind keine Cookie-Banner erforderlich.
+    **Ubuntu 24.04 LTS** – maximale Datenkontrolle, kein Cookie-Banner nötig
 
-* **Web- & Application-Server**: Nginx (Webserver/Reverse Proxy), Tomcat 10 (Java Servlet Container), Switch2OSM Tileserver (OSM-Kartendaten).
-* **Datenbank**: PostgreSQL.
-* **Laufzeiten & Tools**: ASP.NET Core 10, Java, Python, Git & GitHub CLI (`gh`).
+    | Komponente | Technologie |
+    |------------|-------------|
+    | Webserver / Reverse Proxy | Nginx |
+    | Application Server | Tomcat 10 |
+    | Kartendaten | Switch2OSM Tileserver |
+    | Datenbank | PostgreSQL + PostGIS |
+    | Laufzeiten | Java, Python, Git / GitHub CLI |
 
-### Entwicklungsrechner (Ubuntu 25.10)
+=== "Entwicklungsrechner"
 
-Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Bereitstellung von Anwendungen.
+    **Ubuntu 25.10** – vollständig für lokale KI-Entwicklung ausgestattet
 
-* **Sprachen & Frameworks**: .NET SDK, Node.js, Python, Java, Golang, Rust, C/C++.
-* **Editoren & KI-Assistenten**: Visual Studio Code, Google Antigravity IDE, GitHub Copilot, Claude Code, Antigravity CLI, Claude CLI (`claude`), CODEX CLI.
-* **Lokale Dienste & Web**: PostgreSQL, Nginx, Google Chrome.
+    | Kategorie | Tools |
+    |-----------|-------|
+    | Sprachen | Node.js, Python, Java, Golang, Rust, C/C++ |
+    | Editoren | VS Code, Antigravity IDE |
+    | KI-Assistenten | GitHub Copilot, Claude Code, Antigravity CLI |
+    | Lokale Dienste | PostgreSQL, Nginx, Google Chrome |
+
+---
+
+!!! info "Rechtliches"
+
+    [Impressum](rechtliches/impressum.md) · [Datenschutz](rechtliches/datenschutz.md)

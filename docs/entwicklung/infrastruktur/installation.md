@@ -1,21 +1,3 @@
-## .NET installieren
-
-```bash
-# Installiert notwendige Tools für Repositories
-sudo apt install software-properties-common
-
-# Fügt das .NET Backports-Repository hinzu, um verschiedene .NET-Versionen zu erhalten
-sudo add-apt-repository ppa:dotnet/backports
-
-# Aktualisiert die Paketquellen
-sudo apt-get update
-
-# Installiert mehrere Versionen der ASP.NET Core Runtime für parallele Anwendungskompatibilität
-sudo apt-get install -y aspnetcore-runtime-10.0
-sudo apt-get install -y aspnetcore-runtime-9.0
-sudo apt-get install -y aspnetcore-runtime-8.0
-```
-
 ## Java installieren
 
 ```bash

@@ -32,17 +32,3 @@ Danach verbindest du dich (mit dem Port, der auf der Hauptseite von Wireless Deb
 ```bash
 adb connect [DEINE_IP]:[PORT]
 ```
-## C# App "Full Power" kabellos übertragen
-
-Wenn die Verbindung steht, erkennt dotnet dein Redmi 9A als Zielgerät. Du kannst die App direkt aus dem Terminal oder deiner IDE (Rider/VS Code) starten:
-
-```bash
-dotnet build -t:Run -f net9.0-android
-```
-
-
-
-
-
-
-

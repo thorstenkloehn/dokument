@@ -28,31 +28,6 @@ sudo apt install openjdk-26-jdk
 sudo apt install maven
 ```
 
-### .NET installieren
-
-```bash
-# Installiert notwendige Tools für Repositories
-sudo apt install software-properties-common
-
-# Fügt das .NET Backports-Repository hinzu
-sudo add-apt-repository ppa:dotnet/backports
-
-# Aktualisiert die Paketquellen
-sudo apt-get update
-
-# Installiert mehrere Versionen der ASP.NET Core Runtime
-sudo apt-get install -y aspnetcore-runtime-10.0
-sudo apt-get install -y aspnetcore-runtime-9.0
-sudo apt-get install -y aspnetcore-runtime-8.0
-
-# .NET SDK installieren
-sudo apt-get install -y dotnet-sdk-10.0
-dotnet tool install --global dotnet-ef
-dotnet tool install --global dotnet-aspnet-codegenerator
-dotnet tool install -g Microsoft.Web.LibraryManager.Cli
-echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc
-source ~/.bashrc
-```
 
 ### Python installieren
 
@@ -258,7 +233,6 @@ code --install-extension vscjava.vscode-java-pack
 code --install-extension vmware.vscode-boot-dev-pack
 code --install-extension ms-vscode.cpptools-extension-pack
 code --install-extension ms-python.python
-code --install-extension ms-dotnettools.csdevkit
 code --install-extension rust-lang.rust-analyzer
 ```
 

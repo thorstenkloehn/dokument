@@ -244,7 +244,6 @@ Tools für Paket- und Abhängigkeitsmanagement.
 | **Maven** | Java | [maven.apache.org](https://maven.apache.org) |
 | **Gradle** | Java/Kotlin | [gradle.org](https://gradle.org) |
 | **Composer** | PHP | [getcomposer.org](https://getcomposer.org) |
-| **NuGet** | .NET | [nuget.org](https://www.nuget.org) |
 
 ---
 

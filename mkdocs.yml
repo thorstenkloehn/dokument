@@ -1,29 +1,39 @@
-site_name: Dokument
+site_name: Wissen Ahrensburg
+site_description: Dokumentation zu KI, Entwicklung, Kreativ und Wissen
+site_url: https://dokument.wissen-ahrensburg.de
+
 nav:
-  - Startseite: index.md
+  - Start: index.md
+  - Tags: tags.md
 
   # 🤖 KI & AUTOMATISIERUNG
   - KI & Automatisierung:
       - Übersicht: künstliche-intelligenz/index.md
-      - Coding:
+
+      - KI-Coding:
           - Übersicht: künstliche-intelligenz/coding/index.md
-          - KI Coding: künstliche-intelligenz/coding/ki-coding.md
-          - Eigene KI-Anwendungen: künstliche-intelligenz/coding/ki-anwendungen-programmieren.md
-          - Schrödinger programmiert KI: künstliche-intelligenz/coding/schroedinger-programmiert-ki.md
-          - Programmieren lernen mit KI: künstliche-intelligenz/coding/programmieren-lernen-ki.md
-          - Programmieren mit KI: künstliche-intelligenz/coding/programmieren-mit-ki.md
-          - Vibe Coding & Engineering: künstliche-intelligenz/coding/vibe-coding-engineering.md
-          - Lokales RAG & LLM-Serving: künstliche-intelligenz/coding/lokales-rag-ollama.md
-          - Agentic Workflows (LangGraph): künstliche-intelligenz/coding/agentic-workflows-langgraph.md
-          - Local LLM Fine-Tuning (Unsloth): künstliche-intelligenz/coding/lora-finetuning-unsloth.md
-          - Continue.dev & Tabby AI: künstliche-intelligenz/coding/continue-dev-setup.md
-          - vLLM High-Throughput Serving: künstliche-intelligenz/coding/vllm-high-throughput-serving.md
-          - Structured LLM Outputs (Pydantic): künstliche-intelligenz/coding/structured-outputs-pydantic.md
-          - Multimodale Vision Pipelines: künstliche-intelligenz/coding/multimodale-vision-pipelines.md
-          - Open-WebUI Pipelines: künstliche-intelligenz/coding/open-webui-pipelines.md
-          - AutoGen Multi-Agent Framework: künstliche-intelligenz/coding/autogen-multiagent-framework.md
-          - Microsoft Semantic Kernel: künstliche-intelligenz/coding/semantic-kernel-python.md
-          - LangChain LCEL Chains: künstliche-intelligenz/coding/langchain-lcel-chains.md
+          - Einstieg:
+              - KI Coding: künstliche-intelligenz/coding/ki-coding.md
+              - Programmieren lernen mit KI: künstliche-intelligenz/coding/programmieren-lernen-ki.md
+              - Programmieren mit KI: künstliche-intelligenz/coding/programmieren-mit-ki.md
+              - Vibe Coding & Engineering: künstliche-intelligenz/coding/vibe-coding-engineering.md
+              - Eigene KI-Anwendungen: künstliche-intelligenz/coding/ki-anwendungen-programmieren.md
+              - Schrödinger programmiert KI: künstliche-intelligenz/coding/schroedinger-programmiert-ki.md
+          - LLM & Serving:
+              - Lokales RAG & LLM-Serving: künstliche-intelligenz/coding/lokales-rag-ollama.md
+              - vLLM High-Throughput Serving: künstliche-intelligenz/coding/vllm-high-throughput-serving.md
+              - Local LLM Fine-Tuning (Unsloth): künstliche-intelligenz/coding/lora-finetuning-unsloth.md
+              - Structured LLM Outputs (Pydantic): künstliche-intelligenz/coding/structured-outputs-pydantic.md
+              - Multimodale Vision Pipelines: künstliche-intelligenz/coding/multimodale-vision-pipelines.md
+          - Frameworks & Agenten:
+              - Agentic Workflows (LangGraph): künstliche-intelligenz/coding/agentic-workflows-langgraph.md
+              - AutoGen Multi-Agent Framework: künstliche-intelligenz/coding/autogen-multiagent-framework.md
+              - Microsoft Semantic Kernel: künstliche-intelligenz/coding/semantic-kernel-python.md
+              - LangChain LCEL Chains: künstliche-intelligenz/coding/langchain-lcel-chains.md
+              - Open-WebUI Pipelines: künstliche-intelligenz/coding/open-webui-pipelines.md
+          - Tools:
+              - Continue.dev & Tabby AI: künstliche-intelligenz/coding/continue-dev-setup.md
+
       - Content-Erstellung:
           - Übersicht: künstliche-intelligenz/content/index.md
           - KI Content Creation: künstliche-intelligenz/content/ki-content-creation.md
@@ -32,84 +42,102 @@ nav:
           - Multilinguale Inhalte mit KI: künstliche-intelligenz/content/multilinguale-inhalte.md
           - Social Media Automatisierung: künstliche-intelligenz/content/social-media-ki.md
           - KI Content-Pipeline: künstliche-intelligenz/content/ki-content-pipeline.md
+
       - Desktop-Automatisierung:
           - Übersicht: künstliche-intelligenz/automatisierung/index.md
-          - PyAutoGUI Anleitung: künstliche-intelligenz/automatisierung/pyautogui-anleitung.md
-          - Playwright Anleitung: künstliche-intelligenz/automatisierung/playwright-anleitung.md
-          - ydotool Anleitung: künstliche-intelligenz/automatisierung/ydotool-anleitung.md
-          - Robot Framework Anleitung: künstliche-intelligenz/automatisierung/robot-framework-anleitung.md
-          - Playwright & KI Web-Scraping: künstliche-intelligenz/automatisierung/playwright-ki-extraction.md
-          - Robot Framework API-Testing: künstliche-intelligenz/automatisierung/robot-framework-api-testing.md
-          - PyAutoGUI OpenCV & OCR: künstliche-intelligenz/automatisierung/pyautogui-ocr-vision.md
-          - Playwright Network Interception: künstliche-intelligenz/automatisierung/playwright-network-mocking.md
-          - Playwright Trace Viewer: künstliche-intelligenz/automatisierung/playwright-trace-viewer.md
-          - Playwright Visual Regression: künstliche-intelligenz/automatisierung/playwright-visual-regression.md
-          - Robot Framework Custom Keywords: künstliche-intelligenz/automatisierung/robot-framework-custom-keywords.md
-          - ydotool & Wayland Automatisierung: künstliche-intelligenz/automatisierung/ydotool-wayland-praxis.md
-          - Playwright Device & Geo Emulation: künstliche-intelligenz/automatisierung/playwright-device-emulation.md
-          - Playwright HAR Export & Metriken: künstliche-intelligenz/automatisierung/playwright-har-metrics.md
+          - PyAutoGUI:
+              - Grundlagen: künstliche-intelligenz/automatisierung/pyautogui-anleitung.md
+              - OpenCV & OCR: künstliche-intelligenz/automatisierung/pyautogui-ocr-vision.md
+          - Playwright:
+              - Grundlagen: künstliche-intelligenz/automatisierung/playwright-anleitung.md
+              - KI Web-Scraping: künstliche-intelligenz/automatisierung/playwright-ki-extraction.md
+              - Network Interception: künstliche-intelligenz/automatisierung/playwright-network-mocking.md
+              - Trace Viewer: künstliche-intelligenz/automatisierung/playwright-trace-viewer.md
+              - Visual Regression: künstliche-intelligenz/automatisierung/playwright-visual-regression.md
+              - Device & Geo Emulation: künstliche-intelligenz/automatisierung/playwright-device-emulation.md
+              - HAR Export & Metriken: künstliche-intelligenz/automatisierung/playwright-har-metrics.md
+          - Robot Framework:
+              - Grundlagen: künstliche-intelligenz/automatisierung/robot-framework-anleitung.md
+              - API-Testing: künstliche-intelligenz/automatisierung/robot-framework-api-testing.md
+              - Custom Keywords: künstliche-intelligenz/automatisierung/robot-framework-custom-keywords.md
+          - ydotool:
+              - Grundlagen: künstliche-intelligenz/automatisierung/ydotool-anleitung.md
+              - Wayland Automatisierung: künstliche-intelligenz/automatisierung/ydotool-wayland-praxis.md
 
-  # 💻 ENTWICKLUNG & INFRASTRUKTUR
-  - Entwicklung & Infrastruktur:
+  # 💻 ENTWICKLUNG
+  - Entwicklung:
+      - Erste Schritte: entwicklung/erste-schritte.md
+
       - Webentwicklung:
           - Übersicht: entwicklung/webentwicklung/index.md
           - KI Webentwicklung: entwicklung/webentwicklung/ki-webentwicklung.md
           - Frontend mit KI: entwicklung/webentwicklung/frontend-ki.md
-          - Backend-Integration mit KI: entwicklung/webentwicklung/backend-integration.md
+          - Backend-Integration: entwicklung/webentwicklung/backend-integration.md
           - Deployment mit KI: entwicklung/webentwicklung/deployment.md
-          - Performance-Optimierung mit KI: entwicklung/webentwicklung/performance.md
+          - Performance-Optimierung: entwicklung/webentwicklung/performance.md
+
       - Server & Infrastruktur:
           - Übersicht: entwicklung/infrastruktur/index.md
-          - PostgreSQL: entwicklung/infrastruktur/postgresql.md
-          - Apache + Nginx: entwicklung/infrastruktur/apache-nginx.md
-          - Nginx: entwicklung/infrastruktur/nginx.md
-          - Nginx SSL: entwicklung/infrastruktur/nginx-ssl.md
+          - Software-Übersicht: entwicklung/infrastruktur/software.md
           - Installation: entwicklung/infrastruktur/installation.md
-          - Tomcat: entwicklung/infrastruktur/tomcat.md
-          - Software: entwicklung/infrastruktur/software.md
+          - Nginx:
+              - Grundlagen: entwicklung/infrastruktur/nginx.md
+              - SSL & HTTPS: entwicklung/infrastruktur/nginx-ssl.md
+              - Hardening & Sicherheit: entwicklung/infrastruktur/nginx-hardening.md
+              - Load Balancing: entwicklung/infrastruktur/nginx-loadbalancing.md
+              - FastCGI & Proxy Caching: entwicklung/infrastruktur/nginx-caching.md
+              - Rate Limiting: entwicklung/infrastruktur/nginx-rate-limiting.md
+              - GeoIP Blocking: entwicklung/infrastruktur/nginx-geoip-blocking.md
+              - Apache + Nginx: entwicklung/infrastruktur/apache-nginx.md
+          - PostgreSQL:
+              - Grundlagen: entwicklung/infrastruktur/postgresql.md
+              - Backup & Recovery: entwicklung/infrastruktur/postgresql-backup-restore.md
+              - Performance Tuning: entwicklung/infrastruktur/postgresql-tuning.md
+              - PgBouncer Pooling: entwicklung/infrastruktur/postgresql-pgbouncer.md
+              - Streaming Replication: entwicklung/infrastruktur/postgresql-streaming-replication.md
+              - Logical Replication: entwicklung/infrastruktur/postgresql-logical-replication.md
+              - Table Partitioning: entwicklung/infrastruktur/postgresql-table-partitioning.md
+              - JSONB & GIN-Indizes: entwicklung/infrastruktur/postgresql-jsonb-gin-indexes.md
+              - Volltextsuche (tsvector): entwicklung/infrastruktur/postgresql-fulltext-search.md
+          - Java & Tomcat:
+              - Tomcat: entwicklung/infrastruktur/tomcat.md
+          - KI/ML & Docker:
+              - KI/ML-Infrastrukturen: entwicklung/infrastruktur/ki-ml-infrastrukturen.md
+              - Docker KI-Stack: entwicklung/infrastruktur/docker-ki-stack.md
+          - Benchmarking:
+              - HTTP Server Benchmarking: entwicklung/infrastruktur/http-server-benchmarking.md
+              - k6 API Load Testing: entwicklung/infrastruktur/k6-api-load-testing.md
           - Sicherheit: entwicklung/infrastruktur/sicherheit/index.md
-          - Skalierbare KI/ML-Infrastrukturen: entwicklung/infrastruktur/ki-ml-infrastrukturen.md
-          - Docker KI-Stack: entwicklung/infrastruktur/docker-ki-stack.md
-          - Nginx Hardening & Sicherheit: entwicklung/infrastruktur/nginx-hardening.md
-          - PostgreSQL Backup & Recovery: entwicklung/infrastruktur/postgresql-backup-restore.md
-          - Nginx Load Balancing: entwicklung/infrastruktur/nginx-loadbalancing.md
-          - PostgreSQL Performance Tuning: entwicklung/infrastruktur/postgresql-tuning.md
-          - HTTP Server Benchmarking: entwicklung/infrastruktur/http-server-benchmarking.md
-          - Nginx FastCGI & Proxy Caching: entwicklung/infrastruktur/nginx-caching.md
-          - PostgreSQL PgBouncer Pooling: entwicklung/infrastruktur/postgresql-pgbouncer.md
-          - PostgreSQL Streaming Replication: entwicklung/infrastruktur/postgresql-streaming-replication.md
-          - PostgreSQL Table Partitioning: entwicklung/infrastruktur/postgresql-table-partitioning.md
-          - Nginx GeoIP Blocking: entwicklung/infrastruktur/nginx-geoip-blocking.md
-          - k6 API Load Testing: entwicklung/infrastruktur/k6-api-load-testing.md
-          - PostgreSQL JSONB & GIN-Indizes: entwicklung/infrastruktur/postgresql-jsonb-gin-indexes.md
-          - PostgreSQL Volltextsuche (tsvector): entwicklung/infrastruktur/postgresql-fulltext-search.md
-          - Nginx Rate Limiting: entwicklung/infrastruktur/nginx-rate-limiting.md
-          - PostgreSQL Logical Replication: entwicklung/infrastruktur/postgresql-logical-replication.md
           - Kachelserver:
               - Ubuntu 20.04: entwicklung/infrastruktur/kachelserver/server204.md
               - Ubuntu 22.04: entwicklung/infrastruktur/kachelserver/server224.md
               - Ubuntu 24.04: entwicklung/infrastruktur/kachelserver/server244.md
               - Alternative Kachelserver: entwicklung/infrastruktur/kachelserver/alternative-kachelserver.md
+
       - Systemprogrammierung:
           - Übersicht: entwicklung/system/index.md
-          - Assembler: entwicklung/system/assembler.md
-          - Assembler Fehler & Sicherheit: entwicklung/system/assembler-fehler-sicherheit.md
+          - Assembler:
+              - Grundlagen: entwicklung/system/assembler.md
+              - Fehler & Sicherheit: entwicklung/system/assembler-fehler-sicherheit.md
           - Compiler: entwicklung/system/compiler.md
-          - Rust, C & C++ Integration: entwicklung/system/rust-c-cpp-integration.md
-          - Linux-Systemprogrammierung: entwicklung/system/linux-systemprogrammierung.md
-          - Rust & Python Bindings (PyO3): entwicklung/system/rust-python-bindings.md
-          - Systemd Service Creation: entwicklung/system/systemd-service-creation.md
-          - C++20 Modules & Modern CMake: entwicklung/system/cpp20-modules-cmake.md
-          - Linux Cgroups v2 Limits: entwicklung/system/linux-cgroups-limits.md
-          - Linux eBPF Performance Profiling: entwicklung/system/linux-ebpf-performance.md
-      - IDE:
+          - Rust & C/C++:
+              - Rust, C & C++ Integration: entwicklung/system/rust-c-cpp-integration.md
+              - Rust & Python Bindings (PyO3): entwicklung/system/rust-python-bindings.md
+              - C++20 Modules & Modern CMake: entwicklung/system/cpp20-modules-cmake.md
+          - Linux:
+              - Linux-Systemprogrammierung: entwicklung/system/linux-systemprogrammierung.md
+              - Systemd Service Creation: entwicklung/system/systemd-service-creation.md
+              - Linux Cgroups v2 Limits: entwicklung/system/linux-cgroups-limits.md
+              - Linux eBPF Performance Profiling: entwicklung/system/linux-ebpf-performance.md
+
+      - IDE & Tools:
           - Übersicht: entwicklung/ide/index.md
           - Setup: entwicklung/ide/setup.md
-          - Android: entwicklung/ide/android.md
+          - Android-Entwicklung: entwicklung/ide/android.md
           - Lokale KI-Frontends: entwicklung/ide/lokale-ki-frontends.md
 
-  # 🎨 KREATIV & DESIGN
-  - Kreativ & Design:
+  # 🎨 KREATIV
+  - Kreativ:
       - Design:
           - Übersicht: kreativ/design/index.md
           - Design nach KI: kreativ/design/design-nach-ki.md
@@ -117,54 +145,65 @@ nav:
           - 'Leseprobe: KI für Kreative': kreativ/design/leseprobe-ki-kreative.md
           - ComfyUI & SD Automatisierung: kreativ/design/comfyui-workflow-anleitung.md
           - Blender 3D Python Automatisierung: kreativ/design/blender-python-automation.md
+
       - Audio & Musik:
           - Übersicht: kreativ/audio/index.md
           - KI und Audio: kreativ/audio/ki-audio.md
-          - Audacity mit KI: kreativ/audio/audacity-ki.md
-          - DAW-Integration mit KI: kreativ/audio/daw-integration.md
-          - MIDI-Programmierung mit KI: kreativ/audio/midi-programmierung.md
-          - Audio-Processing mit KI: kreativ/audio/audio-processing.md
-          - MIDI-Generierung mit Python: kreativ/audio/midi-python-automation.md
-          - Audacity Macro Automatisierung: kreativ/audio/audacity-macro-automatisierung.md
-          - WebAudio API JavaScript: kreativ/audio/webaudio-api-javascript.md
-          - AI Voice Cloning (XTTS v2): kreativ/audio/ai-voice-cloning-xtts.md
+          - Audacity:
+              - Audacity mit KI: kreativ/audio/audacity-ki.md
+              - Audacity Macro Automatisierung: kreativ/audio/audacity-macro-automatisierung.md
+          - DAW & MIDI:
+              - DAW-Integration mit KI: kreativ/audio/daw-integration.md
+              - MIDI-Programmierung mit KI: kreativ/audio/midi-programmierung.md
+              - MIDI-Generierung mit Python: kreativ/audio/midi-python-automation.md
+          - Audio-Processing:
+              - Audio-Processing mit KI: kreativ/audio/audio-processing.md
+              - WebAudio API JavaScript: kreativ/audio/webaudio-api-javascript.md
+              - AI Voice Cloning (XTTS v2): kreativ/audio/ai-voice-cloning-xtts.md
+
       - Video & Film:
           - Übersicht: kreativ/video/index.md
-          - KI in der Film- und Videoproduktion: kreativ/video/ki-filmproduktion.md
-          - FFmpeg & Whisper Automatisierung: kreativ/video/ffmpeg-whisper-automatisierung.md
-          - Manim Animation Engine: kreativ/video/manim-animation-guide.md
-          - FFmpeg Advanced Filtering & AV1: kreativ/video/ffmpeg-advanced-filters.md
-          - FFmpeg HLS Video Streaming: kreativ/video/ffmpeg-hls-streaming.md
-          - Remotion React Video Generation: kreativ/video/remotion-react-video.md
-          - FFmpeg Video Contact Sheets: kreativ/video/ffmpeg-thumbnail-grid.md
+          - KI in der Videoproduktion: kreativ/video/ki-filmproduktion.md
+          - FFmpeg:
+              - FFmpeg & Whisper Automatisierung: kreativ/video/ffmpeg-whisper-automatisierung.md
+              - FFmpeg Advanced Filtering & AV1: kreativ/video/ffmpeg-advanced-filters.md
+              - FFmpeg HLS Video Streaming: kreativ/video/ffmpeg-hls-streaming.md
+              - FFmpeg Video Contact Sheets: kreativ/video/ffmpeg-thumbnail-grid.md
+          - Animationen:
+              - Manim Animation Engine: kreativ/video/manim-animation-guide.md
+              - Remotion React Video Generation: kreativ/video/remotion-react-video.md
 
-  # 📚 WISSEN & DOKUMENTATION
-  - Wissen & Dokumentation:
+  # 📚 WISSEN
+  - Wissen:
       - Daten:
           - Datenbanken: wissen/daten/datenbanken/index.md
           - PostgreSQL + pgvector: wissen/daten/datenbanken/pgvector-anleitung.md
           - Datenerfassung:
               - Übersicht: wissen/daten/datenerfassung/index.md
               - OpenDataKit: wissen/daten/datenerfassung/opendatakit.md
+
       - E-Learning:
           - Übersicht: wissen/e-learning/index.md
           - KI in Lehre & Weiterbildung: wissen/e-learning/ki-lehre-weiterbildung.md
+
       - Tools:
           - Übersicht: wissen/tools/index.md
-          - Pandoc: wissen/tools/pandoc.md
+          - Pandoc:
+              - Grundlagen: wissen/tools/pandoc.md
+              - Export-Pipeline: wissen/tools/pandoc-export-pipeline.md
+              - Custom Lua-Filter: wissen/tools/pandoc-lua-filters.md
           - Analysetool: wissen/tools/analysetool.md
           - Benchmark: wissen/tools/benchmark.md
-          - Pandoc Export-Pipeline: wissen/tools/pandoc-export-pipeline.md
-          - Pandoc Custom Lua-Filter: wissen/tools/pandoc-lua-filters.md
-      - Dokumentenerstellung:
+
+      - Dokumentation:
           - Übersicht: wissen/dokumentation/index.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
               - Wiederherstellen: wissen/dokumentation/mediawiki/wiederherstellen.md
               - Python Bot Automatisierung: wissen/dokumentation/mediawiki/mediawiki-python-bot.md
-              - MediaWiki Backup Skripte: wissen/dokumentation/mediawiki/mediawiki-backup-skripte.md
-              - MediaWiki PHP Extension: wissen/dokumentation/mediawiki/mediawiki-php-extension.md
+              - Backup Skripte: wissen/dokumentation/mediawiki/mediawiki-backup-skripte.md
+              - PHP Extension: wissen/dokumentation/mediawiki/mediawiki-php-extension.md
           - Semantisches MediaWiki:
               - Installieren: wissen/dokumentation/semantische-mediawiki/installieren.md
               - Kurzform: wissen/dokumentation/semantische-mediawiki/kurzform.md
@@ -175,12 +214,10 @@ nav:
               - Installieren: wissen/dokumentation/xwiki/installieren.md
               - XWiki REST API & Python: wissen/dokumentation/xwiki/xwiki-rest-api.md
 
-  # 🏷️ TAGS & KATEGORIEN
-  - Tags & Kategorien: tags.md
-
   # ⚖️ RECHTLICHES
-  - Impressum: rechtliches/impressum.md
-  - Datenschutz: rechtliches/datenschutz.md
+  - Rechtliches:
+      - Impressum: rechtliches/impressum.md
+      - Datenschutz: rechtliches/datenschutz.md
 
 copyright: Copyright &copy; Wissen Ahrensburg
 
@@ -189,36 +226,68 @@ theme:
   custom_dir: overrides
   language: de
   features:
+    # Navigation
     - navigation.top
     - navigation.sections
     - navigation.indexes
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.path
+    - navigation.prune
+    - navigation.footer
+    # Suche
     - search.suggest
     - search.highlight
-    - toc.integrate
+    - search.share
+    # Content
     - content.code.copy
     - content.code.annotate
+    - content.code.select
+    - content.tooltips
+    - content.tabs.link
+    - content.action.view
+    # TOC
+    - toc.follow
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/brightness-7
-        name: In dunklen Modus wechseln
+        icon: material/weather-night
+        name: Dunklen Modus aktivieren
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
-      accent: blue
+      accent: light-blue
       toggle:
-        icon: material/brightness-4
-        name: In hellen Modus wechseln
+        icon: material/weather-sunny
+        name: Hellen Modus aktivieren
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
+    admonition:
+      note:     material/pencil-circle
+      abstract: material/clipboard-text
+      info:     material/information
+      tip:      material/fire
+      success:  material/check-circle
+      question: material/help-circle
+      warning:  material/alert
+      failure:  material/close-circle
+      danger:   material/lightning-bolt-circle
+      bug:      material/bug
+      example:  material/test-tube
+      quote:    material/format-quote-close
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - search:
       lang: de
       separator: '[\s\-]+'
+  - tags:
   - git-revision-date
   - git-authors
   - minify:
@@ -230,6 +299,31 @@ extra:
     description: >-
       Wir verwenden Cookies, um Ihre Besuche und Präferenzen zu erkennen und die
       Effektivität unserer Dokumentation zu messen.
+    actions:
+      - accept
+      - reject
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://wissen-ahrensburg.de
+      name: Wissen Ahrensburg
+    - icon: fontawesome/brands/github
+      link: https://github.com
+      name: GitHub
+  generator: true
+  analytics:
+    feedback:
+      title: War diese Seite hilfreich?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Diese Seite war hilfreich
+          data: 1
+          note: >-
+            Danke für das Feedback!
+        - icon: material/emoticon-sad-outline
+          name: Diese Seite könnte besser sein
+          data: 0
+          note: >-
+            Danke für das Feedback. Helfen Sie uns, diese Seite zu verbessern.
 
 extra_css:
   - stylesheets/extra.css
@@ -242,9 +336,20 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - attr_list
+  - md_in_html
   - admonition
+  - pymdownx.details
+  - footnotes
   - toc:
       permalink: true
       baselevel: 1
