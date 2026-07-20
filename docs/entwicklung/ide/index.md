@@ -62,14 +62,10 @@ graph TD
 
 ---
 
-### 3. Android-Entwicklung
+### 3. Android & Kotlin-Entwicklung
 
-[Detaillierte Anleitung zur Android-Entwicklung](android.md)
-
-* **Android Studio**: Offizielle IDE für Android-Entwicklung
-* **SDK & Tools**: Android SDK, Emulator, Build-Tools
-* **Sprachen**: Kotlin (bevorzugt), Java
-* **Frameworks**: Jetpack Compose, AndroidX, Material Design
+* [Kotlin Praxis-Handbuch](kotlin-praxis.md) – Sprache, Null-Safety, Coroutines, Multiplatform (KMP) & Ktor
+* [Android-Entwicklung mit IDEs](android.md) – Android Studio, Jetpack Compose, SDKs & Emulatoren
 
 ---
 
