@@ -19,7 +19,6 @@ Willkommen im Bereich **Server und Infrastruktur**! Hier finden Sie Anleitungen 
 - [Server 24.04](kachelserver/server244.md)
 
 ### Anwendungen
-- [Tomcat](tomcat.md) - Java Application Server
 - [Installation](installation.md) - Allgemeine Installationsanleitungen
 - [Software](software.md) - Software-Installation und -Konfiguration
 

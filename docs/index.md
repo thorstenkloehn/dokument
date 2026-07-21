@@ -29,7 +29,7 @@ und KI-Integration strukturiert dokumentiert.
 
     ---
 
-    Konfiguration und Absicherung von Nginx, PostgreSQL, Tomcat und
+    Konfiguration und Absicherung von Nginx, PostgreSQL und
     weiteren Serverdiensten auf Ubuntu 24.04 LTS.
 
     [:octicons-arrow-right-24: Zur Übersicht](entwicklung/infrastruktur/index.md)
@@ -244,7 +244,6 @@ graph TD
     | Komponente | Technologie |
     |------------|-------------|
     | Webserver / Reverse Proxy | Nginx |
-    | Application Server | Tomcat 10 |
     | Kartendaten | Switch2OSM Tileserver |
     | Datenbank | PostgreSQL + PostGIS |
     | Laufzeiten | Java, Python, Git / GitHub CLI |

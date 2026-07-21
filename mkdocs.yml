@@ -117,8 +117,6 @@ nav:
               - Table Partitioning: entwicklung/infrastruktur/postgresql-table-partitioning.md
               - JSONB & GIN-Indizes: entwicklung/infrastruktur/postgresql-jsonb-gin-indexes.md
               - Volltextsuche (tsvector): entwicklung/infrastruktur/postgresql-fulltext-search.md
-          - Java & Tomcat:
-              - Tomcat: entwicklung/infrastruktur/tomcat.md
           - KI/ML & Docker:
               - KI/ML-Infrastrukturen: entwicklung/infrastruktur/ki-ml-infrastrukturen.md
               - Docker KI-Stack: entwicklung/infrastruktur/docker-ki-stack.md

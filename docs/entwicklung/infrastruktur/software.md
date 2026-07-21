@@ -11,7 +11,7 @@ Eine zentralisierte Übersicht über Serverkonfigurationen, Softwarekomponenten 
 Der Produktionsserver ist darauf ausgelegt, maximale Datenkontrolle und Datenschutz zu gewährleisten. Durch die lokale Datenverarbeitung sind keine Cookie-Banner erforderlich.
 
 **Kernkomponenten:**
-- **Web- & Application-Server**: Nginx (Webserver/Reverse Proxy), Tomcat 10 (Java Servlet Container)
+- **Web- & Application-Server**: Nginx (Webserver/Reverse Proxy)
 - **Datenbank**: PostgreSQL mit PostGIS-Erweiterung
 - **Kachelserver**: Switch2OSM Tileserver für OpenStreetMap-Daten
 - **Laufzeiten & Tools**: Java, Python, Git & GitHub CLI
@@ -77,29 +77,7 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 
 ---
 
-### 3. Servlet-Container
-
-#### [Tomcat](tomcat.md)
-**Apache Tomcat 10 – Java Servlet Container** – Laufzeitumgebung für Java-Webanwendungen (Servlets, JSP, WebSockets).
-
-* **Version**: Tomcat 10.x (Jakarta EE 9+)
-* **Java-Version**: Kompatibel mit Java 11+
-* **Funktionen**: Servlet-Container, JSP-Engine, WebSocket-Unterstützung
-* **Konfiguration**: server.xml, web.xml, context.xml
-
-**Deployment-Methoden:**
-- WAR-Dateien im webapps-Verzeichnis
-- Automatisches Laden bei Start
-- Hot-Deployment während der Laufzeit
-
-**Management:**
-- Manager-Webapp für Deployment
-- Host-Manager für virtuelle Hosts
-- JMX für Monitoring und Verwaltung
-
----
-
-### 4. Datenbanken
+### 3. Datenbanken
 
 #### [PostgreSQL](postgresql.md)
 **Objekt-relationales Datenbanksystem** – Robuste, erweiterbare Datenbank für Produktionsumgebungen.
@@ -123,7 +101,7 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 
 ---
 
-### 5. Kachelserver (Tileserver)
+### 4. Kachelserver (Tileserver)
 
 **OpenStreetMap-Kachelserver für verschiedene Ubuntu-Versionen** – Schritt-für-Schritt-Anleitungen zur Einrichtung von Kachelservern.
 
@@ -149,7 +127,7 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 
 ---
 
-### 6. KI/ML-Infrastrukturen
+### 5. KI/ML-Infrastrukturen
 
 #### [KI/ML-Infrastrukturen](ki-ml-infrastrukturen.md)
 **Skalierbare KI/ML-Infrastrukturen für Training und Inference** – Komplettanleitung von Single-Node bis Cluster-Skalierung.
@@ -230,7 +208,6 @@ graph LR
 ### Offizielle Dokumentationen
 - [Nginx Documentation](https://nginx.org/en/docs/) – Offizielle Nginx-Dokumentation
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/) – PostgreSQL-Handbuch
-- [Tomcat Documentation](https://tomcat.apache.org/) – Apache Tomcat-Dokumentation
 - [Ubuntu Server Guide](https://ubuntu.com/server/docs) – Ubuntu-Server-Dokumentation
 
 ### KI/ML-Infrastruktur

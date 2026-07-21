@@ -37,12 +37,6 @@ location /karte {
         proxy_set_header   X-Forwarded-Proto $scheme;
     }
 
-location /start {
-    proxy_pass http://unix:/var/run/tomcat10/tomcat.sock;
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-}
-
 }
 
 server {

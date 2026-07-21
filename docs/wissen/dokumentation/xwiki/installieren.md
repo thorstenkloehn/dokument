@@ -25,13 +25,13 @@ sudo apt-get update
 ```bash
 apt-cache search xwiki
 ```
-## XWiki mit Tomcat 10 installieren
+## XWiki installieren
 ```bash
 sudo apt-get install xwiki-tomcat10-pgsql
 sudo systemctl stop tomcat10
 ```
 
-## Tomcat-10-Port auf 9000 ändern
+## Port auf 9000 ändern
 
 ```
 sudo nano /etc/tomcat10/server.xml

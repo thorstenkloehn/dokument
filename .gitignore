@@ -2,6 +2,7 @@
 site 
 node_modules
 _site
+.cache
 
 
 # Snyk Security Extension - AI Rules (auto-generated)
