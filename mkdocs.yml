@@ -38,9 +38,11 @@ nav:
               - Microsoft Semantic Kernel: künstliche-intelligenz/coding/semantic-kernel-python.md
               - LangChain LCEL Chains: künstliche-intelligenz/coding/langchain-lcel-chains.md
               - Open-WebUI Pipelines: künstliche-intelligenz/coding/open-webui-pipelines.md
+              - Hermes Agent (Docker): künstliche-intelligenz/coding/hermes-agent-docker.md
           - Tools:
               - Continue.dev & Tabby AI: künstliche-intelligenz/coding/continue-dev-setup.md
               - Claude Code Praxis-Handbuch: künstliche-intelligenz/coding/claude-code-praxis.md
+              - KI-Tools auf dem Produktionsserver: künstliche-intelligenz/coding/ki-tools-produktionsserver.md
           - Antigravity CLI 2 Tutorials:
               - Übersicht: künstliche-intelligenz/coding/antigravity-cli.md
               - Handbuch & Roadmap: künstliche-intelligenz/coding/antigravity-cli-roadmap-handbuch.md
@@ -122,6 +124,7 @@ nav:
               - Volltextsuche (tsvector): entwicklung/infrastruktur/postgresql-fulltext-search.md
           - KI/ML & Docker:
               - KI/ML-Infrastrukturen: entwicklung/infrastruktur/ki-ml-infrastrukturen.md
+              - Docker Installation (Ubuntu 24.04): entwicklung/infrastruktur/docker-installation-ubuntu.md
               - Docker KI-Stack: entwicklung/infrastruktur/docker-ki-stack.md
           - Benchmarking:
               - HTTP Server Benchmarking: entwicklung/infrastruktur/http-server-benchmarking.md

@@ -135,6 +135,56 @@ Bei selbstgehosteten Modellen entfallen laufende Token-Kosten vollständig — b
 
 ---
 
+## 5. Weitere Provider im OpenCode-CLI-Ökosystem — sortiert von billig zu teuer
+
+Die Coding-CLI [OpenCode](https://opencode.ai/docs/de/providers/) bindet über AI SDK und Models.dev **75+ Anbieter** einheitlich an (Setup jeweils via `/connect`, Konfiguration in `opencode.json`, Modellauswahl via `/models`). Die folgenden Tabellen listen nur die Anbieter aus dieser Liste, die **nicht** bereits oben in den Abschnitten 1–3 stehen (DeepInfra, Groq, Fireworks AI, Together AI, OpenRouter, Poe, Mistral AI, DeepSeek, Google, xAI, OpenAI, Anthropic, Cohere, Bedrock/Azure OpenAI/Vertex AI, Cerebras, GitHub Models, Novita AI, Replicate, Ollama, LM Studio sind dort bereits erfasst).
+
+### 5.1 Pay-per-Token — sortiert von billig zu teuer
+
+| Anbieter | Preisbeispiel (USD/1M In/Out) | Modell | Besonderheit |
+|---|---|---|---|
+| **IO.NET** | ≈ $0,04 / $0,10 | günstige Open-Weight-Modelle | Preis nur aus Sekundärquelle, offizielle Preisseite nicht direkt verifizierbar |
+| **ZenMux** | ab $0,05 / $0,40 (bis $21 / $168 je nach Modell) | z. B. DeepSeek V3.2: $0,28 / $0,43 | breiter vorkonfigurierter Modellkatalog, zusätzlich Abo-Stufen (siehe 5.3) |
+| **OpenCode Zen** | $0,05 / $0,40 (GPT-5-Nano); mehrere Modelle zeitlich befristet kostenlos | offiziell vom OpenCode-Team getestet/verifiziert | eigenes Angebot des OpenCode-Teams |
+| **Azure Cognitive Services** | $0,05 / $0,40 (GPT-5-Nano) bis $2,50 / $10,00 (GPT-4o) | Reselling der OpenAI-Modelle | eigenständige Ressource neben Azure OpenAI, ähnliches Preisschema |
+| **OVHcloud AI Endpoints** | $0,09 / $0,47 | gpt-oss-120b | europäischer Anbieter |
+| **Scaleway** | $0,15 / $0,60 | gpt-oss-120b | Einstiegspreise ab €0,20/1M, europäischer Anbieter |
+| **STACKIT** | ≈ €0,45 / €0,65 | Qwen3.6 27B (Standardpreis der meisten Modelle) | europäische Infrastruktur, Embedding-Modell e5-mistral-7b bereits ab €0,02/1M |
+| **Z.AI (GLM API)** | $0,43 / $1,74 | GLM-4.6 | alternativ GLM Coding Plan als Abo (siehe 5.3) |
+| **MiniMax** | $0,30 / $1,20 | M2 | Drittanbieter-Router zeigen teils günstiger |
+| **Nebius Token Factory** | ≈ $0,60 / $2,20 (Näherung über GLM-4.5 im Katalog) | Kimi K2 Instruct | offizielle Preistabelle nicht öffentlich einsehbar, Wert nicht modellscharf verifiziert |
+| **Baseten** | median ≈ $0,60 / $2,20 | offene Modelle (Model APIs) | alternativ dedizierte GPU-Deployments nach Zeit (z. B. H100 ≈ $6,50/Std.) |
+| **Moonshot AI (Kimi K2)** | $0,55 / $2,20 | Kimi K2 0711 | Context-Caching senkt wiederholten Input auf ≈ $0,10–0,16/1M |
+| **Venice AI** | $0,70 / $2,80 | Llama 3.3 70B | Pay-as-you-go per Guthaben (100 Credits = $1), kein Abo nötig für API-Zugriff |
+
+### 5.2 Gateways ohne eigenen Preisaufschlag (Pass-Through)
+
+Diese Anbieter berechnen die Modellkosten des jeweiligen Herstellers unverändert weiter — der eigentliche Preis hängt vom durchgereichten Modell ab (siehe Tabellen oben).
+
+| Anbieter | Eigene Zusatzgebühr | Besonderheit |
+|---|---|---|
+| **Vercel AI Gateway** | keine (Zero-Markup-Politik), $5 Freikontingent/Monat/Team | Zusatzgebühr nur für Custom Reporting und Provider-Allowlist/ZDR |
+| **Cloudflare AI Gateway** | keine auf Modellkosten, 5 % auf gekaufte Unified-Billing-Credits | Caching, Analytics und Rate-Limiting kostenlos nutzbar |
+| **Hugging Face (Inference Providers)** | keine auf Partnerpreise (Groq, Together, Fireworks u. a.) | alternativ zeitbasierte Inference Endpoints (ab $0,03/CPU-Kern-Std., GPU ab $0,50/Std.) |
+| **Cortecs** | 5 % Servicegebühr auf den Provider-Preis | konkreter Preis für Kimi K2 Instruct auf der Seite selbst nicht ausgewiesen |
+
+### 5.3 Abo- statt Token-Abrechnung
+
+| Anbieter | Preis | Besonderheit |
+|---|---|---|
+| **OpenCode Go** | $5 im ersten Monat, danach $10/Monat | Nutzungslimits dollarbasiert ($12/5h, $30/Woche, $60/Monat), eigenes OpenCode-Angebot |
+| **Ollama Cloud** | Free $0 / Pro $20 / Max $100 pro Monat | Nutzung als GPU-Zeit gemessen, nicht als Tokens; Modelle vorab mit `ollama pull` laden |
+| **Z.AI GLM Coding Plan** | Lite ≈ $3–6 / Pro ≈ $15–72 / Max ≈ $30–160 pro Monat | Alternative zur API-Abrechnung aus 5.1 |
+| **ZenMux (Abo)** | Free $0 / Pro $20 / Max $100 / Ultra $400 pro Monat | Alternative zur Pay-per-Token-Abrechnung aus 5.1 |
+| **GitHub Copilot** | Pro $10 / Pro+ $39 / Max $100 pro Monat (Einzelnutzer); Business $19, Enterprise $39 pro Nutzer | seit Juni 2026 zusätzlich nutzungsbasierte „AI Credits" nach GitHub-API-Listenpreisen |
+| **GitLab Duo** | Pro $19/Nutzer/Monat, Enterprise $39/Nutzer/Monat | Duo Enterprise nur mit GitLab Ultimate |
+| **Helicone** | Free $0 (10k Requests/Monat) / Pro $79 / Team $799 pro Monat | reiner Observability-Layer, Modellkosten selbst werden unverändert durchgereicht |
+
+!!! warning "Achtung: Datenlage bei kleineren Anbietern lückenhaft"
+    Für **SAP AI Core** (Abrechnung über „SAP AI Units"/Compute-Stunden statt USD/Token) und **302.AI** (keine eigene öffentliche Preistabelle als API-Anbieter auffindbar) ließen sich keine belastbaren Pay-per-Token-Preise ermitteln. Bei **IO.NET** und **Nebius Token Factory** stammen die genannten Werte aus Sekundärquellen bzw. Näherungswerten, nicht von der offiziellen Preisseite des Herstellers. Vor einer Entscheidung die aktuelle Preisseite des jeweiligen Anbieters direkt prüfen.
+
+---
+
 ## 🔗 Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
