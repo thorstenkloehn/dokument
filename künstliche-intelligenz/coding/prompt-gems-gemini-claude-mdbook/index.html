@@ -1,0 +1,3657 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dokumentation zu KI, Entwicklung, Kreativ und Wissen">
+      
+      
+      
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/prompt-gems-gemini-claude-mdbook/">
+      
+      
+        <link rel="prev" href="../prompt-engineering-praxis/">
+      
+      
+        <link rel="next" href="../gems/projekt/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.51">
+    
+    
+      
+        <title>Prompt Gems & System Prompts: Google Gemini, Anthropic Claude & mdBook-Kapitel - Wissen Ahrensburg</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.62c9b9cc.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17%209H7V7h10m0%206H7v-2h10m-3%206H7v-2h7M12%203a1%201%200%200%201%201%201%201%201%200%200%201-1%201%201%201%200%200%201-1-1%201%201%200%200%201%201-1m7%200h-4.18C14.4%201.84%2013.3%201%2012%201s-2.4.84-2.82%202H5a2%202%200%200%200-2%202v14a2%202%200%200%200%202%202h14a2%202%200%200%200%202-2V5a2%202%200%200%200-2-2%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M14%2012h-4v-2h4m0%206h-4v-2h4m6-6h-2.81a6%206%200%200%200-1.82-1.96L17%204.41%2015.59%203l-2.17%202.17a6%206%200%200%200-2.83%200L8.41%203%207%204.41l1.62%201.63C7.88%206.55%207.26%207.22%206.81%208H4v2h2.09c-.05.33-.09.66-.09%201v1H4v2h2v1c0%20.34.04.67.09%201H4v2h2.81c1.04%201.79%202.97%203%205.19%203s4.15-1.21%205.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20z%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22m11.5%2020%204.86-9.73H13V4l-5%209.73h3.5zM12%202c2.75%200%205.1%201%207.05%202.95S22%209.25%2022%2012s-1%205.1-2.95%207.05S14.75%2022%2012%2022s-5.1-1-7.05-2.95S2%2014.75%202%2012s1-5.1%202.95-7.05S9.25%202%2012%202%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M7%202v2h1v14a4%204%200%200%200%204%204%204%204%200%200%200%204-4V4h1V2zm4%2014c-.6%200-1-.4-1-1s.4-1%201-1%201%20.4%201%201-.4%201-1%201m2-4c-.6%200-1-.4-1-1s.4-1%201-1%201%20.4%201%201-.4%201-1%201m1-5h-4V4h4z%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202c5.53%200%2010%204.47%2010%2010s-4.47%2010-10%2010S2%2017.53%202%2012%206.47%202%2012%202m3.59%205L12%2010.59%208.41%207%207%208.41%2010.59%2012%207%2015.59%208.41%2017%2012%2013.41%2015.59%2017%2017%2015.59%2013.41%2012%2017%208.41z%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%209h-2V7h2m0%2010h-2v-6h2m-1-9A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202%22/%3E%3C/svg%3E');--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202C6.47%202%202%206.47%202%2012s4.47%2010%2010%2010%2010-4.47%2010-10S17.53%202%2012%202m3.1%205.07c.14%200%20.28.05.4.16l1.27%201.27c.23.22.23.57%200%20.78l-1%201-2.05-2.05%201-1c.1-.11.24-.16.38-.16m-1.97%201.74%202.06%202.06-6.06%206.06H7.07v-2.06z%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22m15.07%2011.25-.9.92C13.45%2012.89%2013%2013.5%2013%2015h-2v-.5c0-1.11.45-2.11%201.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2%202%200%200%200-2-2%202%202%200%200%200-2%202H8a4%204%200%200%201%204-4%204%204%200%200%201%204%204%203.2%203.2%200%200%201-.93%202.25M13%2019h-2v-2h2M12%202A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10c0-5.53-4.5-10-10-10%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M14%2017h3l2-4V7h-6v6h3M6%2017h3l2-4V7H5v6h3z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202C6.5%202%202%206.5%202%2012s4.5%2010%2010%2010%2010-4.5%2010-10S17.5%202%2012%202m-2%2015-5-5%201.41-1.41L10%2014.17l7.59-7.59L19%208z%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17.66%2011.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33%207.26%2013%204.85%2013.95%203c-.95.23-1.78.75-2.49%201.32-2.59%202.08-3.61%205.75-2.39%208.9.04.1.08.2.08.33%200%20.22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6%200%200%201-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78%2010%204.87%2012.3%205%2014.47c.06.5.12%201%20.29%201.5.14.6.41%201.2.71%201.73%201.08%201.73%202.95%202.97%204.96%203.22%202.14.27%204.43-.12%206.07-1.6%201.83-1.66%202.47-4.32%201.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16%206.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82%201.19-.28%201.9-1.16%202.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63%201.06.77%201%201.98%201.44%202.24%202.8.04.14.06.28.06.43.03.82-.33%201.72-.93%202.27%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%2014h-2V9h2m0%209h-2v-2h2M1%2021h22L12%202z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+  
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#prompt-gems-system-prompts-google-gemini-anthropic-claude-mdbook-kapitel" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="../../.." title="Wissen Ahrensburg" class="md-header__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wissen Ahrensburg
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Prompt Gems &amp; System Prompts: Google Gemini, Anthropic Claude &amp; mdBook-Kapitel
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dunklen Modus aktivieren"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dunklen Modus aktivieren" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Hellen Modus aktivieren"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Hellen Modus aktivieren" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Suche">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Suche">
+  <button type="button" class="md-search__button">
+    Suche
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  KI & Automatisierung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../entwicklung/erste-schritte/" class="md-tabs__link">
+          
+  
+  Entwicklung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../kreativ/design/" class="md-tabs__link">
+          
+  
+  Kreativ
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../wissen/daten/datenbanken/" class="md-tabs__link">
+          
+  
+  Wissen
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../rechtliches/impressum/" class="md-tabs__link">
+          
+  
+  Rechtliches
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Wissen Ahrensburg" class="md-nav__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    Wissen Ahrensburg
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Start
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI & Automatisierung
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  KI & Automatisierung
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI-Coding
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  KI-Coding
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Einstieg
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Einstieg
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ki-coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI Coding
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-engineer-praxis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  AI Engineer Praxis-Handbuch
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompt-engineering-praxis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Prompt Engineering Praxis-Handbuch
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Prompt Gems (Gemini, Claude, mdBook)
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Prompt Gems (Gemini, Claude, mdBook)
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-google-gemini-chatbot-prompt-gems" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        💎 1. Google Gemini Chatbot: Prompt Gems
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💎 1. Google Gemini Chatbot: Prompt Gems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#was-sind-google-gemini-gems" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Was sind Google Gemini Gems?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-optimale-aufbau-eines-gemini-gem-system-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Der optimale Aufbau eines Gemini Gem System Prompts
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#praxiserprobte-gemini-gems-vorlagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Praxiserprobte Gemini Gems Vorlagen
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Praxiserprobte Gemini Gems Vorlagen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gem-1-senior-code-reviewer-security-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Gem 1: Senior Code Reviewer &amp; Security Auditor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gem-2-technical-documentation-specialist" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Gem 2: Technical Documentation Specialist
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-anthropic-claude-chatbot-prompts-system-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🤖 2. Anthropic Claude Chatbot: Prompts &amp; System Prompts
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 2. Anthropic Claude Chatbot: Prompts &amp; System Prompts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-besonderheiten-von-anthropic-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Die Besonderheiten von Anthropic Claude
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#die-xml-tag-struktur-fur-claude-system-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Die XML-Tag Struktur für Claude System Prompts
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#praxiserprobte-claude-prompts-system-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Praxiserprobte Claude Prompts &amp; System Prompts
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Praxiserprobte Claude Prompts &amp; System Prompts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claude-system-prompt-deep-technical-debugger-refactorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Claude System Prompt: Deep Technical Debugger &amp; Refactorer
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude-prompt-fur-claude-projects-custom-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Claude Prompt für Claude Projects (Custom Instructions)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-prompts-fur-mdbook-buchabschnitte-dokumentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📚 3. Prompts für mdBook Buchabschnitte &amp; Dokumentation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 3. Prompts für mdBook Buchabschnitte &amp; Dokumentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#das-mdbook-zensical-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Das mdBook &amp; Zensical Format
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#master-prompt-mdbook-buchabschnitt-artikel-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Master-Prompt: mdBook Buchabschnitt &amp; Artikel Generator
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-praxis-beispiel-ausgefuhrtes-mdbook-kapitel" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📑 4. Praxis-Beispiel: Ausgeführtes mdBook-Kapitel
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-konfiguration-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚙️ 2. Konfiguration &amp; Streams
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-code-implementierung-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🛠️ 3. Code-Implementierung (Python)
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ 3. Code-Implementierung (Python)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gemini-gem-vorlage-projekt-architect-mdbook-integrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        💎 Gemini Gem Vorlage: "Projekt-Architect &amp; mdBook Integrator"
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatischer-cli-script-helper-python-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🛠️ Automatischer CLI-Script Helper (Python / Bash)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roadmap-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📋 Roadmap &amp; Status
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../gems/projekt/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Meine Gems Liste und Claude Projekt Liste
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programmieren-lernen-ki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Programmieren lernen mit KI
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programmieren-mit-ki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Programmieren mit KI
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vibe-coding-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Vibe Coding & Engineering
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vibe-coding-praxis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Vibe Coding Praxis-Handbuch
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ki-anwendungen-programmieren/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Eigene KI-Anwendungen
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schroedinger-programmiert-ki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Schrödinger programmiert KI
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../lokales-rag-ollama/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  LLM & Serving
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../ai-agents-praxis/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Frameworks & Agenten
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../continue-dev-setup/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tools
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../antigravity-cli/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Antigravity CLI 2 Tutorials
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../content/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Content-Erstellung
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Content-Erstellung
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content/ki-content-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI Content Creation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content/content-strategie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Content-Strategie mit KI
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content/ki-seo-optimierung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI-gestützte SEO-Optimierung
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content/multilinguale-inhalte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Multilinguale Inhalte mit KI
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content/social-media-ki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Social Media Automatisierung
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../content/ki-content-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI Content-Pipeline
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../automatisierung/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Desktop-Automatisierung
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Desktop-Automatisierung
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../automatisierung/pyautogui-anleitung/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  PyAutoGUI
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../automatisierung/playwright-anleitung/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Playwright
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../automatisierung/robot-framework-anleitung/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Robot Framework
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../automatisierung/ydotool-anleitung/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ydotool
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../entwicklung/erste-schritte/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Entwicklung
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../../kreativ/design/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Kreativ
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../../wissen/daten/datenbanken/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Wissen
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../rechtliches/impressum/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Rechtliches
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-google-gemini-chatbot-prompt-gems" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        💎 1. Google Gemini Chatbot: Prompt Gems
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💎 1. Google Gemini Chatbot: Prompt Gems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#was-sind-google-gemini-gems" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Was sind Google Gemini Gems?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-optimale-aufbau-eines-gemini-gem-system-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Der optimale Aufbau eines Gemini Gem System Prompts
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#praxiserprobte-gemini-gems-vorlagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Praxiserprobte Gemini Gems Vorlagen
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Praxiserprobte Gemini Gems Vorlagen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gem-1-senior-code-reviewer-security-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Gem 1: Senior Code Reviewer &amp; Security Auditor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gem-2-technical-documentation-specialist" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Gem 2: Technical Documentation Specialist
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-anthropic-claude-chatbot-prompts-system-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🤖 2. Anthropic Claude Chatbot: Prompts &amp; System Prompts
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 2. Anthropic Claude Chatbot: Prompts &amp; System Prompts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#die-besonderheiten-von-anthropic-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Die Besonderheiten von Anthropic Claude
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#die-xml-tag-struktur-fur-claude-system-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Die XML-Tag Struktur für Claude System Prompts
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#praxiserprobte-claude-prompts-system-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Praxiserprobte Claude Prompts &amp; System Prompts
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Praxiserprobte Claude Prompts &amp; System Prompts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claude-system-prompt-deep-technical-debugger-refactorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Claude System Prompt: Deep Technical Debugger &amp; Refactorer
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude-prompt-fur-claude-projects-custom-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Claude Prompt für Claude Projects (Custom Instructions)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-prompts-fur-mdbook-buchabschnitte-dokumentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📚 3. Prompts für mdBook Buchabschnitte &amp; Dokumentation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 3. Prompts für mdBook Buchabschnitte &amp; Dokumentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#das-mdbook-zensical-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Das mdBook &amp; Zensical Format
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#master-prompt-mdbook-buchabschnitt-artikel-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Master-Prompt: mdBook Buchabschnitt &amp; Artikel Generator
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-praxis-beispiel-ausgefuhrtes-mdbook-kapitel" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📑 4. Praxis-Beispiel: Ausgeführtes mdBook-Kapitel
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-konfiguration-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚙️ 2. Konfiguration &amp; Streams
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-code-implementierung-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🛠️ 3. Code-Implementierung (Python)
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ 3. Code-Implementierung (Python)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gemini-gem-vorlage-projekt-architect-mdbook-integrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        💎 Gemini Gem Vorlage: "Projekt-Architect &amp; mdBook Integrator"
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatischer-cli-script-helper-python-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🛠️ Automatischer CLI-Script Helper (Python / Bash)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roadmap-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📋 Roadmap &amp; Status
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Start
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    KI & Automatisierung
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    KI-Coding
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../ki-coding/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Einstieg
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="prompt-gems-system-prompts-google-gemini-anthropic-claude-mdbook-kapitel">Prompt Gems &amp; System Prompts: Google Gemini, Anthropic Claude &amp; mdBook-Kapitel<a class="headerlink" href="#prompt-gems-system-prompts-google-gemini-anthropic-claude-mdbook-kapitel" title="Permanent link">&para;</a></h1>
+<p>Ein umfassendes Praxis-Handbuch für das Design hochwirksamer <strong>Prompt Gems</strong> (Google Gemini Chatbot), maßgeschneiderter <strong>Claude System-Prompts</strong> (Anthropic Claude Chatbot) sowie spezialisierter <strong>Prompts zur automatisierten Erstellung von mdBook- und Zensical-Buchabschnitten</strong>.</p>
+<hr />
+<h2 id="1-google-gemini-chatbot-prompt-gems">💎 1. Google Gemini Chatbot: Prompt Gems<a class="headerlink" href="#1-google-gemini-chatbot-prompt-gems" title="Permanent link">&para;</a></h2>
+<h3 id="was-sind-google-gemini-gems">Was sind Google Gemini Gems?<a class="headerlink" href="#was-sind-google-gemini-gems" title="Permanent link">&para;</a></h3>
+<p><strong>Gemini Gems</strong> sind benutzerdefinierte KI-Assistenten (Custom Instructions / System Prompts) in Google Gemini. Sie ermöglichen es, ein wiederkehrendes Rollenverhalten, strikte Formatierungsregeln, Fachkontexte und Ausgabestrukturen dauerhaft zu hinterlegen, sodass der Gemini Chatbot bei jeder Interaktion konsistent und hochspezialisiert agiert.</p>
+<pre class="mermaid"><code>graph TD
+    User["User Prompt / Eingabe"] --&gt; Gem["Gemini Gem (System Instructions)"]
+    Gem --&gt; Role["Role &amp; Persona Definition"]
+    Gem --&gt; Constraints["Strict Rules &amp; Edge Cases"]
+    Gem --&gt; Format["Output Formatting (Markdown / JSON)"]
+    Role --&gt; Output["Optimierte Gemini Antwort"]
+    Constraints --&gt; Output
+    Format --&gt; Output</code></pre>
+<h3 id="der-optimale-aufbau-eines-gemini-gem-system-prompts">Der optimale Aufbau eines Gemini Gem System Prompts<a class="headerlink" href="#der-optimale-aufbau-eines-gemini-gem-system-prompts" title="Permanent link">&para;</a></h3>
+<p>Ein professionelles Gemini Gem besteht aus fünf essenziellen Bausteinen:</p>
+<ol>
+<li><strong>Role &amp; Persona (Wer bin ich?)</strong>: Definition der Expertise, des Dienstgrades und des Kommunikationsstils.</li>
+<li><strong>Objective (Was ist mein Ziel?)</strong>: Exakte Beschreibung der Hauptaufgabe und des angestrebten Ergebnisses.</li>
+<li><strong>Rules &amp; Constraints (Was darf ich / was darf ich nicht?)</strong>: Strikte Positiv- und Negativregeln (z. B. "Keine Platzhalter", "Nur valider Code").</li>
+<li><strong>Output Format (Wie strukturiere ich Antworten?)</strong>: Vorgabe von Markdown-Elementen, Tabellen, Mermaid-Diagrammen oder JSON-Schemata.</li>
+<li><strong>Edge Case Handling (Wie reagiere ich auf Fehler?)</strong>: Anweisungen für unvollständige Eingaben oder fehlende Informationen.</li>
+</ol>
+<hr />
+<h3 id="praxiserprobte-gemini-gems-vorlagen">🚀 Praxiserprobte Gemini Gems Vorlagen<a class="headerlink" href="#praxiserprobte-gemini-gems-vorlagen" title="Permanent link">&para;</a></h3>
+<h4 id="gem-1-senior-code-reviewer-security-auditor">Gem 1: Senior Code Reviewer &amp; Security Auditor<a class="headerlink" href="#gem-1-senior-code-reviewer-security-auditor" title="Permanent link">&para;</a></h4>
+<p>Füge folgenden Text als System-Instruktion in deine Gemini Gem Konfiguration ein:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Du bist ein erfahrener Principal Software Architect und Cybersecurity Auditor. 
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Deine Aufgabe ist das gründliche Review von Code-Snippets, Pull Requests und Software-Architekturen.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gu">### REGEN &amp; VERHALTEN:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">1.</span> Analysiere den übergebenen Code auf Sicherheitsschwachstellen (OWASP Top 10), Performance-Flaschenhälse, Speicherlecks und Anti-Patterns.
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">2.</span> Gib keine allgemeinen Ratschläge, sondern erstelle konkrete, produktionsreife Code-Korrekturen als Git-Diffs oder vollständige Blöcke.
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">3.</span> Vergleiche deinen Vorschlag mit dem Original und begründe Refactorings anhand von SOLID-Prinzipien und Clean Code Standards.
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="gu">### AUSGABEFORMAT:</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Executive Summary**</span>: 2-3 Sätze zum Gesamtzustand des Codes.
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Critical Findings**</span>: Tabelle mit Spalten [Schweregrad, Komponente, Beschreibung, OWASP-Kategorie].
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Refactored Code**</span>: Der verbesserte Code in sauberen Markdown-Blöcken.
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Architecture Impact**</span>: (Falls relevant) Mermaid-Diagramm zur Visualisierung des Datenflusses.
+</span></code></pre></div>
+<h4 id="gem-2-technical-documentation-specialist">Gem 2: Technical Documentation Specialist<a class="headerlink" href="#gem-2-technical-documentation-specialist" title="Permanent link">&para;</a></h4>
+<p>Dieser Gem verwandelt unstrukturierte Entwickler-Notizen in strukturierte technische Dokumentation:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Du bist ein Technical Lead Documentation Writer für Enterprise-Software-Systeme.
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Deine Aufgabe ist es, Notizen, Ticket-Beschreibungen und Code-Kommentare in verständliche, hochprofessionelle technische Handbücher umzuwandeln.
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="gu">### REGELN:</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">-</span><span class="w"> </span>Nutze präzise deutsche Fachbegriffe (bzw. etablierte englische Fachausdrücke in der Softwareentwicklung).
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">-</span><span class="w"> </span>Optimiere den Text für statische Dokumentations-Generatoren (wie Zensical, MkDocs oder mdBook).
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">-</span><span class="w"> </span>Verwende immer prägnante Überschriften (H1 bis H4), Hinweis-Boxen (Admonitions) und tabellarische Übersichten.
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">-</span><span class="w"> </span>Erstelle bei komplexen Abläufen stets ein lesbares Mermaid-Flussdiagramm.
+</span></code></pre></div>
+<hr />
+<h2 id="2-anthropic-claude-chatbot-prompts-system-prompts">🤖 2. Anthropic Claude Chatbot: Prompts &amp; System Prompts<a class="headerlink" href="#2-anthropic-claude-chatbot-prompts-system-prompts" title="Permanent link">&para;</a></h2>
+<h3 id="die-besonderheiten-von-anthropic-claude">Die Besonderheiten von Anthropic Claude<a class="headerlink" href="#die-besonderheiten-von-anthropic-claude" title="Permanent link">&para;</a></h3>
+<p>Anthropic Claude (z. B. Claude 3.5 Sonnet, Claude 3.7 Sonnet) zeichnet sich durch hervorragende Logik, Code-Generierung und die Fähigkeit aus, komplexe Instruktionen über <strong>XML-Tags</strong> präzise zu parsen und zu befolgen.</p>
+<pre class="mermaid"><code>graph LR
+    Sub1["&lt;instructions&gt;"] --&gt; Process["Claude Context Engine"]
+    Sub2["&lt;context&gt;"] --&gt; Process
+    Sub3["&lt;rules&gt;"] --&gt; Process
+    Sub4["&lt;output&gt;"] --&gt; Process
+    Process --&gt; Think["&lt;thinking&gt; CoT Analysis "]
+    Think --&gt; Ans["Final Response"]</code></pre>
+<h3 id="die-xml-tag-struktur-fur-claude-system-prompts">Die XML-Tag Struktur für Claude System Prompts<a class="headerlink" href="#die-xml-tag-struktur-fur-claude-system-prompts" title="Permanent link">&para;</a></h3>
+<p>Claude reagiert am besten auf eine semantische Strukturierung mit HTML/XML-Tags:</p>
+<ul>
+<li><code>&lt;context&gt;</code>: Hintergrundinformationen zum Projekt oder System.</li>
+<li><code>&lt;instructions&gt;</code>: Die primären Handlungsanweisungen.</li>
+<li><code>&lt;rules&gt;</code>: Strikte Leitplanken und Einschränkungen.</li>
+<li><code>&lt;thinking&gt;</code>: Aufforderung zur internen Schritt-für-Schritt-Analyse (Chain-of-Thought).</li>
+<li><code>&lt;output_format&gt;</code>: Exakte Vorgaben zum Ausgabeformat.</li>
+</ul>
+<hr />
+<h3 id="praxiserprobte-claude-prompts-system-prompts">🚀 Praxiserprobte Claude Prompts &amp; System Prompts<a class="headerlink" href="#praxiserprobte-claude-prompts-system-prompts" title="Permanent link">&para;</a></h3>
+<h4 id="claude-system-prompt-deep-technical-debugger-refactorer">Claude System Prompt: Deep Technical Debugger &amp; Refactorer<a class="headerlink" href="#claude-system-prompt-deep-technical-debugger-refactorer" title="Permanent link">&para;</a></h4>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&lt;system_instructions&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&lt;context&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span>Du<span class="w"> </span>agierst<span class="w"> </span>als<span class="w"> </span>führender<span class="w"> </span>System-Engineer<span class="w"> </span>und<span class="w"> </span>Debugging-Spezialist.<span class="w"> </span>Du<span class="w"> </span>wirst<span class="w"> </span>mit<span class="w"> </span>komplexen<span class="w"> </span>Fehlermeldungen,<span class="w"> </span>Stack-Traces<span class="w"> </span>und<span class="w"> </span>fehlerhaftem<span class="w"> </span>Code<span class="w"> </span>konfrontiert.
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">&lt;/context&gt;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">&lt;instructions&gt;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span>1.<span class="w"> </span>Lies<span class="w"> </span>den<span class="w"> </span>übergebenen<span class="w"> </span>Traceback<span class="w"> </span>/<span class="w"> </span>Code<span class="w"> </span>sorgfältig<span class="w"> </span>durch.
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span>2.<span class="w"> </span>Identifiziere<span class="w"> </span>die<span class="w"> </span>tatsächliche<span class="w"> </span>Ursache<span class="w"> </span>(Root<span class="w"> </span>Cause),<span class="w"> </span>nicht<span class="w"> </span>nur<span class="w"> </span>Symptome.
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span>3.<span class="w"> </span>Entwickle<span class="w"> </span>eine<span class="w"> </span>minimalinvasive,<span class="w"> </span>aber<span class="w"> </span>vollständige<span class="w"> </span>Lösung.
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="nt">&lt;/instructions&gt;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="nt">&lt;rules&gt;</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span>-<span class="w"> </span>Lösche<span class="w"> </span>NIEMALS<span class="w"> </span>bestehende<span class="w"> </span>Fehlerbehandlungen<span class="w"> </span>oder<span class="w"> </span>Unit-Tests,<span class="w"> </span>um<span class="w"> </span>Fehler<span class="w"> </span>stumm<span class="w"> </span>zu<span class="w"> </span>schalten.
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span>-<span class="w"> </span>Begründe<span class="w"> </span>jeden<span class="w"> </span>einzelnen<span class="w"> </span>Schritt<span class="w"> </span>anhand<span class="w"> </span>empirischer<span class="w"> </span>Code-Evidenz.
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span>-<span class="w"> </span>Schreibe<span class="w"> </span>vor<span class="w"> </span>dem<span class="w"> </span>Ausgeben<span class="w"> </span>des<span class="w"> </span>fertigen<span class="w"> </span>Codes<span class="w"> </span>eine<span class="w"> </span>Denkphase<span class="w"> </span>in<span class="w"> </span><span class="nt">&lt;thinking&gt;</span>...<span class="nt">&lt;/thinking&gt;</span><span class="w"> </span>Tags.
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="nt">&lt;/rules&gt;</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">  </span><span class="nt">&lt;output_format&gt;</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span>1.<span class="w"> </span><span class="nt">&lt;root_cause_analysis&gt;</span>:<span class="w"> </span>Detaillierte<span class="w"> </span>Ursachenanalyse.
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span>2.<span class="w"> </span><span class="nt">&lt;solution_code&gt;</span>:<span class="w"> </span>Der<span class="w"> </span>korrigierte<span class="w"> </span>Code<span class="w"> </span>mit<span class="w"> </span>klaren<span class="w"> </span>Kommentaren.
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span>3.<span class="w"> </span><span class="nt">&lt;verification_steps&gt;</span>:<span class="w"> </span>Schritte<span class="w"> </span>oder<span class="w"> </span>Befehle<span class="w"> </span>zur<span class="w"> </span>Überprüfung<span class="w"> </span>der<span class="w"> </span>Lösung.
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span><span class="nt">&lt;/output_format&gt;</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="nt">&lt;/system_instructions&gt;</span>
+</span></code></pre></div>
+<h4 id="claude-prompt-fur-claude-projects-custom-instructions">Claude Prompt für Claude Projects (Custom Instructions)<a class="headerlink" href="#claude-prompt-fur-claude-projects-custom-instructions" title="Permanent link">&para;</a></h4>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Du bist mein KI-Pair-Programming-Partner in diesem Claude Project.
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Beachte bei jeder Interaktion folgende Prinzipien:
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">1.</span> <span class="gs">**Keine Platzhalter**</span>: Vermeide Kommentare wie <span class="sb">`// TODO: hier Code einfügen`</span> oder <span class="sb">`... restlicher Code ...`</span>. liefere immer den vollständigen, funktionierenden Codeblock.
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">2.</span> <span class="gs">**Architektur-Fokus**</span>: Achte auf saubere Schichtentrennung (Separation of Concerns) und Vermeidung von Nebeneffekten.
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">3.</span> <span class="gs">**Markdown Standards**</span>: Verwende Standard-Markdown mit eindeutiger Sprachauszeichnung für Code-Fences (z. B. <span class="sb">`python`</span>, <span class="sb">`typescript`</span>, <span class="sb">`bash`</span>, <span class="sb">`mermaid`</span>).
+</span></code></pre></div>
+<hr />
+<h2 id="3-prompts-fur-mdbook-buchabschnitte-dokumentation">📚 3. Prompts für mdBook Buchabschnitte &amp; Dokumentation<a class="headerlink" href="#3-prompts-fur-mdbook-buchabschnitte-dokumentation" title="Permanent link">&para;</a></h2>
+<h3 id="das-mdbook-zensical-format">Das mdBook &amp; Zensical Format<a class="headerlink" href="#das-mdbook-zensical-format" title="Permanent link">&para;</a></h3>
+<p><strong>mdBook</strong> (sowie MkDocs und Zensical) verarbeitet Markdown-Dateien zu interaktiven E-Books und Dokumentations-Portalen. Ein professioneller Buchabschnitt zeichnet sich aus durch:</p>
+<ul>
+<li><strong>Eindeutige Struktur</strong>: Eine prägnante H1-Hauptüberschrift, logische H2- und H3-Abschnitte.</li>
+<li><strong>Kompakte Zusammenfassungen</strong>: Tabellen für schnelle Übersicht und Vergleiche.</li>
+<li><strong>Visuelle Elemente</strong>: Mermaid.js-Diagramme zur Darstellung von Architektur und Datenfluss.</li>
+<li><strong>Signal-Boxen (Admonitions)</strong>: Hinweise (<code>!!! note</code>), Warnungen (<code>!!! warning</code>), Tipps (<code>!!! tip</code>).</li>
+<li><strong>Valide Mermaid-Syntax</strong>: Knotenbeschriftungen mit Sonderzeichen müssen zwingend in Anführungszeichen gesetzt sein (<code>ID["Text (Detail)"]</code>).</li>
+</ul>
+<hr />
+<h3 id="master-prompt-mdbook-buchabschnitt-artikel-generator">🚀 Master-Prompt: mdBook Buchabschnitt &amp; Artikel Generator<a class="headerlink" href="#master-prompt-mdbook-buchabschnitt-artikel-generator" title="Permanent link">&para;</a></h3>
+<p>Verwende diesen Master-Prompt in <strong>Google Gemini</strong> oder <strong>Anthropic Claude</strong>, um aus einem beliebigen Thema oder Stichpunkt-Konzept einen druckreifen mdBook-Buchabschnitt zu generieren:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Du bist ein technischer Fachbuch-Autor und Dokumentations-Architekt für mdBook und Zensical.
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Deine Aufgabe ist es, aus dem unten stehenden Thema einen vollständigen, lehrreichen und professionellen Buchabschnitt (Markdown-Datei) zu verfassen.
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="gu">### THOMA / INHALT:</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>[Füge hier dein Thema, Notizen oder Gliederungspunkte ein]
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="gu">### ANFORDERUNGEN AN DEN BUCHABSCHNITT:</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">1.</span> <span class="gs">**Titel &amp; Struktur**</span>:
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Beginn mit einer prägnanten H1-Überschrift <span class="sb">`# ...`</span>.
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Einleitungssatz, der den praktischen Nutzen des Kapitels beschreibt.
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Gliederung in 3 bis 5 logische Abschnitte (H2 <span class="sb">`##`</span> und H3 <span class="sb">`###`</span>).
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="k">2.</span> <span class="gs">**Diagramm-Pflicht (Mermaid.js)**</span>:
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Füge mindestens ein valides Mermaid-Diagramm (<span class="sb">` `</span>``mermaid `) ein.
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>WICHTIG: Alle Knotenbeschriftungen mit Sonderzeichen (Pfade, Doppelpunkte, Klammern, Emojis) MÜSSEN in doppelte Anführungszeichen gesetzt werden! Z.B.: <span class="sb">`A[&quot;Server: /api/v1&quot;] --&gt; B[&quot;Database (PostgreSQL)&quot;]`</span>.
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="k">3.</span> <span class="gs">**Interaktive Elemente &amp; Formatierung**</span>:
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Nutze Admonition-Boxen für wichtige Hinweise: <span class="sb">`!!! note &quot;Hinweis&quot;`</span>, <span class="sb">`!!! tip &quot;Tipp&quot;`</span>, <span class="sb">`!!! warning &quot;Achtung&quot;`</span>.
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Verwende Markdown-Tabellen für Vergleiche, Parameter oder Begriffserklärungen.
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Verwende vollständige, syntaktisch korrekte Code-Beispiele mit passendem Language Tag.
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="k">4.</span> <span class="gs">**Tonalität**</span>:
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Professionalität, Klarheit, präzise deutsche Sprache (technische Fachbegriffe im Original-Englisch belassen).
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Vermeide unnötiges Füllwort-Blabla, baue stattdessen konkrete Praxisbeispiele ein.
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>Generiere jetzt den vollständigen Markdown-Code für den mdBook-Buchabschnitt!
+</span></code></pre></div>
+<hr />
+<h2 id="4-praxis-beispiel-ausgefuhrtes-mdbook-kapitel">📑 4. Praxis-Beispiel: Ausgeführtes mdBook-Kapitel<a class="headerlink" href="#4-praxis-beispiel-ausgefuhrtes-mdbook-kapitel" title="Permanent link">&para;</a></h2>
+<p>Hier ist ein Beispiel für ein mdBook-Kapitel, das mit dem obigen Master-Prompt generiert wurde:</p>
+<hr />
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="gh"># Kapitel 4: Event-Driven Microservices mit NATS JetStream</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Dieses Kapitel behandelt die Implementierung ereignisgesteuerter Microservices-Architekturen unter Verwendung von NATS JetStream. Sie lernen, wie Sie entkoppelte Messaging-Systeme aufbauen, Persistence-Guarantees konfigurieren und Failover-Szenarien beherrschen.
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="gu">## 🏗️ 1. Architektur-Überblick</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>In einer ereignisgesteuerten Architektur kommunizieren Services nicht mehr synchron über REST-APIs, sondern asynchron über einen zentralen Event Broker.
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>```mermaid
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>graph TD
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    OrderSvc[&quot;Order Service (Producer)&quot;] --&gt;|&quot;Publish event: order.created&quot;| NATS[&quot;NATS JetStream (Stream Store)&quot;]
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    NATS --&gt;|&quot;Deliver msg&quot;| PaymentSvc[&quot;Payment Service (Consumer)&quot;]
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    NATS --&gt;|&quot;Deliver msg&quot;| InventorySvc[&quot;Inventory Service (Consumer)&quot;]
+</span></code></pre></div>
+<h2 id="2-konfiguration-streams">⚙️ 2. Konfiguration &amp; Streams<a class="headerlink" href="#2-konfiguration-streams" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Eigenschaft</th>
+<th>Beschreibung</th>
+<th>Empfohlener Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Storage Engine</strong></td>
+<td>Speicherort der Nachrichten (File vs. Memory)</td>
+<td><code>File</code> für Produktion</td>
+</tr>
+<tr>
+<td><strong>Replicas</strong></td>
+<td>Anzahl der Cluster-Kopien</td>
+<td><code>3</code> für High Availability</td>
+</tr>
+<tr>
+<td><strong>Max Retention</strong></td>
+<td>Aufbewahrungsdauer von Events</td>
+<td><code>Limits</code> oder <code>WorkQueue</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Performance Tipp</p>
+<p>Verwende bei hohem Durchsatz <code>Memory</code>-Storage für ephemere Caches und <code>File</code>-Storage ausschließlich für abrechnungsrelevante Events.</p>
+</div>
+<h2 id="3-code-implementierung-python">🛠️ 3. Code-Implementierung (Python)<a class="headerlink" href="#3-code-implementierung-python" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">nats</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="n">nc</span> <span class="o">=</span> <span class="k">await</span> <span class="n">nats</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;nats://localhost:4222&quot;</span><span class="p">)</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">js</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">jetstream</span><span class="p">()</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="c1"># Stream erstellen</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="k">await</span> <span class="n">js</span><span class="o">.</span><span class="n">add_stream</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;ORDERS&quot;</span><span class="p">,</span> <span class="n">subjects</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;orders.*&quot;</span><span class="p">])</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="c1"># Event publizieren</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="n">ack</span> <span class="o">=</span> <span class="k">await</span> <span class="n">js</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s2">&quot;orders.created&quot;</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;{&quot;order_id&quot;: 1042, &quot;amount&quot;: 99.50}&#39;</span><span class="p">)</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Published event to stream: </span><span class="si">{</span><span class="n">ack</span><span class="o">.</span><span class="n">stream</span><span class="si">}</span><span class="s2">, sequence: </span><span class="si">{</span><span class="n">ack</span><span class="o">.</span><span class="n">seq</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    <span class="k">await</span> <span class="n">nc</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>    <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: Message Acknowledgements</p>
+<p>Stelle sicher, dass Consumer-Services manuelle Acks (<code>msg.ack()</code>) senden. Bei automatischem Ack droht Datenverlust bei verfrühtem Process-Crash.</p>
+</div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>---
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>## 💡 5. Zusammenfassung &amp; Best Practices
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>1. **Gemini Gems**: Nutze Gems für fest definierte Assistenten-Rollen mit klaren Randbedingungen und Vorlagenstrukturen.
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>2. **Claude Prompts**: Nutze XML-Tags (`&lt;instructions&gt;`, `&lt;rules&gt;`, `&lt;thinking&gt;`), um Claude bei komplexen Aufgaben deterministisch zu steuern.
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>3. **mdBook &amp; Zensical Generierung**: Verwende strukturierte Master-Prompts, um technische Buchkapitel konsistent, mit Mermaid-Diagrammen und Admonitions zu erzeugen.
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>---
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>## ⚡ 6. Gemini Gem Workflow: Neue Unterkategorie &amp; automatisches `projekt.md` in mdBook
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>Wenn in einem Wissensportal oder mdBook-Buch eine neue **Unterkategorie / ein neues Projekt** angelegt wird, soll der Google Gemini Chatbot automatisch eine vorgefertigte `projekt.md`-Datei erstellen und diese direkt in das Inhaltsverzeichnis von **mdBook (`SUMMARY.md`)** oder **MkDocs (`mkdocs.yml`)** eintragen.
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>```mermaid
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>graph TD
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>    User[&quot;User: &#39;Neues Projekt Alpha&#39;&quot;] --&gt; Gem[&quot;Gemini Gem Integrator&quot;]
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>    Gem --&gt; GenMD[&quot;Generiert: docs/bereich/alpha/projekt.md&quot;]
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>    Gem --&gt; UpdateNav[&quot;Aktualisiert: SUMMARY.md / mkdocs.yml&quot;]
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>    GenMD --&gt; Build[&quot;mdBook / Zensical Build&quot;]
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>    UpdateNav --&gt; Build
+</span></code></pre></div>
+<h3 id="gemini-gem-vorlage-projekt-architect-mdbook-integrator">💎 Gemini Gem Vorlage: "Projekt-Architect &amp; mdBook Integrator"<a class="headerlink" href="#gemini-gem-vorlage-projekt-architect-mdbook-integrator" title="Permanent link">&para;</a></h3>
+<p>Füge diese System-Instruktion in dein Google Gemini Gem ein:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Du bist ein automatisierter Project Architect für mdBook und MkDocs Dokumentationssysteme.
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>Deine Aufgabe ist es, bei der Erstellung neuer Unterkategorien oder Projekte eine leere, professionell strukturierte <span class="sb">`projekt.md`</span> zu generieren und den passenden Navigations-Eintrag für <span class="sb">`SUMMARY.md`</span> (mdBook) und <span class="sb">`mkdocs.yml`</span> (MkDocs/Zensical) bereitzustellen.
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="gu">### INSTRUCTIONEN:</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">1.</span> Erstelle bei der Projektanfrage den vollständigen Ordnerpfad (z. B. <span class="sb">`docs/&lt;bereich&gt;/&lt;projektname&gt;/projekt.md`</span>).
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="k">2.</span> Generiere eine leere, aber strukturierte <span class="sb">`projekt.md`</span> Schablone mit folgenden Abschnitten:
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span><span class="sb">`# Projekt: [Projektname]`</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span><span class="sb">`## 🎯 Ziel &amp; Zweck`</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span><span class="sb">`## 🏗️ Architektur &amp; Komponenten`</span> (inkl. Mermaid-Platzhalter)
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span><span class="sb">`## 📋 Aufgaben &amp; Roadmap`</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span><span class="sb">`## 🔗 Links &amp; Referenzen`</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="k">3.</span> Erzeuge die exakten Zeilen, die in <span class="sb">`SUMMARY.md`</span> (mdBook) und <span class="sb">`mkdocs.yml`</span> eingefügt werden müssen.
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="gu">### AUSGABEFORMAT:</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Block 1**</span>: Datei <span class="sb">`projekt.md`</span> (Markdown)
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Block 2**</span>: mdBook Integration (<span class="sb">`SUMMARY.md`</span> Snippet)
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Block 3**</span>: MkDocs Integration (<span class="sb">`mkdocs.yml`</span> Snippet)
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Block 4**</span>: Automations-Befehl (CLI-Einzeiler zum automatischen Schreiben)
+</span></code></pre></div>
+<hr />
+<h3 id="automatischer-cli-script-helper-python-bash">🛠️ Automatischer CLI-Script Helper (Python / Bash)<a class="headerlink" href="#automatischer-cli-script-helper-python-bash" title="Permanent link">&para;</a></h3>
+<p>Mit folgendem leichtgewichtigen Python-Skript <code>add_project.py</code> kann der Gemini Chatbot (oder der lokale Entwickler) ein neues Projekt mit leerer <code>projekt.md</code> in einer Unterkategorie anlegen und automatisch in <code>SUMMARY.md</code> (mdBook) bzw. <code>mkdocs.yml</code> eintragen:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="ch">#!/usr/bin/env python3</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">yaml</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">add_project_to_mdbook</span><span class="p">(</span><span class="n">bereich</span><span class="p">,</span> <span class="n">projekt_name</span><span class="p">,</span> <span class="n">titel</span><span class="p">):</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="c1"># Pfad definieren</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    <span class="n">rel_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;docs/</span><span class="si">{</span><span class="n">bereich</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">projekt_name</span><span class="si">}</span><span class="s2">/projekt.md&quot;</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">rel_path</span><span class="p">),</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    <span class="c1"># 1. Leeres projekt.md anlegen (falls noch nicht vorhanden)</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">rel_path</span><span class="p">):</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>        <span class="n">template</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;# Projekt: </span><span class="si">{</span><span class="n">titel</span><span class="si">}</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="s2">Willkommen zur Dokumentation von **</span><span class="si">{</span><span class="n">titel</span><span class="si">}</span><span class="s2">**.</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="s2">## 🎯 Ziel &amp; Zweck</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="s2">Beschreibung des Projekts und dessen Hauptaufgaben.</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="s2">## 🏗️ Architektur</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="s2">```mermaid</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="s2">graph TD</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="s2">    A[&quot;Client&quot;] --&gt; B[&quot;</span><span class="si">{</span><span class="n">titel</span><span class="si">}</span><span class="s2"> API&quot;]</span>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="s2">    B --&gt; C[(&quot;Datenbank&quot;)]</span>
+</span></code></pre></div>
+<h2 id="roadmap-status">📋 Roadmap &amp; Status<a class="headerlink" href="#roadmap-status" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[ ] Initiales Setup</li>
+<li>[ ] Architektur-Review</li>
+<li>
+<p>[ ] Deployment
+"""
+        with open(rel_path, "w", encoding="utf-8") as f:
+            f.write(template)
+        print(f"✅ Erstellt: {rel_path}")</p>
+<h1 id="2-in-mkdocsyml-oder-summarymd-eintragen">2. In mkdocs.yml (oder SUMMARY.md) eintragen<a class="headerlink" href="#2-in-mkdocsyml-oder-summarymd-eintragen" title="Permanent link">&para;</a></h1>
+<p>mkdocs_file = "mkdocs.yml"
+if os.path.exists(mkdocs_file):
+    with open(mkdocs_file, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)</p>
+<div class="language-text highlight"><pre><span></span><code>print(f&quot;💡 Füge &#39;{titel}&#39; unter {bereich} in {mkdocs_file} ein...&quot;)
+# Automatische Registrierung...
+</code></pre></div>
+<h1 id="3-in-mdbook-summarymd-eintragen">3. In mdBook SUMMARY.md eintragen<a class="headerlink" href="#3-in-mdbook-summarymd-eintragen" title="Permanent link">&para;</a></h1>
+<p>summary_file = "src/SUMMARY.md"
+if os.path.exists(summary_file):
+    entry = f"  * <a href="../{bereich}/{projekt_name}/projekt/">{titel}</a>\n"
+    with open(summary_file, "a", encoding="utf-8") as f:
+        f.write(entry)
+    print(f"✅ In mdBook SUMMARY.md eingetragen: {entry.strip()}")</p>
+</li>
+</ul>
+<p>if <strong>name</strong> == "<strong>main</strong>":
+    if len(sys.argv) &lt; 4:
+        print("Usage: python3 add_project.py <bereich> <projekt_name> '<Titel>'")
+        sys.exit(1)
+    add_project_to_mdbook(sys.argv[1], sys.argv[2], sys.argv[3])
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Verwendung im Terminal:
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>```bash
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>python3 add_project.py ki-coding meinsuperprojekt &quot;Mein Super Projekt&quot;
+</span></code></pre></div></p>
+<hr />
+<h2 id="7-meine-personliche-prompt-bibliothek-prompt-store-merkliste">📝 7. Meine persönliche Prompt-Bibliothek (Prompt Store &amp; Merkliste)<a class="headerlink" href="#7-meine-personliche-prompt-bibliothek-prompt-store-merkliste" title="Permanent link">&para;</a></h2>
+<p>Verwende diesen Bereich als deine persönliche <strong>Prompt-Bibliothek</strong>, um eigene Lieblings-Prompts, maßgeschneiderte Gemini Gems, Claude XML-Prompts und mdBook-Kapitel-Generatoren dauerhaft zu speichern, zu strukturieren und schnell wiederzufinden.</p>
+<pre class="mermaid"><code>graph TD
+    User["Dein neuer Prompt"] --&gt; Store["Persönliche Prompt-Bibliothek"]
+    Store --&gt; Cat1["Gemini Gems"]
+    Store --&gt; Cat2["Claude Prompts"]
+    Store --&gt; Cat3["mdBook Generatoren"]
+    Store --&gt; Cat4["Eigene Workflows"]</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Tipp zur Nutzung</p>
+<p>Kopiere die unten stehende <strong>Standard-Vorlage</strong>, wann immer du einen neuen Prompt speichern möchtest. So behältst du Modell-Einstellungen, Einsatzzwecke und Ergebnisse stets im Blick.</p>
+</div>
+<hr />
+<h3 id="standard-vorlage-fur-neue-prompts">📋 Standard-Vorlage für neue Prompts<a class="headerlink" href="#standard-vorlage-fur-neue-prompts" title="Permanent link">&para;</a></h3>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="gu">### 📌 [Name deines Prompts / Gems]</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Ziel / Anwendungsfall**</span>: [z. B. Code-Review, Dokumentation, Refactoring]
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Ziel-Modell / Chatbot**</span>: [Google Gemini / Anthropic Claude / ChatGPT]
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Empfohlene Parameter**</span>: <span class="sb">`Temperature: 0.2`</span>, <span class="sb">`Top-P: 0.9`</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="gu">#### Prompt / System Instruktion:</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>```markdown
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>[Hier deinen eigenen Prompt-Text einfügen]
+</span></code></pre></div>
+<h4 id="beispiel-eingabe-user-input">Beispiel-Eingabe (User Input):<a class="headerlink" href="#beispiel-eingabe-user-input" title="Permanent link">&para;</a></h4>
+<p><div class="language-markdown highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>[Hier ein Beispiel für die Eingabe einfügen]
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>---
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>### 📂 Eigene Prompts (Speicherbereich)
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>#### 📌 Eigener Prompt 1: [Titel eintragen]
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>- **Ziel / Anwendungsfall**: [Zweck beschreiben]
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>- **Ziel-Modell**: Google Gemini / Claude
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>- **Status**: 🟢 Aktiv im Einsatz
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>```markdown
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>[Füge hier deinen ersten eigenen Prompt ein]
+</span></code></pre></div></p>
+<hr />
+<h4 id="eigener-prompt-2-titel-eintragen">📌 Eigener Prompt 2: [Titel eintragen]<a class="headerlink" href="#eigener-prompt-2-titel-eintragen" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Ziel / Anwendungsfall</strong>: [Zweck beschreiben]</li>
+<li><strong>Ziel-Modell</strong>: Google Gemini / Claude</li>
+<li><strong>Status</strong>: 🟡 In Testphase</li>
+</ul>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>[Füge hier deinen zweiten eigenen Prompt ein]
+</span></code></pre></div>
+<hr />
+<h4 id="eigener-prompt-3-weitere-prompts-erganzen">📌 Eigener Prompt 3: [Weitere Prompts ergänzen]<a class="headerlink" href="#eigener-prompt-3-weitere-prompts-erganzen" title="Permanent link">&para;</a></h4>
+<ul>
+<li><em>Nutze diesen Bereich frei für beliebig viele neue Prompts und Gem-Ideen.</em></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        War diese Seite hilfreich?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Diese Seite war hilfreich" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Diese Seite könnte besser sein" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Danke für das Feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Danke für das Feedback. Helfen Sie uns, diese Seite zu verbessern.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
+        
+          
+          <a href="../prompt-engineering-praxis/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Prompt Engineering Praxis-Handbuch">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              <div class="md-ellipsis">
+                Prompt Engineering Praxis-Handbuch
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../gems/projekt/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Projekt">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              <div class="md-ellipsis">
+                Projekt
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+        
+          <div class="md-copyright__highlight">
+            Copyright &copy; Wissen Ahrensburg
+            &middot;
+            <a href="../../../rechtliches/impressum/">Impressum</a>
+            &middot;
+            <a href="../../../rechtliches/datenschutz/">Datenschutz</a>
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+      </div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://wissen-ahrensburg.de" target="_blank" rel="noopener" title="Wissen Ahrensburg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+  
+
+<h4>Cookie-Zustimmung</h4>
+<p>Wir verwenden Cookies, um Ihre Besuche und Präferenzen zu erkennen und die Effektivität unserer Dokumentation zu messen.</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Akzeptieren</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Ablehnen</button>
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.top","navigation.sections","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.path","navigation.prune","navigation.footer","search.suggest","search.highlight","search.share","content.code.copy","content.code.annotate","content.code.select","content.tooltips","content.tabs.link","content.action.view","toc.follow"],"search":"../../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"In Zwischenablage kopiert","clipboard.copy":"In Zwischenablage kopieren","search.result.more.one":"1 weiteres Suchergebnis auf dieser Seite","search.result.more.other":"# weitere Suchergebnisse auf dieser Seite","search.result.none":"Keine Suchergebnisse","search.result.one":"1 Suchergebnis","search.result.other":"# Suchergebnisse","search.result.placeholder":"Suchbegriff eingeben","search.result.term.missing":"Es fehlt","select.version":"Version auswählen"},"version":null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7f30b55.min.js"></script>
+      
+    
+  </body>
+</html>

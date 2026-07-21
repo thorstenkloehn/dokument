@@ -4,9 +4,6 @@
         <loc>https://dokument.wissen-ahrensburg.de/</loc>
       </url>
       <url>
-        <loc>https://dokument.wissen-ahrensburg.de/tags/</loc>
-      </url>
-      <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/</loc>
       </url>
       <url>
@@ -20,6 +17,12 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/prompt-engineering-praxis/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/prompt-gems-gemini-claude-mdbook/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/gems/projekt/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/programmieren-lernen-ki/</loc>
