@@ -88,6 +88,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/claude-code-praxis/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ki-tools-produktionsserver/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/antigravity-cli/</loc>
       </url>
       <url>
@@ -272,6 +275,9 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/ki-ml-infrastrukturen/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/docker-installation-ubuntu/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/docker-ki-stack/</loc>

@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/claude-code-praxis/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ki-tools-produktionsserver/">
       
       
-        <link rel="prev" href="../continue-dev-setup/">
+        <link rel="prev" href="../claude-code-praxis/">
       
       
-        <link rel="next" href="../ki-tools-produktionsserver/">
+        <link rel="next" href="../antigravity-cli/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Claude Code – Das Praxis-Handbuch & Workflow-Guide - Wissen Ahrensburg</title>
+        <title>KI-Coding-Tools auf dem Produktionsserver — Risiken, Regeln & beste Praxis - Wissen Ahrensburg</title>
       
     
     
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#claude-code-das-praxis-handbuch-workflow-guide" class="md-skip">
+        <a href="#ki-coding-tools-auf-dem-produktionsserver-risiken-regeln-beste-praxis" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Claude Code – Das Praxis-Handbuch &amp; Workflow-Guide
+              KI-Coding-Tools auf dem Produktionsserver — Risiken, Regeln &amp; beste Praxis
             
           </span>
         </div>
@@ -1009,6 +1009,33 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude-code-praxis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Claude Code Praxis-Handbuch
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1028,7 +1055,7 @@
   <span class="md-ellipsis">
     
   
-  Claude Code Praxis-Handbuch
+  KI-Tools auf dem Produktionsserver
 
     
   </span>
@@ -1045,7 +1072,7 @@
   <span class="md-ellipsis">
     
   
-  Claude Code Praxis-Handbuch
+  KI-Tools auf dem Produktionsserver
 
     
   </span>
@@ -1071,22 +1098,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-einfuhrung-architekturgrundlagen" class="md-nav__link">
+  <a href="#warum-diese-frage-wichtig-ist" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🚀 1. Einführung &amp; Architekturgrundlagen
+        Warum diese Frage wichtig ist
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 1. Einführung &amp; Architekturgrundlagen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-drei-tools-im-vergleich" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Die drei Tools im Vergleich
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risikoklassen-auf-dem-produktionsserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Risikoklassen auf dem Produktionsserver
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risikoklassen auf dem Produktionsserver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#was-ist-claude-code" class="md-nav__link">
+  <a href="#hohes-risiko-diese-aktionen-sind-gefahrlich" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Was ist Claude Code?
+        🔴 Hohes Risiko — Diese Aktionen sind gefährlich
       </span>
     </span>
   </a>
@@ -1094,10 +1143,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vibe-coding-vs-agentic-engineering" class="md-nav__link">
+  <a href="#mittleres-risiko-mit-vorsicht-und-approval-modus" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Vibe Coding vs. Agentic Engineering
+        🟡 Mittleres Risiko — Mit Vorsicht und Approval-Modus
       </span>
     </span>
   </a>
@@ -1105,32 +1154,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#was-ist-ein-coding-agent" class="md-nav__link">
+  <a href="#niedriges-risiko-akzeptabel-auf-produktionsservern" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Was ist ein Coding Agent?
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#nutzungsvarianten-ways-to-use-claude" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Nutzungsvarianten (Ways to use Claude)
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setup-authentifizierung" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Setup &amp; Authentifizierung
+        🟢 Niedriges Risiko — Akzeptabel auf Produktionsservern
       </span>
     </span>
   </a>
@@ -1143,22 +1170,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-kernkomponenten-architektursaulen" class="md-nav__link">
+  <a href="#opencode-auf-dem-produktionsserver" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🧩 2. Kernkomponenten &amp; Architektursäulen
+        OpenCode auf dem Produktionsserver
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧩 2. Kernkomponenten &amp; Architektursäulen">
+    <nav class="md-nav" aria-label="OpenCode auf dem Produktionsserver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modellauswahl-when-to-use-what-model" class="md-nav__link">
+  <a href="#wann-sinnvoll" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Modellauswahl (When to use what model?)
+        Wann sinnvoll?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schutzmanahmen-fur-opencode" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Schutzmaßnahmen für OpenCode
       </span>
     </span>
   </a>
@@ -1171,22 +1209,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-befehle-cheatsheet-shortcuts" class="md-nav__link">
+  <a href="#claude-code-auf-dem-produktionsserver" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        ⌨️ 3. Befehle, Cheatsheet &amp; Shortcuts
+        Claude Code auf dem Produktionsserver
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⌨️ 3. Befehle, Cheatsheet &amp; Shortcuts">
+    <nav class="md-nav" aria-label="Claude Code auf dem Produktionsserver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cli-start-parameter-flags" class="md-nav__link">
+  <a href="#die-anthropic-empfehlung" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        CLI Start-Parameter &amp; Flags
+        Die Anthropic-Empfehlung
       </span>
     </span>
   </a>
@@ -1194,10 +1232,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#shortcuts-tasten-prefixes" class="md-nav__link">
+  <a href="#wann-claude-code-auf-prod-akzeptabel-ist" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Shortcuts &amp; Tasten-Prefixes
+        Wann Claude Code auf Prod akzeptabel ist
       </span>
     </span>
   </a>
@@ -1205,10 +1243,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#in-session-slash-commands" class="md-nav__link">
+  <a href="#claude-code-sicher-konfigurieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        In-Session Slash-Commands
+        Claude Code sicher konfigurieren
       </span>
     </span>
   </a>
@@ -1221,22 +1259,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-claude-workflows-session-management" class="md-nav__link">
+  <a href="#antigravity-cli-agy-auf-dem-produktionsserver" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🔄 4. Claude Workflows &amp; Session-Management
+        Antigravity CLI (<code>agy</code>) auf dem Produktionsserver
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔄 4. Claude Workflows &amp; Session-Management">
+    <nav class="md-nav" aria-label="Antigravity CLI (agy) auf dem Produktionsserver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#berechtigungsmodi-permission-modes" class="md-nav__link">
+  <a href="#besonderheiten-von-agy" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Berechtigungsmodi (Permission Modes)
+        Besonderheiten von <code>agy</code>
       </span>
     </span>
   </a>
@@ -1244,10 +1282,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#plan-modus-plan" class="md-nav__link">
+  <a href="#das-docker-backend-als-sicherheitsnetz" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Plan-Modus (<code>/plan</code>)
+        Das Docker-Backend als Sicherheitsnetz
       </span>
     </span>
   </a>
@@ -1255,10 +1293,60 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#session-wiederherstellung-ruckgangigmachen" class="md-nav__link">
+  <a href="#agy-auf-dem-produktionsserver-konkrete-szenarien" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Session-Wiederherstellung &amp; Rückgängigmachen
+        <code>agy</code> auf dem Produktionsserver — konkrete Szenarien
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="agy auf dem Produktionsserver — konkrete Szenarien">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empfohlen-analyse-dokumentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ✅ Empfohlen: Analyse &amp; Dokumentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mit-vorsicht-deployment-unterstutzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚠️ Mit Vorsicht: Deployment-Unterstützung
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nie-autonome-produktionsanderungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ❌ Nie: Autonome Produktionsänderungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentsmd-fur-den-produktionseinsatz" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        AGENTS.md für den Produktionseinsatz
       </span>
     </span>
   </a>
@@ -1271,61 +1359,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-projektsteuerung-erweiterungen" class="md-nav__link">
+  <a href="#der-sichere-produktions-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🛠️ 5. Projektsteuerung &amp; Erweiterungen
+        Der sichere Produktions-Workflow
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🛠️ 5. Projektsteuerung &amp; Erweiterungen">
+    <nav class="md-nav" aria-label="Der sichere Produktions-Workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#claudemd-das-zentrale-regelwerk" class="md-nav__link">
+  <a href="#schritt-fur-schritt-sicheres-ki-gestutztes-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        <code>CLAUDE.md</code> – Das zentrale Regelwerk
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CLAUDE.md – Das zentrale Regelwerk">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#empfohlener-aufbau-einer-claudemd" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Empfohlener Aufbau einer <code>CLAUDE.md</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#skills-wiederverwendbare-funktionspakete" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Skills – Wiederverwendbare Funktionspakete
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hooks-event-gesteuerte-automatisierung" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Hooks – Event-gesteuerte Automatisierung
+        Schritt-für-Schritt: Sicheres KI-gestütztes Deployment
       </span>
     </span>
   </a>
@@ -1338,22 +1387,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-kontext-kostenmanagement" class="md-nav__link">
+  <a href="#secrets-management-das-wichtigste-kapitel" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        💰 6. Kontext- &amp; Kostenmanagement
+        Secrets-Management — Das wichtigste Kapitel
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="💰 6. Kontext- &amp; Kostenmanagement">
+    <nav class="md-nav" aria-label="Secrets-Management — Das wichtigste Kapitel">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#token-effizienz-mit-compact-und-clear" class="md-nav__link">
+  <a href="#regel-1-secrets-immer-ausschlieen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Token-Effizienz mit <code>/compact</code> und <code>/clear</code>
+        Regel 1: Secrets immer ausschließen
       </span>
     </span>
   </a>
@@ -1361,10 +1410,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#extended-thinking-effort-levels" class="md-nav__link">
+  <a href="#regel-2-produktions-secrets-nie-auf-dem-entwicklerrechner" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Extended Thinking &amp; Effort Levels
+        Regel 2: Produktions-Secrets nie auf dem Entwicklerrechner
       </span>
     </span>
   </a>
@@ -1372,10 +1421,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#prompt-caching" class="md-nav__link">
+  <a href="#regel-3-ki-agent-sitzungen-nie-in-offentliche-repositories-committen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Prompt Caching
+        Regel 3: KI-Agent-Sitzungen nie in öffentliche Repositories committen
       </span>
     </span>
   </a>
@@ -1388,49 +1437,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-fortgeschrittene-features-skalierung" class="md-nav__link">
+  <a href="#empfehlungen-nach-einsatzszenario" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        ⚡ 7. Fortgeschrittene Features &amp; Skalierung
+        Empfehlungen nach Einsatzszenario
       </span>
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="⚡ 7. Fortgeschrittene Features &amp; Skalierung">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#model-context-protocol-mcp-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Model Context Protocol (MCP) Integration
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#skalierung-im-team-cicd" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Skalierung im Team &amp; CI/CD
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-verwandte-themen-weiterfuhrende-links" class="md-nav__link">
+  <a href="#checkliste-vor-dem-einsatz-auf-dem-produktionsserver" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🔗 8. Verwandte Themen &amp; Weiterführende Links
+        Checkliste vor dem Einsatz auf dem Produktionsserver
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiterfuhrende-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Weiterführende Links
       </span>
     </span>
   </a>
@@ -1441,33 +1473,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ki-tools-produktionsserver/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  KI-Tools auf dem Produktionsserver
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2456,22 +2461,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-einfuhrung-architekturgrundlagen" class="md-nav__link">
+  <a href="#warum-diese-frage-wichtig-ist" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🚀 1. Einführung &amp; Architekturgrundlagen
+        Warum diese Frage wichtig ist
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 1. Einführung &amp; Architekturgrundlagen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-drei-tools-im-vergleich" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Die drei Tools im Vergleich
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risikoklassen-auf-dem-produktionsserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Risikoklassen auf dem Produktionsserver
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risikoklassen auf dem Produktionsserver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#was-ist-claude-code" class="md-nav__link">
+  <a href="#hohes-risiko-diese-aktionen-sind-gefahrlich" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Was ist Claude Code?
+        🔴 Hohes Risiko — Diese Aktionen sind gefährlich
       </span>
     </span>
   </a>
@@ -2479,10 +2506,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vibe-coding-vs-agentic-engineering" class="md-nav__link">
+  <a href="#mittleres-risiko-mit-vorsicht-und-approval-modus" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Vibe Coding vs. Agentic Engineering
+        🟡 Mittleres Risiko — Mit Vorsicht und Approval-Modus
       </span>
     </span>
   </a>
@@ -2490,32 +2517,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#was-ist-ein-coding-agent" class="md-nav__link">
+  <a href="#niedriges-risiko-akzeptabel-auf-produktionsservern" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Was ist ein Coding Agent?
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#nutzungsvarianten-ways-to-use-claude" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Nutzungsvarianten (Ways to use Claude)
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setup-authentifizierung" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Setup &amp; Authentifizierung
+        🟢 Niedriges Risiko — Akzeptabel auf Produktionsservern
       </span>
     </span>
   </a>
@@ -2528,22 +2533,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-kernkomponenten-architektursaulen" class="md-nav__link">
+  <a href="#opencode-auf-dem-produktionsserver" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🧩 2. Kernkomponenten &amp; Architektursäulen
+        OpenCode auf dem Produktionsserver
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧩 2. Kernkomponenten &amp; Architektursäulen">
+    <nav class="md-nav" aria-label="OpenCode auf dem Produktionsserver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modellauswahl-when-to-use-what-model" class="md-nav__link">
+  <a href="#wann-sinnvoll" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Modellauswahl (When to use what model?)
+        Wann sinnvoll?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schutzmanahmen-fur-opencode" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Schutzmaßnahmen für OpenCode
       </span>
     </span>
   </a>
@@ -2556,22 +2572,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-befehle-cheatsheet-shortcuts" class="md-nav__link">
+  <a href="#claude-code-auf-dem-produktionsserver" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        ⌨️ 3. Befehle, Cheatsheet &amp; Shortcuts
+        Claude Code auf dem Produktionsserver
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⌨️ 3. Befehle, Cheatsheet &amp; Shortcuts">
+    <nav class="md-nav" aria-label="Claude Code auf dem Produktionsserver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cli-start-parameter-flags" class="md-nav__link">
+  <a href="#die-anthropic-empfehlung" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        CLI Start-Parameter &amp; Flags
+        Die Anthropic-Empfehlung
       </span>
     </span>
   </a>
@@ -2579,10 +2595,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#shortcuts-tasten-prefixes" class="md-nav__link">
+  <a href="#wann-claude-code-auf-prod-akzeptabel-ist" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Shortcuts &amp; Tasten-Prefixes
+        Wann Claude Code auf Prod akzeptabel ist
       </span>
     </span>
   </a>
@@ -2590,10 +2606,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#in-session-slash-commands" class="md-nav__link">
+  <a href="#claude-code-sicher-konfigurieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        In-Session Slash-Commands
+        Claude Code sicher konfigurieren
       </span>
     </span>
   </a>
@@ -2606,22 +2622,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-claude-workflows-session-management" class="md-nav__link">
+  <a href="#antigravity-cli-agy-auf-dem-produktionsserver" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🔄 4. Claude Workflows &amp; Session-Management
+        Antigravity CLI (<code>agy</code>) auf dem Produktionsserver
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔄 4. Claude Workflows &amp; Session-Management">
+    <nav class="md-nav" aria-label="Antigravity CLI (agy) auf dem Produktionsserver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#berechtigungsmodi-permission-modes" class="md-nav__link">
+  <a href="#besonderheiten-von-agy" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Berechtigungsmodi (Permission Modes)
+        Besonderheiten von <code>agy</code>
       </span>
     </span>
   </a>
@@ -2629,10 +2645,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#plan-modus-plan" class="md-nav__link">
+  <a href="#das-docker-backend-als-sicherheitsnetz" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Plan-Modus (<code>/plan</code>)
+        Das Docker-Backend als Sicherheitsnetz
       </span>
     </span>
   </a>
@@ -2640,10 +2656,60 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#session-wiederherstellung-ruckgangigmachen" class="md-nav__link">
+  <a href="#agy-auf-dem-produktionsserver-konkrete-szenarien" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Session-Wiederherstellung &amp; Rückgängigmachen
+        <code>agy</code> auf dem Produktionsserver — konkrete Szenarien
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="agy auf dem Produktionsserver — konkrete Szenarien">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empfohlen-analyse-dokumentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ✅ Empfohlen: Analyse &amp; Dokumentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mit-vorsicht-deployment-unterstutzung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚠️ Mit Vorsicht: Deployment-Unterstützung
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nie-autonome-produktionsanderungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ❌ Nie: Autonome Produktionsänderungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentsmd-fur-den-produktionseinsatz" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        AGENTS.md für den Produktionseinsatz
       </span>
     </span>
   </a>
@@ -2656,61 +2722,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-projektsteuerung-erweiterungen" class="md-nav__link">
+  <a href="#der-sichere-produktions-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🛠️ 5. Projektsteuerung &amp; Erweiterungen
+        Der sichere Produktions-Workflow
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🛠️ 5. Projektsteuerung &amp; Erweiterungen">
+    <nav class="md-nav" aria-label="Der sichere Produktions-Workflow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#claudemd-das-zentrale-regelwerk" class="md-nav__link">
+  <a href="#schritt-fur-schritt-sicheres-ki-gestutztes-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        <code>CLAUDE.md</code> – Das zentrale Regelwerk
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CLAUDE.md – Das zentrale Regelwerk">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#empfohlener-aufbau-einer-claudemd" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Empfohlener Aufbau einer <code>CLAUDE.md</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#skills-wiederverwendbare-funktionspakete" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Skills – Wiederverwendbare Funktionspakete
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hooks-event-gesteuerte-automatisierung" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Hooks – Event-gesteuerte Automatisierung
+        Schritt-für-Schritt: Sicheres KI-gestütztes Deployment
       </span>
     </span>
   </a>
@@ -2723,22 +2750,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-kontext-kostenmanagement" class="md-nav__link">
+  <a href="#secrets-management-das-wichtigste-kapitel" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        💰 6. Kontext- &amp; Kostenmanagement
+        Secrets-Management — Das wichtigste Kapitel
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="💰 6. Kontext- &amp; Kostenmanagement">
+    <nav class="md-nav" aria-label="Secrets-Management — Das wichtigste Kapitel">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#token-effizienz-mit-compact-und-clear" class="md-nav__link">
+  <a href="#regel-1-secrets-immer-ausschlieen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Token-Effizienz mit <code>/compact</code> und <code>/clear</code>
+        Regel 1: Secrets immer ausschließen
       </span>
     </span>
   </a>
@@ -2746,10 +2773,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#extended-thinking-effort-levels" class="md-nav__link">
+  <a href="#regel-2-produktions-secrets-nie-auf-dem-entwicklerrechner" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Extended Thinking &amp; Effort Levels
+        Regel 2: Produktions-Secrets nie auf dem Entwicklerrechner
       </span>
     </span>
   </a>
@@ -2757,10 +2784,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#prompt-caching" class="md-nav__link">
+  <a href="#regel-3-ki-agent-sitzungen-nie-in-offentliche-repositories-committen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Prompt Caching
+        Regel 3: KI-Agent-Sitzungen nie in öffentliche Repositories committen
       </span>
     </span>
   </a>
@@ -2773,49 +2800,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-fortgeschrittene-features-skalierung" class="md-nav__link">
+  <a href="#empfehlungen-nach-einsatzszenario" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        ⚡ 7. Fortgeschrittene Features &amp; Skalierung
+        Empfehlungen nach Einsatzszenario
       </span>
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="⚡ 7. Fortgeschrittene Features &amp; Skalierung">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#model-context-protocol-mcp-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Model Context Protocol (MCP) Integration
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#skalierung-im-team-cicd" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Skalierung im Team &amp; CI/CD
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-verwandte-themen-weiterfuhrende-links" class="md-nav__link">
+  <a href="#checkliste-vor-dem-einsatz-auf-dem-produktionsserver" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🔗 8. Verwandte Themen &amp; Weiterführende Links
+        Checkliste vor dem Einsatz auf dem Produktionsserver
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weiterfuhrende-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Weiterführende Links
       </span>
     </span>
   </a>
@@ -2970,374 +2980,390 @@
                 
                   
 
-<h1 id="claude-code-das-praxis-handbuch-workflow-guide">Claude Code – Das Praxis-Handbuch &amp; Workflow-Guide<a class="headerlink" href="#claude-code-das-praxis-handbuch-workflow-guide" title="Permanent link">&para;</a></h1>
-<p><strong>Claude Code</strong> ist das agentische Command-Line-Tool von Anthropic, das entwickelt wurde, um direkt im Terminal als intelligenter Paarprogrammierer zu agieren. Es liest und editiert Codebestandteile, führt Tests und Terminalbefehle aus, orchestriert MCP-Server (Model Context Protocol) und unterstützt komplexe Softwarearchitekturen über strukturierte Workflows.</p>
-<p>Dieses Praxis-Handbuch fasst alle Konzepte, Befehle, Shortcuts, Konfigurationen und Best Practices zusammen – strukturiert nach den Anforderungen des täglichen Entwicklungseinsatzes.</p>
+<h1 id="ki-coding-tools-auf-dem-produktionsserver-risiken-regeln-beste-praxis">KI-Coding-Tools auf dem Produktionsserver — Risiken, Regeln &amp; beste Praxis<a class="headerlink" href="#ki-coding-tools-auf-dem-produktionsserver-risiken-regeln-beste-praxis" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>OpenCode · Claude Code · Antigravity CLI (<code>agy</code>)</strong> — Darf ich diese Tools auf meinem Produktionsserver einsetzen? Die ehrliche Antwort lautet: <strong>Mit Bedacht — ja. Unüberlegt — nein.</strong></p>
+</blockquote>
+<p>Diese Seite liefert eine nüchterne Risikoabwägung, klare Regeln und konkrete Workflows für alle drei Tools.</p>
 <hr />
-<h2 id="1-einfuhrung-architekturgrundlagen">🚀 1. Einführung &amp; Architekturgrundlagen<a class="headerlink" href="#1-einfuhrung-architekturgrundlagen" title="Permanent link">&para;</a></h2>
-<h3 id="was-ist-claude-code">Was ist Claude Code?<a class="headerlink" href="#was-ist-claude-code" title="Permanent link">&para;</a></h3>
-<p>Claude Code erweitert das klassische Terminal um ein autonomes Sprachmodell (wie Claude 3.7 Sonnet). Im Gegensatz zu reinen Chat-Oberflächen besitzt Claude Code direkten Zugriff auf Ihr Dateisystem und Ihre Entwicklungs-Tools (über Shell-Execution).</p>
-<pre class="mermaid"><code>graph TD
-    User(["Entwickler / Terminal"]) --&gt;|CLI Input / Prompt| CC[Claude Code CLI]
-    CC --&gt;|Projektregeln| CLMD[CLAUDE.md]
-    CC --&gt;|Erweiterte Skills| SKILLS["Skills &amp; Tools"]
-    CC --&gt;|Protokoll-Anbindung| MCP[MCP Server]
-    CC --&gt;|Lifecycle Hooks| HOOKS["Pre-/Post-Tool Hooks"]
-    CC --&gt;|Sub-Tasks| SUB[Subagenten]
-    CC --&gt;|Model Execution| API["Anthropic Claude API / Models"]</code></pre>
-<h3 id="vibe-coding-vs-agentic-engineering">Vibe Coding vs. Agentic Engineering<a class="headerlink" href="#vibe-coding-vs-agentic-engineering" title="Permanent link">&para;</a></h3>
-<p>In der modernen KI-gestützten Softwareentwicklung unterscheidet man zwei wesentliche Arbeitsweisen:</p>
-<ul>
-<li><strong>Vibe Coding</strong>: Schnelles, intuitives Prototyping mit generativ erzeugtem Code ohne tiefe Kontrolle aller Zeilen. Ideal für Experimente und Proofs of Concept.</li>
-<li><strong>Agentic Engineering</strong>: Ein strukturierter, qualitätsgesicherter Prozess, bei dem der Agent durch dedizierte Regeln (<code>CLAUDE.md</code>), automatisierte Tests, Linters und Hooks in geordnete Bahnen gelenkt wird.</li>
-</ul>
-<h3 id="was-ist-ein-coding-agent">Was ist ein Coding Agent?<a class="headerlink" href="#was-ist-ein-coding-agent" title="Permanent link">&para;</a></h3>
-<p>Ein Coding Agent arbeitet in einer sogenannten <strong>Agentic Loop</strong> (agentischen Schleife):</p>
-<ol>
-<li><strong>Beobachtung (Observe)</strong>: Liest den Prompt, Projektregeln (<code>CLAUDE.md</code>) und Dateien.</li>
-<li><strong>Entscheidung (Think)</strong>: Wählen des nächsten Handlungsschritts (Werkzeugaufruf oder Antwort).</li>
-<li><strong>Aktion (Act)</strong>: Ausführen von Datei-Edits, Shell-Befehlen oder Testläufen.</li>
-<li><strong>Bewertung (Evaluate)</strong>: Auswertung der Ausgabe/Fehlermeldungen und Wiederholung der Schleife.</li>
-</ol>
-<h3 id="nutzungsvarianten-ways-to-use-claude">Nutzungsvarianten (Ways to use Claude)<a class="headerlink" href="#nutzungsvarianten-ways-to-use-claude" title="Permanent link">&para;</a></h3>
-<p>Claude steht in verschiedenen Umgebungen zur Verfügung:
-* <strong>Claude CLI</strong>: Die primäre Terminal-Oberfläche für maximale Performance und Skripte.
-* <strong>Desktop App</strong>: Visuelle Benutzeroberfläche mit graphischen Zusatzfenstern.
-* <strong>Editor Extensions</strong>: Integrationen für VS Code, JetBrains IDEs und Neovim.
-* <strong>Community Tools</strong>: Drittanbieter-Skripte und Orchestrierungswerkzeuge.</p>
-<h3 id="setup-authentifizierung">Setup &amp; Authentifizierung<a class="headerlink" href="#setup-authentifizierung" title="Permanent link">&para;</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Voraussetzungen</p>
-<p>Claude Code erfordert Node.js (v18+) und ein Anthropic-Konto (Subscription oder API-Schlüssel).</p>
-</div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Installation &amp; Login</label><label for="__tabbed_1_2">API-Usage vs. Subscription</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Globale Installation via npm</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Navigieren in Ihr Projektverzeichnis</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">cd</span><span class="w"> </span>/path/to/project
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Erstmaliger Start &amp; Authentifizierung</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>claude
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><strong>Subscription Model (Claude Pro / Team / Enterprise)</strong>: Direkter Login über das Anthropic-Benutzerkonto. Ideal für Entwicklerteams mit Flatrate-Kontingenten.</li>
-<li><strong>API Usage (Pay-as-you-go)</strong>: Nutzung eines <code>ANTHROPIC_API_KEY</code>. Ermöglicht direkte Abrechnung nach verbrauchten Tokens und Nutzung von Prompt Caching.</li>
-</ul>
-</div>
-</div>
+<h2 id="warum-diese-frage-wichtig-ist">Warum diese Frage wichtig ist<a class="headerlink" href="#warum-diese-frage-wichtig-ist" title="Permanent link">&para;</a></h2>
+<p>KI-Coding-Agenten wie OpenCode, Claude Code und <code>agy</code> sind mächtige Werkzeuge: Sie lesen Dateien, schreiben Code, führen Shell-Befehle aus und können Konfigurationsdateien ändern — alles autonom, schnell und mit wenig manuellem Eingreifen.</p>
+<p>Genau das macht sie auf einem Produktionsserver <strong>gefährlich, wenn sie falsch eingesetzt werden.</strong></p>
+<div class="admonition danger">
+<p class="admonition-title">Grundprinzip</p>
+<p>Ein KI-Agent auf einem Produktionsserver hat potenziell Zugriff auf Kundendaten, Produktionsdatenbanken, Secrets und kritische Systemdateien. <strong>Ein einziger Fehler kann Dienste zum Absturz bringen oder Daten unwiderruflich löschen.</strong></p>
 </div>
 <hr />
-<h2 id="2-kernkomponenten-architektursaulen">🧩 2. Kernkomponenten &amp; Architektursäulen<a class="headerlink" href="#2-kernkomponenten-architektursaulen" title="Permanent link">&para;</a></h2>
-<p>Claude Code basiert auf mehreren aufeinander abgestimmten Bausteinen. Die folgende Tabelle bietet eine Übersicht der Kernkonzepte:</p>
+<h2 id="die-drei-tools-im-vergleich">Die drei Tools im Vergleich<a class="headerlink" href="#die-drei-tools-im-vergleich" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Konzept</th>
-<th>Beschreibung</th>
-<th>Praxisnutzen</th>
+<th>Merkmal</th>
+<th>OpenCode</th>
+<th>Claude Code</th>
+<th>Antigravity CLI (<code>agy</code>)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>CLAUDE.md</strong></td>
-<td>Projektweite Regeldokumentation im Root- oder Unterordner</td>
-<td>Legt Coding-Standards, Build-Befehle und Verhaltenskodex fest</td>
+<td><strong>Anbieter</strong></td>
+<td>Open Source / Community</td>
+<td>Anthropic</td>
+<td>Google DeepMind</td>
 </tr>
 <tr>
-<td><strong>Skills</strong></td>
-<td>Wiederverwendbare Funktions- &amp; Prompt-Pakete</td>
-<td>Automatisierte Standardaufgaben (z. B. Docs, Code-Reviews)</td>
+<td><strong>Basis-Modell</strong></td>
+<td>Konfigurierbar (Ollama, OpenAI, …)</td>
+<td>Claude 4 (Sonnet/Opus)</td>
+<td>Gemini 2.5 Pro/Flash</td>
 </tr>
 <tr>
-<td><strong>Context</strong></td>
-<td>Arbeitsspeicher des Agenten (Files, Transkript)</td>
-<td>Bestimmt, welche Informationen dem Modell vorliegen</td>
+<td><strong>Shell-Zugriff</strong></td>
+<td>✅ Ja</td>
+<td>✅ Ja</td>
+<td>✅ Ja</td>
 </tr>
 <tr>
-<td><strong>Modes</strong></td>
-<td>Betriebsmodi wie Plan-Modus (<code>/plan</code>) oder Standard</td>
-<td>Wechsel zwischen reiner Strategieplanung und Code-Editierung</td>
+<td><strong>Datei-Zugriff</strong></td>
+<td>✅ Ja (Projektverzeichnis)</td>
+<td>✅ Ja</td>
+<td>✅ Ja (Sandbox)</td>
 </tr>
 <tr>
-<td><strong>Models</strong></td>
-<td>Claude 3.7 Sonnet, Opus, Haiku</td>
-<td>Abstimmung von Denkleistung, Geschwindigkeit und Kosten</td>
+<td><strong>Autonomiegrad</strong></td>
+<td>Mittel</td>
+<td>Hoch</td>
+<td>Sehr hoch (Subagenten)</td>
 </tr>
 <tr>
-<td><strong>Tools &amp; MCP</strong></td>
-<td>Lokale &amp; externe Schnittstellen (Model Context Protocol)</td>
-<td>Anbindung an Datenbanken, Git, JIRA und APIs</td>
+<td><strong>Approval-Modus</strong></td>
+<td>Konfigurierbar</td>
+<td>Standardmäßig aktiv</td>
+<td>Konfigurierbar</td>
 </tr>
 <tr>
-<td><strong>Hooks</strong></td>
-<td>Event-gesteuerte Skripte (Lifecycle)</td>
-<td>Automatisierte Prüfungen vor/nach Werkzeugaufrufen</td>
+<td><strong>Sandbox-Option</strong></td>
+<td>Eingeschränkt</td>
+<td>Eingeschränkt</td>
+<td>Docker-Backend möglich</td>
 </tr>
 <tr>
-<td><strong>Subagents</strong></td>
-<td>Ausgelagerte Unter-Agenten</td>
-<td>Parallele &amp; isolierte Bearbeitung von Teilaufgaben</td>
-</tr>
-</tbody>
-</table>
-<h3 id="modellauswahl-when-to-use-what-model">Modellauswahl (When to use what model?)<a class="headerlink" href="#modellauswahl-when-to-use-what-model" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Claude 3.7 Sonnet / Sonnet</strong>: Das Standardmodell. Bietet das beste Verhältnis aus Coding-Kompetenz, Denkfähigkeit (Reasoning) und Geschwindigkeit.</li>
-<li><strong>Claude 3.5 / 3.7 Opus (<code>Opusplan</code>)</strong>: Für hochkomplexe Architektur-Entscheidungen, tiefes Refactoring und diffizile Bugfixes. In <code>Opusplan</code> plant Opus die Schritte, während Sonnet die Ausführung übernimmt.</li>
-<li><strong>Claude Haiku</strong>: Extrem schnelles Modell für einfache Aufgaben wie Log-Analyse, Skript-Generierung oder Tagging.</li>
-</ul>
-<hr />
-<h2 id="3-befehle-cheatsheet-shortcuts">⌨️ 3. Befehle, Cheatsheet &amp; Shortcuts<a class="headerlink" href="#3-befehle-cheatsheet-shortcuts" title="Permanent link">&para;</a></h2>
-<h3 id="cli-start-parameter-flags">CLI Start-Parameter &amp; Flags<a class="headerlink" href="#cli-start-parameter-flags" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Standard: Interaktive TUI-Session starten</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>claude
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Einmalige Prompt-Ausführung mit direkter Beendung (-p / --print)</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>claude<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Erstelle einen Unit-Test für auth.py&quot;</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Vorherige Session im aktuellen Ordner fortsetzen (-c / --continue)</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>claude<span class="w"> </span>-c
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># Eine spezifische alte Session wiederaufnehmen (-r / --resume)</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>claude<span class="w"> </span>-r<span class="w"> </span>&lt;session-id&gt;
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c1"># Zusätzliches Verzeichnis in den Kontext aufnehmen (--add-dir)</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>claude<span class="w"> </span>--add-dir<span class="w"> </span>../shared-libraries
-</span></code></pre></div>
-<h3 id="shortcuts-tasten-prefixes">Shortcuts &amp; Tasten-Prefixes<a class="headerlink" href="#shortcuts-tasten-prefixes" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Shortcut / Prefix</th>
-<th>Funktion &amp; Beschreibung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Ctrl + C</code></td>
-<td>Aktuelle Generierung oder Tool-Ausführung sofort abbrechen</td>
-</tr>
-<tr>
-<td><code>Ctrl + R</code></td>
-<td>Session-Historie durchsuchen</td>
-</tr>
-<tr>
-<td><code>Esc</code> / <code>Esc + Esc</code></td>
-<td>Prompt-Eingabe abbrechen oder TUI-Fokus zurücksetzen</td>
-</tr>
-<tr>
-<td><code>Shift + Tab</code></td>
-<td>Mehrzeiligen Eingabemodus umschalten</td>
-</tr>
-<tr>
-<td><code>!</code></td>
-<td>Shell-Befehl direkt im Terminal ausführen (z. B. <code>!git status</code>)</td>
-</tr>
-<tr>
-<td><code>\</code></td>
-<td>Escape-Zeichen für Sonderzeichen im Prompt</td>
-</tr>
-<tr>
-<td><code>@</code></td>
-<td>Datei, Ordner oder Symbol direkt referenzieren (z. B. <code>@src/auth.py</code>)</td>
-</tr>
-<tr>
-<td><code>/</code></td>
-<td>Slash-Command Auswahlmenü öffnen</td>
-</tr>
-</tbody>
-</table>
-<h3 id="in-session-slash-commands">In-Session Slash-Commands<a class="headerlink" href="#in-session-slash-commands" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Allgemeine Befehle</label><label for="__tabbed_2_2">Workflow &amp; Planung</label><label for="__tabbed_2_3">Verwaltung &amp; Konfiguration</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li><code>/help</code>: Zeigt das Hilfemenü und verfügbare Slash-Commands an.</li>
-<li><code>/clear</code>: Leert den Bildschirm und setzt den aktuellen Kontext zurück.</li>
-<li><code>/exit</code>: Beendet die Claude Code Session.</li>
-<li><code>/status</code>: Zeigt den aktuellen System- und Session-Status an.</li>
-<li><code>/usage</code>: Ausführliche Statistik zum Token-Verbrauch und API-Limits.</li>
-<li><code>/cost</code>: Zeigt die geschätzten Kosten der aktuellen Session an.</li>
-<li><code>/export</code>: Exportiert den bisherigen Gesprächsverlauf als Datei.</li>
-<li><code>/doctor</code>: Führt eine Selbstdiagnose von Umgebung, Tools und Netzwerk durch.</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><code>/plan</code>: Wechselt in den dedizierten Plan-Modus für sichere Code-Änderungen.</li>
-<li><code>/rewind</code>: Macht die letzten durch Claude ausgeführten Schritte rückgängig.</li>
-<li><code>/context</code>: Zeigt aktuell im Kontext befindliche Dateien und Tokens an.</li>
-<li><code>/compact</code>: Komprimiert den Gesprächsverlauf zur Reduzierung von Tokens.</li>
-<li><code>/init</code>: Erstellt eine initiale <code>CLAUDE.md</code> Vorlage im aktuellen Verzeichnis.</li>
-<li><code>/memory</code>: Verwaltet das langzeitige Gedächtnis des Projekts.</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><code>/config</code>: Öffnet die Konfigurationsansicht für lokale/globale Parameter.</li>
-<li><code>/permissions</code>: Konfiguriert die Rechtevergabe für Shell- und Tool-Aufrufe.</li>
-<li><code>/model</code>: Umschalten des aktiven Sprachmodells (Sonnet, Opus, Haiku).</li>
-<li><code>/agents</code>: Übersicht und Steuerung von aktiven Subagenten.</li>
-<li><code>/hooks</code>: Übersicht und Konfiguration von Lifecycle-Hooks.</li>
-<li><code>/mcp</code>: Verwaltung von verbundenen MCP-Servern.</li>
-</ul>
-</div>
-</div>
-</div>
-<hr />
-<h2 id="4-claude-workflows-session-management">🔄 4. Claude Workflows &amp; Session-Management<a class="headerlink" href="#4-claude-workflows-session-management" title="Permanent link">&para;</a></h2>
-<h3 id="berechtigungsmodi-permission-modes">Berechtigungsmodi (Permission Modes)<a class="headerlink" href="#berechtigungsmodi-permission-modes" title="Permanent link">&para;</a></h3>
-<p>Claude Code unterstützt unterschiedliche Sicherheitsstufen für die Ausführung von Shell-Befehlen und Dateimodifikationen:</p>
-<ol>
-<li><strong>Interactive Approval (Standard)</strong>: Vor jedem potenziell schreibenden Zugriff oder Shell-Befehl wird eine Bestätigung vom Entwickler eingeholt.</li>
-<li><strong>Auto-Approve / Unattended</strong>: Gefahrlose Lesebefehle und gewählte Routinen werden automatisch ohne Rückfrage ausgeführt.</li>
-<li><strong>ReadOnly / Sandboxed</strong>: Schreibzugriffe auf das Dateisystem werden blockiert.</li>
-</ol>
-<h3 id="plan-modus-plan">Plan-Modus (<code>/plan</code>)<a class="headerlink" href="#plan-modus-plan" title="Permanent link">&para;</a></h3>
-<p>Der Plan-Modus verhindert vorschnelle oder ungewollte Änderungen in produktiven Repositories.</p>
-<pre class="mermaid"><code>sequenceDiagram
-    autonumber
-    actor Dev as Entwickler:in
-    participant CC as Claude Code
-    participant FS as Dateisystem / Git
-
-    Dev-&gt;&gt;CC: /plan "Refaktoriere DB-Zugriff"
-    CC-&gt;&gt;FS: Liest Quellcode &amp; Schemata
-    FS--&gt;&gt;CC: Dateiinhalte &amp; Struktur
-    CC-&gt;&gt;Dev: Detaillierter Ausführungsplan
-    Dev-&gt;&gt;CC: "Plan bestätigt, starte Schritte 1-3"
-    CC-&gt;&gt;FS: Führt Code-Änderungen durch
-    CC-&gt;&gt;Dev: Fertigstellungsmeldung &amp; Diffs</code></pre>
-<h3 id="session-wiederherstellung-ruckgangigmachen">Session-Wiederherstellung &amp; Rückgängigmachen<a class="headerlink" href="#session-wiederherstellung-ruckgangigmachen" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Rückgängigmachen (<code>/rewind</code>)</strong>: Ermöglicht das Zurücksetzen von Änderungen auf einen vorherigen Stand im Arbeitsprozess.</li>
-<li><strong>Sitzungen fortsetzen (<code>claude -r</code>)</strong>: Unterbrochene Sessions können mit <code>claude -r &lt;id&gt;</code> jederzeit exakt an der Stelle fortgeführt werden, an der sie gestoppt wurden.</li>
-</ul>
-<hr />
-<h2 id="5-projektsteuerung-erweiterungen">🛠️ 5. Projektsteuerung &amp; Erweiterungen<a class="headerlink" href="#5-projektsteuerung-erweiterungen" title="Permanent link">&para;</a></h2>
-<h3 id="claudemd-das-zentrale-regelwerk"><code>CLAUDE.md</code> – Das zentrale Regelwerk<a class="headerlink" href="#claudemd-das-zentrale-regelwerk" title="Permanent link">&para;</a></h3>
-<p>Die Datei <code>CLAUDE.md</code> bildet die Leitplanke für Claude Code im jeweiligen Repository. Sie sollte präzise, kurz und direkt verständlich formuliert sein.</p>
-<h4 id="empfohlener-aufbau-einer-claudemd">Empfohlener Aufbau einer <code>CLAUDE.md</code><a class="headerlink" href="#empfohlener-aufbau-einer-claudemd" title="Permanent link">&para;</a></h4>
-<div class="language-markdown highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="gh"># Projekt-Regeln &amp; Standards</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="gu">## Build &amp; Test Befehle</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">-</span><span class="w"> </span>Ausführen des Builds: <span class="sb">`npm run build`</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">-</span><span class="w"> </span>Unit Tests: <span class="sb">`npm test`</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">-</span><span class="w"> </span>Linter: <span class="sb">`npm run lint`</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="gu">## Code-Style Guidelines</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">-</span><span class="w"> </span>Sprachstandard: TypeScript (strict mode enabled).
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="k">-</span><span class="w"> </span>Keine <span class="sb">`any`</span>-Typen verwenden.
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="k">-</span><span class="w"> </span>Fehlerbehandlung: Nutzen von expliziten Result-Typen oder Try/Catch mit strukturierter Protokollierung.
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="gu">## Git &amp; Formatting</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="k">-</span><span class="w"> </span>Commit-Format: Conventional Commits (<span class="sb">`feat:`</span>, <span class="sb">`fix:`</span>, <span class="sb">`docs:`</span>).
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="k">-</span><span class="w"> </span>Code-Formatierung: Prettier mit 2 Leerzeichen Einrückung.
-</span></code></pre></div>
-<h3 id="skills-wiederverwendbare-funktionspakete">Skills – Wiederverwendbare Funktionspakete<a class="headerlink" href="#skills-wiederverwendbare-funktionspakete" title="Permanent link">&para;</a></h3>
-<p>Skills sind benutzerdefinierte Instruktionen und Prozeduren, die unter <code>.claude/skills/&lt;skill-name&gt;/SKILL.md</code> abgelegt werden.</p>
-<div class="language-markdown highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>---
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>name: security-audit
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="gu">description: Analysiert geänderte Dateien auf OWASP-Sicherheitslücken.</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="gu">---</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="gh"># Security Audit Skill</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">1.</span> Führe <span class="sb">`git diff`</span> aus, um die neuesten Änderungen zu ermitteln.
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="k">2.</span> Überprüfe den Code auf typische Schwachstellen (SQL Injection, XSS, Hardcoded Credentials).
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">3.</span> Generiere einen zusammenfassenden Audit-Bericht in Markdown.
-</span></code></pre></div>
-<h3 id="hooks-event-gesteuerte-automatisierung">Hooks – Event-gesteuerte Automatisierung<a class="headerlink" href="#hooks-event-gesteuerte-automatisierung" title="Permanent link">&para;</a></h3>
-<p>Hooks ermöglichen die automatische Ausführung von Skripten zu bestimmten Lifecycle-Zeitpunkten von Claude Code:</p>
-<table>
-<thead>
-<tr>
-<th>Event</th>
-<th>Auslöser</th>
-<th>Beispielhafter Anwendungsfall</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>SessionStart</code></td>
-<td>Start einer neuen Session</td>
-<td>Initiales Laden von Umgebungsvariablen oder Git-Status</td>
-</tr>
-<tr>
-<td><code>SessionEnd</code></td>
-<td>Beenden der Session</td>
-<td>Aufräumen temporärer Artefakte oder Session-Export</td>
-</tr>
-<tr>
-<td><code>PreToolUse</code></td>
-<td>Vor Werkzeugaufruf</td>
-<td>Sicherheitsprüfung von Dateipfaden oder Shell-Befehlen</td>
-</tr>
-<tr>
-<td><code>PostToolUse</code></td>
-<td>Nach Werkzeugaufruf</td>
-<td>Automatisches Ausführen von <code>prettier</code> oder Linter nach Edits</td>
-</tr>
-<tr>
-<td><code>UserPromptSubmit</code></td>
-<td>Vor Prompt-Verarbeitung</td>
-<td>Anreichern von Prompts mit Kontextdaten</td>
-</tr>
-<tr>
-<td><code>Stop</code></td>
-<td>Manuelles Abbrechen</td>
-<td>Beenden von im Hintergrund laufenden Prozessen</td>
+<td><strong>Netzwerkzugriff</strong></td>
+<td>Je nach Konfiguration</td>
+<td>Eingeschränkt</td>
+<td>Ja (mit MCP-Tools)</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="6-kontext-kostenmanagement">💰 6. Kontext- &amp; Kostenmanagement<a class="headerlink" href="#6-kontext-kostenmanagement" title="Permanent link">&para;</a></h2>
-<h3 id="token-effizienz-mit-compact-und-clear">Token-Effizienz mit <code>/compact</code> und <code>/clear</code><a class="headerlink" href="#token-effizienz-mit-compact-und-clear" title="Permanent link">&para;</a></h3>
-<p>Claude Code verwaltet den Arbeitskontext im Token-Fenster. Um Kosten zu minimieren und die Genauigkeit hochzuhalten:</p>
-<ul>
-<li><strong><code>/compact</code></strong>: Fasst lange Gesprächsverläufe zusammen und entfernt alte Tool-Ausgaben. Sollte regelmäßig bei längeren Sessions verwendet werden.</li>
-<li><strong><code>/clear</code></strong>: Setzt den Kontext vollständig zurück. Empfohlen beim Themenwechsel.</li>
-</ul>
-<h3 id="extended-thinking-effort-levels">Extended Thinking &amp; Effort Levels<a class="headerlink" href="#extended-thinking-effort-levels" title="Permanent link">&para;</a></h3>
-<p>Bei Modellen wie Claude 3.7 Sonnet kann das <strong>Denk-Level (Effort)</strong> angepasst werden:
-* <strong>Niedriger Effort</strong>: Für schnelle, unkomplizierte Fragen und kleine Fixes.
-* <strong>Hoher Effort</strong>: Für komplexe algorithmische Aufgaben und Systemarchitektur.</p>
-<h3 id="prompt-caching">Prompt Caching<a class="headerlink" href="#prompt-caching" title="Permanent link">&para;</a></h3>
-<p>Claude Code nutzt automatisches Prompt Caching für <code>CLAUDE.md</code>, System-Prompts und Tool-Definitionen. Dadurch reduzieren sich die API-Kosten bei wiederholten Interaktionen um bis zu 90 %.</p>
-<hr />
-<h2 id="7-fortgeschrittene-features-skalierung">⚡ 7. Fortgeschrittene Features &amp; Skalierung<a class="headerlink" href="#7-fortgeschrittene-features-skalierung" title="Permanent link">&para;</a></h2>
-<h3 id="model-context-protocol-mcp-integration">Model Context Protocol (MCP) Integration<a class="headerlink" href="#model-context-protocol-mcp-integration" title="Permanent link">&para;</a></h3>
-<p>Über das Model Context Protocol lässt sich Claude Code mit externen Datenquellen und Werkzeugen verbinden (z. B. PostgreSQL, GitHub, Slack).</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">&quot;postgres&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;npx&quot;</span><span class="p">,</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;-y&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;@modelcontextprotocol/server-postgres&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;postgresql://localhost/mydb&quot;</span><span class="p">]</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
+<h2 id="risikoklassen-auf-dem-produktionsserver">Risikoklassen auf dem Produktionsserver<a class="headerlink" href="#risikoklassen-auf-dem-produktionsserver" title="Permanent link">&para;</a></h2>
+<h3 id="hohes-risiko-diese-aktionen-sind-gefahrlich">🔴 Hohes Risiko — Diese Aktionen sind gefährlich<a class="headerlink" href="#hohes-risiko-diese-aktionen-sind-gefahrlich" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>❌ KI-Agent hat uneingeschränkten Zugriff auf /etc, /var, /home
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>❌ Direkte Datenbankverbindung (PostgreSQL, MySQL, Redis) ohne Read-Only
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>❌ Ausführung als root-Benutzer
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>❌ Zugriff auf .env-Dateien mit Produktions-Secrets
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>❌ Automatische Git-Commits &amp; Pushes in den main/master-Branch
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>❌ Systemd-Services stoppen/starten ohne Bestätigung
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>❌ Nginx/Apache-Konfigurationen automatisch überschreiben
 </span></code></pre></div>
-<h3 id="skalierung-im-team-cicd">Skalierung im Team &amp; CI/CD<a class="headerlink" href="#skalierung-im-team-cicd" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Headless Mode</strong>: Ausführen von Claude Code in unüberwachten CI/CD-Pipelines (<code>claude -p "Analysiere PR" --headless</code>).</li>
-<li><strong>Git Worktrees</strong>: Parallele Bearbeitung mehrerer Features in separaten Git Worktrees ohne Wechsel des Hauptzweigs.</li>
-<li><strong>Agent Teams</strong>: Aufteilung von Großprojekten auf mehrere spezialisierte Subagenten (z. B. Docs-Agent, Test-Agent).</li>
-</ul>
+<h3 id="mittleres-risiko-mit-vorsicht-und-approval-modus">🟡 Mittleres Risiko — Mit Vorsicht und Approval-Modus<a class="headerlink" href="#mittleres-risiko-mit-vorsicht-und-approval-modus" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>⚠️  Lesen von Logdateien (keine Änderungen, aber Datenleck möglich)
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>⚠️  Deployment-Skripte ausführen (mit manuellem Approval)
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>⚠️  Docker-Container neu starten (mit Approval)
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>⚠️  Konfigurationsdateien lesen (Read-Only)
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>⚠️  Status-Befehle (systemctl status, docker ps, df -h)
+</span></code></pre></div>
+<h3 id="niedriges-risiko-akzeptabel-auf-produktionsservern">🟢 Niedriges Risiko — Akzeptabel auf Produktionsservern<a class="headerlink" href="#niedriges-risiko-akzeptabel-auf-produktionsservern" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>✅ Code aus dem Repository analysieren (Read-Only, kein Schreiben)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>✅ Logs auslesen und zusammenfassen
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>✅ Monitoring-Daten interpretieren
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>✅ Deployment-Checklisten erstellen (ohne Ausführung)
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>✅ Dokumentation generieren
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>✅ Fehleranalyse aus bestehenden Logs
+</span></code></pre></div>
+<hr />
+<h2 id="opencode-auf-dem-produktionsserver">OpenCode auf dem Produktionsserver<a class="headerlink" href="#opencode-auf-dem-produktionsserver" title="Permanent link">&para;</a></h2>
+<h3 id="wann-sinnvoll">Wann sinnvoll?<a class="headerlink" href="#wann-sinnvoll" title="Permanent link">&para;</a></h3>
+<p>OpenCode eignet sich auf dem Produktionsserver hauptsächlich für <strong>lesende und analysierende Aufgaben</strong>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Logdateien analysieren</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>opencode<span class="w"> </span><span class="s2">&quot;Analysiere /var/log/nginx/error.log und fasse die häufigsten Fehler zusammen&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Code-Review ohne Änderungen</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>opencode<span class="w"> </span><span class="s2">&quot;Überprüfe src/api/handler.py auf mögliche Sicherheitslücken&quot;</span><span class="w"> </span>--no-write
+</span></code></pre></div>
+<h3 id="schutzmanahmen-fur-opencode">Schutzmaßnahmen für OpenCode<a class="headerlink" href="#schutzmanahmen-fur-opencode" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 1. Dedizierten, unprivilegierten Benutzer verwenden</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>opencode-runner
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>sudo<span class="w"> </span>-u<span class="w"> </span>opencode-runner<span class="w"> </span>opencode<span class="w"> </span><span class="s2">&quot;...&quot;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># 2. Projektverzeichnis auf Read-Only mounten (wenn möglich)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>mount<span class="w"> </span>--bind<span class="w"> </span>/var/www/myapp<span class="w"> </span>/home/opencode-runner/project
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>mount<span class="w"> </span>-o<span class="w"> </span>remount,ro<span class="w"> </span>/home/opencode-runner/project
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c1"># 3. Approval-Modus aktivieren (in der Konfiguration)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1"># opencode.config.json:</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="o">{</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">  </span><span class="s2">&quot;approval&quot;</span>:<span class="w"> </span><span class="s2">&quot;always&quot;</span>,
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">  </span><span class="s2">&quot;allowedPaths&quot;</span>:<span class="w"> </span><span class="o">[</span><span class="s2">&quot;/home/opencode-runner/project&quot;</span><span class="o">]</span>,
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">  </span><span class="s2">&quot;denyPaths&quot;</span>:<span class="w"> </span><span class="o">[</span><span class="s2">&quot;/etc&quot;</span>,<span class="w"> </span><span class="s2">&quot;/var/lib&quot;</span>,<span class="w"> </span><span class="s2">&quot;/home&quot;</span><span class="o">]</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="o">}</span>
+</span></code></pre></div>
 <div class="admonition warning">
-<p class="admonition-title">Sicherheits-Tipp</p>
-<p>Speichern Sie NIEMALS API-Schlüssel, Passwörter oder vertrauliche Zugangsdaten in <code>CLAUDE.md</code> oder Prompt-Logs.</p>
+<p class="admonition-title">Achtung: OpenCode und Secrets</p>
+<p>OpenCode liest standardmäßig alle Dateien im Arbeitsverzeichnis. Stelle sicher, dass <code>.env</code>-Dateien mit Produktions-Secrets <strong>niemals</strong> im zugänglichen Verzeichnis liegen oder durch eine <code>.opencodeignore</code>-Datei ausgeschlossen sind.</p>
 </div>
 <hr />
-<h2 id="8-verwandte-themen-weiterfuhrende-links">🔗 8. Verwandte Themen &amp; Weiterführende Links<a class="headerlink" href="#8-verwandte-themen-weiterfuhrende-links" title="Permanent link">&para;</a></h2>
+<h2 id="claude-code-auf-dem-produktionsserver">Claude Code auf dem Produktionsserver<a class="headerlink" href="#claude-code-auf-dem-produktionsserver" title="Permanent link">&para;</a></h2>
+<h3 id="die-anthropic-empfehlung">Die Anthropic-Empfehlung<a class="headerlink" href="#die-anthropic-empfehlung" title="Permanent link">&para;</a></h3>
+<p>Anthropic selbst empfiehlt, Claude Code <strong>nicht direkt</strong> auf Produktionsservern zu verwenden, sondern in einer <strong>CI/CD-Pipeline</strong> oder auf einem separaten Build-Server. Claude Code ist für die Entwicklungsumgebung optimiert.</p>
+<h3 id="wann-claude-code-auf-prod-akzeptabel-ist">Wann Claude Code auf Prod akzeptabel ist<a class="headerlink" href="#wann-claude-code-auf-prod-akzeptabel-ist" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>✅ Lesende Analyse und Debugging (keine Schreibrechte)
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>✅ Einmalige, sorgfältig überwachte Konfigurationsänderungen
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>✅ Notfall-Debugging mit manuellem Approval für jeden Schritt
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>✅ Dokumentation und Kommentierung bestehender Code-Basis
+</span></code></pre></div>
+<h3 id="claude-code-sicher-konfigurieren">Claude Code sicher konfigurieren<a class="headerlink" href="#claude-code-sicher-konfigurieren" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Nur im aktuellen Verzeichnis arbeiten lassen</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>claude<span class="w"> </span>--no-permissions-prompt<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">       </span>--allowed-tools<span class="w"> </span><span class="s2">&quot;Read,Write&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">       </span>--disallowed-tools<span class="w"> </span><span class="s2">&quot;Bash,Computer&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">       </span><span class="s2">&quot;Analysiere die Konfiguration in ./config/&quot;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># Approval für jeden Bash-Befehl erzwingen</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>claude<span class="w"> </span>--approval<span class="w"> </span>bash<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">       </span><span class="s2">&quot;Überprüfe den Nginx-Status&quot;</span>
+</span></code></pre></div>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># .claude/settings.json (Produktionsprofil)</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p p-Indicator">{</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="s">&quot;permissions&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">{</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="s">&quot;allow&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">      </span><span class="s">&quot;Read(/var/www/myapp/**)&quot;</span><span class="p p-Indicator">,</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">      </span><span class="s">&quot;Read(/var/log/nginx/**)&quot;</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="p p-Indicator">],</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="s">&quot;deny&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">      </span><span class="s">&quot;Bash(rm*)&quot;</span><span class="p p-Indicator">,</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">      </span><span class="s">&quot;Bash(sudo*)&quot;</span><span class="p p-Indicator">,</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">      </span><span class="s">&quot;Bash(systemctl</span><span class="nv"> </span><span class="s">stop*)&quot;</span><span class="p p-Indicator">,</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">      </span><span class="s">&quot;Write(/etc/**)&quot;</span><span class="p p-Indicator">,</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">      </span><span class="s">&quot;Write(/var/lib/**)&quot;</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="p p-Indicator">]</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">  </span><span class="p p-Indicator">}</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="p p-Indicator">}</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Hinweis: Claude Code Permission-System</p>
+<p>Claude Code verfügt seit Version 1.x über ein granulares Permission-System (<code>allow</code>/<code>deny</code>-Listen). Nutze dies konsequent, bevor du Claude Code auf einem Produktionsserver einsetzt.</p>
+</div>
+<hr />
+<h2 id="antigravity-cli-agy-auf-dem-produktionsserver">Antigravity CLI (<code>agy</code>) auf dem Produktionsserver<a class="headerlink" href="#antigravity-cli-agy-auf-dem-produktionsserver" title="Permanent link">&para;</a></h2>
+<h3 id="besonderheiten-von-agy">Besonderheiten von <code>agy</code><a class="headerlink" href="#besonderheiten-von-agy" title="Permanent link">&para;</a></h3>
+<p>Der Antigravity CLI hat durch sein Subagenten-System und die MCP-Integration einen sehr hohen Autonomiegrad. Das macht ihn besonders leistungsfähig — und auf Produktionsservern besonders kritisch zu handhaben.</p>
+<div class="admonition danger">
+<p class="admonition-title">Achtung: Subagenten-Kaskaden</p>
+<p><code>agy</code> kann eigenständig Subagenten spawnen, die wiederum Shell-Befehle ausführen. Diese Kaskaden sind schwer zu unterbrechen und können schnell unkontrollierbar werden, wenn kein Approval-Modus aktiv ist.</p>
+</div>
+<h3 id="das-docker-backend-als-sicherheitsnetz">Das Docker-Backend als Sicherheitsnetz<a class="headerlink" href="#das-docker-backend-als-sicherheitsnetz" title="Permanent link">&para;</a></h3>
+<p>Die sicherste Methode, <code>agy</code> auf oder in der Nähe eines Produktionssystems zu nutzen, ist das <strong>Docker-Backend</strong>: Der Agent läuft auf dem Host, führt aber jeden Shell-Befehl innerhalb eines isolierten Containers aus.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># agy mit Docker-Backend konfigurieren</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="c1"># In ~/.gemini/antigravity-cli/settings.json:</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="o">{</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="s2">&quot;terminal_backend&quot;</span>:<span class="w"> </span><span class="s2">&quot;docker&quot;</span>,
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="s2">&quot;docker_backend&quot;</span>:<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="s2">&quot;image&quot;</span>:<span class="w"> </span><span class="s2">&quot;ubuntu:24.04&quot;</span>,
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="s2">&quot;volumes&quot;</span>:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">      </span><span class="s2">&quot;/var/www/myapp:/workspace:ro&quot;</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">    </span><span class="o">]</span>,
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">    </span><span class="s2">&quot;network&quot;</span>:<span class="w"> </span><span class="s2">&quot;none&quot;</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">  </span><span class="o">}</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="o">}</span>
+</span></code></pre></div>
+<p>Dies bedeutet:
+- Shell-Befehle laufen im isolierten Container, nicht direkt auf dem Host
+- Das Produktionsverzeichnis kann als <strong>Read-Only</strong> eingebunden werden
+- Kein Netzwerkzugriff aus dem Container heraus (<code>"network": "none"</code>)</p>
+<h3 id="agy-auf-dem-produktionsserver-konkrete-szenarien"><code>agy</code> auf dem Produktionsserver — konkrete Szenarien<a class="headerlink" href="#agy-auf-dem-produktionsserver-konkrete-szenarien" title="Permanent link">&para;</a></h3>
+<h4 id="empfohlen-analyse-dokumentation">✅ Empfohlen: Analyse &amp; Dokumentation<a class="headerlink" href="#empfohlen-analyse-dokumentation" title="Permanent link">&para;</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Logs analysieren (Read-Only)</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>agy<span class="w"> </span><span class="s2">&quot;Analysiere die letzten 500 Zeilen in /var/log/app/error.log und erstelle eine Zusammenfassung der Fehlerursachen&quot;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># Deployment-Checkliste erstellen (kein Ausführen)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>agy<span class="w"> </span><span class="s2">&quot;Erstelle eine Deployment-Checkliste für ein Zero-Downtime-Nginx-Update — führe nichts aus&quot;</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># Code-Qualität prüfen (Read-Only)</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>agy<span class="w"> </span><span class="s2">&quot;Überprüfe alle Python-Dateien in /var/www/api/ auf fehlende Fehlerbehandlung — schreibe nichts&quot;</span>
+</span></code></pre></div>
+<h4 id="mit-vorsicht-deployment-unterstutzung">⚠️ Mit Vorsicht: Deployment-Unterstützung<a class="headerlink" href="#mit-vorsicht-deployment-unterstutzung" title="Permanent link">&para;</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Deployment-Skript generieren — erst prüfen, dann manuell ausführen</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>agy<span class="w"> </span><span class="s2">&quot;Erstelle ein Shell-Skript für das Deployment der neuen Version, aber führe es NICHT aus. Speichere es als deploy_v2.sh&quot;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># Dann manuell prüfen und ausführen:</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>cat<span class="w"> </span>deploy_v2.sh
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>bash<span class="w"> </span>deploy_v2.sh
+</span></code></pre></div>
+<h4 id="nie-autonome-produktionsanderungen">❌ Nie: Autonome Produktionsänderungen<a class="headerlink" href="#nie-autonome-produktionsanderungen" title="Permanent link">&para;</a></h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># GEFÄHRLICH — niemals so verwenden:</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>agy<span class="w"> </span><span class="s2">&quot;Aktualisiere die Produktionsdatenbank und starte alle Services neu&quot;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>agy<span class="w"> </span><span class="s2">&quot;Deploye die neue Version direkt auf dem Produktionsserver&quot;</span>
+</span></code></pre></div>
+<h3 id="agentsmd-fur-den-produktionseinsatz">AGENTS.md für den Produktionseinsatz<a class="headerlink" href="#agentsmd-fur-den-produktionseinsatz" title="Permanent link">&para;</a></h3>
+<p>Erstelle eine spezielle <code>AGENTS.md</code> für produktionsnahe Arbeit:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="gh"># AGENTS.md (Produktionsmodus)</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="gu">## ⛔ Verbotene Aktionen</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="k">-</span><span class="w"> </span>Niemals systemctl stop/start/restart ausführen
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="k">-</span><span class="w"> </span>Niemals Datenbankoperationen ohne explizite Bestätigung
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="k">-</span><span class="w"> </span>Niemals Dateien in /etc, /var/lib, /home außer dem Projektverzeichnis schreiben
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="k">-</span><span class="w"> </span>Niemals .env-Dateien lesen oder modifizieren
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="k">-</span><span class="w"> </span>Niemals git push in main/master/production-Branches
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="gu">## ✅ Erlaubte Aktionen</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="k">-</span><span class="w"> </span>Dateien im Projektverzeichnis lesen
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="k">-</span><span class="w"> </span>Logdateien analysieren (Read-Only)
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="k">-</span><span class="w"> </span>Skripte erstellen, aber NICHT ausführen
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="k">-</span><span class="w"> </span>Dokumentation erstellen
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="k">-</span><span class="w"> </span>Status-Abfragen (docker ps, systemctl status)
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="gu">## 📋 Pflicht-Workflow</span>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>Für jede Änderung am System:
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="k">1.</span> Erklären, was geändert werden soll
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="k">2.</span> Auf Bestätigung warten
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="k">3.</span> Skript/Befehl zeigen
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="k">4.</span> Erst nach manueller Freigabe ausführen
+</span></code></pre></div>
+<hr />
+<h2 id="der-sichere-produktions-workflow">Der sichere Produktions-Workflow<a class="headerlink" href="#der-sichere-produktions-workflow" title="Permanent link">&para;</a></h2>
+<p>Der goldene Standard: KI-Tools arbeiten <strong>niemals direkt</strong> auf dem Produktionssystem. Stattdessen:</p>
+<pre class="mermaid"><code>graph LR
+    DEV["💻 Entwickler-&lt;br/&gt;rechner"] --&gt;|"agy / Claude Code&lt;br/&gt;OpenCode"| STAGING["🧪 Staging-Server&lt;br/&gt;(Klon der Prod)"]
+    STAGING --&gt;|"Tests &amp;&lt;br/&gt;Validierung"| CI["⚙️ CI/CD-&lt;br/&gt;Pipeline"]
+    CI --&gt;|"Automatisiertes&lt;br/&gt;Deployment"| PROD["🏭 Produktions-&lt;br/&gt;server"]
+
+    DEV -.-&gt;|"❌ Niemals&lt;br/&gt;direkt"| PROD</code></pre>
+<h3 id="schritt-fur-schritt-sicheres-ki-gestutztes-deployment">Schritt-für-Schritt: Sicheres KI-gestütztes Deployment<a class="headerlink" href="#schritt-fur-schritt-sicheres-ki-gestutztes-deployment" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 1. Auf Entwicklerrechner: KI erstellt Deployment-Artefakte</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>agy<span class="w"> </span><span class="s2">&quot;Erstelle ein vollständiges Deployment-Paket für Version 2.1.0&quot;</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># 2. Alles in Git committen und prüfen</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>git<span class="w"> </span>diff
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>git<span class="w"> </span>add<span class="w"> </span>-p<span class="w">  </span><span class="c1"># Interaktiv prüfen</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;deploy: v2.1.0 deployment package&quot;</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="c1"># 3. Auf Staging deployen und testen</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="c1"># (CI/CD führt das Deployment aus — nicht der KI-Agent)</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>deploy/v2.1.0
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="c1"># 4. Erst nach erfolgreichen Staging-Tests → Produktion</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="c1"># (immer durch Menschen freigegeben)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="secrets-management-das-wichtigste-kapitel">Secrets-Management — Das wichtigste Kapitel<a class="headerlink" href="#secrets-management-das-wichtigste-kapitel" title="Permanent link">&para;</a></h2>
+<p>KI-Coding-Agenten sind eine der häufigsten Ursachen für <strong>unbeabsichtigte Secrets-Leaks</strong>. Das passiert, wenn der Agent eine <code>.env</code>-Datei liest und ihren Inhalt in Logs, Zusammenfassungen oder Commit-Messages weitergibt.</p>
+<h3 id="regel-1-secrets-immer-ausschlieen">Regel 1: Secrets immer ausschließen<a class="headerlink" href="#regel-1-secrets-immer-ausschlieen" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># .claudeignore / .opencodeignore / .geminiignore</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>.env
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>.env.*
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>*.pem
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>*.key
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>*_secret*
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>*_token*
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>credentials.json
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>secrets/
+</span></code></pre></div>
+<h3 id="regel-2-produktions-secrets-nie-auf-dem-entwicklerrechner">Regel 2: Produktions-Secrets nie auf dem Entwicklerrechner<a class="headerlink" href="#regel-2-produktions-secrets-nie-auf-dem-entwicklerrechner" title="Permanent link">&para;</a></h3>
+<p>Nutze einen Secrets-Manager statt lokaler <code>.env</code>-Dateien:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># Mit AWS Secrets Manager</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>aws<span class="w"> </span>secretsmanager<span class="w"> </span>get-secret-value<span class="w"> </span>--secret-id<span class="w"> </span>prod/myapp/db
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1"># Mit HashiCorp Vault</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>vault<span class="w"> </span>kv<span class="w"> </span>get<span class="w"> </span>secret/prod/myapp
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="c1"># Mit dem System-Keyring (lokal)</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>secret-tool<span class="w"> </span>store<span class="w"> </span>--label<span class="o">=</span><span class="s2">&quot;Prod DB&quot;</span><span class="w"> </span>key<span class="w"> </span>prod-db-password
+</span></code></pre></div>
+<h3 id="regel-3-ki-agent-sitzungen-nie-in-offentliche-repositories-committen">Regel 3: KI-Agent-Sitzungen nie in öffentliche Repositories committen<a class="headerlink" href="#regel-3-ki-agent-sitzungen-nie-in-offentliche-repositories-committen" title="Permanent link">&para;</a></h3>
+<p>Session-Logs der KI-Agenten können Secrets enthalten, die der Agent versehentlich gelesen hat.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># .gitignore erweitern</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>.agy/
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>.claude/
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>.opencode/
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>*.session
+</span></code></pre></div>
+<hr />
+<h2 id="empfehlungen-nach-einsatzszenario">Empfehlungen nach Einsatzszenario<a class="headerlink" href="#empfehlungen-nach-einsatzszenario" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Szenario</th>
+<th>OpenCode</th>
+<th>Claude Code</th>
+<th><code>agy</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lokale Entwicklung</strong></td>
+<td>✅ Empfohlen</td>
+<td>✅ Empfohlen</td>
+<td>✅ Empfohlen</td>
+</tr>
+<tr>
+<td><strong>Staging-Server</strong></td>
+<td>✅ Mit Approval</td>
+<td>✅ Mit Permissions</td>
+<td>✅ Mit Docker-Backend</td>
+</tr>
+<tr>
+<td><strong>CI/CD-Pipeline</strong></td>
+<td>✅ Read-Only</td>
+<td>✅ Mit Limits</td>
+<td>✅ Headless-Modus</td>
+</tr>
+<tr>
+<td><strong>Produktionsserver (Analyse)</strong></td>
+<td>⚠️ Nur Read-Only</td>
+<td>⚠️ Nur Read-Only</td>
+<td>⚠️ Nur Read-Only + Docker</td>
+</tr>
+<tr>
+<td><strong>Produktionsserver (Änderungen)</strong></td>
+<td>❌ Nicht empfohlen</td>
+<td>❌ Nicht empfohlen</td>
+<td>❌ Nicht empfohlen</td>
+</tr>
+<tr>
+<td><strong>Notfall-Debugging auf Prod</strong></td>
+<td>⚠️ Mit Aufsicht</td>
+<td>⚠️ Mit Aufsicht</td>
+<td>⚠️ Nur mit Aufsicht</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="checkliste-vor-dem-einsatz-auf-dem-produktionsserver">Checkliste vor dem Einsatz auf dem Produktionsserver<a class="headerlink" href="#checkliste-vor-dem-einsatz-auf-dem-produktionsserver" title="Permanent link">&para;</a></h2>
+<p>Gehe diese Checkliste durch, <strong>bevor</strong> du einen KI-Agent auf einem Produktionsserver startest:</p>
 <ul>
-<li><a href="../">Zurück zur KI-Coding Übersicht</a></li>
-<li><a href="../antigravity-cli/">Antigravity CLI 2 Handbuch</a></li>
-<li><a href="../vibe-coding-engineering/">Vibe Coding &amp; Engineering</a></li>
+<li>[ ] Approval-Modus aktiviert? (Jeder Befehl muss manuell bestätigt werden)</li>
+<li>[ ] Unprivilegierter Benutzer (kein root)?</li>
+<li>[ ] Secrets aus dem Arbeitsverzeichnis entfernt oder ausgeschlossen?</li>
+<li>[ ] Kritische Pfade (<code>/etc</code>, <code>/var/lib</code>) in der Deny-Liste?</li>
+<li>[ ] Backup der wichtigsten Konfigurationen erstellt?</li>
+<li>[ ] Rollback-Plan vorhanden?</li>
+<li>[ ] Ein zweiter Mensch überwacht die Session live?</li>
+<li>[ ] Zeitfenster mit minimalem Traffic gewählt (z. B. Nacht/Wochenende)?</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tipp: Goldene Regel</p>
+<p>Wenn du dir nicht 100 % sicher bist, was der KI-Agent als nächstes tun wird — stoppe und frage nach. Ein guter Agent erklärt jeden Schritt, bevor er ihn ausführt.</p>
+</div>
+<hr />
+<h2 id="weiterfuhrende-links">Weiterführende Links<a class="headerlink" href="#weiterfuhrende-links" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../antigravity-cli/">Antigravity CLI — Übersicht</a></li>
+<li><a href="../antigravity-cli-advanced-mcp-cicd/">Antigravity CLI — Kapitel 9: MCP, Headless &amp; Security</a></li>
+<li><a href="../hermes-agent-docker/">Hermes Agent (Docker)</a></li>
+<li><a href="../../../../entwicklung/infrastruktur/docker-installation-ubuntu/">Docker Installation (Ubuntu 24.04)</a></li>
+<li><a href="../../../../entwicklung/infrastruktur/ki-ml-infrastrukturen/">KI/ML-Infrastrukturen</a></li>
+<li><a href="../claude-code-praxis/">Claude Code Praxis-Handbuch</a></li>
 </ul>
 
 
@@ -3430,7 +3456,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../continue-dev-setup/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Continue.dev &amp; Tabby AI">
+          <a href="../claude-code-praxis/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Claude Code Praxis-Handbuch">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3440,20 +3466,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Continue.dev & Tabby AI
+                Claude Code Praxis-Handbuch
               </div>
             </div>
           </a>
         
         
           
-          <a href="../ki-tools-produktionsserver/" class="md-footer__link md-footer__link--next" aria-label="Weiter: KI-Tools auf dem Produktionsserver">
+          <a href="../antigravity-cli/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Übersicht">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                KI-Tools auf dem Produktionsserver
+                Übersicht
               </div>
             </div>
             <div class="md-footer__button md-icon">
