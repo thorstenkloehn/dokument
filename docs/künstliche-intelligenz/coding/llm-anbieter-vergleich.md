@@ -137,6 +137,7 @@ Bei selbstgehosteten Modellen entfallen laufende Token-Kosten vollständig — b
 
 ## 🔗 Verwandte Themen
 
+- [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) — Ollama vs. vLLM im Detail
 - [vLLM High-Throughput Serving](vllm-high-throughput-serving.md) — produktionsreifes Self-Hosting
 - [Local LLM Fine-Tuning (Unsloth)](lora-finetuning-unsloth.md) — eigene Modelle anpassen

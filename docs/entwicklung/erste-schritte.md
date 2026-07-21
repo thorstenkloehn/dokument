@@ -159,7 +159,7 @@ cargo --version
 
 ```mermaid
 graph TD
-    A[🖥️ Frisches System] --> B[Code-Editor installieren]
+    A["🖥️ Frisches System"] --> B[Code-Editor installieren]
     B --> C[Git konfigurieren]
     C --> D[Terminal einrichten]
     D --> E{"Welches Projekt?"}
@@ -167,7 +167,7 @@ graph TD
     E --> G["Web-Projekt → Node.js"]
     E --> H["System-Projekt → Rust/C++"]
     E --> I["Container-Projekt → Docker"]
-    F --> J[✅ Bereit zum Entwickeln]
+    F --> J["✅ Bereit zum Entwickeln"]
     G --> J
     H --> J
     I --> J
@@ -241,15 +241,15 @@ graph TD
     B --> C["🌐 Webseite / App"]
     B --> D["🤖 KI / Daten"]
     B --> E["⚙️ Systeme / Hardware"]
-    B --> F[📱 Mobile App]
-    B --> G[🔧 Automatisierung]
+    B --> F["📱 Mobile App"]
+    B --> G["🔧 Automatisierung"]
 
     C --> C1{"Frontend oder Backend?"}
     C1 --> C2["Frontend → JavaScript/TypeScript"]
     C1 --> C3["Backend → Python / Go / Node.js"]
 
     D --> D1[Python ist erste Wahl]
-    D1 --> D2[NumPy · PyTorch · scikit-learn]
+    D1 --> D2["NumPy · PyTorch · scikit-learn"]
 
     E --> E1{"Sicherheit wichtig?"}
     E1 --> E2["Ja → Rust"]
