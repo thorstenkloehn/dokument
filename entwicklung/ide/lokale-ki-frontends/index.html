@@ -2764,10 +2764,10 @@ Bei kommerziellen Web-Plattformen wird stets eine <strong>Open-Source-Alternativ
 <h2 id="ubersicht-der-web-uis">Übersicht der Web-UIs<a class="headerlink" href="#ubersicht-der-web-uis" title="Permanent link">&para;</a></h2>
 <p>Wenn lokale LLMs über <a href="https://ollama.com">Ollama</a> oder andere Inference-Server laufen, benötigt man eine benutzerfreundliche Oberfläche für den Chat-Alltag. Folgende Lösungen bieten eine professionelle Alternative zu ChatGPT &amp; Claude:</p>
 <pre class="mermaid"><code>graph TD
-    A["👤 Benutzer-Anfrage"] --&gt; B["🌐 Web-UI ("Open WebUI / LibreChat")"]
+    A["👤 Benutzer-Anfrage"] --&gt; B["🌐 Web-UI ('Open WebUI / LibreChat')"]
     B --&gt;|API-Schnittstelle| C["🐳 Docker-Netzwerk"]
     C --&gt;|Port 11434| D["🧠 Ollama (lokale Modelle)"]
-    C --&gt;|Externe API| E["☁️ Cloud APIs ("Claude, OpenAI")"]</code></pre>
+    C --&gt;|Externe API| E["☁️ Cloud APIs ('Claude, OpenAI')"]</code></pre>
 <hr />
 <h2 id="1-open-webui">1. Open WebUI 🟩 🐳 🐧 🌐<a class="headerlink" href="#1-open-webui" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/open-webui/open-webui">Open WebUI</a> ist die derzeit am besten integrierte Oberfläche für <strong>Ollama</strong>. Sie bietet eine Benutzeroberfläche, die stark an ChatGPT angelehnt ist, unterstützt RAG (Retrieval-Augmented Generation), Dokumenten-Uploads und Benutzerverwaltung.</p>
