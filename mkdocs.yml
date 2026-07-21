@@ -4,7 +4,6 @@ site_url: https://dokument.wissen-ahrensburg.de
 
 nav:
   - Start: index.md
-  - Tags: tags.md
 
   # 🤖 KI & AUTOMATISIERUNG
   - KI & Automatisierung:
@@ -16,6 +15,9 @@ nav:
               - KI Coding: künstliche-intelligenz/coding/ki-coding.md
               - AI Engineer Praxis-Handbuch: künstliche-intelligenz/coding/ai-engineer-praxis.md
               - Prompt Engineering Praxis-Handbuch: künstliche-intelligenz/coding/prompt-engineering-praxis.md
+              - Prompt Gems (Gemini, Claude, mdBook): künstliche-intelligenz/coding/prompt-gems-gemini-claude-mdbook.md
+              - Meine Gems Liste und Claude Projekt Liste:
+                - Projekt: künstliche-intelligenz/coding/gems/projekt.md
               - Programmieren lernen mit KI: künstliche-intelligenz/coding/programmieren-lernen-ki.md
               - Programmieren mit KI: künstliche-intelligenz/coding/programmieren-mit-ki.md
               - Vibe Coding & Engineering: künstliche-intelligenz/coding/vibe-coding-engineering.md
