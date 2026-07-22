@@ -21,14 +21,6 @@ sudo ubuntu-drivers install
 
 ## Sprachruntimes installieren
 
-### Java und Entwicklungswerkzeuge
-
-```bash
-sudo apt install openjdk-26-jdk
-sudo apt install maven
-```
-
-
 ### Python installieren
 
 ```bash
@@ -54,13 +46,21 @@ node -v # Should print "v25.4.0".
 npm -v # Should print "11.7.0".
 ```
 
+### C und C++ Entwicklungsumgebung
+
+```bash
+sudo apt install curl
+sudo apt install build-essential
+sudo apt-get install cmake
+sudo apt-get install gdb
+```
 ### Go (Golang) installieren
 
 ```bash
 cd $HOME
 sudo rm -rf /usr/local/go
-wget https://go.dev/dl/go1.26.4.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.26.4.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.26.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.26.5.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
@@ -71,15 +71,6 @@ source ~/.bashrc
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
-### C und C++ Entwicklungsumgebung
-
-```bash
-sudo apt install curl
-sudo apt install build-essential
-sudo apt-get install cmake
-sudo apt-get install gdb
 ```
 
 ---
@@ -114,8 +105,13 @@ psql -d thorsten -c "CREATE EXTENSION hstore;"
 psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO thorsten;"
 psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO thorsten;"
 psql -d thorsten -c "\password thorsten"
-psql -c "ALTER USER dein_benutzername CREATEDB;"
+psql -c "ALTER USER thorsten CREATEDB;"
 exit
+cd $HOME
+wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
+sudo apt-get install osmosis osm2pgsql
+osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
+osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
 ```
 
 ### PostgreSQL Passwort-Authentifizierung konfigurieren
@@ -226,7 +222,6 @@ sudo apt-get install neovim
 ### Wichtige VS Code Erweiterungen installieren
 
 ```bash
-code --install-extension GitHub.copilot
 code --install-extension anthropic.claude-code
 code --install-extension ms-python.python
 code --install-extension rust-lang.rust-analyzer
@@ -252,7 +247,6 @@ sudo snap install intellij-idea --classic
 
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
-curl -fsSL https://chatgpt.com/codex/install.sh | sh
 curl -fsSL https://antigravity.google/cli/install.sh | bash
 ```
 
@@ -260,27 +254,9 @@ curl -fsSL https://antigravity.google/cli/install.sh | bash
 
 ## Geodaten-Verarbeitung
 
-### PostGIS und OSM-Daten
 
-```bash
-cd $HOME
-sudo -u postgres -i
-createuser thorsten
-createdb -E UTF8 -O thorsten thorsten
-psql -d thorsten -c "CREATE EXTENSION postgis;"
-psql -d thorsten -c "CREATE EXTENSION hstore;"
-psql -d thorsten -c "ALTER TABLE geometry_columns OWNER TO thorsten;"
-psql -d thorsten -c "ALTER TABLE spatial_ref_sys OWNER TO thorsten;"
-psql -d thorsten -c "\password thorsten"
-psql -c "ALTER USER dein_benutzername CREATEDB;"
-exit
 
-cd $HOME
-wget https://download.geofabrik.de/europe/germany/schleswig-holstein-latest.osm.pbf
-sudo apt-get install osmosis osm2pgsql
-osmosis --read-pbf file=schleswig-holstein-latest.osm.pbf --bounding-box left=10.1141 right=10.3716 top=53.7136 bottom=53.6249 --write-pbf file=ahrensburg.pbf
-osm2pgsql -d thorsten -H localhost -U thorsten --create -G --hstore -W ahrensburg.pbf
-```
+
 
 ### QGIS Verbindungstypen
 
