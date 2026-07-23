@@ -65,6 +65,7 @@ Diese Werkzeuge lesen ein bestehendes Code-Repository und generieren daraus **au
 | Tool | Funktionsweise | Besonderheit |
 |---|---|---|
 | **DeepWiki** (Cognition/Devin) | Analysiert ein GitHub-Repository und generiert automatisch eine strukturierte Wiki-Seite mit Architektur-Diagrammen, Erklärungen und Quellcode-Verweisen | kostenlos für öffentliche Repos, laufend aktualisiert bei neuen Commits |
+| **[OpenWiki](openwiki-repo-dokumentation-agent.md)** (LangChain) | Open-Source-CLI-Agent (MIT), generiert eine Repo-Wiki und trägt Referenzen in `AGENTS.md`/`CLAUDE.md` ein, statt die Doku vollständig in den Prompt zu laden | selbst gehostet, frei wählbarer Modell-Provider, CI-Update via GitHub/GitLab/Bitbucket |
 | **Sourcegraph Cody** | Code-Intelligence-Agent mit Kontext über das gesamte Repo, beantwortet Architekturfragen direkt aus dem Code | primär Such-/Chat-fokussiert, kein eigenständiges Wiki-Artefakt |
 | **Mintlify** | Docs-Plattform mit KI-Assistent, der aus Code-Kommentaren und Docstrings Dokumentationsentwürfe generiert | „AI-first" Docs-Hosting, ähnlich MkDocs/Docusaurus aber mit KI-Autorenfunktion |
 | **GitHub Copilot Workspace** | Agent liest ein Issue/Repo und schlägt passende Doku- bzw. Code-Änderungen als PR vor | eng an GitHub-Workflows gekoppelt |
