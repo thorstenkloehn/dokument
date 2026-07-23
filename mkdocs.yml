@@ -229,6 +229,7 @@ nav:
 
       - Dokumentation:
           - Übersicht: wissen/dokumentation/index.md
+          - Native „LLM-first" Wiki-Tools & Agenten: wissen/dokumentation/llm-first-wiki-tools-agenten.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
