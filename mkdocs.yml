@@ -232,6 +232,7 @@ nav:
           - Native „LLM-first" Wiki-Tools & Agenten: wissen/dokumentation/llm-first-wiki-tools-agenten.md
           - Klassische Wiki-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wiki-systeme-llm-integration.md
           - Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wissensmanagement-cms-llm-integration.md
+          - Open-Source Systeme mit vollständiger LLM-, Agenten- & MCP-Unterstützung: wissen/dokumentation/open-source-llm-agent-mcp-systeme.md
           - "OpenWiki: Repo-Dokumentations-Agent (LangChain)": wissen/dokumentation/openwiki-repo-dokumentation-agent.md
           - "Onyx (ehem. Danswer): RAG-Plattform": wissen/dokumentation/onyx-danswer-rag-plattform.md
           - MediaWiki:
