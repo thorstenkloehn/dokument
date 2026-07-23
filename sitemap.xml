@@ -493,6 +493,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/openwiki-repo-dokumentation-agent/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/onyx-danswer-rag-plattform/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/</loc>
       </url>
       <url>
@@ -503,6 +506,9 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/mediawiki-python-bot/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/mediawiki-ki-agent/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/mediawiki-backup-skripte/</loc>
