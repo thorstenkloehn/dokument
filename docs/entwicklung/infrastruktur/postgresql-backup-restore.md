@@ -71,4 +71,3 @@ echo "✅ Backup erfolgreich abgeschlossen!"
 ## 🔗 Verwandte Themen
 * [PostgreSQL Installation](postgresql.md) – Grundkonfiguration
 * [PostgreSQL + pgvector](../../wissen/daten/datenbanken/pgvector-anleitung.md) – Vektordatenbanken
-* [Docker KI-Stack](docker-ki-stack.md) – PostgreSQL im Container

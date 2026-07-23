@@ -92,4 +92,3 @@ with conn.cursor() as cur:
 ## 🔗 Verwandte Themen
 * [Datenbanken Übersicht](index.md) – Vektordatenbank-Überblick
 * [Lokales RAG & LLM-Serving](../../../künstliche-intelligenz/coding/lokales-rag-ollama.md) – RAG mit Ollama
-* [Docker KI-Stack](../../../entwicklung/infrastruktur/docker-ki-stack.md) – PostgreSQL mit pgvector via Docker

@@ -35,4 +35,3 @@ echo $$ | sudo tee /sys/fs/cgroup/meine_gruppe/cgroup.procs
 ## 🔗 Verwandte Themen
 * [Systemd Service Creation](systemd-service-creation.md) – Service Units mit Cgroups
 * [Linux-Systemprogrammierung](linux-systemprogrammierung.md) – Prozessverwaltung
-* [Docker KI-Stack](../infrastruktur/docker-ki-stack.md) – Container-Limits

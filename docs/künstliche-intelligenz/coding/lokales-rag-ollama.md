@@ -105,5 +105,4 @@ Unter `http://localhost:3000` steht nun ein lokales Web-Interface zur Verfügung
 
 ## 🔗 Verwandte Themen
 * [PostgreSQL + pgvector](../../wissen/daten/datenbanken/pgvector-anleitung.md) – Vektorspeicherung in PostgreSQL
-* [Docker KI-Stack](../../entwicklung/infrastruktur/docker-ki-stack.md) – Fertiges Container-Setup
 * [Lokale KI-Frontends](../../entwicklung/ide/lokale-ki-frontends.md) – Übersicht moderner KI-UIs

@@ -67,4 +67,3 @@ print()
 ## 🔗 Verwandte Themen
 * [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) – Ollama vs vLLM
 * [Skalierbare KI/ML-Infrastrukturen](../../entwicklung/infrastruktur/ki-ml-infrastrukturen.md) – Server-Infrastrukturen
-* [Docker KI-Stack](../../entwicklung/infrastruktur/docker-ki-stack.md) – Containerized Deployment

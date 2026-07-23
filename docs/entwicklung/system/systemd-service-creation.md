@@ -59,4 +59,3 @@ journalctl -u mein_dienst.service -f
 ## 🔗 Verwandte Themen
 * [Linux-Systemprogrammierung](linux-systemprogrammierung.md) – Prozesse & Signale
 * [Nginx Hardening](../infrastruktur/nginx-hardening.md) – Server-Sicherheit
-* [Docker KI-Stack](../infrastruktur/docker-ki-stack.md) – Container-Dienste

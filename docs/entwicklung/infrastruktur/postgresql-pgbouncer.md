@@ -56,4 +56,3 @@ sudo systemctl restart pgbouncer
 ## 🔗 Verwandte Themen
 * [PostgreSQL Performance Tuning](postgresql-tuning.md) – Performance-Optimierung
 * [PostgreSQL Backup & Recovery](postgresql-backup-restore.md) – Sicherung
-* [Docker KI-Stack](docker-ki-stack.md) – Container-Infrastruktur

@@ -66,4 +66,3 @@ server {
 ## 🔗 Verwandte Themen
 * [Nginx Hardening & Sicherheit](nginx-hardening.md) – Rate Limiting & HSTS
 * [Nginx Load Balancing](nginx-loadbalancing.md) – Lastausgleich
-* [Docker KI-Stack](docker-ki-stack.md) – Nginx im Container

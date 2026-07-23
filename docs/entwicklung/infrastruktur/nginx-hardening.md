@@ -94,4 +94,3 @@ sudo systemctl restart fail2ban
 ## 🔗 Verwandte Themen
 * [Nginx & SSL](nginx-ssl.md) – SSL/TLS Verschlüsselung
 * [Sicherheit Übersicht](sicherheit/index.md) – Server-Sicherheit
-* [Docker KI-Stack](docker-ki-stack.md) – Nginx im Docker Container

@@ -39,7 +39,6 @@ nav:
               - Microsoft Semantic Kernel: künstliche-intelligenz/coding/semantic-kernel-python.md
               - LangChain LCEL Chains: künstliche-intelligenz/coding/langchain-lcel-chains.md
               - Open-WebUI Pipelines: künstliche-intelligenz/coding/open-webui-pipelines.md
-              - Hermes Agent (Docker): künstliche-intelligenz/coding/hermes-agent-docker.md
           - Tools:
               - Continue.dev & Tabby AI: künstliche-intelligenz/coding/continue-dev-setup.md
               - Claude Code Praxis-Handbuch: künstliche-intelligenz/coding/claude-code-praxis.md
@@ -123,10 +122,7 @@ nav:
               - Table Partitioning: entwicklung/infrastruktur/postgresql-table-partitioning.md
               - JSONB & GIN-Indizes: entwicklung/infrastruktur/postgresql-jsonb-gin-indexes.md
               - Volltextsuche (tsvector): entwicklung/infrastruktur/postgresql-fulltext-search.md
-          - KI/ML & Docker:
-              - KI/ML-Infrastrukturen: entwicklung/infrastruktur/ki-ml-infrastrukturen.md
-              - Docker Installation (Ubuntu 24.04): entwicklung/infrastruktur/docker-installation-ubuntu.md
-              - Docker KI-Stack: entwicklung/infrastruktur/docker-ki-stack.md
+          - KI/ML-Infrastrukturen: entwicklung/infrastruktur/ki-ml-infrastrukturen.md
           - Benchmarking:
               - HTTP Server Benchmarking: entwicklung/infrastruktur/http-server-benchmarking.md
               - k6 API Load Testing: entwicklung/infrastruktur/k6-api-load-testing.md
