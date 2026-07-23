@@ -26,6 +26,7 @@ nav:
               - Schrödinger programmiert KI: künstliche-intelligenz/coding/schroedinger-programmiert-ki.md
           - LLM & Serving:
               - Multi-LLM- & Sprachmodell-Anbieter im Vergleich: künstliche-intelligenz/coding/llm-anbieter-vergleich.md
+              - Custom Chat-Assistenten im Anbieter-Vergleich (Gems, GPTs, Projects): künstliche-intelligenz/coding/custom-chat-assistenten-anbieter-vergleich.md
               - Lokales RAG & LLM-Serving: künstliche-intelligenz/coding/lokales-rag-ollama.md
               - vLLM High-Throughput Serving: künstliche-intelligenz/coding/vllm-high-throughput-serving.md
               - Local LLM Fine-Tuning (Unsloth): künstliche-intelligenz/coding/lora-finetuning-unsloth.md
