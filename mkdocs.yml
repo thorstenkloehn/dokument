@@ -231,11 +231,13 @@ nav:
           - Übersicht: wissen/dokumentation/index.md
           - Native „LLM-first" Wiki-Tools & Agenten: wissen/dokumentation/llm-first-wiki-tools-agenten.md
           - "OpenWiki: Repo-Dokumentations-Agent (LangChain)": wissen/dokumentation/openwiki-repo-dokumentation-agent.md
+          - "Onyx (ehem. Danswer): RAG-Plattform": wissen/dokumentation/onyx-danswer-rag-plattform.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
               - Wiederherstellen: wissen/dokumentation/mediawiki/wiederherstellen.md
               - Python Bot Automatisierung: wissen/dokumentation/mediawiki/mediawiki-python-bot.md
+              - KI-Agent (Automatisierte Pflege mit LLMs): wissen/dokumentation/mediawiki/mediawiki-ki-agent.md
               - Backup Skripte: wissen/dokumentation/mediawiki/mediawiki-backup-skripte.md
               - PHP Extension: wissen/dokumentation/mediawiki/mediawiki-php-extension.md
           - Semantisches MediaWiki:
