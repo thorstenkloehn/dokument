@@ -82,9 +82,6 @@
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/open-webui-pipelines/</loc>
       </url>
       <url>
-        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/hermes-agent-docker/</loc>
-      </url>
-      <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/continue-dev-setup/</loc>
       </url>
       <url>
@@ -278,12 +275,6 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/ki-ml-infrastrukturen/</loc>
-      </url>
-      <url>
-        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/docker-installation-ubuntu/</loc>
-      </url>
-      <url>
-        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/docker-ki-stack/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/http-server-benchmarking/</loc>
