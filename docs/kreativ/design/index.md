@@ -5,6 +5,7 @@ Willkommen im Bereich **Design mit KI**! Hier finden Sie Inspiration und Anleitu
 ## Themen in diesem Bereich
 
 - [Design nach KI](design-nach-ki.md) - Wie KI das Design entwickelt
+- [Beste KI-Bildgenerierungs-Tools (Open Source, Top 20)](ki-bildgenerierung-tools-topliste.md) - Vergleich der wichtigsten quelloffenen Werkzeuge und Modelle
 - [Ideenfindung mit KI](ideenfindung-ki.md) - Kreativität fördern
 - [Leseprobe: KI für Kreative](leseprobe-ki-kreative.md)
 

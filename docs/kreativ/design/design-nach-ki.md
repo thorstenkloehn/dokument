@@ -359,6 +359,7 @@ graph TD
 
 ## Weiterführende Ressourcen
 
+- **[Beste KI-Bildgenerierungs-Tools (Open Source, Top 20)](ki-bildgenerierung-tools-topliste.md)** – Vertiefender Werkzeug-/Modellvergleich 🟩
 - **[C2PA Standard](https://c2pa.org)** – Spezifikation zur Bild-Signierung
 - **[ComfyUI Workflows](https://comfyanonymous.github.io/ComfyUI_examples/)** – Praktische Ablaufbeispiele 🟩
 - **[Krita AI Project](https://github.com/Acly/krita-ai-diffusion)** – Installations-Anleitung 🟩
