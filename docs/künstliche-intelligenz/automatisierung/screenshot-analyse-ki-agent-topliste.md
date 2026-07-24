@@ -76,3 +76,4 @@ graph TD
 - [PyAutoGUI: OpenCV & OCR](pyautogui-ocr-vision.md) — praktische Grundlagen zu Rang 15
 - [Playwright Visual Regression](playwright-visual-regression.md) — vertiefender Praxis-Guide zu Rang 12/13
 - [Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Top 20)](desktop-agent-vollsteuerung-topliste.md)
+- [Beste Screenshot-Analyse-KI-Agenten (Open Source, Ubuntu 26.04, Top 20)](screenshot-analyse-opensource-ubuntu-topliste.md) — nur quelloffene, lokal betreibbare Modelle/Bibliotheken

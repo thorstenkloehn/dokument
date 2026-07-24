@@ -76,3 +76,4 @@ graph TD
 - [Playwright Grundlagen](playwright-anleitung.md) — vertiefende Praxis zu Rang 19
 - [Playwright & KI Web-Scraping](playwright-ki-extraction.md) — vertiefende Praxis zu Rang 19
 - [Beste Voice-Steuerung-KI-Agenten (Open Source, Ubuntu 26.04, Top 20)](voice-steuerung-opensource-ubuntu-topliste.md) — dasselbe Doppel-Filterprinzip für Sprachsteuerung statt Browser-Erweiterungen
+- [Beste Screenshot-Analyse-KI-Agenten (Open Source, Ubuntu 26.04, Top 20)](screenshot-analyse-opensource-ubuntu-topliste.md) — dasselbe Doppel-Filterprinzip für den Bildverständnis-Baustein
