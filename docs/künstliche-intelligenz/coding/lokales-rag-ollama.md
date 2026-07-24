@@ -106,3 +106,4 @@ Unter `http://localhost:3000` steht nun ein lokales Web-Interface zur Verfügung
 ## 🔗 Verwandte Themen
 * [PostgreSQL + pgvector](../../wissen/daten/datenbanken/pgvector-anleitung.md) – Vektorspeicherung in PostgreSQL
 * [Lokale KI-Frontends](../../entwicklung/ide/lokale-ki-frontends.md) – Übersicht moderner KI-UIs
+* [Beste Cloud-Provider für GPU-Hosting eigener Rust-Coding-Modelle (Top 20)](cloud-gpu-provider-rust-topliste.md) – gemietete GPU-Leistung statt eigener Hardware
