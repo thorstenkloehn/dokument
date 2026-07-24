@@ -73,3 +73,4 @@ Nur ein Teil der Anbieter erlaubt die öffentliche Weitergabe des fertigen Assis
 - [Multi-LLM- & Sprachmodell-Anbieter im Vergleich](llm-anbieter-vergleich.md) — Preise & API-Zugriffswege der gleichen Anbieter
 - [Prompt Gems & System Prompts: Gemini, Claude & mdBook](prompt-gems-gemini-claude-mdbook.md) — konkrete Prompt-Vorlagen für Gems und Claude Projects
 - [Meine Gems Liste und Claude Projekt Liste](gems/projekt.md) — persönliche Sammlung eigener Gems/Projects
+- [Beste Mobile KI-Chat-Apps mit Live-Sprach- & Video-Modus (Android, Top 20)](mobile-ki-chat-live-topliste.md) — Live-Sprach-/Video-Modi derselben und weiterer Anbieter auf dem Smartphone
