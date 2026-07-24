@@ -98,6 +98,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Sprachmodelle für Rust-Programmierung (Top 20)](llm-rust-topliste.md) — Gesamtliste inkl. proprietärer Cloud-Modelle
 - [Beste Cloud-Provider für GPU-Hosting eigener Rust-Coding-Modelle (Top 20)](cloud-gpu-provider-rust-topliste.md) — wo diese Modelle gemietet betrieben werden können
+- [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Abo-Abrechnung, Top 20)](llm-aggregatoren-abo-rust-topliste.md) — Ollama Cloud als abo-basierte Alternative zum eigenen GPU-Betrieb
 - [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) — Ollama-Setup auf eigener Hardware
 - [vLLM High-Throughput Serving](vllm-high-throughput-serving.md) — produktionsreifes Self-Hosting für hohen Durchsatz
 - [Local LLM Fine-Tuning (Unsloth)](lora-finetuning-unsloth.md) — eigenes Fine-Tuning auf Basis dieser offenen Modelle
