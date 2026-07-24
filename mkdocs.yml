@@ -63,6 +63,7 @@ nav:
               - Agent Client Protocol (ACP) — Übersicht: künstliche-intelligenz/coding/agent-client-protocol-acp.md
               - Beste Alternativen zum Agent Client Protocol (ACP, Top 20): künstliche-intelligenz/coding/agent-client-protocol-alternativen-topliste.md
               - Beste MCP-Server (Top 20): künstliche-intelligenz/coding/mcp-server-topliste.md
+              - Beste Open-Source-Software mit MCP-Server (Top 20): künstliche-intelligenz/coding/mcp-server-opensource-software-topliste.md
               - Beste KI-Coding-Agenten für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/ki-agenten-rust-topliste.md
               - Beste Cloud-Agenten für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/cloud-agenten-rust-topliste.md
               - Beste KI-Coding-Agenten für Rust-Programmierung (Self-Hosting, Top 20): künstliche-intelligenz/coding/selbsthosting-ki-agenten-rust-topliste.md
@@ -277,6 +278,8 @@ nav:
           - Klassische Wiki-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wiki-systeme-llm-integration.md
           - Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wissensmanagement-cms-llm-integration.md
           - Open-Source Systeme mit vollständiger LLM-, Agenten- & MCP-Unterstützung: wissen/dokumentation/open-source-llm-agent-mcp-systeme.md
+          - Beste Wissensmanagement-Systeme (Open Source) mit MCP-Server (Top 20): wissen/dokumentation/wissensmanagement-mcp-server-topliste.md
+          - Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20): wissen/dokumentation/cms-mcp-server-topliste.md
           - "OpenWiki: Repo-Dokumentations-Agent (LangChain)": wissen/dokumentation/openwiki-repo-dokumentation-agent.md
           - "Onyx (ehem. Danswer): RAG-Plattform": wissen/dokumentation/onyx-danswer-rag-plattform.md
           - MediaWiki:
