@@ -79,6 +79,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Fernsteuerung von Self-Hosting-Servern per Android (Top 20)](../../entwicklung/infrastruktur/android-server-fernsteuerung-opensource-topliste.md) — generische Server-Fernsteuerungs-Tools als technisches Fundament dieser Seite
 - [Beste KI-Agent-Fernsteuerung auf einem lokalen Rechner per Android (Top 20)](android-ki-agent-fernsteuerung-lokal-topliste.md) — dasselbe Konzept, wenn der Agent auf dem eigenen PC statt einem Server läuft
+- [Android-KI-Agent-Fernsteuerung für Server selbst programmieren (Kotlin & KI-Agent-SDK)](android-ki-agent-fernsteuerung-server-sdk-kotlin.md) — eigene App statt fertiger Tools aus dieser Liste
 - [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](../coding/selbsthosting-ki-agenten-topliste.md) — Bewertung der Agenten-Frameworks selbst
 - [Beste Mobile KI-Chat-Apps mit Live-Sprach- & Video-Modus (Android, Top 20)](../coding/mobile-ki-chat-live-topliste.md) — Gegenstück mit Cloud-gehosteten Modellen statt Self-Hosting
 - [Lokales RAG & LLM-Serving](../coding/lokales-rag-ollama.md) — Grundlagen zum Betrieb der Modelle hinter diesen Oberflächen

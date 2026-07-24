@@ -100,6 +100,8 @@ nav:
           - Beste Screenshot-Analyse-KI-Agenten (Open Source, Ubuntu 26.04, Top 20): künstliche-intelligenz/automatisierung/screenshot-analyse-opensource-ubuntu-topliste.md
           - Beste KI-Agent-Fernsteuerung auf einem Self-Hosting-Server per Android (Open Source, Top 20): künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-server-topliste.md
           - Beste KI-Agent-Fernsteuerung auf einem lokalen Rechner per Android (Open Source, Top 20): künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-lokal-topliste.md
+          - Android-KI-Agent-Fernsteuerung für den lokalen PC selbst programmieren (Kotlin & KI-Agent-SDK): künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-lokal-sdk-kotlin.md
+          - Android-KI-Agent-Fernsteuerung für Server selbst programmieren (Kotlin & KI-Agent-SDK): künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-server-sdk-kotlin.md
           - PyAutoGUI:
               - Grundlagen: künstliche-intelligenz/automatisierung/pyautogui-anleitung.md
               - OpenCV & OCR: künstliche-intelligenz/automatisierung/pyautogui-ocr-vision.md

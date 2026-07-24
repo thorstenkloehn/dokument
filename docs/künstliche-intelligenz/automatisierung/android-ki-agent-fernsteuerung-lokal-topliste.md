@@ -74,6 +74,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste KI-Agent-Fernsteuerung auf einem Self-Hosting-Server per Android (Top 20)](android-ki-agent-fernsteuerung-server-topliste.md) — dasselbe Konzept für einen dauerhaft laufenden Server statt den lokalen PC
+- [Android-KI-Agent-Fernsteuerung für den lokalen PC selbst programmieren (Kotlin & KI-Agent-SDK)](android-ki-agent-fernsteuerung-lokal-sdk-kotlin.md) — eigene App statt fertiger Tools aus dieser Liste
 - [Fernsteuerung von Self-Hosting-Servern per Android (Top 20)](../../entwicklung/infrastruktur/android-server-fernsteuerung-opensource-topliste.md) — generische Fernsteuerungs-Tools (u. a. Tailscale, RustDesk, KDE Connect) im ursprünglichen, nicht Agenten-spezifischen Kontext
 - [Beste lokale Computer-KI-Agenten (Allgemein, Top 20)](lokale-ki-agenten-topliste.md) — Agenten, die den PC-Bildschirm selbst per Vision-Modell steuern, statt vom Handy aus ferngesteuert zu werden
 - [Beste Mobile KI-Chat-Apps mit Live-Sprach- & Video-Modus (Android, Top 20)](../coding/mobile-ki-chat-live-topliste.md) — Gegenstück mit Cloud-gehosteten Modellen statt lokalem PC
