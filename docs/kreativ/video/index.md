@@ -82,7 +82,7 @@ Werkzeuge, um Betriebssysteme, Terminals und Benutzeroberflächen programmatisch
 
 ## 10. KI-gestützte Videogenerierung & Bearbeitung
 
-Tools und Frameworks, die künstliche Intelligenz zur automatischen Erstellung, Bearbeitung und Verbesserung von Videos nutzen.
+Tools und Frameworks, die künstliche Intelligenz zur automatischen Erstellung, Bearbeitung und Verbesserung von Videos nutzen. Einen vertiefenden Vergleich der aktuell stärksten quelloffenen Modelle und Werkzeuge liefert die Seite [Beste KI-Video-Tools (Open Source, Top 20)](ki-video-tools-topliste.md).
 
 * **Stable Video Diffusion** (Python): Ein Diffusionsmodell von Stability AI zur Generierung von Videos aus Textprompts oder Bild-zu-Video-Transformationen.
 * **AnimateDiff**: Eine Erweiterung für Stable Diffusion, die Bewegungen in generierten Videos verbessert und flüssigere Animationen ermöglicht.
