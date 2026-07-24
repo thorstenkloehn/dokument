@@ -80,3 +80,4 @@ graph TD
 - [ydotool Grundlagen](ydotool-anleitung.md) — Low-Level-Steuerung unter Wayland
 - [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](../coding/selbsthosting-ki-agenten-topliste.md) — serverseitige Agenten-Frameworks
 - [Beste Cloud-KI-Agenten (Allgemein, Top 20)](../coding/cloud-ki-agenten-topliste.md) — gehostete Agenten-Plattformen
+- [Beste Desktop-Steuerungs-Software mit KI (Top 20)](desktop-steuerungs-software-ki-topliste.md) — fertige RPA-/OS-native Software statt Frameworks/Modellen
