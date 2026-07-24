@@ -206,3 +206,6 @@ mod tests {
 * [Zurück zur Systemprogrammierungs-Übersicht](index.md)
 * [Rust, C & C++ Integration](rust-c-cpp-integration.md)
 * [Rust & Python Bindings (PyO3)](rust-python-bindings.md)
+* [Beste IDEs & Editoren mit Rust-Unterstützung (Top 20)](rust-ide-topliste.md)
+* [Beste Sprachmodelle für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-rust-topliste.md)
+* [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-agenten-rust-topliste.md)

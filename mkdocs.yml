@@ -147,6 +147,7 @@ nav:
               - Rust Praxis-Handbuch: entwicklung/system/rust-praxis.md
               - Rust, C & C++ Integration: entwicklung/system/rust-c-cpp-integration.md
               - Rust & Python Bindings (PyO3): entwicklung/system/rust-python-bindings.md
+              - Beste IDEs & Editoren mit Rust-Unterstützung (Top 20): entwicklung/system/rust-ide-topliste.md
               - C++20 Modules & Modern CMake: entwicklung/system/cpp20-modules-cmake.md
           - Linux:
               - Linux Praxis-Handbuch: entwicklung/system/linux-praxis.md

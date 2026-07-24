@@ -98,6 +98,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Sprachmodelle für Rust-Programmierung (Top 20)](llm-rust-topliste.md) — welches LLM hinter dem Agenten laufen sollte
+- [Beste IDEs & Editoren mit Rust-Unterstützung (Top 20)](../../entwicklung/system/rust-ide-topliste.md) — reine Editor-/Tooling-Sicht ohne KI-Fokus
 - [Claude Code Praxis-Handbuch](claude-code-praxis.md) — vertiefender Workflow für Rang 1
 - [Antigravity CLI 2 — Übersicht](antigravity-cli.md) — vertiefender Workflow für Rang 3
 - [Continue.dev & Tabby AI](continue-dev-setup.md) — Setup für IDE-Plugin-basierte Agenten
