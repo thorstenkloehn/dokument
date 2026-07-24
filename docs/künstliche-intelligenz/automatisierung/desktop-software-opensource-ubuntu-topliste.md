@@ -80,3 +80,4 @@ graph TD
 - [ydotool: Wayland Automatisierung](ydotool-wayland-praxis.md) — vertiefende Praxis zu Rang 1
 - [Robot Framework Grundlagen](robot-framework-anleitung.md) — vertiefende Praxis zu Rang 9
 - [PyAutoGUI Grundlagen](pyautogui-anleitung.md) — vertiefende Praxis zu Rang 18
+- [Beste Browser-Erweiterungen mit KI-Agent (Open Source, Ubuntu 26.04, Top 20)](browser-erweiterungen-opensource-ubuntu-topliste.md) — dasselbe Doppel-Filterprinzip für Browser-Erweiterungen statt Desktop-Software

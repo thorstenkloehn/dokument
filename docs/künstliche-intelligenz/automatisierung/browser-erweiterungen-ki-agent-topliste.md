@@ -75,3 +75,4 @@ graph TD
 - [Custom Chat-Assistenten im Anbieter-Vergleich](../coding/custom-chat-assistenten-anbieter-vergleich.md)
 - [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Abo-Abrechnung, Top 20)](../coding/llm-aggregatoren-abo-rust-topliste.md) — einige der hier gelisteten Erweiterungen als Abo-Aggregatoren im Detail
 - [Playwright & KI Web-Scraping](playwright-ki-extraction.md) — programmatische Alternative zu Browser-Erweiterungen
+- [Beste Browser-Erweiterungen mit KI-Agent (Open Source, Ubuntu 26.04, Top 20)](browser-erweiterungen-opensource-ubuntu-topliste.md) — nur quelloffene Erweiterungen mit Linux-Fokus
