@@ -81,3 +81,5 @@ graph TD
 - [Nginx: Hardening & Sicherheit](nginx-hardening.md) — ergänzende Absicherung, wenn Web-UIs zusätzlich über Nginx veröffentlicht werden
 - [Beste Voice-Steuerung-KI-Agenten (Open Source, Ubuntu 26.04, Top 20)](../../künstliche-intelligenz/automatisierung/voice-steuerung-opensource-ubuntu-topliste.md) — Sprachsteuerung als Alternative/Ergänzung zur manuellen Fernsteuerung
 - [Beste Desktop-Steuerungs-Software mit KI (Open Source, Ubuntu 26.04, Top 20)](../../künstliche-intelligenz/automatisierung/desktop-software-opensource-ubuntu-topliste.md) — vergleichbares Doppel-Filterprinzip für die KI-gestützte Desktop-Steuerung
+- [Beste KI-Agent-Fernsteuerung auf einem Self-Hosting-Server per Android (Top 20)](../../künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-server-topliste.md) — dieselbe Fernsteuerungs-Architektur, spezialisiert auf dauerhaft laufende KI-Agenten statt generischer Server-Administration
+- [Beste KI-Agent-Fernsteuerung auf einem lokalen Rechner per Android (Top 20)](../../künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-lokal-topliste.md) — dasselbe Prinzip für den heimischen PC statt einen Server

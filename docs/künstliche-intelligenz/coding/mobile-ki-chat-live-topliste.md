@@ -78,3 +78,4 @@ graph TD
 - [Custom Chat-Assistenten im Anbieter-Vergleich (Gems, GPTs, Projects)](custom-chat-assistenten-anbieter-vergleich.md) — persistente Assistenten-Konzepte derselben Anbieter
 - [Beste Voice-Steuerung-KI-Agenten (Top 20)](../automatisierung/voice-steuerung-ki-agent-topliste.md) — Sprachsteuerung für Desktop-Automatisierung statt Chat
 - [Beste KI-Agent-CLIs (Allgemein, Top 20)](../coding/ki-agent-cli-topliste.md) — Terminal-Gegenstück für produktives KI-Arbeiten statt mobiler Live-Chats
+- [Beste KI-Agent-Fernsteuerung auf einem Self-Hosting-Server per Android (Top 20)](../automatisierung/android-ki-agent-fernsteuerung-server-topliste.md) — Gegenstück mit selbst gehosteten statt Cloud-gehosteten Modellen
