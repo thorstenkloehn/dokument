@@ -76,3 +76,4 @@ graph TD
 - [Beste KI-Agent-CLIs (Allgemein, Top 20)](../coding/ki-agent-cli-topliste.md)
 - [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](../coding/selbsthosting-ki-agenten-topliste.md)
 - [Beste Browser-Erweiterungen mit KI-Agent (Top 20)](browser-erweiterungen-ki-agent-topliste.md) — Browser-Add-ons statt vollständiger Desktop-Software
+- [Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Top 20)](desktop-agent-vollsteuerung-topliste.md) — Vertiefung nach Maus-/Tastatursteuerung, Fensterverwaltung und Aufzeichnung

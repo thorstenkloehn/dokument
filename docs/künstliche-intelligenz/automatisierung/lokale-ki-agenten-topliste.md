@@ -82,3 +82,4 @@ graph TD
 - [Beste Cloud-KI-Agenten (Allgemein, Top 20)](../coding/cloud-ki-agenten-topliste.md) — gehostete Agenten-Plattformen
 - [Beste Desktop-Steuerungs-Software mit KI (Top 20)](desktop-steuerungs-software-ki-topliste.md) — fertige RPA-/OS-native Software statt Frameworks/Modellen
 - [Beste Browser-Erweiterungen mit KI-Agent (Top 20)](browser-erweiterungen-ki-agent-topliste.md) — Browser-Tab statt vollem Bildschirmzugriff
+- [Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Top 20)](desktop-agent-vollsteuerung-topliste.md) — Bewertung nach konkreten Funktionen (Maus, Tastatur, Fenster, Aufzeichnung)

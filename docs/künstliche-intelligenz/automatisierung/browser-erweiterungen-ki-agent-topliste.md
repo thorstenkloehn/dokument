@@ -71,6 +71,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste lokale Computer-KI-Agenten (Allgemein, Top 20)](lokale-ki-agenten-topliste.md) — Agenten mit vollem Bildschirmzugriff statt nur Browser-Tab
 - [Beste Desktop-Steuerungs-Software mit KI (Top 20)](desktop-steuerungs-software-ki-topliste.md) — fertige RPA-/OS-native Software
+- [Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Top 20)](desktop-agent-vollsteuerung-topliste.md) — Bewertung nach konkreten Funktionen (Maus, Tastatur, Fenster, Aufzeichnung)
 - [Custom Chat-Assistenten im Anbieter-Vergleich](../coding/custom-chat-assistenten-anbieter-vergleich.md)
 - [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Abo-Abrechnung, Top 20)](../coding/llm-aggregatoren-abo-rust-topliste.md) — einige der hier gelisteten Erweiterungen als Abo-Aggregatoren im Detail
 - [Playwright & KI Web-Scraping](playwright-ki-extraction.md) — programmatische Alternative zu Browser-Erweiterungen
