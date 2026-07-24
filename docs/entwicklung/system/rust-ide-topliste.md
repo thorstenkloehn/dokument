@@ -108,6 +108,7 @@ graph TD
 - [Beste Direkt-Anbieter (Offizielle Entwickler-APIs) für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-direktanbieter-rust-topliste.md)
 - [Beste Abo-basierte Direkt-Anbieter (Offizielle Entwickler-Abos) für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-abo-anbieter-rust-topliste.md)
 - [Beste Cloud-Provider für GPU-Hosting eigener Rust-Coding-Modelle (Top 20)](../../künstliche-intelligenz/coding/cloud-gpu-provider-rust-topliste.md)
+- [Beste KI-Agent-IDEs (Allgemein, Top 20)](../../künstliche-intelligenz/coding/ki-agent-ide-topliste.md) — dieselbe Kategorie ohne Rust-Fokus bewertet
 - [Beste Rust-Frameworks & Web-Backends mit KI-Unterstützung (Top 20)](../../künstliche-intelligenz/coding/rust-web-frameworks-ki-topliste.md)
 - [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-agenten-rust-topliste.md)
 - [Beste KI-Assistenten & Code-Editoren für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-assistenten-rust-topliste.md)
