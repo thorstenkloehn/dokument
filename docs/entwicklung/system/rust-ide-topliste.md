@@ -104,6 +104,7 @@ graph TD
 - [Beste lokale Sprachmodelle für Rust-Programmierung (Self-Hosting, Top 20)](../../künstliche-intelligenz/coding/lokale-sprachmodelle-rust-topliste.md)
 - [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-aggregatoren-rust-topliste.md)
 - [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Abo-Abrechnung, Top 20)](../../künstliche-intelligenz/coding/llm-aggregatoren-abo-rust-topliste.md)
+- [Beste Cloud-Agenten für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/cloud-agenten-rust-topliste.md)
 - [Beste Direkt-Anbieter (Offizielle Entwickler-APIs) für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-direktanbieter-rust-topliste.md)
 - [Beste Abo-basierte Direkt-Anbieter (Offizielle Entwickler-Abos) für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-abo-anbieter-rust-topliste.md)
 - [Beste Cloud-Provider für GPU-Hosting eigener Rust-Coding-Modelle (Top 20)](../../künstliche-intelligenz/coding/cloud-gpu-provider-rust-topliste.md)

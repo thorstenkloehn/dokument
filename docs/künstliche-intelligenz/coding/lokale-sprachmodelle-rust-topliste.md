@@ -103,3 +103,4 @@ graph TD
 - [vLLM High-Throughput Serving](vllm-high-throughput-serving.md) — produktionsreifes Self-Hosting für hohen Durchsatz
 - [Local LLM Fine-Tuning (Unsloth)](lora-finetuning-unsloth.md) — eigenes Fine-Tuning auf Basis dieser offenen Modelle
 - [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](ki-agenten-rust-topliste.md) — welche Agenten diese Modelle lokal ansteuern
+- [Beste Cloud-Agenten für Rust-Programmierung (Top 20)](cloud-agenten-rust-topliste.md) — asynchrones Gegenstück in der Cloud

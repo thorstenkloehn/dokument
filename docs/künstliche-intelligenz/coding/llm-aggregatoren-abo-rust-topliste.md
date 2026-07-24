@@ -100,5 +100,6 @@ graph TD
 - [Beste Abo-basierte Direkt-Anbieter (Offizielle Entwickler-Abos) für Rust-Programmierung (Top 20)](llm-abo-anbieter-rust-topliste.md) — Einzelhersteller-Abos ohne Modellwahl
 - [Beste Sprachmodelle für Rust-Programmierung (Top 20)](llm-rust-topliste.md) — welches der wählbaren Modelle tatsächlich am besten abschneidet
 - [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](ki-agenten-rust-topliste.md)
+- [Beste Cloud-Agenten für Rust-Programmierung (Top 20)](cloud-agenten-rust-topliste.md) — asynchrones Gegenstück in der Cloud
 - [Beste lokale Sprachmodelle für Rust-Programmierung (Self-Hosting, Top 20)](lokale-sprachmodelle-rust-topliste.md)
 - [Multi-LLM- & Sprachmodell-Anbieter im Vergleich](llm-anbieter-vergleich.md) — Grundlagen zu Token- vs. Abo-Abrechnung

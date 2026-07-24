@@ -107,3 +107,4 @@ graph TD
 - [Beste Abo-basierte Direkt-Anbieter (Offizielle Entwickler-Abos) für Rust-Programmierung (Top 20)](llm-abo-anbieter-rust-topliste.md) — Alternative ohne eigenen Infrastrukturbetrieb, fester Monatspreis
 - [Local LLM Fine-Tuning (Unsloth)](lora-finetuning-unsloth.md) — eigene Modelle auf gemieteten GPUs nachtrainieren
 - [Beste Rust-Frameworks & Web-Backends mit KI-Unterstützung (Top 20)](rust-web-frameworks-ki-topliste.md) — womit das selbst gehostete Modell in Rust angesprochen wird
+- [Beste Cloud-Agenten für Rust-Programmierung (Top 20)](cloud-agenten-rust-topliste.md) — asynchrone Cloud-Sandbox-Agenten als Gegenmodell zum eigenen GPU-Betrieb
