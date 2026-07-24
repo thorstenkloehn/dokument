@@ -75,4 +75,5 @@ graph TD
 - [Beste Computer-Use-Agenten für Ubuntu 26.04 (Top 20)](computer-use-agenten-ubuntu-topliste.md) — Ubuntu-Filter für Vision-/Computer-Use-Agenten
 - [Beste lokale Computer-KI-Agenten (Allgemein, Top 20)](lokale-ki-agenten-topliste.md)
 - [Beste Screenshot-Analyse-KI-Agenten (Open Source, Ubuntu 26.04, Top 20)](screenshot-analyse-opensource-ubuntu-topliste.md) — dasselbe Doppel-Filterprinzip für den Bildverständnis-Baustein
+- [Beste Voice-Steuerung-KI-Agenten für CLI-Automatisierung (Top 20)](voice-steuerung-cli-automatisierung-topliste.md) — Fokus auf Sprachsteuerung von Terminal-Coding-Agenten statt Open-Source-/Ubuntu-Filter
 - [AI Voice Cloning (XTTS v2)](../../kreativ/audio/ai-voice-cloning-xtts.md) — verwandte Sprachsynthese-Technik

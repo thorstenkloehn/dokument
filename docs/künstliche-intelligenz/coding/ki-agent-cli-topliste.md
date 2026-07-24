@@ -78,3 +78,4 @@ graph TD
 - [Beste KI-Agent-IDEs (Allgemein, Top 20)](ki-agent-ide-topliste.md) — IDE-Gegenstück mit nativer Agenten-Integration
 - [Claude Code Praxis-Handbuch](claude-code-praxis.md) — vertiefender Workflow für Rang 1
 - [Antigravity CLI 2 — Übersicht](antigravity-cli.md) — vertiefender Workflow für Rang 3
+- [Beste Voice-Steuerung-KI-Agenten für CLI-Automatisierung (Top 20)](../automatisierung/voice-steuerung-cli-automatisierung-topliste.md) — diese CLIs freihändig per Sprache steuern
