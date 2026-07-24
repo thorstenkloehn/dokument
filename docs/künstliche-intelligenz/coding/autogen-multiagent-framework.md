@@ -64,3 +64,4 @@ user_proxy.initiate_chat(
 * [Agentic Workflows (LangGraph)](agentic-workflows-langgraph.md) – Agenten mit LangGraph
 * [Structured LLM Outputs (Pydantic)](structured-outputs-pydantic.md) – Pydantic Schemas
 * [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) – Ollama RAG
+* [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](selbsthosting-ki-agenten-topliste.md) – AutoGen im Vergleich zu anderen Frameworks

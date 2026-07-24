@@ -74,3 +74,5 @@ if __name__ == "__main__":
 * [Vibe Coding & Engineering](vibe-coding-engineering.md) – Entwickeln mit KI-Assistenten
 * [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) – Lokales Serving
 * [Playwright & KI Web-Scraping](../automatisierung/playwright-ki-extraction.md) – Datenbeschaffung
+* [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](selbsthosting-ki-agenten-topliste.md) – LangGraph im Vergleich zu anderen Frameworks
+* [Beste Cloud-KI-Agenten (Allgemein, Top 20)](cloud-ki-agenten-topliste.md) – gehostete Alternative (LangGraph Platform)

@@ -42,6 +42,8 @@ nav:
               - Multimodale Vision Pipelines: künstliche-intelligenz/coding/multimodale-vision-pipelines.md
           - Frameworks & Agenten:
               - AI Agents Praxis-Handbuch: künstliche-intelligenz/coding/ai-agents-praxis.md
+              - Beste Self-Hosting-KI-Agenten (Allgemein, Top 20): künstliche-intelligenz/coding/selbsthosting-ki-agenten-topliste.md
+              - Beste Cloud-KI-Agenten (Allgemein, Top 20): künstliche-intelligenz/coding/cloud-ki-agenten-topliste.md
               - Agentic Workflows (LangGraph): künstliche-intelligenz/coding/agentic-workflows-langgraph.md
               - AutoGen Multi-Agent Framework: künstliche-intelligenz/coding/autogen-multiagent-framework.md
               - Microsoft Semantic Kernel: künstliche-intelligenz/coding/semantic-kernel-python.md

@@ -45,3 +45,4 @@ class Pipeline:
 * [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) – RAG mit Ollama
 * [vLLM High-Throughput Serving](vllm-high-throughput-serving.md) – LLM Engine
 * [Lokale KI-Frontends](../../entwicklung/ide/lokale-ki-frontends.md) – Web UIs
+* [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](selbsthosting-ki-agenten-topliste.md) – Agenten-Frameworks für dahinter liegende Logik

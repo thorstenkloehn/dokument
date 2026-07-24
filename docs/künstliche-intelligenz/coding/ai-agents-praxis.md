@@ -225,3 +225,5 @@ Ein produktiver Agent erfordert kontinuierliche Qualitätskontrolle:
 * [Agentic Workflows (LangGraph)](agentic-workflows-langgraph.md)
 * [AutoGen Multi-Agent Framework](autogen-multiagent-framework.md)
 * [Claude Code Praxis-Handbuch](claude-code-praxis.md)
+* [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](selbsthosting-ki-agenten-topliste.md)
+* [Beste Cloud-KI-Agenten (Allgemein, Top 20)](cloud-ki-agenten-topliste.md)
