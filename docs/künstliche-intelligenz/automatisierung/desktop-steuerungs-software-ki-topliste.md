@@ -78,3 +78,4 @@ graph TD
 - [Beste Browser-Erweiterungen mit KI-Agent (Top 20)](browser-erweiterungen-ki-agent-topliste.md) — Browser-Add-ons statt vollständiger Desktop-Software
 - [Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Top 20)](desktop-agent-vollsteuerung-topliste.md) — Vertiefung nach Maus-/Tastatursteuerung, Fensterverwaltung und Aufzeichnung
 - [Beste Voice-Steuerung-KI-Agenten (Top 20)](voice-steuerung-ki-agent-topliste.md) — Sprachsteuerung als weitere Steuerungsebene
+- [Beste Desktop-Steuerungs-Software mit KI (Open Source, Ubuntu 26.04, Top 20)](desktop-software-opensource-ubuntu-topliste.md) — nur quelloffene Software mit Ubuntu-26.04-Fokus

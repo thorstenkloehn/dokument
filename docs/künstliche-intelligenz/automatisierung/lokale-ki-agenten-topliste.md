@@ -86,3 +86,4 @@ graph TD
 - [Beste Voice-Steuerung-KI-Agenten (Top 20)](voice-steuerung-ki-agent-topliste.md) — Sprachsteuerung als weitere Steuerungsebene
 - [Beste Computer-Use-Agenten für Ubuntu 26.04 (Top 20)](computer-use-agenten-ubuntu-topliste.md) — dieselbe Kategorie gefiltert auf Ubuntu-/Wayland-Kompatibilität
 - [Beste Screenshot-Analyse-KI-Agenten (Top 20)](screenshot-analyse-ki-agent-topliste.md) — der Bildverständnis-Baustein hinter diesen Agenten im Detail
+- [Beste Desktop-Steuerungs-Software mit KI (Open Source, Ubuntu 26.04, Top 20)](desktop-software-opensource-ubuntu-topliste.md) — Ubuntu-Filter zusätzlich auf reine Open-Source-Lösungen verengt

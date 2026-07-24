@@ -72,3 +72,4 @@ graph TD
 - [ydotool: Wayland Automatisierung](ydotool-wayland-praxis.md) — vertiefende Praxis zu Rang 4
 - [PyAutoGUI Grundlagen](pyautogui-anleitung.md) — X11-basierte Alternative mit Wayland-Einschränkungen
 - [Linux Praxis-Handbuch](../../entwicklung/system/linux-praxis.md) — Grundlagen zu Ubuntu/Linux-Administration
+- [Beste Desktop-Steuerungs-Software mit KI (Open Source, Ubuntu 26.04, Top 20)](desktop-software-opensource-ubuntu-topliste.md) — reine Open-Source-Filterung dieser Liste
