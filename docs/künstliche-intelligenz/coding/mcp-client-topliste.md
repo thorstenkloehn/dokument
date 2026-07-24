@@ -72,6 +72,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste MCP-Server (Top 20)](mcp-server-topliste.md) — Server-Seite als Gegenstück zu dieser Client-Topliste
 - [Beste Open-Source-Software mit MCP-Server (Top 20)](mcp-server-opensource-software-topliste.md) — weitere MCP-Server jenseits von Entwickler-Tools
+- [Beste MCP-Registries (Top 20)](mcp-registry-topliste.md) — Kataloge, über die diese Clients Server finden
 - [Agent Client Protocol (ACP) — Übersicht](agent-client-protocol-acp.md) — komplementäres Protokoll für Editor↔Agent statt Agent↔Tool
 - [Beste KI-Agent-CLIs (Allgemein, Top 20)](ki-agent-cli-topliste.md) — viele dieser Clients auch als reine CLI-Agenten bewertet
 - [Beste KI-Agent-IDEs (Allgemein, Top 20)](ki-agent-ide-topliste.md) — Editor-Clients im IDE-Gesamtvergleich

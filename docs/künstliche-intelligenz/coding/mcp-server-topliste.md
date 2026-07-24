@@ -98,3 +98,4 @@ graph TD
 - [Playwright & KI Web-Scraping](../automatisierung/playwright-ki-extraction.md) — vertiefend zu Rang 3
 - [Beste KI-Agent-CLIs (Allgemein, Top 20)](ki-agent-cli-topliste.md) — Agenten, die diese MCP-Server praktisch nutzen
 - [Beste MCP-Clients (Top 20)](mcp-client-topliste.md) — Client-Seite als Gegenstück zu dieser Server-Topliste
+- [Beste MCP-Registries (Top 20)](mcp-registry-topliste.md) — Kataloge, über die diese Server auffindbar sind
