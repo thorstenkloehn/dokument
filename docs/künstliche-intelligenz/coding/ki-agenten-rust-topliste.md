@@ -102,6 +102,7 @@ graph TD
 - [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Top 20)](llm-aggregatoren-rust-topliste.md) — Zugriffswege auf die Top-Rust-Modelle
 - [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Abo-Abrechnung, Top 20)](llm-aggregatoren-abo-rust-topliste.md) — dieselbe Idee mit festem Monatspreis
 - [Beste Cloud-Agenten für Rust-Programmierung (Top 20)](cloud-agenten-rust-topliste.md) — asynchrone Cloud-Sandbox statt lokaler Interaktion
+- [Beste KI-Coding-Agenten für Rust-Programmierung (Self-Hosting, Top 20)](selbsthosting-ki-agenten-rust-topliste.md) — nur vollständig selbst betreibbare, quelloffene Agenten
 - [Beste KI-Agent-CLIs (Allgemein, Top 20)](ki-agent-cli-topliste.md) — dieselbe Werkzeug-Kategorie ohne Rust-Fokus bewertet
 - [Beste KI-Agent-IDEs (Allgemein, Top 20)](ki-agent-ide-topliste.md) — IDE-Gegenstück ohne Rust-Fokus
 - [Beste Direkt-Anbieter (Offizielle Entwickler-APIs) für Rust-Programmierung (Top 20)](llm-direktanbieter-rust-topliste.md) — direkter Weg ohne Gateway dazwischen

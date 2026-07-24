@@ -79,3 +79,4 @@ graph TD
 - [Open-WebUI Pipelines](open-webui-pipelines.md) — passende Chat-Oberfläche für selbst gehostete Agenten
 - [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) — Modell-Grundlage für alle hier gelisteten Frameworks
 - [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](ki-agenten-rust-topliste.md) — spezialisierte Variante für Rust-Coding
+- [Beste KI-Coding-Agenten für Rust-Programmierung (Self-Hosting, Top 20)](selbsthosting-ki-agenten-rust-topliste.md) — dieselbe Self-Hosting-Idee, spezifisch für Rust-Coding-Agenten statt allgemeiner Frameworks
