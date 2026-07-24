@@ -59,3 +59,4 @@ if __name__ == "__main__":
 * [ydotool Anleitung](ydotool-anleitung.md) – Grundlegende Einführung
 * [PyAutoGUI Anleitung](pyautogui-anleitung.md) – GUI-Automatisierung
 * [Systemd Service Creation](../../entwicklung/system/systemd-service-creation.md) – Daemons
+* [Beste Computer-Use-Agenten für Ubuntu 26.04 (Top 20)](computer-use-agenten-ubuntu-topliste.md) – ydotool im Vergleich zu anderen Ubuntu-tauglichen Agenten
