@@ -74,3 +74,4 @@ graph TD
 - [Beste Open-Source-Software mit MCP-Server (Top 20)](mcp-server-opensource-software-topliste.md) — selbst hostbare Software mit eigenem MCP-Server
 - [Agent Client Protocol (ACP) — Übersicht](agent-client-protocol-acp.md) — komplementäres Protokoll für die Editor-Anbindung
 - [Antigravity CLI 2 — Kapitel 9: MCP, Headless & Security](antigravity-cli-advanced-mcp-cicd.md) — MCP-Client-Konfiguration in der Praxis
+- [Beste MCP-Gateways (Top 20)](mcp-gateway-topliste.md) — Absicherungs-/Routing-Ebene für über eine Registry gefundene Server
