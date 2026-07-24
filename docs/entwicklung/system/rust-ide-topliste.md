@@ -101,6 +101,7 @@ graph TD
 - [Rust, C & C++ Integration](rust-c-cpp-integration.md) — relevant für CLion/IntelliJ-Einsatz
 - [Rust & Python Bindings (PyO3)](rust-python-bindings.md) — relevant bei Polyglot-Tooling
 - [Beste Sprachmodelle für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-rust-topliste.md)
+- [Beste lokale Sprachmodelle für Rust-Programmierung (Self-Hosting, Top 20)](../../künstliche-intelligenz/coding/lokale-sprachmodelle-rust-topliste.md)
 - [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-aggregatoren-rust-topliste.md)
 - [Beste Direkt-Anbieter (Offizielle Entwickler-APIs) für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-direktanbieter-rust-topliste.md)
 - [Beste Abo-basierte Direkt-Anbieter (Offizielle Entwickler-Abos) für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-abo-anbieter-rust-topliste.md)
