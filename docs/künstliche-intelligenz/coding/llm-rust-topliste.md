@@ -102,6 +102,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
+- [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](ki-agenten-rust-topliste.md) — welches Agenten-Tool zum Modell passt
 - [Multi-LLM- & Sprachmodell-Anbieter im Vergleich](llm-anbieter-vergleich.md) — Preise & Zugriffswege der hier genannten Modelle
 - [Claude Code Praxis-Handbuch](claude-code-praxis.md) — agentisches Coding in der Praxis
 - [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) — Self-Hosting von Open-Weight-Modellen
