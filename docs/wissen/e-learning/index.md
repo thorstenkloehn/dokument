@@ -112,6 +112,10 @@ Spezifische JavaScript-Bibliotheken zur Bereitstellung interaktiver Funktionalit
 *   **Excalidraw / Tldraw:** Bibliotheken für unendliche digitale Whiteboards, perfekt für interaktive Skizzen und kollaboratives Lernen.
 *   **WebLLM:** Bibliothek zur direkten Ausführung von Sprachmodellen im Browser via WebGPU (wichtig für datenschutzkonforme KI-Lernunterstützung).
 
+### Sprachenlernen mit KI
+
+*   **[Beste KI-Agenten für Deutsch- und Fremdsprachenlernen (Open Source, Top 20)](sprachlern-ki-agenten-topliste.md):** Vertiefende Topliste zu quelloffenen KI-Werkzeugen, die eigene Sprachlern-Aufgaben und -Übungen generieren können.
+
 ### Lokale Dokumentations- & interaktive Book-Systeme
 
 *   **mdBook (Rust-Ökosystem):** Erstellt statische, durchsuchbare Bücher aus Markdown-Dateien. Codebeispiele können direkt im Browser ausgeführt werden, wenn sie an ein Playground-Backend angebunden sind.

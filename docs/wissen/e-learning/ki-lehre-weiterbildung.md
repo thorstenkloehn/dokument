@@ -423,6 +423,7 @@ graph TD
 
 ## Weiterführende Ressourcen
 
+- **[Beste KI-Agenten für Deutsch- und Fremdsprachenlernen (Open Source, Top 20)](sprachlern-ki-agenten-topliste.md)** – Vertiefende Topliste speziell zum Sprachenlernen 🟩
 - **[H5P Community](https://h5p.org)** – Interaktive HTML5-Lernbausteine 🟩
 - **[Moodle Plugins](https://moodle.org/plugins)** – Moodle erweitern 🟩
 - **[IMS Global LTI Standards](https://www.imsglobal.org/activity/learning-tools-interoperability)** – Technische Spezifikation
