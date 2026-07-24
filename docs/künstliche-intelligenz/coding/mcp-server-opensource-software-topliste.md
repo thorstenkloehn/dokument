@@ -69,6 +69,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste MCP-Server (Top 20)](mcp-server-topliste.md) — protokollnahe Referenzserver und Entwickler-Tools statt selbst hostbarer Anwendungen
+- [Beste MCP-Clients (Top 20)](mcp-client-topliste.md) — Client-Seite, die diese Server anspricht
 - [Beste Wissensmanagement-Systeme (Open Source) mit MCP-Server (Top 20)](../../wissen/dokumentation/wissensmanagement-mcp-server-topliste.md) — Wiki-/KM-Systeme mit MCP-Anbindung
 - [Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)](../../wissen/dokumentation/cms-mcp-server-topliste.md) — Content-Management-Systeme mit MCP-Anbindung
 - [Agent Client Protocol (ACP) — Übersicht](agent-client-protocol-acp.md) — komplementäres Protokoll für die Editor-Anbindung des Agenten

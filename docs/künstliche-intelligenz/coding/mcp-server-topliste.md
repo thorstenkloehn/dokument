@@ -97,3 +97,4 @@ graph TD
 - [AI Agents Praxis-Handbuch](ai-agents-praxis.md) — Grundlagen zu Tool-Use unabhängig vom konkreten Protokoll
 - [Playwright & KI Web-Scraping](../automatisierung/playwright-ki-extraction.md) — vertiefend zu Rang 3
 - [Beste KI-Agent-CLIs (Allgemein, Top 20)](ki-agent-cli-topliste.md) — Agenten, die diese MCP-Server praktisch nutzen
+- [Beste MCP-Clients (Top 20)](mcp-client-topliste.md) — Client-Seite als Gegenstück zu dieser Server-Topliste
