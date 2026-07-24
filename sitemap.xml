@@ -49,6 +49,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/llm-sdk-sprachen-topliste/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/llm-sdk-rust-bibliotheken-topliste/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/llm-rust-topliste/</loc>
       </url>
       <url>
@@ -106,6 +109,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ki-agent-sdk-sprachen-topliste/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ki-agent-sdk-rust-bibliotheken-topliste/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/agentic-workflows-langgraph/</loc>
       </url>
       <url>
@@ -134,6 +140,12 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ki-agent-ide-topliste/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/agent-client-protocol-acp/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/agent-client-protocol-alternativen-topliste/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/ki-agenten-rust-topliste/</loc>
