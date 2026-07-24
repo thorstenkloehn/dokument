@@ -26,6 +26,7 @@ nav:
               - Schrödinger programmiert KI: künstliche-intelligenz/coding/schroedinger-programmiert-ki.md
           - LLM & Serving:
               - Multi-LLM- & Sprachmodell-Anbieter im Vergleich: künstliche-intelligenz/coding/llm-anbieter-vergleich.md
+              - Beste KI-Sprachmodell-SDKs nach Programmiersprachen-Vielfalt (Top 20): künstliche-intelligenz/coding/llm-sdk-sprachen-topliste.md
               - Beste Sprachmodelle für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/llm-rust-topliste.md
               - Beste lokale Sprachmodelle für Rust-Programmierung (Self-Hosting, Top 20): künstliche-intelligenz/coding/lokale-sprachmodelle-rust-topliste.md
               - Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/llm-aggregatoren-rust-topliste.md
@@ -45,6 +46,7 @@ nav:
               - AI Agents Praxis-Handbuch: künstliche-intelligenz/coding/ai-agents-praxis.md
               - Beste Self-Hosting-KI-Agenten (Allgemein, Top 20): künstliche-intelligenz/coding/selbsthosting-ki-agenten-topliste.md
               - Beste Cloud-KI-Agenten (Allgemein, Top 20): künstliche-intelligenz/coding/cloud-ki-agenten-topliste.md
+              - Beste KI-Agent-SDKs nach Programmiersprachen-Vielfalt (Top 20): künstliche-intelligenz/coding/ki-agent-sdk-sprachen-topliste.md
               - Agentic Workflows (LangGraph): künstliche-intelligenz/coding/agentic-workflows-langgraph.md
               - AutoGen Multi-Agent Framework: künstliche-intelligenz/coding/autogen-multiagent-framework.md
               - Microsoft Semantic Kernel: künstliche-intelligenz/coding/semantic-kernel-python.md
