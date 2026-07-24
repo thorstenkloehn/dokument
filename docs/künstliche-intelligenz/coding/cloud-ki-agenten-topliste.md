@@ -75,3 +75,4 @@ graph TD
 - [Agentic Workflows (LangGraph)](agentic-workflows-langgraph.md) — Grundlage für Rang 6 (LangGraph Platform)
 - [Microsoft Semantic Kernel](semantic-kernel-python.md) — Alternative Entwickler-Basis für eigene Agenten-Orchestrierung
 - [Beste Cloud-Agenten für Rust-Programmierung (Top 20)](cloud-agenten-rust-topliste.md) — spezialisierte Variante für Rust-Coding
+- [Beste KI-Agent-CLIs (Allgemein, Top 20)](ki-agent-cli-topliste.md) — terminalbasiertes Gegenstück statt gehosteter Plattform

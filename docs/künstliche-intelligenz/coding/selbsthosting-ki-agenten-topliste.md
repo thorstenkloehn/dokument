@@ -72,6 +72,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Cloud-KI-Agenten (Allgemein, Top 20)](cloud-ki-agenten-topliste.md) — das gehostete Gegenstück ohne eigenen Betrieb
 - [Beste lokale Computer-KI-Agenten (Allgemein, Top 20)](../automatisierung/lokale-ki-agenten-topliste.md) — Agenten mit direkter Bildschirm-/Maus-/Tastatursteuerung statt reiner Text-/API-Orchestrierung
+- [Beste KI-Agent-CLIs (Allgemein, Top 20)](ki-agent-cli-topliste.md) — terminalbasierte Agenten statt Code-Frameworks
 - [AI Agents Praxis-Handbuch](ai-agents-praxis.md) — Architektur-Grundlagen für eigene Agenten
 - [Agentic Workflows (LangGraph)](agentic-workflows-langgraph.md) — vertiefender Praxis-Guide zu Rang 1
 - [AutoGen Multi-Agent Framework](autogen-multiagent-framework.md) — vertiefender Praxis-Guide zu Rang 5
