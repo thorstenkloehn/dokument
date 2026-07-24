@@ -28,6 +28,7 @@ nav:
               - Multi-LLM- & Sprachmodell-Anbieter im Vergleich: künstliche-intelligenz/coding/llm-anbieter-vergleich.md
               - Beste Sprachmodelle für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/llm-rust-topliste.md
               - Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/llm-aggregatoren-rust-topliste.md
+              - Beste Direkt-Anbieter (Offizielle Entwickler-APIs) für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/llm-direktanbieter-rust-topliste.md
               - Custom Chat-Assistenten im Anbieter-Vergleich (Gems, GPTs, Projects): künstliche-intelligenz/coding/custom-chat-assistenten-anbieter-vergleich.md
               - Lokales RAG & LLM-Serving: künstliche-intelligenz/coding/lokales-rag-ollama.md
               - vLLM High-Throughput Serving: künstliche-intelligenz/coding/vllm-high-throughput-serving.md
