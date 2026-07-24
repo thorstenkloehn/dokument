@@ -357,7 +357,6 @@ plugins:
   - search:
       lang: de
       separator: '[\s\-]+'
-  - tags:
   - git-revision-date
   - git-authors
   - minify:
