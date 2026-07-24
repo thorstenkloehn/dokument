@@ -80,3 +80,4 @@ graph TD
 - [Beste Browser-Erweiterungen mit KI-Agent (Top 20)](browser-erweiterungen-ki-agent-topliste.md) — Browser-Tab statt vollem Desktop-Zugriff
 - [Robot Framework Grundlagen](robot-framework-anleitung.md) — Eigenbau-Baustein für Rang 20
 - [PyAutoGUI Grundlagen](pyautogui-anleitung.md) — Maus-/Tastatursteuerung als Eigenbau-Baustein
+- [Beste Voice-Steuerung-KI-Agenten (Top 20)](voice-steuerung-ki-agent-topliste.md) — Sprachsteuerung statt Maus/Tastatur

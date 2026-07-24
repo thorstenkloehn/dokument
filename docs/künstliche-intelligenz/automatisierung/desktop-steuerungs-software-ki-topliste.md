@@ -77,3 +77,4 @@ graph TD
 - [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](../coding/selbsthosting-ki-agenten-topliste.md)
 - [Beste Browser-Erweiterungen mit KI-Agent (Top 20)](browser-erweiterungen-ki-agent-topliste.md) — Browser-Add-ons statt vollständiger Desktop-Software
 - [Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Top 20)](desktop-agent-vollsteuerung-topliste.md) — Vertiefung nach Maus-/Tastatursteuerung, Fensterverwaltung und Aufzeichnung
+- [Beste Voice-Steuerung-KI-Agenten (Top 20)](voice-steuerung-ki-agent-topliste.md) — Sprachsteuerung als weitere Steuerungsebene
