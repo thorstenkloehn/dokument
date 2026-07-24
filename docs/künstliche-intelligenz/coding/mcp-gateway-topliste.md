@@ -74,3 +74,4 @@ graph TD
 - [Beste MCP-Registries (Top 20)](mcp-registry-topliste.md) — Auffindbarkeits-Ebene, bevor ein Server hinter einem Gateway landet
 - [Beste Open-Source-Software mit MCP-Server (Top 20)](mcp-server-opensource-software-topliste.md) — selbst hostbare Server, die typischerweise über ein Gateway abgesichert werden
 - [Agent Client Protocol (ACP) — Übersicht](agent-client-protocol-acp.md) — komplementäres Protokoll für die Editor-Anbindung
+- [MCP-Sicherheit & Best Practices (Top 20)](mcp-sicherheit-best-practices-topliste.md) — Audit-Logging, Rate-Limiting und weitere Praktiken, die ein Gateway zentral umsetzt

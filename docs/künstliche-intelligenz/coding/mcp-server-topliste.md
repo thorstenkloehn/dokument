@@ -100,3 +100,4 @@ graph TD
 - [Beste MCP-Clients (Top 20)](mcp-client-topliste.md) — Client-Seite als Gegenstück zu dieser Server-Topliste
 - [Beste MCP-Registries (Top 20)](mcp-registry-topliste.md) — Kataloge, über die diese Server auffindbar sind
 - [Beste MCP-Gateways (Top 20)](mcp-gateway-topliste.md) — zentrale Absicherung, wenn mehrere dieser Server gebündelt betrieben werden
+- [MCP-Sicherheit & Best Practices (Top 20)](mcp-sicherheit-best-practices-topliste.md) — Sicherheitspraktiken für den produktiven Einsatz dieser Server

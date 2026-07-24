@@ -75,3 +75,4 @@ graph TD
 - [Agent Client Protocol (ACP) — Übersicht](agent-client-protocol-acp.md) — komplementäres Protokoll für die Editor-Anbindung
 - [Antigravity CLI 2 — Kapitel 9: MCP, Headless & Security](antigravity-cli-advanced-mcp-cicd.md) — MCP-Client-Konfiguration in der Praxis
 - [Beste MCP-Gateways (Top 20)](mcp-gateway-topliste.md) — Absicherungs-/Routing-Ebene für über eine Registry gefundene Server
+- [MCP-Sicherheit & Best Practices (Top 20)](mcp-sicherheit-best-practices-topliste.md) — Herkunftsprüfung und weitere Praktiken vor der Installation aus einer Registry
