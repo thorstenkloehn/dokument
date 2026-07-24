@@ -102,3 +102,4 @@ graph TD
 - [Rust & Python Bindings (PyO3)](rust-python-bindings.md) — relevant bei Polyglot-Tooling
 - [Beste Sprachmodelle für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-rust-topliste.md)
 - [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-agenten-rust-topliste.md)
+- [Beste KI-Assistenten & Code-Editoren für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-assistenten-rust-topliste.md)

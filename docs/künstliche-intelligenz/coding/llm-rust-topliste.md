@@ -103,6 +103,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](ki-agenten-rust-topliste.md) — welches Agenten-Tool zum Modell passt
+- [Beste KI-Assistenten & Code-Editoren für Rust-Programmierung (Top 20)](ki-assistenten-rust-topliste.md) — nicht-agentische Autovervollständigung & Chat
 - [Beste IDEs & Editoren mit Rust-Unterstützung (Top 20)](../../entwicklung/system/rust-ide-topliste.md) — reine Editor-/Tooling-Sicht ohne KI-Fokus
 - [Multi-LLM- & Sprachmodell-Anbieter im Vergleich](llm-anbieter-vergleich.md) — Preise & Zugriffswege der hier genannten Modelle
 - [Claude Code Praxis-Handbuch](claude-code-praxis.md) — agentisches Coding in der Praxis

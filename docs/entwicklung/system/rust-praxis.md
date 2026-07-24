@@ -209,3 +209,4 @@ mod tests {
 * [Beste IDEs & Editoren mit Rust-Unterstützung (Top 20)](rust-ide-topliste.md)
 * [Beste Sprachmodelle für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/llm-rust-topliste.md)
 * [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-agenten-rust-topliste.md)
+* [Beste KI-Assistenten & Code-Editoren für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-assistenten-rust-topliste.md)
