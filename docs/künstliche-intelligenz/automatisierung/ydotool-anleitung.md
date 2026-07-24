@@ -1047,6 +1047,7 @@ echo "Datenverarbeitung abgeschlossen"
 * [Desktop Automation mit PyAutoGUI](pyautogui-anleitung.md) – GUI-Automatisierung mit Python
 * [Desktop Automation mit Playwright](playwright-anleitung.md) – Moderne Web-Automatisierung
 * [Desktop Automation mit Robot Framework](robot-framework-anleitung.md) – Testautomatisierung mit Robot Framework
+* [Beste lokale Computer-KI-Agenten (Allgemein, Top 20)](lokale-ki-agenten-topliste.md) – fertige Vision-Agenten als Alternative zum Eigenbau
 
 ---
 

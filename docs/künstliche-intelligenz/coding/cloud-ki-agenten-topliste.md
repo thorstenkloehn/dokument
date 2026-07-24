@@ -70,6 +70,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](selbsthosting-ki-agenten-topliste.md) — das selbst betriebene Gegenstück
+- [Beste lokale Computer-KI-Agenten (Allgemein, Top 20)](../automatisierung/lokale-ki-agenten-topliste.md) — Agenten mit direkter Bildschirm-/Maus-/Tastatursteuerung statt reiner Text-/API-Orchestrierung
 - [AI Agents Praxis-Handbuch](ai-agents-praxis.md) — Architektur-Grundlagen für eigene Agenten
 - [Agentic Workflows (LangGraph)](agentic-workflows-langgraph.md) — Grundlage für Rang 6 (LangGraph Platform)
 - [Microsoft Semantic Kernel](semantic-kernel-python.md) — Alternative Entwickler-Basis für eigene Agenten-Orchestrierung

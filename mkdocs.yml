@@ -80,6 +80,7 @@ nav:
 
       - Desktop-Automatisierung:
           - Übersicht: künstliche-intelligenz/automatisierung/index.md
+          - Beste lokale Computer-KI-Agenten (Allgemein, Top 20): künstliche-intelligenz/automatisierung/lokale-ki-agenten-topliste.md
           - PyAutoGUI:
               - Grundlagen: künstliche-intelligenz/automatisierung/pyautogui-anleitung.md
               - OpenCV & OCR: künstliche-intelligenz/automatisierung/pyautogui-ocr-vision.md

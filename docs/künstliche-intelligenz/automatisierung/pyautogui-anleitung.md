@@ -896,6 +896,7 @@ def monitor_and_alert(check_interval=300, alert_email=None):
 * [Desktop Automation mit Robot Framework](robot-framework-anleitung.md) – Testautomatisierung mit Robot Framework
 * [Desktop Automation mit ydotool](ydotool-anleitung.md) – Low-Level-Automatisierung auf Linux
 * [Webautomatisierung mit Playwright](playwright-anleitung.md) – Moderne Web-Tests und Automatisierung
+* [Beste lokale Computer-KI-Agenten (Allgemein, Top 20)](lokale-ki-agenten-topliste.md) – fertige Vision-Agenten als Alternative zum Eigenbau
 
 ---
 

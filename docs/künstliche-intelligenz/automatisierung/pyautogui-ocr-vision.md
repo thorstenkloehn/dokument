@@ -52,3 +52,4 @@ if __name__ == "__main__":
 * [PyAutoGUI Anleitung](pyautogui-anleitung.md) – Grundlagen der GUI-Automatisierung
 * [Playwright & KI Web-Scraping](playwright-ki-extraction.md) – Web-Extraktion
 * [ydotool Anleitung](ydotool-anleitung.md) – Wayland Automatisierung
+* [Beste lokale Computer-KI-Agenten (Allgemein, Top 20)](lokale-ki-agenten-topliste.md) – vollständige Vision-Grounding-Agenten im Vergleich
