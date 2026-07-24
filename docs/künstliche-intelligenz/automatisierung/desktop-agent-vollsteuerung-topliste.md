@@ -81,3 +81,4 @@ graph TD
 - [Robot Framework Grundlagen](robot-framework-anleitung.md) — Eigenbau-Baustein für Rang 20
 - [PyAutoGUI Grundlagen](pyautogui-anleitung.md) — Maus-/Tastatursteuerung als Eigenbau-Baustein
 - [Beste Voice-Steuerung-KI-Agenten (Top 20)](voice-steuerung-ki-agent-topliste.md) — Sprachsteuerung statt Maus/Tastatur
+- [Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Open Source, Ubuntu 26.04, Top 20)](desktop-agent-vollsteuerung-opensource-ubuntu-topliste.md) — dieselben 6 Kriterien gefiltert auf quelloffene, Ubuntu-kompatible Software
