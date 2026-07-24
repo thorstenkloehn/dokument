@@ -75,3 +75,4 @@ graph TD
 - [Ideenfindung mit KI](ideenfindung-ki.md)
 - [Design-Übersicht](index.md)
 - [Beste KI-Video-Tools (Open Source, Top 20)](../video/ki-video-tools-topliste.md) — Image-to-Video-Modelle bauen auf diesen Bildmodellen auf
+- [Beste KI-Audio-Tools (Open Source, Top 20)](../audio/ki-audio-tools-topliste.md) — quelloffene KI-Modelle für Sprache, Musik und Sounddesign

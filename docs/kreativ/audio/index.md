@@ -25,6 +25,8 @@ Die programmatische Audioverarbeitung umfasst ein weites Spektrum von Anwendunge
 
 ## Hauptthemen
 
+Einen vertiefenden Vergleich der aktuell stärksten quelloffenen KI-Modelle und -Werkzeuge (TTS, STT, Voice Cloning, Stem-Separation, Musikgenerierung) liefert die Seite [Beste KI-Audio-Tools (Open Source, Top 20)](ki-audio-tools-topliste.md).
+
 ### 1. [KI und Audio](ki-audio.md)
 **Umfassende Übersicht zu KI-Anwendungen in der Audio-Verarbeitung** – Von Sprachsynthese bis Musikgenerierung.
 

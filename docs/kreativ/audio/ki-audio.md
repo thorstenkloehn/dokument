@@ -357,6 +357,7 @@ graph TD
 
 ## Weiterführende Ressourcen
 
+- **[Beste KI-Audio-Tools (Open Source, Top 20)](ki-audio-tools-topliste.md)** – Vertiefender Werkzeug-/Modellvergleich 🟩
 - **[Whisper.cpp Repo](https://github.com/ggerganov/whisper.cpp)** – Schnelle lokale Spracherkennung 🟩
 - **[DeepFilterNet GitHub](https://github.com/Rikorose/DeepFilterNet)** – Echtzeit-Rauschunterdrückung 🟩
 - **[Meta AudioCraft Repo](https://github.com/facebookresearch/audiocraft)** – MusicGen Demos & Code 🟩

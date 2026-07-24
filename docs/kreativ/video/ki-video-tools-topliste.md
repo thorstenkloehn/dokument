@@ -76,3 +76,4 @@ graph TD
 - [ComfyUI & SD Automatisierung](../design/comfyui-workflow-anleitung.md) — vertiefende Praxis zu Rang 2
 - [FFmpeg & Whisper Automatisierung](ffmpeg-whisper-automatisierung.md) — vertiefende Praxis zu Rang 12
 - [FFmpeg Advanced Filtering & AV1](ffmpeg-advanced-filters.md)
+- [Beste KI-Audio-Tools (Open Source, Top 20)](../audio/ki-audio-tools-topliste.md) — Sprachsynthese, -erkennung und Musikgenerierung für die Vertonung
