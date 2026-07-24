@@ -188,6 +188,7 @@ Diese Anbieter berechnen die Modellkosten des jeweiligen Herstellers unveränder
 ## 🔗 Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
+- [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Top 20)](llm-aggregatoren-rust-topliste.md) — dieselben Anbieter, eingeordnet speziell für agentisches Rust-Coding
 - [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) — Ollama vs. vLLM im Detail
 - [vLLM High-Throughput Serving](vllm-high-throughput-serving.md) — produktionsreifes Self-Hosting
 - [Local LLM Fine-Tuning (Unsloth)](lora-finetuning-unsloth.md) — eigene Modelle anpassen

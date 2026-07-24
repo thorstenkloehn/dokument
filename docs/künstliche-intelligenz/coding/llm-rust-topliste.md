@@ -102,6 +102,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
+- [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Top 20)](llm-aggregatoren-rust-topliste.md) — wo die hier gelisteten Modelle günstig/schnell angebunden werden
 - [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](ki-agenten-rust-topliste.md) — welches Agenten-Tool zum Modell passt
 - [Beste KI-Assistenten & Code-Editoren für Rust-Programmierung (Top 20)](ki-assistenten-rust-topliste.md) — nicht-agentische Autovervollständigung & Chat
 - [Beste IDEs & Editoren mit Rust-Unterstützung (Top 20)](../../entwicklung/system/rust-ide-topliste.md) — reine Editor-/Tooling-Sicht ohne KI-Fokus
