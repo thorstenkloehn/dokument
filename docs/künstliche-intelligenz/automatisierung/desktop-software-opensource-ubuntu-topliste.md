@@ -84,3 +84,4 @@ graph TD
 - [Beste Voice-Steuerung-KI-Agenten (Open Source, Ubuntu 26.04, Top 20)](voice-steuerung-opensource-ubuntu-topliste.md) — dasselbe Doppel-Filterprinzip für Sprachsteuerung statt Desktop-Software
 - [Beste Screenshot-Analyse-KI-Agenten (Open Source, Ubuntu 26.04, Top 20)](screenshot-analyse-opensource-ubuntu-topliste.md) — dasselbe Doppel-Filterprinzip für den Bildverständnis-Baustein
 - [Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Open Source, Ubuntu 26.04, Top 20)](desktop-agent-vollsteuerung-opensource-ubuntu-topliste.md) — Vertiefung nach den 6 konkreten Kernfunktionen (Maus, Tastatur, Fenster, Aufzeichnung)
+- [Beste Computer-Use-Agenten für Ubuntu 26.04 (Open Source, Top 20)](computer-use-agenten-opensource-ubuntu-topliste.md) — engere Filterung auf reine Vision-Agenten/Frameworks statt breiter RPA-/Launcher-Software
