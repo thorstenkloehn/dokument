@@ -1003,6 +1003,7 @@ graph TD
 
 ## Weiterführende Ressourcen
 
+- **[Beste KI-Video-Tools (Open Source, Top 20)](ki-video-tools-topliste.md)** – Vertiefender Werkzeug-/Modellvergleich 🟩
 - **[Hugging Face](https://huggingface.co)** – Open-Source-KI-Modelle & Demos 🟩
 - **[Papers With Code](https://paperswithcode.com/task/video-generation)** – Aktuelle Forschungsarbeiten
 - **[GitHub – Awesome AI Video](https://github.com/topics/ai-video)** – Kuratierte Open-Source-Liste 🟩

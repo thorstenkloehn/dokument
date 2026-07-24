@@ -224,6 +224,7 @@ nav:
       - Video & Film:
           - Übersicht: kreativ/video/index.md
           - KI in der Videoproduktion: kreativ/video/ki-filmproduktion.md
+          - Beste KI-Video-Tools (Open Source, Top 20): kreativ/video/ki-video-tools-topliste.md
           - FFmpeg:
               - FFmpeg & Whisper Automatisierung: kreativ/video/ffmpeg-whisper-automatisierung.md
               - FFmpeg Advanced Filtering & AV1: kreativ/video/ffmpeg-advanced-filters.md
