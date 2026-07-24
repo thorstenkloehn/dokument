@@ -53,3 +53,4 @@ if __name__ == "__main__":
 * [Playwright & KI Web-Scraping](playwright-ki-extraction.md) – Web-Extraktion
 * [ydotool Anleitung](ydotool-anleitung.md) – Wayland Automatisierung
 * [Beste lokale Computer-KI-Agenten (Allgemein, Top 20)](lokale-ki-agenten-topliste.md) – vollständige Vision-Grounding-Agenten im Vergleich
+* [Beste Screenshot-Analyse-KI-Agenten (Top 20)](screenshot-analyse-ki-agent-topliste.md) – Tesseract im Vergleich zu weiteren OCR-/Vision-Werkzeugen

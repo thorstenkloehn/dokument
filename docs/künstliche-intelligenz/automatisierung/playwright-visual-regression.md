@@ -39,3 +39,4 @@ pytest visual_test.py
 * [Playwright Trace Viewer](playwright-trace-viewer.md) – Test-Debugging
 * [Playwright Network Interception](playwright-network-mocking.md) – Mocking
 * [Robot Framework API-Testing](robot-framework-api-testing.md) – Testing
+* [Beste Screenshot-Analyse-KI-Agenten (Top 20)](screenshot-analyse-ki-agent-topliste.md) – Applitools/Percy/Chromatic im Vergleich zu weiteren Werkzeugen
