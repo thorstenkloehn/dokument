@@ -375,5 +375,5 @@ Gehe diese Checkliste durch, **bevor** du einen KI-Agent auf einem Produktionsse
 
 - [Antigravity CLI — Übersicht](antigravity-cli.md)
 - [Antigravity CLI — Kapitel 9: MCP, Headless & Security](antigravity-cli-advanced-mcp-cicd.md)
-- [KI/ML-Infrastrukturen](../../../entwicklung/infrastruktur/ki-ml-infrastrukturen.md)
+- [KI/ML-Infrastrukturen](../../entwicklung/infrastruktur/ki-ml-infrastrukturen.md)
 - [Claude Code Praxis-Handbuch](claude-code-praxis.md)
