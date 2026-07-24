@@ -81,3 +81,4 @@ graph TD
 - [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](../coding/selbsthosting-ki-agenten-topliste.md) — serverseitige Agenten-Frameworks
 - [Beste Cloud-KI-Agenten (Allgemein, Top 20)](../coding/cloud-ki-agenten-topliste.md) — gehostete Agenten-Plattformen
 - [Beste Desktop-Steuerungs-Software mit KI (Top 20)](desktop-steuerungs-software-ki-topliste.md) — fertige RPA-/OS-native Software statt Frameworks/Modellen
+- [Beste Browser-Erweiterungen mit KI-Agent (Top 20)](browser-erweiterungen-ki-agent-topliste.md) — Browser-Tab statt vollem Bildschirmzugriff
