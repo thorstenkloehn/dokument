@@ -190,6 +190,7 @@ Diese Anbieter berechnen die Modellkosten des jeweiligen Herstellers unveränder
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Top 20)](llm-aggregatoren-rust-topliste.md) — dieselben Anbieter, eingeordnet speziell für agentisches Rust-Coding
 - [Beste Direkt-Anbieter (Offizielle Entwickler-APIs) für Rust-Programmierung (Top 20)](llm-direktanbieter-rust-topliste.md) — native Anbieter speziell für Rust eingeordnet
+- [Beste Abo-basierte Direkt-Anbieter (Offizielle Entwickler-Abos) für Rust-Programmierung (Top 20)](llm-abo-anbieter-rust-topliste.md) — Abo-Angebote speziell für Rust eingeordnet
 - [Beste Cloud-Provider für GPU-Hosting eigener Rust-Coding-Modelle (Top 20)](cloud-gpu-provider-rust-topliste.md) — GPU-Vermietung für Abschnitt 4 (Self-Hosting) im Detail
 - [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) — Ollama vs. vLLM im Detail
 - [vLLM High-Throughput Serving](vllm-high-throughput-serving.md) — produktionsreifes Self-Hosting
