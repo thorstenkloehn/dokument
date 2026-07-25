@@ -5,6 +5,7 @@ Einzelne Schritte werden im Chat erklärt; es soll kein Programm erstellt werden
 Dieser Fahrplan strukturiert die Entwicklung eines modernen, wartbaren und modularen Softwareprojekts von Grund auf in überschaubare, aufeinander aufbauende Phasen und Arbeitsschritte — mit konkreten Hinweisen, wie Claude Code (CLI und IDE-Integration) dabei als Lernpartner eingesetzt wird. Für Didaktisches Konzept, Stilrichtlinien und Kapitel-Struktur des Lehrbuchstils siehe unten
 
 ---
+
 ## Praxisbeispiel: Ein Feature Schritt für Schritt mit Claude Code bauen
 
 Beim reinen **Vibe Coding** übernimmst du Vorschläge der KI weitgehend ungeprüft und iterierst rein über das Ergebnis ("fühlt sich richtig an"). Für diesen Lernpfad nutzen wir stattdessen einen **kontrollierten** Ablauf: Jeder Schritt wird einzeln angestoßen, geprüft und erklärt, bevor der nächste folgt. Am Beispiel eines neuen CLI-Unterkommandos `stats` (zählt Codezeilen im Projekt) sieht das so aus:
@@ -31,8 +32,6 @@ Beim reinen **Vibe Coding** übernimmst du Vorschläge der KI weitgehend ungepr�
 
 
 ## Claude Code für AI-Assisted Coding nutzen (Kontrolliert & Lernorientiert)
-
-Beim reinen **Vibe Coding** übernimmst du Vorschläge der KI weitgehend ungeprüft und iterierst rein über das Ergebnis ("fühlt sich richtig an"). Für diesen Lernpfad nutzen wir stattdessen einen **kontrollierten** Ablauf: Jeder Schritt wird einzeln angestoßen, geprüft und erklärt, bevor der nächste folgt. Am Beispiel eines neuen CLI-Unterkommandos `stats` (zählt Codezeilen im Projekt) sieht das so aus:
 
 Hier nutzt du Claude Code als Senior-Partner auf Augenhöhe, um deine Fähigkeiten gezielt zu erweitern:
 
@@ -86,32 +85,6 @@ Hier sind weitere konkrete Anwendungsfälle, wie du Claude Code gezielt als Lern
     - Stelle nach Erklärungen eine kurze Kontrollfrage, um sicherzustellen, dass ich das Konzept verstanden habe.
     - Bevorzuge idiomatischen, sicheren und performanten Code und erkläre, warum dieser Weg gewählt wurde.
     ```
-
----
-
-## Praxisbeispiel: Ein Feature Schritt für Schritt mit Claude Code bauen
-
-Beim reinen **Vibe Coding** übernimmst du Vorschläge der KI weitgehend ungeprüft und iterierst rein über das Ergebnis ("fühlt sich richtig an"). Für diesen Lernpfad nutzen wir stattdessen einen **kontrollierten** Ablauf: Jeder Schritt wird einzeln angestoßen, geprüft und erklärt, bevor der nächste folgt. Am Beispiel eines neuen CLI-Unterkommandos `stats` (zählt Codezeilen im Projekt) sieht das so aus:
-
-1. **Kontext setzen**
-   *Prompt:* „Ich möchte dem CLI-Tool ein neues Unterkommando `stats` hinzufügen, das die Zeilen aller Rust-Dateien zählt. Lies dir zuerst `src/cli.rs` und `src/main.rs` an und fasse kurz zusammen, wie Subcommands aktuell registriert werden."
-   *Ziel:* Claude verschafft sich Projektkontext, bevor irgendetwas geändert wird.
-
-2. **Plan statt sofortigem Code**
-   *Prompt:* „Skizziere mir in Stichpunkten deinen Plan, bevor du Code schreibst."
-   *Ziel:* Du liest den Plan gegen, bevor Zeit in eine falsche Richtung fließt — der Gegenentwurf zum ungeprüften Übernehmen beim Vibe Coding.
-
-3. **Umsetzung in kleinen Schritten**
-   *Prompt:* „Setze nur Schritt 1 deines Plans um (die `clap`-Definition für `stats`), noch keine Logik."
-   *Ziel:* Inkrementell arbeiten und nach jedem Teilschritt reviewen, statt das ganze Feature auf einmal generieren zu lassen.
-
-4. **Tests einfordern**
-   *Prompt:* „Schreibe jetzt einen Unit-Test für die Zeilenzählung und führe ihn aus."
-   *Ziel:* Sofortige Verifikation im Terminal statt blindem Vertrauen in den generierten Code.
-
-5. **Erklärung & Lern-Check**
-   *Prompt:* „Erkläre kurz, warum du diese Iterator-Kette statt einer klassischen Schleife verwendet hast."
-   *Ziel:* Wissenstransfer sichern — du übernimmst nicht nur Code, sondern verstehst auch die Entscheidung dahinter.
 
 ---
 
