@@ -387,6 +387,8 @@ extra:
     title: Cookie-Zustimmung
     description: >-
       Wir verwenden Cookies, um Ihre Besuche und Präferenzen wiederzuerkennen.
+    cookies:
+      analytics: Feedback
     actions:
       - accept
       - reject
