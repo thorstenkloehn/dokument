@@ -1,3 +1,4 @@
+```markdown
 # Praxis-Projektpfad: Entwicklungs-Fahrplan
 Einzelne Schritte werden im Chat erklärt; es soll kein Programm erstellt werden.
 
@@ -22,7 +23,7 @@ Dieser Fahrplan strukturiert die Entwicklung eines modernen, wartbaren und modul
        │
        ▼
 [Phase 5: Persistence, Web & Production]
-```
+
 
 ---
 
@@ -192,3 +193,4 @@ Dieser Fahrplan strukturiert die Entwicklung eines modernen, wartbaren und modul
 6. **Ausführung & Ergebnis:** Das Programm wird ausgeführt, die Ausgabe gezeigt und erklärt, warum sie genau so aussieht.
 7. **Zusammenfassung:** Kurzer Rückblick auf die im Kapitel neu gelernten Konzepte.
 8. **Übungsaufgabe:** Eine kleine Transferaufgabe, die das Gelernte selbstständig anwenden lässt.
+```
