@@ -8,12 +8,85 @@ Dieser Fahrplan strukturiert die Entwicklung eines modernen, wartbaren und modul
 
 ## Claude Code für AI-Assisted Coding nutzen (Kontrolliert & Lernorientiert)
 
+
 Hier nutzt du Claude Code als Senior-Partner auf Augenhöhe, um deine Fähigkeiten gezielt zu erweitern:
 
+- Lege für jede Phase genau fest, was du Claude Code als Kontext eingibst, damit es das Projekt im Chat versteht und besser programmieren kann.
+- Ganzer Features per Prompts
 - Schreibe nicht einfach fertigen Code, sondern erkläre komplexe Architektur-Entscheidungen.
 - Halte dich strikt an saubere Fehlerbehandlung (z. B. `Result`/`Option` in Rust).
 - Generiere für jede Änderung direkt passende Unit-Tests.
 - Wenn mehrere Wege möglich sind, zeige mir kurz die Vor- und Nachteile auf, bevor du Dateien änderst.
+- **Inkrementell arbeiten:** Ändere immer nur ein Modul/eine Datei pro Schritt und warte auf Feedback.
+- **Idiomatischer Code:** Bevorzuge die Standardbibliothek und erkläre mir die Wahl von Datenstrukturen.
+- **Dokumentation:** Ergänze neuen Code direkt um passende Doc-Comments (`///`).
+- **Lern-Check:** Erkläre bei Refactorings kurz das *Warum* und weise auf Ownership/Memory-Aspekte hin.
+
+---
+
+## Weitere Anwendungsfälle für Claude Code
+
+Hier sind weitere konkrete Anwendungsfälle, wie du Claude Code gezielt als Lernpartner und Senior-Entwickler für kontrolliertes AI-Assisted Coding einsetzt:
+
+1. **Socratic Debugging (Geführtes Fehlersuchen)**
+   Anstatt Claude den Bug einfach reparieren zu lassen, nutzt du es als Mentor, der dich zur Lösung führt.
+   - *Der Ansatz:* Du gibst die Fehlermeldung oder das falsche Verhalten ein, verbietest der KI aber, den Code direkt zu korrigieren.
+   - *Prompt-Beispiel:* „Der Test `test_parser_edge_case` schlägt fehl. Gib mir keine direkte Lösung, sondern stelle mir zwei gezielte Fragen zu meinem Code, die mich auf die richtige Fährte bringen."
+   - *Lerneffekt:* Du schärfst dein eigenes Verständnis für den Ablauf und verlässt dich nicht blind auf automatische Fixes.
+
+2. **Architektur-Coaching & Pattern-Reviews**
+   Verstehe das Warum hinter Entwurfsmustern und Modulgrenzen, bevor die erste Zeile Code geschrieben wird.
+   - *Der Ansatz:* Du besprichst mit Claude das High-Level-Design eines Moduls oder einer Datenstruktur.
+   - *Prompt-Beispiel:* „Ich möchte ein Modul für die Sitzungsverwaltung bauen. Schlage mir zwei verschiedene Architekturen vor (z. B. trait-basiert vs. enum-dispatch). Erkläre Vor- und Nachteile in Bezug auf Speicherbedarf und Erweiterbarkeit."
+   - *Lerneffekt:* Du lernst, Vor- und Nachteile von Softwarearchitekturen gegeneinander abzuwägen.
+
+3. **API- & Dokumentations-Deep-Dive**
+   Nutze Claude Code als interaktives Nachschlagewerk direkt in deiner Entwicklungsumgebung, um Dokumentationen schneller zu durchdringen.
+   - *Der Ansatz:* Claude liest lokale Dateien oder externe Libraries für dich und erklärt dir die Hintergründe.
+   - *Prompt-Beispiel:* „Warum wird in diesem Codestück `Arc<Mutex<T>>` anstelle von `Rc<RefCell<T>>` verwendet? Erkläre mir den Unterschied hinsichtlich Threadsicherheit und Overhead."
+   - *Lerneffekt:* Du verstehst die tieferen Sprachkonzepte und Best Practices deiner Programmiersprache.
+
+4. **Gezieltes Benchmarking & Performance-Analyse**
+   Lerne, wo Bottlenecks entstehen und wie man sie systematisch misst.
+   - *Der Ansatz:* Du lässt dir von Claude nicht nur schnelleren Code geben, sondern auch ein passendes Benchmark-Setup.
+   - *Prompt-Beispiel:* „Zeige mir, wie ich für diese Funktion einen sauberen Benchmark erstelle. Erkläre mir anschließend, wie die Ergebnisse zu interpretieren sind und welche Zeile der Flaschenhals ist."
+   - *Lerneffekt:* Du entwickelst ein Gefühl für Laufzeitkomplexität, Speicherallokationen und Performance-Optimierung.
+
+!!! tip "Praxis-Tipp: Die CLAUDE.md erweitern"
+    Du kannst diese Rollenverteilung dauerhaft festlegen, indem du folgende Zeilen in deine `CLAUDE.md` aufnimmst:
+
+    ```markdown
+    ## Interaktionsmodus
+    - Wenn ich dich nach Fehlern frage, liefere nicht sofort den korrigierten Code. Gib mir zuerst Hinweise und Erklärungen.
+    - Stelle nach Erklärungen eine kurze Kontrollfrage, um sicherzustellen, dass ich das Konzept verstanden habe.
+    - Bevorzuge idiomatischen, sicheren und performanten Code und erkläre, warum dieser Weg gewählt wurde.
+    ```
+
+---
+
+## Praxisbeispiel: Ein Feature Schritt für Schritt mit Claude Code bauen
+
+Beim reinen **Vibe Coding** übernimmst du Vorschläge der KI weitgehend ungeprüft und iterierst rein über das Ergebnis ("fühlt sich richtig an"). Für diesen Lernpfad nutzen wir stattdessen einen **kontrollierten** Ablauf: Jeder Schritt wird einzeln angestoßen, geprüft und erklärt, bevor der nächste folgt. Am Beispiel eines neuen CLI-Unterkommandos `stats` (zählt Codezeilen im Projekt) sieht das so aus:
+
+1. **Kontext setzen**
+   *Prompt:* „Ich möchte dem CLI-Tool ein neues Unterkommando `stats` hinzufügen, das die Zeilen aller Rust-Dateien zählt. Lies dir zuerst `src/cli.rs` und `src/main.rs` an und fasse kurz zusammen, wie Subcommands aktuell registriert werden."
+   *Ziel:* Claude verschafft sich Projektkontext, bevor irgendetwas geändert wird.
+
+2. **Plan statt sofortigem Code**
+   *Prompt:* „Skizziere mir in Stichpunkten deinen Plan, bevor du Code schreibst."
+   *Ziel:* Du liest den Plan gegen, bevor Zeit in eine falsche Richtung fließt — der Gegenentwurf zum ungeprüften Übernehmen beim Vibe Coding.
+
+3. **Umsetzung in kleinen Schritten**
+   *Prompt:* „Setze nur Schritt 1 deines Plans um (die `clap`-Definition für `stats`), noch keine Logik."
+   *Ziel:* Inkrementell arbeiten und nach jedem Teilschritt reviewen, statt das ganze Feature auf einmal generieren zu lassen.
+
+4. **Tests einfordern**
+   *Prompt:* „Schreibe jetzt einen Unit-Test für die Zeilenzählung und führe ihn aus."
+   *Ziel:* Sofortige Verifikation im Terminal statt blindem Vertrauen in den generierten Code.
+
+5. **Erklärung & Lern-Check**
+   *Prompt:* „Erkläre kurz, warum du diese Iterator-Kette statt einer klassischen Schleife verwendet hast."
+   *Ziel:* Wissenstransfer sichern — du übernimmst nicht nur Code, sondern verstehst auch die Entscheidung dahinter.
 
 ---
 
