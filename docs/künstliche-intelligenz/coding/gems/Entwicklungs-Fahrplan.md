@@ -9,23 +9,6 @@ Dieser Fahrplan strukturiert die Entwicklung eines modernen, wartbaren und modul
 
 ## Entwicklungs-Fahrplan (Grobstruktur)
 
-```text
-[Phase 1: Fundament & Architektur] 
-       │
-       ▼
-[Phase 2: Core-Domain & Datenmodell] 
-       │
-       ▼
-[Phase 3: Abstraktion & Qualität] 
-       │
-       ▼
-[Phase 4: Async, Concurrency & Low-Level] 
-       │
-       ▼
-[Phase 5: Persistence, Web & Production]
-
-
----
 
 ### Phase 1: Das Fundament & Architektur-Setup
 *Ziel: Ein lauffähiges Multi-Crate-Projekt aufsetzen und grundlegende I/O-Mechanismen etablieren.*
