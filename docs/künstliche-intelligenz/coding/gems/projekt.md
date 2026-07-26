@@ -1,7 +1,7 @@
 ```markdown
 # Moderne Technik von 2026 — Rust-Lernpfad (Durchgehendes Praxisprojekt)
 
-Schritte werden im Chat erklärt, kein fertiges Gesamtprogramm auf einmal vorab. Der Lernpfad folgt einem durchgehenden, realen Praxisprojekt (modulare Telemetrie- & Microservice-Engine *`RustPulse`*), das in jedem Kapitel um ein neues Modul erweitert wird.
+Schritte werden im Chat erklärt, kein fertiges Gesamtprogramm auf einmal vorab. Der Lernpfad folgt einem durchgehenden, realen Praxisprojekt , das in jedem Kapitel um ein neues Modul erweitert wird.
 
 
 ## Roadmap
