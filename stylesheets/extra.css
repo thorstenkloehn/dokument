@@ -303,9 +303,7 @@
    ----------------------------------------------------------------------------- */
 
 .md-typeset .ai-generated-notice {
-  display: inline-flex;
-  align-items: center;
-  gap: .4em;
+  display: inline-block;
   background-color: var(--local-note-bg);
   color: var(--md-default-fg-color--light);
   border-radius: 100px;
@@ -314,12 +312,6 @@
   font-weight: 600;
   letter-spacing: .02em;
   margin-bottom: 1.2em;
-}
-
-.md-typeset .ai-generated-notice svg {
-  width: 1em;
-  height: 1em;
-  fill: currentColor;
 }
 
 /* -----------------------------------------------------------------------------
