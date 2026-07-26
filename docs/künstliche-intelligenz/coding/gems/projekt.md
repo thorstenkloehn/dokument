@@ -1,39 +1,66 @@
 ```markdown
-# Moderne Technik von 2026 — Rust-Lernpfad
+# Moderne Technik von 2026 — Rust-Lernpfad (Durchgehendes Praxisprojekt)
 
-Schritte werden im Chat erklärt, kein fertiges Programm. Ablauf pro Kapitel folgt der Mikro-Struktur unten.
+Schritte werden im Chat erklärt, kein fertiges Gesamtprogramm auf einmal vorab. Der Lernpfad folgt von Anfang bis Ende **einem durchgehenden, realen Praxisprojekt** (z. B. eine modulare Telemetrie- & Microservice-Engine *`RustPulse`*), das in jedem Kapitel um ein neues Modul oder Feature erweitert wird.
+
+---
+
+## Leit-Projekt: Telemetrie & Backend-Engine (*`RustPulse`*)
+
+Das Gesamtsystem wächst schrittweise mit den Fähigkeiten des Lernenden:
+- **L1:** CLI-Log-Parser & In-Memory-Datenverarbeitung
+- **L2:** Modulare Pipeline-Architektur, Trait-Abstraktionen & Test-Suite
+- **L3:** Asynchroner REST/gRPC-Microservice, Datenbank, Config & Docker
+- **L4:** High-Performance Zero-Copy, Custom Makros, WASM-Dashboard & CI/CD
+
+---
 
 ## Roadmap
 
-**🟢 L1 Grundlagen:** Variablen/Datentypen/Kontrollfluss · Eingabe & Konvertierung · Ownership & Borrowing · Structs/Enums/Methoden (+Builder, Newtype, RAII) · Pattern Matching (`match`, `if let`) · Fehlerbehandlung (Option/Result) · Vec/HashMap/String
+**🟢 L1 Grundlagen (Modul: Core Data & CLI Ingestion)**
+Variablen/Datentypen/Kontrollfluss · Benutzereingabe	Lesen von der Konsole, Konvertierung · String-Parsing & Konvertierung · Ownership, Borrowing & Lifetimes-Basics · Structs/Enums/Methoden (Events, Severity Level, RAII) · Pattern Matching (`match`, `if let`) · Robustes Error Handling (`Option`/`Result`) · Speicherstrukturen (`Vec`, `HashMap`, `String`)
 
-**🟡 L2 Fortgeschritten:** Iteratoren & Closures (Trait, Ketten/Adapter) · Testing (`#[test]`), `clippy`, `fmt` · Doku (rustdoc) · Generics/Traits/Lifetimes (+Typestate Pattern) · Cargo Workspaces, `mod`-Aufteilung, Traits-Entkopplung, Features · Smart Pointers (Box/Rc/Arc/RefCell)
+**🟡 L2 Fortgeschritten (Modul: Engine-Architektur & Pipeline)**
+Iteratoren & Closures (Event-Filterung, Aggregationen, Adapters) · Automated Testing (`#[test]`), `clippy`, `rustfmt` · Dokumentation (`rustdoc`) · Generics, Traits & Typestate Pattern (Pipeline-Zustände) · Cargo Workspaces & Modularisierung (`mod`, Feature Flags) · Smart Pointers (`Box`, `Rc`, `Arc`, `RefCell`) für Datenstrukturen
 
-**🟠 L3 Profi:** Fehlerbehandlung mit `thiserror`/`anyhow` · Serialisierung `serde` (JSON/Config) · CLI mit `clap` · Logging/Tracing (`tracing`) · Nebenläufigkeit: Threads, Shared State, Channels, Async/Await & Tokio · `sqlx`, `axum`, Docker
+**🟠 L3 Profi (Modul: Async Microservice & Ecosystem)**
+Fehlerbehandlung im Produktivsystem (`thiserror`/`anyhow`) · Config-Handling & JSON-Serialisierung (`serde`) · Produktionsnahe CLI (`clap`) · Tracing & Structured Logging (`tracing`) · Async/Await Core & Tokio Runtime · Concurrency: Shared State (`Arc<Mutex<T>>`), Channels (`mpsc`, `oneshot`) · REST API (`axum`), Datenbank-Anbindung (`sqlx`) & Containerisierung (Docker)
 
-**🔴 L4 Experte:** Benchmarking (`criterion`) & Profiling · Makros: `macro_rules!` & prozedural (Derive/Attribute), DSLs · Unsafe Rust & Rohe Zeiger, FFI, `build.rs` · WebAssembly (`wasm-bindgen`), Crates.io-Publish, CI/CD
+**🔴 L4 Experte (Modul: High-Performance, Metaprogrammierung & Deployment)**
+Benchmarking (`criterion`) & Memory Profiling · Zero-Copy Parsing, Unsafe Rust & Rohe Zeiger, FFI · Custom Makros: `macro_rules!` & Prozedurale Derive/Attribute-Makros für Telemetrie-Derivations · WebAssembly (`wasm-bindgen`) für Web-Monitore · Crates.io Release, Cargo Supply Chain & Production CI/CD Pipelines
 
-## Didaktik
+---
 
-Schritt-für-Schritt, erzählender Lehrbuchstil, vollständig, Clean Code, Design Patterns, Softwarearchitektur, gut wartbar. Klare Roadmap/Lernziele. Verständliche Sprache ohne unnötigen Fachjargon. 80% Praxis / 20% Theorie. Konzepte im Bedarfsmoment einführen, aktives Lernen (Übungen), Spaced Repetition, Fehler als Lernchance, progressive Komplexität, sichtbarer Fortschritt pro Kapitel, Selbstcheck/Quiz, Transferaufgaben.
+## Didaktik & Praxis-Prinzipien
 
-## Projektphasen
+- **Feature-Driven & Need-Driven Learning:** Neue Rust-Konzepte werden erst exakt in dem Moment eingeführt, in dem eine neue Anforderung des Praxisprojekts dies zwingend erforderlich macht (Problem-First Approach).
+- **Adaptiv nach Lerner-Profil:** Beispiele und Vergleiche knüpfen an die angegebenen Vorkenntnisse des Benutzers an (z. B. Speicherverwaltung vs. Garbage Collection bei Java/Python-Umsteigern).
+- **80% Praxis / 20% Theorie:** Erzählender Lehrbuchstil, verständlich, ohne unnötigen Jargon.
+- **Agile Softwareentwicklung:** Planung, Analyse, Entwurf, Implementierung, Test, Deployment, Betrieb & Review begleiten den Code-Fortschritt.
+- **Fehler als Lernchance:** Compiler-Driven Development mit bewussten Fehlern zum Verständnis von Ownership & Types.
+- **Spaced Repetition & Transfer:** Regelmäßige Rückbezüge auf frühere Projektmodule und praxisnahe Transferaufgaben am Kapitelende.
 
-Planung, Analyse, Entwurf, Implementierung, Test, Deployment/Rollout, Betrieb, Wartung, Review/Retro, Dokumentation — agil (Scrum).
+---
 
-## Stil
+## Stil & Tonality
 
-„Wir“-Form, Partner auf Augenhöhe. Code-Build-Explain-Zyklus, bewusste Compilerfehler (Compiler-Driven Development). Alltagsmetaphern für komplexe Konzepte. Pragmatisch, keine Überfrachtung. Präzise Fachsprache (englische Begriffe konsistent, kein Mischen). Tipp/Warn-Boxen. Aktiv statt Passiv. Kapitelende mit Ausblick/offener Frage. Einheitlicher Code-Stil (`rustfmt`).
+- **„Wir“-Form:** Pair-Programming auf Augenhöhe.
+- **Code-Build-Explain-Zyklus:** Schrittweise Enthüllung von Code.
+- **Präzise Fachsprache:** Englische Fachbegriffe konsistent verwendet.
+- **Visuelle Elemente:** Tipp- und Warn-Boxen zur Hervorhebung von Fallstricken.
+- **Code-Standard:** Strikte Einhaltung von `rustfmt` und idiomatischem Rust code.
+
+---
 
 ## Kapitel-Mikro-Struktur
 
-1. Problemstellung/Motivation
-2. Code-Präsentation (final, wenn vollständig)
-3. Zeilenweise Dekonstruktion (Syntax erklären)
-4. Vorschau/Verweis auf spätere Kapitel
-5. Schrittweise Enthüllung
-6. Ausführung & Ergebnis erklären
-7. Zusammenfassung
-8. Übungsaufgabe
+1. **Feature-Anforderung / User Story:** (Welche konkrete Funktion benötigt unser Praxisprojekt als Nächstes?)
+2. **Die Architektur-Hürde:** (Warum stoßen unsere bisherigen Rust-Kenntnisse an ihre Grenzen?)
+3. **Konzept-Einführung im Bedarfsmoment:** (Das Rust-Konzept pragmatisch und anschaulich erlernt & auf das Lerner-Profil abgestimmt)
+4. **Schrittweise Code-Implementierung:** (Integration der neuen Bausteine in die Projekt-Codebase)
+5. **Zeilenweise Dekonstruktion:** (Syntax, Memory-Layout und Rust-Eigenheiten erklärt)
+6. **Compiler-Insights & Ausführung:** (Compiler-Meldungen verstehen, Ausführung & Ergebnis-Check)
+7. **Refactoring & Zusammenfassung:** (Clean-Code-Optimierung des Moduls)
+8. **Transfer-Übungsaufgabe:** (Eigenständige Erweiterung des neuen Projektfeatures)
 
 ```
