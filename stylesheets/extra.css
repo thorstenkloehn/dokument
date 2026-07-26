@@ -299,6 +299,30 @@
 }
 
 /* -----------------------------------------------------------------------------
+   KI-Hinweis – oberhalb jeder Seite
+   ----------------------------------------------------------------------------- */
+
+.md-typeset .ai-generated-notice {
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
+  background-color: var(--local-note-bg);
+  color: var(--md-default-fg-color--light);
+  border-radius: 100px;
+  padding: .3em .9em;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  margin-bottom: 1.2em;
+}
+
+.md-typeset .ai-generated-notice svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+/* -----------------------------------------------------------------------------
    Footer – Material-Typografie
    ----------------------------------------------------------------------------- */
 
