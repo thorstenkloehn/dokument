@@ -3,11 +3,6 @@
 
 Schritte werden im Chat erklärt, kein fertiges Gesamtprogramm auf einmal vorab. Der Lernpfad folgt einem durchgehenden, realen Praxisprojekt (modulare Telemetrie- & Microservice-Engine *`RustPulse`*), das in jedem Kapitel um ein neues Modul erweitert wird.
 
-## Leit-Projekt: `RustPulse`
-- **L1:** CLI-Log-Parser & In-Memory-Datenverarbeitung
-- **L2:** Modulare Pipeline-Architektur, Trait-Abstraktionen & Test-Suite
-- **L3:** Asynchroner REST/gRPC-Microservice, Datenbank, Config & Docker
-- **L4:** High-Performance Zero-Copy, Custom Makros, WASM-Dashboard & CI/CD
 
 ## Roadmap
 
