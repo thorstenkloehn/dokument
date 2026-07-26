@@ -5,31 +5,38 @@
 
 Einzelne Schritte werden im Chat erklärt; es soll kein Programm erstellt werden.
 
-Praxisbeispiel: Aufbau einer modernen, gut wartbaren und modularen Projektstruktur von Anfang bis Ende – erst Workspace in Cargo, dann Crates, dann Crates mit Traits entkoppeln, dann `mod` und so weiter. Definiert Anfang und Ende des Gesamt-Workflows; der Ablauf innerhalb jedes einzelnen Kapitels folgt der `Kapitel-Struktur (Mikro-Struktur)` weiter unten.
+Definiert Anfang und Ende des Gesamt-Workflows; der Ablauf innerhalb jedes einzelnen Kapitels folgt der `Kapitel-Struktur (Mikro-Struktur)` weiter unten.
 
-1. Workspace in Cargo einbauen und erklären, Code mit `mod` in separate Dateien und Ordner aufteilen (moderner Software-Code-Stil), Crates mit Traits entkoppeln und erklären
-2. Grundlagen: Variablen, Datentypen, Kontrollfluss (`if`/`else`, Schleifen) einbauen und erklären
+### 🟢 Level 1: Grundlagen & Rust-Kernkonzepte (Anfänger)
+1. Grundlagen: Variablen, Datentypen, Kontrollfluss (`if`/`else`, Schleifen) einbauen und erklären
+2. Benutzereingabe und Konvertierung in Rust einbauen und erklären
 3. Ownership & Borrowing einbauen und erklären
-4. Generics, Traits & Lifetimes einbauen und erklären
-5. Structs & Methoden, Enums einbauen und erklären
-6. Pattern Matching (`match`, `if let`) einbauen und erklären
-7. Fehlerbehandlung mit Option und Result einbauen und erklären
-8. Vektoren (Vec), HashMaps, String einbauen und erklären
-9. Benutzereingabe und Konvertierung in Rust einbauen und erklären
-10. Testing (`#[test]`) einbauen und erklären
-11. Smart Pointers & Box<T> & Rc<T> & Arc<T> & RefCell<T> &&  fortgeschrittene Datenstrukturen einbauen und erklären
-12. Fearless Concurrency (Nebenläufigkeit) & Threads & Shared State && Channels & Nachrichtenaustausch: Kommunikation zwischen Threads mittels Message Passing. && Async/Await & Tokio-Grundlagen: Asynchrone Programmierung für performante I/O-Operationen.
-13. Idiomatisches Rust (Iteratoren & Closures) && Closures & Variablen-Einfangung: Wie anonyme Funktionen Daten aus ihrer Umgebung übernehmen. && Iteratoren & Das Iterator-Trait: Wie das Durchlaufen von Sequenzen in Rust vereinheitlicht ist. && Iterator-Ketten & Adapter: Leistungsstarke funktionale Ketten zur Datenmanipulation.
-14. Systemprogrammierung (Unsafe Rust & FFI) && Unsafe Rust & Rohe Zeiger: Warum es unsafe gibt, rohe Zeiger (*const T, *mut T) und die fünf magischen Kräfte von Unsafe. && FFI (Foreign Function Interface): Wie man C-Bibliotheken in Rust einbindet und Rust-Funktionen für C zugänglich macht.
-15. Metaprogrammierung (Makros) &&  DSLs && Deklarative Makros (macro_rules!): Wie man Codezeilen über Mustervergleiche (Pattern Matching) und Textersetzung generiert. && Prozedurale Makros (Derive & Attribute): Wie man den Abstract Syntax Tree (AST) des Compilers direkt über Rust-Code manipuliert.
-16. Serialisierung mit `serde`: JSON- und Config-Verarbeitung einbauen und erklären
-17. Dokumentation (rustdoc & Doc-Comments) einbauen und erklären
-18. Crates.io veröffentlichen (Cargo Publish & Deployment) einbauen und erklären
-19. Professionelle Fehlerbehandlung mit `thiserror` & `anyhow` einbauen und erklären
-20. Observability: Logging & Tracing mit dem `tracing`-Crate einbauen und erklären
-21. CLI-Tools: Kommandozeilen-Parsing mit `clap` einbauen und erklären
-22. Datenbank & Web: `sqlx` für Datenbankzugriff und `axum` für Web-Backends einbauen und erklären
-23. Performance: Benchmarking mit `criterion` und Profiling einbauen und erklären
+4. Structs & Methoden, Enums einbauen und erklären && Rust Design Patterns: Builder Pattern, Newtype Pattern & RAII
+5. Pattern Matching (`match`, `if let`) einbauen und erklären
+6. Fehlerbehandlung mit Option und Result einbauen und erklären
+7. Vektoren (Vec), HashMaps, String einbauen und erklären
+
+### 🟡 Level 2: Fortgeschrittene Grundlagen & Modularisierung (Fortgeschritten)
+8. Idiomatisches Rust (Iteratoren & Closures) && Closures & Variablen-Einfangung: Wie anonyme Funktionen Daten aus ihrer Umgebung übernehmen. && Iteratoren & Das Iterator-Trait: Wie das Durchlaufen von Sequenzen in Rust vereinheitlicht ist. && Iterator-Ketten & Adapter: Leistungsstarke funktionale Ketten zur Datenmanipulation.
+9. Testing (`#[test]`) & Code-Qualität einbauen und erklären: Linter `cargo clippy` & Formatter `cargo fmt`
+10. Dokumentation (rustdoc & Doc-Comments) einbauen und erklären
+11. Generics, Traits & Lifetimes einbauen und erklären && Advanced Patterns: Typestate Pattern (Compile-Zeit-Zustände)
+12. Workspace in Cargo einbauen und erklären, Code mit `mod` in separate Dateien und Ordner aufteilen (moderner Software-Code-Stil), Crates mit Traits entkoppeln & Cargo Features (`[features]`) erklären
+13. Smart Pointers & Box<T> & Rc<T> & Arc<T> & RefCell<T> && fortgeschrittene Datenstrukturen einbauen und erklären
+
+### 🟠 Level 3: Praxis-Ökosystem & Web/Backend (Profi)
+14. Professionelle Fehlerbehandlung mit `thiserror` & `anyhow` einbauen und erklären
+15. Serialisierung mit `serde`: JSON- und Config-Verarbeitung einbauen und erklären
+16. CLI-Tools: Kommandozeilen-Parsing mit `clap` einbauen und erklären
+17. Observability: Logging & Tracing mit dem `tracing`-Crate einbauen und erklären
+18. Fearless Concurrency (Nebenläufigkeit) & Threads & Shared State && Channels & Nachrichtenaustausch: Kommunikation zwischen Threads mittels Message Passing. && Async/Await & Tokio-Grundlagen: Asynchrone Programmierung für performante I/O-Operationen.
+19. Datenbank, Web & Containerisierung: `sqlx` für Datenbankzugriff, `axum` für Web-Backends & Docker-Containerisierung einbauen und erklären
+
+### 🔴 Level 4: Experte, Systemprogrammierung & Deployment (Experte / Master)
+20. Performance: Benchmarking mit `criterion` und Profiling einbauen und erklären
+21. Metaprogrammierung (Makros) && DSLs && Deklarative Makros (macro_rules!): Wie man Codezeilen über Mustervergleiche (Pattern Matching) und Textersetzung generiert. && Prozedurale Makros (Derive & Attribute): Wie man den Abstract Syntax Tree (AST) des Compilers direkt über Rust-Code manipuliert.
+22. Systemprogrammierung (Unsafe Rust & FFI) && Build-Skripte (`build.rs`) für C-Kompilierung & Code-Generierung. && Unsafe Rust & Rohe Zeiger: Warum es unsafe gibt, rohe Zeiger (*const T, *mut T) und die fünf magischen Kräfte von Unsafe. && FFI (Foreign Function Interface): Wie man C-Bibliotheken in Rust einbindet und Rust-Funktionen für C zugänglich macht.
+23. WebAssembly (`wasm-bindgen`) & Crates.io veröffentlichen (Cargo Publish, CI/CD & Deployment) einbauen und erklären
 
 ## Didaktisches Konzept
 
