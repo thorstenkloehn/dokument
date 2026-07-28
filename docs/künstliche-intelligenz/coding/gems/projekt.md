@@ -212,3 +212,30 @@ datei roadmap.md Python
 - Asynchronität & Concurrency (`asyncio`, `async` / `await`, `threading`, `multiprocessing`)
 
 ```
+
+```markdown
+# Praxisphase — Eigene KI-Anwendung programmieren (Rust)
+
+## 🟢 Basis — Erster LLM-Client
+- API-Client für LLMs (Claude/OpenAI) mit `reqwest` & `serde_json` selbst schreiben
+- CLI-Chat-Interface bauen (`clap`, `rustyline`, Konversationsverlauf verwalten)
+- Prompt-Templating & Kontext-/Token-Management
+- Fehler-, Rate-Limit- & Retry-Handling für externe KI-APIs
+
+## 🟡 Fortgeschritten — Streaming, Tools & Bereitstellung
+- Streaming-Antworten verarbeiten (SSE, `eventsource-stream` o. ä.)
+- Tool-Use / Function-Calling: eigene Tools definieren, die das Modell aufrufen kann
+- Optional: einfaches RAG (Embeddings + lokale Vektor-Suche, z. B. `qdrant`, `lancedb`)
+- Anwendung als REST-API (`axum`) oder Desktop/TUI bereitstellen
+
+## 🟠 Profi — Eigener KI-Agent
+- Eigenen KI-Agenten in Rust bauen: Agenten-Loop (Denken → Tool-Aufruf → Beobachtung → Wiederholen)
+- Agenten-Gedächtnis/State (Konversationsverlauf, Zwischenergebnisse) & Abbruchbedingungen
+- Mehrere Tools registrieren & orchestrieren (z. B. Dateisystem-Zugriff, Web-Suche, eigene Funktionen)
+- Optional: Anbindung an das Model Context Protocol (MCP) als Client
+
+## 🔴 Experte — Architektur & Provider-Abstraktion
+- Architektur nach Hexagonal-Prinzip (Ports & Adapters) umsetzen, angelehnt an Spring AI: Domain-Kern (Agenten-/Chat-Logik) über Traits (Ports) von Adaptern trennen
+- Austauschbare Adapter für LLM-Provider, Vector-Store/RAG und Tools (je hinter einem Trait), damit z. B. Claude/OpenAI oder `qdrant`/`lancedb` ohne Änderung am Kern getauscht werden können
+- Provider-agnostische KI-Abstraktionsschicht: einheitliches Trait (z. B. `ChatModel`/`LlmProvider`) mit gemeinsamen Typen für Requests/Responses, Streaming und Tool-Calls, sodass Claude, OpenAI & Co. hinter derselben Schnittstelle austauschbar sind
+```
