@@ -5,9 +5,9 @@ description: Erstellen, Prüfen, Formatieren und Veröffentlichen von Dokumentat
 
 # Zensical Docs Skill
 
-Unterstützt das Erstellen, Prüfen und Veröffentlichen von Dokumentationsseiten für dieses Repository. Siehe auch `CLAUDE.md` im Projekt-Root für die vollständige Befehlsreferenz — dieser Skill fasst die Workflows praxisnah zusammen.
+Unterstützt das Erstellen, Prüfen und Veröffentlichen von Dokumentationsseiten für dieses Repository.
 
-**Niemals `mkdocs build` / `mkdocs serve` verwenden** — das Projekt läuft auf Zensical (`.venv/bin/zensical …`).
+**Niemals `mkdocs build` / `mkdocs serve` verwenden** — nur `.venv/bin/zensical …`.
 
 ## Die 3 Haupt-Workflows
 
@@ -44,50 +44,4 @@ Unterstützt das Erstellen, Prüfen und Veröffentlichen von Dokumentationsseite
 
 ## Vorlage für neue Markdown-Seiten
 
-```markdown
-# [Titel der Seite]
-
-[Kurze Einleitung / Zusammenfassung]
-
----
-
-## Übersicht
-
-!!! note "Hinweis"
-    [Beschreibung oder Kontext]
-
-!!! tip "Tipp"
-    [Empfehlungen]
-
-!!! warning "Achtung"
-    [Wichtige Warnung]
-
----
-
-## Ablauf / Architektur
-
-```mermaid
-graph TD
-    A["Start"] --> B["Prozess / Verarbeitung"]
-    B --> C["Ergebnis"]
-```
-
----
-
-## Konfiguration
-
-=== "Linux / Bash"
-    ```bash
-    echo "Beispiel"
-    ```
-
-=== "Windows / PowerShell"
-    ```powershell
-    Write-Host "Beispiel"
-    ```
-
----
-
-## Verwandte Themen
-- [Zurück zur Übersicht](../index.md)
-```
+Siehe `template.md` in diesem Skill-Ordner (nur bei tatsächlicher Seitenerstellung lesen).
