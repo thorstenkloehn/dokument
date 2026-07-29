@@ -68,6 +68,11 @@ Diagramme nutzen ` ```mermaid `-Fences über `pymdownx.superfences` (konfigurier
   - `skills/zensical-docs/SKILL.md` — Haupt-Workflow (Vorschau, Systemprüfung, Deployment) und Seiten-Vorlage.
   - `skills/mermaid-validator/SKILL.md` — Mermaid-Quoting-Regeln (siehe auch Abschnitt "Mermaid-Diagramme" oben).
   - `agents/doc-checker.md` — Subagent für Build-/Nav-/Link-/Mermaid-Prüfung vor Commits oder Deployment.
+  - `agents/setup-installer.md` — Subagent zur (idempotenten) Installation der lokalen Entwicklungsumgebung gemäß `setup.md` (venv, Python-/Node-Abhängigkeiten). Bei "setup"/"installieren"-Anfragen diesen Subagenten nutzen statt die Befehle im Hauptagenten auszuführen. **Vor jedem Aufruf** erst selbst per einem Bash-Befehl prüfen, ob überhaupt Installationsbedarf besteht:
+    ```bash
+    [ requirements.txt -nt .venv/.deps-installed ] || [ package-lock.json -nt node_modules ] && echo "installation nötig" || echo "nichts zu tun"
+    ```
+    Nur bei "installation nötig" den Subagenten tatsächlich starten — spart den vollen Spawn-Overhead, wenn ohnehin nichts zu installieren ist.
   Bei Doku-Aufgaben in diesem Repo zuerst prüfen, ob eines dieser Skills bzw. der `doc-checker`-Subagent zutrifft, statt die `.gemini/`-Workflows direkt nachzubauen.
 - `test/` — aktuell nur eine leere Platzhalterdatei; es gibt keine echte Testsuite in diesem Repository.
 

@@ -15,7 +15,7 @@ Dieser Skill unterstützt das automatische Erstellen, Prüfen und Veröffentlich
 2. **Vollständige Systemprüfung (Pre-Deployment Check)**:
    - `.venv/bin/zensical build`
    - `python3 .gemini/scripts/check_orphaned_files.py`
-   - `python3 /home/thorsten/.gemini/antigravity-cli/brain/4a2625b1-74f6-4160-bea0-9025835ba466/scratch/check_mermaid.py`
+   - Mermaid-Syntax prüfen (siehe Skill `mermaid-validator`)
    - `invoke_subagent` (Role: `Doc-Checker`)
 
 3. **Live-Deployment**:
