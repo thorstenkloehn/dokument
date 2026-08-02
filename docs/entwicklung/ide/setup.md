@@ -214,7 +214,7 @@ sudo update-desktop-database
 ```
 ### Google Antigravity 2
 ```bash
-*# 1. In das temporäre Verzeichnis wechseln
+# 1. In das temporäre Verzeichnis wechseln
 
 # 2. Download mit fest definiertem Dateinamen (-O)
 wget "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.4.3-4510119262814208/linux-x64/Antigravity.tar.gz" -O antigravity2.tar.gz
