@@ -245,17 +245,9 @@ sudo update-desktop-database
 ### Visual Studio Code und Neovim installieren
 
 ```bash
-sudo snap install code --classic
 sudo apt-get install neovim
 ```
 
-### Wichtige VS Code Erweiterungen installieren
-
-```bash
-code --install-extension anthropic.claude-code
-code --install-extension ms-python.python
-code --install-extension rust-lang.rust-analyzer
-```
 
 ### Zed installieren
 
@@ -278,6 +270,7 @@ sudo snap install intellij-idea --classic
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://antigravity.google/cli/install.sh | bash
+
 ```
 
 ---
