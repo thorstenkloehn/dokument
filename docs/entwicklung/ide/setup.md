@@ -270,6 +270,7 @@ sudo snap install intellij-idea --classic
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://antigravity.google/cli/install.sh | bash
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
 
 ```
 
