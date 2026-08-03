@@ -68,6 +68,7 @@ Diese Pflichten ergänzen die themenspezifischen Hinweise auf [Video-Produktion]
 
 ## Verwandte Themen
 
+- [EU AI Act: Überblick & Umsetzung in Deutschland](eu-ai-act-uebersicht.md)
 - [EU AI Act: Rechtliche Aspekte für Content Creator](../künstliche-intelligenz/content/ki-content-creation.md)
 - [KI-Kennzeichnung bei Bildgenerierung](../kreativ/design/design-nach-ki.md)
 - [KI-Kennzeichnung bei Videoproduktion](../kreativ/video/ki-filmproduktion.md)

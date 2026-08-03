@@ -1,4 +1,4 @@
-Angaben gemäß § 5 TMG
+Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz, vormals § 5 TMG)
 
 * Thorsten Klöhn
 * Gerhardstraße 2
@@ -7,6 +7,12 @@ Angaben gemäß § 5 TMG
 
 ## Vertreten durch:
 Thorsten Klöhn
+
+
+## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
+Thorsten Klöhn
+Gerhardstraße 2
+22926 Ahrensburg
 
 
 ## Kontakt:
@@ -21,8 +27,8 @@ Thorsten Klöhn
 Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die
 Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir
 jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7
-Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
-Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+Abs.1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen
+Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als
 Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
 gespeicherte fremde Informationen zu überwachen oder nach Umständen zu
 forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
@@ -71,7 +77,5 @@ ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich
 ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von
 Werbeinformationen, etwa durch Spam-Mails, vor.\
 
-
-Impressum vom [Impressum Generator](https://www.impressum-generator.de)
-der [Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und
-Familienrecht](https://www.kanzlei-hasselbach
+### Transparenzhinweis nach Art. 50 EU AI Act
+Teile der Inhalte auf dieser Website wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (siehe Hinweis auf jeder Artikelseite). Dies erfolgt gemäß den Transparenzpflichten aus Art. 50 der Verordnung (EU) 2024/1689 (EU AI Act). Weitere Details siehe [Artikel 50 EU AI Act: Kennzeichnungspflicht für KI-Inhalte](eu-ai-act-artikel-50.md) und [EU AI Act: Überblick & Umsetzung in Deutschland](eu-ai-act-uebersicht.md).

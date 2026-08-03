@@ -1,116 +1,46 @@
 Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der
 EU-Datenschutzgrundverordnung (DSGVO), ist:
 
-- Thorsten Klöhn 
-- Gerhardstraße 2 
-- 22926 Ahrensburg 
--  Telefon: 04102-2 17 40 07 
-- e-Mail: thorstenkloehn@gmail.com
+- Thorsten Klöhn
+- Gerhardstraße 2
+- 22926 Ahrensburg
+- Telefon: 04102-2 17 40 07
+- E-Mail: thorstenkloehn@gmail.com
 
-##  Ihre Betroffenenrechte
+## Hosting
 
-Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten
-können Sie jederzeit folgende Rechte ausüben:
+Diese Website wird als statische Seite über **GitHub Pages** (Betreiber: GitHub, Inc.) bereitgestellt. Beim Aufruf der Seite verarbeitet GitHub Pages automatisch technisch notwendige Zugriffsdaten (u. a. IP-Adresse, Datum/Uhrzeit des Zugriffs, aufgerufene Seite), wie es bei jedem Webserver-Betrieb technisch erforderlich ist. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren und funktionsfähigen Betrieb der Website (Art. 6 Abs. 1 lit. f DSGVO).
 
--   Auskunft über Ihre bei uns gespeicherten Daten und deren
-    Verarbeitung (Art. 15 DSGVO),
--   Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),
--   Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),
--   Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund
-    gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),
--   Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21
-    DSGVO) und
--   Datenübertragbarkeit, sofern Sie in die Datenverarbeitung
-    eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben
-    (Art. 20 DSGVO).
+## Feedback-Funktion und Cookie-Zustimmung
 
-Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese
-jederzeit mit Wirkung für die Zukunft widerrufen.
+Auf den Artikelseiten kann bewertet werden, ob eine Seite hilfreich war ("War diese Seite hilfreich?"). Dabei wird ein technisches Cookie gesetzt, um Mehrfachbewertungen derselben Seite zu vermeiden. Beim ersten Besuch wird um Zustimmung zu diesem Cookie gebeten; die Nutzung ist freiwillig und kann abgelehnt werden, ohne dass sich die Funktionsfähigkeit der übrigen Seite ändert. Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
 
-Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde
-wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres
-Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige
-Behörde.
+## Ihre Betroffenenrechte
 
-Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit
-Anschrift finden Sie unter:
-.
+Unter den oben angegebenen Kontaktdaten können Sie jederzeit folgende Rechte ausüben:
 
-## Eingebettete YouTube-Videos
+- Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),
+- Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),
+- Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),
+- Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),
+- Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und
+- Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).
 
+Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.
 
-### Art und Zweck der Verarbeitung:
+Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die für Ihren Wohnsitz zuständige Landesdatenschutzbehörde oder an die für uns zuständige Aufsichtsbehörde.
 
-Auf einigen unserer Webseiten betten wir YouTube-Videos ein. Betreiber
-der entsprechenden Plugins ist die YouTube, LLC, 901 Cherry Ave., San
-Bruno, CA 94066, USA (nachfolgend „YouTube“). Wenn Sie eine Seite mit
-dem YouTube-Plugin besuchen, wird eine Verbindung zu Servern von YouTube
-hergestellt. Dabei wird YouTube mitgeteilt, welche Seiten Sie besuchen.
-Wenn Sie in Ihrem YouTube-Account eingeloggt sind, kann YouTube Ihr
-Surfverhalten Ihnen persönlich zuzuordnen. Dies verhindern Sie, indem
-Sie sich vorher aus Ihrem YouTube-Account ausloggen.
+!!! note "Hinweis"
+    Eine aktuelle Liste der deutschen Datenschutz-Aufsichtsbehörden lässt sich am zuverlässigsten direkt über eine Suche nach "Aufsichtsbehörden Datenschutz Bundesländer" oder über die Bundesbeauftragte für Datenschutz und Informationsfreiheit (BfDI) finden.
 
-Wird ein YouTube-Video gestartet, setzt der Anbieter Cookies ein, die
-Hinweise über das Nutzerverhalten sammeln.
+## Änderung dieser Datenschutzerklärung
 
-Weitere Informationen zu Zweck und Umfang der Datenerhebung und ihrer
-Verarbeitung durch YouTube erhalten Sie in den Datenschutzerklärungen
-des Anbieters, Dort erhalten Sie auch weitere Informationen zu Ihren
-diesbezüglichen Rechten und Einstellungsmöglichkeiten zum Schutze Ihrer
-Privatsphäre (). Google verarbeitet
-Ihre Daten in den USA und hat sich dem EU-US Privacy Shield unterworfen
-https://www.privacyshield.gov/EU-US-Framework
+Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Angebote in der Datenschutzerklärung umzusetzen, z. B. bei der Einführung neuer Funktionen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
 
-### Rechtsgrundlage:
+## Fragen an die für den Datenschutz verantwortliche Person
 
-Rechtsgrundlage für die Einbindung von YouTube und dem damit verbundenen
-Datentransfer zu Google ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a
-DSGVO).
+Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an die oben genannte Adresse.
 
-### Empfänger:
+---
 
-Der Aufruf von YouTube löst automatisch eine Verbindung zu Google aus.
-
-### Speicherdauer und Widerruf der Einwilligung:
-
-Wer das Speichern von Cookies für das Google-Ad-Programm deaktiviert
-hat, wird auch beim Anschauen von YouTube-Videos mit keinen solchen
-Cookies rechnen müssen. YouTube legt aber auch in anderen Cookies
-nicht-personenbezogene Nutzungsinformationen ab. Möchten Sie dies
-verhindern, so müssen Sie das Speichern von Cookies im Browser
-blockieren.
-
-Weitere Informationen zum Datenschutz bei „YouTube“ finden Sie in der
-Datenschutzerklärung des Anbieters unter:
-
-
-### Drittlandtransfer:
-
-Google verarbeitet Ihre Daten in den USA und hat sich dem EU\_US Privacy
-Shield unterworfen .
-
-### Bereitstellung vorgeschrieben oder erforderlich:
-
-Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig,
-allein auf Basis Ihrer Einwilligung. Sofern Sie den Zugriff unterbinden,
-kann es hierdurch zu Funktionseinschränkungen auf der Website kommen.
-
-## Änderung unserer Datenschutzbestimmungen
-
-
-Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie
-stets den aktuellen rechtlichen Anforderungen entspricht oder um
-Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen,
-z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt
-dann die neue Datenschutzerklärung.
-
-## Fragen an den Datenschutzbeauftragten
-
-Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine
-E-Mail oder wenden Sie sich direkt an die für den Datenschutz
-verantwortliche Person in unserer Organisation:
-
-*Die Datenschutzerklärung wurde mit dem*
-[*Datenschutzerklärungs-Generator der activeMind AG
-erstellt*](https://www.activemind.de/datenschutz/datenschutzhinweis-generator/)
-*(Version 2018-09-24).c
+*Stand: August 2026. Diese Datenschutzerklärung wurde ursprünglich mit dem [Datenschutzerklärungs-Generator der activeMind AG](https://www.activemind.de/datenschutz/datenschutzhinweis-generator/) erstellt und seither überarbeitet.*
