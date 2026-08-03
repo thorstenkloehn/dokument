@@ -7,8 +7,8 @@ Einrichtung von asynchroner **Streaming-Replikation** in PostgreSQL zur Erhöhun
 ```mermaid
 graph LR
     ClientWrite["✍️ Schreibzugriffe"] --> Primary["🐘 Primary Database (10.0.0.1)"]
-    Primary -->|Streaming WAL Logs (Port 5432)| Replica1["📖 Read Replica 1 (10.0.0.2)"]
-    Primary -->|Streaming WAL Logs (Port 5432)| Replica2["📖 Read Replica 2 (10.0.0.3)"]
+    Primary -->|"Streaming WAL Logs (Port 5432)"| Replica1["📖 Read Replica 1 (10.0.0.2)"]
+    Primary -->|"Streaming WAL Logs (Port 5432)"| Replica2["📖 Read Replica 2 (10.0.0.3)"]
     ClientRead["🔍 Lesezugriffe"] --> Replica1
     ClientRead --> Replica2
 ```

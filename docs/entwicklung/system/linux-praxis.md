@@ -72,7 +72,7 @@ chown nginx:www-data /var/www/html -R
 
 ```mermaid
 graph LR
-    Input["Input File / Log"] -->|cat / tail| Stream["stdout Stream"]
+    Input["Input File / Log"] -->|"cat / tail"| Stream["stdout Stream"]
     Stream -->|grep 'ERROR'| Filter["Gefilterte Zeilen"]
     Filter -->|awk '{print $1, $4}'| Transform["Spalten-Extraktion"]
     Transform -->|"sort | uniq -c"| Count["Häufigkeits-Zählung"]

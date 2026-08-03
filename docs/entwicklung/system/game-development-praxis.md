@@ -65,8 +65,8 @@ Spiele-Physik simuliert Starre Körper (*Rigidbodies*), Kräfte, Reibung und Kol
 ```mermaid
 graph TD
     Collision["Collision Detection Pipeline"] --> BroadPhase["1. Broad Phase: Schnell & Grob"]
-    BroadPhase -->|AABB / Bounding Spheres / BVH| NarrowPhase["2. Narrow Phase: Exakt"]
-    NarrowPhase -->|GJK / SAT Algorithm| Resolution["3. Collision Resolution & Impulse"]
+    BroadPhase -->|"AABB / Bounding Spheres / BVH"| NarrowPhase["2. Narrow Phase: Exakt"]
+    NarrowPhase -->|"GJK / SAT Algorithm"| Resolution["3. Collision Resolution & Impulse"]
 ```
 
 1. **Broad Phase**: Schnelles Aussortieren weit entfernter Objekte mittels einfacher Bounding Volumes (AABB - Axis-Aligned Bounding Box, BVH - Bounding Volume Hierarchy).

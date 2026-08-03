@@ -13,9 +13,9 @@ PostgreSQL basiert auf einer **Process-Per-Connection** Architektur: Für jede C
 
 ```mermaid
 graph TD
-    Client["Client App / psql"] -->|TCP / Socket| Postmaster[Postmaster Main Process]
+    Client["Client App / psql"] -->|"TCP / Socket"| Postmaster[Postmaster Main Process]
     Postmaster -->|Fork| Backend[Backend Process]
-    Backend <-->|Read / Write| SharedMem["Shared Buffers / RAM"]
+    Backend <-->|"Read / Write"| SharedMem["Shared Buffers / RAM"]
     SharedMem <-->|WAL Writer| WAL[Write-Ahead Log WAL]
     SharedMem <-->|Checkpointer| Disk["(Physical Storage / Disk)"]
 ```

@@ -17,7 +17,7 @@ graph TD
     AndroidApp --> Receiver["3. Broadcast Receiver: System Events"]
     AndroidApp --> Provider["4. Content Provider: Data Sharing"]
 
-    Activity <-->|Explicit / Implicit Intents| Activity
+    Activity <-->|"Explicit / Implicit Intents"| Activity
 ```
 
 1. **Activity**: Die visuelle Benutzeroberfläche und Einstiegspunkt für den Nutzer.
@@ -87,9 +87,9 @@ Google empfiehlt eine klare Layer-Architektur mit Unidirectional Data Flow (UDF)
 
 ```mermaid
 graph TD
-    UI["UI Layer: Jetpack Compose / Screen"] <-->|State & User Events| VM["ViewModel Layer: StateFlow"]
-    VM <-->|Use Cases / Repositories| Repo["Repository Layer"]
-    Repo <-->|Local Data| Room["(\"Room SQLite DB\")"]
+    UI["UI Layer: Jetpack Compose / Screen"] <-->|"State & User Events"| VM["ViewModel Layer: StateFlow"]
+    VM <-->|"Use Cases / Repositories"| Repo["Repository Layer"]
+    Repo <-->|Local Data| Room["(Room SQLite DB)"]
     Repo <-->|Remote Data| Retrofit["Retrofit REST API"]
 ```
 

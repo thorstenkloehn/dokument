@@ -10,9 +10,9 @@ Das **Model Context Protocol (MCP)** ist ein offener Standard, der es dem Antigr
 
 ```mermaid
 graph LR
-    AGY[Antigravity CLI 'agy'] <-->|MCP Protocol / stdio| MCP_DB[PostgreSQL MCP Server]
-    AGY <-->|MCP Protocol / SSE| MCP_GH[GitHub MCP Server]
-    AGY <-->|MCP Protocol / stdio| MCP_FS[Custom Enterprise API]
+    AGY[Antigravity CLI 'agy'] <-->|"MCP Protocol / stdio"| MCP_DB[PostgreSQL MCP Server]
+    AGY <-->|"MCP Protocol / SSE"| MCP_GH[GitHub MCP Server]
+    AGY <-->|"MCP Protocol / stdio"| MCP_FS[Custom Enterprise API]
 ```
 
 ### Konfiguration von MCP-Servern

@@ -13,11 +13,11 @@ graph TD
     Parent[Haupt-CLI Agent 'agy'] -->|1. invoke_subagent| Sub1["Subagent: Code-Researcher"]
     Parent -->|1. invoke_subagent| Sub2["Subagent: Doc-Checker"]
     
-    Sub1 -->|Liest Dateien & sucht| Res1[Recherche-Ergebnis]
+    Sub1 -->|"Liest Dateien & sucht"| Res1[Recherche-Ergebnis]
     Sub2 -->|Führt Build aus| Res2[Build-Status]
     
-    Res1 -->|2. send_message / Auto-Notify| Parent
-    Res2 -->|2. send_message / Auto-Notify| Parent
+    Res1 -->|"2. send_message / Auto-Notify"| Parent
+    Res2 -->|"2. send_message / Auto-Notify"| Parent
 ```
 
 ---

@@ -70,9 +70,9 @@ Deine eigene Anwendung fungiert als **Client**, der Anfragen (Prompts) an den LL
 
 ```mermaid
 sequenceDiagram
-    Client (Deine App) ->> Server (LLM API): POST /chat/completions{" \"prompt\": \"Hallo\" "}
+    Client (Deine App) ->> Server (LLM API): POST /chat/completions {"prompt": "Hallo"}
     Note over Server: Generiert Antwort
-    Server -->> Client: 200 OK{" \"response\": \"Hallo! Wie kann ich helfen?\" "}
+    Server -->> Client: 200 OK {"response": "Hallo! Wie kann ich helfen?"}
 ```
 
 #### Konzept: Statuslose Kommunikation (Stateless)
@@ -309,9 +309,10 @@ Moderne LLMs können entscheiden, **Funktionen in deinem Python-Code** auszufüh
 
 ```mermaid
 sequenceDiagram
-    Agent (LLM) ->> System: Soll ich Rechnen? Ja. Rufe Add("5, 3") auf.
-    System -->> Agent (LLM): Ergebnis: 8
-    Agent (LLM) ->> User: Das Ergebnis ist 8.
+    participant AgentLLM as "Agent (LLM)"
+    AgentLLM ->> System: Soll ich Rechnen? Ja. Rufe Add("5, 3") auf.
+    System -->> AgentLLM: Ergebnis: 8
+    AgentLLM ->> User: Das Ergebnis ist 8.
 ```
 
 #### Software – alle Open Source:

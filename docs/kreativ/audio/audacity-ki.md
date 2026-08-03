@@ -462,7 +462,7 @@ graph TD
     A["🎵 Original-Song"] --> B["🎛️ Demucs Stem-Separation"]
     B --> C["🎤 Vocals extrahieren"]
     B --> D["🥁 Instrumente extrahieren"]
-    C --> E["🔇 Vocal-Removal ("für Instrumental")"]
+    C --> E["🔇 Vocal-Removal (für Instrumental)"]
     D --> F["💾 Karaoke-Version speichern"]
 ```
 

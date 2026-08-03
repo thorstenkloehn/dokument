@@ -7,8 +7,8 @@ Nginx eignet sich hervorragend als Hochleistungs-Load-Balancer zur Verteilung de
 ```mermaid
 graph TD
     Client["🌐 Clients / Web-Traffic"] --> Nginx["🛡️ Nginx Load Balancer"]
-    Nginx -->|Round-Robin / Least Conn| App1["🖥️ Backend Server 1 (10.0.0.10)"]
-    Nginx -->|Round-Robin / Least Conn| App2["🖥️ Backend Server 2 (10.0.0.11)"]
+    Nginx -->|"Round-Robin / Least Conn"| App1["🖥️ Backend Server 1 (10.0.0.10)"]
+    Nginx -->|"Round-Robin / Least Conn"| App2["🖥️ Backend Server 2 (10.0.0.11)"]
     Nginx -->|Failover Backup| App3["🖥️ Backup Server (10.0.0.12)"]
 ```
 

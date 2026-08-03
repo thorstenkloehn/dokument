@@ -16,7 +16,7 @@ Dieses Handbuch fasst die Sprachgrundlagen, modernes Speichermanagement (Smart P
 ```mermaid
 graph TD
     Source["C++ Quellcode .cpp / .hpp"] -->|1. Preprocessor| Prep["Präprozessierter Code"]
-    Prep -->|2. Compiler g++ / clang++| ASM["Assembler Code .s"]
+    Prep -->|"2. Compiler g++ / clang++"| ASM["Assembler Code .s"]
     ASM -->|3. Assembler as| Obj["Objektdatei .o"]
     Obj -->|4. Linker ld| Bin["Binäre Ausführbare Datei / Shared Library"]
 ```
@@ -53,8 +53,8 @@ graph TD
     SmartPointer --> Shared["std::shared_ptr"]
     SmartPointer --> Weak["std::weak_ptr"]
 
-    Unique -->|Alleines Eigentum / Non-Copyable| UniqueDesc["Freigabe bei Scope-Ende"]
-    Shared -->|Geteiltes Eigentum / Ref Counting| SharedDesc["Freigabe wenn Ref-Count = 0"]
+    Unique -->|"Alleines Eigentum / Non-Copyable"| UniqueDesc["Freigabe bei Scope-Ende"]
+    Shared -->|"Geteiltes Eigentum / Ref Counting"| SharedDesc["Freigabe wenn Ref-Count = 0"]
     Weak -->|Nicht-besitzende Referenz| WeakDesc["Verhindert zyklische Referenzen"]
 ```
 

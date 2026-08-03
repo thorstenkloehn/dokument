@@ -92,7 +92,7 @@ graph LR
 ```mermaid
 graph LR
     A["👤 100% Mensch"] --> B["🤝 KI-Assistent\n(Copilot-Modus)"]
-    B --> C["🤖 KI-Autopilot\n("Aider, Agenten")"]
+    B --> C["🤖 KI-Autopilot\n(Aider, Agenten)"]
     C --> D["🤖 Vollautonomes\nCoding"]
     style A fill:#4caf50,color:#fff
     style B fill:#8bc34a,color:#fff
@@ -167,7 +167,7 @@ graph TD
     C --> D["💻 DeepSeek Coder V3\noder CodeLlama"]
     A --> E["🔍 ESLint/Pylint\n(Linter)"]
     A --> F["📐 Prettier/Black\n(Formatter)"]
-    A --> G["🧪 Test-Runner\n("pytest/Vitest")"]
+    A --> G["🧪 Test-Runner\n(pytest/Vitest)"]
 ```
 
 #### Konzept: Welches lokale Code-Modell wählen?
@@ -490,9 +490,9 @@ Prompt: "Ich versuche zu verstehen, warum [Symptom] auftritt.
 
 ```mermaid
 graph TD
-    A["🔺 E2E-Tests\n("wenige, langsam")"]
+    A["🔺 E2E-Tests\n(wenige, langsam)"]
     B["🔷 Integrations-Tests\n(mittel)"]
-    C["⬛ Unit-Tests\n("viele, schnell")"]
+    C["⬛ Unit-Tests\n(viele, schnell)"]
     C --> B --> A
 ```
 
@@ -832,9 +832,9 @@ steps:
 
 ```mermaid
 graph LR
-    A["git push"] --> B["🔍 Linting\n("Ruff, ESLint")"]
-    B --> C["🧪 Tests\n("pytest, Vitest")"]
-    C --> D["🔒 Security-Scan\n("Semgrep, Trivy")"]
+    A["git push"] --> B["🔍 Linting\n(Ruff, ESLint)"]
+    B --> C["🧪 Tests\n(pytest, Vitest)"]
+    C --> D["🔒 Security-Scan\n(Semgrep, Trivy)"]
     D --> E["🤖 KI-Review\n(Optional)"]
     E --> F["📦 Build\n(Docker)"]
     F --> G["🚀 Deploy\n(Coolify)"]
@@ -918,7 +918,7 @@ Prompt: "Du bist ein erfahrener Security-Auditor.
 ```mermaid
 graph TD
     A["🎯 Ziel: Feature implementieren"] --> B["🤖 Aider/LangChain\nAnalysiert Codebase"]
-    B --> C["📋 Plan erstellen\n("Dateien, Schritte")"]
+    B --> C["📋 Plan erstellen\n(Dateien, Schritte)"]
     C --> D["📝 Code schreiben\nin Dateien"]
     D --> E["🧪 Tests ausführen"]
     E --> F{"Tests OK?"}

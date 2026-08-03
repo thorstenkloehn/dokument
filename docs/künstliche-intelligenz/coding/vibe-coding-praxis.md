@@ -13,10 +13,10 @@ Vibe Coding verschiebt den Fokus der Softwareentwicklung: Weg von der Syntax-Ein
 
 ```mermaid
 graph TD
-    User(["Entwickler / Architekt:in"]) -->|1. Konzeption & Prompting| AI[KI Coding Assistant]
+    User(["Entwickler / Architekt:in"]) -->|"1. Konzeption & Prompting"| AI[KI Coding Assistant]
     AI -->|2. Code-Generierung| Code["Modul & Codebase"]
     Code -->|3. Automatisiertes Testen| Test["Test-Suite / Linter"]
-    Test -->|4. Feedback & Refactoring| User
+    Test -->|"4. Feedback & Refactoring"| User
 ```
 
 ### KI-Tools im Überblick

@@ -19,7 +19,7 @@ graph TD
     Source["Kotlin Code .kt"] -->|Kotlin Compiler kotlinc| Choice{"Target Plattform"}
     Choice -->|JVM Target| Bytecode["Java Bytecode .class / JAR"]
     Choice -->|Native Target| Binary["Natives Executable via LLVM"]
-    Choice -->|JS / WASM Target| Web["JavaScript / WebAssembly"]
+    Choice -->|"JS / WASM Target"| Web["JavaScript / WebAssembly"]
     Bytecode --> Android["Android App / Spring Boot Server"]
     Binary --> iOS["iOS App / Linux CLI"]
 ```

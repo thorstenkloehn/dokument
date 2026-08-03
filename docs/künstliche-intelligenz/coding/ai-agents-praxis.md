@@ -13,10 +13,10 @@ Ein **AI Agent** kombiniert ein Sprachmodell (als zentrales Gehirn) mit Speicher
 
 ```mermaid
 graph TD
-    User(["Benutzer / Umgebung"]) -->|1. Perception / User Input| Agent[AI Agent Core LLM]
-    Agent -->|2. Reason & Plan| Plan[Schritt-für-Schritt Planung]
-    Plan -->|3. Acting / Tool Invocation| Tools["Tools & APIs"]
-    Tools -->|4. Observation & Reflection| Feedback["Ergebnis-Bewertung & Reflektion"]
+    User(["Benutzer / Umgebung"]) -->|"1. Perception / User Input"| Agent[AI Agent Core LLM]
+    Agent -->|"2. Reason & Plan"| Plan[Schritt-für-Schritt Planung]
+    Plan -->|"3. Acting / Tool Invocation"| Tools["Tools & APIs"]
+    Tools -->|"4. Observation & Reflection"| Feedback["Ergebnis-Bewertung & Reflektion"]
     Feedback -->|Schleifen-Iterierung| Agent
 ```
 

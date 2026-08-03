@@ -16,7 +16,7 @@ Dieses Handbuch bietet eine strukturierte Übersicht über Sprachgrundlagen, Zei
 ```mermaid
 graph TD
     Source["C Quellcode .c / .h"] -->|1. Preprocessor cpp| Prep["Präprozessierter Code"]
-    Prep -->|2. Compiler gcc / clang| ASM["Assembler Code .s"]
+    Prep -->|"2. Compiler gcc / clang"| ASM["Assembler Code .s"]
     ASM -->|3. Assembler as| Obj["Objektdatei .o"]
     Obj -->|4. Linker ld| Bin["Binäre Ausführbare Datei"]
 ```

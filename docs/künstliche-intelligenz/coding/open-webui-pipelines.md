@@ -7,7 +7,7 @@
 ```mermaid
 graph LR
     User["👤 Benutzer-Chat"] --> Pipeline["🔌 Open-WebUI Pipeline (Python)"]
-    Pipeline -->|Inhaltsprüfung / Safety| Filter["🛡️ Guardrail Filter"]
+    Pipeline -->|"Inhaltsprüfung / Safety"| Filter["🛡️ Guardrail Filter"]
     Filter -->|RAG-Anreicherung| RAG["📚 Lokaler Vektorspeicher"]
     RAG --> Ollama["🤖 Ollama / vLLM Server"]
 ```

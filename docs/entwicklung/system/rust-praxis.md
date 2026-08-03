@@ -15,9 +15,9 @@ Dieses Handbuch bietet eine strukturierte Übersicht über die Sprachgrundlagen,
 
 ```mermaid
 graph TD
-    User(["Entwickler / CLI"]) -->|1. cargo build / run| Cargo["Cargo Build Tool"]
-    Cargo -->|2. Kompilierung & Typprüfung| Rustc["rustc Compiler"]
-    Rustc -->|3. Ownership & Lifetime Check| BorrowChecker["Borrow Checker"]
+    User(["Entwickler / CLI"]) -->|"1. cargo build / run"| Cargo["Cargo Build Tool"]
+    Cargo -->|"2. Kompilierung & Typprüfung"| Rustc["rustc Compiler"]
+    Rustc -->|"3. Ownership & Lifetime Check"| BorrowChecker["Borrow Checker"]
     BorrowChecker -->|4. Generierung Maschinencode| Binary["Natives Binary / WASM"]
 ```
 
@@ -59,7 +59,7 @@ graph TD
     Borrowing --> Mut["Veränderbare Referenz &mut T"]
     
     Shared -->|Beliebig viele gleichzeitig| Valid1["Gültig"]
-    Mut -->|Exklusiv: Genau EINE gleichzeitig| Valid2["Gültig"]
+    Mut -->|"Exklusiv: Genau EINE gleichzeitig"| Valid2["Gültig"]
 ```
 
 ### Die 3 goldenen Ownership-Regeln
