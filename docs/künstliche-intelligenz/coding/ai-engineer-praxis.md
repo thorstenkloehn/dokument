@@ -12,7 +12,7 @@ Dieses Handbuch fasst das komplette Berufsbild, Plattformen, Modell-Ökosysteme,
 
 ```mermaid
 graph LR
-    subgraph ML Engineer / Data Scientist
+    subgraph "ML Engineer / Data Scientist"
         A[Daten-Preprocessing] --> B["Modell-Training & Architecture"]
         B --> C["PyTorch / TensorFlow / CUDA"]
         C --> D[Hyperparameter Tuning]
