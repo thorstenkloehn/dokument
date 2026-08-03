@@ -2187,17 +2187,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#wichtige-vs-code-erweiterungen-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Wichtige VS Code Erweiterungen installieren
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#zed-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2890,17 +2879,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#wichtige-vs-code-erweiterungen-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Wichtige VS Code Erweiterungen installieren
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#zed-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -3255,7 +3233,7 @@
 </span><span id="__span-15-28"><a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>sudo<span class="w"> </span>update-desktop-database
 </span></code></pre></div>
 <h3 id="google-antigravity-2">Google Antigravity 2<a class="headerlink" href="#google-antigravity-2" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>*#<span class="w"> </span><span class="m">1</span>.<span class="w"> </span>In<span class="w"> </span>das<span class="w"> </span>temporäre<span class="w"> </span>Verzeichnis<span class="w"> </span>wechseln
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># 1. In das temporäre Verzeichnis wechseln</span>
 </span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
 </span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="c1"># 2. Download mit fest definiertem Dateinamen (-O)</span>
 </span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>wget<span class="w"> </span><span class="s2">&quot;https://storage.googleapis.com/antigravity-public/antigravity-hub/2.4.3-4510119262814208/linux-x64/Antigravity.tar.gz&quot;</span><span class="w"> </span>-O<span class="w"> </span>antigravity2.tar.gz
@@ -3284,25 +3262,19 @@
 </span><span id="__span-16-27"><a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a>sudo<span class="w"> </span>update-desktop-database
 </span></code></pre></div>
 <h3 id="visual-studio-code-und-neovim-installieren">Visual Studio Code und Neovim installieren<a class="headerlink" href="#visual-studio-code-und-neovim-installieren" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>code<span class="w"> </span>--classic
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>neovim
-</span></code></pre></div>
-<h3 id="wichtige-vs-code-erweiterungen-installieren">Wichtige VS Code Erweiterungen installieren<a class="headerlink" href="#wichtige-vs-code-erweiterungen-installieren" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>code<span class="w"> </span>--install-extension<span class="w"> </span>anthropic.claude-code
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>code<span class="w"> </span>--install-extension<span class="w"> </span>ms-python.python
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>code<span class="w"> </span>--install-extension<span class="w"> </span>rust-lang.rust-analyzer
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>neovim
 </span></code></pre></div>
 <h3 id="zed-installieren">Zed installieren<a class="headerlink" href="#zed-installieren" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>curl<span class="w"> </span>-f<span class="w"> </span>https://zed.dev/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>curl<span class="w"> </span>-f<span class="w"> </span>https://zed.dev/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
 </span></code></pre></div>
 <h3 id="jetbrains-ides-installieren">Jetbrains IDEs installieren<a class="headerlink" href="#jetbrains-ides-installieren" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>intellij-idea<span class="w"> </span>--classic
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>intellij-idea<span class="w"> </span>--classic
 </span></code></pre></div>
 <hr />
 <h2 id="ki-tools-installieren">KI-Tools installieren<a class="headerlink" href="#ki-tools-installieren" title="Permanent link">&para;</a></h2>
 <h3 id="ki-clis-installieren">KI CLIs installieren<a class="headerlink" href="#ki-clis-installieren" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://claude.ai/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
-</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://antigravity.google/cli/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://claude.ai/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://antigravity.google/cli/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 </span></code></pre></div>
 <hr />
 <h2 id="geodaten-verarbeitung">Geodaten-Verarbeitung<a class="headerlink" href="#geodaten-verarbeitung" title="Permanent link">&para;</a></h2>
