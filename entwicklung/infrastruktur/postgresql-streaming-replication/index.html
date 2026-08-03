@@ -2848,8 +2848,8 @@
 <hr />
 <pre class="mermaid"><code>graph LR
     ClientWrite["✍️ Schreibzugriffe"] --&gt; Primary["🐘 Primary Database (10.0.0.1)"]
-    Primary --&gt;|Streaming WAL Logs (Port 5432)| Replica1["📖 Read Replica 1 (10.0.0.2)"]
-    Primary --&gt;|Streaming WAL Logs (Port 5432)| Replica2["📖 Read Replica 2 (10.0.0.3)"]
+    Primary --&gt;|"Streaming WAL Logs (Port 5432)"| Replica1["📖 Read Replica 1 (10.0.0.2)"]
+    Primary --&gt;|"Streaming WAL Logs (Port 5432)"| Replica2["📖 Read Replica 2 (10.0.0.3)"]
     ClientRead["🔍 Lesezugriffe"] --&gt; Replica1
     ClientRead --&gt; Replica2</code></pre>
 <hr />

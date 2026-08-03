@@ -3458,11 +3458,11 @@
 <p>Dieser Leitfaden beschreibt den Aufbau einer vollständig lokalen, datenschutzkonformen RAG-Pipeline (Retrieval-Augmented Generation) zur Durchsuchung eigener Dokumente ohne externe Cloud-APIs.</p>
 <hr />
 <pre class="mermaid"><code>graph LR
-    Doc["📄 Eigene Dokumente ("PDF/MD/TXT")"] --&gt; Embed["🔤 Embedding-Modell (nomic-embed-text)"]
+    Doc["📄 Eigene Dokumente (PDF/MD/TXT)"] --&gt; Embed["🔤 Embedding-Modell (nomic-embed-text)"]
     Embed --&gt; VectorDB["📦 Vektordatenbank (ChromaDB)"]
     User["👤 Benutzer-Frage"] --&gt; VectorDB
     VectorDB --&gt; Context["🔍 Relevanter Kontext"]
-    Context --&gt; Ollama["🤖 Ollama LLM ("Llama 3 / DeepSeek")"]
+    Context --&gt; Ollama["🤖 Ollama LLM (Llama 3 / DeepSeek)"]
     Ollama --&gt; Answer["💬 Präzise Antwort mit Quellen"]</code></pre>
 <hr />
 <h2 id="1-voraussetzungen-installation">🚀 1. Voraussetzungen &amp; Installation<a class="headerlink" href="#1-voraussetzungen-installation" title="Permanent link">&para;</a></h2>

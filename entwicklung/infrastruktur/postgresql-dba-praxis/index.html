@@ -3231,9 +3231,9 @@
 <h3 id="rdbms-high-level-architektur">RDBMS &amp; High-Level Architektur<a class="headerlink" href="#rdbms-high-level-architektur" title="Permanent link">&para;</a></h3>
 <p>PostgreSQL basiert auf einer <strong>Process-Per-Connection</strong> Architektur: Für jede Client-Verbindung wird ein eigener <code>postgres</code> Backend-Prozess gespannt.</p>
 <pre class="mermaid"><code>graph TD
-    Client["Client App / psql"] --&gt;|TCP / Socket| Postmaster[Postmaster Main Process]
+    Client["Client App / psql"] --&gt;|"TCP / Socket"| Postmaster[Postmaster Main Process]
     Postmaster --&gt;|Fork| Backend[Backend Process]
-    Backend &lt;--&gt;|Read / Write| SharedMem["Shared Buffers / RAM"]
+    Backend &lt;--&gt;|"Read / Write"| SharedMem["Shared Buffers / RAM"]
     SharedMem &lt;--&gt;|WAL Writer| WAL[Write-Ahead Log WAL]
     SharedMem &lt;--&gt;|Checkpointer| Disk["(Physical Storage / Disk)"]</code></pre>
 <h3 id="die-wichtigsten-architekturkomponenten">Die wichtigsten Architekturkomponenten<a class="headerlink" href="#die-wichtigsten-architekturkomponenten" title="Permanent link">&para;</a></h3>

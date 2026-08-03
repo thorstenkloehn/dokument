@@ -3584,7 +3584,7 @@ Wie du Stimmen klonst, automatisierte Audio-Workflows programmierst und Audiodat
 <p>Du lädst eine Roh-Audiodatei auf deinen Cloud-Speicher. Eine n8n-Pipeline verarbeitet diese automatisch:</p>
 <pre class="mermaid"><code>graph TD
     A["📹 Neues Video / Audio auf Nextcloud"] --&gt; B["⚙️ n8n Workflow startet"]
-    B --&gt; C["🤖 Demucs ("Trennt Musik &amp; Stimme")"]
+    B --&gt; C["🤖 Demucs (Trennt Musik &amp; Stimme)"]
     C --&gt; D["🤖 DeepFilterNet (Bereinigt die Stimme)"]
     D --&gt; E["🤖 Whisper.cpp (Generiert SRT-Untertitel)"]
     E --&gt; F["🚀 Fertige Spur + Untertitel auf Nextcloud"]</code></pre>
@@ -3617,7 +3617,7 @@ Wie du Stimmen klonst, automatisierte Audio-Workflows programmierst und Audiodat
 <pre class="mermaid"><code>graph TD
     A["🎙️ Vorlesungs-Audio"] --&gt; B["⚡ DeepFilterNet (Bereinigung)"]
     B --&gt; C["🔤 Whisper.cpp (Transkript)"]
-    C --&gt; D["🤖 Ollama ("Modell: Llama3 - Shownotes &amp; Zusammenfassung")"]
+    C --&gt; D["🤖 Ollama (Modell: Llama3 - Shownotes &amp; Zusammenfassung)"]
     D --&gt; E["💾 Nextcloud Ordner"]</code></pre>
 <p><strong>Software (alle Open Source):</strong> DeepFilterNet · Whisper.cpp · Ollama · Python · Nextcloud</p>
 <hr />

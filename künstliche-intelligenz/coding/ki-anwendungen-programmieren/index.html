@@ -4739,9 +4739,9 @@ Die Grundlagen der API-Kommunikation mit LLMs, das Einrichten von Python unter U
 <h4 id="konzept-client-server-prinzip-bei-llms">Konzept: Client-Server-Prinzip bei LLMs<a class="headerlink" href="#konzept-client-server-prinzip-bei-llms" title="Permanent link">&para;</a></h4>
 <p>Deine eigene Anwendung fungiert als <strong>Client</strong>, der Anfragen (Prompts) an den LLM-<strong>Server</strong> (lokal oder in der Cloud) schickt. Die Antwort kommt strukturiert zurück (meist als JSON).</p>
 <pre class="mermaid"><code>sequenceDiagram
-    Client (Deine App) -&gt;&gt; Server (LLM API): POST /chat/completions{" \"prompt\": \"Hallo\" "}
+    Client (Deine App) -&gt;&gt; Server (LLM API): POST /chat/completions {"prompt": "Hallo"}
     Note over Server: Generiert Antwort
-    Server --&gt;&gt; Client: 200 OK{" \"response\": \"Hallo! Wie kann ich helfen?\" "}</code></pre>
+    Server --&gt;&gt; Client: 200 OK {"response": "Hallo! Wie kann ich helfen?"}</code></pre>
 <h4 id="konzept-statuslose-kommunikation-stateless">Konzept: Statuslose Kommunikation (Stateless)<a class="headerlink" href="#konzept-statuslose-kommunikation-stateless" title="Permanent link">&para;</a></h4>
 <p>LLM-APIs haben standardmäßig <strong>kein Gedächtnis</strong>. Jede Anfrage ist isoliert. Um einen Chatverlauf zu ermöglichen, muss deine Anwendung die gesamte Historie mitsenden:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[</span>
@@ -5147,9 +5147,10 @@ Wie du deine Skripte in interaktive Web-Apps verwandelst, selbstständig agieren
 <h4 id="konzept-tool-use-function-calling">Konzept: Tool-Use / Function Calling<a class="headerlink" href="#konzept-tool-use-function-calling" title="Permanent link">&para;</a></h4>
 <p>Moderne LLMs können entscheiden, <strong>Funktionen in deinem Python-Code</strong> auszuführen, wenn sie Informationen benötigen (z. B. Wetter abfragen oder Taschenrechner benutzen).</p>
 <pre class="mermaid"><code>sequenceDiagram
-    Agent (LLM) -&gt;&gt; System: Soll ich Rechnen? Ja. Rufe Add("5, 3") auf.
-    System --&gt;&gt; Agent (LLM): Ergebnis: 8
-    Agent (LLM) -&gt;&gt; User: Das Ergebnis ist 8.</code></pre>
+    participant AgentLLM as "Agent (LLM)"
+    AgentLLM -&gt;&gt; System: Soll ich Rechnen? Ja. Rufe Add("5, 3") auf.
+    System --&gt;&gt; AgentLLM: Ergebnis: 8
+    AgentLLM -&gt;&gt; User: Das Ergebnis ist 8.</code></pre>
 <h4 id="software-alle-open-source_1">Software – alle Open Source:<a class="headerlink" href="#software-alle-open-source_1" title="Permanent link">&para;</a></h4>
 <table>
 <thead>

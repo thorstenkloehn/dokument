@@ -3324,10 +3324,10 @@
 <p><strong>Unsloth</strong> ermöglicht 2x schnelleres und 80% speichereffizienteres Feintuning von Open-Source LLMs (Llama 3, Mistral, Qwen) mittels LoRA (Low-Rank Adaptation) auf eigenen Daten.</p>
 <hr />
 <pre class="mermaid"><code>graph LR
-    BaseModel["🤖 Base LLM ("Llama 3.2 / Qwen 2.5")"] --&gt; LoRA["⚡ LoRA Adapter (Fine-Tuning)"]
+    BaseModel["🤖 Base LLM (Llama 3.2 / Qwen 2.5)"] --&gt; LoRA["⚡ LoRA Adapter (Fine-Tuning)"]
     Dataset["📊 Eigene Trainingsdaten (JSONL)"] --&gt; Unsloth["🚀 Unsloth Trainer"]
     Unsloth --&gt; LoRA
-    LoRA --&gt; GGUF["📦 GGUF Export ("für Ollama")"]</code></pre>
+    LoRA --&gt; GGUF["📦 GGUF Export (für Ollama)"]</code></pre>
 <hr />
 <h2 id="1-installation">🛠️ 1. Installation<a class="headerlink" href="#1-installation" title="Permanent link">&para;</a></h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git&quot;</span>

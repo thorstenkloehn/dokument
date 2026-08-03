@@ -6101,7 +6101,7 @@ Wie KI in der Softwareentwicklung eingesetzt wird, welche Modelle es gibt und wi
 <h4 id="konzept-das-spektrum-von-ki-unterstutzung">Konzept: Das Spektrum von KI-Unterstützung<a class="headerlink" href="#konzept-das-spektrum-von-ki-unterstutzung" title="Permanent link">&para;</a></h4>
 <pre class="mermaid"><code>graph LR
     A["👤 100% Mensch"] --&gt; B["🤝 KI-Assistent\n(Copilot-Modus)"]
-    B --&gt; C["🤖 KI-Autopilot\n("Aider, Agenten")"]
+    B --&gt; C["🤖 KI-Autopilot\n(Aider, Agenten)"]
     C --&gt; D["🤖 Vollautonomes\nCoding"]
     style A fill:#4caf50,color:#fff
     style B fill:#8bc34a,color:#fff
@@ -6223,7 +6223,7 @@ Wie KI in der Softwareentwicklung eingesetzt wird, welche Modelle es gibt und wi
     C --&gt; D["💻 DeepSeek Coder V3\noder CodeLlama"]
     A --&gt; E["🔍 ESLint/Pylint\n(Linter)"]
     A --&gt; F["📐 Prettier/Black\n(Formatter)"]
-    A --&gt; G["🧪 Test-Runner\n("pytest/Vitest")"]</code></pre>
+    A --&gt; G["🧪 Test-Runner\n(pytest/Vitest)"]</code></pre>
 <h4 id="konzept-welches-lokale-code-modell-wahlen">Konzept: Welches lokale Code-Modell wählen?<a class="headerlink" href="#konzept-welches-lokale-code-modell-wahlen" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
@@ -6980,9 +6980,9 @@ Den KI-Assistenten im echten Entwickleralltag produktiv einsetzen – von der Co
 <h3 id="25-thema-testing-mit-ki">2.5 Thema: Testing mit KI<a class="headerlink" href="#25-thema-testing-mit-ki" title="Permanent link">&para;</a></h3>
 <h4 id="konzept-test-pyramide">Konzept: Test-Pyramide<a class="headerlink" href="#konzept-test-pyramide" title="Permanent link">&para;</a></h4>
 <pre class="mermaid"><code>graph TD
-    A["🔺 E2E-Tests\n("wenige, langsam")"]
+    A["🔺 E2E-Tests\n(wenige, langsam)"]
     B["🔷 Integrations-Tests\n(mittel)"]
-    C["⬛ Unit-Tests\n("viele, schnell")"]
+    C["⬛ Unit-Tests\n(viele, schnell)"]
     C --&gt; B --&gt; A</code></pre>
 <p><strong>KI-Empfehlung:</strong> Lass KI zuerst <strong>Unit-Tests</strong> generieren – das ist das Gebiet, wo KI am zuverlässigsten ist.</p>
 <h4 id="konzept-test-getriebene-entwicklung-tdd-mit-ki">Konzept: Test-getriebene Entwicklung (TDD) mit KI<a class="headerlink" href="#konzept-test-getriebene-entwicklung-tdd-mit-ki" title="Permanent link">&para;</a></h4>
@@ -7715,9 +7715,9 @@ KI-Agenten für autonomes Coding einsetzen, CI/CD-Pipelines mit KI aufbauen, Sic
 </table>
 <h4 id="konzept-ki-in-der-cicd-pipeline">Konzept: KI in der CI/CD-Pipeline<a class="headerlink" href="#konzept-ki-in-der-cicd-pipeline" title="Permanent link">&para;</a></h4>
 <pre class="mermaid"><code>graph LR
-    A["git push"] --&gt; B["🔍 Linting\n("Ruff, ESLint")"]
-    B --&gt; C["🧪 Tests\n("pytest, Vitest")"]
-    C --&gt; D["🔒 Security-Scan\n("Semgrep, Trivy")"]
+    A["git push"] --&gt; B["🔍 Linting\n(Ruff, ESLint)"]
+    B --&gt; C["🧪 Tests\n(pytest, Vitest)"]
+    C --&gt; D["🔒 Security-Scan\n(Semgrep, Trivy)"]
     D --&gt; E["🤖 KI-Review\n(Optional)"]
     E --&gt; F["📦 Build\n(Docker)"]
     F --&gt; G["🚀 Deploy\n(Coolify)"]</code></pre>
@@ -7949,7 +7949,7 @@ KI-Agenten für autonomes Coding einsetzen, CI/CD-Pipelines mit KI aufbauen, Sic
 <h4 id="konzept-autonome-entwicklungs-agenten-verstehen">Konzept: Autonome Entwicklungs-Agenten verstehen<a class="headerlink" href="#konzept-autonome-entwicklungs-agenten-verstehen" title="Permanent link">&para;</a></h4>
 <pre class="mermaid"><code>graph TD
     A["🎯 Ziel: Feature implementieren"] --&gt; B["🤖 Aider/LangChain\nAnalysiert Codebase"]
-    B --&gt; C["📋 Plan erstellen\n("Dateien, Schritte")"]
+    B --&gt; C["📋 Plan erstellen\n(Dateien, Schritte)"]
     C --&gt; D["📝 Code schreiben\nin Dateien"]
     D --&gt; E["🧪 Tests ausführen"]
     E --&gt; F{"Tests OK?"}

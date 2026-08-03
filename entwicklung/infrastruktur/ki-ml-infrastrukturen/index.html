@@ -3933,8 +3933,8 @@ Die richtige Hardware-Evaluierung, das Installieren der GPU-Treiber unter Ubuntu
 <h4 id="konzept-der-gpu-treiber-stack">Konzept: Der GPU-Treiber-Stack<a class="headerlink" href="#konzept-der-gpu-treiber-stack" title="Permanent link">&para;</a></h4>
 <p>Damit Applikationen die GPU nutzen können, muss der Stack korrekt installiert sein:</p>
 <pre class="mermaid"><code>graph TD
-    A["🐍 KI-Anwendung ("PyTorch / vLLM")"] --&gt; B["⚙️ CUDA Toolkit (Bibliotheken)"]
-    B --&gt; C["📦 NVIDIA Container Toolkit ("für Docker")"]
+    A["🐍 KI-Anwendung (PyTorch / vLLM)"] --&gt; B["⚙️ CUDA Toolkit (Bibliotheken)"]
+    B --&gt; C["📦 NVIDIA Container Toolkit (für Docker)"]
     C --&gt; D["🐧 Kernel-Treiber (Ubuntu NVIDIA Driver)"]
     D --&gt; E["🔌 Physische GPU"]</code></pre>
 <h4 id="cli-befehle-zur-einrichtung-unter-ubuntu-2404-lts">CLI-Befehle zur Einrichtung unter Ubuntu 24.04 LTS:<a class="headerlink" href="#cli-befehle-zur-einrichtung-unter-ubuntu-2404-lts" title="Permanent link">&para;</a></h4>
@@ -4376,8 +4376,8 @@ Wie du GPUs virtualisierst, extrem schnelle Speichersysteme für Terabytes an Tr
 <p>Wir setzen ein K3s-Kubernetes-Cluster auf Ubuntu auf, installieren den GPU-Operator und deployen einen vLLM-Service, der automatisch auf Nodes mit freiem GPU-Speicher gescheduled wird.</p>
 <pre class="mermaid"><code>graph TD
     A["git push config"] --&gt; B["☸️ K3s Control Plane"]
-    B --&gt;|GPU Operator| C["🖥️ Worker Node 1 (RTX 4090)\n["vLLM Pod läuft"]"]
-    B --&gt;|Keine GPU| D["🖥️ Worker Node 2 (No GPU)\n["Wird übersprungen"]"]</code></pre>
+    B --&gt;|GPU Operator| C["🖥️ Worker Node 1 (RTX 4090)\nvLLM Pod läuft"]
+    B --&gt;|Keine GPU| D["🖥️ Worker Node 2 (No GPU)\nWird übersprungen"]</code></pre>
 <p><strong>Software (alle Open Source):</strong> K3s · NVIDIA GPU Operator · vLLM · Docker/Containerd</p>
 <hr />
 <h2 id="vollstandige-softwareubersicht-vergleich">📦 Vollständige Softwareübersicht &amp; Vergleich<a class="headerlink" href="#vollstandige-softwareubersicht-vergleich" title="Permanent link">&para;</a></h2>

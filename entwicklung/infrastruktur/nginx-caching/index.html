@@ -2768,8 +2768,8 @@
 <hr />
 <pre class="mermaid"><code>graph LR
     Client["🌐 Client Request"] --&gt; Nginx["⚡ Nginx Caching Layer"]
-    Nginx --&gt;|HIT (Cache vorhanden)| ReturnCache["⚡ In-Memory Response ("&lt;2ms")"]
-    Nginx --&gt;|MISS (Kein Cache)| Backend["🐘 PHP-FPM / Python / Node.js Backend"]
+    Nginx --&gt;|"HIT (Cache vorhanden)"| ReturnCache["⚡ In-Memory Response (&lt;2ms)"]
+    Nginx --&gt;|"MISS (Kein Cache)"| Backend["🐘 PHP-FPM / Python / Node.js Backend"]
     Backend --&gt; StoreCache["💾 Cache speichern &amp; ausliefern"]</code></pre>
 <hr />
 <h2 id="1-cache-zone-in-nginxconf-einrichten">⚙️ 1. Cache-Zone in <code>nginx.conf</code> einrichten<a class="headerlink" href="#1-cache-zone-in-nginxconf-einrichten" title="Permanent link">&para;</a></h2>

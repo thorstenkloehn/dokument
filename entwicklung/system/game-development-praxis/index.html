@@ -2996,8 +2996,8 @@
 <h3 id="phasen-der-kollisionserkennung">Phasen der Kollisionserkennung<a class="headerlink" href="#phasen-der-kollisionserkennung" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD
     Collision["Collision Detection Pipeline"] --&gt; BroadPhase["1. Broad Phase: Schnell &amp; Grob"]
-    BroadPhase --&gt;|AABB / Bounding Spheres / BVH| NarrowPhase["2. Narrow Phase: Exakt"]
-    NarrowPhase --&gt;|GJK / SAT Algorithm| Resolution["3. Collision Resolution &amp; Impulse"]</code></pre>
+    BroadPhase --&gt;|"AABB / Bounding Spheres / BVH"| NarrowPhase["2. Narrow Phase: Exakt"]
+    NarrowPhase --&gt;|"GJK / SAT Algorithm"| Resolution["3. Collision Resolution &amp; Impulse"]</code></pre>
 <ol>
 <li><strong>Broad Phase</strong>: Schnelles Aussortieren weit entfernter Objekte mittels einfacher Bounding Volumes (AABB - Axis-Aligned Bounding Box, BVH - Bounding Volume Hierarchy).</li>
 <li><strong>Narrow Phase</strong>: Präzise Schnittpunktberechnung komplexer Geometrien mittels Algorithmen wie <strong>SAT</strong> (Separation Axis Theorem) oder <strong>GJK</strong> (Gilbert-Johnson-Keerthi).</li>

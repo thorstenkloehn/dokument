@@ -3225,7 +3225,7 @@
 </ul>
 <h3 id="die-linux-textverarbeitungs-pipeline-pipe">Die Linux Textverarbeitungs-Pipeline (<code>pipe</code>)<a class="headerlink" href="#die-linux-textverarbeitungs-pipeline-pipe" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph LR
-    Input["Input File / Log"] --&gt;|cat / tail| Stream["stdout Stream"]
+    Input["Input File / Log"] --&gt;|"cat / tail"| Stream["stdout Stream"]
     Stream --&gt;|grep 'ERROR'| Filter["Gefilterte Zeilen"]
     Filter --&gt;|awk '{print $1, $4}'| Transform["Spalten-Extraktion"]
     Transform --&gt;|"sort | uniq -c"| Count["Häufigkeits-Zählung"]</code></pre>

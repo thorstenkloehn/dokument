@@ -3071,7 +3071,7 @@
 <hr />
 <pre class="mermaid"><code>graph LR
     User["👤 Benutzer-Chat"] --&gt; Pipeline["🔌 Open-WebUI Pipeline (Python)"]
-    Pipeline --&gt;|Inhaltsprüfung / Safety| Filter["🛡️ Guardrail Filter"]
+    Pipeline --&gt;|"Inhaltsprüfung / Safety"| Filter["🛡️ Guardrail Filter"]
     Filter --&gt;|RAG-Anreicherung| RAG["📚 Lokaler Vektorspeicher"]
     RAG --&gt; Ollama["🤖 Ollama / vLLM Server"]</code></pre>
 <hr />

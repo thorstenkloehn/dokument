@@ -2774,7 +2774,7 @@
     Source["Kotlin Code .kt"] --&gt;|Kotlin Compiler kotlinc| Choice{"Target Plattform"}
     Choice --&gt;|JVM Target| Bytecode["Java Bytecode .class / JAR"]
     Choice --&gt;|Native Target| Binary["Natives Executable via LLVM"]
-    Choice --&gt;|JS / WASM Target| Web["JavaScript / WebAssembly"]
+    Choice --&gt;|"JS / WASM Target"| Web["JavaScript / WebAssembly"]
     Bytecode --&gt; Android["Android App / Spring Boot Server"]
     Binary --&gt; iOS["iOS App / Linux CLI"]</code></pre>
 <hr />

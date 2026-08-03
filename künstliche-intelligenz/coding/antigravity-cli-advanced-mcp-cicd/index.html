@@ -3269,9 +3269,9 @@
 <h2 id="connecting-tools-with-model-context-protocol-mcp">🔌 Connecting Tools with Model Context Protocol (MCP)<a class="headerlink" href="#connecting-tools-with-model-context-protocol-mcp" title="Permanent link">&para;</a></h2>
 <p>Das <strong>Model Context Protocol (MCP)</strong> ist ein offener Standard, der es dem Antigravity CLI 2 ermöglicht, sich nahtlos mit externen Datenquellen, Datenbanken, APIs und Drittanbieter-Diensten zu verbinden.</p>
 <pre class="mermaid"><code>graph LR
-    AGY[Antigravity CLI 'agy'] &lt;--&gt;|MCP Protocol / stdio| MCP_DB[PostgreSQL MCP Server]
-    AGY &lt;--&gt;|MCP Protocol / SSE| MCP_GH[GitHub MCP Server]
-    AGY &lt;--&gt;|MCP Protocol / stdio| MCP_FS[Custom Enterprise API]</code></pre>
+    AGY[Antigravity CLI 'agy'] &lt;--&gt;|"MCP Protocol / stdio"| MCP_DB[PostgreSQL MCP Server]
+    AGY &lt;--&gt;|"MCP Protocol / SSE"| MCP_GH[GitHub MCP Server]
+    AGY &lt;--&gt;|"MCP Protocol / stdio"| MCP_FS[Custom Enterprise API]</code></pre>
 <h3 id="konfiguration-von-mcp-servern">Konfiguration von MCP-Servern<a class="headerlink" href="#konfiguration-von-mcp-servern" title="Permanent link">&para;</a></h3>
 <p>MCP-Server werden in der Datei <code>~/.gemini/antigravity-cli/settings.json</code> definiert:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>

@@ -3291,9 +3291,9 @@ Wie du Sprachmodelle nutzt, um deine Denkblockaden zu lösen, wie man Assoziatio
 <h4 id="die-zwei-phasen-der-ideenfindung">Die zwei Phasen der Ideenfindung<a class="headerlink" href="#die-zwei-phasen-der-ideenfindung" title="Permanent link">&para;</a></h4>
 <p>Kreativität benötigt beide Denkrichtungen. KI kann beide Phasen gezielt unterstützen:</p>
 <pre class="mermaid"><code>graph TD
-    A["💡 Ausgangsfrage"] --&gt; B["🟢 Divergente Phase\n("Breit fächern, viele Ideen")"]
-    B --&gt;|Ollama / ChatGPT| B1["Idee 1, Idee 2, Idee 3, Idee 4, ..."]
-    B1 --&gt; C["🟡 Konvergente Phase\n("Fokussieren, Bewerten, Auswählen")"]
+    A["💡 Ausgangsfrage"] --&gt; B["🟢 Divergente Phase\n(Breit fächern, viele Ideen)"]
+    B --&gt;|"Ollama / ChatGPT"| B1["Idee 1, Idee 2, Idee 3, Idee 4, ..."]
+    B1 --&gt; C["🟡 Konvergente Phase\n(Fokussieren, Bewerten, Auswählen)"]
     C --&gt;|Menschliche Kuration| D["🎯 Das finale Konzept"]</code></pre>
 <ul>
 <li><strong>Divergentes Denken (Öffnen):</strong> Es geht um Quantität. Die KI generiert Assoziationen, Analogien und ungewöhnliche Blickwinkel (z. B. mit hoher Temperatur-Einstellung).</li>
@@ -3562,7 +3562,7 @@ Wie du automatisierte Ideen-Pipelines aufbaust, kollaborative Tools für Teams h
 <h4 id="automatisches-trend-scraping-ideen-generierung">Automatisches Trend-Scraping &amp; Ideen-Generierung<a class="headerlink" href="#automatisches-trend-scraping-ideen-generierung" title="Permanent link">&para;</a></h4>
 <pre class="mermaid"><code>graph TD
     A["🌐 RSS Feeds / Tech-News"] --&gt; B["⚙️ n8n Workflow (Scraper)"]
-    B --&gt; C["🤖 Ollama ("Filtert &amp; analysiert Trends")"]
+    B --&gt; C["🤖 Ollama (Filtert &amp; analysiert Trends)"]
     C --&gt; D["📝 n8n (Generiert 3 Produktideen)"]
     D --&gt; E["📧 E-Mail-Newsletter an das Kreativ-Team"]</code></pre>
 <hr />
@@ -3682,7 +3682,7 @@ Wie du automatisierte Ideen-Pipelines aufbaust, kollaborative Tools für Teams h
 <h3 id="experte-automatisierte-ideen-maschine-n8n">🔴 Experte: Automatisierte Ideen-Maschine (n8n)<a class="headerlink" href="#experte-automatisierte-ideen-maschine-n8n" title="Permanent link">&para;</a></h3>
 <p>Ein n8n-Workflow liest täglich Google-Trends, lässt Ollama Ideen generieren und postet sie auf ein internes Trello-Board zur Diskussion.</p>
 <pre class="mermaid"><code>graph TD
-    A["⏰ Cron-Trigger ("Täglich")"] --&gt; B["🌐 Google Trends Scraper"]
+    A["⏰ Cron-Trigger (Täglich)"] --&gt; B["🌐 Google Trends Scraper"]
     B --&gt; C["🤖 Ollama Llama3 (Ideen-Entwurf)"]
     C --&gt; D["🔌 n8n Trello Node"]
     D --&gt; E["📋 Trello Board 'Ideen-Pool'"]</code></pre>

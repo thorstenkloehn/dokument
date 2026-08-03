@@ -3325,7 +3325,7 @@
 <hr />
 <pre class="mermaid"><code>graph LR
     Prompt["📝 User Prompt / Eingabe"] --&gt; Instructor["🛡️ Instructor + Pydantic Validator"]
-    Instructor --&gt; LLM["🤖 LLM ("Ollama / OpenAI")"]
+    Instructor --&gt; LLM["🤖 LLM (Ollama / OpenAI)"]
     LLM --&gt;|Validierung fehlgeschlagen| ReTry["🔄 Auto-Retry Prompt mit Pydantic Fehler"]
     ReTry --&gt; LLM
     LLM --&gt;|Erfolgreich| VerifiedJSON["📊 Valides Pydantic Objekt / JSON"]</code></pre>

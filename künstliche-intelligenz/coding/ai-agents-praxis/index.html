@@ -3754,10 +3754,10 @@
 <h3 id="was-ist-ein-ai-agent">Was ist ein AI Agent?<a class="headerlink" href="#was-ist-ein-ai-agent" title="Permanent link">&para;</a></h3>
 <p>Ein <strong>AI Agent</strong> kombiniert ein Sprachmodell (als zentrales Gehirn) mit Speicher (Memory), Werkzeugen (Tools) und einer Regelschleife. Dadurch ist der Agent in der Lage, dynamisch auf Eingaben zu reagieren und ein festgelegtes Ziel autonom zu verfolgen.</p>
 <pre class="mermaid"><code>graph TD
-    User(["Benutzer / Umgebung"]) --&gt;|1. Perception / User Input| Agent[AI Agent Core LLM]
-    Agent --&gt;|2. Reason &amp; Plan| Plan[Schritt-für-Schritt Planung]
-    Plan --&gt;|3. Acting / Tool Invocation| Tools["Tools &amp; APIs"]
-    Tools --&gt;|4. Observation &amp; Reflection| Feedback["Ergebnis-Bewertung &amp; Reflektion"]
+    User(["Benutzer / Umgebung"]) --&gt;|"1. Perception / User Input"| Agent[AI Agent Core LLM]
+    Agent --&gt;|"2. Reason &amp; Plan"| Plan[Schritt-für-Schritt Planung]
+    Plan --&gt;|"3. Acting / Tool Invocation"| Tools["Tools &amp; APIs"]
+    Tools --&gt;|"4. Observation &amp; Reflection"| Feedback["Ergebnis-Bewertung &amp; Reflektion"]
     Feedback --&gt;|Schleifen-Iterierung| Agent</code></pre>
 <h3 id="der-agent-loop-die-agentische-schleife">Der Agent Loop (Die agentische Schleife)<a class="headerlink" href="#der-agent-loop-die-agentische-schleife" title="Permanent link">&para;</a></h3>
 <p>Jeder Agent durchläuft kontinuierlich 4 Kernphasen:</p>

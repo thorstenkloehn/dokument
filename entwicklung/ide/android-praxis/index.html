@@ -2758,7 +2758,7 @@
     AndroidApp --&gt; Receiver["3. Broadcast Receiver: System Events"]
     AndroidApp --&gt; Provider["4. Content Provider: Data Sharing"]
 
-    Activity &lt;--&gt;|Explicit / Implicit Intents| Activity</code></pre>
+    Activity &lt;--&gt;|"Explicit / Implicit Intents"| Activity</code></pre>
 <ol>
 <li><strong>Activity</strong>: Die visuelle Benutzeroberfläche und Einstiegspunkt für den Nutzer.</li>
 <li><strong>Service</strong>: Führt langwierige Operationen im Hintergrund aus (z. B. Musikwiedergabe, Standort-Tracking), ohne ein UI anzuzeigen.</li>
@@ -2815,9 +2815,9 @@
 <h2 id="3-architektur-mvvm-hilt-stateflow">🏛️ 3. Architektur: MVVM, Hilt &amp; StateFlow<a class="headerlink" href="#3-architektur-mvvm-hilt-stateflow" title="Permanent link">&para;</a></h2>
 <p>Google empfiehlt eine klare Layer-Architektur mit Unidirectional Data Flow (UDF):</p>
 <pre class="mermaid"><code>graph TD
-    UI["UI Layer: Jetpack Compose / Screen"] &lt;--&gt;|State &amp; User Events| VM["ViewModel Layer: StateFlow"]
-    VM &lt;--&gt;|Use Cases / Repositories| Repo["Repository Layer"]
-    Repo &lt;--&gt;|Local Data| Room["(\"Room SQLite DB\")"]
+    UI["UI Layer: Jetpack Compose / Screen"] &lt;--&gt;|"State &amp; User Events"| VM["ViewModel Layer: StateFlow"]
+    VM &lt;--&gt;|"Use Cases / Repositories"| Repo["Repository Layer"]
+    Repo &lt;--&gt;|Local Data| Room["(Room SQLite DB)"]
     Repo &lt;--&gt;|Remote Data| Retrofit["Retrofit REST API"]</code></pre>
 <h3 id="1-viewmodel-stateflow">1. ViewModel &amp; StateFlow<a class="headerlink" href="#1-viewmodel-stateflow" title="Permanent link">&para;</a></h3>
 <p>Das <code>ViewModel</code> überlebt Konfigurationsänderungen (wie Bildschirm-Rotationen) und verwaltet den UI-Zustand via <code>StateFlow</code>:</p>
