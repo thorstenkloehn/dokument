@@ -27,24 +27,7 @@ sudo ubuntu-drivers install
 sudo apt install python3 python3-pip python3-venv python-is-python3
 ```
 
-### Node.js installieren
 
-```bash
-# Download and install nvm:
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
-
-# in lieu of restarting the shell
-\. "$HOME/.nvm/nvm.sh"
-
-# Download and install Node.js:
-nvm install 25
-
-# Verify the Node.js version:
-node -v # Should print "v25.4.0".
-
-# Verify npm version:
-npm -v # Should print "11.7.0".
-```
 
 ### C und C++ Entwicklungsumgebung
 
@@ -66,7 +49,24 @@ echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
+### Node.js installieren
 
+```bash
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 25
+
+# Verify the Node.js version:
+node -v # Should print "v25.4.0".
+
+# Verify npm version:
+npm -v # Should print "11.7.0".
+```
 ### Rust installieren
 
 ```bash
