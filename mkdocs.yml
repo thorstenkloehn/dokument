@@ -323,6 +323,7 @@ nav:
           - "Wiki.js Agenten-Pipeline (Automatisierte Pflege mit LLMs)": wissen/dokumentation/wikijs-ki-agent.md
           - XWiki:
               - Installieren: wissen/dokumentation/xwiki/installieren.md
+              - Installation über APT: wissen/dokumentation/xwiki/installation-ueber-apt.md
               - XWiki REST API & Python: wissen/dokumentation/xwiki/xwiki-rest-api.md
               - Agenten-Pipeline (Automatisierte Pflege mit LLMs): wissen/dokumentation/xwiki/xwiki-ki-agent.md
 
