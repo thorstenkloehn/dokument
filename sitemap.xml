@@ -724,10 +724,16 @@
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/semantische-mediawiki/smw-sparql-queries/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wikijs-ki-agent/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/xwiki/installieren/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/xwiki/xwiki-rest-api/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/xwiki/xwiki-ki-agent/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/rechtliches/impressum/</loc>
