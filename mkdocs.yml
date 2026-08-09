@@ -297,6 +297,7 @@ nav:
           - "Open WebUI: All-in-One RAG-System mit Agenten-Funktion": wissen/dokumentation/open-webui-rag-agenten-plattform.md
           - "Dify: Visuelle Agenten- & Workflow-Plattform": wissen/dokumentation/dify-agenten-workflow-plattform.md
           - "Flowise: Visueller Flow-Builder für LangChain": wissen/dokumentation/flowise-visueller-flow-builder.md
+          - 'Khoj: KI-„Zweites Gehirn" für persönliche Wissenssuche': wissen/dokumentation/khoj-ki-zweites-gehirn.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
