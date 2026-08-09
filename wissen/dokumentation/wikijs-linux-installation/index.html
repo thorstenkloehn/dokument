@@ -2260,10 +2260,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-ersten-start-testen" class="md-nav__link">
+  <a href="#4-ersteinrichtung-auf-einem-headless-server" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        4. Ersten Start testen
+        4. Ersteinrichtung auf einem Headless-Server
       </span>
     </span>
   </a>
@@ -2271,10 +2271,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-systemd-dienst-einrichten" class="md-nav__link">
+  <a href="#5-ersten-start-testen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        5. <code>systemd</code>-Dienst einrichten
+        5. Ersten Start testen
       </span>
     </span>
   </a>
@@ -2282,10 +2282,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-netzwerk-und-reverse-proxy" class="md-nav__link">
+  <a href="#6-systemd-dienst-einrichten" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        6. Netzwerk und Reverse Proxy
+        6. <code>systemd</code>-Dienst einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-netzwerk-und-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Netzwerk und Reverse Proxy
       </span>
     </span>
   </a>
@@ -2585,10 +2596,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-ersten-start-testen" class="md-nav__link">
+  <a href="#4-ersteinrichtung-auf-einem-headless-server" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        4. Ersten Start testen
+        4. Ersteinrichtung auf einem Headless-Server
       </span>
     </span>
   </a>
@@ -2596,10 +2607,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-systemd-dienst-einrichten" class="md-nav__link">
+  <a href="#5-ersten-start-testen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        5. <code>systemd</code>-Dienst einrichten
+        5. Ersten Start testen
       </span>
     </span>
   </a>
@@ -2607,10 +2618,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-netzwerk-und-reverse-proxy" class="md-nav__link">
+  <a href="#6-systemd-dienst-einrichten" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        6. Netzwerk und Reverse Proxy
+        6. <code>systemd</code>-Dienst einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-netzwerk-und-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Netzwerk und Reverse Proxy
       </span>
     </span>
   </a>
@@ -2908,54 +2930,76 @@
 </span></code></pre></div>
 <p>Für den produktiven Betrieb ist PostgreSQL die bessere Wahl.</p>
 <hr />
-<h2 id="4-ersten-start-testen">4. Ersten Start testen<a class="headerlink" href="#4-ersten-start-testen" title="Permanent link">&para;</a></h2>
-<p>Starte Wiki.js zunächst im Vordergrund. So werden Konfigurations- oder Datenbankfehler direkt im Terminal sichtbar:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">cd</span><span class="w"> </span>/var/wiki
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>env<span class="w"> </span><span class="nv">NODE_ENV</span><span class="o">=</span>production<span class="w"> </span>/usr/bin/node<span class="w"> </span>server
+<h2 id="4-ersteinrichtung-auf-einem-headless-server">4. Ersteinrichtung auf einem Headless-Server<a class="headerlink" href="#4-ersteinrichtung-auf-einem-headless-server" title="Permanent link">&para;</a></h2>
+<p>Wiki.js 2.x stellt nach aktuellem Stand <strong>keinen offiziell dokumentierten CLI-Befehl</strong> bereit, der den ersten Administrator vollständig im Terminal anlegt. Der gelegentlich genannte Aufruf ist deshalb nicht Bestandteil dieser Anleitung:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Nicht verwenden: gehört nicht zur offiziellen Wiki.js-2.x-Installation</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>node<span class="w"> </span>server/cli<span class="w"> </span>setup
 </span></code></pre></div>
-<p>Sobald der Start erfolgreich war, öffne im Browser <code>http://SERVER-IP:3000</code> beziehungsweise die konfigurierte Domain und führe den Einrichtungsassistenten aus. Beende den Testlauf danach mit ++ctrl+c++, bevor der dauerhafte Dienst gestartet wird.</p>
+<p>Auf einer Maschine ohne grafische Oberfläche wird der Einrichtungsassistent stattdessen sicher über einen <strong>SSH-Tunnel</strong> aufgerufen. Setze den Host in <code>config.yml</code> zunächst auf die lokale Schnittstelle:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">bindIP</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">127.0.0.1</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3000</span>
+</span></code></pre></div>
+<p>Starte Wiki.js anschließend auf dem Server:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">cd</span><span class="w"> </span>/var/wiki
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>env<span class="w"> </span><span class="nv">NODE_ENV</span><span class="o">=</span>production<span class="w"> </span>/usr/bin/node<span class="w"> </span>server
+</span></code></pre></div>
+<p>Öffne auf deinem eigenen Rechner ein zweites Terminal und leite den lokalen Port <code>3000</code> verschlüsselt zum Server weiter:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ssh<span class="w"> </span>-L<span class="w"> </span><span class="m">3000</span>:127.0.0.1:3000<span class="w"> </span>admin@SERVER-IP
+</span></code></pre></div>
+<p>Solange die SSH-Verbindung besteht, erreichst du den Assistenten im lokalen Browser unter <code>http://127.0.0.1:3000</code>. Dort legst du das erste Administratorkonto an. Der Setup-Port muss dafür weder öffentlich freigegeben noch vor Abschluss der Ersteinrichtung einem Reverse Proxy ausgesetzt werden.</p>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: Keine inoffiziellen Setup-Befehle automatisieren</p>
+<p>Ein nicht vorhandener CLI-Aufruf bricht mit einem Modulfehler ab und richtet kein Administratorkonto ein. Auch direkte Änderungen an den Wiki.js-Datenbanktabellen sind keine stabile Automatisierungsschnittstelle. Verwende für reproduzierbare Installationen die offizielle Bereitstellungsanleitung und schließe die einmalige Kontoanlage über den geschützten Web-Assistenten ab.</p>
+</div>
 <hr />
-<h2 id="5-systemd-dienst-einrichten">5. <code>systemd</code>-Dienst einrichten<a class="headerlink" href="#5-systemd-dienst-einrichten" title="Permanent link">&para;</a></h2>
+<h2 id="5-ersten-start-testen">5. Ersten Start testen<a class="headerlink" href="#5-ersten-start-testen" title="Permanent link">&para;</a></h2>
+<p>Starte Wiki.js zunächst im Vordergrund. So werden Konfigurations- oder Datenbankfehler direkt im Terminal sichtbar:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span>/var/wiki
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>env<span class="w"> </span><span class="nv">NODE_ENV</span><span class="o">=</span>production<span class="w"> </span>/usr/bin/node<span class="w"> </span>server
+</span></code></pre></div>
+<p>Sobald der Start erfolgreich war, öffne im Browser <code>http://SERVER-IP:3000</code> beziehungsweise die konfigurierte Domain und führe den Einrichtungsassistenten aus. Auf einem Headless-Server verwendest du dafür den zuvor beschriebenen SSH-Tunnel. Beende den Testlauf danach mit ++ctrl+c++, bevor der dauerhafte Dienst gestartet wird.</p>
+<hr />
+<h2 id="6-systemd-dienst-einrichten">6. <code>systemd</code>-Dienst einrichten<a class="headerlink" href="#6-systemd-dienst-einrichten" title="Permanent link">&para;</a></h2>
 <p>Lege die Datei <code>/etc/systemd/system/wikijs.service</code> mit folgendem Inhalt an:</p>
-<div class="language-ini highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">[Unit]</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Wiki.js</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="na">After</span><span class="o">=</span><span class="s">network-online.target</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="na">Wants</span><span class="o">=</span><span class="s">network-online.target</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">[Service]</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="na">User</span><span class="o">=</span><span class="s">wikijs</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="na">Group</span><span class="o">=</span><span class="s">wikijs</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/var/wiki</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="na">Environment</span><span class="o">=</span><span class="s">NODE_ENV=production</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/node server</span>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="na">Restart</span><span class="o">=</span><span class="s">on-failure</span>
-</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="na">RestartSec</span><span class="o">=</span><span class="s">5</span>
-</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
-</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="k">[Install]</span>
-</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">[Unit]</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Wiki.js</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="na">After</span><span class="o">=</span><span class="s">network-online.target</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="na">Wants</span><span class="o">=</span><span class="s">network-online.target</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="k">[Service]</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="na">User</span><span class="o">=</span><span class="s">wikijs</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="na">Group</span><span class="o">=</span><span class="s">wikijs</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/var/wiki</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="na">Environment</span><span class="o">=</span><span class="s">NODE_ENV=production</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/node server</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="na">Restart</span><span class="o">=</span><span class="s">on-failure</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="na">RestartSec</span><span class="o">=</span><span class="s">5</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="k">[Install]</span>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
 </span></code></pre></div>
 <p>Danach liest <code>systemd</code> die neue Definition ein. Der zweite Befehl aktiviert den automatischen Start und startet Wiki.js sofort:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>wikijs
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>wikijs
 </span></code></pre></div>
 <p>Status und Protokollausgaben lassen sich so kontrollieren:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>wikijs
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>-f
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>wikijs
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>-f
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Hinweis zum Node.js-Pfad</p>
 <p><code>/usr/bin/node</code> ist ein häufig verwendeter Pfad, aber nicht auf jedem System korrekt. Zeigt <code>command -v node</code> einen anderen Speicherort, muss <code>ExecStart</code> entsprechend angepasst werden.</p>
 </div>
 <hr />
-<h2 id="6-netzwerk-und-reverse-proxy">6. Netzwerk und Reverse Proxy<a class="headerlink" href="#6-netzwerk-und-reverse-proxy" title="Permanent link">&para;</a></h2>
+<h2 id="7-netzwerk-und-reverse-proxy">7. Netzwerk und Reverse Proxy<a class="headerlink" href="#7-netzwerk-und-reverse-proxy" title="Permanent link">&para;</a></h2>
 <p>Wiki.js kann selbst Anfragen annehmen. Für eine öffentliche Installation ist dennoch meist ein Reverse Proxy wie Nginx, Caddy oder Apache sinnvoll, insbesondere für HTTPS und eine saubere Domain-Konfiguration.</p>
 <p>Wiki.js wird auf einer eigenen Domain oder Subdomain betrieben, zum Beispiel <code>wiki.example.org</code>. Ein Betrieb in einem Unterpfad wie <code>example.org/wiki</code> wird nicht unterstützt.</p>
 <hr />
 <h2 id="kurzprufung">Kurzprüfung<a class="headerlink" href="#kurzprufung" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>systemctl<span class="w"> </span>is-enabled<span class="w"> </span>wikijs
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>systemctl<span class="w"> </span>is-active<span class="w"> </span>wikijs
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>curl<span class="w"> </span>-I<span class="w"> </span>http://127.0.0.1:3000
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>systemctl<span class="w"> </span>is-enabled<span class="w"> </span>wikijs
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>systemctl<span class="w"> </span>is-active<span class="w"> </span>wikijs
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>curl<span class="w"> </span>-I<span class="w"> </span>http://127.0.0.1:3000
 </span></code></pre></div>
 <p>Wenn der Dienst aktiviert und aktiv ist und der HTTP-Aufruf eine Antwort liefert, läuft die Anwendung. Danach sollten noch HTTPS, Firewall, Backups und regelmäßige Updates eingerichtet werden.</p>
 <hr />
