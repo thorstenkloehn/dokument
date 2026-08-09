@@ -1767,6 +1767,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#optional-such-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Optional: Such-Tools
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipps-tricks-aus-der-praxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Tipps &amp; Tricks aus der Praxis
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#warum-das-muster-funktioniert" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2477,6 +2499,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#optional-such-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Optional: Such-Tools
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipps-tricks-aus-der-praxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Tipps &amp; Tricks aus der Praxis
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#warum-das-muster-funktioniert" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2764,6 +2808,20 @@
 <ul>
 <li><strong><code>index.md</code></strong> — Inhaltsverzeichnis mit Links, Einzeilern und Metadaten pro Kategorie. Entspricht funktional den <code>index.md</code>-Übersichtsseiten in diesem Repository (z. B. <a href="../">Dokumentenerstellung, Wikis &amp; Notebooks</a>).</li>
 <li><strong><code>log.md</code></strong> — chronologisches, append-only Logbuch mit konsistenten Präfixen, damit es maschinell parsebar bleibt (welche Quelle wann welche Seiten verändert hat).</li>
+</ul>
+<hr />
+<h2 id="optional-such-tools">Optional: Such-Tools<a class="headerlink" href="#optional-such-tools" title="Permanent link">&para;</a></h2>
+<p>Bei kleiner Skalierung (bis grob 100 Quellen, einige hundert Seiten) reicht <code>index.md</code> als Sucheinstieg. Wächst das Wiki darüber hinaus, empfiehlt Karpathy <a href="https://github.com/tobi/qmd">qmd</a> — eine lokale Suchmaschine für Markdown-Dateien mit hybrider BM25/Vektor-Suche und LLM-Reranking, vollständig on-device. Sie bringt sowohl eine CLI (für den Agenten) als auch einen MCP-Server (als natives Tool) mit. Alternativ lässt sich ein einfaches Suchskript passend zur eigenen Struktur per Vibe-Coding vom Agenten selbst erstellen.</p>
+<hr />
+<h2 id="tipps-tricks-aus-der-praxis">Tipps &amp; Tricks aus der Praxis<a class="headerlink" href="#tipps-tricks-aus-der-praxis" title="Permanent link">&para;</a></h2>
+<p>Karpathys Original-Gist beschreibt seinen persönlichen Workflow mit Obsidian als Wiki-Oberfläche. Die Tipps sind Obsidian-spezifisch, das zugrunde liegende Prinzip überträgt sich aber auf jedes Markdown-basierte Wiki (auch auf dieses Repository):</p>
+<ul>
+<li><strong>Obsidian Web Clipper</strong> — Browser-Erweiterung, die Webartikel direkt als Markdown in die Rohsammlung (<code>raw/</code>) überführt.</li>
+<li><strong>Bilder lokal speichern</strong> — in Obsidian unter „Dateien &amp; Links" einen festen Anhang-Ordner setzen (z. B. <code>raw/assets/</code>) und „Anhänge für aktuelle Datei herunterladen" auf ein Tastenkürzel legen. Wichtig, weil LLMs eingebettete Bilder in Markdown nicht in einem Durchgang mitlesen — der Agent liest zuerst den Text und betrachtet referenzierte Bilder danach separat.</li>
+<li><strong>Graph-Ansicht</strong> — der schnellste Weg, die Form eines Wikis zu erfassen: welche Seiten Knotenpunkte (Hubs) sind, welche verwaist sind.</li>
+<li><strong>Marp</strong> — Markdown-basiertes Folienformat mit Obsidian-Plugin, um Präsentationen direkt aus Wiki-Inhalten zu generieren.</li>
+<li><strong>Dataview</strong> — Obsidian-Plugin für Abfragen über Frontmatter (Tags, Daten, Quellenzahl); erzeugt dynamische Tabellen/Listen, sofern der Agent konsistentes YAML-Frontmatter pflegt.</li>
+<li><strong>Git-Versionierung</strong> — das Wiki ist einfach ein Git-Repository aus Markdown-Dateien; Versionsverlauf, Branching und Zusammenarbeit gibt es dadurch „geschenkt".</li>
 </ul>
 <hr />
 <h2 id="warum-das-muster-funktioniert">Warum das Muster funktioniert<a class="headerlink" href="#warum-das-muster-funktioniert" title="Permanent link">&para;</a></h2>
