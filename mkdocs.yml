@@ -289,6 +289,7 @@ nav:
           - Open-Source Systeme mit vollständiger LLM-, Agenten- & MCP-Unterstützung: wissen/dokumentation/open-source-llm-agent-mcp-systeme.md
           - Beste Wissensmanagement-Systeme (Open Source) mit MCP-Server (Top 20): wissen/dokumentation/wissensmanagement-mcp-server-topliste.md
           - Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20): wissen/dokumentation/cms-mcp-server-topliste.md
+          - "LLM-Wiki-Pattern (Karpathy-Muster)": wissen/dokumentation/llm-wiki-pattern-karpathy.md
           - "OpenWiki: Repo-Dokumentations-Agent (LangChain)": wissen/dokumentation/openwiki-repo-dokumentation-agent.md
           - "Onyx (ehem. Danswer): RAG-Plattform": wissen/dokumentation/onyx-danswer-rag-plattform.md
           - MediaWiki:
