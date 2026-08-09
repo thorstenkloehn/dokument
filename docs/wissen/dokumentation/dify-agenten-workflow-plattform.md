@@ -119,6 +119,7 @@ Dify liefert **50+ eingebaute Tools** (Websuche, Code-Ausführung, Bildgenerieru
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme
+- [Flowise: Visueller Flow-Builder für LangChain](flowise-visueller-flow-builder.md) — engster Vergleich, LangChain.js-natives Pendant
 - [AnythingLLM: All-in-One Desktop- & Docker-RAG-Plattform](anythingllm-rag-plattform.md) — leichtgewichtigere Alternative ohne Workflow-Builder
 - [Open WebUI: All-in-One RAG-System mit Agenten-Funktion](open-webui-rag-agenten-plattform.md) — Chat-zentrierte Alternative mit größter Community
 - [Onyx (ehem. Danswer): RAG-Plattform](onyx-danswer-rag-plattform.md) — Enterprise-Alternative mit breiterer Connector-Anbindung
