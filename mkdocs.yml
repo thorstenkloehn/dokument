@@ -298,6 +298,8 @@ nav:
           - "Dify: Visuelle Agenten- & Workflow-Plattform": wissen/dokumentation/dify-agenten-workflow-plattform.md
           - "Flowise: Visueller Flow-Builder für LangChain": wissen/dokumentation/flowise-visueller-flow-builder.md
           - 'Khoj: KI-„Zweites Gehirn" für persönliche Wissenssuche': wissen/dokumentation/khoj-ki-zweites-gehirn.md
+          - "Personal Knowledge Management (PKM) & Second Brain": wissen/dokumentation/pkm-second-brain-methoden.md
+          - "Wissensdatenbanken mit KI & semantischer Suche": wissen/dokumentation/wissensdatenbanken-ki-semantische-suche.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - Backup: wissen/dokumentation/mediawiki/backup.md

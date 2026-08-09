@@ -92,3 +92,4 @@ with conn.cursor() as cur:
 ## 🔗 Verwandte Themen
 * [Datenbanken Übersicht](index.md) – Vektordatenbank-Überblick
 * [Lokales RAG & LLM-Serving](../../../künstliche-intelligenz/coding/lokales-rag-ollama.md) – RAG mit Ollama
+* [Wissensdatenbanken mit KI & semantischer Suche](../../dokumentation/wissensdatenbanken-ki-semantische-suche.md) – Einordnung von pgvector im Vergleich zu LanceDB, Qdrant, Milvus & Co.

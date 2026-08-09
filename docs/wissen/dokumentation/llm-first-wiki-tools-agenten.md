@@ -28,7 +28,7 @@ graph TD
 
 ## 1. KI-native PKM-Tools (Persönliches Wissensmanagement)
 
-Diese Tools sind von Anfang an um ein Sprachmodell herum gebaut, statt es nachträglich zu integrieren — Notizen werden nicht nur gespeichert, sondern von der KI aktiv strukturiert.
+Diese Tools sind von Anfang an um ein Sprachmodell herum gebaut, statt es nachträglich zu integrieren — Notizen werden nicht nur gespeichert, sondern von der KI aktiv strukturiert. Welche PKM-Methoden (Zettelkasten, PARA, CODE) dahinterstehen und welchen Teil davon die KI hier automatisiert, erklärt [Personal Knowledge Management (PKM) & Second Brain](pkm-second-brain-methoden.md).
 
 | Tool | Kernprinzip | Agentic Feature | Hosting |
 |---|---|---|---|
