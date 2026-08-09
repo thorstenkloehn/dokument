@@ -121,3 +121,5 @@ Typische, sinnvoll begrenzte Tool-Definitionen für einen solchen MCP-Server:
 - [Native „LLM-first" Wiki-Tools & Agenten](../llm-first-wiki-tools-agenten.md) — Einordnung in die breitere Werkzeuglandschaft
 - [OpenWiki: Repo-Dokumentations-Agent (LangChain)](../openwiki-repo-dokumentation-agent.md) — vergleichbares MCP-/Referenz-Prinzip für Code-Repos
 - [Onyx (ehem. Danswer)](../onyx-danswer-rag-plattform.md) — Enterprise-Suche über ein bestehendes MediaWiki als eine von vielen Datenquellen
+- [XWiki KI-Agent](../xwiki/xwiki-ki-agent.md) — paralleler Eigenbau-Weg für XWiki
+- [Wiki.js KI-Agent](../wikijs-ki-agent.md) — paralleler Eigenbau-Weg für Wiki.js
