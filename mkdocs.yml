@@ -294,6 +294,7 @@ nav:
           - "OpenWiki: Repo-Dokumentations-Agent (LangChain)": wissen/dokumentation/openwiki-repo-dokumentation-agent.md
           - "Onyx (ehem. Danswer): RAG-Plattform": wissen/dokumentation/onyx-danswer-rag-plattform.md
           - "AnythingLLM: All-in-One Desktop- & Docker-RAG-Plattform": wissen/dokumentation/anythingllm-rag-plattform.md
+          - "Open WebUI: All-in-One RAG-System mit Agenten-Funktion": wissen/dokumentation/open-webui-rag-agenten-plattform.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - Backup: wissen/dokumentation/mediawiki/backup.md

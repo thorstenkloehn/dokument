@@ -88,7 +88,7 @@ Onyx bindet praktisch alle gängigen Anbieter an — sowohl selbstgehostet als a
 
 !!! tip "Tipp: Abgrenzung im eigenen Werkzeugkasten"
     - **Onyx vs. [OpenWiki](openwiki-repo-dokumentation-agent.md)**: Onyx ist eine Such-/Chat-Plattform über *viele* laufend synchronisierte Datenquellen (Slack, Drive, Wikis). OpenWiki generiert dagegen gezielt eine *statische* Dokumentations-Wiki aus einem einzelnen Code-Repository.
-    - **Onyx vs. [AnythingLLM](anythingllm-rag-plattform.md)/Open WebUI**: Onyx ist stärker auf Enterprise-Suche mit vielen Connectoren und Zugriffskontrolle ausgelegt, AnythingLLM/Open WebUI eher auf einfache lokale Dokumenten-Chats.
+    - **Onyx vs. [AnythingLLM](anythingllm-rag-plattform.md)/[Open WebUI](open-webui-rag-agenten-plattform.md)**: Onyx ist stärker auf Enterprise-Suche mit vielen Connectoren und Zugriffskontrolle ausgelegt, AnythingLLM/Open WebUI eher auf einfache lokale Dokumenten-Chats.
     - **Onyx vs. Custom-GPT-Funktionen der Anbieter**: Die in Onyx integrierten „Agents" sind ein selbstgehostetes Pendant zu Gemini Gems, OpenAI Custom GPTs oder Claude Projects — siehe [Custom Chat-Assistenten im Anbieter-Vergleich](../../künstliche-intelligenz/coding/custom-chat-assistenten-anbieter-vergleich.md).
 
 ---
@@ -100,4 +100,5 @@ Onyx bindet praktisch alle gängigen Anbieter an — sowohl selbstgehostet als a
 - [Native „LLM-first" Wiki-Tools & Agenten](llm-first-wiki-tools-agenten.md) — Einordnung agentischer Wiki-Konzepte
 - [OpenWiki: Repo-Dokumentations-Agent (LangChain)](openwiki-repo-dokumentation-agent.md) — verwandtes, aber anders fokussiertes Tool
 - [AnythingLLM: All-in-One Desktop- & Docker-RAG-Plattform](anythingllm-rag-plattform.md) — leichtgewichtigere Alternative für Einzelpersonen/kleine Teams
+- [Open WebUI: All-in-One RAG-System mit Agenten-Funktion](open-webui-rag-agenten-plattform.md) — größte Community, primär Ollama-zentriert
 - [Multi-LLM- & Sprachmodell-Anbieter im Vergleich](../../künstliche-intelligenz/coding/llm-anbieter-vergleich.md) — Preise der von Onyx unterstützten Modell-Provider

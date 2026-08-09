@@ -68,7 +68,7 @@ Zwei Systeme mit der derzeit **stärksten** MCP-Integration am Markt fallen stre
 
 !!! warning "Achtung: Quellcode einsehbar ≠ Open Source"
     - **Outline**: Seit April 2026 bringt **jeder** Outline-Workspace einen eingebauten, offiziellen MCP-Server mit (`https://<subdomain>.getoutline.com/mcp`) — Suchen, Lesen, Erstellen, Bearbeiten, Kommentare, Verschieben, alles über den offenen MCP-Standard. Die Lizenz ist jedoch die **Business Source License (BSL)**, nicht OSI-anerkannt: Der kommerzielle Weiterverkauf als gehosteter Dienst ist ohne kommerzielle Lizenz untersagt, und die Bedingungen können sich von Release zu Release ändern.
-    - **Open WebUI**: Wechselte 2025 von einer permissiven BSD-3-Lizenz zur eigenen **„Open WebUI License"** mit Pflicht-Branding-Klausel für Forks — Auslöser waren Marken-Missbrauchsfälle durch Dritte. Die native MCP-Unterstützung (seit v0.6.31) bleibt technisch exzellent, lizenzrechtlich zählt das Projekt aber nicht mehr als klassisches Open Source.
+    - **[Open WebUI](open-webui-rag-agenten-plattform.md)**: Wechselte 2025 von einer permissiven BSD-3-Lizenz zur eigenen **„Open WebUI License"** mit Pflicht-Branding-Klausel für Forks — Auslöser waren Marken-Missbrauchsfälle durch Dritte. Die native MCP-Unterstützung (seit v0.6.31) bleibt technisch exzellent, lizenzrechtlich zählt das Projekt aber nicht mehr als klassisches Open Source.
 
 ---
 
