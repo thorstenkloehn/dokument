@@ -96,7 +96,43 @@ Für den produktiven Betrieb ist PostgreSQL die bessere Wahl.
 
 ---
 
-## 4. Ersten Start testen
+## 4. Ersteinrichtung auf einem Headless-Server
+
+Wiki.js 2.x stellt nach aktuellem Stand **keinen offiziell dokumentierten CLI-Befehl** bereit, der den ersten Administrator vollständig im Terminal anlegt. Der gelegentlich genannte Aufruf ist deshalb nicht Bestandteil dieser Anleitung:
+
+```bash
+# Nicht verwenden: gehört nicht zur offiziellen Wiki.js-2.x-Installation
+node server/cli setup
+```
+
+Auf einer Maschine ohne grafische Oberfläche wird der Einrichtungsassistent stattdessen sicher über einen **SSH-Tunnel** aufgerufen. Setze den Host in `config.yml` zunächst auf die lokale Schnittstelle:
+
+```yaml
+bindIP: 127.0.0.1
+port: 3000
+```
+
+Starte Wiki.js anschließend auf dem Server:
+
+```bash
+cd /var/wiki
+sudo -u wikijs env NODE_ENV=production /usr/bin/node server
+```
+
+Öffne auf deinem eigenen Rechner ein zweites Terminal und leite den lokalen Port `3000` verschlüsselt zum Server weiter:
+
+```bash
+ssh -L 3000:127.0.0.1:3000 admin@SERVER-IP
+```
+
+Solange die SSH-Verbindung besteht, erreichst du den Assistenten im lokalen Browser unter `http://127.0.0.1:3000`. Dort legst du das erste Administratorkonto an. Der Setup-Port muss dafür weder öffentlich freigegeben noch vor Abschluss der Ersteinrichtung einem Reverse Proxy ausgesetzt werden.
+
+!!! warning "Achtung: Keine inoffiziellen Setup-Befehle automatisieren"
+    Ein nicht vorhandener CLI-Aufruf bricht mit einem Modulfehler ab und richtet kein Administratorkonto ein. Auch direkte Änderungen an den Wiki.js-Datenbanktabellen sind keine stabile Automatisierungsschnittstelle. Verwende für reproduzierbare Installationen die offizielle Bereitstellungsanleitung und schließe die einmalige Kontoanlage über den geschützten Web-Assistenten ab.
+
+---
+
+## 5. Ersten Start testen
 
 Starte Wiki.js zunächst im Vordergrund. So werden Konfigurations- oder Datenbankfehler direkt im Terminal sichtbar:
 
@@ -105,11 +141,11 @@ cd /var/wiki
 sudo -u wikijs env NODE_ENV=production /usr/bin/node server
 ```
 
-Sobald der Start erfolgreich war, öffne im Browser `http://SERVER-IP:3000` beziehungsweise die konfigurierte Domain und führe den Einrichtungsassistenten aus. Beende den Testlauf danach mit ++ctrl+c++, bevor der dauerhafte Dienst gestartet wird.
+Sobald der Start erfolgreich war, öffne im Browser `http://SERVER-IP:3000` beziehungsweise die konfigurierte Domain und führe den Einrichtungsassistenten aus. Auf einem Headless-Server verwendest du dafür den zuvor beschriebenen SSH-Tunnel. Beende den Testlauf danach mit ++ctrl+c++, bevor der dauerhafte Dienst gestartet wird.
 
 ---
 
-## 5. `systemd`-Dienst einrichten
+## 6. `systemd`-Dienst einrichten
 
 Lege die Datei `/etc/systemd/system/wikijs.service` mit folgendem Inhalt an:
 
@@ -152,7 +188,7 @@ sudo journalctl -u wikijs -f
 
 ---
 
-## 6. Netzwerk und Reverse Proxy
+## 7. Netzwerk und Reverse Proxy
 
 Wiki.js kann selbst Anfragen annehmen. Für eine öffentliche Installation ist dennoch meist ein Reverse Proxy wie Nginx, Caddy oder Apache sinnvoll, insbesondere für HTTPS und eine saubere Domain-Konfiguration.
 
