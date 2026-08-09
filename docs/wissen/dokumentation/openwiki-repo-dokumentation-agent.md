@@ -2,7 +2,7 @@
 
 **OpenWiki** ist ein quelloffenes CLI-Tool von **LangChain**, das automatisch eine navigierbare Dokumentations-Wiki für ein Software-Repository generiert und laufend aktuell hält. Die Kernidee dahinter: Coding-Agenten schreiben besseren Code, wenn sie das Repository verstehen — und veraltete, manuell gepflegte Dokumentation ist in schnell wachsenden Codebasen der Regelfall, nicht die Ausnahme. OpenWiki automatisiert genau diesen Pflegeaufwand.
 
-Diese Seite vertieft die Kategorie „[Auto-generierte Code-Wikis](llm-first-wiki-tools-agenten.md#3-auto-generierte-code-wikis-agent-erzeugt-das-wiki-selbst)" aus dem Kapitel [Native „LLM-first" Wiki-Tools & Agenten](llm-first-wiki-tools-agenten.md) mit konkreten Installations- und Bedienschritten.
+Diese Seite vertieft die Kategorie „[Auto-generierte Code-Wikis](llm-first-wiki-tools-agenten.md#3-auto-generierte-code-wikis-agent-erzeugt-das-wiki-selbst)" aus dem Kapitel [Native „LLM-first" Wiki-Tools & Agenten](llm-first-wiki-tools-agenten.md) mit konkreten Installations- und Bedienschritten. Das zugrunde liegende Architekturmuster — RAG durch ein persistent kompiliertes Wiki ersetzen — ist eigenständig beschrieben unter [LLM-Wiki-Pattern (Karpathy-Muster)](llm-wiki-pattern-karpathy.md).
 
 !!! note "Hinweis: MIT-lizenziert"
     OpenWiki ist vollständig Open Source unter der **MIT-Lizenz** verfügbar: [github.com/langchain-ai/openwiki](https://github.com/langchain-ai/openwiki).
@@ -154,6 +154,7 @@ OpenWiki erzeugt sowohl im Code- als auch im Personal-Modus Bundles im **Google 
 ## Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
+- [LLM-Wiki-Pattern (Karpathy-Muster)](llm-wiki-pattern-karpathy.md) — das zugrunde liegende Architekturmuster
 - [Native „LLM-first" Wiki-Tools & Agenten](llm-first-wiki-tools-agenten.md) — Gesamteinordnung von OpenWiki in die Werkzeuglandschaft
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme
 - [Multi-LLM- & Sprachmodell-Anbieter im Vergleich](../../künstliche-intelligenz/coding/llm-anbieter-vergleich.md) — Preise der von OpenWiki unterstützten Modell-Provider
