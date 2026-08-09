@@ -139,7 +139,7 @@ Die technische Umsetzung von LLM- und Co-Wikis basiert auf der Kombination moder
 * **PrivateGPT**: Ein Open-Source-Projekt zur rein lokalen, datenschutzkonformen Dokumentenabfrage und -verwaltung mittels lokaler Sprachmodelle.
 
 ### Orchestrierung & RAG-Pipelines
-* **[Dify.ai](dify-agenten-workflow-plattform.md) / Flowise**: Visuelle Editoren zum Erstellen von LLM-Anwendungen, RAG-Pipelines und KI-Agenten, die direkt auf Dokumenten-Repositorys zugreifen.
+* **[Dify.ai](dify-agenten-workflow-plattform.md) / [Flowise](flowise-visueller-flow-builder.md)**: Visuelle Editoren zum Erstellen von LLM-Anwendungen, RAG-Pipelines und KI-Agenten, die direkt auf Dokumenten-Repositorys zugreifen.
 * **LangChain / LangGraph / LlamaIndex**: Frameworks zur datenbezogenen Orchestrierung, dem Laden, Splitten, Einbetten (Embedding) und Abfragen von Dokumenten-Wikis.
 * **ChromaDB / LanceDB** (Embedded): Leichtgewichtige, eingebettete Vektordatenbanken für lokale Setups ohne Server-Infrastruktur.
 * **Qdrant / Milvus** (Production): Skalierbare Enterprise-Vektordatenbanken für Millionen von Dokumenten-Vektoren mit komplexer Metadaten-Filterung.

@@ -296,6 +296,7 @@ nav:
           - "AnythingLLM: All-in-One Desktop- & Docker-RAG-Plattform": wissen/dokumentation/anythingllm-rag-plattform.md
           - "Open WebUI: All-in-One RAG-System mit Agenten-Funktion": wissen/dokumentation/open-webui-rag-agenten-plattform.md
           - "Dify: Visuelle Agenten- & Workflow-Plattform": wissen/dokumentation/dify-agenten-workflow-plattform.md
+          - "Flowise: Visueller Flow-Builder für LangChain": wissen/dokumentation/flowise-visueller-flow-builder.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
