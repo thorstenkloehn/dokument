@@ -41,7 +41,7 @@ graph TD
 | 13 | **AFFiNE** | Wissensmanagement / Whiteboard-Notizen | MIT | Community | Lesen+Schreiben | Kombiniert Dokumente, Whiteboards und Datenbanken in einem Tool |
 | 14 | **TiddlyWiki** | PKM / Non-lineares Wiki | BSD-3-Clause | Community | Lesen+Schreiben | Einzeldatei-Wiki, extrem portabel, gut scriptbar für Eigenbau-Anbindung |
 | 15 | **Memos** | Leichtgewichtige Notizen | MIT | Community | Lesen+Schreiben | Sehr schlankes Self-Hosting, schnelle API für einfache Agent-Anbindung |
-| 16 | **Khoj** | PKM / KI-natives „zweites Gehirn" | AGPL-3.0 | Community (nativ agentenorientiert) | Lesen+Schreiben, Suche über mehrere Notiz-Quellen hinweg | Von Grund auf für LLM-gestützte Wissenssuche konzipiert, nicht nachgerüstet |
+| 16 | **[Khoj](khoj-ki-zweites-gehirn.md)** | PKM / KI-natives „zweites Gehirn" | AGPL-3.0 | Community (nativ agentenorientiert) | Lesen+Schreiben, Suche über mehrere Notiz-Quellen hinweg | Von Grund auf für LLM-gestützte Wissenssuche konzipiert, nicht nachgerüstet |
 | 17 | **Wikibase** (Wikidata-Basis) | Strukturiertes Wissensmanagement | GPL-2.0 | Community (SPARQL-/API-basiert) | Lesen (strukturierte Abfragen), Schreiben über Bot-Konten | Ideal für Agenten, die strukturierte Fakten statt Freitext benötigen |
 | 18 | **[OpenWiki](openwiki-repo-dokumentation-agent.md)** (LangChain) | Wissensmanagement/Repo-Doku | MIT | Sonderfall: keine MCP-Verbindung, Referenzen in `AGENTS.md`/`CLAUDE.md` | Lesen+Schreiben (generiert & aktualisiert Wiki-Dateien) | Agentenfreundlich ganz ohne klassischen MCP-Server nötig |
 | 19 | **Karakeep** (ehem. Hoarder) | PKM / Bookmark-Wissensbasis | MIT | Community | Lesen+Schreiben | Automatische Kategorisierung gespeicherter Links als Agent-Kontextquelle |
