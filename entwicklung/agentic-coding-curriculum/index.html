@@ -1,0 +1,3457 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dokumentation zu KI, Entwicklung, Kreativ und Wissen">
+      
+      
+      
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/entwicklung/agentic-coding-curriculum/">
+      
+      
+        <link rel="prev" href="../ide/lokale-ki-frontends/">
+      
+      
+        <link rel="next" href="./ki-entwicklungsworkflow-rust/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.52">
+    
+    
+      
+        <title>Entwickler-Curriculum: Software Engineering, Systems Programming mit Rust & Agentic AI - Wissen Ahrensburg</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.8b3b5a67.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17%209H7V7h10m0%206H7v-2h10m-3%206H7v-2h7M12%203a1%201%200%200%201%201%201%201%201%200%200%201-1%201%201%201%200%200%201-1-1%201%201%200%200%201%201-1m7%200h-4.18C14.4%201.84%2013.3%201%2012%201s-2.4.84-2.82%202H5a2%202%200%200%200-2%202v14a2%202%200%200%200%202%202h14a2%202%200%200%200%202-2V5a2%202%200%200%200-2-2%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M14%2012h-4v-2h4m0%206h-4v-2h4m6-6h-2.81a6%206%200%200%200-1.82-1.96L17%204.41%2015.59%203l-2.17%202.17a6%206%200%200%200-2.83%200L8.41%203%207%204.41l1.62%201.63C7.88%206.55%207.26%207.22%206.81%208H4v2h2.09c-.05.33-.09.66-.09%201v1H4v2h2v1c0%20.34.04.67.09%201H4v2h2.81c1.04%201.79%202.97%203%205.19%203s4.15-1.21%205.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20z%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22m11.5%2020%204.86-9.73H13V4l-5%209.73h3.5zM12%202c2.75%200%205.1%201%207.05%202.95S22%209.25%2022%2012s-1%205.1-2.95%207.05S14.75%2022%2012%2022s-5.1-1-7.05-2.95S2%2014.75%202%2012s1-5.1%202.95-7.05S9.25%202%2012%202%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M7%202v2h1v14a4%204%200%200%200%204%204%204%204%200%200%200%204-4V4h1V2zm4%2014c-.6%200-1-.4-1-1s.4-1%201-1%201%20.4%201%201-.4%201-1%201m2-4c-.6%200-1-.4-1-1s.4-1%201-1%201%20.4%201%201-.4%201-1%201m1-5h-4V4h4z%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202c5.53%200%2010%204.47%2010%2010s-4.47%2010-10%2010S2%2017.53%202%2012%206.47%202%2012%202m3.59%205L12%2010.59%208.41%207%207%208.41%2010.59%2012%207%2015.59%208.41%2017%2012%2013.41%2015.59%2017%2017%2015.59%2013.41%2012%2017%208.41z%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%209h-2V7h2m0%2010h-2v-6h2m-1-9A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202%22/%3E%3C/svg%3E');--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202C6.47%202%202%206.47%202%2012s4.47%2010%2010%2010%2010-4.47%2010-10S17.53%202%2012%202m3.1%205.07c.14%200%20.28.05.4.16l1.27%201.27c.23.22.23.57%200%20.78l-1%201-2.05-2.05%201-1c.1-.11.24-.16.38-.16m-1.97%201.74%202.06%202.06-6.06%206.06H7.07v-2.06z%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22m15.07%2011.25-.9.92C13.45%2012.89%2013%2013.5%2013%2015h-2v-.5c0-1.11.45-2.11%201.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2%202%200%200%200-2-2%202%202%200%200%200-2%202H8a4%204%200%200%201%204-4%204%204%200%200%201%204%204%203.2%203.2%200%200%201-.93%202.25M13%2019h-2v-2h2M12%202A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10c0-5.53-4.5-10-10-10%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M14%2017h3l2-4V7h-6v6h3M6%2017h3l2-4V7H5v6h3z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202C6.5%202%202%206.5%202%2012s4.5%2010%2010%2010%2010-4.5%2010-10S17.5%202%2012%202m-2%2015-5-5%201.41-1.41L10%2014.17l7.59-7.59L19%208z%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17.66%2011.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33%207.26%2013%204.85%2013.95%203c-.95.23-1.78.75-2.49%201.32-2.59%202.08-3.61%205.75-2.39%208.9.04.1.08.2.08.33%200%20.22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6%200%200%201-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78%2010%204.87%2012.3%205%2014.47c.06.5.12%201%20.29%201.5.14.6.41%201.2.71%201.73%201.08%201.73%202.95%202.97%204.96%203.22%202.14.27%204.43-.12%206.07-1.6%201.83-1.66%202.47-4.32%201.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16%206.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82%201.19-.28%201.9-1.16%202.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63%201.06.77%201%201.98%201.44%202.24%202.8.04.14.06.28.06.43.03.82-.33%201.72-.93%202.27%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%2014h-2V9h2m0%209h-2v-2h2M1%2021h22L12%202z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+  
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#entwickler-curriculum-software-engineering-systems-programming-mit-rust-agentic-ai" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="../.." title="Wissen Ahrensburg" class="md-header__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wissen Ahrensburg
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entwickler-Curriculum: Software Engineering, Systems Programming mit Rust &amp; Agentic AI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dunklen Modus aktivieren"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dunklen Modus aktivieren" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Hellen Modus aktivieren"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Hellen Modus aktivieren" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Suche">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Suche">
+  <button type="button" class="md-search__button">
+    Suche
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../k%C3%BCnstliche-intelligenz/" class="md-tabs__link">
+          
+  
+  KI & Automatisierung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../erste-schritte/" class="md-tabs__link">
+          
+  
+  Entwicklung
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../kreativ/design/" class="md-tabs__link">
+          
+  
+  Kreativ
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../wissen/daten/datenbanken/" class="md-tabs__link">
+          
+  
+  Wissen
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../rechtliches/impressum/" class="md-tabs__link">
+          
+  
+  Rechtliches
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Wissen Ahrensburg" class="md-nav__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    Wissen Ahrensburg
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Start
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../k%C3%BCnstliche-intelligenz/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Übersicht
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Entwicklung
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Entwicklung
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../erste-schritte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Erste Schritte
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../webentwicklung/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Webentwicklung
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Webentwicklung
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webentwicklung/ki-webentwicklung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI Webentwicklung
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webentwicklung/frontend-ki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Frontend mit KI
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webentwicklung/backend-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Backend-Integration
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webentwicklung/deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Deployment mit KI
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webentwicklung/performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Performance-Optimierung
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../infrastruktur/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Server & Infrastruktur
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Server & Infrastruktur
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infrastruktur/software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Software-Übersicht
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infrastruktur/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../infrastruktur/nginx/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Nginx
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../infrastruktur/postgresql/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  PostgreSQL
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infrastruktur/ki-ml-infrastrukturen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI/ML-Infrastrukturen
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infrastruktur/android-server-fernsteuerung-opensource-topliste/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Beste Open-Source-Apps zur Fernsteuerung von Self-Hosting-Servern per Android (Top 20)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infrastruktur/kvm-server-mieten/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KVM-Server mieten
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../infrastruktur/http-server-benchmarking/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Benchmarking
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infrastruktur/sicherheit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Sicherheit
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../infrastruktur/kachelserver/server204/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Kachelserver
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../system/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Systemprogrammierung
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Systemprogrammierung
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../system/assembler/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Assembler
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system/compiler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Compiler
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../system/c-praxis/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Rust & C/C++
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../system/linux-praxis/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Linux
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../system/game-development-praxis/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Spiele-Entwicklung
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../ide/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE & Tools
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  IDE & Tools
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ide/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Setup
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ide/android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Android-Entwicklung
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ide/android-praxis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Android Praxis-Handbuch
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ide/kotlin-praxis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Kotlin Praxis-Handbuch
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ide/lokale-ki-frontends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Lokale KI-Frontends
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="././" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Agentic Coding & Curriculum
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Agentic Coding & Curriculum
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./ki-entwicklungsworkflow-rust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI-Entwicklungsworkflow für Rust
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./claude-code-cli-leitfaden/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Claude Code CLI: End-to-End-Leitfaden
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./rust-praxisprojekte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Rust-Praxisprojekte mit Claude Code
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../kreativ/design/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Kreativ
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../wissen/daten/datenbanken/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Wissen
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../rechtliches/impressum/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Rechtliches
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#themen-in-dieser-rubrik" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Themen in dieser Rubrik
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#didaktisches-5-phasen-entwicklermodell-lernphasen-fur-die-praxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Didaktisches 5-Phasen-Entwicklermodell (Lernphasen für die Praxis)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#band-1-grundlagen-der-softwareentwicklung-systemprogrammierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Band 1: Grundlagen der Softwareentwicklung &amp; Systemprogrammierung
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Band 1: Grundlagen der Softwareentwicklung &amp; Systemprogrammierung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-1-data-representation-low-level-memory-digitaltechnik" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 1: Data Representation, Low-Level Memory &amp; Digitaltechnik
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-2-modern-software-engineering-in-rust-agentic-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 2: Modern Software Engineering in Rust &amp; Agentic AI
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#band-2-advanced-software-architecture-data-structures-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Band 2: Advanced Software Architecture, Data Structures &amp; Systems
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Band 2: Advanced Software Architecture, Data Structures &amp; Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-3-object-oriented-trait-based-system-design-q1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 3: Object-Oriented &amp; Trait-Based System Design (Q1)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-4-algorithms-data-structures-automata-compiler-engineering-q1q2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 4: Algorithms, Data Structures, Automata &amp; Compiler Engineering (Q1/Q2)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-5-relational-databases-advanced-sql-rag-mcp-q2q3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 5: Relational Databases, Advanced SQL, RAG &amp; MCP (Q2/Q3)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-6-systems-programming-networking-concurrency-q3q4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 6: Systems Programming, Networking &amp; Concurrency (Q3/Q4)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-7-applied-cryptography-security-audits-it-recht-ai-ethics-q4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 7: Applied Cryptography, Security Audits, IT-Recht &amp; AI Ethics (Q4)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#band-3-university-computer-science-advanced-systems-engineering-bachelor-niveau" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Band 3: University Computer Science &amp; Advanced Systems Engineering (Bachelor-Niveau)
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Band 3: University Computer Science &amp; Advanced Systems Engineering (Bachelor-Niveau)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-8-rechnerarchitektur-technische-informatik-risc-v-assembler" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 8: Rechnerarchitektur, Technische Informatik &amp; RISC-V Assembler
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-9-betriebssystem-internals-memory-management-interprozesskommunikation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 9: Betriebssystem-Internals, Memory Management &amp; Interprozesskommunikation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-10-verteilte-systeme-cloud-architecture-grpc-microservices" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 10: Verteilte Systeme, Cloud Architecture, gRPC &amp; Microservices
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-11-mathematische-grundlagen-der-ki-lineare-algebra-deep-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 11: Mathematische Grundlagen der KI, Lineare Algebra &amp; Deep Learning
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-12-enterprise-software-architecture-design-patterns-quality-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kapitel 12: Enterprise Software Architecture, Design Patterns &amp; Quality Engineering
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verwandte-themen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Verwandte Themen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Start
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../erste-schritte/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Entwicklung
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="././" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Agentic Coding & Curriculum
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
+<h1 id="entwickler-curriculum-software-engineering-systems-programming-mit-rust-agentic-ai">Entwickler-Curriculum: Software Engineering, Systems Programming mit Rust &amp; Agentic AI<a class="headerlink" href="#entwickler-curriculum-software-engineering-systems-programming-mit-rust-agentic-ai" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Zielgruppe &amp; Ausrichtung:</strong> Reine Programmierer-, Entwickler- und Informatik-Ausbildung. Der Fokus liegt zu 100 % auf professioneller Softwareentwicklung, Systemprogrammierung in Rust, Algorithmen &amp; Datenstrukturen, Datenbank-Engineering, Compilerbau, Technische Informatik, Betriebssystemen, verteilten Systemen und KI-gestütztem Agentic Coding. Abgedeckt werden alle Lehrplananforderungen der <strong>Gymnasium Oberstufe (Abitur Informatik)</strong> sowie des <strong>Informatik-Studiums (Bachelor Computer Science)</strong>.</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Hinweis: Herkunft dieser Rubrik</p>
+<p>Diese Seite und die drei verlinkten Detail-Seiten sind aus Rohquellen in <code>raw/</code> verarbeitet worden (Ingest-Schritt nach dem <a href="../../wissen/dokumentation/llm-wiki-pattern-karpathy/">LLM-Wiki-Pattern</a>). Die Curriculum-Struktur folgt einem Lehrbuch-Inhaltsverzeichnis; sie wurde nicht in diesem Repository gegengeprüft, sondern unverändert aus der Rohquelle übernommen.</p>
+</div>
+<hr />
+<h2 id="themen-in-dieser-rubrik">Themen in dieser Rubrik<a class="headerlink" href="#themen-in-dieser-rubrik" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="ki-entwicklungsworkflow-rust/">KI-Entwicklungsworkflow für Rust</a></strong> — 9-phasiger Arbeitsablauf (Spec-First Prompting bis Security-Audit) für professionelle Rust-Softwareentwicklung mit KI-Unterstützung.</li>
+<li><strong><a href="claude-code-cli-leitfaden/">Claude Code CLI: End-to-End-Leitfaden</a></strong> — Vollständiger Praxis-Guide von Installation über Skills/Subagenten/Hooks bis Production-Release. Ergänzt das bestehende <a href="../../künstliche-intelligenz/coding/claude-code-praxis/">Claude Code Praxis-Handbuch</a> um eine Konfigurationsdateien-Referenz und den curriculumsspezifischen 9-Phasen-Workflow.</li>
+<li><strong><a href="rust-praxisprojekte/">Rust-Praxisprojekte mit Claude Code</a></strong> — Drei durchgängig ausgearbeitete Projekte (CLI-Tool, Async REST-API, verteilter Key-Value-Store), die die beiden Workflows oben an konkretem Code durchspielen.</li>
+</ul>
+<hr />
+<h2 id="didaktisches-5-phasen-entwicklermodell-lernphasen-fur-die-praxis">Didaktisches 5-Phasen-Entwicklermodell (Lernphasen für die Praxis)<a class="headerlink" href="#didaktisches-5-phasen-entwicklermodell-lernphasen-fur-die-praxis" title="Permanent link">&para;</a></h2>
+<p>Jedes Kapitel folgt durchgängig einem praxisbezogenen <strong>Entwickler-Workflow</strong>:</p>
+<pre class="mermaid"><code>graph TD
+    P1["Phase 1: Real-World&lt;br/&gt;Architecture Hook"] --&gt; P2["Phase 2: Deep Dive Concepts&lt;br/&gt;&amp;amp; Theoretical Foundation"]
+    P2 --&gt; P3["Phase 3: Hands-on Coding,&lt;br/&gt;TDD &amp;amp; KI-Pair-Programming"]
+    P3 --&gt; P4["Phase 4: Code Audit,&lt;br/&gt;Security &amp;amp; Memory Safety"]
+    P4 --&gt; P5["Phase 5: Production Readiness&lt;br/&gt;&amp;amp; Master Examination"]</code></pre>
+<ol>
+<li><strong>Phase 1: Real-World Architecture Hook (Problemstellung &amp; Systemanforderung)</strong>
+   <em>Anforderung aus der professionellen Softwareentwicklung (z. B. High-Performance CLI, Concurrent Server, Datenbank-ORM, Parser, RISC-V Emulator, Agentic Tool).</em></li>
+<li><strong>Phase 2: Deep Dive Concepts &amp; Theoretical Foundation (Theorie &amp; Informatikgrundlagen)</strong>
+   <em>Fachwissenschaftliche Fundierung (Memory Layout, Ownership/Borrowing, Algorithmen, Datenstrukturen, Automaten, Turing-Maschinen, Relationale Algebra, Rechnerarchitektur, Betriebssystem-Internals, Vektorkalkül, Komplexität).</em></li>
+<li><strong>Phase 3: Hands-on Coding, TDD &amp; KI-Pair-Programming (Rechnerpraxis &amp; Vibe Coding)</strong>
+   <em>Implementierung in Rust, TDD (<code>cargo test</code>), Agentic Coding Workflows (Cursor, Claude Code, Goose, Roo Code), MCP-Tools &amp; Refactoring.</em></li>
+<li><strong>Phase 4: Code Audit, Security &amp; Memory Safety (Entwickler-Reflexion)</strong>
+   <em>Borrow-Checker-Analysen, Security-Audits (<code>cargo clippy</code>, <code>cargo audit</code>, Fuzzing), Performance-Benchmarking (<code>cargo bench</code>), AI Slop Detection &amp; Memory Safety.</em></li>
+<li><strong>Phase 5: Production Readiness &amp; Master Examination (Prüfungs- &amp; Praxissicherheit)</strong>
+   <em>Komplexitätsanalyse, Architektur-Review und klausur-/abiturrelevante sowie hochschulnahe Transferaufgaben (AFB I–III).</em></li>
+</ol>
+<hr />
+<h2 id="band-1-grundlagen-der-softwareentwicklung-systemprogrammierung">Band 1: Grundlagen der Softwareentwicklung &amp; Systemprogrammierung<a class="headerlink" href="#band-1-grundlagen-der-softwareentwicklung-systemprogrammierung" title="Permanent link">&para;</a></h2>
+<h3 id="kapitel-1-data-representation-low-level-memory-digitaltechnik">Kapitel 1: Data Representation, Low-Level Memory &amp; Digitaltechnik<a class="headerlink" href="#kapitel-1-data-representation-low-level-memory-digitaltechnik" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Wie speichern Betriebssysteme, Grafikkarten und Netzwerke Daten binär und speichereffizient? Wie schalten Transistoren Logik?</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>1.1 Low-Level Datenrepräsentation &amp; Zahlenformate</strong><ul>
+<li>Binär-, Oktal- und Hexadezimalsystem; Bitweise Operationen (<code>AND</code>, <code>OR</code>, <code>XOR</code>, Bit-Shifts <code>&lt;&lt;</code>, <code>&gt;&gt;</code>)</li>
+<li>Vorzeichenbehaftete Ganzzahlen: Zweierkomplement, Wertebereiche (<code>i8</code>..<code>i128</code>, <code>u8</code>..<code>u128</code>), Überlaufverhalten (<code>overflow-checks</code>)</li>
+<li>Gleitkommadarstellung nach IEEE 754 (<code>f32</code>, <code>f64</code>), Mantisse, Exponent, NaN, Infinity &amp; Präzisionsverlust</li>
+</ul>
+</li>
+<li><strong>1.2 Text-Encoding &amp; Memory Layout von Strings</strong><ul>
+<li>Codierungsstandards: ASCII, ISO-8859, UTF-8 und UTF-16</li>
+<li>String-Repräsentation in Rust: Mutabler Stack/Heap-Puffer (<code>String</code>) vs. Immutable String Slices (<code>&amp;str</code>)</li>
+</ul>
+</li>
+<li><strong>1.3 Digitaltechnik, Boole'sche Algebra &amp; Logikschaltungen</strong><ul>
+<li>Boole'sche Algebra, Wahrheitswerttabellen, Logikgatter (<code>AND</code>, <code>OR</code>, <code>NOT</code>, <code>NAND</code>, <code>NOR</code>, <code>XOR</code>)</li>
+<li>Kombinatorische Schaltungen: Halbaddierer, Volladdierer, Multiplexer &amp; Demultiplexer</li>
+<li>Sequenzielle Schaltungen: RS-Flip-Flop, D-Flip-Flop &amp; Register</li>
+<li>Logikminimierung: De Morgansche Gesetze &amp; Karnaugh-Veitch-Diagramme (KV-Diagramme)</li>
+</ul>
+</li>
+<li><strong>1.4 Datenkompression &amp; Algorithmen</strong><ul>
+<li>Verlustfreie Kompression (Run-Length Encoding, Huffman-Codierung, LZ77/LZW)</li>
+<li>Verlustbehaftete Kompression &amp; Quantisierung (DCT bei JPEG/MP3)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Coding):</strong> <em>Entwicklung eines CLI-Tools zur Bit-Analyse, Logikschaltungs-Simulation, String-Transformation und Datei-Kompression in Rust</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Betrachtung von Buffer-Overflows, Encoding-Sicherheitslücken &amp; Speicher-Layout im RAM</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- und Prüfungsvorbereitung: Binärarithmetik, KV-Diagramme, Encoding-Transformationen &amp; Algorithmenanalyse</em></li>
+</ul>
+<h3 id="kapitel-2-modern-software-engineering-in-rust-agentic-ai">Kapitel 2: Modern Software Engineering in Rust &amp; Agentic AI<a class="headerlink" href="#kapitel-2-modern-software-engineering-in-rust-agentic-ai" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Entwicklung eines performanten, typsicheren CLI-Tools mit KI als Pair-Programmer</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>2.1 Multi-Paradigm Programming &amp; Typsysteme</strong><ul>
+<li>Variablen, Immutability (<code>let</code> vs. <code>let mut</code>), Statische Typisierung &amp; Typinferenz</li>
+<li>Kontrollstrukturen (<code>if</code>, <code>match</code>, <code>loop</code>, <code>while</code>) &amp; Pattern Matching</li>
+<li>Aussagenlogik, Logische Operatoren (<code>&amp;&amp;</code>, <code>||</code>, <code>!</code>) &amp; Prädikatenlogik (Quantoren $\forall, \exists$, Formal-Spezifikation)</li>
+<li>Rust als Multi-Paradigm-Sprache: Imperative Logik, Funktional (Closures, Iteratoren, High-Order Functions)</li>
+</ul>
+</li>
+<li><strong>2.2 KI-Entwicklerumgebung &amp; Agentic Workflows</strong><ul>
+<li>Cloud-Assistenten (Copilot, Cursor) &amp; Datenschutzkonforme Lokale LLMs (Ollama, LM Studio, Continue-Plugin)</li>
+<li>Agentic-Coding-CLIs (Claude Code, Goose, Roo Code) &amp; Tool-Calling-Schleifen</li>
+</ul>
+</li>
+<li><strong>2.3 Modularisierung, Paketverwaltung &amp; Robustness</strong><ul>
+<li>Funktionen, Parameter, Rückgabewerte &amp; Scope-Regeln</li>
+<li>Cargo-Paketverwaltung: Module (<code>mod</code>), Crates, Visibilities (<code>pub</code>, <code>pub(crate)</code>)</li>
+<li>Idiomatische Fehlerbehandlung ohne Exceptions: <code>Result&lt;T, E&gt;</code> (<code>?</code>-Operator) &amp; <code>Option&lt;T&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>Monolithisches CLI-Skript per KI-Prompting modularisieren, Refaktorisieren und TDD mit <code>cargo test</code> durchführen</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>AI Slop Detection, Code-Style Audits mit <code>cargo clippy</code>, Evaluation von KI-Halluzinationen im Code</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- und Prüfungsvorbereitung: Systematische Code-Analyse, Error Handling &amp; Refactoring</em></li>
+</ul>
+<hr />
+<h2 id="band-2-advanced-software-architecture-data-structures-systems">Band 2: Advanced Software Architecture, Data Structures &amp; Systems<a class="headerlink" href="#band-2-advanced-software-architecture-data-structures-systems" title="Permanent link">&para;</a></h2>
+<h3 id="kapitel-3-object-oriented-trait-based-system-design-q1">Kapitel 3: Object-Oriented &amp; Trait-Based System Design (Q1)<a class="headerlink" href="#kapitel-3-object-oriented-trait-based-system-design-q1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Vibe Coding eines skalierbaren Unternehmens-Verwaltungssystems</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>3.1 Software Architecture, Modeling &amp; Design Principles</strong><ul>
+<li>Softwarelebenszyklus (Analyse, Entwurf, Implementation, Testing, Wartung) &amp; Vorgehensmodelle (Wasserfall, Agile, Scrum, Kanban)</li>
+<li>Domain Modeling: Anforderungsanalyse mit Verb-Substantiv-Methode (Text-to-Class Extraction)</li>
+<li>UML-Struktur- &amp; Verhaltensmodelle: Class Diagrams, Objektdiagramme, Sequenzdiagramme &amp; Zustandsdiagramme</li>
+<li>Entwurfsprinzipien: Kapselung, Geheimnisprinzip, High Cohesion (Hohe Kohäsion) &amp; Low Coupling (Geringe Kopplung)</li>
+<li>Beziehungsarten &amp; Multiplizitäten: Assoziationen ($1:1$, $1:n$, $n:m$), Aggregation &amp; Komposition</li>
+<li>Typsystem-Modellierung: Structs (<code>struct</code>), Enums (<code>enum</code>), Methoden-Implementierung (<code>impl</code>)</li>
+<li>Schnittstellen &amp; Polymorphie über <code>traits</code>: Static Dispatch (Generics <code>T: Trait</code>) vs. Dynamic Dispatch (<code>dyn Trait</code>)</li>
+</ul>
+</li>
+<li><strong>3.2 Memory Safety &amp; Rust Ownership Model</strong><ul>
+<li>Ownership, Move-Semantik, Copy vs. Clone</li>
+<li>Borrowing (<code>&amp;T</code> vs. <code>&amp;mut T</code>), Lifetime-Elision &amp; explizite Lifetimes (<code>'a</code>)</li>
+<li>Smart Pointer: Stack vs. Heap (<code>Box&lt;T&gt;</code>), Reference Counting (<code>Rc&lt;T&gt;</code>, <code>Arc&lt;T&gt;</code>) &amp; Interior Mutability (<code>RefCell&lt;T&gt;</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>UML-Klassendiagramme per KI in Trait-Architektur übersetzen, E2E-Testing &amp; Systemimplementierung</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Der KI-Borrow-Checker-Check: Beheben komplexer Borrow-Errors, Usability/UX-Review &amp; Memory Safety Audit</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- und Abiturvorbereitung: UML-zu-Code-Transformation, Ownership-Diagramme &amp; Architektur-Reviews</em></li>
+</ul>
+<h3 id="kapitel-4-algorithms-data-structures-automata-compiler-engineering-q1q2">Kapitel 4: Algorithms, Data Structures, Automata &amp; Compiler Engineering (Q1/Q2)<a class="headerlink" href="#kapitel-4-algorithms-data-structures-automata-compiler-engineering-q1q2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Entwicklung eines Navigationssystems &amp; einer Compiler-Pipeline für eine eigene Mini-Sprache</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>4.1 Lineare Datenstrukturen (ADT)</strong><ul>
+<li>Abstrakte Datentypen: Stack (Stapel), Queue (Schlange), Lineare Liste (Singly &amp; Doubly Linked List), Dynamic Array (<code>Vec&lt;T&gt;</code>)</li>
+</ul>
+</li>
+<li><strong>4.2 Rekursion &amp; Stack Frame Mechanics</strong><ul>
+<li>Rekursive Denkweise: Basisfall, Rekursionsschritt, Aufrufstack &amp; Tail Call Optimization</li>
+</ul>
+</li>
+<li><strong>4.3 Nichtlineare Datenstrukturen: Trees &amp; Graphs</strong><ul>
+<li>Binärbäume, Binäre Suchbäume, Baum-Traversierung (Pre-order, In-order, Post-order)</li>
+<li>Graphentheorie: Adjazenzmatrix &amp; Adjazenzliste, Breitensuche (BFS), Tiefensuche (DFS), Dijkstra-Algorithmus</li>
+</ul>
+</li>
+<li><strong>4.4 Automaten, Formale Sprachen, Berechenbarkeit &amp; Compilerbau</strong><ul>
+<li>Deterministische (DEA / DFA) und nichtdeterministische endliche Automaten (NEA / NFA), Mealy-Automaten</li>
+<li>Kellerautomaten (Pushdown Automata / PDA), Kontextfreie Grammatiken, Chomsky-Hierarchie, Reguläre Ausdrücke (Regex)</li>
+<li>Turing-Maschinen (Turing Machine / TM): Bandmodell, Zustände, Alphabet &amp; Übergangsfunktion; Determinismus vs. Nichtdeterminismus</li>
+<li>Formale Berechenbarkeit: Halteproblem (Diagonalisierungsbeweis), Unentscheidbarkeit &amp; Church-Turing-These</li>
+<li>Programmkorrektheit &amp; Formale Verifikation: Vor- und Nachbedingungen, Schleifeninvarianten, Assertions (<code>assert!</code>) &amp; Hoare-Kalkül</li>
+<li>Language Processing Pipeline: Scanner/Lexer (Tokenisierung) → Parser (Abstract Syntax Tree / AST) → Type Checker → Interpreter / Code Generator</li>
+</ul>
+</li>
+<li><strong>4.5 Algorithmic Design Patterns &amp; Complexity Analysis</strong><ul>
+<li>Suchen: Lineare vs. Binäre Suche; Sortieren: Bubblesort, Selection Sort, Quicksort, Mergesort</li>
+<li>Entwurfsstrategien: Divide and Conquer (Teile &amp; Herrsche), Greedy-Strategie, Dynamic Programming (Dynamische Programmierung), Backtracking &amp; Branch &amp; Bound</li>
+<li>Komplexitätsanalyse: Asymptotische O-Notation, Rekursionsgleichungen, P vs. NP, NP-Vollständigkeit &amp; Näherungsheuristiken</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>Implementierung von Graph-Algorithmen, Parser-Bau in Rust &amp; Performance-Benchmarking mit <code>cargo bench</code></em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Memory-Audit bei Zeigerknoten in Rust (<code>Rc&lt;RefCell&lt;T&gt;&gt;</code>), Berechenbarkeit, Turing-Maschine &amp; Halteproblem</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- und Abiturvorbereitung: Algorithmen-Komplexität, Automaten-Synthese, Grammatik-Prüfung &amp; Hoare-Kalkül</em></li>
+</ul>
+<h3 id="kapitel-5-relational-databases-advanced-sql-rag-mcp-q2q3">Kapitel 5: Relational Databases, Advanced SQL, RAG &amp; MCP (Q2/Q3)<a class="headerlink" href="#kapitel-5-relational-databases-advanced-sql-rag-mcp-q2q3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Bau eines KI-gestützten Datenbank-Backends mit RAG-Erweiterung und typsicherer Rust-Anbindung</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>5.1 Relational Database Design &amp; Relational Algebra</strong><ul>
+<li>Entity-Relationship-Modellierung (ERM: Entitäten, Attribute, Kardinalitäten)</li>
+<li>Relationale Algebra: Selektion ($\sigma$), Projektion ($\pi$), Join ($\bowtie$), Vereinigung, Differenz</li>
+<li>Normalisierung: 1. NF, 2. NF, 3. NF &amp; BCNF</li>
+</ul>
+</li>
+<li><strong>5.2 Advanced SQL &amp; Type-Safe Rust DB Binding</strong><ul>
+<li>DDL &amp; DML: <code>CREATE</code>, <code>ALTER</code>, <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code>, komplexe <code>JOIN</code>s, Subqueries, Aggregationen</li>
+<li>Typsichere Rust-Datenbankanbindung (<code>sqlx</code> mit Kompilierzeit-SQL-Prüfung, <code>rusqlite</code>)</li>
+<li>Model Context Protocol (MCP) für Datenbanken: KI-Tool-Calling &amp; Datenbank-Administration</li>
+</ul>
+</li>
+<li><strong>5.3 Modern AI Knowledge Infrastructure: RAG &amp; Vector Stores</strong><ul>
+<li>Retrieval-Augmented Generation (RAG): Document Loading, Text Chunking, Embeddings</li>
+<li>Vector Stores / Vektordatenbanken (Cosine Similarity, Nearest Neighbor Search) &amp; Text-to-SQL</li>
+</ul>
+</li>
+<li><strong>5.4 Database Internals, Transactions &amp; Security</strong><ul>
+<li>ACID-Prinzip (Atomizität, Konsistenz, Isolation, Dauerhaftigkeit) &amp; Transaktionssteuerung</li>
+<li>Security: SQL-Injection Prevention durch Parameterized Queries &amp; Typsicherheit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>ER-Schema per Prompt erzeugen, typsicheren SQL-Backend-Service in Rust bauen, RAG-Pipeline mit Vektorsuche aufsetzen</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>ACID-Transaktionsprüfung, Index-Performanz-Analyse &amp; Datenschutz-Audit (DSGVO)</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- und Abiturvorbereitung: SQL-Abfrageoptimierung, ERM-Transformationsregeln &amp; Relationale Algebra</em></li>
+</ul>
+<h3 id="kapitel-6-systems-programming-networking-concurrency-q3q4">Kapitel 6: Systems Programming, Networking &amp; Concurrency (Q3/Q4)<a class="headerlink" href="#kapitel-6-systems-programming-networking-concurrency-q3q4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Entwicklung eines hochparallelen Async Webservers oder Chat-Server-Systems in Rust</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>6.1 Network Engineering &amp; Protocols</strong><ul>
+<li>Network Topologies, OSI-7-Schichtenmodell, TCP/IP-Referenzmodell</li>
+<li>Adressierung &amp; Protokolle: IP (v4/v6), TCP vs. UDP, HTTP/1.1 &amp; HTTP/2, DNS, DHCP</li>
+</ul>
+</li>
+<li><strong>6.2 Systems Programming, Hardware Interfaces &amp; Operating Systems</strong><ul>
+<li>Socket-Programmierung in Rust (<code>std::net::TcpListener</code>, <code>TcpStream</code>)</li>
+<li>Low-Level Hardware: Busse, Schnittstellen, Signalwandler (ADC / DAC), Embedded Systems</li>
+<li>Event-Driven Architecture &amp; Event-Handling für GUIs</li>
+<li>OS Internals: Prozesse vs. Threads, Prozessverwaltung, Speicherseiten (Paging/Virtual Memory)</li>
+<li>Concurrency &amp; Multithreading: Race Conditions, Mutexes (<code>Mutex&lt;T&gt;</code>), Semaphoren, Channels (<code>mpsc</code>) &amp; Async Rust (<code>async</code>/<code>.await</code>, Tokio Runtime)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>Netzwerk-Simulation mit Filius, Implementierung eines concurrent Multi-Threaded HTTP-Servers in Rust mit KI-Unterstützung</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Deadlock-Analyse, Thread Safety Audits (<code>Send</code> &amp; <code>Sync</code> Traits in Rust) &amp; Maschinennahes Memory Audit</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- und Abiturvorbereitung: Netzwerk-Protokoll-Analyse, Concurrency-Prüfung &amp; OS-Konzepte</em></li>
+</ul>
+<h3 id="kapitel-7-applied-cryptography-security-audits-it-recht-ai-ethics-q4">Kapitel 7: Applied Cryptography, Security Audits, IT-Recht &amp; AI Ethics (Q4)<a class="headerlink" href="#kapitel-7-applied-cryptography-security-audits-it-recht-ai-ethics-q4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Security-Audit einer verteilten Anwendung, Integration sicherer Kryptographie &amp; rechtssichere Compliance</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>7.1 Cryptography &amp; Cipher Engineering</strong><ul>
+<li>Symmetrische Verfahren: Caesar, Vigenère, One-Time-Pad, AES (Block-Chiffren) &amp; Kryptoanalyse</li>
+<li>Asymmetrische Verfahren: RSA (Mathematik der Modulo-Arithmetik), Diffie-Hellman Key Exchange, Elliptic Curve Cryptography (ECC)</li>
+</ul>
+</li>
+<li><strong>7.2 PKI, Signatures &amp; AI Code Security</strong><ul>
+<li>Kryptografische Hash-Funktionen (SHA-256), Digital Signatures, Zertifikate &amp; Public Key Infrastructure (PKI)</li>
+<li>Automated Security Auditing: Static Code Analysis mit Rust-Lintern (<code>cargo clippy</code>, <code>cargo audit</code>)</li>
+</ul>
+</li>
+<li><strong>7.3 AI Engineering Ethics, Neural Network Basics &amp; LLM Architecture</strong><ul>
+<li>Grundlagen Neuronaler Netze: Perzeptron-Modell, Aktivierungsfunktionen (Sigmoid, ReLU), Lineare Separierbarkeit &amp; Supervised Learning Basics</li>
+<li>LLM Architecture: Transformer, Attention Mechanisms, Fine-Tuning &amp; KI-APIs (OpenAI, Claude, Gemini, Local Endpoints)</li>
+<li>Risks &amp; Ethics: AI Slop (Gefahren unbeaufsichtigter KI-Code-Generierung), Urheberrecht an KI-Code, Prompt Injection &amp; Halluzinationen in kritischen Infrastrukturen</li>
+</ul>
+</li>
+<li><strong>7.4 IT-Recht, Datenschutz &amp; Software-Lizenzen</strong><ul>
+<li>Datenschutz-Grundverordnung (DSGVO), Privacy by Design &amp; Privacy by Default</li>
+<li>Open-Source-Lizenzmodelle: Permissiv (MIT, Apache 2.0) vs. Copyleft (GPLv3, AGPL) vs. Propriethär</li>
+<li>Software-Haftung, Impressumspflicht &amp; Urheberrecht an Quellcode und Trainingsdaten</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>Kryptografische Verfahren in Rust schreiben, KI-Security-Audit einer Codebase durchführen &amp; LLM API Service bauen</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Podiumsdiskussion: „Verständnis von Compilern, Memory Layout &amp; Borrow Checker im Zeitalter generativer KI"</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Abiturtraining &amp; Abschlussprüfung: Kryptografie-Arithmetik, Security-Audits, IT-Recht &amp; Ethik-Analysen</em></li>
+</ul>
+<hr />
+<h2 id="band-3-university-computer-science-advanced-systems-engineering-bachelor-niveau">Band 3: University Computer Science &amp; Advanced Systems Engineering (Bachelor-Niveau)<a class="headerlink" href="#band-3-university-computer-science-advanced-systems-engineering-bachelor-niveau" title="Permanent link">&para;</a></h2>
+<h3 id="kapitel-8-rechnerarchitektur-technische-informatik-risc-v-assembler">Kapitel 8: Rechnerarchitektur, Technische Informatik &amp; RISC-V Assembler<a class="headerlink" href="#kapitel-8-rechnerarchitektur-technische-informatik-risc-v-assembler" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Entwicklung eines Emulators für einen RISC-V Prozessor in Rust</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>8.1 Rechnerarchitektur &amp; Instruction Set Architectures (ISA)</strong><ul>
+<li>Von-Neumann- vs. Harvard-Architektur, Bus-Systeme (Daten-, Adress- und Steuerbus)</li>
+<li>RISC vs. CISC Philosophie; RISC-V ISA (Register-Set <code>x0</code>..<code>x31</code>, Instruktionsformate R, I, S, U, J)</li>
+<li>Machine Code Decoding, Befehlszyklus (Fetch, Decode, Execute, Memory Access, Write-Back)</li>
+</ul>
+</li>
+<li><strong>8.2 Low-Level &amp; Assembler-Programmierung</strong><ul>
+<li>RISC-V Assembler-Programmierung &amp; Rekonstruktion von C/Rust-Logik in Assembler</li>
+<li>Inline Assembly in Rust (<code>core::arch::asm!</code>) &amp; C-ABI (Application Binary Interface), Calling Conventions (Stack Frame Setup)</li>
+</ul>
+</li>
+<li><strong>8.3 Hardware Performance &amp; CPU Optimization</strong><ul>
+<li>CPU-Pipelining: 5-Stufen-Pipeline, Pipeline Hazards (Data, Control, Structural) &amp; Forwarding/Branch Prediction</li>
+<li>Cache-Hierarchien (L1, L2, L3 Caches), Cache Lines, Cache Hits vs. Misses &amp; Spatial/Temporal Locality</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>Bau eines funktionierenden RISC-V 32-Bit Befehls-Decoders und Emulators in Rust mit TDD</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Cache-Miss-Analyse mit Profilern (<code>perf</code>, <code>valgrind</code>), Spectre/Meltdown Side-Channel-Verständnis &amp; SIMD-Vektorisierung</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- &amp; Hochschulvorbereitung: Befehlskodierung, Pipelining-Diagramme &amp; Assembler-Analyse</em></li>
+</ul>
+<h3 id="kapitel-9-betriebssystem-internals-memory-management-interprozesskommunikation">Kapitel 9: Betriebssystem-Internals, Memory Management &amp; Interprozesskommunikation<a class="headerlink" href="#kapitel-9-betriebssystem-internals-memory-management-interprozesskommunikation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Entwicklung eines eigenen Minimal-Kernels / Process Schedulers oder systemnahen IPC-Daemons in Rust</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>9.1 Virtuelle Speicherverwaltung &amp; Memory Mapping</strong><ul>
+<li>Physikalische vs. Virtuelle Adressen, Paging, Page Tables (Multi-Level Paging), Page Faults &amp; Translation Lookaside Buffer (TLB)</li>
+<li>Memory Mapping (<code>mmap</code>), Dynamic Memory Allocation (<code>brk</code>/<code>sbrk</code>, Heap-Allocator Mechanics)</li>
+</ul>
+</li>
+<li><strong>9.2 Prozessverwaltung &amp; Scheduling</strong><ul>
+<li>Prozesszustände (Ready, Running, Blocked), Process Control Block (PCB), Context Switches</li>
+<li>Scheduling-Algorithmen: First-Come-First-Served (FCFS), Shortest Job First (SJF), Round Robin (RR), Completely Fair Scheduler (CFS)</li>
+</ul>
+</li>
+<li><strong>9.3 Interprozesskommunikation (IPC) &amp; Kernel Interfaces</strong><ul>
+<li>System Calls (<code>syscall</code>), Kernel Space vs. User Space</li>
+<li>IPC-Mechanismen: Anonymous &amp; Named Pipes, Shared Memory, Signals, Unix Domain Sockets</li>
+</ul>
+</li>
+<li><strong>9.4 Synchronisation &amp; Deadlock Engineering</strong><ul>
+<li>Kritische Abschnitte, Mutex, Semaphoren, Spinlocks, Futexes</li>
+<li>Deadlock-Theorie: Coffman-Bedingungen, Banker-Algorithmus (Deadlock Vermeidung), Reader-Writer-Problem</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>Implementierung eines interaktiven Prozess-Schedulers und IPC-Shared-Memory-Protokolls in Rust</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Kernel Memory Safety, Privilege Escalation Vektor-Analyse &amp; Deadlock Detection</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- &amp; Hochschulvorbereitung: Paging-Berechnungen, Scheduling-Gantt-Diagramme &amp; Deadlock-Beweise</em></li>
+</ul>
+<h3 id="kapitel-10-verteilte-systeme-cloud-architecture-grpc-microservices">Kapitel 10: Verteilte Systeme, Cloud Architecture, gRPC &amp; Microservices<a class="headerlink" href="#kapitel-10-verteilte-systeme-cloud-architecture-grpc-microservices" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Bau eines hochverfügbaren, verteilten Schlüssel-Wert-Speichers (Distributed Key-Value Store) mit gRPC</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>10.1 Verteilte Systeme &amp; Konsistenzmodelle</strong><ul>
+<li>Fundamentale Probleme verteilter Systeme: Physikalische vs. Logische Uhren (Lamport-Uhren, Vector Clocks)</li>
+<li>CAP-Theorem (Consistency, Availability, Partition Tolerance) &amp; PACELC-Theorem</li>
+<li>Eventual Consistency vs. Strong Consistency, BASE vs. ACID</li>
+</ul>
+</li>
+<li><strong>10.2 Konsens-Algorithmen &amp; Leader Election</strong><ul>
+<li>Raft-Konsensalgorithmus (Leader Election, Log Replication, Safety) &amp; Paxos-Grundlagen</li>
+<li>Distributed Transactions &amp; Two-Phase Commit (2PC)</li>
+</ul>
+</li>
+<li><strong>10.3 Microservices, RPC &amp; Message Streaming</strong><ul>
+<li>Protocol Buffers &amp; High-Performance RPC (<code>gRPC</code> in Rust via <code>tonic</code>)</li>
+<li>Event-Driven Architecture, Publish-Subscribe-Muster, Event Sourcing &amp; Message Queues (Kafka, RabbitMQ)</li>
+</ul>
+</li>
+<li><strong>10.4 Cloud Infrastructure &amp; Containerization</strong><ul>
+<li>Container-Internals (Linux Namespaces, cgroups, chroot), Docker Architecture</li>
+<li>Kubernetes Basics (Pods, Services, Deployments) &amp; Infrastructure as Code (IaC)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>Implementierung eines Raft-basierten verteilten Replikations-Clusters in Rust mit gRPC-Kommunikation</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Netzwerk-Partitionierungs-Simulation (Chaos Engineering), TLS-Verschlüsselung bei gRPC &amp; Fault Tolerance Audit</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- &amp; Hochschulvorbereitung: CAP-Analyse, Raft-Zustandsübergänge &amp; RPC-Protokollentwurf</em></li>
+</ul>
+<h3 id="kapitel-11-mathematische-grundlagen-der-ki-lineare-algebra-deep-learning">Kapitel 11: Mathematische Grundlagen der KI, Lineare Algebra &amp; Deep Learning<a class="headerlink" href="#kapitel-11-mathematische-grundlagen-der-ki-lineare-algebra-deep-learning" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Implementierung eines eigenen Deep Learning Frameworks (Tensors &amp; Autograd) von Grund auf in Rust</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>11.1 Lineare Algebra für Softwareentwickler</strong><ul>
+<li>Vektoren, Matrizen, Vektorräume &amp; Matrix-Multiplikation; Matrix-Transformationen</li>
+<li>Eigenwerte, Eigenvektoren, Singular Value Decomposition (SVD) &amp; Tensor-Operationen</li>
+</ul>
+</li>
+<li><strong>11.2 Analysis, Vektorkalkül &amp; Optimierung</strong><ul>
+<li>Funktionen mehrerer Variablen, Partielle Ableitungen, Jacobi-Matrix &amp; Hessematrix</li>
+<li>Gradient, Gradientenabstieg (Stochastic Gradient Descent / SGD, Adam Optimizer), Cost &amp; Loss Functions (MSE, Cross-Entropy)</li>
+</ul>
+</li>
+<li><strong>11.3 Deep Learning Mechanics &amp; Neural Architectures</strong><ul>
+<li>Artificial Neural Networks (ANN): Feedforward Propagation, Layer-Topologien</li>
+<li>Computational Graphs &amp; Automatic Differentiation (Autograd-Algorithmus)</li>
+<li>Backpropagation: Kettenregel (Chain Rule) der Multi-Variable-Calculus für Gewichtsanpassungen</li>
+<li>Moderne Architekturmuster: Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN) &amp; Transformer Attention Mechanics ($Q, K, V$ Matrizen)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>Bau einer matritzenbasierten Autograd-Engine in Rust (<code>ndarray</code> / Custom Tensor struct) und Training eines Ziffern-Erkenners (MNIST)</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Numerical Stability Audit (Exploding/Vanishing Gradients, Floating-Point Precision Errors), Memory Efficiency bei Tensors</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- &amp; Hochschulvorbereitung: Matrizenrechnung, Gradienten-Berechnungen per Kettenregel &amp; Autograd-Graphen</em></li>
+</ul>
+<h3 id="kapitel-12-enterprise-software-architecture-design-patterns-quality-engineering">Kapitel 12: Enterprise Software Architecture, Design Patterns &amp; Quality Engineering<a class="headerlink" href="#kapitel-12-enterprise-software-architecture-design-patterns-quality-engineering" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Phase 1 (Systemanforderung):</strong> <em>Architektur-Redesign einer Legacy-Anwendung in ein wartbares, hochgradig getestetes Enterprise-System</em></li>
+<li><strong>Phase 2 (Theorie &amp; Konzepte):</strong><ul>
+<li><strong>12.1 Gang of Four (GoF) &amp; Idiomatische Rust Design Patterns</strong><ul>
+<li>Erzeugungsmuster: Factory, Builder, Singleton/Lazy Static</li>
+<li>Strukturmuster: Adapter, Decorator, Proxy, Composite</li>
+<li>Verhaltensmuster: Strategy, Observer, State Pattern, Command Pattern</li>
+<li>Mapping von klassischen OOP-Patterns auf funktionale &amp; trait-basierte Rust-Idiome</li>
+</ul>
+</li>
+<li><strong>12.2 Architectural Paradigms &amp; Domain-Driven Design (DDD)</strong><ul>
+<li>Hexagonale Architektur (Ports &amp; Adapters Architecture), Clean Architecture, Onion Architecture</li>
+<li>Domain-Driven Design: Bounded Contexts, Aggregates, Entities, Value Objects &amp; Domain Events</li>
+</ul>
+</li>
+<li><strong>12.3 Advanced Quality Engineering &amp; Automated Testing Strategy</strong><ul>
+<li>Testpyramide: Unit Testing, Integration Testing, End-to-End Testing</li>
+<li>Advanced Testing Techniques: Property-Based Testing (<code>proptest</code> / <code>quickcheck</code>), Mutation Testing</li>
+<li>Fuzz Testing / Automated Vulnerability Discovery (<code>cargo-fuzz</code> mit LLVM libFuzzer)</li>
+<li>Continuous Integration &amp; Delivery (CI/CD): GitHub Actions Pipelines, Automated Code Coverage (<code>tarpaulin</code>), Dependency Audits</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Phase 3 (Rechnerpraxis &amp; Vibe Coding):</strong> <em>Refactoring einer monolithischen Applikation in Hexagonale Architektur, Aufsetzen von Fuzzing-Suites &amp; CI/CD Pipelines</em></li>
+<li><strong>Phase 4 (Code Audit &amp; Security):</strong> <em>Architectural Drift Detection, Coverage Audits, Static Analysis (<code>clippy</code>, <code>audit</code>, <code>miri</code>) &amp; Security Fuzzing</em></li>
+<li><strong>Phase 5 (Production Readiness):</strong> <em>Klausur- &amp; Hochschulvorbereitung: Entwurfsmuster-Synthese, Architektur-Diagramme (DDD) &amp; Teststrategie-Evaluation</em></li>
+</ul>
+<hr />
+<h2 id="verwandte-themen">Verwandte Themen<a class="headerlink" href="#verwandte-themen" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="ki-entwicklungsworkflow-rust/">KI-Entwicklungsworkflow für Rust</a> — der 9-phasige Arbeitsablauf, der die Phase-3-Schritte dieses Curriculums konkretisiert</li>
+<li><a href="claude-code-cli-leitfaden/">Claude Code CLI: End-to-End-Leitfaden</a> — Werkzeug-Referenz für die KI-gestützten Schritte</li>
+<li><a href="rust-praxisprojekte/">Rust-Praxisprojekte mit Claude Code</a> — drei Projekte, die dieses Curriculum praktisch durchspielen</li>
+<li><a href="../system/rust-praxis/">Rust Praxis-Handbuch</a> — vertiefende Rust-Praxis außerhalb des Curriculum-Kontexts</li>
+<li><a href="../../wissen/dokumentation/llm-wiki-pattern-karpathy/">LLM-Wiki-Pattern (Karpathy-Muster)</a> — das Ingest-Muster, nach dem diese Seiten aus <code>raw/</code> entstanden sind</li>
+</ul>
+<p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        War diese Seite hilfreich?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Diese Seite war hilfreich" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Diese Seite könnte besser sein" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Danke für das Feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Danke für das Feedback. Helfen Sie uns, diese Seite zu verbessern.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
+        
+          
+          <a href="../ide/lokale-ki-frontends/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Lokale KI-Frontends">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              <div class="md-ellipsis">
+                Lokale KI-Frontends
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="./ki-entwicklungsworkflow-rust/" class="md-footer__link md-footer__link--next" aria-label="Weiter: KI-Entwicklungsworkflow für Rust">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              <div class="md-ellipsis">
+                KI-Entwicklungsworkflow für Rust
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+        
+          <div class="md-copyright__highlight">
+            Copyright &copy; Wissen Ahrensburg
+            &middot;
+            <a href="../../rechtliches/impressum/">Impressum</a>
+            &middot;
+            <a href="../../rechtliches/datenschutz/">Datenschutz</a>
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+      </div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://wissen-ahrensburg.de" target="_blank" rel="noopener" title="Wissen Ahrensburg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+  
+
+<h4>Cookie-Zustimmung</h4>
+<p>Wir verwenden Cookies, um Ihre Besuche und Präferenzen wiederzuerkennen.</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Feedback
+    </label>
+  </li>
+
+      
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Akzeptieren</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Ablehnen</button>
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.top","navigation.sections","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.path","navigation.prune","navigation.footer","search.suggest","search.highlight","search.share","content.code.copy","content.code.annotate","content.code.select","content.tooltips","content.tabs.link","content.action.view","toc.follow"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"In Zwischenablage kopiert","clipboard.copy":"In Zwischenablage kopieren","search.result.more.one":"1 weiteres Suchergebnis auf dieser Seite","search.result.more.other":"# weitere Suchergebnisse auf dieser Seite","search.result.none":"Keine Suchergebnisse","search.result.one":"1 Suchergebnis","search.result.other":"# Suchergebnisse","search.result.placeholder":"Suchbegriff eingeben","search.result.term.missing":"Es fehlt","select.version":"Version auswählen"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ed145cee.min.js"></script>
+      
+    
+  </body>
+</html>
