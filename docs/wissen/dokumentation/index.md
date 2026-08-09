@@ -95,6 +95,8 @@ Tools zur schnellen Erstellung von klassischen, inhaltsfokussierten Webseiten, B
 * **Obsidian**: Eine hochgradig anpassbare Local-First-Notiz-App, die auf einem lokalen Ordner von Markdown-Dateien basiert und Verknüpfungen (Backlinks) visualisieren kann.
 * **Logseq**: Eine datenschutzfreundliche Outliner-Wissensdatenbank (Local-First) mit PDF-Annotationen und Flashcards, basierend auf Markdown- oder Org-Mode-Dateien.
 
+Die methodischen Grundlagen (Zettelkasten, PARA, CODE, Evergreen Notes) hinter diesen und weiteren PKM-Werkzeugen erklärt das Kapitel [Personal Knowledge Management (PKM) & Second Brain](pkm-second-brain-methoden.md).
+
 ### Static-Site-Generatoren für lokale Notizen
 * **Quartz (v4)** (TypeScript): Ein statischer Generator, der Obsidian-Tresore (Markdown-Dateien mit Wiki-Links) direkt in eine schnelle, interaktive Website übersetzt.
 
@@ -105,7 +107,7 @@ Tools zur schnellen Erstellung von klassischen, inhaltsfokussierten Webseiten, B
 
 ## 6. RAG- & KI-Zentrierte Wissensdatenbanken (RAG-Co-Wikis)
 
-Systeme und Pipelines, die Wikis und Dokumente für Large Language Models (LLMs) aufbereiten oder als intelligente Co-Wikis mit RAG-Anbindung fungieren.
+Systeme und Pipelines, die Wikis und Dokumente für Large Language Models (LLMs) aufbereiten oder als intelligente Co-Wikis mit RAG-Anbindung fungieren. Die technischen Mechanismen dahinter — Embeddings, Vektordatenbanken, Chunking, Hybrid-Suche — erklärt vertieft das Kapitel [Wissensdatenbanken mit KI & semantischer Suche](wissensdatenbanken-ki-semantische-suche.md).
 
 ### KI- & LLM-Wiki-Konzepte (LLM-Wikis & Co-Wikis)
 * **LLM-Wiki (Large Language Model Wiki)**: Ein Konzept zur Wissensstrukturierung, bei dem KI-Modelle Dokumente und Notizen autonom einlesen, zusammenfassen, kategorisieren und untereinander verlinken. Es entsteht ein sich selbst organisierendes, wachsendes Wissensnetzwerk.

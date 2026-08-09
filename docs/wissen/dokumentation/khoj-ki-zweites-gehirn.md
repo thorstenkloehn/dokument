@@ -104,6 +104,7 @@ Docker Compose orchestriert dabei Khoj-Server, SearxNG und die Sandbox-/Automati
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme
+- [Personal Knowledge Management (PKM) & Second Brain](pkm-second-brain-methoden.md) — methodische Einordnung (Zettelkasten, PARA, CODE) hinter Khoj
 - [AnythingLLM: All-in-One Desktop- & Docker-RAG-Plattform](anythingllm-rag-plattform.md) — nächstverwandtes Tool für den persönlichen Einsatz
 - [Klassische Wiki-Systeme mit LLM-Integration](klassische-wiki-systeme-llm-integration.md#obsidian-community-plugin-okosystem) — Einordnung des Khoj-Obsidian-Plugins neben Copilot/Smart Connections
 - [PostgreSQL + pgvector](../daten/datenbanken/pgvector-anleitung.md) — Grundlage der semantischen Suche in Khoj
