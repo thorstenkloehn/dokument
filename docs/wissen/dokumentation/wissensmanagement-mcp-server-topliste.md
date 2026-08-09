@@ -27,7 +27,7 @@ graph TD
 | Rang | System | Kategorie | Lizenz | MCP-Support | Agentenfähigkeit | Besondere Stärke |
 |---|---|---|---|---|---|---|
 | 1 | **[Onyx](onyx-danswer-rag-plattform.md)** (ehem. Danswer) | Wissensmanagement/RAG | MIT (Community Edition) | **offiziell** (`onyx-mcp-server`) | Lesen+Schreiben, native Agents mit Actions | 50+ Connectoren, übernimmt bestehende Zugriffsrechte aus Quellsystemen |
-| 2 | **AnythingLLM** | Wissensmanagement/RAG | MIT | **offiziell** (nativ seit 2025) | Lesen+Schreiben über Agent Skills | Vollständig lokal via Ollama betreibbar, sehr geringe Einstiegshürde |
+| 2 | **[AnythingLLM](anythingllm-rag-plattform.md)** | Wissensmanagement/RAG | MIT | **offiziell** (nativ seit 2025) | Lesen+Schreiben über Agent Skills | Vollständig lokal via Ollama betreibbar, sehr geringe Einstiegshürde |
 | 3 | **[Wiki.js](klassische-wiki-systeme-llm-integration.md)** | Wiki | AGPL-3.0 | Community (GraphQL-basiert) | Lesen+Schreiben (CRUD, Seiten verschieben) | Moderne GraphQL-API erleichtert MCP-Server-Eigenbau erheblich |
 | 4 | **BookStack** | Wiki | MIT | Community (REST-basiert) | Lesen+Schreiben | Einfache Hierarchie (Bücher/Kapitel/Seiten) erleichtert Agenten-Navigation |
 | 5 | **[MediaWiki](mediawiki/mediawiki-ki-agent.md)** | Wiki | GPL-2.0 | Eigenbau (kein Standard-Server im Ökosystem) | Lesen+Schreiben, Human-in-the-Loop-Entwürfe | Größtes Wiki-Ökosystem der Welt, Action-API als solide MCP-Grundlage |
@@ -52,7 +52,7 @@ graph TD
 ## Lizenz-Sonderfall
 
 !!! warning "Achtung: Quellcode einsehbar ≠ Open Source"
-    **Outline** bringt seit April 2026 in jedem Workspace einen offiziellen, sehr ausgereiften MCP-Server mit (Suchen, Lesen, Erstellen, Bearbeiten, Kommentare, Verschieben). Die Lizenz ist jedoch die **Business Source License (BSL)**, nicht OSI-anerkannt — siehe [Gesamtübersicht](open-source-llm-agent-mcp-systeme.md#lizenz-sonderfalle-technisch-fuhrend-aber-nicht-osi-open-source) für Details. Wer strikt OSI-Open-Source benötigt, greift stattdessen zu Rang 1 (Onyx) oder Rang 2 (AnythingLLM).
+    **Outline** bringt seit April 2026 in jedem Workspace einen offiziellen, sehr ausgereiften MCP-Server mit (Suchen, Lesen, Erstellen, Bearbeiten, Kommentare, Verschieben). Die Lizenz ist jedoch die **Business Source License (BSL)**, nicht OSI-anerkannt — siehe [Gesamtübersicht](open-source-llm-agent-mcp-systeme.md#lizenz-sonderfalle-technisch-fuhrend-aber-nicht-osi-open-source) für Details. Wer strikt OSI-Open-Source benötigt, greift stattdessen zu Rang 1 ([Onyx](onyx-danswer-rag-plattform.md)) oder Rang 2 ([AnythingLLM](anythingllm-rag-plattform.md)).
 
 ---
 

@@ -33,7 +33,7 @@ graph TD
 | System | Kategorie | Lizenz | MCP-Support | Agentenfähigkeit | Modell frei wählbar? |
 |---|---|---|---|---|---|
 | **[Onyx](onyx-danswer-rag-plattform.md)** (ehem. Danswer) | Wissensmanagement/RAG | MIT (Community Edition) | **offiziell** (`onyx-mcp-server`) | Lesen+Schreiben, native Agents mit Actions | ja (Ollama, LiteLLM, vLLM, Anthropic, OpenAI, Gemini) |
-| **[AnythingLLM](index.md#rag-ki-gestutzte-dokumenten-wiki-tools)** | Wissensmanagement/RAG | MIT | **offiziell** (natives MCP seit 2025) | Lesen+Schreiben über Agent Skills | ja, inkl. lokal via Ollama |
+| **[AnythingLLM](anythingllm-rag-plattform.md)** | Wissensmanagement/RAG | MIT | **offiziell** (natives MCP seit 2025) | Lesen+Schreiben über Agent Skills | ja, inkl. lokal via Ollama |
 | **[OpenWiki](openwiki-repo-dokumentation-agent.md)** (LangChain) | Wissensmanagement/Repo-Doku | MIT | Sonderfall: keine MCP-Verbindung, sondern Referenzen in `AGENTS.md`/`CLAUDE.md` | Lesen+Schreiben (generiert & aktualisiert Wiki-Dateien) | ja, breite Provider-Liste |
 | **[Wiki.js](klassische-wiki-systeme-llm-integration.md)** | Wiki | AGPL-3.0 | Community (GraphQL-basiert) | Lesen+Schreiben (CRUD, Seiten verschieben) | ja (MCP-Client-seitig) |
 | **BookStack** | Wiki | MIT | Community (REST-basiert) | Lesen+Schreiben | ja |

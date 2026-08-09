@@ -133,7 +133,7 @@ Die technische Umsetzung von LLM- und Co-Wikis basiert auf der Kombination moder
 * **Outline**: Ein wunderschönes, schnelles Open-Source-Wiki für Teams mit nativer Markdown-Unterstützung und exzellenter API.
 * **Onyx** (ehem. Danswer): Ein Open-Source-RAG-System, das sich mit all deinen Datenquellen (Slack, Google Drive, Wikis) verbindet und direkte Antworten auf Nutzerfragen liefert. (Siehe [ausführlicher Guide](onyx-danswer-rag-plattform.md).)
 * **NotebookLM** (Google): Ein webbasierter, persönlicher KI-Kollaborations-Workspace. Erlaubt den Upload verschiedenster Dokumentenquellen (PDFs, Google Docs, Links) und generiert automatische Zusammenfassungen, strukturierte Studienführer und Audio-Podcasts.
-* **AnythingLLM**: Eine All-in-One-Desktop- und Docker-Anwendung, die lokale Dokumente in private, isolierte Chat-Kontexte übersetzt. Unterstützt lokale LLMs (via Ollama) und integrierte Vektordatenbanken.
+* **[AnythingLLM](anythingllm-rag-plattform.md)**: Eine All-in-One-Desktop- und Docker-Anwendung, die lokale Dokumente in private, isolierte Chat-Kontexte übersetzt. Unterstützt lokale LLMs (via Ollama) und integrierte Vektordatenbanken.
 * **Khoj**: Ein Open-Source-KI-Assistent, der lokale Dokumente (PDF, Markdown, Org-mode) indiziert und offline-first durchsuchbar und abfragbar macht.
 * **Open WebUI**: Ein Web-Frontend für LLMs mit integriertem RAG-System. Ermöglicht das Hochladen, Verwalten und Abfragen von Dokumenten direkt im Chat.
 * **PrivateGPT**: Ein Open-Source-Projekt zur rein lokalen, datenschutzkonformen Dokumentenabfrage und -verwaltung mittels lokaler Sprachmodelle.
