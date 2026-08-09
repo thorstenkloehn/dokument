@@ -10,36 +10,36 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/backup/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wikijs-linux-installation/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../semantische-mediawiki/smw-sparql-queries/">
       
       
-        <link rel="next" href="../wiederherstellen/">
+        <link rel="next" href="../wikijs-ki-agent/">
       
       
         
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.52">
     
     
       
-        <title>Backup - Wissen Ahrensburg</title>
+        <title>Wiki.js nativ unter Linux installieren - Wissen Ahrensburg</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../../../assets/stylesheets/modern/main.8b3b5a67.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.8b3b5a67.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
   
@@ -123,9 +123,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
   
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#backup-erstellen" class="md-skip">
+        <a href="#wikijs-nativ-unter-linux-installieren" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -168,7 +168,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
-    <a href="../../../.." title="Wissen Ahrensburg" class="md-header__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+    <a href="../../.." title="Wissen Ahrensburg" class="md-header__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Backup
+              Wiki.js nativ unter Linux installieren
             
           </span>
         </div>
@@ -256,7 +256,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   Start
@@ -289,7 +289,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../k%C3%BCnstliche-intelligenz/" class="md-tabs__link">
+        <a href="../../../k%C3%BCnstliche-intelligenz/" class="md-tabs__link">
           
   
   KI & Automatisierung
@@ -325,7 +325,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../entwicklung/erste-schritte/" class="md-tabs__link">
+        <a href="../../../entwicklung/erste-schritte/" class="md-tabs__link">
           
   
   Entwicklung
@@ -383,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../kreativ/design/" class="md-tabs__link">
+        <a href="../../../kreativ/design/" class="md-tabs__link">
           
   
   Kreativ
@@ -442,7 +442,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../daten/datenbanken/" class="md-tabs__link">
+        <a href="../../daten/datenbanken/" class="md-tabs__link">
           
   
   Wissen
@@ -479,7 +479,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../rechtliches/impressum/" class="md-tabs__link">
+        <a href="../../../rechtliches/impressum/" class="md-tabs__link">
           
   
   Rechtliches
@@ -518,7 +518,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Wissen Ahrensburg" class="md-nav__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+    <a href="../../.." title="Wissen Ahrensburg" class="md-nav__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
@@ -536,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -594,7 +594,7 @@
   
   
   
-    <a href="../../../../k%C3%BCnstliche-intelligenz/" class="md-nav__link">
+    <a href="../../../k%C3%BCnstliche-intelligenz/" class="md-nav__link">
       
   
   
@@ -660,7 +660,7 @@
   
   
   
-    <a href="../../../../entwicklung/erste-schritte/" class="md-nav__link">
+    <a href="../../../entwicklung/erste-schritte/" class="md-nav__link">
       
   
   
@@ -724,7 +724,7 @@
   
   
   
-    <a href="../../../../kreativ/design/" class="md-nav__link">
+    <a href="../../../kreativ/design/" class="md-nav__link">
       
   
   
@@ -857,7 +857,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../daten/datenbanken/" class="md-nav__link ">
+            <a href="../../daten/datenbanken/" class="md-nav__link ">
               
   
   
@@ -899,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../daten/datenbanken/pgvector-anleitung/" class="md-nav__link">
+      <a href="../../daten/datenbanken/pgvector-anleitung/" class="md-nav__link">
         
   
   
@@ -954,7 +954,7 @@
   
   
   
-    <a href="../../../daten/datenerfassung/" class="md-nav__link">
+    <a href="../../daten/datenerfassung/" class="md-nav__link">
       
   
   
@@ -1031,7 +1031,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../e-learning/" class="md-nav__link ">
+            <a href="../../e-learning/" class="md-nav__link ">
               
   
   
@@ -1073,7 +1073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../e-learning/ki-lehre-weiterbildung/" class="md-nav__link">
+      <a href="../../e-learning/ki-lehre-weiterbildung/" class="md-nav__link">
         
   
   
@@ -1100,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../e-learning/sprachlern-ki-agenten-topliste/" class="md-nav__link">
+      <a href="../../e-learning/sprachlern-ki-agenten-topliste/" class="md-nav__link">
         
   
   
@@ -1127,7 +1127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../e-learning/lernmethoden-programmiersprachen/" class="md-nav__link">
+      <a href="../../e-learning/lernmethoden-programmiersprachen/" class="md-nav__link">
         
   
   
@@ -1154,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../e-learning/interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
+      <a href="../../e-learning/interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
         
   
   
@@ -1223,7 +1223,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../tools/" class="md-nav__link ">
+            <a href="../../tools/" class="md-nav__link ">
               
   
   
@@ -1293,7 +1293,7 @@
   
   
   
-    <a href="../../../tools/pandoc/" class="md-nav__link">
+    <a href="../../tools/pandoc/" class="md-nav__link">
       
   
   
@@ -1326,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/analysetool/" class="md-nav__link">
+      <a href="../../tools/analysetool/" class="md-nav__link">
         
   
   
@@ -1353,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/benchmark/" class="md-nav__link">
+      <a href="../../tools/benchmark/" class="md-nav__link">
         
   
   
@@ -1460,7 +1460,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1502,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm-first-wiki-tools-agenten/" class="md-nav__link">
+      <a href="../llm-first-wiki-tools-agenten/" class="md-nav__link">
         
   
   
@@ -1529,7 +1529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../klassische-wiki-systeme-llm-integration/" class="md-nav__link">
+      <a href="../klassische-wiki-systeme-llm-integration/" class="md-nav__link">
         
   
   
@@ -1556,7 +1556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
+      <a href="../klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
         
   
   
@@ -1583,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source-llm-agent-mcp-systeme/" class="md-nav__link">
+      <a href="../open-source-llm-agent-mcp-systeme/" class="md-nav__link">
         
   
   
@@ -1610,7 +1610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wissensmanagement-mcp-server-topliste/" class="md-nav__link">
+      <a href="../wissensmanagement-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1637,7 +1637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cms-mcp-server-topliste/" class="md-nav__link">
+      <a href="../cms-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1664,7 +1664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm-wiki-pattern-karpathy/" class="md-nav__link">
+      <a href="../llm-wiki-pattern-karpathy/" class="md-nav__link">
         
   
   
@@ -1691,7 +1691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
+      <a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
         
   
   
@@ -1718,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../openwiki-repo-dokumentation-agent/" class="md-nav__link">
+      <a href="../openwiki-repo-dokumentation-agent/" class="md-nav__link">
         
   
   
@@ -1745,7 +1745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../onyx-danswer-rag-plattform/" class="md-nav__link">
+      <a href="../onyx-danswer-rag-plattform/" class="md-nav__link">
         
   
   
@@ -1772,7 +1772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../anythingllm-rag-plattform/" class="md-nav__link">
+      <a href="../anythingllm-rag-plattform/" class="md-nav__link">
         
   
   
@@ -1799,7 +1799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-webui-rag-agenten-plattform/" class="md-nav__link">
+      <a href="../open-webui-rag-agenten-plattform/" class="md-nav__link">
         
   
   
@@ -1826,7 +1826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dify-agenten-workflow-plattform/" class="md-nav__link">
+      <a href="../dify-agenten-workflow-plattform/" class="md-nav__link">
         
   
   
@@ -1853,7 +1853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../flowise-visueller-flow-builder/" class="md-nav__link">
+      <a href="../flowise-visueller-flow-builder/" class="md-nav__link">
         
   
   
@@ -1880,7 +1880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../khoj-ki-zweites-gehirn/" class="md-nav__link">
+      <a href="../khoj-ki-zweites-gehirn/" class="md-nav__link">
         
   
   
@@ -1907,7 +1907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pkm-second-brain-methoden/" class="md-nav__link">
+      <a href="../pkm-second-brain-methoden/" class="md-nav__link">
         
   
   
@@ -1934,7 +1934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
+      <a href="../wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
         
   
   
@@ -1958,8 +1958,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1976,6 +1974,132 @@
         
       
         
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../mediawiki/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installieren
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../semantische-mediawiki/installieren/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Semantisches MediaWiki
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
       
         
       
@@ -1996,44 +2120,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_19" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_21" checked>
         
           
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_5_4_21" id="__nav_5_4_21_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
     
   
-  MediaWiki
+  Wiki.js
 
     
   </span>
   
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5_4_19" id="__nav_5_4_19_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_19_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5_4_19">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_21_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4_21">
             <span class="md-nav__icon md-icon"></span>
             
   
-  MediaWiki
+  Wiki.js
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -2048,6 +2163,8 @@
       
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -2056,7 +2173,7 @@
   <span class="md-ellipsis">
     
   
-  Backup
+  Native Linux-Installation
 
     
   </span>
@@ -2073,7 +2190,7 @@
   <span class="md-ellipsis">
     
   
-  Backup
+  Native Linux-Installation
 
     
   </span>
@@ -2089,6 +2206,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2097,10 +2216,98 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#backup-erstellen" class="md-nav__link">
+  <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Backup erstellen
+        Voraussetzungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-systembenutzer-und-zielordner-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Systembenutzer und Zielordner anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-wikijs-herunterladen-und-entpacken" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Wiki.js herunterladen und entpacken
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-konfiguration-vorbereiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Konfiguration vorbereiten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ersten-start-testen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Ersten Start testen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-systemd-dienst-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. <code>systemd</code>-Dienst einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-netzwerk-und-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Netzwerk und Reverse Proxy
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
       </span>
     </span>
   </a>
@@ -2123,122 +2330,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../wiederherstellen/" class="md-nav__link">
+      <a href="../wikijs-ki-agent/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Wiederherstellen
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mediawiki-python-bot/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Python Bot Automatisierung
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mediawiki-ki-agent/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  KI-Agent (Automatisierte Pflege mit LLMs)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mediawiki-backup-skripte/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Backup Skripte
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mediawiki-php-extension/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  PHP Extension
+  Agenten-Pipeline (Automatisierte Pflege mit LLMs)
 
     
   </span>
@@ -2276,8 +2375,6 @@
       
         
       
-        
-      
     
     
     
@@ -2298,129 +2395,7 @@
   
   
   
-    <a href="../../semantische-mediawiki/installieren/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Semantisches MediaWiki
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../wikijs-linux-installation/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Wiki.js
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../xwiki/installieren/" class="md-nav__link">
+    <a href="../xwiki/installieren/" class="md-nav__link">
       
   
   
@@ -2500,7 +2475,7 @@
   
   
   
-    <a href="../../../../rechtliches/impressum/" class="md-nav__link">
+    <a href="../../../rechtliches/impressum/" class="md-nav__link">
       
   
   
@@ -2539,6 +2514,8 @@
                     
                     
                     
+                      
+                    
                     
                       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
                       <div class="md-sidebar-button__wrapper">
@@ -2554,6 +2531,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2562,10 +2541,98 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#backup-erstellen" class="md-nav__link">
+  <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Backup erstellen
+        Voraussetzungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-systembenutzer-und-zielordner-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Systembenutzer und Zielordner anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-wikijs-herunterladen-und-entpacken" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Wiki.js herunterladen und entpacken
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-konfiguration-vorbereiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Konfiguration vorbereiten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ersten-start-testen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Ersten Start testen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-systemd-dienst-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. <code>systemd</code>-Dienst einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-netzwerk-und-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Netzwerk und Reverse Proxy
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
       </span>
     </span>
   </a>
@@ -2597,7 +2664,7 @@
   
   
     <li class="md-path__item">
-      <a href="../../../.." class="md-path__link">
+      <a href="../../.." class="md-path__link">
         
   
   <span class="md-ellipsis">
@@ -2647,7 +2714,7 @@
     
     
       <li class="md-path__item">
-        <a href="../../../daten/datenbanken/" class="md-path__link">
+        <a href="../../daten/datenbanken/" class="md-path__link">
           
   
   <span class="md-ellipsis">
@@ -2720,7 +2787,7 @@
     
     
       <li class="md-path__item">
-        <a href="../../" class="md-path__link">
+        <a href="../" class="md-path__link">
           
   
   <span class="md-ellipsis">
@@ -2740,18 +2807,6 @@
     
       
         
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -2760,11 +2815,11 @@
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="././" class="md-path__link">
           
   
   <span class="md-ellipsis">
-    MediaWiki
+    Wiki.js
   </span>
 
         </a>
@@ -2781,23 +2836,137 @@
                 
                   
 
-  <h1 id="__skip">Backup</h1>
-
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
-<h2 id="backup-erstellen">Backup erstellen<a class="headerlink" href="#backup-erstellen" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/home/thorsten
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>gh<span class="w"> </span>repo<span class="w"> </span>clone<span class="w"> </span>thorstenkloehn/Download
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>-R<span class="w"> </span>Download
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">cd</span><span class="w"> </span>/home/thorsten/Download
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sudo<span class="w"> </span>rm<span class="w"> </span>/home/thorsten/Download/pagedump.xml
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>sudo<span class="w"> </span>rm<span class="w"> </span>/home/thorsten/Download/doc.xml
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>ssh<span class="w"> </span>thorsten@ahrensburg.city<span class="w"> </span><span class="s2">&quot;php /var/www/mediawiki/maintenance/dumpBackup.php --full&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>/home/thorsten/Download/pagedump.xml
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>ssh<span class="w"> </span>thorsten@ahrensburg.city<span class="w"> </span><span class="s2">&quot;php /var/www/docs/maintenance/dumpBackup.php --full&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>/home/thorsten/Download/doc.xml
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>git<span class="w"> </span>add<span class="w"> </span>pagedump.xml
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>git<span class="w"> </span>add<span class="w"> </span>doc.xml
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Backup&quot;</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>git<span class="w"> </span>push
+<h1 id="wikijs-nativ-unter-linux-installieren">Wiki.js nativ unter Linux installieren<a class="headerlink" href="#wikijs-nativ-unter-linux-installieren" title="Permanent link">&para;</a></h1>
+<p>Diese Anleitung zeigt, wie <strong>Wiki.js 2.x</strong> ohne Container aus dem offiziellen Release-Archiv eingerichtet und anschließend als <code>systemd</code>-Dienst betrieben wird. Sie setzt eine bereits vorbereitete Datenbank und eine unterstützte Node.js-Version voraus.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis zur Quelle</p>
+<p>Die Arbeitsschritte orientieren sich an der offiziellen <a href="https://docs.requarks.io/install/linux">Linux-Anleitung von Wiki.js</a>. Der Text wurde eigenständig formuliert, neu gegliedert und um praktische Hinweise ergänzt; er ist keine wörtliche Übersetzung.</p>
+</div>
+<hr />
+<h2 id="voraussetzungen">Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Permanent link">&para;</a></h2>
+<p>Vor dem Start sollten folgende Komponenten bereitstehen:</p>
+<ul>
+<li>eine aktuelle Linux-Distribution mit <code>systemd</code>,</li>
+<li>eine von Wiki.js unterstützte Node.js-Version,</li>
+<li>mindestens 1 GB Arbeitsspeicher und ausreichend Speicherplatz,</li>
+<li>eine leere Datenbank mit eigenem Benutzerkonto,</li>
+<li>eine eigene Domain oder Subdomain für das Wiki.</li>
+</ul>
+<p>Für produktive Installationen empfiehlt das Wiki.js-Projekt <strong>PostgreSQL</strong>. Welche Versionen aktuell unterstützt werden, steht in den offiziellen <a href="https://docs.requarks.io/install/requirements">Systemanforderungen</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Achtung</p>
+<p>Die unterstützten Versionen von Node.js und den Datenbanken können sich ändern. Prüfe deshalb vor einer Neuinstallation immer die aktuellen Systemanforderungen.</p>
+</div>
+<hr />
+<h2 id="1-systembenutzer-und-zielordner-anlegen">1. Systembenutzer und Zielordner anlegen<a class="headerlink" href="#1-systembenutzer-und-zielordner-anlegen" title="Permanent link">&para;</a></h2>
+<p>Ein eigener Benutzer begrenzt die Rechte des Wiki-Prozesses. Das folgende Beispiel verwendet <code>/var/wiki</code> als Installationsverzeichnis:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>useradd<span class="w"> </span>--system<span class="w"> </span>--home-dir<span class="w"> </span>/var/wiki<span class="w"> </span>--shell<span class="w"> </span>/usr/sbin/nologin<span class="w"> </span>wikijs
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/wiki
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>chown<span class="w"> </span>wikijs:wikijs<span class="w"> </span>/var/wiki
 </span></code></pre></div>
+<hr />
+<h2 id="2-wikijs-herunterladen-und-entpacken">2. Wiki.js herunterladen und entpacken<a class="headerlink" href="#2-wikijs-herunterladen-und-entpacken" title="Permanent link">&para;</a></h2>
+<p>Lade das aktuelle Release zunächst in ein temporäres Verzeichnis. Danach wird das Archiv direkt in den endgültigen Zielordner entpackt:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>/tmp
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>wget<span class="w"> </span>https://github.com/Requarks/wiki/releases/latest/download/wiki-js.tar.gz
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sudo<span class="w"> </span>tar<span class="w"> </span>xzf<span class="w"> </span>wiki-js.tar.gz<span class="w"> </span>-C<span class="w"> </span>/var/wiki
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>wikijs:wikijs<span class="w"> </span>/var/wiki
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>In sicherheitskritischen Umgebungen sollte das Archiv vor dem Entpacken anhand der vom Projekt bereitgestellten Prüfsummen oder Release-Informationen kontrolliert werden.</p>
+</div>
+<hr />
+<h2 id="3-konfiguration-vorbereiten">3. Konfiguration vorbereiten<a class="headerlink" href="#3-konfiguration-vorbereiten" title="Permanent link">&para;</a></h2>
+<p>Wiki.js liefert eine Beispielkonfiguration mit. Kopiere sie als <code>config.yml</code> und bearbeite anschließend insbesondere Port und Datenbankzugang:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>cp<span class="w"> </span>/var/wiki/config.sample.yml<span class="w"> </span>/var/wiki/config.yml
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/var/wiki/config.yml
+</span></code></pre></div>
+<p>Eine PostgreSQL-Konfiguration kann beispielsweise so aussehen:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3000</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nt">db</span><span class="p">:</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5432</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wikijs</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="nt">pass</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EIN_LANGES_ZUFAELLIGES_PASSWORT</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="nt">db</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wikijs</span>
+</span></code></pre></div>
+<p>Die Datenbank und das angegebene Datenbankkonto müssen bereits existieren. Weitere Optionen erklärt die offizielle <a href="https://docs.requarks.io/install/config">Konfigurationsreferenz</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: Zugangsdaten schützen</p>
+<p>Die Datei <code>config.yml</code> enthält üblicherweise das Datenbankpasswort. Beschränke deshalb den Zugriff auf den Dienstbenutzer:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>/var/wiki/config.yml
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>wikijs:wikijs<span class="w"> </span>/var/wiki/config.yml
+</span></code></pre></div>
+</div>
+<p>Nur wenn <strong>SQLite</strong> verwendet wird, müssen zusätzlich dessen native Bindings im Installationsordner neu gebaut werden:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>/var/wiki
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>npm<span class="w"> </span>rebuild<span class="w"> </span>sqlite3
+</span></code></pre></div>
+<p>Für den produktiven Betrieb ist PostgreSQL die bessere Wahl.</p>
+<hr />
+<h2 id="4-ersten-start-testen">4. Ersten Start testen<a class="headerlink" href="#4-ersten-start-testen" title="Permanent link">&para;</a></h2>
+<p>Starte Wiki.js zunächst im Vordergrund. So werden Konfigurations- oder Datenbankfehler direkt im Terminal sichtbar:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">cd</span><span class="w"> </span>/var/wiki
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>env<span class="w"> </span><span class="nv">NODE_ENV</span><span class="o">=</span>production<span class="w"> </span>/usr/bin/node<span class="w"> </span>server
+</span></code></pre></div>
+<p>Sobald der Start erfolgreich war, öffne im Browser <code>http://SERVER-IP:3000</code> beziehungsweise die konfigurierte Domain und führe den Einrichtungsassistenten aus. Beende den Testlauf danach mit ++ctrl+c++, bevor der dauerhafte Dienst gestartet wird.</p>
+<hr />
+<h2 id="5-systemd-dienst-einrichten">5. <code>systemd</code>-Dienst einrichten<a class="headerlink" href="#5-systemd-dienst-einrichten" title="Permanent link">&para;</a></h2>
+<p>Lege die Datei <code>/etc/systemd/system/wikijs.service</code> mit folgendem Inhalt an:</p>
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">[Unit]</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Wiki.js</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="na">After</span><span class="o">=</span><span class="s">network-online.target</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="na">Wants</span><span class="o">=</span><span class="s">network-online.target</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">[Service]</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="na">User</span><span class="o">=</span><span class="s">wikijs</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="na">Group</span><span class="o">=</span><span class="s">wikijs</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/var/wiki</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="na">Environment</span><span class="o">=</span><span class="s">NODE_ENV=production</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/node server</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="na">Restart</span><span class="o">=</span><span class="s">on-failure</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="na">RestartSec</span><span class="o">=</span><span class="s">5</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="k">[Install]</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</span></code></pre></div>
+<p>Danach liest <code>systemd</code> die neue Definition ein. Der zweite Befehl aktiviert den automatischen Start und startet Wiki.js sofort:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>wikijs
+</span></code></pre></div>
+<p>Status und Protokollausgaben lassen sich so kontrollieren:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>wikijs
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>-f
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Hinweis zum Node.js-Pfad</p>
+<p><code>/usr/bin/node</code> ist ein häufig verwendeter Pfad, aber nicht auf jedem System korrekt. Zeigt <code>command -v node</code> einen anderen Speicherort, muss <code>ExecStart</code> entsprechend angepasst werden.</p>
+</div>
+<hr />
+<h2 id="6-netzwerk-und-reverse-proxy">6. Netzwerk und Reverse Proxy<a class="headerlink" href="#6-netzwerk-und-reverse-proxy" title="Permanent link">&para;</a></h2>
+<p>Wiki.js kann selbst Anfragen annehmen. Für eine öffentliche Installation ist dennoch meist ein Reverse Proxy wie Nginx, Caddy oder Apache sinnvoll, insbesondere für HTTPS und eine saubere Domain-Konfiguration.</p>
+<p>Wiki.js wird auf einer eigenen Domain oder Subdomain betrieben, zum Beispiel <code>wiki.example.org</code>. Ein Betrieb in einem Unterpfad wie <code>example.org/wiki</code> wird nicht unterstützt.</p>
+<hr />
+<h2 id="kurzprufung">Kurzprüfung<a class="headerlink" href="#kurzprufung" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>systemctl<span class="w"> </span>is-enabled<span class="w"> </span>wikijs
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>systemctl<span class="w"> </span>is-active<span class="w"> </span>wikijs
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>curl<span class="w"> </span>-I<span class="w"> </span>http://127.0.0.1:3000
+</span></code></pre></div>
+<p>Wenn der Dienst aktiviert und aktiv ist und der HTTP-Aufruf eine Antwort liefert, läuft die Anwendung. Danach sollten noch HTTPS, Firewall, Backups und regelmäßige Updates eingerichtet werden.</p>
+<hr />
+<h2 id="quellen-und-weiterfuhrende-informationen">Quellen und weiterführende Informationen<a class="headerlink" href="#quellen-und-weiterfuhrende-informationen" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://docs.requarks.io/install/linux">Wiki.js: Installation unter Linux</a> – technische Ausgangsbasis dieser eigenständig formulierten Anleitung</li>
+<li><a href="https://docs.requarks.io/install/requirements">Wiki.js: Systemanforderungen</a></li>
+<li><a href="https://docs.requarks.io/install/config">Wiki.js: Konfigurationsreferenz</a></li>
+<li><a href="../wikijs-ki-agent/">Wiki.js-Agenten-Pipeline</a> – automatisierte Inhaltspflege über die GraphQL-API</li>
+<li><a href="../">Dokumentationsübersicht</a></li>
+</ul>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
 
@@ -2890,7 +3059,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Installieren">
+          <a href="../semantische-mediawiki/smw-sparql-queries/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: SMW SPARQL Endpoint">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -2900,20 +3069,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Installieren
+                SMW SPARQL Endpoint
               </div>
             </div>
           </a>
         
         
           
-          <a href="../wiederherstellen/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Wiederherstellen">
+          <a href="../wikijs-ki-agent/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Agenten-Pipeline (Automatisierte Pflege mit LLMs)">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Wiederherstellen
+                Agenten-Pipeline (Automatisierte Pflege mit LLMs)
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2932,9 +3101,9 @@
           <div class="md-copyright__highlight">
             Copyright &copy; Wissen Ahrensburg
             &middot;
-            <a href="../../../../rechtliches/impressum/">Impressum</a>
+            <a href="../../../rechtliches/impressum/">Impressum</a>
             &middot;
-            <a href="../../../../rechtliches/datenschutz/">Datenschutz</a>
+            <a href="../../../rechtliches/datenschutz/">Datenschutz</a>
           </div>
         
         
@@ -3039,10 +3208,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../../..","features":["navigation.top","navigation.sections","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.path","navigation.prune","navigation.footer","search.suggest","search.highlight","search.share","content.code.copy","content.code.annotate","content.code.select","content.tooltips","content.tabs.link","content.action.view","toc.follow"],"search":"../../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"In Zwischenablage kopiert","clipboard.copy":"In Zwischenablage kopieren","search.result.more.one":"1 weiteres Suchergebnis auf dieser Seite","search.result.more.other":"# weitere Suchergebnisse auf dieser Seite","search.result.none":"Keine Suchergebnisse","search.result.one":"1 Suchergebnis","search.result.other":"# Suchergebnisse","search.result.placeholder":"Suchbegriff eingeben","search.result.term.missing":"Es fehlt","select.version":"Version auswählen"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.top","navigation.sections","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.path","navigation.prune","navigation.footer","search.suggest","search.highlight","search.share","content.code.copy","content.code.annotate","content.code.select","content.tooltips","content.tabs.link","content.action.view","toc.follow"],"search":"../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"In Zwischenablage kopiert","clipboard.copy":"In Zwischenablage kopieren","search.result.more.one":"1 weiteres Suchergebnis auf dieser Seite","search.result.more.other":"# weitere Suchergebnisse auf dieser Seite","search.result.none":"Keine Suchergebnisse","search.result.one":"1 Suchergebnis","search.result.other":"# Suchergebnisse","search.result.placeholder":"Suchbegriff eingeben","search.result.term.missing":"Es fehlt","select.version":"Version auswählen"},"version":null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.ed145cee.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ed145cee.min.js"></script>
       
     
   </body>
