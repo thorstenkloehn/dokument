@@ -62,6 +62,25 @@ graph TD
 
 ---
 
+## Optional: Such-Tools
+
+Bei kleiner Skalierung (bis grob 100 Quellen, einige hundert Seiten) reicht `index.md` als Sucheinstieg. Wächst das Wiki darüber hinaus, empfiehlt Karpathy [qmd](https://github.com/tobi/qmd) — eine lokale Suchmaschine für Markdown-Dateien mit hybrider BM25/Vektor-Suche und LLM-Reranking, vollständig on-device. Sie bringt sowohl eine CLI (für den Agenten) als auch einen MCP-Server (als natives Tool) mit. Alternativ lässt sich ein einfaches Suchskript passend zur eigenen Struktur per Vibe-Coding vom Agenten selbst erstellen.
+
+---
+
+## Tipps & Tricks aus der Praxis
+
+Karpathys Original-Gist beschreibt seinen persönlichen Workflow mit Obsidian als Wiki-Oberfläche. Die Tipps sind Obsidian-spezifisch, das zugrunde liegende Prinzip überträgt sich aber auf jedes Markdown-basierte Wiki (auch auf dieses Repository):
+
+- **Obsidian Web Clipper** — Browser-Erweiterung, die Webartikel direkt als Markdown in die Rohsammlung (`raw/`) überführt.
+- **Bilder lokal speichern** — in Obsidian unter „Dateien & Links" einen festen Anhang-Ordner setzen (z. B. `raw/assets/`) und „Anhänge für aktuelle Datei herunterladen" auf ein Tastenkürzel legen. Wichtig, weil LLMs eingebettete Bilder in Markdown nicht in einem Durchgang mitlesen — der Agent liest zuerst den Text und betrachtet referenzierte Bilder danach separat.
+- **Graph-Ansicht** — der schnellste Weg, die Form eines Wikis zu erfassen: welche Seiten Knotenpunkte (Hubs) sind, welche verwaist sind.
+- **Marp** — Markdown-basiertes Folienformat mit Obsidian-Plugin, um Präsentationen direkt aus Wiki-Inhalten zu generieren.
+- **Dataview** — Obsidian-Plugin für Abfragen über Frontmatter (Tags, Daten, Quellenzahl); erzeugt dynamische Tabellen/Listen, sofern der Agent konsistentes YAML-Frontmatter pflegt.
+- **Git-Versionierung** — das Wiki ist einfach ein Git-Repository aus Markdown-Dateien; Versionsverlauf, Branching und Zusammenarbeit gibt es dadurch „geschenkt".
+
+---
+
 ## Warum das Muster funktioniert
 
 Karpathys zentrale These: *„Die mühsame Arbeit bei Wissensbasen ist nicht das Lesen oder Denken — es ist die Buchhaltung."* Menschen geben Wikis typischerweise auf, weil der Pflegeaufwand (Querverweise aktuell halten, Redundanzen vermeiden, Struktur konsistent halten) schneller wächst als der Nutzen. Ein LLM-Agent:
