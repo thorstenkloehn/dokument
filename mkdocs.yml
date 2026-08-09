@@ -309,9 +309,11 @@ nav:
               - Erweiterungen: wissen/dokumentation/semantische-mediawiki/wichtige-erweiterungen.md
               - SMW Inline Queries: wissen/dokumentation/semantische-mediawiki/smw-inline-queries.md
               - SMW SPARQL Endpoint: wissen/dokumentation/semantische-mediawiki/smw-sparql-queries.md
+          - "Wiki.js Agenten-Pipeline (Automatisierte Pflege mit LLMs)": wissen/dokumentation/wikijs-ki-agent.md
           - XWiki:
               - Installieren: wissen/dokumentation/xwiki/installieren.md
               - XWiki REST API & Python: wissen/dokumentation/xwiki/xwiki-rest-api.md
+              - Agenten-Pipeline (Automatisierte Pflege mit LLMs): wissen/dokumentation/xwiki/xwiki-ki-agent.md
 
   # ⚖️ RECHTLICHES
   - Rechtliches:
