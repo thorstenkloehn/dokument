@@ -216,6 +216,12 @@ nav:
           - Kotlin Praxis-Handbuch: entwicklung/ide/kotlin-praxis.md
           - Lokale KI-Frontends: entwicklung/ide/lokale-ki-frontends.md
 
+      - Agentic Coding & Curriculum:
+          - Übersicht & Curriculum: entwicklung/agentic-coding-curriculum/index.md
+          - KI-Entwicklungsworkflow für Rust: entwicklung/agentic-coding-curriculum/ki-entwicklungsworkflow-rust.md
+          - "Claude Code CLI: End-to-End-Leitfaden": entwicklung/agentic-coding-curriculum/claude-code-cli-leitfaden.md
+          - Rust-Praxisprojekte mit Claude Code: entwicklung/agentic-coding-curriculum/rust-praxisprojekte.md
+
   # 🎨 KREATIV
   - Kreativ:
       - Design:
