@@ -99,7 +99,7 @@ sudo nano /etc/nginx/conf.d/mediawiki.conf
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name wissen-ahrensburg.de;
+    server_name mediawiki.wissen-ahrensburg.de;
     ssl_certificate /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem;
 
@@ -123,7 +123,7 @@ server {
 server {
     listen 80;
     listen [::]:80;
-    server_name wissen-ahrensburg.de;
+    server_name mediawiki.wissen-ahrensburg.de;
     return 301 https://$host$request_uri;
 }
 ```
