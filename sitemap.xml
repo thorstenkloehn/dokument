@@ -388,9 +388,6 @@
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/nginx-geoip-blocking/</loc>
       </url>
       <url>
-        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/apache-nginx/</loc>
-      </url>
-      <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/postgresql/</loc>
       </url>
       <url>
@@ -437,18 +434,6 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/sicherheit/</loc>
-      </url>
-      <url>
-        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/kachelserver/server204/</loc>
-      </url>
-      <url>
-        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/kachelserver/server224/</loc>
-      </url>
-      <url>
-        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/kachelserver/server244/</loc>
-      </url>
-      <url>
-        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/kachelserver/alternative-kachelserver/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/</loc>
