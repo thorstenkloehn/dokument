@@ -14,9 +14,9 @@ Ein Cookie-Consent-Banner (aktives Opt-in) ist nach **TTDSG §25 Abs. 2 Nr. 2** 
 ```mermaid
 graph TD
     A["Cookie wird gesetzt"] --> B{"Technisch notwendig?"}
-    B -->|Ja: Session, Login, CSRF-Token, Präferenzen| C["Keine Einwilligung nötig"]
+    B -->|"Ja: Session, Login, CSRF-Token, Präferenzen"| C["Keine Einwilligung nötig"]
     C --> D["Info in Datenschutzerklärung reicht"]
-    B -->|Nein: Analytics, Tracking, externe Embeds, Werbung| E["Einwilligung nötig (Opt-in)"]
+    B -->|"Nein: Analytics, Tracking, externe Embeds, Werbung"| E["Einwilligung nötig (Opt-in)"]
     E --> F["Cookie-Consent-Banner vor dem Laden"]
 ```
 
