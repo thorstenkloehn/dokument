@@ -60,13 +60,6 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 - Load Balancing für Backend-Services
 - SSL/TLS-Terminierung mit Let's Encrypt
 
-#### [Apache Nginx Kopplung](apache-nginx.md)
-**Integration von Apache HTTP Server mit Nginx** – Kombiniert die Stärken beider Webserver.
-
-* **Architektur**: Nginx als Frontend, Apache als Backend
-* **Vorteile**: Beste Performance für statische Inhalte + volle Apache-Kompatibilität
-* **Use Cases**: Legacy-Applikationen, .htaccess-Konfigurationen, spezielle Apache-Module
-
 #### [Nginx SSL](nginx-ssl.md)
 **SSL/TLS-Konfiguration für Nginx** – Sichere Kommunikation mit Let's Encrypt Zertifikaten.
 
@@ -101,33 +94,7 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 
 ---
 
-### 4. Kachelserver (Tileserver)
-
-**OpenStreetMap-Kachelserver für verschiedene Ubuntu-Versionen** – Schritt-für-Schritt-Anleitungen zur Einrichtung von Kachelservern.
-
-| Version | Beschreibung | Link |
-|---------|--------------|------|
-| [Ubuntu 20.04](kachelserver/server204.md) | Ältere LTS-Version | Detaillierte Anleitung |
-| [Ubuntu 22.04](kachelserver/server224.md) | Aktuelle LTS-Version | Detaillierte Anleitung |
-| [Ubuntu 24.04](kachelserver/server244.md) | Neueste LTS-Version | Detaillierte Anleitung |
-
-**Hauptkomponenten:**
-- **Datenquellen**: OpenStreetMap PBF-Dateien
-- **Datenbank**: PostgreSQL mit PostGIS
-- **Rendering**: Mapnik oder alternative Renderer
-- **Tile-Caching**: Mod_tile für Apache oder Nginx
-- **Style**: OSM Standard-Stil oder benutzerspezifisch
-
-**Typische Workflows:**
-1. OSM-Daten herunterladen (z.B. von Geofabrik)
-2. Daten in PostgreSQL importieren (osm2pgsql)
-3. Renderer konfigurieren (Mapnik)
-4. Webserver für Tile-Auslieferung einrichten
-5. Caching für bessere Performance aktivieren
-
----
-
-### 5. KI/ML-Infrastrukturen
+### 4. KI/ML-Infrastrukturen
 
 #### [KI/ML-Infrastrukturen](ki-ml-infrastrukturen.md)
 **Skalierbare KI/ML-Infrastrukturen für Training und Inference** – Komplettanleitung von Single-Node bis Cluster-Skalierung.

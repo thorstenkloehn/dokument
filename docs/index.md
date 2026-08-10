@@ -160,9 +160,6 @@ graph TD
 - [Grundlagen](entwicklung/infrastruktur/postgresql.md) · [Backup](entwicklung/infrastruktur/postgresql-backup-restore.md)
 - [Performance Tuning](entwicklung/infrastruktur/postgresql-tuning.md) · [pgvector](wissen/daten/datenbanken/pgvector-anleitung.md)
 
-**Kachelserver**
-- [Ubuntu 22.04](entwicklung/infrastruktur/kachelserver/server224.md) · [Ubuntu 24.04](entwicklung/infrastruktur/kachelserver/server244.md)
-
 </div>
 
 </div>

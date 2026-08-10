@@ -9,14 +9,8 @@ Willkommen im Bereich **Server und Infrastruktur**! Hier finden Sie Anleitungen 
 - [PostgreSQL DBA Praxis-Handbuch](postgresql-dba-praxis.md) - Komplettes Administrator-Handbuch
 
 ### Webserver
-- [Apache-Server mit Nginx verbinden](apache-nginx.md)
 - [Nginx SSL Zertifikat](nginx-ssl.md)
 - [Nginx Einstellungen](nginx.md)
-
-### Kachelserver
-- [Server 20.04](kachelserver/server204.md)
-- [Server 22.04](kachelserver/server224.md)
-- [Server 24.04](kachelserver/server244.md)
 
 ### Anwendungen
 - [Installation](installation.md) - Allgemeine Installationsanleitungen

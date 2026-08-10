@@ -80,5 +80,4 @@ upstream backend_sticky {
 ---
 
 ## 🔗 Verwandte Themen
-* [Apache + Nginx](apache-nginx.md) – Kombination beider Server
 * [Nginx Hardening & Sicherheit](nginx-hardening.md) – Sicherheits-Setup

@@ -242,7 +242,6 @@ Ein Desktop-Tool zur Verwaltung der Synchronisation zwischen Feldgeräten und Se
 
 ## 🔗 Verwandte Themen
 
-* [Kachelserver Ubuntu 24.04](../../../entwicklung/infrastruktur/kachelserver/server244.md) – Räumliche Datenverarbeitung
 * [PostgreSQL](../../../entwicklung/infrastruktur/postgresql.md) – Datenbankspeicherung
 * [Dokumentation](../../dokumentation/index.md) – Dokumentation der Datenerfassung
 * [Analysetool](../../tools/analysetool.md) – Datenanalyse-Tools
