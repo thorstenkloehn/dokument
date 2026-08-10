@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/llm-wiki-pattern-karpathy/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/e-learning/moodle-nginx-ssl-hardening/">
       
       
-        <link rel="prev" href="../cms-mcp-server-topliste/">
+        <link rel="prev" href="../moodle-nginx-configuration/">
       
       
-        <link rel="next" href="../ki-autonome-wiki-strukturierung-selfhosting-migration/">
+        <link rel="next" href="../../tools/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>LLM-Wiki-Pattern (Karpathy-Muster) - Wissen Ahrensburg</title>
+        <title>Moodle: SSL/HTTPS einrichten & Nginx absichern - Wissen Ahrensburg</title>
       
     
     
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#llm-wiki-pattern-karpathy-muster" class="md-skip">
+        <a href="#moodle-sslhttps-einrichten-nginx-absichern" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLM-Wiki-Pattern (Karpathy-Muster)
+              Moodle: SSL/HTTPS einrichten &amp; Nginx absichern
             
           </span>
         </div>
@@ -994,8 +994,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1031,15 +1033,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../e-learning/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1062,7 +1064,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1081,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/ki-lehre-weiterbildung/" class="md-nav__link">
+      <a href="../ki-lehre-weiterbildung/" class="md-nav__link">
         
   
   
@@ -1108,7 +1110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/sprachlern-ki-agenten-topliste/" class="md-nav__link">
+      <a href="../sprachlern-ki-agenten-topliste/" class="md-nav__link">
         
   
   
@@ -1135,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/lernmethoden-programmiersprachen/" class="md-nav__link">
+      <a href="../lernmethoden-programmiersprachen/" class="md-nav__link">
         
   
   
@@ -1162,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
+      <a href="../interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
         
   
   
@@ -1189,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/moodle-installation/" class="md-nav__link">
+      <a href="../moodle-installation/" class="md-nav__link">
         
   
   
@@ -1216,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/moodle-nginx-configuration/" class="md-nav__link">
+      <a href="../moodle-nginx-configuration/" class="md-nav__link">
         
   
   
@@ -1240,10 +1242,36 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../e-learning/moodle-nginx-ssl-hardening/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Moodle: SSL/HTTPS einrichten & Nginx absichern
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1258,6 +1286,159 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ubersicht" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Übersicht
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-zertifikat-mit-certbot-beziehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Zertifikat mit Certbot beziehen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-http-https-redirect" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. HTTP → HTTPS-Redirect
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tls-parameter-im-https-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. TLS-Parameter im HTTPS-Block
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configphp-fur-https-anpassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. <code>config.php</code> für HTTPS anpassen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-sicherheits-header-mit-moodle-besonderheiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Sicherheits-Header — mit Moodle-Besonderheiten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-brute-force-schutz-fur-den-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Brute-Force-Schutz für den Login
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-gzip-kompression" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Gzip-Kompression
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-timeouts-buffer-fur-groe-uploadsbackups" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8. Timeouts &amp; Buffer für große Uploads/Backups
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-weitere-grundhartung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        9. Weitere Grundhärtung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1474,8 +1655,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1541,15 +1720,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../dokumentation/" class="md-nav__link ">
               
   
   
@@ -1572,7 +1751,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1591,7 +1770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm-first-wiki-tools-agenten/" class="md-nav__link">
+      <a href="../../dokumentation/llm-first-wiki-tools-agenten/" class="md-nav__link">
         
   
   
@@ -1618,7 +1797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../klassische-wiki-systeme-llm-integration/" class="md-nav__link">
+      <a href="../../dokumentation/klassische-wiki-systeme-llm-integration/" class="md-nav__link">
         
   
   
@@ -1645,7 +1824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
+      <a href="../../dokumentation/klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
         
   
   
@@ -1672,7 +1851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../open-source-llm-agent-mcp-systeme/" class="md-nav__link">
+      <a href="../../dokumentation/open-source-llm-agent-mcp-systeme/" class="md-nav__link">
         
   
   
@@ -1699,7 +1878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wissensmanagement-mcp-server-topliste/" class="md-nav__link">
+      <a href="../../dokumentation/wissensmanagement-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1726,7 +1905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cms-mcp-server-topliste/" class="md-nav__link">
+      <a href="../../dokumentation/cms-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1750,36 +1929,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  LLM-Wiki-Pattern (Karpathy-Muster)
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../dokumentation/llm-wiki-pattern-karpathy/" class="md-nav__link">
         
   
   
@@ -1794,137 +1947,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#kernidee-kompilieren-statt-retrieval" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Kernidee: Kompilieren statt Retrieval
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architektur-drei-schichten" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Architektur: Drei Schichten
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kernoperationen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Kernoperationen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#indexierung-logbuch" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Indexierung &amp; Logbuch
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional-such-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Optional: Such-Tools
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipps-tricks-aus-der-praxis" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Tipps &amp; Tricks aus der Praxis
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#warum-das-muster-funktioniert" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Warum das Muster funktioniert
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#konkrete-implementierung-openwiki-langchain" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Konkrete Implementierung: OpenWiki (LangChain)
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bezug-zu-diesem-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Bezug zu diesem Repository
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verwandte-themen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Verwandte Themen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1937,7 +1959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
+      <a href="../../dokumentation/ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
         
   
   
@@ -1964,7 +1986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openwiki-repo-dokumentation-agent/" class="md-nav__link">
+      <a href="../../dokumentation/openwiki-repo-dokumentation-agent/" class="md-nav__link">
         
   
   
@@ -1991,7 +2013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../onyx-danswer-rag-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/onyx-danswer-rag-plattform/" class="md-nav__link">
         
   
   
@@ -2018,7 +2040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../anythingllm-rag-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/anythingllm-rag-plattform/" class="md-nav__link">
         
   
   
@@ -2045,7 +2067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../open-webui-rag-agenten-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/open-webui-rag-agenten-plattform/" class="md-nav__link">
         
   
   
@@ -2072,7 +2094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dify-agenten-workflow-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/dify-agenten-workflow-plattform/" class="md-nav__link">
         
   
   
@@ -2099,7 +2121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flowise-visueller-flow-builder/" class="md-nav__link">
+      <a href="../../dokumentation/flowise-visueller-flow-builder/" class="md-nav__link">
         
   
   
@@ -2126,7 +2148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../khoj-ki-zweites-gehirn/" class="md-nav__link">
+      <a href="../../dokumentation/khoj-ki-zweites-gehirn/" class="md-nav__link">
         
   
   
@@ -2153,7 +2175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pkm-second-brain-methoden/" class="md-nav__link">
+      <a href="../../dokumentation/pkm-second-brain-methoden/" class="md-nav__link">
         
   
   
@@ -2180,7 +2202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
+      <a href="../../dokumentation/wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
         
   
   
@@ -2245,7 +2267,7 @@
   
   
   
-    <a href="../mediawiki/" class="md-nav__link">
+    <a href="../../dokumentation/mediawiki/" class="md-nav__link">
       
   
   
@@ -2310,7 +2332,7 @@
   
   
   
-    <a href="../semantische-mediawiki/installieren/" class="md-nav__link">
+    <a href="../../dokumentation/semantische-mediawiki/installieren/" class="md-nav__link">
       
   
   
@@ -2371,7 +2393,7 @@
   
   
   
-    <a href="../wikijs-linux-installation/" class="md-nav__link">
+    <a href="../../dokumentation/wikijs-linux-installation/" class="md-nav__link">
       
   
   
@@ -2436,7 +2458,7 @@
   
   
   
-    <a href="../xwiki/installieren/" class="md-nav__link">
+    <a href="../../dokumentation/xwiki/installieren/" class="md-nav__link">
       
   
   
@@ -2584,10 +2606,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#kernidee-kompilieren-statt-retrieval" class="md-nav__link">
+  <a href="#ubersicht" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Kernidee: Kompilieren statt Retrieval
+        Übersicht
       </span>
     </span>
   </a>
@@ -2595,10 +2617,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architektur-drei-schichten" class="md-nav__link">
+  <a href="#1-zertifikat-mit-certbot-beziehen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Architektur: Drei Schichten
+        1. Zertifikat mit Certbot beziehen
       </span>
     </span>
   </a>
@@ -2606,10 +2628,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kernoperationen" class="md-nav__link">
+  <a href="#2-http-https-redirect" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Kernoperationen
+        2. HTTP → HTTPS-Redirect
       </span>
     </span>
   </a>
@@ -2617,10 +2639,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#indexierung-logbuch" class="md-nav__link">
+  <a href="#3-tls-parameter-im-https-block" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Indexierung &amp; Logbuch
+        3. TLS-Parameter im HTTPS-Block
       </span>
     </span>
   </a>
@@ -2628,10 +2650,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#optional-such-tools" class="md-nav__link">
+  <a href="#4-configphp-fur-https-anpassen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Optional: Such-Tools
+        4. <code>config.php</code> für HTTPS anpassen
       </span>
     </span>
   </a>
@@ -2639,10 +2661,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipps-tricks-aus-der-praxis" class="md-nav__link">
+  <a href="#5-sicherheits-header-mit-moodle-besonderheiten" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Tipps &amp; Tricks aus der Praxis
+        5. Sicherheits-Header — mit Moodle-Besonderheiten
       </span>
     </span>
   </a>
@@ -2650,10 +2672,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#warum-das-muster-funktioniert" class="md-nav__link">
+  <a href="#6-brute-force-schutz-fur-den-login" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Warum das Muster funktioniert
+        6. Brute-Force-Schutz für den Login
       </span>
     </span>
   </a>
@@ -2661,10 +2683,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#konkrete-implementierung-openwiki-langchain" class="md-nav__link">
+  <a href="#7-gzip-kompression" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Konkrete Implementierung: OpenWiki (LangChain)
+        7. Gzip-Kompression
       </span>
     </span>
   </a>
@@ -2672,10 +2694,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bezug-zu-diesem-repository" class="md-nav__link">
+  <a href="#8-timeouts-buffer-fur-groe-uploadsbackups" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Bezug zu diesem Repository
+        8. Timeouts &amp; Buffer für große Uploads/Backups
       </span>
     </span>
   </a>
@@ -2683,10 +2705,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verwandte-themen" class="md-nav__link">
+  <a href="#9-weitere-grundhartung" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Verwandte Themen
+        9. Weitere Grundhärtung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
       </span>
     </span>
   </a>
@@ -2808,34 +2852,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
     
     
     
@@ -2845,7 +2861,7 @@
           
   
   <span class="md-ellipsis">
-    Dokumentation
+    E-Learning
   </span>
 
         </a>
@@ -2863,163 +2879,240 @@
                   
 
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
-<h1 id="llm-wiki-pattern-karpathy-muster">LLM-Wiki-Pattern (Karpathy-Muster)<a class="headerlink" href="#llm-wiki-pattern-karpathy-muster" title="Permanent link">&para;</a></h1>
-<p>Das <strong>LLM-Wiki-Pattern</strong> ist ein von Andrej Karpathy (Mitgründer OpenAI, ehem. AI-Direktor bei Tesla) im April 2026 als GitHub-Gist veröffentlichtes Architekturmuster: Statt bei jeder Anfrage Rohdokumente per RAG (Retrieval-Augmented Generation) neu zu durchsuchen, lässt man ein LLM einmalig eine <strong>persistente, strukturierte Wiki</strong> aus den Quellen aufbauen — und fragt danach nur noch gegen dieses kompilierte Wissen ab. Diese Seite erklärt das Muster selbst; die konkrete Open-Source-Umsetzung davon ist <a href="../openwiki-repo-dokumentation-agent/">OpenWiki (LangChain)</a>.</p>
+<h1 id="moodle-sslhttps-einrichten-nginx-absichern">Moodle: SSL/HTTPS einrichten &amp; Nginx absichern<a class="headerlink" href="#moodle-sslhttps-einrichten-nginx-absichern" title="Permanent link">&para;</a></h1>
+<p>Dieses Kapitel baut auf <a href="../moodle-nginx-configuration/">Moodle: Nginx-Konfiguration im Detail</a> auf und ergänzt den bisherigen HTTP-Serverblock um ein Let's-Encrypt-Zertifikat, eine gehärtete TLS-Konfiguration sowie weitere Moodle-spezifische Nginx-Einstellungen: Sicherheits-Header, Brute-Force-Schutz für den Login, Gzip-Kompression und Timeouts für große Uploads/Backups.</p>
 <div class="admonition note">
-<p class="admonition-title">Hinweis: Primärquelle</p>
-<p>Das Pattern ist als Prosa-Text (Prompt/Idee zum Einfügen in einen Agenten) veröffentlicht, nicht als fertiges Produkt: <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">gist.github.com/karpathy/442a6bf555914893e9891c11519de94f</a>.</p>
+<p class="admonition-title">Hinweis zur Quelle</p>
+<p>Die TLS-Parameter orientieren sich an den <a href="https://ssl-config.mozilla.org/">Mozilla SSL Configuration Generator</a>-Empfehlungen (Profil „Intermediate“) sowie der <a href="https://docs.moodle.org/en/Nginx">Moodle-Nginx-Dokumentation</a>. Für die allgemeinen Grundlagen zu Zertifikaten und Wildcard-Domains siehe <a href="../../../entwicklung/infrastruktur/nginx-ssl/">Nginx: SSL &amp; HTTPS</a> und <a href="../../../entwicklung/infrastruktur/nginx-hardening/">Nginx: Hardening &amp; Sicherheit</a> — dieses Kapitel wendet beides konkret auf die Moodle-Installation aus <a href="../moodle-installation/">Moodle auf Ubuntu Server installieren</a> an.</p>
 </div>
 <hr />
-<h2 id="kernidee-kompilieren-statt-retrieval">Kernidee: Kompilieren statt Retrieval<a class="headerlink" href="#kernidee-kompilieren-statt-retrieval" title="Permanent link">&para;</a></h2>
-<p>Karpathys Analogie stammt aus der Softwareentwicklung: Ein Compiler übersetzt Quellcode einmalig in ein optimiertes Binary — man führt nicht bei jedem Programmstart den Quellcode erneut aus, sondern kompiliert einmal und nutzt danach das Artefakt.</p>
-<p>Auf Wissensarbeit übertragen: <strong>RAG</strong> durchsucht bei <em>jeder</em> Anfrage erneut die Rohquellen und muss Zusammenhänge jedes Mal neu rekonstruieren. Das <strong>LLM-Wiki-Pattern</strong> dreht die Reihenfolge um — „compile deine Quellen zuerst":</p>
+<h2 id="ubersicht">Übersicht<a class="headerlink" href="#ubersicht" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph LR
+    Browser["Browser"] --&gt;|"HTTP 80"| Redirect["Nginx: 301-Redirect"]
+    Redirect --&gt;|"HTTPS 301"| Browser
+    Browser --&gt;|"HTTPS 443"| TLS["Nginx: TLS-Terminierung"]
+    TLS --&gt;|"FastCGI"| PHPFPM["PHP-FPM"]
+    PHPFPM --&gt; Moodle["Moodle"]
+    Certbot["Certbot"] -.-&gt;|"erneuert alle 60-90 Tage"| TLS</code></pre>
+<p>Nginx übernimmt für Moodle drei zusätzliche Aufgaben gegenüber der reinen HTTP-Konfiguration:</p>
 <ol>
-<li>Ein LLM liest die Rohquellen einmalig (oder inkrementell bei neuen Quellen).</li>
-<li>Es synthetisiert die Inhalte in strukturierte, untereinander verlinkte Wiki-Seiten.</li>
-<li>Alle folgenden Anfragen laufen gegen dieses <strong>kompilierte Artefakt</strong> — nicht mehr gegen die Rohquellen.</li>
+<li><strong>HTTP dauerhaft auf HTTPS umleiten</strong> — Moodle darf produktiv nicht unverschlüsselt erreichbar sein, da Anmeldedaten und Session-Cookies sonst im Klartext übertragen würden.</li>
+<li><strong>TLS mit sicheren Protokollen/Ciphern terminieren</strong>.</li>
+<li><strong>Zusätzliche Schutzmaßnahmen</strong>, die über das reine Routing aus dem vorherigen Kapitel hinausgehen: Header, Rate Limiting, Timeouts.</li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tipp: Kein Ersatz für RAG, sondern eine Vorstufe</p>
-<p>Das Pattern schließt klassisches RAG nicht aus — es reduziert nur, was zur Anfragezeit neu erschlossen werden muss. Für sehr große, sich schnell ändernde Quellenmengen bleibt eine Kombination aus beidem sinnvoll (siehe <a href="../#6-rag-ki-zentrierte-wissensdatenbanken-rag-co-wikis">RAG- &amp; KI-Zentrierte Wissensdatenbanken</a>).</p>
-</div>
 <hr />
-<h2 id="architektur-drei-schichten">Architektur: Drei Schichten<a class="headerlink" href="#architektur-drei-schichten" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>graph TD
-    Raw["raw/ — unveraenderliche Rohquellen&lt;br/&gt;(Artikel, PDFs, Notizen, Code)"] --&gt; Agent["LLM-Agent"]
-    Schema["CLAUDE.md / AGENTS.md — Schema&lt;br/&gt;(Konventionen, Workflows)"] --&gt; Agent
-    Agent --&gt;|"Ingest"| Wiki["wiki/ — generierte Markdown-Seiten&lt;br/&gt;(Entitaeten, Konzepte, Querverweise)"]
-    Wiki --&gt; Index["index.md — Inhaltsverzeichnis"]
-    Wiki --&gt; Log["log.md — chronologisches Logbuch"]
-    Query["Nutzerfrage"] --&gt;|"liest gegen"| Wiki</code></pre>
-<table>
-<thead>
-<tr>
-<th>Schicht</th>
-<th>Ordner/Datei</th>
-<th>Rolle</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Rohquellen</strong></td>
-<td><code>raw/</code></td>
-<td>Unveränderliche Datenbasis (Artikel, PDFs, Notizen). Der Agent liest sie, modifiziert sie aber nie.</td>
-</tr>
-<tr>
-<td><strong>Das Wiki</strong></td>
-<td><code>wiki/</code></td>
-<td>LLM-generierte Markdown-Dateien mit Querverweisen — je eine strukturierte, Wikipedia-artige Seite pro Konzept/Entität, verlinkt über <code>[[wiki-links]]</code>.</td>
-</tr>
-<tr>
-<td><strong>Schema</strong></td>
-<td><code>CLAUDE.md</code> / <code>AGENTS.md</code></td>
-<td>Dokumentiert Struktur und Konventionen des Wikis und definiert die Workflows für Ingestion, Abfragen und Wartung — die Instruktionsdatei, die der Agent bei jedem Lauf befolgt.</td>
-</tr>
-</tbody>
-</table>
+<h2 id="1-zertifikat-mit-certbot-beziehen">1. Zertifikat mit Certbot beziehen<a class="headerlink" href="#1-zertifikat-mit-certbot-beziehen" title="Permanent link">&para;</a></h2>
+<p>Die HTTP-Konfiguration aus <a href="../moodle-nginx-configuration/#5-sensible-pfade-sperren">Moodle: Nginx-Konfiguration im Detail</a> lässt <code>/.well-known/</code> bereits unangetastet — das ist Voraussetzung für die HTTP-01-Challenge von Let's Encrypt.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>certbot<span class="w"> </span>python3-certbot-nginx
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>certbot<span class="w"> </span>--nginx<span class="w"> </span>-d<span class="w"> </span>moodle.example.org
+</span></code></pre></div>
+<p>Das Certbot-Nginx-Plugin erkennt den bestehenden <code>server</code>-Block für <code>moodle.example.org</code>, ergänzt automatisch <code>listen 443 ssl;</code>, trägt die Zertifikatspfade ein und legt optional den HTTP→HTTPS-Redirect an. Für eine über mehrere Server/Loadbalancer verteilte Installation oder Wildcard-Zertifikate (<code>*.example.org</code>) gilt stattdessen das DNS-TXT-Verfahren aus <a href="../../../entwicklung/infrastruktur/nginx-ssl/">Nginx: SSL &amp; HTTPS</a>.</p>
+<p>Automatische Erneuerung prüfen (Certbot richtet dafür bereits einen systemd-Timer bzw. Cron-Eintrag ein):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>certbot<span class="w"> </span>renew<span class="w"> </span>--dry-run
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>list-timers<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>certbot
+</span></code></pre></div>
 <hr />
-<h2 id="kernoperationen">Kernoperationen<a class="headerlink" href="#kernoperationen" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Ingest</label><label for="__tabbed_1_2">Query</label><label for="__tabbed_1_3">Lint</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Neue Quelle wird zu <code>raw/</code> hinzugefügt. Der Agent liest sie, ordnet die Erkenntnisse ein, erstellt neue Wiki-Seiten oder aktualisiert bestehende — typischerweise werden pro Ingest-Lauf 10–15 Seiten berührt (neue Querverweise, aktualisierte Zusammenfassungen).</p>
-</div>
-<div class="tabbed-block">
-<p>Eine Frage wird gegen das Wiki gestellt (nicht gegen die Rohquellen). Der Agent sucht die relevanten Wiki-Seiten und synthetisiert eine Antwort mit Zitaten/Links auf die jeweiligen Seiten.</p>
-</div>
-<div class="tabbed-block">
-<p>Periodische Gesundheitsprüfung: Widersprüche zwischen Seiten, verwaiste Seiten (keine eingehenden Links), fehlende Querverweise. Entspricht im Prinzip dem, was <code>check_orphaned_files.py</code> in diesem Repository für die Nav-Struktur übernimmt (siehe <a href="#verwandte-themen">Verwandte Themen</a>).</p>
-</div>
-</div>
-</div>
-<hr />
-<h2 id="indexierung-logbuch">Indexierung &amp; Logbuch<a class="headerlink" href="#indexierung-logbuch" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong><code>index.md</code></strong> — Inhaltsverzeichnis mit Links, Einzeilern und Metadaten pro Kategorie. Entspricht funktional den <code>index.md</code>-Übersichtsseiten in diesem Repository (z. B. <a href="../">Dokumentenerstellung, Wikis &amp; Notebooks</a>).</li>
-<li><strong><code>log.md</code></strong> — chronologisches, append-only Logbuch mit konsistenten Präfixen, damit es maschinell parsebar bleibt (welche Quelle wann welche Seiten verändert hat).</li>
-</ul>
-<hr />
-<h2 id="optional-such-tools">Optional: Such-Tools<a class="headerlink" href="#optional-such-tools" title="Permanent link">&para;</a></h2>
-<p>Bei kleiner Skalierung (bis grob 100 Quellen, einige hundert Seiten) reicht <code>index.md</code> als Sucheinstieg. Wächst das Wiki darüber hinaus, empfiehlt Karpathy <a href="https://github.com/tobi/qmd">qmd</a> — eine lokale Suchmaschine für Markdown-Dateien mit hybrider BM25/Vektor-Suche und LLM-Reranking, vollständig on-device. Sie bringt sowohl eine CLI (für den Agenten) als auch einen MCP-Server (als natives Tool) mit. Alternativ lässt sich ein einfaches Suchskript passend zur eigenen Struktur per Vibe-Coding vom Agenten selbst erstellen.</p>
-<hr />
-<h2 id="tipps-tricks-aus-der-praxis">Tipps &amp; Tricks aus der Praxis<a class="headerlink" href="#tipps-tricks-aus-der-praxis" title="Permanent link">&para;</a></h2>
-<p>Karpathys Original-Gist beschreibt seinen persönlichen Workflow mit Obsidian als Wiki-Oberfläche. Die Tipps sind Obsidian-spezifisch, das zugrunde liegende Prinzip überträgt sich aber auf jedes Markdown-basierte Wiki (auch auf dieses Repository):</p>
-<ul>
-<li><strong>Obsidian Web Clipper</strong> — Browser-Erweiterung, die Webartikel direkt als Markdown in die Rohsammlung (<code>raw/</code>) überführt.</li>
-<li><strong>Bilder lokal speichern</strong> — in Obsidian unter „Dateien &amp; Links" einen festen Anhang-Ordner setzen (z. B. <code>raw/assets/</code>) und „Anhänge für aktuelle Datei herunterladen" auf ein Tastenkürzel legen. Wichtig, weil LLMs eingebettete Bilder in Markdown nicht in einem Durchgang mitlesen — der Agent liest zuerst den Text und betrachtet referenzierte Bilder danach separat.</li>
-<li><strong>Graph-Ansicht</strong> — der schnellste Weg, die Form eines Wikis zu erfassen: welche Seiten Knotenpunkte (Hubs) sind, welche verwaist sind.</li>
-<li><strong>Marp</strong> — Markdown-basiertes Folienformat mit Obsidian-Plugin, um Präsentationen direkt aus Wiki-Inhalten zu generieren.</li>
-<li><strong>Dataview</strong> — Obsidian-Plugin für Abfragen über Frontmatter (Tags, Daten, Quellenzahl); erzeugt dynamische Tabellen/Listen, sofern der Agent konsistentes YAML-Frontmatter pflegt.</li>
-<li><strong>Git-Versionierung</strong> — das Wiki ist einfach ein Git-Repository aus Markdown-Dateien; Versionsverlauf, Branching und Zusammenarbeit gibt es dadurch „geschenkt".</li>
-</ul>
-<hr />
-<h2 id="warum-das-muster-funktioniert">Warum das Muster funktioniert<a class="headerlink" href="#warum-das-muster-funktioniert" title="Permanent link">&para;</a></h2>
-<p>Karpathys zentrale These: <em>„Die mühsame Arbeit bei Wissensbasen ist nicht das Lesen oder Denken — es ist die Buchhaltung."</em> Menschen geben Wikis typischerweise auf, weil der Pflegeaufwand (Querverweise aktuell halten, Redundanzen vermeiden, Struktur konsistent halten) schneller wächst als der Nutzen. Ein LLM-Agent:</p>
-<ul>
-<li>vergisst keine Querverweise und aktualisiert sie zuverlässig bei jeder Änderung,</li>
-<li>bearbeitet mehrere betroffene Seiten in einem einzigen Durchlauf,</li>
-<li>ermüdet nicht an der reinen „Buchhaltungsarbeit", die Menschen von der Wiki-Pflege abhält.</li>
-</ul>
-<p>Die Rollenteilung bleibt dabei klar: <strong>der Mensch kuratiert Quellen und stellt Fragen — der Agent übernimmt Synthese und Pflege.</strong></p>
-<hr />
-<h2 id="konkrete-implementierung-openwiki-langchain">Konkrete Implementierung: OpenWiki (LangChain)<a class="headerlink" href="#konkrete-implementierung-openwiki-langchain" title="Permanent link">&para;</a></h2>
-<p>Das bekannteste Open-Source-Werkzeug, das dieses Pattern konkret umsetzt, ist <strong><a href="../openwiki-repo-dokumentation-agent/">OpenWiki</a></strong> von LangChain — ursprünglich für Code-Repositories gebaut (<code>raw/</code> = Codebase, <code>wiki/</code> = generierte Repo-Dokumentation), inzwischen auch im „Personal-Modus" für persönliche Wissensbasen mit externen Connectoren (Notion, Gmail, Git-Repos, Websuche) nutzbar.</p>
-<table>
-<thead>
-<tr>
-<th>Karpathy-Muster (allgemein)</th>
-<th>OpenWiki-Umsetzung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>raw/</code> — Rohquellen</td>
-<td>Codebase (Code-Modus) bzw. angebundene Connectoren (Personal-Modus)</td>
-</tr>
-<tr>
-<td><code>wiki/</code> — generiertes Wiki</td>
-<td><code>openwiki/*.md</code> bzw. <code>~/.openwiki/wiki/</code></td>
-</tr>
-<tr>
-<td>Schema-Instruktionsdatei</td>
-<td><code>INSTRUCTIONS.md</code>, plus Referenzen in <code>AGENTS.md</code>/<code>CLAUDE.md</code></td>
-</tr>
-<tr>
-<td>Ingest</td>
-<td><code>openwiki --init</code> / <code>openwiki code --update</code></td>
-</tr>
-<tr>
-<td>Query</td>
-<td>interaktive CLI (<code>openwiki "Prompt"</code>)</td>
-</tr>
-<tr>
-<td>Lint</td>
-<td>Diff-Analyse bei <code>--update</code> prüft betroffene Seiten</td>
-</tr>
-</tbody>
-</table>
-<p>Details zu Installation, CLI-Befehlen und CI-Integration siehe die eigene Seite <a href="../openwiki-repo-dokumentation-agent/">OpenWiki: Repo-Dokumentations-Agent (LangChain)</a>.</p>
+<h2 id="2-http-https-redirect">2. HTTP → HTTPS-Redirect<a class="headerlink" href="#2-http-https-redirect" title="Permanent link">&para;</a></h2>
+<p>Falls Certbot den Redirect nicht automatisch angelegt hat, oder um ihn explizit nachzuvollziehen:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">moodle.example.org</span><span class="p">;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="c1"># Let&#39;s-Encrypt-Erneuerung weiterhin über HTTP erlauben</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/.well-known/acme-challenge/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/moodle</span><span class="p">;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="kn">return</span><span class="w"> </span><span class="mi">301</span><span class="w"> </span><span class="s">https://</span><span class="nv">$host$request_uri</span><span class="p">;</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">}</span>
+</span></code></pre></div>
 <div class="admonition warning">
-<p class="admonition-title">Achtung: Muster ≠ Produkt</p>
-<p>Das Karpathy-Muster selbst ist keine Software, sondern eine Idee/ein Prompt-Template. Wer es ohne OpenWiki oder ein vergleichbares Werkzeug nachbauen will, benötigt einen eigenen Agenten (z. B. Claude Code, Antigravity CLI) mit einer Instruktionsdatei, die die drei Schichten (<code>raw/</code>, <code>wiki/</code>, Schema) sowie Ingest/Query/Lint als Workflows definiert.</p>
+<p class="admonition-title">Achtung: Kein <code>try_files</code> mehr im HTTP-Block</p>
+<p>Sobald HTTPS aktiv ist, darf der HTTP-Block aus dem vorherigen Kapitel (<code>try_files ... /index.php</code>) <strong>nicht</strong> parallel bestehen bleiben — sonst bleibt Moodle über die unverschlüsselte URL vollständig nutzbar. Der HTTP-Block reduziert sich auf die ACME-Challenge und den Redirect.</p>
 </div>
 <hr />
-<h2 id="bezug-zu-diesem-repository">Bezug zu diesem Repository<a class="headerlink" href="#bezug-zu-diesem-repository" title="Permanent link">&para;</a></h2>
-<p>Dieses Repository setzt bereits Teile des Musters ein, ohne es explizit so zu benennen:</p>
-<ul>
-<li><strong>Schema-Schicht</strong>: <code>CLAUDE.md</code> übernimmt die Rolle der Instruktionsdatei — sie dokumentiert Struktur (<code>docs/&lt;bereich&gt;/</code>), Konventionen und Workflows.</li>
-<li><strong>Lint-Operation</strong>: <code>.gemini/scripts/check_orphaned_files.py</code> prüft auf verwaiste Seiten, der <code>doc-checker</code>-Subagent erweitert das um Build-, Link- und Mermaid-Prüfung.</li>
-<li><strong>Fehlender Teil</strong>: Es gibt hier bewusst keine automatische Ingest-Operation, die eigenständig neue Wiki-Seiten aus Rohquellen generiert — Inhalte werden weiterhin kuratiert von Hand angelegt (siehe <code>zensical-docs</code>-Skill, Abschnitt „Neue Seite anlegen"). Das entspricht dem Human-in-the-Loop-Prinzip, das auch für <a href="../llm-first-wiki-tools-agenten/#4-autonome-wiki-pflege-agenten-agent-schreibt-in-ein-bestehendes-wiki">autonome Wiki-Pflege-Agenten</a> in diesem Repo gilt.</li>
-</ul>
+<h2 id="3-tls-parameter-im-https-block">3. TLS-Parameter im HTTPS-Block<a class="headerlink" href="#3-tls-parameter-im-https-block" title="Permanent link">&para;</a></h2>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">moodle.example.org</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="kn">ssl_certificate</span><span class="w">     </span><span class="s">/etc/letsencrypt/live/moodle.example.org/fullchain.pem</span><span class="p">;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/moodle.example.org/privkey.pem</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="kn">ssl_protocols</span><span class="w"> </span><span class="s">TLSv1.2</span><span class="w"> </span><span class="s">TLSv1.3</span><span class="p">;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="kn">ssl_ciphers</span><span class="w"> </span><span class="s">ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384</span><span class="p">;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="kn">ssl_prefer_server_ciphers</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="kn">ssl_session_cache</span><span class="w"> </span><span class="s">shared:MoodleSSL:10m</span><span class="p">;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="kn">ssl_session_timeout</span><span class="w"> </span><span class="s">1d</span><span class="p">;</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="kn">ssl_session_tickets</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="kn">ssl_stapling</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="kn">ssl_stapling_verify</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="kn">resolver</span><span class="w"> </span><span class="mi">1</span><span class="s">.1.1.1</span><span class="w"> </span><span class="mi">8</span><span class="s">.8.8.8</span><span class="w"> </span><span class="s">valid=300s</span><span class="p">;</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">    </span><span class="c1"># ... root, index, location-Blöcke wie im vorherigen Kapitel</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="p">}</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Direktive</th>
+<th>Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>listen 443 ssl http2</code></td>
+<td>Terminiert TLS und aktiviert HTTP/2 — mehrere Ressourcen (CSS, JS, Bilder von Moodle-Themes) werden über eine einzige Verbindung parallel statt sequenziell geladen.</td>
+</tr>
+<tr>
+<td><code>ssl_protocols TLSv1.2 TLSv1.3</code></td>
+<td>Nur noch moderne Protokollversionen. SSLv3/TLSv1.0/1.1 gelten als gebrochen bzw. veraltet und werden bewusst ausgeschlossen.</td>
+</tr>
+<tr>
+<td><code>ssl_ciphers</code> / <code>ssl_prefer_server_ciphers off</code></td>
+<td>Cipher-Auswahl nach Mozilla-„Intermediate“-Profil; moderne Browser handeln selbst den stärksten gemeinsamen Cipher aus, daher <code>off</code>.</td>
+</tr>
+<tr>
+<td><code>ssl_session_cache</code> / <code>ssl_session_timeout</code></td>
+<td>Erlaubt TLS-Session-Resumption — wiederkehrende Besucher (z. B. während einer Klausur-Sitzung mit vielen AJAX-Requests) sparen sich den vollen TLS-Handshake.</td>
+</tr>
+<tr>
+<td><code>ssl_session_tickets off</code></td>
+<td>Deaktiviert TLS-Session-Tickets, die bei falscher Rotation ein Forward-Secrecy-Risiko darstellen können.</td>
+</tr>
+<tr>
+<td><code>ssl_stapling</code> / <code>ssl_stapling_verify</code></td>
+<td>OCSP Stapling: Der Server liefert den Zertifikat-Gültigkeitsstatus direkt mit, statt dass jeder Browser einzeln beim CA-OCSP-Responder nachfragt — schneller und diskreter.</td>
+</tr>
+</tbody>
+</table>
+<p>Konfiguration testen und laden:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span></code></pre></div>
+<p>Externe Kontrolle der TLS-Konfiguration z. B. über <a href="https://www.ssllabs.com/ssltest/">SSL Labs</a> oder <code>testssl.sh</code>.</p>
 <hr />
-<h2 id="verwandte-themen">Verwandte Themen<a class="headerlink" href="#verwandte-themen" title="Permanent link">&para;</a></h2>
+<h2 id="4-configphp-fur-https-anpassen">4. <code>config.php</code> für HTTPS anpassen<a class="headerlink" href="#4-configphp-fur-https-anpassen" title="Permanent link">&para;</a></h2>
+<p>Nach der Umstellung muss Moodle selbst wissen, dass es ausschließlich über HTTPS läuft:</p>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="x">$CFG-&gt;wwwroot = &#39;https://moodle.example.org&#39;;</span>
+</span></code></pre></div>
+<p>Läuft Nginx <strong>nicht</strong> direkt vor PHP-FPM, sondern terminiert TLS auf einem vorgeschalteten Load Balancer/Reverse Proxy (z. B. bei mehreren Moodle-Knoten), muss Moodle zusätzlich mitgeteilt werden, dass die eingehende Verbindung intern zwar HTTP ist, ursprünglich aber über HTTPS kam:</p>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="x">$CFG-&gt;sslproxy = 1;</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Achtung</p>
+<p><code>$CFG-&gt;sslproxy = 1</code> nur setzen, wenn tatsächlich ein vorgeschalteter Proxy TLS terminiert und Moodle selbst nur intern per HTTP erreicht wird. Bei einer direkten Ein-Server-Installation wie in <a href="../moodle-installation/">Moodle auf Ubuntu Server installieren</a> bleibt dieser Wert auf <code>0</code> (Standard), da Nginx selbst TLS terminiert.</p>
+</div>
+<p>Nach jeder Änderung an <code>config.php</code> den PHP-FPM-Opcache-Zustand nicht vergessen — bei aktiviertem Opcache mit Zeitstempel-Prüfung reicht in der Regel ein einfacher Reload, ansonsten:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>php8.3-fpm
+</span></code></pre></div>
+<hr />
+<h2 id="5-sicherheits-header-mit-moodle-besonderheiten">5. Sicherheits-Header — mit Moodle-Besonderheiten<a class="headerlink" href="#5-sicherheits-header-mit-moodle-besonderheiten" title="Permanent link">&para;</a></h2>
+<p>Die generischen Header aus <a href="../../../entwicklung/infrastruktur/nginx-hardening/">Nginx: Hardening &amp; Sicherheit</a> gelten auch für Moodle, mit zwei Anpassungen:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">add_header</span><span class="w"> </span><span class="s">X-Content-Type-Options</span><span class="w"> </span><span class="s">&quot;nosniff&quot;</span><span class="w"> </span><span class="s">always</span><span class="p">;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">add_header</span><span class="w"> </span><span class="s">X-XSS-Protection</span><span class="w"> </span><span class="s">&quot;1</span><span class="p">;</span><span class="w"> </span><span class="k">mode=block&quot;</span><span class="w"> </span><span class="s">always</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">add_header</span><span class="w"> </span><span class="s">Referrer-Policy</span><span class="w"> </span><span class="s">&quot;strict-origin-when-cross-origin&quot;</span><span class="w"> </span><span class="s">always</span><span class="p">;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">add_header</span><span class="w"> </span><span class="s">Strict-Transport-Security</span><span class="w"> </span><span class="s">&quot;max-age=63072000</span><span class="p">;</span><span class="w"> </span><span class="k">includeSubDomains&quot;</span><span class="w"> </span><span class="s">always</span><span class="p">;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># SAMEORIGIN statt DENY: Moodle bettet eigene Inhalte (H5P, Quiz-Popups,</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># manche Aktivitäten) über iframes innerhalb derselben Domain ein.</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="k">add_header</span><span class="w"> </span><span class="s">X-Frame-Options</span><span class="w"> </span><span class="s">&quot;SAMEORIGIN&quot;</span><span class="w"> </span><span class="s">always</span><span class="p">;</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: Content-Security-Policy nicht blind übernehmen</p>
+<p>Eine pauschale, restriktive CSP (wie im generischen Hardening-Guide als Grundgerüst gezeigt) bricht bei Moodle häufig TinyMCE, eingebettete YouTube-/Vimeo-Videos, H5P-Inhalte und Drittanbieter-Plugins, die eigene externe Ressourcen nachladen. Eine funktionierende CSP für Moodle erfordert eine plugin- und theme-abhängige Whitelist und sollte zunächst im <code>Content-Security-Policy-Report-Only</code>-Modus getestet werden, bevor sie erzwungen wird.</p>
+</div>
+<p><code>Strict-Transport-Security</code> erst aktivieren, wenn HTTPS zuverlässig läuft — der Header zwingt Browser, die Domain für die angegebene Dauer (hier zwei Jahre) ausschließlich über HTTPS anzusprechen, auch bei einem versehentlichen späteren Rückbau auf HTTP.</p>
+<hr />
+<h2 id="6-brute-force-schutz-fur-den-login">6. Brute-Force-Schutz für den Login<a class="headerlink" href="#6-brute-force-schutz-fur-den-login" title="Permanent link">&para;</a></h2>
+<p>Moodles Login-Formular (<code>/login/index.php</code>) ist ein typisches Ziel für automatisierte Anmeldeversuche. Ergänzend zu Moodles eigenem <a href="https://docs.moodle.org/en/Brute_force_attack_prevention">Login-Lockout</a> lässt sich auf Nginx-Ebene eine Rate-Limit-Zone vorschalten:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># im http-Block von /etc/nginx/nginx.conf</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">limit_req_zone</span><span class="w"> </span><span class="nv">$binary_remote_addr</span><span class="w"> </span><span class="s">zone=moodle_login:10m</span><span class="w"> </span><span class="s">rate=5r/m</span><span class="p">;</span>
+</span></code></pre></div>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># im server-Block, vor dem allgemeinen PHP-FPM-Block aus dem vorherigen Kapitel</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">location</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">/login/index.php</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="kn">limit_req</span><span class="w"> </span><span class="s">zone=moodle_login</span><span class="w"> </span><span class="s">burst=3</span><span class="w"> </span><span class="s">nodelay</span><span class="p">;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="kn">fastcgi_pass</span><span class="w"> </span><span class="s">unix:/run/php/php8.3-fpm.sock</span><span class="p">;</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">    </span><span class="kn">fastcgi_index</span><span class="w"> </span><span class="s">index.php</span><span class="p">;</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="kn">include</span><span class="w"> </span><span class="s">fastcgi_params</span><span class="p">;</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">    </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">SCRIPT_FILENAME</span><span class="w"> </span><span class="nv">$document_root/login/index.php</span><span class="p">;</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><code>rate=5r/m</code> erlaubt fünf Anfragen pro Minute und IP-Adresse, <code>burst=3</code> toleriert kurze Bursts (z. B. ein Nutzer, der Benutzername und Passwort zweimal knapp hintereinander falsch eingibt), bevor Nginx mit <code>503</code> antwortet. Details zu <code>limit_req_zone</code>: <a href="../../../entwicklung/infrastruktur/nginx-hardening/">Nginx: Hardening &amp; Sicherheit</a>.</p>
+<hr />
+<h2 id="7-gzip-kompression">7. Gzip-Kompression<a class="headerlink" href="#7-gzip-kompression" title="Permanent link">&para;</a></h2>
+<p>Moodle liefert viel textbasierten Inhalt (HTML, CSS, JS, JSON-Antworten der AJAX-Services) — Kompression reduziert Übertragungsgröße spürbar:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">gzip</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">gzip_vary</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">gzip_comp_level</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">gzip_min_length</span><span class="w"> </span><span class="mi">256</span><span class="p">;</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="k">gzip_types</span><span class="w"> </span><span class="s">text/plain</span><span class="w"> </span><span class="s">text/css</span><span class="w"> </span><span class="s">application/json</span><span class="w"> </span><span class="s">application/javascript</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">           </span><span class="s">text/xml</span><span class="w"> </span><span class="s">application/xml</span><span class="w"> </span><span class="s">application/xml+rss</span><span class="w"> </span><span class="s">text/javascript</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Bereits komprimierte Formate (JPEG, PNG, WOFF2, PDF) bewusst <strong>nicht</strong> in <code>gzip_types</code> aufnehmen — erneutes Komprimieren kostet CPU-Zeit ohne nennenswerten Größengewinn.</p>
+<hr />
+<h2 id="8-timeouts-buffer-fur-groe-uploadsbackups">8. Timeouts &amp; Buffer für große Uploads/Backups<a class="headerlink" href="#8-timeouts-buffer-fur-groe-uploadsbackups" title="Permanent link">&para;</a></h2>
+<p>Moodle-Kurssicherungen (<code>.mbz</code>-Dateien) und größere Datei-Uploads laufen häufig länger als die Nginx-Standardwerte erlauben:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">client_body_timeout</span><span class="w"> </span><span class="s">300s</span><span class="p">;</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">fastcgi_read_timeout</span><span class="w"> </span><span class="s">300s</span><span class="p">;</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">fastcgi_send_timeout</span><span class="w"> </span><span class="s">300s</span><span class="p">;</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="k">fastcgi_buffers</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="mi">16k</span><span class="p">;</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="k">fastcgi_buffer_size</span><span class="w"> </span><span class="mi">32k</span><span class="p">;</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Direktive</th>
+<th>Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>client_body_timeout</code></td>
+<td>Wie lange Nginx auf den vollständigen Empfang eines großen Uploads wartet, bevor es abbricht.</td>
+</tr>
+<tr>
+<td><code>fastcgi_read_timeout</code> / <code>fastcgi_send_timeout</code></td>
+<td>Wie lange Nginx auf eine Antwort von PHP-FPM wartet — relevant bei lang laufenden Vorgängen wie Kurs-Backups oder großen Restores. Muss zum <code>max_execution_time</code>-Wert aus <a href="../moodle-installation/#5-php-fpm-konfigurieren">Installation, Schritt 5</a> passen; ein zu kurzer Nginx-Timeout bricht sonst Anfragen ab, die PHP-FPM noch bereitwillig zu Ende verarbeitet hätte.</td>
+</tr>
+<tr>
+<td><code>fastcgi_buffers</code> / <code>fastcgi_buffer_size</code></td>
+<td>Puffergröße für Antworten von PHP-FPM. Zu klein dimensioniert, schreibt Nginx Zwischenergebnisse auf die Platte (<code>fastcgi_temp_file_write_size</code>) statt im RAM zu halten — messbar langsamer bei Seiten mit vielen Elementen (z. B. Kursübersicht mit vielen Aktivitäten).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="9-weitere-grundhartung">9. Weitere Grundhärtung<a class="headerlink" href="#9-weitere-grundhartung" title="Permanent link">&para;</a></h2>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># im http-Block von /etc/nginx/nginx.conf</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">server_tokens</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Unterdrückt die Nginx-Versionsnummer in Fehlerseiten und im <code>Server</code>-Header — erschwert automatisiertes Fingerprinting nach bekannten CVEs der eingesetzten Nginx-Version. Weitere allgemeine Maßnahmen (Fail2ban-Integration, Verbindungslimits) stehen in <a href="../../../entwicklung/infrastruktur/nginx-hardening/">Nginx: Hardening &amp; Sicherheit</a>.</p>
+<hr />
+<h2 id="kurzprufung">Kurzprüfung<a class="headerlink" href="#kurzprufung" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>curl<span class="w"> </span>-I<span class="w"> </span>http://moodle.example.org<span class="w">          </span><span class="c1"># muss 301 auf https:// liefern</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>curl<span class="w"> </span>-I<span class="w"> </span>https://moodle.example.org<span class="w">         </span><span class="c1"># muss 200 liefern, Server-Header ohne Versionsnummer</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>curl<span class="w"> </span>-sI<span class="w"> </span>https://moodle.example.org<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>strict-transport-security
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>openssl<span class="w"> </span>s_client<span class="w"> </span>-connect<span class="w"> </span>moodle.example.org:443<span class="w"> </span>-tls1<span class="w"> </span>&lt;/dev/null<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;no protocols available&quot;</span>
+</span></code></pre></div>
+<p>Der letzte Befehl muss fehlschlagen bzw. „no protocols available“ melden — das bestätigt, dass das veraltete <code>TLSv1.0</code> tatsächlich abgelehnt wird.</p>
+<hr />
+<h2 id="quellen-und-weiterfuhrende-informationen">Quellen und weiterführende Informationen<a class="headerlink" href="#quellen-und-weiterfuhrende-informationen" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../../">Startseite</a> — zurück zur Dokumentations-Zentrale</li>
-<li><a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/">KI strukturiert das Wiki autonom &amp; Selfhosting-Migration</a> — Anschlussfrage: wie die autonome Strukturierung konkret abläuft und wie das Ergebnis in ein Selfhosting-System übertragen wird</li>
-<li><a href="../openwiki-repo-dokumentation-agent/">OpenWiki: Repo-Dokumentations-Agent (LangChain)</a> — konkrete Tool-Umsetzung des Musters</li>
-<li><a href="../llm-first-wiki-tools-agenten/">Native „LLM-first" Wiki-Tools &amp; Agenten</a> — Einordnung von OpenWiki &amp; Co. in die Gesamtlandschaft</li>
-<li><a href="../pkm-second-brain-methoden/">Personal Knowledge Management (PKM) &amp; Second Brain</a> — verwandtes Konzept auf persönlicher Notiz-Ebene statt Team-/Repository-Ebene</li>
-<li><a href="../">Dokumentenerstellung, Wikis &amp; Notebooks</a> — Gesamtübersicht aller Dokumentations-Systeme</li>
+<li><a href="https://ssl-config.mozilla.org/">Mozilla SSL Configuration Generator</a></li>
+<li><a href="https://docs.moodle.org/en/Nginx">Moodle: Nginx</a></li>
+<li><a href="https://docs.moodle.org/en/Brute_force_attack_prevention">Moodle: Brute force attack prevention</a></li>
+<li><a href="../moodle-nginx-configuration/">Moodle: Nginx-Konfiguration im Detail</a> – Basis-Serverblock, den dieses Kapitel um TLS und Härtung erweitert</li>
+<li><a href="../moodle-installation/">Moodle auf Ubuntu Server installieren (Git, PostgreSQL, Nginx)</a></li>
+<li><a href="../../../entwicklung/infrastruktur/nginx-ssl/">Nginx: SSL &amp; HTTPS</a></li>
+<li><a href="../../../entwicklung/infrastruktur/nginx-hardening/">Nginx: Hardening &amp; Sicherheit</a></li>
+<li><a href="../">E-Learning-Übersicht</a></li>
 </ul>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
@@ -3113,7 +3206,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../cms-mcp-server-topliste/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)">
+          <a href="../moodle-nginx-configuration/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Moodle: Nginx-Konfiguration im Detail">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3123,20 +3216,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)
+                Moodle: Nginx-Konfiguration im Detail
               </div>
             </div>
           </a>
         
         
           
-          <a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-footer__link md-footer__link--next" aria-label="Weiter: KI strukturiert das Wiki autonom &amp; Selfhosting-Migration">
+          <a href="../../tools/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Übersicht">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                KI strukturiert das Wiki autonom & Selfhosting-Migration
+                Übersicht
               </div>
             </div>
             <div class="md-footer__button md-icon">

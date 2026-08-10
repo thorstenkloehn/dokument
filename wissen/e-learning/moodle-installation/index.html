@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/llm-wiki-pattern-karpathy/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/e-learning/moodle-installation/">
       
       
-        <link rel="prev" href="../cms-mcp-server-topliste/">
+        <link rel="prev" href="../interaktive-lernplattformen-kurserstellung/">
       
       
-        <link rel="next" href="../ki-autonome-wiki-strukturierung-selfhosting-migration/">
+        <link rel="next" href="../moodle-nginx-configuration/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>LLM-Wiki-Pattern (Karpathy-Muster) - Wissen Ahrensburg</title>
+        <title>Moodle auf Ubuntu Server installieren (Git, PostgreSQL, Nginx) - Wissen Ahrensburg</title>
       
     
     
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#llm-wiki-pattern-karpathy-muster" class="md-skip">
+        <a href="#moodle-auf-ubuntu-server-installieren-git-postgresql-nginx" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLM-Wiki-Pattern (Karpathy-Muster)
+              Moodle auf Ubuntu Server installieren (Git, PostgreSQL, Nginx)
             
           </span>
         </div>
@@ -994,8 +994,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1031,15 +1033,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../e-learning/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1062,7 +1064,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1081,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/ki-lehre-weiterbildung/" class="md-nav__link">
+      <a href="../ki-lehre-weiterbildung/" class="md-nav__link">
         
   
   
@@ -1108,7 +1110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/sprachlern-ki-agenten-topliste/" class="md-nav__link">
+      <a href="../sprachlern-ki-agenten-topliste/" class="md-nav__link">
         
   
   
@@ -1135,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/lernmethoden-programmiersprachen/" class="md-nav__link">
+      <a href="../lernmethoden-programmiersprachen/" class="md-nav__link">
         
   
   
@@ -1162,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
+      <a href="../interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
         
   
   
@@ -1186,10 +1188,36 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../e-learning/moodle-installation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Moodle: Installation auf Ubuntu Server (Git, PostgreSQL, Nginx)
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1204,6 +1232,181 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#voraussetzungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Voraussetzungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architektur" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Architektur
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-pakete-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Pakete installieren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-postgresql-datenbank-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. PostgreSQL-Datenbank einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-moodle-code-per-git-beziehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Moodle-Code per Git beziehen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configphp-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. <code>config.php</code> anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-php-fpm-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. PHP-FPM konfigurieren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-nginx-serverblock-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Nginx-Serverblock einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-installation-per-cli-abschlieen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Installation per CLI abschließen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cron-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8. Cron einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        9. Firewall
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-updates-uber-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        10. Updates über Git
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1216,7 +1419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/moodle-nginx-configuration/" class="md-nav__link">
+      <a href="../moodle-nginx-configuration/" class="md-nav__link">
         
   
   
@@ -1243,7 +1446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/moodle-nginx-ssl-hardening/" class="md-nav__link">
+      <a href="../moodle-nginx-ssl-hardening/" class="md-nav__link">
         
   
   
@@ -1474,8 +1677,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1541,15 +1742,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../dokumentation/" class="md-nav__link ">
               
   
   
@@ -1572,7 +1773,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1591,7 +1792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm-first-wiki-tools-agenten/" class="md-nav__link">
+      <a href="../../dokumentation/llm-first-wiki-tools-agenten/" class="md-nav__link">
         
   
   
@@ -1618,7 +1819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../klassische-wiki-systeme-llm-integration/" class="md-nav__link">
+      <a href="../../dokumentation/klassische-wiki-systeme-llm-integration/" class="md-nav__link">
         
   
   
@@ -1645,7 +1846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
+      <a href="../../dokumentation/klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
         
   
   
@@ -1672,7 +1873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../open-source-llm-agent-mcp-systeme/" class="md-nav__link">
+      <a href="../../dokumentation/open-source-llm-agent-mcp-systeme/" class="md-nav__link">
         
   
   
@@ -1699,7 +1900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wissensmanagement-mcp-server-topliste/" class="md-nav__link">
+      <a href="../../dokumentation/wissensmanagement-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1726,7 +1927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cms-mcp-server-topliste/" class="md-nav__link">
+      <a href="../../dokumentation/cms-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1750,36 +1951,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  LLM-Wiki-Pattern (Karpathy-Muster)
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../dokumentation/llm-wiki-pattern-karpathy/" class="md-nav__link">
         
   
   
@@ -1794,137 +1969,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#kernidee-kompilieren-statt-retrieval" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Kernidee: Kompilieren statt Retrieval
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architektur-drei-schichten" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Architektur: Drei Schichten
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kernoperationen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Kernoperationen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#indexierung-logbuch" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Indexierung &amp; Logbuch
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional-such-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Optional: Such-Tools
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipps-tricks-aus-der-praxis" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Tipps &amp; Tricks aus der Praxis
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#warum-das-muster-funktioniert" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Warum das Muster funktioniert
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#konkrete-implementierung-openwiki-langchain" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Konkrete Implementierung: OpenWiki (LangChain)
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bezug-zu-diesem-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Bezug zu diesem Repository
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verwandte-themen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Verwandte Themen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1937,7 +1981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
+      <a href="../../dokumentation/ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
         
   
   
@@ -1964,7 +2008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openwiki-repo-dokumentation-agent/" class="md-nav__link">
+      <a href="../../dokumentation/openwiki-repo-dokumentation-agent/" class="md-nav__link">
         
   
   
@@ -1991,7 +2035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../onyx-danswer-rag-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/onyx-danswer-rag-plattform/" class="md-nav__link">
         
   
   
@@ -2018,7 +2062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../anythingllm-rag-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/anythingllm-rag-plattform/" class="md-nav__link">
         
   
   
@@ -2045,7 +2089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../open-webui-rag-agenten-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/open-webui-rag-agenten-plattform/" class="md-nav__link">
         
   
   
@@ -2072,7 +2116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dify-agenten-workflow-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/dify-agenten-workflow-plattform/" class="md-nav__link">
         
   
   
@@ -2099,7 +2143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flowise-visueller-flow-builder/" class="md-nav__link">
+      <a href="../../dokumentation/flowise-visueller-flow-builder/" class="md-nav__link">
         
   
   
@@ -2126,7 +2170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../khoj-ki-zweites-gehirn/" class="md-nav__link">
+      <a href="../../dokumentation/khoj-ki-zweites-gehirn/" class="md-nav__link">
         
   
   
@@ -2153,7 +2197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pkm-second-brain-methoden/" class="md-nav__link">
+      <a href="../../dokumentation/pkm-second-brain-methoden/" class="md-nav__link">
         
   
   
@@ -2180,7 +2224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
+      <a href="../../dokumentation/wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
         
   
   
@@ -2245,7 +2289,7 @@
   
   
   
-    <a href="../mediawiki/" class="md-nav__link">
+    <a href="../../dokumentation/mediawiki/" class="md-nav__link">
       
   
   
@@ -2310,7 +2354,7 @@
   
   
   
-    <a href="../semantische-mediawiki/installieren/" class="md-nav__link">
+    <a href="../../dokumentation/semantische-mediawiki/installieren/" class="md-nav__link">
       
   
   
@@ -2371,7 +2415,7 @@
   
   
   
-    <a href="../wikijs-linux-installation/" class="md-nav__link">
+    <a href="../../dokumentation/wikijs-linux-installation/" class="md-nav__link">
       
   
   
@@ -2436,7 +2480,7 @@
   
   
   
-    <a href="../xwiki/installieren/" class="md-nav__link">
+    <a href="../../dokumentation/xwiki/installieren/" class="md-nav__link">
       
   
   
@@ -2584,10 +2628,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#kernidee-kompilieren-statt-retrieval" class="md-nav__link">
+  <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Kernidee: Kompilieren statt Retrieval
+        Voraussetzungen
       </span>
     </span>
   </a>
@@ -2595,10 +2639,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architektur-drei-schichten" class="md-nav__link">
+  <a href="#architektur" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Architektur: Drei Schichten
+        Architektur
       </span>
     </span>
   </a>
@@ -2606,10 +2650,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kernoperationen" class="md-nav__link">
+  <a href="#1-pakete-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Kernoperationen
+        1. Pakete installieren
       </span>
     </span>
   </a>
@@ -2617,10 +2661,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#indexierung-logbuch" class="md-nav__link">
+  <a href="#2-postgresql-datenbank-einrichten" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Indexierung &amp; Logbuch
+        2. PostgreSQL-Datenbank einrichten
       </span>
     </span>
   </a>
@@ -2628,10 +2672,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#optional-such-tools" class="md-nav__link">
+  <a href="#3-moodle-code-per-git-beziehen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Optional: Such-Tools
+        3. Moodle-Code per Git beziehen
       </span>
     </span>
   </a>
@@ -2639,10 +2683,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipps-tricks-aus-der-praxis" class="md-nav__link">
+  <a href="#4-configphp-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Tipps &amp; Tricks aus der Praxis
+        4. <code>config.php</code> anlegen
       </span>
     </span>
   </a>
@@ -2650,10 +2694,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#warum-das-muster-funktioniert" class="md-nav__link">
+  <a href="#5-php-fpm-konfigurieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Warum das Muster funktioniert
+        5. PHP-FPM konfigurieren
       </span>
     </span>
   </a>
@@ -2661,10 +2705,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#konkrete-implementierung-openwiki-langchain" class="md-nav__link">
+  <a href="#6-nginx-serverblock-einrichten" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Konkrete Implementierung: OpenWiki (LangChain)
+        6. Nginx-Serverblock einrichten
       </span>
     </span>
   </a>
@@ -2672,10 +2716,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bezug-zu-diesem-repository" class="md-nav__link">
+  <a href="#7-installation-per-cli-abschlieen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Bezug zu diesem Repository
+        7. Installation per CLI abschließen
       </span>
     </span>
   </a>
@@ -2683,10 +2727,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verwandte-themen" class="md-nav__link">
+  <a href="#8-cron-einrichten" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Verwandte Themen
+        8. Cron einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        9. Firewall
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-updates-uber-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        10. Updates über Git
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
       </span>
     </span>
   </a>
@@ -2808,34 +2896,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
     
     
     
@@ -2845,7 +2905,7 @@
           
   
   <span class="md-ellipsis">
-    Dokumentation
+    E-Learning
   </span>
 
         </a>
@@ -2863,163 +2923,234 @@
                   
 
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
-<h1 id="llm-wiki-pattern-karpathy-muster">LLM-Wiki-Pattern (Karpathy-Muster)<a class="headerlink" href="#llm-wiki-pattern-karpathy-muster" title="Permanent link">&para;</a></h1>
-<p>Das <strong>LLM-Wiki-Pattern</strong> ist ein von Andrej Karpathy (Mitgründer OpenAI, ehem. AI-Direktor bei Tesla) im April 2026 als GitHub-Gist veröffentlichtes Architekturmuster: Statt bei jeder Anfrage Rohdokumente per RAG (Retrieval-Augmented Generation) neu zu durchsuchen, lässt man ein LLM einmalig eine <strong>persistente, strukturierte Wiki</strong> aus den Quellen aufbauen — und fragt danach nur noch gegen dieses kompilierte Wissen ab. Diese Seite erklärt das Muster selbst; die konkrete Open-Source-Umsetzung davon ist <a href="../openwiki-repo-dokumentation-agent/">OpenWiki (LangChain)</a>.</p>
+<h1 id="moodle-auf-ubuntu-server-installieren-git-postgresql-nginx">Moodle auf Ubuntu Server installieren (Git, PostgreSQL, Nginx)<a class="headerlink" href="#moodle-auf-ubuntu-server-installieren-git-postgresql-nginx" title="Permanent link">&para;</a></h1>
+<p>Diese Anleitung installiert <strong>Moodle</strong> auf einem Ubuntu Server direkt aus dem offiziellen <strong>Git-Repository</strong> — statt aus einem ZIP-Archiv. Als Datenbank kommt <strong>PostgreSQL</strong> zum Einsatz, als Webserver <strong>Nginx</strong> mit <strong>PHP-FPM</strong>. Der Git-Ursprung erlaubt spätere Versionswechsel per <code>git checkout</code> statt manuellem Datei-Austausch.</p>
 <div class="admonition note">
-<p class="admonition-title">Hinweis: Primärquelle</p>
-<p>Das Pattern ist als Prosa-Text (Prompt/Idee zum Einfügen in einen Agenten) veröffentlicht, nicht als fertiges Produkt: <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">gist.github.com/karpathy/442a6bf555914893e9891c11519de94f</a>.</p>
+<p class="admonition-title">Hinweis zur Quelle</p>
+<p>Die Arbeitsschritte orientieren sich an der offiziellen <a href="https://docs.moodle.org/en/Installing_Moodle">Moodle-Installationsdokumentation</a> und der <a href="https://docs.moodle.org/dev/Git_for_administrators">Git-für-Administratoren-Anleitung</a>. Der Text wurde eigenständig formuliert und um praktische Hinweise ergänzt; er ist keine wörtliche Übersetzung.</p>
 </div>
 <hr />
-<h2 id="kernidee-kompilieren-statt-retrieval">Kernidee: Kompilieren statt Retrieval<a class="headerlink" href="#kernidee-kompilieren-statt-retrieval" title="Permanent link">&para;</a></h2>
-<p>Karpathys Analogie stammt aus der Softwareentwicklung: Ein Compiler übersetzt Quellcode einmalig in ein optimiertes Binary — man führt nicht bei jedem Programmstart den Quellcode erneut aus, sondern kompiliert einmal und nutzt danach das Artefakt.</p>
-<p>Auf Wissensarbeit übertragen: <strong>RAG</strong> durchsucht bei <em>jeder</em> Anfrage erneut die Rohquellen und muss Zusammenhänge jedes Mal neu rekonstruieren. Das <strong>LLM-Wiki-Pattern</strong> dreht die Reihenfolge um — „compile deine Quellen zuerst":</p>
-<ol>
-<li>Ein LLM liest die Rohquellen einmalig (oder inkrementell bei neuen Quellen).</li>
-<li>Es synthetisiert die Inhalte in strukturierte, untereinander verlinkte Wiki-Seiten.</li>
-<li>Alle folgenden Anfragen laufen gegen dieses <strong>kompilierte Artefakt</strong> — nicht mehr gegen die Rohquellen.</li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Tipp: Kein Ersatz für RAG, sondern eine Vorstufe</p>
-<p>Das Pattern schließt klassisches RAG nicht aus — es reduziert nur, was zur Anfragezeit neu erschlossen werden muss. Für sehr große, sich schnell ändernde Quellenmengen bleibt eine Kombination aus beidem sinnvoll (siehe <a href="../#6-rag-ki-zentrierte-wissensdatenbanken-rag-co-wikis">RAG- &amp; KI-Zentrierte Wissensdatenbanken</a>).</p>
-</div>
-<hr />
-<h2 id="architektur-drei-schichten">Architektur: Drei Schichten<a class="headerlink" href="#architektur-drei-schichten" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>graph TD
-    Raw["raw/ — unveraenderliche Rohquellen&lt;br/&gt;(Artikel, PDFs, Notizen, Code)"] --&gt; Agent["LLM-Agent"]
-    Schema["CLAUDE.md / AGENTS.md — Schema&lt;br/&gt;(Konventionen, Workflows)"] --&gt; Agent
-    Agent --&gt;|"Ingest"| Wiki["wiki/ — generierte Markdown-Seiten&lt;br/&gt;(Entitaeten, Konzepte, Querverweise)"]
-    Wiki --&gt; Index["index.md — Inhaltsverzeichnis"]
-    Wiki --&gt; Log["log.md — chronologisches Logbuch"]
-    Query["Nutzerfrage"] --&gt;|"liest gegen"| Wiki</code></pre>
-<table>
-<thead>
-<tr>
-<th>Schicht</th>
-<th>Ordner/Datei</th>
-<th>Rolle</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Rohquellen</strong></td>
-<td><code>raw/</code></td>
-<td>Unveränderliche Datenbasis (Artikel, PDFs, Notizen). Der Agent liest sie, modifiziert sie aber nie.</td>
-</tr>
-<tr>
-<td><strong>Das Wiki</strong></td>
-<td><code>wiki/</code></td>
-<td>LLM-generierte Markdown-Dateien mit Querverweisen — je eine strukturierte, Wikipedia-artige Seite pro Konzept/Entität, verlinkt über <code>[[wiki-links]]</code>.</td>
-</tr>
-<tr>
-<td><strong>Schema</strong></td>
-<td><code>CLAUDE.md</code> / <code>AGENTS.md</code></td>
-<td>Dokumentiert Struktur und Konventionen des Wikis und definiert die Workflows für Ingestion, Abfragen und Wartung — die Instruktionsdatei, die der Agent bei jedem Lauf befolgt.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="kernoperationen">Kernoperationen<a class="headerlink" href="#kernoperationen" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Ingest</label><label for="__tabbed_1_2">Query</label><label for="__tabbed_1_3">Lint</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Neue Quelle wird zu <code>raw/</code> hinzugefügt. Der Agent liest sie, ordnet die Erkenntnisse ein, erstellt neue Wiki-Seiten oder aktualisiert bestehende — typischerweise werden pro Ingest-Lauf 10–15 Seiten berührt (neue Querverweise, aktualisierte Zusammenfassungen).</p>
-</div>
-<div class="tabbed-block">
-<p>Eine Frage wird gegen das Wiki gestellt (nicht gegen die Rohquellen). Der Agent sucht die relevanten Wiki-Seiten und synthetisiert eine Antwort mit Zitaten/Links auf die jeweiligen Seiten.</p>
-</div>
-<div class="tabbed-block">
-<p>Periodische Gesundheitsprüfung: Widersprüche zwischen Seiten, verwaiste Seiten (keine eingehenden Links), fehlende Querverweise. Entspricht im Prinzip dem, was <code>check_orphaned_files.py</code> in diesem Repository für die Nav-Struktur übernimmt (siehe <a href="#verwandte-themen">Verwandte Themen</a>).</p>
-</div>
-</div>
-</div>
-<hr />
-<h2 id="indexierung-logbuch">Indexierung &amp; Logbuch<a class="headerlink" href="#indexierung-logbuch" title="Permanent link">&para;</a></h2>
+<h2 id="voraussetzungen">Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong><code>index.md</code></strong> — Inhaltsverzeichnis mit Links, Einzeilern und Metadaten pro Kategorie. Entspricht funktional den <code>index.md</code>-Übersichtsseiten in diesem Repository (z. B. <a href="../">Dokumentenerstellung, Wikis &amp; Notebooks</a>).</li>
-<li><strong><code>log.md</code></strong> — chronologisches, append-only Logbuch mit konsistenten Präfixen, damit es maschinell parsebar bleibt (welche Quelle wann welche Seiten verändert hat).</li>
+<li>Ubuntu Server (22.04 LTS oder 24.04 LTS) mit <code>sudo</code>-Rechten</li>
+<li>mindestens 2 CPU-Kerne, 2 GB RAM (produktiv eher mehr), ausreichend Plattenplatz für <code>moodledata</code> (Nutzer-Uploads, Kursdateien, Caches)</li>
+<li>eine eigene Domain oder Subdomain, z. B. <code>moodle.example.org</code></li>
+<li>aktuelle Paketlisten: <code>sudo apt update</code></li>
 </ul>
-<hr />
-<h2 id="optional-such-tools">Optional: Such-Tools<a class="headerlink" href="#optional-such-tools" title="Permanent link">&para;</a></h2>
-<p>Bei kleiner Skalierung (bis grob 100 Quellen, einige hundert Seiten) reicht <code>index.md</code> als Sucheinstieg. Wächst das Wiki darüber hinaus, empfiehlt Karpathy <a href="https://github.com/tobi/qmd">qmd</a> — eine lokale Suchmaschine für Markdown-Dateien mit hybrider BM25/Vektor-Suche und LLM-Reranking, vollständig on-device. Sie bringt sowohl eine CLI (für den Agenten) als auch einen MCP-Server (als natives Tool) mit. Alternativ lässt sich ein einfaches Suchskript passend zur eigenen Struktur per Vibe-Coding vom Agenten selbst erstellen.</p>
-<hr />
-<h2 id="tipps-tricks-aus-der-praxis">Tipps &amp; Tricks aus der Praxis<a class="headerlink" href="#tipps-tricks-aus-der-praxis" title="Permanent link">&para;</a></h2>
-<p>Karpathys Original-Gist beschreibt seinen persönlichen Workflow mit Obsidian als Wiki-Oberfläche. Die Tipps sind Obsidian-spezifisch, das zugrunde liegende Prinzip überträgt sich aber auf jedes Markdown-basierte Wiki (auch auf dieses Repository):</p>
-<ul>
-<li><strong>Obsidian Web Clipper</strong> — Browser-Erweiterung, die Webartikel direkt als Markdown in die Rohsammlung (<code>raw/</code>) überführt.</li>
-<li><strong>Bilder lokal speichern</strong> — in Obsidian unter „Dateien &amp; Links" einen festen Anhang-Ordner setzen (z. B. <code>raw/assets/</code>) und „Anhänge für aktuelle Datei herunterladen" auf ein Tastenkürzel legen. Wichtig, weil LLMs eingebettete Bilder in Markdown nicht in einem Durchgang mitlesen — der Agent liest zuerst den Text und betrachtet referenzierte Bilder danach separat.</li>
-<li><strong>Graph-Ansicht</strong> — der schnellste Weg, die Form eines Wikis zu erfassen: welche Seiten Knotenpunkte (Hubs) sind, welche verwaist sind.</li>
-<li><strong>Marp</strong> — Markdown-basiertes Folienformat mit Obsidian-Plugin, um Präsentationen direkt aus Wiki-Inhalten zu generieren.</li>
-<li><strong>Dataview</strong> — Obsidian-Plugin für Abfragen über Frontmatter (Tags, Daten, Quellenzahl); erzeugt dynamische Tabellen/Listen, sofern der Agent konsistentes YAML-Frontmatter pflegt.</li>
-<li><strong>Git-Versionierung</strong> — das Wiki ist einfach ein Git-Repository aus Markdown-Dateien; Versionsverlauf, Branching und Zusammenarbeit gibt es dadurch „geschenkt".</li>
-</ul>
-<hr />
-<h2 id="warum-das-muster-funktioniert">Warum das Muster funktioniert<a class="headerlink" href="#warum-das-muster-funktioniert" title="Permanent link">&para;</a></h2>
-<p>Karpathys zentrale These: <em>„Die mühsame Arbeit bei Wissensbasen ist nicht das Lesen oder Denken — es ist die Buchhaltung."</em> Menschen geben Wikis typischerweise auf, weil der Pflegeaufwand (Querverweise aktuell halten, Redundanzen vermeiden, Struktur konsistent halten) schneller wächst als der Nutzen. Ein LLM-Agent:</p>
-<ul>
-<li>vergisst keine Querverweise und aktualisiert sie zuverlässig bei jeder Änderung,</li>
-<li>bearbeitet mehrere betroffene Seiten in einem einzigen Durchlauf,</li>
-<li>ermüdet nicht an der reinen „Buchhaltungsarbeit", die Menschen von der Wiki-Pflege abhält.</li>
-</ul>
-<p>Die Rollenteilung bleibt dabei klar: <strong>der Mensch kuratiert Quellen und stellt Fragen — der Agent übernimmt Synthese und Pflege.</strong></p>
-<hr />
-<h2 id="konkrete-implementierung-openwiki-langchain">Konkrete Implementierung: OpenWiki (LangChain)<a class="headerlink" href="#konkrete-implementierung-openwiki-langchain" title="Permanent link">&para;</a></h2>
-<p>Das bekannteste Open-Source-Werkzeug, das dieses Pattern konkret umsetzt, ist <strong><a href="../openwiki-repo-dokumentation-agent/">OpenWiki</a></strong> von LangChain — ursprünglich für Code-Repositories gebaut (<code>raw/</code> = Codebase, <code>wiki/</code> = generierte Repo-Dokumentation), inzwischen auch im „Personal-Modus" für persönliche Wissensbasen mit externen Connectoren (Notion, Gmail, Git-Repos, Websuche) nutzbar.</p>
-<table>
-<thead>
-<tr>
-<th>Karpathy-Muster (allgemein)</th>
-<th>OpenWiki-Umsetzung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>raw/</code> — Rohquellen</td>
-<td>Codebase (Code-Modus) bzw. angebundene Connectoren (Personal-Modus)</td>
-</tr>
-<tr>
-<td><code>wiki/</code> — generiertes Wiki</td>
-<td><code>openwiki/*.md</code> bzw. <code>~/.openwiki/wiki/</code></td>
-</tr>
-<tr>
-<td>Schema-Instruktionsdatei</td>
-<td><code>INSTRUCTIONS.md</code>, plus Referenzen in <code>AGENTS.md</code>/<code>CLAUDE.md</code></td>
-</tr>
-<tr>
-<td>Ingest</td>
-<td><code>openwiki --init</code> / <code>openwiki code --update</code></td>
-</tr>
-<tr>
-<td>Query</td>
-<td>interaktive CLI (<code>openwiki "Prompt"</code>)</td>
-</tr>
-<tr>
-<td>Lint</td>
-<td>Diff-Analyse bei <code>--update</code> prüft betroffene Seiten</td>
-</tr>
-</tbody>
-</table>
-<p>Details zu Installation, CLI-Befehlen und CI-Integration siehe die eigene Seite <a href="../openwiki-repo-dokumentation-agent/">OpenWiki: Repo-Dokumentations-Agent (LangChain)</a>.</p>
 <div class="admonition warning">
-<p class="admonition-title">Achtung: Muster ≠ Produkt</p>
-<p>Das Karpathy-Muster selbst ist keine Software, sondern eine Idee/ein Prompt-Template. Wer es ohne OpenWiki oder ein vergleichbares Werkzeug nachbauen will, benötigt einen eigenen Agenten (z. B. Claude Code, Antigravity CLI) mit einer Instruktionsdatei, die die drei Schichten (<code>raw/</code>, <code>wiki/</code>, Schema) sowie Ingest/Query/Lint als Workflows definiert.</p>
+<p class="admonition-title">Achtung: Versionskompatibilität prüfen</p>
+<p>PHP-, PostgreSQL- und Moodle-Version müssen zueinander passen. Die unterstützte Matrix steht in den offiziellen <a href="https://docs.moodle.org/en/Server_requirements">Moodle-Systemanforderungen</a> — vor der Installation prüfen, welcher Moodle-Branch (z. B. <code>MOODLE_405_STABLE</code>) zur verfügbaren PHP-Version passt.</p>
 </div>
 <hr />
-<h2 id="bezug-zu-diesem-repository">Bezug zu diesem Repository<a class="headerlink" href="#bezug-zu-diesem-repository" title="Permanent link">&para;</a></h2>
-<p>Dieses Repository setzt bereits Teile des Musters ein, ohne es explizit so zu benennen:</p>
-<ul>
-<li><strong>Schema-Schicht</strong>: <code>CLAUDE.md</code> übernimmt die Rolle der Instruktionsdatei — sie dokumentiert Struktur (<code>docs/&lt;bereich&gt;/</code>), Konventionen und Workflows.</li>
-<li><strong>Lint-Operation</strong>: <code>.gemini/scripts/check_orphaned_files.py</code> prüft auf verwaiste Seiten, der <code>doc-checker</code>-Subagent erweitert das um Build-, Link- und Mermaid-Prüfung.</li>
-<li><strong>Fehlender Teil</strong>: Es gibt hier bewusst keine automatische Ingest-Operation, die eigenständig neue Wiki-Seiten aus Rohquellen generiert — Inhalte werden weiterhin kuratiert von Hand angelegt (siehe <code>zensical-docs</code>-Skill, Abschnitt „Neue Seite anlegen"). Das entspricht dem Human-in-the-Loop-Prinzip, das auch für <a href="../llm-first-wiki-tools-agenten/#4-autonome-wiki-pflege-agenten-agent-schreibt-in-ein-bestehendes-wiki">autonome Wiki-Pflege-Agenten</a> in diesem Repo gilt.</li>
-</ul>
+<h2 id="architektur">Architektur<a class="headerlink" href="#architektur" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph LR
+    Browser["Browser"] --&gt;|"HTTPS 443"| Nginx["Nginx"]
+    Nginx --&gt;|"FastCGI"| PHPFPM["PHP-FPM"]
+    PHPFPM --&gt; Moodle["Moodle-Code (Git-Checkout)"]
+    Moodle --&gt;|"SQL"| Postgres["PostgreSQL"]
+    Moodle --&gt;|"Dateizugriff"| Moodledata["moodledata (außerhalb des Webroots)"]
+    Cron["Cron (moodle/admin/cli/cron.php)"] --&gt; Moodle</code></pre>
+<p><code>moodledata</code> liegt bewusst <strong>außerhalb</strong> des von Nginx ausgelieferten Verzeichnisses, damit Nutzer-Uploads nicht direkt per HTTP abrufbar sind.</p>
 <hr />
-<h2 id="verwandte-themen">Verwandte Themen<a class="headerlink" href="#verwandte-themen" title="Permanent link">&para;</a></h2>
+<h2 id="1-pakete-installieren">1. Pakete installieren<a class="headerlink" href="#1-pakete-installieren" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>git<span class="w"> </span>nginx<span class="w"> </span>postgresql<span class="w"> </span>postgresql-contrib<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span>php-fpm<span class="w"> </span>php-pgsql<span class="w"> </span>php-curl<span class="w"> </span>php-xml<span class="w"> </span>php-mbstring<span class="w"> </span>php-zip<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span>php-gd<span class="w"> </span>php-intl<span class="w"> </span>php-soap<span class="w"> </span>php-xmlrpc<span class="w"> </span>php-cli<span class="w"> </span>php-common<span class="w"> </span>graphviz<span class="w"> </span>aspell
+</span></code></pre></div>
+<p>Installierte PHP-Version ermitteln (für spätere Pfade wie <code>/etc/php/8.3/fpm/</code>):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>php<span class="w"> </span>-v
+</span></code></pre></div>
+<hr />
+<h2 id="2-postgresql-datenbank-einrichten">2. PostgreSQL-Datenbank einrichten<a class="headerlink" href="#2-postgresql-datenbank-einrichten" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE ROLE moodle WITH LOGIN PASSWORD &#39;EIN_LANGES_ZUFAELLIGES_PASSWORT&#39;;&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE DATABASE moodle OWNER moodle ENCODING &#39;UTF8&#39; TEMPLATE template0;&quot;</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Grundlagen zu Rollen, Datenbanken und Zugriffskontrolle: <a href="../../../entwicklung/infrastruktur/postgresql/">PostgreSQL: Grundlagen</a>. Für produktive Setups lohnt zusätzlich ein Blick in <a href="../../../entwicklung/infrastruktur/postgresql-backup-restore/">PostgreSQL Backup &amp; Recovery</a>.</p>
+</div>
+<p>Standardmäßig erlaubt PostgreSQL lokale Verbindungen per <code>peer</code>-Authentifizierung nur für den Systembenutzer mit gleichem Namen. Für den Moodle-Zugriff über <code>localhost</code> mit Passwort muss in <code>pg_hba.conf</code> eine <code>md5</code>- bzw. <code>scram-sha-256</code>-Zeile für den Benutzer <code>moodle</code> vorhanden sein:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># /etc/postgresql/&lt;Version&gt;/main/pg_hba.conf
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>host    moodle    moodle    127.0.0.1/32    scram-sha-256
+</span></code></pre></div>
+<p>Nach einer Änderung:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>postgresql
+</span></code></pre></div>
+<hr />
+<h2 id="3-moodle-code-per-git-beziehen">3. Moodle-Code per Git beziehen<a class="headerlink" href="#3-moodle-code-per-git-beziehen" title="Permanent link">&para;</a></h2>
+<p>Moodle wird als Systembenutzer <code>www-data</code> unterhalb von <code>/var/www</code> abgelegt, damit Nginx/PHP-FPM direkt lesend zugreifen können.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://git.moodle.org/moodle.git<span class="w"> </span>/var/www/moodle
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">cd</span><span class="w"> </span>/var/www/moodle
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>sudo<span class="w"> </span>git<span class="w"> </span>branch<span class="w"> </span>-a<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>MOODLE<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-5
+</span></code></pre></div>
+<p>Den gewünschten stabilen Branch auschecken (Version nach Bedarf anpassen, siehe <a href="https://moodledev.io/general/releases">Moodle-Versionsübersicht</a>):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>-t<span class="w"> </span>origin/MOODLE_405_STABLE
+</span></code></pre></div>
+<p><code>moodledata</code> liegt außerhalb des Webroots und gehört ebenfalls <code>www-data</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/moodledata
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/moodledata<span class="w"> </span>/var/www/moodle
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">0750</span><span class="w"> </span>/var/moodledata
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: Nie <code>chmod 777</code></p>
+<p><code>moodledata</code> und der Code-Ordner benötigen keine Welt-Schreibrechte. <code>0750</code> für <code>moodledata</code> (Owner + Gruppe <code>www-data</code>) reicht aus und verhindert, dass andere lokale Nutzer auf Kursinhalte zugreifen können.</p>
+</div>
+<hr />
+<h2 id="4-configphp-anlegen">4. <code>config.php</code> anlegen<a class="headerlink" href="#4-configphp-anlegen" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>cp<span class="w"> </span>/var/www/moodle/config-dist.php<span class="w"> </span>/var/www/moodle/config.php
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/var/www/moodle/config.php
+</span></code></pre></div>
+<p>Relevante Werte für PostgreSQL:</p>
+<div class="language-php highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="x">$CFG-&gt;dbtype    = &#39;pgsql&#39;;</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="x">$CFG-&gt;dblibrary = &#39;native&#39;;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="x">$CFG-&gt;dbhost    = &#39;localhost&#39;;</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="x">$CFG-&gt;dbname    = &#39;moodle&#39;;</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="x">$CFG-&gt;dbuser    = &#39;moodle&#39;;</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="x">$CFG-&gt;dbpass    = &#39;EIN_LANGES_ZUFAELLIGES_PASSWORT&#39;;</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="x">$CFG-&gt;prefix    = &#39;mdl_&#39;;</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="x">$CFG-&gt;dboptions = [</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="x">    &#39;dbpersist&#39; =&gt; false,</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="x">    &#39;dbport&#39;    =&gt; &#39;&#39;,</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="x">    &#39;dbsocket&#39;  =&gt; false,</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="x">];</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="x">$CFG-&gt;wwwroot   = &#39;https://moodle.example.org&#39;;</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="x">$CFG-&gt;dataroot  = &#39;/var/moodledata&#39;;</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="x">$CFG-&gt;directorypermissions = 0750;</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="x">$CFG-&gt;admin     = &#39;admin&#39;;</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: Zugangsdaten schützen</p>
+<p><code>config.php</code> enthält das Datenbankpasswort im Klartext. Zugriff auf den Webserver-Benutzer beschränken:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">640</span><span class="w"> </span>/var/www/moodle/config.php
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/moodle/config.php
+</span></code></pre></div>
+</div>
+<hr />
+<h2 id="5-php-fpm-konfigurieren">5. PHP-FPM konfigurieren<a class="headerlink" href="#5-php-fpm-konfigurieren" title="Permanent link">&para;</a></h2>
+<p>Empfohlene Mindestwerte in der jeweiligen <code>php.ini</code> von PHP-FPM (Pfad enthält die installierte PHP-Version, z. B. <code>/etc/php/8.3/fpm/php.ini</code>):</p>
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="na">max_input_vars</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">5000</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="na">memory_limit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">256M</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="na">upload_max_filesize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">100M</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="na">post_max_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">100M</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="na">max_execution_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">300</span>
+</span></code></pre></div>
+<p>Danach PHP-FPM neu starten:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>php8.3-fpm
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>PHP-Versionsnummer in allen Pfaden und Paketnamen (<code>php8.3-fpm</code>, <code>/etc/php/8.3/...</code>) an die tatsächlich installierte Version anpassen (<code>php -v</code>).</p>
+</div>
+<hr />
+<h2 id="6-nginx-serverblock-einrichten">6. Nginx-Serverblock einrichten<a class="headerlink" href="#6-nginx-serverblock-einrichten" title="Permanent link">&para;</a></h2>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># /etc/nginx/sites-available/moodle</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">moodle.example.org</span><span class="p">;</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/moodle</span><span class="p">;</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">    </span><span class="kn">index</span><span class="w"> </span><span class="s">index.php</span><span class="p">;</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="kn">client_max_body_size</span><span class="w"> </span><span class="s">100M</span><span class="p">;</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="nv">$uri/</span><span class="w"> </span><span class="s">/index.php?</span><span class="nv">$query_string</span><span class="p">;</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">[^/]\.php(/|$)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">        </span><span class="kn">fastcgi_split_path_info</span><span class="w"> </span><span class="s">^(.+?\.php)(/.*)</span>$<span class="p">;</span>
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="w">        </span><span class="kn">if</span><span class="w"> </span><span class="s">(!-f</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="s">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="w">            </span><span class="kn">return</span><span class="w"> </span><span class="mi">404</span><span class="p">;</span>
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="w">        </span><span class="kn">fastcgi_pass</span><span class="w"> </span><span class="s">unix:/run/php/php8.3-fpm.sock</span><span class="p">;</span>
+</span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="w">        </span><span class="kn">fastcgi_index</span><span class="w"> </span><span class="s">index.php</span><span class="p">;</span>
+</span><span id="__span-13-22"><a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="w">        </span><span class="kn">include</span><span class="w"> </span><span class="s">fastcgi_params</span><span class="p">;</span>
+</span><span id="__span-13-23"><a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">SCRIPT_FILENAME</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+</span><span id="__span-13-24"><a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">PATH_INFO</span><span class="w"> </span><span class="nv">$fastcgi_path_info</span><span class="p">;</span>
+</span><span id="__span-13-25"><a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-13-26"><a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a>
+</span><span id="__span-13-27"><a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a><span class="w">    </span><span class="c1"># moodledata liegt außerhalb des Webroots und ist damit ohnehin nicht erreichbar.</span>
+</span><span id="__span-13-28"><a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a><span class="w">    </span><span class="c1"># Zusätzlich: .git und interne Konfigurationsdateien sperren.</span>
+</span><span id="__span-13-29"><a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">/\.git</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-30"><a id="__codelineno-13-30" name="__codelineno-13-30" href="#__codelineno-13-30"></a><span class="w">        </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span>
+</span><span id="__span-13-31"><a id="__codelineno-13-31" name="__codelineno-13-31" href="#__codelineno-13-31"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-13-32"><a id="__codelineno-13-32" name="__codelineno-13-32" href="#__codelineno-13-32"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Aktivieren und testen:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/etc/nginx/sites-available/moodle<span class="w"> </span>/etc/nginx/sites-enabled/moodle
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Grundlagen zu Serverblöcken: <a href="../../../entwicklung/infrastruktur/nginx/">Nginx: Grundlagen</a>. Für die produktive Auslieferung anschließend <a href="../../../entwicklung/infrastruktur/nginx-ssl/">Nginx: SSL &amp; HTTPS</a> und <a href="../../../entwicklung/infrastruktur/nginx-hardening/">Nginx: Hardening &amp; Sicherheit</a> einrichten — Moodle sollte öffentlich ausschließlich über HTTPS erreichbar sein.</p>
+<p>Eine ausführliche Erklärung jeder Direktive dieses Serverblocks (Clean URLs, PATH_INFO, Sperr-Regeln, Caching) steht in <a href="../moodle-nginx-configuration/">Moodle: Nginx-Konfiguration im Detail</a>.</p>
+</div>
+<hr />
+<h2 id="7-installation-per-cli-abschlieen">7. Installation per CLI abschließen<a class="headerlink" href="#7-installation-per-cli-abschlieen" title="Permanent link">&para;</a></h2>
+<p>Statt des Web-Installers (der auf einem frisch aufgesetzten Server ohne HTTPS unnötig exponiert wäre) übernimmt das mitgelieferte CLI-Skript die Ersteinrichtung:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>/var/www/moodle/admin/cli/install_database.php<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span>--agree-license<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span>--fullname<span class="o">=</span><span class="s2">&quot;Wissen Ahrensburg Moodle&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span>--shortname<span class="o">=</span><span class="s2">&quot;WA-Moodle&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span>--adminuser<span class="o">=</span>admin<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span>--adminpass<span class="o">=</span><span class="s2">&quot;EIN_WEITERES_LANGES_PASSWORT&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span>--adminemail<span class="o">=</span>admin@example.org
+</span></code></pre></div>
+<p>Das Skript legt anhand der bereits gesetzten Werte in <code>config.php</code> das Datenbankschema an und erstellt den ersten Administrator-Account.</p>
+<hr />
+<h2 id="8-cron-einrichten">8. Cron einrichten<a class="headerlink" href="#8-cron-einrichten" title="Permanent link">&para;</a></h2>
+<p>Moodle benötigt einen regelmäßig laufenden Cron-Job für geplante Aufgaben (Benachrichtigungen, Backups, Aufräumarbeiten). Als <code>www-data</code>-Crontab, minütlich:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>crontab<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>-e
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>* * * * * /usr/bin/php /var/www/moodle/admin/cli/cron.php &gt;/dev/null 2&gt;&amp;1
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Achtung</p>
+<p>Ohne laufenden Cron-Job funktionieren zentrale Moodle-Funktionen (E-Mail-Versand, geplante Backups, Kurs-Synchronisation) nicht oder nur verzögert. Nach der Einrichtung prüfen: <code>sudo -u www-data php /var/www/moodle/admin/cli/cron.php</code> sollte fehlerfrei durchlaufen.</p>
+</div>
+<hr />
+<h2 id="9-firewall">9. Firewall<a class="headerlink" href="#9-firewall" title="Permanent link">&para;</a></h2>
+<p>Nur HTTP/HTTPS für Nginx freigeben, alle internen Ports (PostgreSQL 5432, PHP-FPM-Socket) bleiben unerreichbar von außen:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s2">&quot;Nginx Full&quot;</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>status<span class="w"> </span>verbose
+</span></code></pre></div>
+<p>Details zur Firewall-Konfiguration: <a href="../../../entwicklung/infrastruktur/ufw-firewall/">UFW-Firewall installieren und steuern</a>.</p>
+<hr />
+<h2 id="10-updates-uber-git">10. Updates über Git<a class="headerlink" href="#10-updates-uber-git" title="Permanent link">&para;</a></h2>
+<p>Der Vorteil der Git-Installation zeigt sich beim Versionswechsel: Statt Dateien manuell zu ersetzen, wird der Ziel-Branch ausgecheckt und Moodles Web- oder CLI-Upgrade übernimmt das Datenbank-Update.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/moodle
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>git<span class="w"> </span>fetch
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>MOODLE_405_STABLE
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>admin/cli/upgrade.php
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp</p>
+<p>Vor jedem Upgrade ein Datenbank-Backup ziehen — siehe <a href="../../../entwicklung/infrastruktur/postgresql-backup-restore/">PostgreSQL Backup &amp; Recovery</a> — und den Server vorübergehend in den Wartungsmodus schalten: <code>sudo -u www-data php admin/cli/maintenance.php --enable</code>.</p>
+</div>
+<hr />
+<h2 id="kurzprufung">Kurzprüfung<a class="headerlink" href="#kurzprufung" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>is-active<span class="w"> </span>nginx
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>is-active<span class="w"> </span>php8.3-fpm
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>is-active<span class="w"> </span>postgresql
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>/var/www/moodle/admin/cli/cron.php
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>curl<span class="w"> </span>-I<span class="w"> </span>http://127.0.0.1
+</span></code></pre></div>
+<p>Wenn alle drei Dienste aktiv sind, der Cron-Lauf fehlerfrei durchläuft und der HTTP-Aufruf eine Antwort liefert, ist die Installation funktionsfähig. Danach folgen HTTPS, ein regelmäßiger Backup-Plan für <code>moodledata</code> und die Datenbank sowie ein Update-Rhythmus über <code>git fetch</code> / <code>git checkout</code>.</p>
+<hr />
+<h2 id="quellen-und-weiterfuhrende-informationen">Quellen und weiterführende Informationen<a class="headerlink" href="#quellen-und-weiterfuhrende-informationen" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../../">Startseite</a> — zurück zur Dokumentations-Zentrale</li>
-<li><a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/">KI strukturiert das Wiki autonom &amp; Selfhosting-Migration</a> — Anschlussfrage: wie die autonome Strukturierung konkret abläuft und wie das Ergebnis in ein Selfhosting-System übertragen wird</li>
-<li><a href="../openwiki-repo-dokumentation-agent/">OpenWiki: Repo-Dokumentations-Agent (LangChain)</a> — konkrete Tool-Umsetzung des Musters</li>
-<li><a href="../llm-first-wiki-tools-agenten/">Native „LLM-first" Wiki-Tools &amp; Agenten</a> — Einordnung von OpenWiki &amp; Co. in die Gesamtlandschaft</li>
-<li><a href="../pkm-second-brain-methoden/">Personal Knowledge Management (PKM) &amp; Second Brain</a> — verwandtes Konzept auf persönlicher Notiz-Ebene statt Team-/Repository-Ebene</li>
-<li><a href="../">Dokumentenerstellung, Wikis &amp; Notebooks</a> — Gesamtübersicht aller Dokumentations-Systeme</li>
+<li><a href="https://docs.moodle.org/en/Installing_Moodle">Moodle: Installing Moodle</a> – technische Ausgangsbasis dieser eigenständig formulierten Anleitung</li>
+<li><a href="https://docs.moodle.org/en/Server_requirements">Moodle: Server requirements</a></li>
+<li><a href="https://docs.moodle.org/dev/Git_for_administrators">Moodle: Git for administrators</a></li>
+<li><a href="https://moodledev.io/general/releases">Moodle Releases</a></li>
+<li><a href="../moodle-nginx-configuration/">Moodle: Nginx-Konfiguration im Detail</a> – vertiefende Erklärung des Serverblocks aus Schritt 6</li>
+<li><a href="../../../entwicklung/infrastruktur/postgresql/">PostgreSQL: Grundlagen</a></li>
+<li><a href="../../../entwicklung/infrastruktur/nginx/">Nginx: Grundlagen</a></li>
+<li><a href="../../../entwicklung/infrastruktur/nginx-ssl/">Nginx: SSL &amp; HTTPS</a></li>
+<li><a href="../../../entwicklung/infrastruktur/ufw-firewall/">UFW-Firewall installieren und steuern</a></li>
+<li><a href="../">E-Learning-Übersicht</a></li>
 </ul>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
@@ -3113,7 +3244,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../cms-mcp-server-topliste/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)">
+          <a href="../interaktive-lernplattformen-kurserstellung/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Interaktive Lernplattformen &amp; Kurserstellung">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3123,20 +3254,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)
+                Interaktive Lernplattformen & Kurserstellung
               </div>
             </div>
           </a>
         
         
           
-          <a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-footer__link md-footer__link--next" aria-label="Weiter: KI strukturiert das Wiki autonom &amp; Selfhosting-Migration">
+          <a href="../moodle-nginx-configuration/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Moodle: Nginx-Konfiguration im Detail">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                KI strukturiert das Wiki autonom & Selfhosting-Migration
+                Moodle: Nginx-Konfiguration im Detail
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/llm-wiki-pattern-karpathy/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/e-learning/moodle-nginx-configuration/">
       
       
-        <link rel="prev" href="../cms-mcp-server-topliste/">
+        <link rel="prev" href="../moodle-installation/">
       
       
-        <link rel="next" href="../ki-autonome-wiki-strukturierung-selfhosting-migration/">
+        <link rel="next" href="../moodle-nginx-ssl-hardening/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>LLM-Wiki-Pattern (Karpathy-Muster) - Wissen Ahrensburg</title>
+        <title>Moodle: Nginx-Konfiguration im Detail - Wissen Ahrensburg</title>
       
     
     
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#llm-wiki-pattern-karpathy-muster" class="md-skip">
+        <a href="#moodle-nginx-konfiguration-im-detail" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLM-Wiki-Pattern (Karpathy-Muster)
+              Moodle: Nginx-Konfiguration im Detail
             
           </span>
         </div>
@@ -994,8 +994,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1031,15 +1033,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../e-learning/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1062,7 +1064,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1081,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/ki-lehre-weiterbildung/" class="md-nav__link">
+      <a href="../ki-lehre-weiterbildung/" class="md-nav__link">
         
   
   
@@ -1108,7 +1110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/sprachlern-ki-agenten-topliste/" class="md-nav__link">
+      <a href="../sprachlern-ki-agenten-topliste/" class="md-nav__link">
         
   
   
@@ -1135,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/lernmethoden-programmiersprachen/" class="md-nav__link">
+      <a href="../lernmethoden-programmiersprachen/" class="md-nav__link">
         
   
   
@@ -1162,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
+      <a href="../interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
         
   
   
@@ -1189,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/moodle-installation/" class="md-nav__link">
+      <a href="../moodle-installation/" class="md-nav__link">
         
   
   
@@ -1213,10 +1215,36 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../e-learning/moodle-nginx-configuration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Moodle: Nginx-Konfiguration im Detail
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1231,6 +1259,137 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ubersicht-welche-aufgabe-ubernimmt-nginx-hier" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Übersicht: Welche Aufgabe übernimmt Nginx hier?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-der-basis-block-listen-server_name-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Der Basis-Block: <code>listen</code>, <code>server_name</code>, <code>root</code>
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-upload-groe-client_max_body_size" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Upload-Größe: <code>client_max_body_size</code>
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-routing-clean-urls-try_files" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Routing &amp; Clean URLs: <code>try_files</code>
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-die-php-fpm-anbindung-im-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Die PHP-FPM-Anbindung im Detail
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-sensible-pfade-sperren" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Sensible Pfade sperren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-statische-assets-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Statische Assets &amp; Caching
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-vollstandiger-kommentierter-serverblock" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Vollständiger, kommentierter Serverblock
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-konfiguration-testen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8. Konfiguration testen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1243,7 +1402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-learning/moodle-nginx-ssl-hardening/" class="md-nav__link">
+      <a href="../moodle-nginx-ssl-hardening/" class="md-nav__link">
         
   
   
@@ -1474,8 +1633,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1541,15 +1698,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../dokumentation/" class="md-nav__link ">
               
   
   
@@ -1572,7 +1729,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1591,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm-first-wiki-tools-agenten/" class="md-nav__link">
+      <a href="../../dokumentation/llm-first-wiki-tools-agenten/" class="md-nav__link">
         
   
   
@@ -1618,7 +1775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../klassische-wiki-systeme-llm-integration/" class="md-nav__link">
+      <a href="../../dokumentation/klassische-wiki-systeme-llm-integration/" class="md-nav__link">
         
   
   
@@ -1645,7 +1802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
+      <a href="../../dokumentation/klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
         
   
   
@@ -1672,7 +1829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../open-source-llm-agent-mcp-systeme/" class="md-nav__link">
+      <a href="../../dokumentation/open-source-llm-agent-mcp-systeme/" class="md-nav__link">
         
   
   
@@ -1699,7 +1856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wissensmanagement-mcp-server-topliste/" class="md-nav__link">
+      <a href="../../dokumentation/wissensmanagement-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1726,7 +1883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cms-mcp-server-topliste/" class="md-nav__link">
+      <a href="../../dokumentation/cms-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1750,36 +1907,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  LLM-Wiki-Pattern (Karpathy-Muster)
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../dokumentation/llm-wiki-pattern-karpathy/" class="md-nav__link">
         
   
   
@@ -1794,137 +1925,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#kernidee-kompilieren-statt-retrieval" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Kernidee: Kompilieren statt Retrieval
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architektur-drei-schichten" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Architektur: Drei Schichten
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kernoperationen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Kernoperationen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#indexierung-logbuch" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Indexierung &amp; Logbuch
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional-such-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Optional: Such-Tools
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipps-tricks-aus-der-praxis" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Tipps &amp; Tricks aus der Praxis
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#warum-das-muster-funktioniert" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Warum das Muster funktioniert
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#konkrete-implementierung-openwiki-langchain" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Konkrete Implementierung: OpenWiki (LangChain)
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bezug-zu-diesem-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Bezug zu diesem Repository
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verwandte-themen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Verwandte Themen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1937,7 +1937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
+      <a href="../../dokumentation/ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
         
   
   
@@ -1964,7 +1964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openwiki-repo-dokumentation-agent/" class="md-nav__link">
+      <a href="../../dokumentation/openwiki-repo-dokumentation-agent/" class="md-nav__link">
         
   
   
@@ -1991,7 +1991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../onyx-danswer-rag-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/onyx-danswer-rag-plattform/" class="md-nav__link">
         
   
   
@@ -2018,7 +2018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../anythingllm-rag-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/anythingllm-rag-plattform/" class="md-nav__link">
         
   
   
@@ -2045,7 +2045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../open-webui-rag-agenten-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/open-webui-rag-agenten-plattform/" class="md-nav__link">
         
   
   
@@ -2072,7 +2072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dify-agenten-workflow-plattform/" class="md-nav__link">
+      <a href="../../dokumentation/dify-agenten-workflow-plattform/" class="md-nav__link">
         
   
   
@@ -2099,7 +2099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flowise-visueller-flow-builder/" class="md-nav__link">
+      <a href="../../dokumentation/flowise-visueller-flow-builder/" class="md-nav__link">
         
   
   
@@ -2126,7 +2126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../khoj-ki-zweites-gehirn/" class="md-nav__link">
+      <a href="../../dokumentation/khoj-ki-zweites-gehirn/" class="md-nav__link">
         
   
   
@@ -2153,7 +2153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pkm-second-brain-methoden/" class="md-nav__link">
+      <a href="../../dokumentation/pkm-second-brain-methoden/" class="md-nav__link">
         
   
   
@@ -2180,7 +2180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
+      <a href="../../dokumentation/wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
         
   
   
@@ -2245,7 +2245,7 @@
   
   
   
-    <a href="../mediawiki/" class="md-nav__link">
+    <a href="../../dokumentation/mediawiki/" class="md-nav__link">
       
   
   
@@ -2310,7 +2310,7 @@
   
   
   
-    <a href="../semantische-mediawiki/installieren/" class="md-nav__link">
+    <a href="../../dokumentation/semantische-mediawiki/installieren/" class="md-nav__link">
       
   
   
@@ -2371,7 +2371,7 @@
   
   
   
-    <a href="../wikijs-linux-installation/" class="md-nav__link">
+    <a href="../../dokumentation/wikijs-linux-installation/" class="md-nav__link">
       
   
   
@@ -2436,7 +2436,7 @@
   
   
   
-    <a href="../xwiki/installieren/" class="md-nav__link">
+    <a href="../../dokumentation/xwiki/installieren/" class="md-nav__link">
       
   
   
@@ -2584,10 +2584,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#kernidee-kompilieren-statt-retrieval" class="md-nav__link">
+  <a href="#ubersicht-welche-aufgabe-ubernimmt-nginx-hier" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Kernidee: Kompilieren statt Retrieval
+        Übersicht: Welche Aufgabe übernimmt Nginx hier?
       </span>
     </span>
   </a>
@@ -2595,10 +2595,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architektur-drei-schichten" class="md-nav__link">
+  <a href="#1-der-basis-block-listen-server_name-root" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Architektur: Drei Schichten
+        1. Der Basis-Block: <code>listen</code>, <code>server_name</code>, <code>root</code>
       </span>
     </span>
   </a>
@@ -2606,10 +2606,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kernoperationen" class="md-nav__link">
+  <a href="#2-upload-groe-client_max_body_size" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Kernoperationen
+        2. Upload-Größe: <code>client_max_body_size</code>
       </span>
     </span>
   </a>
@@ -2617,10 +2617,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#indexierung-logbuch" class="md-nav__link">
+  <a href="#3-routing-clean-urls-try_files" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Indexierung &amp; Logbuch
+        3. Routing &amp; Clean URLs: <code>try_files</code>
       </span>
     </span>
   </a>
@@ -2628,10 +2628,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#optional-such-tools" class="md-nav__link">
+  <a href="#4-die-php-fpm-anbindung-im-detail" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Optional: Such-Tools
+        4. Die PHP-FPM-Anbindung im Detail
       </span>
     </span>
   </a>
@@ -2639,10 +2639,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipps-tricks-aus-der-praxis" class="md-nav__link">
+  <a href="#5-sensible-pfade-sperren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Tipps &amp; Tricks aus der Praxis
+        5. Sensible Pfade sperren
       </span>
     </span>
   </a>
@@ -2650,10 +2650,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#warum-das-muster-funktioniert" class="md-nav__link">
+  <a href="#6-statische-assets-caching" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Warum das Muster funktioniert
+        6. Statische Assets &amp; Caching
       </span>
     </span>
   </a>
@@ -2661,10 +2661,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#konkrete-implementierung-openwiki-langchain" class="md-nav__link">
+  <a href="#7-vollstandiger-kommentierter-serverblock" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Konkrete Implementierung: OpenWiki (LangChain)
+        7. Vollständiger, kommentierter Serverblock
       </span>
     </span>
   </a>
@@ -2672,10 +2672,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bezug-zu-diesem-repository" class="md-nav__link">
+  <a href="#8-konfiguration-testen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Bezug zu diesem Repository
+        8. Konfiguration testen
       </span>
     </span>
   </a>
@@ -2683,10 +2683,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verwandte-themen" class="md-nav__link">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Verwandte Themen
+        Quellen und weiterführende Informationen
       </span>
     </span>
   </a>
@@ -2808,34 +2808,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
     
     
     
@@ -2845,7 +2817,7 @@
           
   
   <span class="md-ellipsis">
-    Dokumentation
+    E-Learning
   </span>
 
         </a>
@@ -2863,163 +2835,291 @@
                   
 
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
-<h1 id="llm-wiki-pattern-karpathy-muster">LLM-Wiki-Pattern (Karpathy-Muster)<a class="headerlink" href="#llm-wiki-pattern-karpathy-muster" title="Permanent link">&para;</a></h1>
-<p>Das <strong>LLM-Wiki-Pattern</strong> ist ein von Andrej Karpathy (Mitgründer OpenAI, ehem. AI-Direktor bei Tesla) im April 2026 als GitHub-Gist veröffentlichtes Architekturmuster: Statt bei jeder Anfrage Rohdokumente per RAG (Retrieval-Augmented Generation) neu zu durchsuchen, lässt man ein LLM einmalig eine <strong>persistente, strukturierte Wiki</strong> aus den Quellen aufbauen — und fragt danach nur noch gegen dieses kompilierte Wissen ab. Diese Seite erklärt das Muster selbst; die konkrete Open-Source-Umsetzung davon ist <a href="../openwiki-repo-dokumentation-agent/">OpenWiki (LangChain)</a>.</p>
+<h1 id="moodle-nginx-konfiguration-im-detail">Moodle: Nginx-Konfiguration im Detail<a class="headerlink" href="#moodle-nginx-konfiguration-im-detail" title="Permanent link">&para;</a></h1>
+<p>Dieses Kapitel erklärt den Nginx-Serverblock aus <a href="../moodle-installation/">Moodle auf Ubuntu Server installieren</a> Zeile für Zeile: warum jede Direktive nötig ist, welche Angriffsfläche sie schließt und wie die Konfiguration für „Clean URLs“, effiziente Datei-Auslieferung und HTTPS erweitert wird.</p>
 <div class="admonition note">
-<p class="admonition-title">Hinweis: Primärquelle</p>
-<p>Das Pattern ist als Prosa-Text (Prompt/Idee zum Einfügen in einen Agenten) veröffentlicht, nicht als fertiges Produkt: <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">gist.github.com/karpathy/442a6bf555914893e9891c11519de94f</a>.</p>
+<p class="admonition-title">Hinweis zur Quelle</p>
+<p>Die Konfiguration orientiert sich an der offiziellen <a href="https://docs.moodle.org/en/Nginx">Moodle-Nginx-Dokumentation</a> sowie den <a href="https://docs.moodle.org/en/Server_requirements">Server-Requirements</a>. Der Text wurde eigenständig formuliert und um praktische Erklärungen ergänzt.</p>
 </div>
 <hr />
-<h2 id="kernidee-kompilieren-statt-retrieval">Kernidee: Kompilieren statt Retrieval<a class="headerlink" href="#kernidee-kompilieren-statt-retrieval" title="Permanent link">&para;</a></h2>
-<p>Karpathys Analogie stammt aus der Softwareentwicklung: Ein Compiler übersetzt Quellcode einmalig in ein optimiertes Binary — man führt nicht bei jedem Programmstart den Quellcode erneut aus, sondern kompiliert einmal und nutzt danach das Artefakt.</p>
-<p>Auf Wissensarbeit übertragen: <strong>RAG</strong> durchsucht bei <em>jeder</em> Anfrage erneut die Rohquellen und muss Zusammenhänge jedes Mal neu rekonstruieren. Das <strong>LLM-Wiki-Pattern</strong> dreht die Reihenfolge um — „compile deine Quellen zuerst":</p>
+<h2 id="ubersicht-welche-aufgabe-ubernimmt-nginx-hier">Übersicht: Welche Aufgabe übernimmt Nginx hier?<a class="headerlink" href="#ubersicht-welche-aufgabe-ubernimmt-nginx-hier" title="Permanent link">&para;</a></h2>
+<p>Nginx selbst führt keinen PHP-Code aus. In der Moodle-Architektur übernimmt Nginx vier Aufgaben:</p>
 <ol>
-<li>Ein LLM liest die Rohquellen einmalig (oder inkrementell bei neuen Quellen).</li>
-<li>Es synthetisiert die Inhalte in strukturierte, untereinander verlinkte Wiki-Seiten.</li>
-<li>Alle folgenden Anfragen laufen gegen dieses <strong>kompilierte Artefakt</strong> — nicht mehr gegen die Rohquellen.</li>
+<li><strong>Statische Anfragen direkt beantworten</strong> (Bilder, CSS, JS) — schneller als der Umweg über PHP-FPM.</li>
+<li><strong>Dynamische Anfragen an PHP-FPM weiterreichen</strong> — inklusive der von Moodle genutzten „Clean URLs“ (<code>PATH_INFO</code>) für Dateidownloads und Web-Services.</li>
+<li><strong>Sensible Pfade sperren</strong> — <code>.git</code>, <code>config.php</code>-Backups, <code>moodledata</code>, falls versehentlich im Webroot.</li>
+<li><strong>HTTPS terminieren</strong> und Sicherheits-Header setzen (siehe <a href="../../../entwicklung/infrastruktur/nginx-ssl/">Nginx: SSL &amp; HTTPS</a>).</li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tipp: Kein Ersatz für RAG, sondern eine Vorstufe</p>
-<p>Das Pattern schließt klassisches RAG nicht aus — es reduziert nur, was zur Anfragezeit neu erschlossen werden muss. Für sehr große, sich schnell ändernde Quellenmengen bleibt eine Kombination aus beidem sinnvoll (siehe <a href="../#6-rag-ki-zentrierte-wissensdatenbanken-rag-co-wikis">RAG- &amp; KI-Zentrierte Wissensdatenbanken</a>).</p>
-</div>
-<hr />
-<h2 id="architektur-drei-schichten">Architektur: Drei Schichten<a class="headerlink" href="#architektur-drei-schichten" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>graph TD
-    Raw["raw/ — unveraenderliche Rohquellen&lt;br/&gt;(Artikel, PDFs, Notizen, Code)"] --&gt; Agent["LLM-Agent"]
-    Schema["CLAUDE.md / AGENTS.md — Schema&lt;br/&gt;(Konventionen, Workflows)"] --&gt; Agent
-    Agent --&gt;|"Ingest"| Wiki["wiki/ — generierte Markdown-Seiten&lt;br/&gt;(Entitaeten, Konzepte, Querverweise)"]
-    Wiki --&gt; Index["index.md — Inhaltsverzeichnis"]
-    Wiki --&gt; Log["log.md — chronologisches Logbuch"]
-    Query["Nutzerfrage"] --&gt;|"liest gegen"| Wiki</code></pre>
+    Request["Eingehende Anfrage"] --&gt; Static{"Statische Datei? (.css, .js, .png, ...)"}
+    Static --&gt;|"Ja"| Direct["Nginx liefert Datei direkt aus + Cache-Header"]
+    Static --&gt;|"Nein"| Clean{"Clean URL? (/pluginfile.php/... oder /webservice/...)"}
+    Clean --&gt;|"Ja"| PathInfo["fastcgi_split_path_info trennt Skript von PATH_INFO"]
+    Clean --&gt;|"Nein"| Direct2["Direkter PHP-Aufruf (z. B. /login/index.php)"]
+    PathInfo --&gt; FPM["An PHP-FPM weiterreichen"]
+    Direct2 --&gt; FPM
+    FPM --&gt; Moodle["Moodle-Code verarbeitet Anfrage"]</code></pre>
+<hr />
+<h2 id="1-der-basis-block-listen-server_name-root">1. Der Basis-Block: <code>listen</code>, <code>server_name</code>, <code>root</code><a class="headerlink" href="#1-der-basis-block-listen-server_name-root" title="Permanent link">&para;</a></h2>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">moodle.example.org</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/moodle</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="kn">index</span><span class="w"> </span><span class="s">index.php</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+</span></code></pre></div>
 <table>
 <thead>
 <tr>
-<th>Schicht</th>
-<th>Ordner/Datei</th>
-<th>Rolle</th>
+<th>Direktive</th>
+<th>Zweck</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Rohquellen</strong></td>
-<td><code>raw/</code></td>
-<td>Unveränderliche Datenbasis (Artikel, PDFs, Notizen). Der Agent liest sie, modifiziert sie aber nie.</td>
+<td><code>listen 80</code></td>
+<td>Nginx nimmt Anfragen zunächst nur über HTTP entgegen. Nach Einrichtung von <a href="../../../entwicklung/infrastruktur/nginx-ssl/">SSL &amp; HTTPS</a> kommt ein zweiter Block mit <code>listen 443 ssl</code> hinzu; Port 80 dient dann nur noch der Weiterleitung auf HTTPS.</td>
 </tr>
 <tr>
-<td><strong>Das Wiki</strong></td>
-<td><code>wiki/</code></td>
-<td>LLM-generierte Markdown-Dateien mit Querverweisen — je eine strukturierte, Wikipedia-artige Seite pro Konzept/Entität, verlinkt über <code>[[wiki-links]]</code>.</td>
+<td><code>server_name</code></td>
+<td>Muss exakt der Domain entsprechen, die auch in <code>$CFG-&gt;wwwroot</code> der <code>config.php</code> eingetragen ist — bei Abweichung erzeugt Moodle Warnungen oder falsche Links.</td>
 </tr>
 <tr>
-<td><strong>Schema</strong></td>
-<td><code>CLAUDE.md</code> / <code>AGENTS.md</code></td>
-<td>Dokumentiert Struktur und Konventionen des Wikis und definiert die Workflows für Ingestion, Abfragen und Wartung — die Instruktionsdatei, die der Agent bei jedem Lauf befolgt.</td>
+<td><code>root</code></td>
+<td>Zeigt auf das Moodle-Code-Verzeichnis. <strong>Nicht</strong> auf <code>moodledata</code> — das liegt bewusst außerhalb des Webroots (siehe <a href="../moodle-installation/#3-moodle-code-per-git-beziehen">Installation, Schritt 3</a>).</td>
+</tr>
+<tr>
+<td><code>index index.php</code></td>
+<td>Ohne diese Zeile würde Nginx bei <code>/</code> ein Verzeichnislisting statt <code>index.php</code> versuchen.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="kernoperationen">Kernoperationen<a class="headerlink" href="#kernoperationen" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Ingest</label><label for="__tabbed_1_2">Query</label><label for="__tabbed_1_3">Lint</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Neue Quelle wird zu <code>raw/</code> hinzugefügt. Der Agent liest sie, ordnet die Erkenntnisse ein, erstellt neue Wiki-Seiten oder aktualisiert bestehende — typischerweise werden pro Ingest-Lauf 10–15 Seiten berührt (neue Querverweise, aktualisierte Zusammenfassungen).</p>
-</div>
-<div class="tabbed-block">
-<p>Eine Frage wird gegen das Wiki gestellt (nicht gegen die Rohquellen). Der Agent sucht die relevanten Wiki-Seiten und synthetisiert eine Antwort mit Zitaten/Links auf die jeweiligen Seiten.</p>
-</div>
-<div class="tabbed-block">
-<p>Periodische Gesundheitsprüfung: Widersprüche zwischen Seiten, verwaiste Seiten (keine eingehenden Links), fehlende Querverweise. Entspricht im Prinzip dem, was <code>check_orphaned_files.py</code> in diesem Repository für die Nav-Struktur übernimmt (siehe <a href="#verwandte-themen">Verwandte Themen</a>).</p>
-</div>
-</div>
-</div>
-<hr />
-<h2 id="indexierung-logbuch">Indexierung &amp; Logbuch<a class="headerlink" href="#indexierung-logbuch" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong><code>index.md</code></strong> — Inhaltsverzeichnis mit Links, Einzeilern und Metadaten pro Kategorie. Entspricht funktional den <code>index.md</code>-Übersichtsseiten in diesem Repository (z. B. <a href="../">Dokumentenerstellung, Wikis &amp; Notebooks</a>).</li>
-<li><strong><code>log.md</code></strong> — chronologisches, append-only Logbuch mit konsistenten Präfixen, damit es maschinell parsebar bleibt (welche Quelle wann welche Seiten verändert hat).</li>
-</ul>
-<hr />
-<h2 id="optional-such-tools">Optional: Such-Tools<a class="headerlink" href="#optional-such-tools" title="Permanent link">&para;</a></h2>
-<p>Bei kleiner Skalierung (bis grob 100 Quellen, einige hundert Seiten) reicht <code>index.md</code> als Sucheinstieg. Wächst das Wiki darüber hinaus, empfiehlt Karpathy <a href="https://github.com/tobi/qmd">qmd</a> — eine lokale Suchmaschine für Markdown-Dateien mit hybrider BM25/Vektor-Suche und LLM-Reranking, vollständig on-device. Sie bringt sowohl eine CLI (für den Agenten) als auch einen MCP-Server (als natives Tool) mit. Alternativ lässt sich ein einfaches Suchskript passend zur eigenen Struktur per Vibe-Coding vom Agenten selbst erstellen.</p>
-<hr />
-<h2 id="tipps-tricks-aus-der-praxis">Tipps &amp; Tricks aus der Praxis<a class="headerlink" href="#tipps-tricks-aus-der-praxis" title="Permanent link">&para;</a></h2>
-<p>Karpathys Original-Gist beschreibt seinen persönlichen Workflow mit Obsidian als Wiki-Oberfläche. Die Tipps sind Obsidian-spezifisch, das zugrunde liegende Prinzip überträgt sich aber auf jedes Markdown-basierte Wiki (auch auf dieses Repository):</p>
-<ul>
-<li><strong>Obsidian Web Clipper</strong> — Browser-Erweiterung, die Webartikel direkt als Markdown in die Rohsammlung (<code>raw/</code>) überführt.</li>
-<li><strong>Bilder lokal speichern</strong> — in Obsidian unter „Dateien &amp; Links" einen festen Anhang-Ordner setzen (z. B. <code>raw/assets/</code>) und „Anhänge für aktuelle Datei herunterladen" auf ein Tastenkürzel legen. Wichtig, weil LLMs eingebettete Bilder in Markdown nicht in einem Durchgang mitlesen — der Agent liest zuerst den Text und betrachtet referenzierte Bilder danach separat.</li>
-<li><strong>Graph-Ansicht</strong> — der schnellste Weg, die Form eines Wikis zu erfassen: welche Seiten Knotenpunkte (Hubs) sind, welche verwaist sind.</li>
-<li><strong>Marp</strong> — Markdown-basiertes Folienformat mit Obsidian-Plugin, um Präsentationen direkt aus Wiki-Inhalten zu generieren.</li>
-<li><strong>Dataview</strong> — Obsidian-Plugin für Abfragen über Frontmatter (Tags, Daten, Quellenzahl); erzeugt dynamische Tabellen/Listen, sofern der Agent konsistentes YAML-Frontmatter pflegt.</li>
-<li><strong>Git-Versionierung</strong> — das Wiki ist einfach ein Git-Repository aus Markdown-Dateien; Versionsverlauf, Branching und Zusammenarbeit gibt es dadurch „geschenkt".</li>
-</ul>
-<hr />
-<h2 id="warum-das-muster-funktioniert">Warum das Muster funktioniert<a class="headerlink" href="#warum-das-muster-funktioniert" title="Permanent link">&para;</a></h2>
-<p>Karpathys zentrale These: <em>„Die mühsame Arbeit bei Wissensbasen ist nicht das Lesen oder Denken — es ist die Buchhaltung."</em> Menschen geben Wikis typischerweise auf, weil der Pflegeaufwand (Querverweise aktuell halten, Redundanzen vermeiden, Struktur konsistent halten) schneller wächst als der Nutzen. Ein LLM-Agent:</p>
-<ul>
-<li>vergisst keine Querverweise und aktualisiert sie zuverlässig bei jeder Änderung,</li>
-<li>bearbeitet mehrere betroffene Seiten in einem einzigen Durchlauf,</li>
-<li>ermüdet nicht an der reinen „Buchhaltungsarbeit", die Menschen von der Wiki-Pflege abhält.</li>
-</ul>
-<p>Die Rollenteilung bleibt dabei klar: <strong>der Mensch kuratiert Quellen und stellt Fragen — der Agent übernimmt Synthese und Pflege.</strong></p>
-<hr />
-<h2 id="konkrete-implementierung-openwiki-langchain">Konkrete Implementierung: OpenWiki (LangChain)<a class="headerlink" href="#konkrete-implementierung-openwiki-langchain" title="Permanent link">&para;</a></h2>
-<p>Das bekannteste Open-Source-Werkzeug, das dieses Pattern konkret umsetzt, ist <strong><a href="../openwiki-repo-dokumentation-agent/">OpenWiki</a></strong> von LangChain — ursprünglich für Code-Repositories gebaut (<code>raw/</code> = Codebase, <code>wiki/</code> = generierte Repo-Dokumentation), inzwischen auch im „Personal-Modus" für persönliche Wissensbasen mit externen Connectoren (Notion, Gmail, Git-Repos, Websuche) nutzbar.</p>
-<table>
-<thead>
-<tr>
-<th>Karpathy-Muster (allgemein)</th>
-<th>OpenWiki-Umsetzung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>raw/</code> — Rohquellen</td>
-<td>Codebase (Code-Modus) bzw. angebundene Connectoren (Personal-Modus)</td>
-</tr>
-<tr>
-<td><code>wiki/</code> — generiertes Wiki</td>
-<td><code>openwiki/*.md</code> bzw. <code>~/.openwiki/wiki/</code></td>
-</tr>
-<tr>
-<td>Schema-Instruktionsdatei</td>
-<td><code>INSTRUCTIONS.md</code>, plus Referenzen in <code>AGENTS.md</code>/<code>CLAUDE.md</code></td>
-</tr>
-<tr>
-<td>Ingest</td>
-<td><code>openwiki --init</code> / <code>openwiki code --update</code></td>
-</tr>
-<tr>
-<td>Query</td>
-<td>interaktive CLI (<code>openwiki "Prompt"</code>)</td>
-</tr>
-<tr>
-<td>Lint</td>
-<td>Diff-Analyse bei <code>--update</code> prüft betroffene Seiten</td>
-</tr>
-</tbody>
-</table>
-<p>Details zu Installation, CLI-Befehlen und CI-Integration siehe die eigene Seite <a href="../openwiki-repo-dokumentation-agent/">OpenWiki: Repo-Dokumentations-Agent (LangChain)</a>.</p>
+<h2 id="2-upload-groe-client_max_body_size">2. Upload-Größe: <code>client_max_body_size</code><a class="headerlink" href="#2-upload-groe-client_max_body_size" title="Permanent link">&para;</a></h2>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">client_max_body_size</span><span class="w"> </span><span class="s">100M</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Nginx bricht Uploads standardmäßig bereits bei 1 MB ab — unabhängig von PHP-eigenen Limits. Der Wert muss mit <code>upload_max_filesize</code> und <code>post_max_size</code> aus der <code>php.ini</code> (siehe <a href="../moodle-installation/#5-php-fpm-konfigurieren">Installation, Schritt 5</a>) <strong>übereinstimmen oder darüber liegen</strong>, sonst schlägt der größere Wert auf einer der beiden Seiten fehl, ohne dass die andere Seite den eigentlichen Grund meldet.</p>
 <div class="admonition warning">
-<p class="admonition-title">Achtung: Muster ≠ Produkt</p>
-<p>Das Karpathy-Muster selbst ist keine Software, sondern eine Idee/ein Prompt-Template. Wer es ohne OpenWiki oder ein vergleichbares Werkzeug nachbauen will, benötigt einen eigenen Agenten (z. B. Claude Code, Antigravity CLI) mit einer Instruktionsdatei, die die drei Schichten (<code>raw/</code>, <code>wiki/</code>, Schema) sowie Ingest/Query/Lint als Workflows definiert.</p>
+<p class="admonition-title">Achtung: Drei Stellen im Gleichschritt halten</p>
+<p><code>client_max_body_size</code> (Nginx), <code>upload_max_filesize</code> und <code>post_max_size</code> (PHP-FPM) müssen zusammenpassen. Ein häufiger Supportfall ist ein Upload, der bei z. B. 20 MB ohne Fehlermeldung abbricht, weil nur einer der drei Werte erhöht wurde.</p>
 </div>
 <hr />
-<h2 id="bezug-zu-diesem-repository">Bezug zu diesem Repository<a class="headerlink" href="#bezug-zu-diesem-repository" title="Permanent link">&para;</a></h2>
-<p>Dieses Repository setzt bereits Teile des Musters ein, ohne es explizit so zu benennen:</p>
-<ul>
-<li><strong>Schema-Schicht</strong>: <code>CLAUDE.md</code> übernimmt die Rolle der Instruktionsdatei — sie dokumentiert Struktur (<code>docs/&lt;bereich&gt;/</code>), Konventionen und Workflows.</li>
-<li><strong>Lint-Operation</strong>: <code>.gemini/scripts/check_orphaned_files.py</code> prüft auf verwaiste Seiten, der <code>doc-checker</code>-Subagent erweitert das um Build-, Link- und Mermaid-Prüfung.</li>
-<li><strong>Fehlender Teil</strong>: Es gibt hier bewusst keine automatische Ingest-Operation, die eigenständig neue Wiki-Seiten aus Rohquellen generiert — Inhalte werden weiterhin kuratiert von Hand angelegt (siehe <code>zensical-docs</code>-Skill, Abschnitt „Neue Seite anlegen"). Das entspricht dem Human-in-the-Loop-Prinzip, das auch für <a href="../llm-first-wiki-tools-agenten/#4-autonome-wiki-pflege-agenten-agent-schreibt-in-ein-bestehendes-wiki">autonome Wiki-Pflege-Agenten</a> in diesem Repo gilt.</li>
-</ul>
+<h2 id="3-routing-clean-urls-try_files">3. Routing &amp; Clean URLs: <code>try_files</code><a class="headerlink" href="#3-routing-clean-urls-try_files" title="Permanent link">&para;</a></h2>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="nv">$uri/</span><span class="w"> </span><span class="s">/index.php?</span><span class="nv">$query_string</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><code>try_files</code> prüft der Reihe nach: Existiert die angeforderte Datei (<code>$uri</code>) wörtlich? Existiert ein gleichnamiges Verzeichnis (<code>$uri/</code>)? Falls beides nicht zutrifft, wird die Anfrage an <code>index.php</code> mit dem ursprünglichen Query-String durchgereicht. Damit landet praktisch jede dynamische Anfrage kontrolliert bei Moodles Front-Controller, statt einen nackten 404 von Nginx zu erhalten.</p>
 <hr />
-<h2 id="verwandte-themen">Verwandte Themen<a class="headerlink" href="#verwandte-themen" title="Permanent link">&para;</a></h2>
+<h2 id="4-die-php-fpm-anbindung-im-detail">4. Die PHP-FPM-Anbindung im Detail<a class="headerlink" href="#4-die-php-fpm-anbindung-im-detail" title="Permanent link">&para;</a></h2>
+<p>Das ist der komplexeste und sicherheitskritischste Block der gesamten Konfiguration:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">[^/]\.php(/|$)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="kn">fastcgi_split_path_info</span><span class="w"> </span><span class="s">^(.+?\.php)(/.*)</span>$<span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="kn">if</span><span class="w"> </span><span class="s">(!-f</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="s">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="kn">return</span><span class="w"> </span><span class="mi">404</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="kn">fastcgi_pass</span><span class="w"> </span><span class="s">unix:/run/php/php8.3-fpm.sock</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="kn">fastcgi_index</span><span class="w"> </span><span class="s">index.php</span><span class="p">;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="kn">include</span><span class="w"> </span><span class="s">fastcgi_params</span><span class="p">;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">SCRIPT_FILENAME</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">PATH_INFO</span><span class="w"> </span><span class="nv">$fastcgi_path_info</span><span class="p">;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Direktive</th>
+<th>Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>location ~ [^/]\.php(...)</code> (siehe Codeblock oben)</td>
+<td>Regex-Match für alles, was auf <code>.php</code> endet oder <code>.php/</code> gefolgt von weiterem Pfad enthält. Das <code>[^/]</code> davor verhindert, dass ein Pfad wie <code>/x.php/y.php</code> fälschlich am ersten <code>.php</code> matcht statt am letzten.</td>
+</tr>
+<tr>
+<td><code>fastcgi_split_path_info ^(.+?\.php)(/.*)$</code></td>
+<td>Trennt die Anfrage in zwei Teile: das eigentliche PHP-Skript (Gruppe 1) und alles danach (Gruppe 2, <code>PATH_INFO</code>). Das ist die Grundlage für Moodles <strong>Clean URLs / Slash Arguments</strong> — z. B. <code>pluginfile.php/5/mod_resource/content/1/datei.pdf</code>, bei dem <code>/5/mod_resource/...</code> als <code>PATH_INFO</code> an Moodle übergeben wird, statt als klassischer Query-Parameter.</td>
+</tr>
+<tr>
+<td><code>if (!-f $document_root$fastcgi_script_name) { return 404; }</code></td>
+<td>Sicherheitsprüfung: Existiert die per <code>fastcgi_split_path_info</code> ermittelte <code>.php</code>-Datei tatsächlich auf der Platte? Ohne diese Prüfung könnte eine präparierte URL wie <code>/irgendwas/beliebig.php/nicht-vorhandene-datei.jpg</code> PHP-FPM dazu bringen, ein beliebiges, nicht-existentes Skript zu „erraten“ (klassische <em>PHP-CGI-Argument-Injection</em>, siehe <a href="https://docs.moodle.org/en/Nginx">Moodle-Nginx-Doku</a>).</td>
+</tr>
+<tr>
+<td><code>fastcgi_pass unix:/run/php/php8.3-fpm.sock</code></td>
+<td>Übergabe an PHP-FPM per <strong>Unix-Socket</strong> statt TCP-Port — kein zusätzlicher offener Port auf <code>localhost</code>, geringfügig weniger Overhead. Pfad muss zur tatsächlich installierten PHP-Version passen (<code>php -v</code>), siehe <a href="../moodle-installation/#5-php-fpm-konfigurieren">Installation, Schritt 5</a>.</td>
+</tr>
+<tr>
+<td><code>include fastcgi_params</code></td>
+<td>Lädt die Nginx-Standardvariablen (<code>QUERY_STRING</code>, <code>REQUEST_METHOD</code>, <code>CONTENT_TYPE</code> usw.), die PHP-FPM als CGI-Umgebung erwartet.</td>
+</tr>
+<tr>
+<td><code>fastcgi_param SCRIPT_FILENAME ...</code></td>
+<td>Sagt PHP-FPM, welche Datei tatsächlich ausgeführt werden soll — der Dateisystempfad zum Skript aus <code>fastcgi_split_path_info</code>.</td>
+</tr>
+<tr>
+<td><code>fastcgi_param PATH_INFO ...</code></td>
+<td>Reicht den zweiten Teil aus <code>fastcgi_split_path_info</code> als <code>PATH_INFO</code> an PHP durch. Moodle liest diese Variable aktiv aus, um bei Slash-Argument-URLs auf den richtigen Datei- oder API-Pfad zu schließen.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tipp: Slash Arguments in Moodle aktivieren</p>
+<p>Damit Moodle die <code>PATH_INFO</code>-Form tatsächlich für Datei-Downloads nutzt (statt der längeren <code>?file=</code>-Query-Variante), muss zusätzlich in der Moodle-Administration unter <strong>Website-Administration → Server → Clean URLs</strong> bzw. per <code>$CFG-&gt;slasharguments = 1;</code> in <code>config.php</code> aktiviert werden. Der Wert ist bei Standardinstallation bereits <code>1</code>; bei manchen restriktiven PHP-FPM-Setups (<code>cgi.fix_pathinfo=0</code>) muss er auf <code>0</code> zurückgesetzt werden, wenn Downloads sonst mit „Datei nicht gefunden“ scheitern.</p>
+</div>
+<hr />
+<h2 id="5-sensible-pfade-sperren">5. Sensible Pfade sperren<a class="headerlink" href="#5-sensible-pfade-sperren" title="Permanent link">&para;</a></h2>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">/\.git</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">}</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">^/(config\.php|version\.php|lib/setup\.php)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">}</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="k">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">/\.(?!well-known)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Warum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>location ~ /\.git</code></td>
+<td>Der Git-Installationsweg legt <code>.git</code> direkt im Webroot ab (siehe <a href="../moodle-installation/#3-moodle-code-per-git-beziehen">Installation, Schritt 3</a>). Ohne diese Sperre könnte <code>git-dumper</code> o. ä. den kompletten Repository-Verlauf über HTTP abziehen.</td>
+</tr>
+<tr>
+<td><code>config\.php</code> &amp; Kernpfade explizit sperren</td>
+<td><code>config.php</code> wird zwar bereits durch Moodles eigenen PHP-Code vor direkter Ausgabe des Inhalts geschützt, eine explizite <code>deny</code>-Regel ist aber eine zusätzliche, unabhängige Schutzschicht (<em>defense in depth</em>), falls PHP-FPM aus irgendeinem Grund ausfällt und Nginx die Datei sonst als statische Datei ausliefern würde.</td>
+</tr>
+<tr>
+<td><code>location ~ /\.(?!well-known)</code></td>
+<td>Sperrt pauschal alle „versteckten“ Dateien/Verzeichnisse (beginnend mit <code>.</code>), mit einer expliziten Ausnahme für <code>.well-known</code> — dieser Pfad wird von Let’s-Encrypt-HTTP-01-Challenges benötigt (siehe <a href="../../../entwicklung/infrastruktur/nginx-ssl/">Nginx: SSL &amp; HTTPS</a>).</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: <code>moodledata</code> gehört nicht in den Webroot</p>
+<p>Diese <code>location</code>-Blöcke sind zusätzliche Absicherung — der wichtigste Schutz für <code>moodledata</code> bleibt, dass das Verzeichnis laut <a href="../moodle-installation/">Installation</a> <strong>außerhalb</strong> von <code>root /var/www/moodle</code> liegt. Läge <code>moodledata</code> versehentlich innerhalb des Webroots, wären hochgeladene Dateien ohne Zugriffskontrolle über eine direkt erratbare URL abrufbar.</p>
+</div>
+<hr />
+<h2 id="6-statische-assets-caching">6. Statische Assets &amp; Caching<a class="headerlink" href="#6-statische-assets-caching" title="Permanent link">&para;</a></h2>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">location</span><span class="w"> </span><span class="p">~</span><span class="sr">*</span><span class="w"> </span><span class="s">\.(jpg|jpeg|gif|png|css|js|ico|webp|woff2?)</span>$<span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="kn">expires</span><span class="w"> </span><span class="s">30d</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="kn">add_header</span><span class="w"> </span><span class="s">Cache-Control</span><span class="w"> </span><span class="s">&quot;public,</span><span class="w"> </span><span class="s">immutable&quot;</span><span class="p">;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="kn">access_log</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Direktive</th>
+<th>Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>location ~* \.(...)$</code> (siehe Codeblock oben)</td>
+<td>Case-insensitives Regex-Matching (<code>~*</code>) auf gängige statische Dateiendungen. Diese Anfragen erreichen PHP-FPM gar nicht erst — Nginx liefert sie direkt vom Dateisystem.</td>
+</tr>
+<tr>
+<td><code>expires 30d;</code> / <code>Cache-Control: public, immutable</code></td>
+<td>Weist Browser an, die Datei 30 Tage ohne erneute Anfrage zu verwenden. Moodle hängt bei eigenen Theme-/JS-Assets ohnehin einen Versions-Hash an den Dateinamen (Cache-Busting), sodass ein geändertes Asset automatisch eine neue URL bekommt statt eine veraltete Version zu cachen.</td>
+</tr>
+<tr>
+<td><code>access_log off;</code></td>
+<td>Reduziert I/O und Logdatei-Wachstum durch massenhafte, uninteressante Statik-Zugriffe.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Dieser Block darf <strong>nicht</strong> vor dem PHP-FPM-Block aus Abschnitt 4 stehen, wenn Moodle-Dateien wie <code>pluginfile.php/.../bild.png</code> (Slash-Argument-URLs, die zufällig auch mit <code>.png</code> enden) korrekt über PHP ausgeliefert werden sollen. Nginx wertet <code>location</code>-Blöcke nach Spezifität aus, nicht streng nach Reihenfolge — bei Unsicherheit den vollständigen Serverblock aus <a href="../moodle-installation/#6-nginx-serverblock-einrichten">Installation, Schritt 6</a> unverändert übernehmen und nur gezielt ergänzen.</p>
+</div>
+<hr />
+<h2 id="7-vollstandiger-kommentierter-serverblock">7. Vollständiger, kommentierter Serverblock<a class="headerlink" href="#7-vollstandiger-kommentierter-serverblock" title="Permanent link">&para;</a></h2>
+<p>Alle vorherigen Abschnitte zusammengeführt:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">moodle.example.org</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/moodle</span><span class="p">;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="kn">index</span><span class="w"> </span><span class="s">index.php</span><span class="p">;</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="kn">client_max_body_size</span><span class="w"> </span><span class="s">100M</span><span class="p">;</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="c1"># Clean URLs / Slash Arguments zuerst an index.php durchreichen</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="nv">$uri/</span><span class="w"> </span><span class="s">/index.php?</span><span class="nv">$query_string</span><span class="p">;</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">    </span><span class="c1"># Statische Assets ohne Umweg über PHP-FPM ausliefern</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="sr">*</span><span class="w"> </span><span class="s">\.(jpg|jpeg|gif|png|css|js|ico|webp|woff2?)</span>$<span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">        </span><span class="kn">expires</span><span class="w"> </span><span class="s">30d</span><span class="p">;</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">        </span><span class="kn">add_header</span><span class="w"> </span><span class="s">Cache-Control</span><span class="w"> </span><span class="s">&quot;public,</span><span class="w"> </span><span class="s">immutable&quot;</span><span class="p">;</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">        </span><span class="kn">access_log</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">    </span><span class="c1"># PHP-FPM-Anbindung inkl. Clean-URL-Unterstützung (PATH_INFO)</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">[^/]\.php(/|$)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">        </span><span class="kn">fastcgi_split_path_info</span><span class="w"> </span><span class="s">^(.+?\.php)(/.*)</span>$<span class="p">;</span>
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="w">        </span><span class="kn">if</span><span class="w"> </span><span class="s">(!-f</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="s">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="w">            </span><span class="kn">return</span><span class="w"> </span><span class="mi">404</span><span class="p">;</span>
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="w">        </span><span class="kn">fastcgi_pass</span><span class="w"> </span><span class="s">unix:/run/php/php8.3-fpm.sock</span><span class="p">;</span>
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="w">        </span><span class="kn">fastcgi_index</span><span class="w"> </span><span class="s">index.php</span><span class="p">;</span>
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="w">        </span><span class="kn">include</span><span class="w"> </span><span class="s">fastcgi_params</span><span class="p">;</span>
+</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">SCRIPT_FILENAME</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+</span><span id="__span-6-32"><a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">PATH_INFO</span><span class="w"> </span><span class="nv">$fastcgi_path_info</span><span class="p">;</span>
+</span><span id="__span-6-33"><a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-34"><a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a>
+</span><span id="__span-6-35"><a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a><span class="w">    </span><span class="c1"># Sensible Pfade sperren</span>
+</span><span id="__span-6-36"><a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">/\.git</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-37"><a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a><span class="w">        </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span>
+</span><span id="__span-6-38"><a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-39"><a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a>
+</span><span id="__span-6-40"><a id="__codelineno-6-40" name="__codelineno-6-40" href="#__codelineno-6-40"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">^/(config\.php|version\.php|lib/setup\.php)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-41"><a id="__codelineno-6-41" name="__codelineno-6-41" href="#__codelineno-6-41"></a><span class="w">        </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span>
+</span><span id="__span-6-42"><a id="__codelineno-6-42" name="__codelineno-6-42" href="#__codelineno-6-42"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-43"><a id="__codelineno-6-43" name="__codelineno-6-43" href="#__codelineno-6-43"></a>
+</span><span id="__span-6-44"><a id="__codelineno-6-44" name="__codelineno-6-44" href="#__codelineno-6-44"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">/\.(?!well-known)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-45"><a id="__codelineno-6-45" name="__codelineno-6-45" href="#__codelineno-6-45"></a><span class="w">        </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span>
+</span><span id="__span-6-46"><a id="__codelineno-6-46" name="__codelineno-6-46" href="#__codelineno-6-46"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-47"><a id="__codelineno-6-47" name="__codelineno-6-47" href="#__codelineno-6-47"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr />
+<h2 id="8-konfiguration-testen">8. Konfiguration testen<a class="headerlink" href="#8-konfiguration-testen" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span></code></pre></div>
+<p>Funktionsprüfungen nach jeder Änderung:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Statische Datei wird direkt (nicht über PHP) ausgeliefert</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>curl<span class="w"> </span>-sI<span class="w"> </span>http://moodle.example.org/theme/image.php/boost/core/1/favicon<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-5
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># .git ist gesperrt</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>curl<span class="w"> </span>-sI<span class="w"> </span>http://moodle.example.org/.git/config
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># config.php ist gesperrt</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>curl<span class="w"> </span>-sI<span class="w"> </span>http://moodle.example.org/config.php
+</span></code></pre></div>
+<p>Die beiden letzten Aufrufe müssen <code>403 Forbidden</code> liefern — jede andere Antwort (insbesondere <code>200 OK</code>) bedeutet, dass die entsprechende <code>deny</code>-Regel nicht greift und vor dem produktiven Betrieb korrigiert werden muss.</p>
+<hr />
+<h2 id="quellen-und-weiterfuhrende-informationen">Quellen und weiterführende Informationen<a class="headerlink" href="#quellen-und-weiterfuhrende-informationen" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../../">Startseite</a> — zurück zur Dokumentations-Zentrale</li>
-<li><a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/">KI strukturiert das Wiki autonom &amp; Selfhosting-Migration</a> — Anschlussfrage: wie die autonome Strukturierung konkret abläuft und wie das Ergebnis in ein Selfhosting-System übertragen wird</li>
-<li><a href="../openwiki-repo-dokumentation-agent/">OpenWiki: Repo-Dokumentations-Agent (LangChain)</a> — konkrete Tool-Umsetzung des Musters</li>
-<li><a href="../llm-first-wiki-tools-agenten/">Native „LLM-first" Wiki-Tools &amp; Agenten</a> — Einordnung von OpenWiki &amp; Co. in die Gesamtlandschaft</li>
-<li><a href="../pkm-second-brain-methoden/">Personal Knowledge Management (PKM) &amp; Second Brain</a> — verwandtes Konzept auf persönlicher Notiz-Ebene statt Team-/Repository-Ebene</li>
-<li><a href="../">Dokumentenerstellung, Wikis &amp; Notebooks</a> — Gesamtübersicht aller Dokumentations-Systeme</li>
+<li><a href="https://docs.moodle.org/en/Nginx">Moodle: Nginx</a> – technische Ausgangsbasis dieses Kapitels</li>
+<li><a href="https://docs.moodle.org/en/Server_requirements">Moodle: Server requirements</a></li>
+<li><a href="../moodle-installation/">Moodle auf Ubuntu Server installieren (Git, PostgreSQL, Nginx)</a> – Gesamtinstallation, in die diese Konfiguration eingebettet ist</li>
+<li><a href="../moodle-nginx-ssl-hardening/">Moodle: SSL/HTTPS einrichten &amp; Nginx absichern</a> – Fortsetzung: HTTPS-Umstellung, Sicherheits-Header, Rate Limiting, Timeouts</li>
+<li><a href="../../../entwicklung/infrastruktur/nginx/">Nginx: Grundlagen</a></li>
+<li><a href="../../../entwicklung/infrastruktur/nginx-ssl/">Nginx: SSL &amp; HTTPS</a></li>
+<li><a href="../../../entwicklung/infrastruktur/nginx-hardening/">Nginx: Hardening &amp; Sicherheit</a></li>
+<li><a href="../">E-Learning-Übersicht</a></li>
 </ul>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
@@ -3113,7 +3213,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../cms-mcp-server-topliste/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)">
+          <a href="../moodle-installation/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Moodle: Installation auf Ubuntu Server (Git, PostgreSQL, Nginx)">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3123,20 +3223,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)
+                Moodle: Installation auf Ubuntu Server (Git, PostgreSQL, Nginx)
               </div>
             </div>
           </a>
         
         
           
-          <a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-footer__link md-footer__link--next" aria-label="Weiter: KI strukturiert das Wiki autonom &amp; Selfhosting-Migration">
+          <a href="../moodle-nginx-ssl-hardening/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Moodle: SSL&#x2f;HTTPS einrichten &amp; Nginx absichern">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                KI strukturiert das Wiki autonom & Selfhosting-Migration
+                Moodle: SSL/HTTPS einrichten & Nginx absichern
               </div>
             </div>
             <div class="md-footer__button md-icon">
