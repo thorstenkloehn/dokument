@@ -1426,9 +1426,9 @@
 <p>Ein Cookie-Consent-Banner (aktives Opt-in) ist nach <strong>TTDSG §25 Abs. 2 Nr. 2</strong> nur für <strong>nicht technisch notwendige</strong> Cookies vorgeschrieben. Technisch notwendige Cookies sind von der Einwilligungspflicht ausgenommen — für sie reicht eine <strong>Informationspflicht</strong> nach Art. 13 DSGVO, also ein Eintrag in der Datenschutzerklärung.</p>
 <pre class="mermaid"><code>graph TD
     A["Cookie wird gesetzt"] --&gt; B{"Technisch notwendig?"}
-    B --&gt;|Ja: Session, Login, CSRF-Token, Präferenzen| C["Keine Einwilligung nötig"]
+    B --&gt;|"Ja: Session, Login, CSRF-Token, Präferenzen"| C["Keine Einwilligung nötig"]
     C --&gt; D["Info in Datenschutzerklärung reicht"]
-    B --&gt;|Nein: Analytics, Tracking, externe Embeds, Werbung| E["Einwilligung nötig (Opt-in)"]
+    B --&gt;|"Nein: Analytics, Tracking, externe Embeds, Werbung"| E["Einwilligung nötig (Opt-in)"]
     E --&gt; F["Cookie-Consent-Banner vor dem Laden"]</code></pre>
 <hr />
 <h2 id="mediawiki-standardcookies">MediaWiki-Standardcookies<a class="headerlink" href="#mediawiki-standardcookies" title="Permanent link">&para;</a></h2>

@@ -1266,6 +1266,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#zertifikat-in-der-server-konfiguration-einbinden" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Zertifikat in der Server-Konfiguration einbinden
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vorteile-eines-wildcard-ssl-zertifikats" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2741,6 +2752,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#zertifikat-in-der-server-konfiguration-einbinden" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Zertifikat in der Server-Konfiguration einbinden
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vorteile-eines-wildcard-ssl-zertifikats" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2934,7 +2956,7 @@
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/snap/bin/certbot<span class="w"> </span>/usr/bin/certbot
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>nginx
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>sudo<span class="w"> </span>certbot<span class="w"> </span>certonly<span class="w"> </span>--manual<span class="w"> </span>--preferred-challenges<span class="w"> </span>dns<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span>-d<span class="w"> </span>*.ahrensburg.city<span class="w"> </span>-d<span class="w"> </span>ahrensburg.city
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span>-d<span class="w"> </span>*.wissen-ahrensburg.de<span class="w"> </span>-d<span class="w"> </span>wissen-ahrensburg.de
 </span></code></pre></div>
 <!--
     Dokumentation: Dieses Dokument beschreibt, wie eine TXT-Domain für SSL-Zertifikate (z.B. Let's Encrypt) eingerichtet wird. Es enthält eine Schritt-für-Schritt-Anleitung zur Konfiguration eines TXT-Records im DNS, um die Domain-Verifizierung für SSL-Zertifikate mit Nginx zu ermöglichen. Die Anleitung richtet sich an Administratoren, die ihre Server mit SSL absichern möchten.
@@ -2952,7 +2974,7 @@
 <li>
 <p><strong>Fügen Sie einen neuen TXT-Record hinzu:</strong></p>
 <ul>
-<li><strong>Name/Host:</strong> Geben Sie den von Certbot angezeigten Wert ein (z.B. <code>_acme-challenge</code> oder <code>_acme-challenge.ahrensburg.city</code>).</li>
+<li><strong>Name/Host:</strong> Geben Sie den von Certbot angezeigten Wert ein (z.B. <code>_acme-challenge</code> oder <code>_acme-challenge.wissen-ahrensburg.de</code>).</li>
 <li><strong>Typ:</strong> Wählen Sie <code>TXT</code>.</li>
 <li><strong>Wert:</strong> Kopieren Sie den von Certbot bereitgestellten Schlüssel (eine zufällige Zeichenkette).</li>
 </ul>
@@ -2969,11 +2991,47 @@
 <p><strong>Beispiel für einen TXT-Record:</strong>
 | Name/Host                       | Typ | Wert                        |
 |----------------------------------|-----|-----------------------------|
-| _acme-challenge.ahrensburg.city  | TXT | <code>xxxxxxxxxxxxxxxxxxxxxxxx</code>   |</p>
+| _acme-challenge.wissen-ahrensburg.de  | TXT | <code>xxxxxxxxxxxxxxxxxxxxxxxx</code>   |</p>
 <p><strong>Hinweis:</strong> Jeder Zertifikatsantrag erzeugt einen neuen Wert für den TXT-Record. Wiederholen Sie die Schritte bei jeder neuen Verifizierung.</p>
+<p>Nach erfolgreicher Verifizierung meldet Certbot die Ablage der Zertifikatsdateien, z. B.:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Certificate is saved at: /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Key is saved at:         /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem
+</span></code></pre></div>
+<p><code>fullchain.pem</code> enthält das Server-Zertifikat samt Zwischenzertifikaten, <code>privkey.pem</code> den privaten Schlüssel. Beide Pfade bleiben bei einer Zertifikatserneuerung stabil (Certbot überschreibt die Dateien, der Symlink-Pfad unter <code>/etc/letsencrypt/live/…</code> ändert sich nicht) und werden direkt in der Nginx-Server-Konfiguration referenziert.</p>
+<h3 id="zertifikat-in-der-server-konfiguration-einbinden">Zertifikat in der Server-Konfiguration einbinden<a class="headerlink" href="#zertifikat-in-der-server-konfiguration-einbinden" title="Permanent link">&para;</a></h3>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">dienst.wissen-ahrensburg.de</span><span class="p">;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem</span><span class="p">;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem</span><span class="p">;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="c1"># eigentliche Backend-Anbindung (proxy_pass, fastcgi_pass, root, …)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># HTTP auf HTTPS umleiten</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:80</span><span class="p">;</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">dienst.wissen-ahrensburg.de</span><span class="p">;</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="kn">return</span><span class="w"> </span><span class="mi">301</span><span class="w"> </span><span class="s">https://</span><span class="nv">$host$request_uri</span><span class="p">;</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Jeder Dienst braucht einen eigenen <code>server_name</code></p>
+<p>Der Zertifikatspfad (<code>/etc/letsencrypt/live/wissen-ahrensburg.de/…</code>) bleibt bei einem Wildcard-Zertifikat für alle Subdomains gleich — der <code>server_name</code> in jedem <code>server{}</code>-Block muss aber pro Dienst eindeutig sein. Deklarieren zwei <code>server{}</code>-Blöcke denselben <code>server_name</code> (z. B. weil beim Kopieren dieses Templates die Subdomain vergessen wurde), meldet Nginx <code>conflicting server name … ignored</code> und nur einer der beiden Blöcke wird tatsächlich bedient.</p>
+</div>
+<p>Konkrete Backend-Anbindungen mit diesen beiden Zeilen, je auf eigener Subdomain (<code>xwiki.</code>, <code>mediawiki.</code>, <code>wiki.wissen-ahrensburg.de</code>): <a href="../../../wissen/dokumentation/xwiki/installieren/">XWiki installieren und über Nginx bereitstellen</a>, <a href="../../../wissen/dokumentation/wikijs-linux-installation/#7-netzwerk-und-reverse-proxy">Wiki.js: Netzwerk und Reverse Proxy</a>, <a href="../../../wissen/dokumentation/mediawiki/">MediaWiki installieren</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Automatische Erneuerung</p>
+<p>Von Certbot per Snap installierte Versionen richten üblicherweise automatisch einen <code>systemd</code>-Timer für die Erneuerung ein. Prüfen mit <code>sudo systemctl list-timers | grep certbot</code> und ein Dry-Run mit <code>sudo certbot renew --dry-run</code>.</p>
+</div>
 <h3 id="vorteile-eines-wildcard-ssl-zertifikats">Vorteile eines Wildcard-SSL-Zertifikats<a class="headerlink" href="#vorteile-eines-wildcard-ssl-zertifikats" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Schutz aller Subdomains:</strong> Ein Wildcard-Zertifikat sichert die Hauptdomain sowie beliebig viele Subdomains (z.B. <code>mail.ahrensburg.city</code>, <code>blog.ahrensburg.city</code>) mit nur einem Zertifikat ab.</li>
+<li><strong>Schutz aller Subdomains:</strong> Ein Wildcard-Zertifikat sichert die Hauptdomain sowie beliebig viele Subdomains (z.B. <code>mail.wissen-ahrensburg.de</code>, <code>blog.wissen-ahrensburg.de</code>) mit nur einem Zertifikat ab.</li>
 <li><strong>Einfachere Verwaltung:</strong> Es muss nur ein Zertifikat ausgestellt, installiert und erneuert werden, unabhängig von der Anzahl der Subdomains.</li>
 <li><strong>Kosteneffizienz:</strong> Im Vergleich zu Einzelzertifikaten für jede Subdomain ist ein Wildcard-Zertifikat meist günstiger und reduziert den administrativen Aufwand.</li>
 <li><strong>Zukunftssicherheit:</strong> Neue Subdomains können jederzeit hinzugefügt und automatisch durch das bestehende Zertifikat geschützt werden, ohne ein neues Zertifikat beantragen zu müssen.</li>

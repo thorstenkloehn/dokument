@@ -2711,9 +2711,9 @@ Folgendes Eingeben Text
 <p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>server {
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    listen 443 ssl http2;
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    listen [::]:443 ssl http2;
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    server_name smw.ahrensburg.city;
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    ssl_certificate /etc/letsencrypt/live/ahrensburg.city/fullchain.pem;
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    ssl_certificate_key /etc/letsencrypt/live/ahrensburg.city/privkey.pem;
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    server_name smw.wissen-ahrensburg.de;
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    ssl_certificate /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem;
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    ssl_certificate_key /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem;
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>     root /var/www/mediawiki;
 </span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    index index.php index.html index.htm;
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
@@ -2740,12 +2740,12 @@ Weiter geht es im Terminal</p>
 * Jetzt den Browser starten</p>
 <ul>
 <li>Weiter geht es im Terminal
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/var/www/semanticmediawiki/LocalSettings.php
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@wissen-ahrensburg.de:/var/www/semanticmediawiki/LocalSettings.php
 </span></code></pre></div>
 Öffne die Datei <code>LocalSettings.php</code> im Hauptverzeichnis deiner MediaWiki-Installation und füge folgende Zeilen hinzu:</li>
 </ul>
 <p><div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>wfLoadExtension( &#39;SemanticMediaWiki&#39; );
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>enableSemantics( &#39;smw.ahrensburg.city&#39; ); # Ersetze
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>enableSemantics( &#39;smw.wissen-ahrensburg.de&#39; ); # Ersetze
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>wfLoadExtension( &#39;Maps&#39; );
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>$egMapsDefaultService = &#39;leaflet&#39;;
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>wfLoadExtension( &#39;Cargo&#39; );
