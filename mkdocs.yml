@@ -273,6 +273,9 @@ nav:
           - Beste KI-Agenten für Deutsch- und Fremdsprachenlernen (Open Source, Top 20): wissen/e-learning/sprachlern-ki-agenten-topliste.md
           - Moderne Lernmethoden für Programmiersprachen: wissen/e-learning/lernmethoden-programmiersprachen.md
           - Interaktive Lernplattformen & Kurserstellung: wissen/e-learning/interaktive-lernplattformen-kurserstellung.md
+          - "Moodle: Installation auf Ubuntu Server (Git, PostgreSQL, Nginx)": wissen/e-learning/moodle-installation.md
+          - "Moodle: Nginx-Konfiguration im Detail": wissen/e-learning/moodle-nginx-configuration.md
+          - "Moodle: SSL/HTTPS einrichten & Nginx absichern": wissen/e-learning/moodle-nginx-ssl-hardening.md
 
       - Tools:
           - Übersicht: wissen/tools/index.md
