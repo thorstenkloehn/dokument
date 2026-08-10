@@ -125,7 +125,7 @@ sudo -u wikijs env NODE_ENV=production /usr/bin/node server
 ssh -L 3000:127.0.0.1:3000 admin@SERVER-IP
 ```
 
-Solange die SSH-Verbindung besteht, erreichst du den Assistenten im lokalen Browser unter `http://127.0.0.1:3000`. Dort legst du das erste Administratorkonto an. Der Setup-Port muss dafür weder öffentlich freigegeben noch vor Abschluss der Ersteinrichtung einem Reverse Proxy ausgesetzt werden.
+Solange die SSH-Verbindung besteht, erreichst du den Assistenten im lokalen Browser unter `http://127.0.0.1:3000`. Dort legst du das erste Administratorkonto an. Der Setup-Port muss dafür weder öffentlich freigegeben noch vor Abschluss der Ersteinrichtung einem Reverse Proxy ausgesetzt werden. Mehr zu Local Forwarding und weiteren Tunnel-Varianten: [SSH-Tunnel: Portweiterleitung über SSH](../../entwicklung/infrastruktur/ssh-tunnel.md).
 
 !!! warning "Achtung: Keine inoffiziellen Setup-Befehle automatisieren"
     Ein nicht vorhandener CLI-Aufruf bricht mit einem Modulfehler ab und richtet kein Administratorkonto ein. Auch direkte Änderungen an den Wiki.js-Datenbanktabellen sind keine stabile Automatisierungsschnittstelle. Verwende für reproduzierbare Installationen die offizielle Bereitstellungsanleitung und schließe die einmalige Kontoanlage über den geschützten Web-Assistenten ab.
@@ -194,6 +194,38 @@ Wiki.js kann selbst Anfragen annehmen. Für eine öffentliche Installation ist d
 
 Wiki.js wird auf einer eigenen Domain oder Subdomain betrieben, zum Beispiel `wiki.example.org`. Ein Betrieb in einem Unterpfad wie `example.org/wiki` wird nicht unterstützt.
 
+!!! tip "Tipp"
+    Statt der TCP-Verbindung über `127.0.0.1:3000` lässt sich Nginx auch über einen Unix-Socket an Wiki.js anbinden — siehe [Nginx über Unix-Socket anbinden](wikijs-nginx-unix-socket.md).
+
+### Wiki.js dauerhaft vor direktem Internetzugriff schützen
+
+Das `bindIP: 127.0.0.1` aus Schritt 4 sollte nicht nur für die Ersteinrichtung gelten, sondern **dauerhaft** so bleiben:
+
+```yaml
+bindIP: 127.0.0.1
+port: 3000
+```
+
+Damit lauscht Wiki.js ausschließlich auf localhost — von außen ist Port 3000 grundsätzlich unerreichbar, unabhängig von jeder Firewall-Regel. Nginx läuft auf demselben Host und erreicht Wiki.js weiterhin problemlos über `127.0.0.1:3000` (oder über den in [Nginx über Unix-Socket anbinden](wikijs-nginx-unix-socket.md) beschriebenen Unix-Socket).
+
+Nach einer Änderung an `config.yml` den Dienst neu starten:
+
+```bash
+sudo systemctl restart wikijs
+```
+
+Zusätzlich als zweite, unabhängige Absicherungsebene (falls `bindIP` versehentlich wieder auf `0.0.0.0` gestellt wird): Port 3000 nie in der Firewall freigeben, sondern ausschließlich HTTP/HTTPS für Nginx erlauben.
+
+```bash
+sudo ufw allow "Nginx Full"
+sudo ufw deny 3000/tcp
+sudo ufw status verbose
+```
+
+Die explizite `deny`-Regel ist bei UFWs Standardrichtlinie (`default deny incoming`) zwar redundant, macht die Absicht aber in `ufw status` sichtbar und dokumentiert sie selbsterklärend. Details zu UFW: [UFW-Firewall installieren und steuern](../../entwicklung/infrastruktur/ufw-firewall.md).
+
+Für spätere administrative Zugriffe direkt auf Port 3000 (z. B. Fehlersuche ohne Nginx) eignet sich statt einer Portfreigabe weiterhin ein [SSH-Tunnel](../../entwicklung/infrastruktur/ssh-tunnel.md).
+
 ---
 
 ## Kurzprüfung
@@ -214,4 +246,6 @@ Wenn der Dienst aktiviert und aktiv ist und der HTTP-Aufruf eine Antwort liefert
 - [Wiki.js: Systemanforderungen](https://docs.requarks.io/install/requirements)
 - [Wiki.js: Konfigurationsreferenz](https://docs.requarks.io/install/config)
 - [Wiki.js-Agenten-Pipeline](wikijs-ki-agent.md) – automatisierte Inhaltspflege über die GraphQL-API
+- [UFW-Firewall installieren und steuern](../../entwicklung/infrastruktur/ufw-firewall.md)
+- [SSH-Tunnel: Portweiterleitung über SSH](../../entwicklung/infrastruktur/ssh-tunnel.md)
 - [Dokumentationsübersicht](index.md)

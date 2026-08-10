@@ -176,7 +176,10 @@ nav:
           - Benchmarking:
               - HTTP Server Benchmarking: entwicklung/infrastruktur/http-server-benchmarking.md
               - k6 API Load Testing: entwicklung/infrastruktur/k6-api-load-testing.md
-          - Sicherheit: entwicklung/infrastruktur/sicherheit/index.md
+          - Sicherheit:
+              - Übersicht: entwicklung/infrastruktur/sicherheit/index.md
+              - UFW-Firewall: entwicklung/infrastruktur/ufw-firewall.md
+              - SSH-Tunnel: entwicklung/infrastruktur/ssh-tunnel.md
       - Systemprogrammierung:
           - Übersicht: entwicklung/system/index.md
           - Assembler:
@@ -315,10 +318,12 @@ nav:
               - SMW SPARQL Endpoint: wissen/dokumentation/semantische-mediawiki/smw-sparql-queries.md
           - Wiki.js:
               - Native Linux-Installation: wissen/dokumentation/wikijs-linux-installation.md
+              - Nginx über Unix-Socket anbinden: wissen/dokumentation/wikijs-nginx-unix-socket.md
               - Agenten-Pipeline (Automatisierte Pflege mit LLMs): wissen/dokumentation/wikijs-ki-agent.md
           - XWiki:
               - Installieren: wissen/dokumentation/xwiki/installieren.md
               - Installation über APT: wissen/dokumentation/xwiki/installation-ueber-apt.md
+              - Nginx über Unix-Socket anbinden: wissen/dokumentation/xwiki/xwiki-nginx-unix-socket.md
               - XWiki REST API & Python: wissen/dokumentation/xwiki/xwiki-rest-api.md
               - Agenten-Pipeline (Automatisierte Pflege mit LLMs): wissen/dokumentation/xwiki/xwiki-ki-agent.md
 
@@ -329,6 +334,7 @@ nav:
       - "EU AI Act: Überblick & Umsetzung in Deutschland": rechtliches/eu-ai-act-uebersicht.md
       - Artikel 50 EU AI Act: rechtliches/eu-ai-act-artikel-50.md
       - "KI in Deutschland: weitere Gesetze": rechtliches/ki-gesetze-deutschland.md
+      - "Cookie-Banner für MediaWiki": rechtliches/mediawiki-cookie-banner.md
 
 copyright: Copyright &copy; Wissen Ahrensburg
 

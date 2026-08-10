@@ -12,6 +12,10 @@ Willkommen im Bereich **Server und Infrastruktur**! Hier finden Sie Anleitungen 
 - [Nginx SSL Zertifikat](nginx-ssl.md)
 - [Nginx Einstellungen](nginx.md)
 
+### Sicherheit
+- [UFW-Firewall installieren und steuern](ufw-firewall.md) - Netzwerkzugriffe auf Linux-Servern kontrollieren
+- [SSH-Tunnel: Portweiterleitung über SSH](ssh-tunnel.md) - Dienste sicher über eine bestehende SSH-Verbindung erreichen
+
 ### Anwendungen
 - [Installation](installation.md) - Allgemeine Installationsanleitungen
 - [Software](software.md) - Software-Installation und -Konfiguration

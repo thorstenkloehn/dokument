@@ -124,6 +124,50 @@ Beim ersten Aufruf startet der **Distribution Wizard**. Er installiert die Stand
 !!! tip "Tipp"
     Ist die Seite nicht erreichbar, zuerst den Dienststatus und anschließend die Protokolle prüfen. Zusätzlich müssen eine lokale Firewall oder eine vorgeschaltete Cloud-Firewall den verwendeten Port zulassen.
 
+!!! warning "Achtung: Ersteinrichtung nicht öffentlich exponieren"
+    Wer den Port während der Ersteinrichtung erreicht, sieht den unfertigen Distribution Wizard und könnte das erste Administratorkonto kapern, bevor du selbst fertig bist — zudem läuft die Verbindung an dieser Stelle noch als reines HTTP, da Nginx/TLS meist erst danach eingerichtet wird. Statt den Port dafür in der Firewall zu öffnen, empfiehlt sich ein **SSH-Tunnel**.
+
+### Sicherer Weg über SSH-Tunnel (empfohlen, Tomcat)
+
+Bei der Tomcat-Variante lässt sich der Connector per `address`-Attribut auf `localhost` beschränken, sodass der Port von außen grundsätzlich unerreichbar ist — unabhängig von jeder Firewall-Regel:
+
+```bash
+sudo nano /etc/tomcat10/server.xml
+```
+
+```xml
+<Connector address="127.0.0.1" port="8080" protocol="HTTP/1.1"
+           connectionTimeout="20000"
+           redirectPort="8443" />
+```
+
+```bash
+sudo systemctl restart tomcat10
+```
+
+Auf dem eigenen Rechner den Port per Local Forwarding zum Server tunneln:
+
+```bash
+ssh -L 8080:127.0.0.1:8080 admin@SERVER-IP
+```
+
+Solange die SSH-Sitzung besteht, ist der Distribution Wizard im eigenen Browser unter `http://127.0.0.1:8080/xwiki` erreichbar. Mehr zu Local Forwarding und weiteren Tunnel-Varianten: [SSH-Tunnel: Portweiterleitung über SSH](../../../entwicklung/infrastruktur/ssh-tunnel.md).
+
+!!! note "Hinweis"
+    Anders als bei einer reinen Ersteinrichtungshilfe sollte die `address="127.0.0.1"`-Bindung bei XWiki **dauerhaft** bestehen bleiben: Nginx läuft auf demselben Host und erreicht Tomcat ohnehin über `localhost` (siehe [XWiki installieren und über Nginx bereitstellen](installieren.md)). Der Tunnel ist nur das temporäre Zugangsmittel für dich selbst, bevor Nginx als dauerhafter, öffentlicher Zugangsweg konfiguriert ist.
+
+    Für die XJetty-Variante gilt eine andere, hier nicht behandelte Jetty-Konfiguration für die Bindung an `localhost` — dort bleibt vorerst nur die kurzzeitige, in der Firewall freigegebene Variante von oben.
+
+Als zweite, unabhängige Absicherungsebene sollte der Tomcat-Port (hier `8080`, bei einer Portänderung entsprechend anpassen) zusätzlich nie in der Firewall freigegeben werden:
+
+```bash
+sudo ufw allow "Nginx Full"
+sudo ufw deny 8080/tcp
+sudo ufw status verbose
+```
+
+Details dazu: [UFW-Firewall installieren und steuern](../../../entwicklung/infrastruktur/ufw-firewall.md).
+
 ## 5. Java und Arbeitsspeicher prüfen
 
 Aktuelle XWiki-Versionen benötigen eine unterstützte Java-Version. XWiki 16 benötigt mindestens Java 17; ab XWiki 18 ist Java 21 erforderlich. Die tatsächlich verwendete Version zeigt:
@@ -216,6 +260,7 @@ sudo apt --fix-broken install
 ## Weiterführende Seiten
 
 - [XWiki installieren und über Nginx bereitstellen](installieren.md)
+- [Nginx über Unix-Socket anbinden](xwiki-nginx-unix-socket.md)
 - [XWiki REST API und Python](xwiki-rest-api.md)
 - [XWiki-Agenten-Pipeline](xwiki-ki-agent.md)
 - [Offizielle XWiki-Anleitung zur Installation über APT](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Installation/InstallationViaAPT/)
