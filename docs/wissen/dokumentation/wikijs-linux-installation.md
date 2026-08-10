@@ -192,7 +192,39 @@ sudo journalctl -u wikijs -f
 
 Wiki.js kann selbst Anfragen annehmen. Für eine öffentliche Installation ist dennoch meist ein Reverse Proxy wie Nginx, Caddy oder Apache sinnvoll, insbesondere für HTTPS und eine saubere Domain-Konfiguration.
 
-Wiki.js wird auf einer eigenen Domain oder Subdomain betrieben, zum Beispiel `wiki.example.org`. Ein Betrieb in einem Unterpfad wie `example.org/wiki` wird nicht unterstützt.
+Wiki.js wird auf einer eigenen Domain oder Subdomain betrieben, zum Beispiel `wissen-ahrensburg.de`. Ein Betrieb in einem Unterpfad wie `example.org/wiki` wird nicht unterstützt.
+
+Beispielkonfiguration für `/etc/nginx/conf.d/wikijs.conf` mit Let's-Encrypt-Zertifikat (siehe [Nginx & SSL](../../entwicklung/infrastruktur/nginx-ssl.md) zur Zertifikatsbeschaffung mit Certbot):
+
+```nginx
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name wissen-ahrensburg.de;
+    ssl_certificate /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem;
+
+    location / {
+        proxy_pass http://127.0.0.1:3000/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name wissen-ahrensburg.de;
+    return 301 https://$host$request_uri;
+}
+```
+
+```bash
+sudo nginx -t
+sudo systemctl reload nginx
+```
 
 !!! tip "Tipp"
     Statt der TCP-Verbindung über `127.0.0.1:3000` lässt sich Nginx auch über einen Unix-Socket an Wiki.js anbinden — siehe [Nginx über Unix-Socket anbinden](wikijs-nginx-unix-socket.md).

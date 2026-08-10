@@ -9,7 +9,7 @@ sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo systemctl stop nginx
 sudo certbot certonly --manual --preferred-challenges dns \
-  -d *.ahrensburg.city -d ahrensburg.city
+  -d *.wissen-ahrensburg.de -d wissen-ahrensburg.de
 ```
 <!--
     Dokumentation: Dieses Dokument beschreibt, wie eine TXT-Domain für SSL-Zertifikate (z.B. Let's Encrypt) eingerichtet wird. Es enthält eine Schritt-für-Schritt-Anleitung zur Konfiguration eines TXT-Records im DNS, um die Domain-Verifizierung für SSL-Zertifikate mit Nginx zu ermöglichen. Die Anleitung richtet sich an Administratoren, die ihre Server mit SSL absichern möchten.
@@ -23,7 +23,7 @@ sudo certbot certonly --manual --preferred-challenges dns \
     Suchen Sie nach der Möglichkeit, DNS-Records zu bearbeiten oder hinzuzufügen.
 
 3. **Fügen Sie einen neuen TXT-Record hinzu:**
-    - **Name/Host:** Geben Sie den von Certbot angezeigten Wert ein (z.B. `_acme-challenge` oder `_acme-challenge.ahrensburg.city`).
+    - **Name/Host:** Geben Sie den von Certbot angezeigten Wert ein (z.B. `_acme-challenge` oder `_acme-challenge.wissen-ahrensburg.de`).
     - **Typ:** Wählen Sie `TXT`.
     - **Wert:** Kopieren Sie den von Certbot bereitgestellten Schlüssel (eine zufällige Zeichenkette).
 
@@ -36,13 +36,54 @@ sudo certbot certonly --manual --preferred-challenges dns \
 **Beispiel für einen TXT-Record:**
 | Name/Host                       | Typ | Wert                        |
 |----------------------------------|-----|-----------------------------|
-| _acme-challenge.ahrensburg.city  | TXT | `xxxxxxxxxxxxxxxxxxxxxxxx`   |
+| _acme-challenge.wissen-ahrensburg.de  | TXT | `xxxxxxxxxxxxxxxxxxxxxxxx`   |
 
 **Hinweis:** Jeder Zertifikatsantrag erzeugt einen neuen Wert für den TXT-Record. Wiederholen Sie die Schritte bei jeder neuen Verifizierung.
 
+Nach erfolgreicher Verifizierung meldet Certbot die Ablage der Zertifikatsdateien, z. B.:
+
+```text
+Certificate is saved at: /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem
+```
+
+`fullchain.pem` enthält das Server-Zertifikat samt Zwischenzertifikaten, `privkey.pem` den privaten Schlüssel. Beide Pfade bleiben bei einer Zertifikatserneuerung stabil (Certbot überschreibt die Dateien, der Symlink-Pfad unter `/etc/letsencrypt/live/…` ändert sich nicht) und werden direkt in der Nginx-Server-Konfiguration referenziert.
+
+### Zertifikat in der Server-Konfiguration einbinden
+
+```nginx
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name wissen-ahrensburg.de;
+    ssl_certificate /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem;
+
+    # eigentliche Backend-Anbindung (proxy_pass, fastcgi_pass, root, …)
+}
+
+# HTTP auf HTTPS umleiten
+server {
+    listen 80;
+    listen [::]:80;
+    server_name wissen-ahrensburg.de;
+    return 301 https://$host$request_uri;
+}
+```
+
+```bash
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+Konkrete Backend-Anbindungen mit diesen beiden Zeilen: [XWiki installieren und über Nginx bereitstellen](../../wissen/dokumentation/xwiki/installieren.md), [Wiki.js: Netzwerk und Reverse Proxy](../../wissen/dokumentation/wikijs-linux-installation.md#7-netzwerk-und-reverse-proxy), [MediaWiki installieren](../../wissen/dokumentation/mediawiki/index.md).
+
+!!! tip "Automatische Erneuerung"
+    Von Certbot per Snap installierte Versionen richten üblicherweise automatisch einen `systemd`-Timer für die Erneuerung ein. Prüfen mit `sudo systemctl list-timers | grep certbot` und ein Dry-Run mit `sudo certbot renew --dry-run`.
+
 ### Vorteile eines Wildcard-SSL-Zertifikats
 
-- **Schutz aller Subdomains:** Ein Wildcard-Zertifikat sichert die Hauptdomain sowie beliebig viele Subdomains (z.B. `mail.ahrensburg.city`, `blog.ahrensburg.city`) mit nur einem Zertifikat ab.
+- **Schutz aller Subdomains:** Ein Wildcard-Zertifikat sichert die Hauptdomain sowie beliebig viele Subdomains (z.B. `mail.wissen-ahrensburg.de`, `blog.wissen-ahrensburg.de`) mit nur einem Zertifikat ab.
 - **Einfachere Verwaltung:** Es muss nur ein Zertifikat ausgestellt, installiert und erneuert werden, unabhängig von der Anzahl der Subdomains.
 - **Kosteneffizienz:** Im Vergleich zu Einzelzertifikaten für jede Subdomain ist ein Wildcard-Zertifikat meist günstiger und reduziert den administrativen Aufwand.
 - **Zukunftssicherheit:** Neue Subdomains können jederzeit hinzugefügt und automatisch durch das bestehende Zertifikat geschützt werden, ohne ein neues Zertifikat beantragen zu müssen.
