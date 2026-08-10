@@ -100,9 +100,9 @@ srwxrwx--- 1 wikijs wikijs 0 Aug 10 12:00 /var/wiki/run/wikijs.sock
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name wiki.example.org;
-    ssl_certificate /etc/letsencrypt/live/wiki.example.org/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/wiki.example.org/privkey.pem;
+    server_name wiki.wissen-ahrensburg.de;
+    ssl_certificate /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem;
 
     location / {
         proxy_pass http://unix:/var/wiki/run/wikijs.sock:/;

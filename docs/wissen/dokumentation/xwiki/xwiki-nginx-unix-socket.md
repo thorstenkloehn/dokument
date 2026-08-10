@@ -114,9 +114,9 @@ In der bestehenden Server-Konfiguration (z. B. `/etc/nginx/conf.d/xwiki.conf`) `
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name www.ahrensburg.city;
-    ssl_certificate /etc/letsencrypt/live/ahrensburg.city/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/ahrensburg.city/privkey.pem;
+    server_name xwiki.wissen-ahrensburg.de;
+    ssl_certificate /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem;
 
     location / {
         proxy_pass http://unix:/var/lib/tomcat10/xwiki-socket/xwiki.sock:/;

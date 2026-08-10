@@ -15,7 +15,7 @@ php /var/www/mediawiki/maintenance/run.php importDump.php < docs.xml
 php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
 php /var/www/mediawiki/maintenance/run.php initSiteStats.php
 ```
-## Namensräume in der LocalSettings.php auf https://ahrensburg.city anlegen
+## Namensräume in der LocalSettings.php auf https://wissen-ahrensburg.de anlegen
 
 ```
 define("NS_Nachrichten", 3000);
@@ -32,7 +32,7 @@ $wgExtraNamespaces[NS_BLOG_TALK] = "Blog_Diskussion";
 $wgVisualEditorAvailableNamespaces[] = NS_BLOG;
 $wgVisualEditorAvailableNamespaces[NS_BLOG] = true;
 ```
-## Namensräume in der LocalSettings.php auf https://docs.ahrensburg.city anlegen
+## Namensräume in der LocalSettings.php auf https://docs.wissen-ahrensburg.de anlegen
 
 ```
 $wgNamespacesWithSubpages[NS_MAIN] = true;

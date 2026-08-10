@@ -28,9 +28,9 @@ Folgendes Eingeben Text
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name smw.ahrensburg.city;
-    ssl_certificate /etc/letsencrypt/live/ahrensburg.city/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/ahrensburg.city/privkey.pem;
+    server_name smw.wissen-ahrensburg.de;
+    ssl_certificate /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem;
      root /var/www/mediawiki;
     index index.php index.html index.htm;
  
@@ -60,13 +60,13 @@ exit
 
 * Weiter geht es im Terminal
 ```
-sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/var/www/semanticmediawiki/LocalSettings.php
+sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@wissen-ahrensburg.de:/var/www/semanticmediawiki/LocalSettings.php
 ```
 Öffne die Datei `LocalSettings.php` im Hauptverzeichnis deiner MediaWiki-Installation und füge folgende Zeilen hinzu:
 
 ```
 wfLoadExtension( 'SemanticMediaWiki' );
-enableSemantics( 'smw.ahrensburg.city' ); # Ersetze
+enableSemantics( 'smw.wissen-ahrensburg.de' ); # Ersetze
 wfLoadExtension( 'Maps' );
 $egMapsDefaultService = 'leaflet';
 wfLoadExtension( 'Cargo' );

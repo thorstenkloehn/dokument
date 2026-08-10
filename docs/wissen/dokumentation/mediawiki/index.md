@@ -27,7 +27,7 @@ sudo chmod -R 755 /var/www/mediawiki
 ```
 Hochladen der Konfiguration
 ```bash
-sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@ahrensburg.city:/var/www/mediawiki/LocalSettings.php
+sudo scp /home/thorsten/Downloads/LocalSettings.php thorsten@wissen-ahrensburg.de:/var/www/mediawiki/LocalSettings.php
 ```
 
 
@@ -87,5 +87,51 @@ rsync -avz --delete \
   --exclude='images/temp/*' \
   --exclude='images/thumb/*' \
   /var/www/mediawiki/ user@server:/var/www/mediawiki/
+```
+
+## Nginx-Konfiguration mit SSL
+
+```bash
+sudo nano /etc/nginx/conf.d/mediawiki.conf
+```
+
+```nginx
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name mediawiki.wissen-ahrensburg.de;
+    ssl_certificate /etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem;
+
+    root /var/www/mediawiki;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name mediawiki.wissen-ahrensburg.de;
+    return 301 https://$host$request_uri;
+}
+```
+
+Das Zertifikat wird vorher per Certbot ausgestellt (siehe [Nginx & SSL](../../../entwicklung/infrastruktur/nginx-ssl.md)); der `php8.3-fpm.sock`-Pfad muss zur installierten PHP-Version passen (`php -v`).
+
+```bash
+sudo nginx -t
+sudo systemctl reload nginx
 ```
 
