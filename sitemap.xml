@@ -439,6 +439,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/ufw-firewall/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/infrastruktur/ssh-tunnel/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/system/</loc>
       </url>
       <url>
@@ -742,6 +745,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wikijs-linux-installation/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wikijs-nginx-unix-socket/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wikijs-ki-agent/</loc>
       </url>
       <url>
@@ -749,6 +755,9 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/xwiki/installation-ueber-apt/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/xwiki/xwiki-nginx-unix-socket/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/xwiki/xwiki-rest-api/</loc>
@@ -770,5 +779,8 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/rechtliches/ki-gesetze-deutschland/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/rechtliches/mediawiki-cookie-banner/</loc>
       </url>
 </urlset>
