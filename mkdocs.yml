@@ -306,6 +306,7 @@ nav:
               - Installieren (Composer, PostgreSQL, Nginx): wissen/dokumentation/drupal/installieren.md
               - "Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical": wissen/dokumentation/drupal/migration-wikisysteme.md
               - "Export zurück nach mkdocs/Zensical": wissen/dokumentation/drupal/export-nach-mkdocs.md
+              - "KI-gestützter Export: mkdocs, XWiki, MediaWiki, Wiki.js": wissen/dokumentation/drupal/ki-export-multi-ziel.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
