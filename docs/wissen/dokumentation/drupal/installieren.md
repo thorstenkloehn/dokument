@@ -15,20 +15,40 @@ Diese Anleitung richtet **Drupal** (aktuell 10.x/11.x) produktiv auf einem eigen
 
 ---
 
-## 1. PHP, Composer und PostgreSQL-Treiber installieren
+## 1. PHP und PostgreSQL-Treiber installieren
 
 ```bash
 sudo apt update
 sudo apt install -y php8.3-fpm php8.3-cli php8.3-pgsql php8.3-gd \
   php8.3-xml php8.3-mbstring php8.3-curl php8.3-zip php8.3-opcache \
-  composer postgresql
+  postgresql
 ```
 
-`php8.3-pgsql` stellt den PDO-Treiber bereit, ohne den Drupal keine Verbindung zu PostgreSQL aufbauen kann.
+`php8.3-pgsql` stellt den PDO-Treiber bereit, ohne den Drupal keine Verbindung zu PostgreSQL aufbauen kann. Composer wird bewusst **nicht** aus den apt-Quellen installiert (siehe nächster Schritt).
 
 ---
 
-## 2. PostgreSQL-Datenbank anlegen
+## 2. Composer installieren
+
+Das Ubuntu-Paket `composer` hinkt neuen Composer-Releases oft deutlich hinterher und wird von der Drupal-Doku nicht empfohlen — stattdessen den offiziellen Installer direkt von getcomposer.org holen und vor der Ausführung per Prüfsumme verifizieren:
+
+```bash
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+EXPECTED_HASH="$(curl -sS https://composer.github.io/installer.sig)"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '$EXPECTED_HASH') { echo 'Installer verifiziert' . PHP_EOL; } else { echo 'Installer beschaedigt' . PHP_EOL; unlink('composer-setup.php'); exit(1); }"
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+php -r "unlink('composer-setup.php');"
+```
+
+Die erwartete SHA-384-Prüfsumme wird dabei live von `composer.github.io/installer.sig` bezogen statt fest in dieser Anleitung hinterlegt — Composer-Releases (und damit die Prüfsumme des Installer-Skripts) ändern sich regelmäßig, ein hartkodierter Hash wäre schon nach dem nächsten Release veraltet. `--install-dir`/`--filename` legen `composer.phar` direkt ausführbar als `/usr/local/bin/composer` ab, ein zusätzliches `sudo mv composer.phar /usr/local/bin/composer` entfällt damit.
+
+```bash
+composer --version
+```
+
+---
+
+## 3. PostgreSQL-Datenbank anlegen
 
 ```bash
 sudo -u postgres psql -c "CREATE ROLE drupal WITH LOGIN PASSWORD 'EIN_LANGES_ZUFAELLIGES_PASSWORT';"
@@ -40,7 +60,7 @@ sudo -u postgres psql -c "CREATE DATABASE drupal OWNER drupal ENCODING 'UTF8' TE
 
 ---
 
-## 3. Drupal per Composer installieren
+## 4. Drupal per Composer installieren
 
 ```bash
 cd /var/www
@@ -54,7 +74,7 @@ sudo chown -R www-data:www-data /var/www/drupal-projekt
 
 ---
 
-## 4. Site-Installation headless per Drush
+## 5. Site-Installation headless per Drush
 
 Anders als bei XWiki oder Wiki.js braucht Drupal für die Ersteinrichtung **keinen SSH-Tunnel zu einem temporären Setup-Assistenten** — `drush site:install` erledigt die komplette Einrichtung nichtinteraktiv direkt auf der Kommandozeile:
 
@@ -81,7 +101,7 @@ sudo -u www-data vendor/bin/drush site:install standard \
 
 ---
 
-## 5. PHP-FPM-Pool
+## 6. PHP-FPM-Pool
 
 Der Standard-Pool von `php8.3-fpm` reicht für den Anfang aus und lauscht bereits über einen Unix-Socket:
 
@@ -97,7 +117,7 @@ sudo systemctl restart php8.3-fpm
 
 ---
 
-## 6. Nginx-Konfiguration
+## 7. Nginx-Konfiguration
 
 Erstellen oder bearbeiten Sie `/etc/nginx/conf.d/drupal.conf`:
 
@@ -154,11 +174,11 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-`fastcgi_pass` verweist auf den in Schritt 5 eingerichteten dedizierten Pool-Socket — bei Nutzung des Standard-Pools stattdessen `unix:/run/php/php8.3-fpm.sock` verwenden.
+`fastcgi_pass` verweist auf den in Schritt 6 eingerichteten dedizierten Pool-Socket — bei Nutzung des Standard-Pools stattdessen `unix:/run/php/php8.3-fpm.sock` verwenden.
 
 ---
 
-## 7. Firewall (UFW)
+## 8. Firewall (UFW)
 
 ```bash
 sudo ufw allow "Nginx Full"
@@ -166,7 +186,7 @@ sudo ufw deny 5432/tcp
 sudo ufw status verbose
 ```
 
-PostgreSQL bindet zwar schon per Konfiguration nur an `localhost` (Schritt 2), die explizite `deny`-Regel dokumentiert diese Absicht aber zusätzlich sichtbar in `ufw status` — als zweite, unabhängige Absicherungsebene, falls `postgresql.conf` später versehentlich geändert wird. Details zu UFW: [UFW-Firewall installieren und steuern](../../../entwicklung/infrastruktur/ufw-firewall.md).
+PostgreSQL bindet zwar schon per Konfiguration nur an `localhost` (Schritt 3), die explizite `deny`-Regel dokumentiert diese Absicht aber zusätzlich sichtbar in `ufw status` — als zweite, unabhängige Absicherungsebene, falls `postgresql.conf` später versehentlich geändert wird. Details zu UFW: [UFW-Firewall installieren und steuern](../../../entwicklung/infrastruktur/ufw-firewall.md).
 
 ---
 
