@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/semantische-mediawiki/smw-inline-queries/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/moodle/installieren/">
       
       
-        <link rel="prev" href="../wichtige-erweiterungen/">
+        <link rel="prev" href="../../mediawiki/mediawiki-php-extension/">
       
       
-        <link rel="next" href="../smw-sparql-queries/">
+        <link rel="next" href="../../semantische-mediawiki/installieren/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Praxis-Guide: Semantisches MediaWiki (SMW) Inline Queries - Wissen Ahrensburg</title>
+        <title>Moodle installieren: Git, PostgreSQL und Nginx - Wissen Ahrensburg</title>
       
     
     
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#praxis-guide-semantisches-mediawiki-smw-inline-queries" class="md-skip">
+        <a href="#moodle-installieren-git-postgresql-und-nginx" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Praxis-Guide: Semantisches MediaWiki (SMW) Inline Queries
+              Moodle installieren: Git, PostgreSQL und Nginx
             
           </span>
         </div>
@@ -2098,77 +2098,12 @@
                 
   
   
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../moodle/installieren/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Moodle
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -2187,17 +2122,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_22" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_21" checked>
         
           
-          <label class="md-nav__link" for="__nav_5_4_22" id="__nav_5_4_22_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_4_21" id="__nav_5_4_21_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-  Semantisches MediaWiki
+  Moodle
 
     
   </span>
@@ -2207,96 +2142,15 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_22_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5_4_22">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_21_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4_21">
             <span class="md-nav__icon md-icon"></span>
             
   
-  Semantisches MediaWiki
+  Moodle
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../installieren/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Installieren
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kurzform/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Kurzform
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../wichtige-erweiterungen/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Erweiterungen
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2321,7 +2175,7 @@
   <span class="md-ellipsis">
     
   
-  SMW Inline Queries
+  Installieren (Git, PostgreSQL, Nginx)
 
     
   </span>
@@ -2338,7 +2192,7 @@
   <span class="md-ellipsis">
     
   
-  SMW Inline Queries
+  Installieren (Git, PostgreSQL, Nginx)
 
     
   </span>
@@ -2364,10 +2218,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-semantische-attribute-definieren" class="md-nav__link">
+  <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        📊 1. Semantische Attribute definieren
+        Voraussetzungen
       </span>
     </span>
   </a>
@@ -2375,10 +2229,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-dynamische-inline-query-ask" class="md-nav__link">
+  <a href="#1-php-erweiterungen-und-postgresql-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🔍 2. Dynamische Inline Query (<code>{{#ask:...}}</code>)
+        1. PHP, Erweiterungen und PostgreSQL installieren
       </span>
     </span>
   </a>
@@ -2386,10 +2240,109 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verwandte-themen" class="md-nav__link">
+  <a href="#2-moodle-per-git-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🔗 Verwandte Themen
+        2. Moodle per Git installieren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-datenverzeichnis-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Datenverzeichnis anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-postgresql-datenbank-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. PostgreSQL-Datenbank anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-site-installation-headless-per-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Site-Installation headless per CLI
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cron-job-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Cron-Job einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-php-fpm-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. PHP-FPM-Pool
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-nginx-konfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8. Nginx-Konfiguration
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-firewall-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        9. Firewall (UFW)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
       </span>
     </span>
   </a>
@@ -2405,35 +2358,73 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
               
                 
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../smw-sparql-queries/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../semantische-mediawiki/installieren/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
     
   
-  SMW SPARQL Endpoint
+  Semantisches MediaWiki
 
     
   </span>
   
   
 
-      </a>
-    </li>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -2688,10 +2679,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-semantische-attribute-definieren" class="md-nav__link">
+  <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        📊 1. Semantische Attribute definieren
+        Voraussetzungen
       </span>
     </span>
   </a>
@@ -2699,10 +2690,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-dynamische-inline-query-ask" class="md-nav__link">
+  <a href="#1-php-erweiterungen-und-postgresql-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🔍 2. Dynamische Inline Query (<code>{{#ask:...}}</code>)
+        1. PHP, Erweiterungen und PostgreSQL installieren
       </span>
     </span>
   </a>
@@ -2710,10 +2701,109 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verwandte-themen" class="md-nav__link">
+  <a href="#2-moodle-per-git-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        🔗 Verwandte Themen
+        2. Moodle per Git installieren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-datenverzeichnis-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Datenverzeichnis anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-postgresql-datenbank-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. PostgreSQL-Datenbank anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-site-installation-headless-per-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Site-Installation headless per CLI
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cron-job-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Cron-Job einrichten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-php-fpm-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. PHP-FPM-Pool
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-nginx-konfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        8. Nginx-Konfiguration
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-firewall-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        9. Firewall (UFW)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
       </span>
     </span>
   </a>
@@ -2893,24 +2983,16 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
     
     
     
     
       <li class="md-path__item">
-        <a href="../installieren/" class="md-path__link">
+        <a href="././" class="md-path__link">
           
   
   <span class="md-ellipsis">
-    Semantisches MediaWiki
+    Moodle
   </span>
 
         </a>
@@ -2928,34 +3010,188 @@
                   
 
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
-<h1 id="praxis-guide-semantisches-mediawiki-smw-inline-queries">Praxis-Guide: Semantisches MediaWiki (SMW) Inline Queries<a class="headerlink" href="#praxis-guide-semantisches-mediawiki-smw-inline-queries" title="Permanent link">&para;</a></h1>
-<p><strong>Semantisches MediaWiki (SMW)</strong> verwandelt ein Standard-MediaWiki in eine kollaborative Datenbank. Mit <strong>Inline Queries</strong> (<code>{{#ask:...}}</code>) lassen sich dynamische Tabellen, Abfragen und Berichte direkt in Wiki-Seiten einbetten.</p>
+<h1 id="moodle-installieren-git-postgresql-und-nginx">Moodle installieren: Git, PostgreSQL und Nginx<a class="headerlink" href="#moodle-installieren-git-postgresql-und-nginx" title="Permanent link">&para;</a></h1>
+<p>Diese Anleitung richtet <strong>Moodle</strong> produktiv auf einem eigenen Server ein — per <strong>Git-Checkout</strong> (offizieller Installationsweg für Moodle, kein apt-Paket), mit <strong>PostgreSQL</strong> als Datenbank und <strong>Nginx</strong> als Reverse Proxy über PHP-FPM. Sie folgt demselben Muster wie die <a href="../../drupal/installieren/">Drupal-</a> und <a href="../../xwiki/installieren/">XWiki-Installation</a> in diesem Wiki.</p>
+<div class="admonition warning">
+<p class="admonition-title">Achtung</p>
+<p>Die unterstützten PHP- und PostgreSQL-Versionen sowie der aktuell empfohlene Stable-/LTS-Zweig ändern sich mit jedem Moodle-Release. Vor einer Neuinstallation immer die aktuellen <a href="https://moodledev.io/general/releases">Moodle-Releases</a> prüfen. Diese Anleitung geht von <strong>PHP 8.3</strong> und <strong>PostgreSQL 14+</strong> aus.</p>
+</div>
 <hr />
-<h2 id="1-semantische-attribute-definieren">📊 1. Semantische Attribute definieren<a class="headerlink" href="#1-semantische-attribute-definieren" title="Permanent link">&para;</a></h2>
-<p>Auf beliebigen Wiki-Seiten Attribute festlegen:</p>
-<div class="language-mediawiki highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">[[</span><span class="nn">Hat Status:</span><span class="p">:</span><span class="nt">Produktion</span><span class="p">]]</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">[[</span><span class="nn">Hat Servertyp:</span><span class="p">:</span><span class="nt">Nginx</span><span class="p">]]</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">[[</span><span class="nn">Hat IP:</span><span class="p">:</span><span class="nt">10.0.0.10</span><span class="p">]]</span>
-</span></code></pre></div>
-<hr />
-<h2 id="2-dynamische-inline-query-ask">🔍 2. Dynamische Inline Query (<code>{{#ask:...}}</code>)<a class="headerlink" href="#2-dynamische-inline-query-ask" title="Permanent link">&para;</a></h2>
-<p>Erstelle eine dynamische Tabelle aller Produktionsserver:</p>
-<div class="language-mediawiki highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{{</span><span class="nf">#ask</span><span class="p">:</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a> <span class="p">[[</span><span class="nn">Hat Status:</span><span class="p">:</span><span class="nt">Produktion</span><span class="p">]]</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a> <span class="p">|</span><span class="nl">?Hat Servertyp </span><span class="o">=</span> Webserver Typ
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> <span class="p">|</span><span class="nl">?Hat IP </span><span class="o">=</span> IP-Adresse
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a> <span class="p">|</span><span class="nl">format</span><span class="o">=</span>table
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a> <span class="p">|</span><span class="nl">limit</span><span class="o">=</span>20
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a> <span class="p">|</span><span class="nl">sort</span><span class="o">=</span>Hat IP
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a> <span class="p">|</span><span class="nl">order</span><span class="o">=</span>ascending
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}}</span>
-</span></code></pre></div>
-<hr />
-<h2 id="verwandte-themen">🔗 Verwandte Themen<a class="headerlink" href="#verwandte-themen" title="Permanent link">&para;</a></h2>
+<h2 id="voraussetzungen">Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../installieren/">Semantisches MediaWiki Installieren</a> – SMW Setup</li>
-<li><a href="../../mediawiki/mediawiki-python-bot/">MediaWiki Python Bot</a> – Bot-Automatisierung</li>
-<li><a href="../../">Dokumentenerstellung</a> – Übersicht</li>
+<li>Ubuntu-Server mit <code>sudo</code>-Rechten</li>
+<li>eine eigene Domain/Subdomain, z. B. <code>moodle.wissen-ahrensburg.de</code></li>
+<li>Nginx bereits mit SSL-Zertifikat eingerichtet (siehe <a href="../../../../entwicklung/infrastruktur/nginx-ssl/">Nginx &amp; SSL</a>)</li>
+</ul>
+<hr />
+<h2 id="1-php-erweiterungen-und-postgresql-installieren">1. PHP, Erweiterungen und PostgreSQL installieren<a class="headerlink" href="#1-php-erweiterungen-und-postgresql-installieren" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>php8.3-fpm<span class="w"> </span>php8.3-cli<span class="w"> </span>php8.3-pgsql<span class="w"> </span>php8.3-gd<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>php8.3-xml<span class="w"> </span>php8.3-mbstring<span class="w"> </span>php8.3-curl<span class="w"> </span>php8.3-zip<span class="w"> </span>php8.3-intl<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>php8.3-soap<span class="w"> </span>php8.3-bcmath<span class="w"> </span>php8.3-opcache<span class="w"> </span>git<span class="w"> </span>postgresql
+</span></code></pre></div>
+<p><code>php8.3-intl</code> und <code>php8.3-soap</code> werden von Moodle zusätzlich zu den bei Drupal üblichen Erweiterungen vorausgesetzt, <code>php8.3-bcmath</code> wird für präzise Bewertungsberechnungen im Gradebook empfohlen. <code>php8.3-pgsql</code> stellt den PDO-Treiber bereit, ohne den Moodle keine Verbindung zu PostgreSQL aufbauen kann.</p>
+<hr />
+<h2 id="2-moodle-per-git-installieren">2. Moodle per Git installieren<a class="headerlink" href="#2-moodle-per-git-installieren" title="Permanent link">&para;</a></h2>
+<p>Für Moodle gibt es kein offizielles apt-Paket — empfohlen ist ein Git-Checkout des jeweiligen Stable-Zweigs, da sich spätere Updates dann als einfaches <code>git pull</code> erledigen lassen, statt Dateien manuell zu ersetzen:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/moodle/moodle.git<span class="w"> </span>moodle
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">cd</span><span class="w"> </span>moodle
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>git<span class="w"> </span>branch<span class="w"> </span>-a<span class="w"> </span>--list<span class="w"> </span><span class="s2">&quot;origin/MOODLE_*_STABLE&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-V<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-5
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>-t<span class="w"> </span>origin/MOODLE_500_STABLE
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/moodle
+</span></code></pre></div>
+<p>Der <code>git branch</code>-Aufruf listet die verfügbaren Stable-Zweige sortiert nach Version — daraus den aktuell unterstützten Zweig auswählen (siehe Warnhinweis oben) und statt <code>MOODLE_500_STABLE</code> einsetzen.</p>
+<hr />
+<h2 id="3-datenverzeichnis-anlegen">3. Datenverzeichnis anlegen<a class="headerlink" href="#3-datenverzeichnis-anlegen" title="Permanent link">&para;</a></h2>
+<p>Moodle benötigt außerhalb des Webroots ein separates Verzeichnis für hochgeladene Dateien, Caches und Sitzungsdaten (<code>$CFG-&gt;dataroot</code>) — es darf nicht von Nginx ausgeliefert werden:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/moodledata
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/moodledata
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">0770</span><span class="w"> </span>/var/moodledata
+</span></code></pre></div>
+<p><code>0770</code> beschränkt den Zugriff auf den Besitzer und die Gruppe (<code>www-data</code>) — für andere Nutzer ist das Verzeichnis komplett gesperrt.</p>
+<hr />
+<h2 id="4-postgresql-datenbank-anlegen">4. PostgreSQL-Datenbank anlegen<a class="headerlink" href="#4-postgresql-datenbank-anlegen" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE ROLE moodle WITH LOGIN PASSWORD &#39;EIN_LANGES_ZUFAELLIGES_PASSWORT&#39;;&quot;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE DATABASE moodle OWNER moodle ENCODING &#39;UTF8&#39; LC_COLLATE &#39;C&#39; LC_CTYPE &#39;C&#39; TEMPLATE template0;&quot;</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Moodle erwartet für PostgreSQL-Datenbanken explizit die Locale <code>C</code> statt der Systemlocale — deshalb <code>LC_COLLATE</code>/<code>LC_CTYPE</code> hier abweichend von einer sonst üblichen <code>de_DE.UTF-8</code>-Datenbank setzen. PostgreSQL lauscht per Default-Konfiguration ohnehin nur lokal (<code>listen_addresses = 'localhost'</code>); da Moodle über PHP-FPM auf demselben Host läuft, ist keine Netzwerkfreigabe für Port 5432 nötig.</p>
+</div>
+<hr />
+<h2 id="5-site-installation-headless-per-cli">5. Site-Installation headless per CLI<a class="headerlink" href="#5-site-installation-headless-per-cli" title="Permanent link">&para;</a></h2>
+<p>Anders als bei Drupal/Drush installiert sich Moodle über ein eigenes CLI-Skript direkt aus dem Core heraus:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/moodle
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>admin/cli/install.php<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>--wwwroot<span class="o">=</span><span class="s2">&quot;https://moodle.wissen-ahrensburg.de&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>--dataroot<span class="o">=</span>/var/moodledata<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span>--dbtype<span class="o">=</span>pgsql<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span>--dbhost<span class="o">=</span>localhost<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span>--dbname<span class="o">=</span>moodle<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span>--dbuser<span class="o">=</span>moodle<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span>--dbpass<span class="o">=</span>EIN_LANGES_ZUFAELLIGES_PASSWORT<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span>--fullname<span class="o">=</span><span class="s2">&quot;Wissen Ahrensburg&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span>--shortname<span class="o">=</span><span class="s2">&quot;WA-Moodle&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">  </span>--adminuser<span class="o">=</span>admin<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">  </span>--adminpass<span class="o">=</span>EIN_WEITERES_LANGES_PASSWORT<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">  </span>--agree-license<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">  </span>--non-interactive
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp: Browser-Assistent als Alternative</p>
+<p>Falls die nichtinteraktive Installation nicht ausreicht (z. B. für die Auswahl zusätzlicher Sprachpakete), lässt sich der grafische Installationsassistent wie bei den anderen Wiki-/CMS-Systemen in diesem Repository per <a href="../../../../entwicklung/infrastruktur/ssh-tunnel/">SSH-Tunnel</a> absichern, statt ihn öffentlich zu exponieren:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/moodle
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>-S<span class="w"> </span><span class="m">127</span>.0.0.1:8888
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ssh<span class="w"> </span>-L<span class="w"> </span><span class="m">8888</span>:127.0.0.1:8888<span class="w"> </span>admin@SERVER-IP
+</span></code></pre></div>
+Der Assistent ist dann unter <code>http://127.0.0.1:8888</code> erreichbar, verschlüsselt über die SSH-Verbindung.</p>
+</div>
+<hr />
+<h2 id="6-cron-job-einrichten">6. Cron-Job einrichten<a class="headerlink" href="#6-cron-job-einrichten" title="Permanent link">&para;</a></h2>
+<p>Moodle muss <code>admin/cli/cron.php</code> mindestens jede Minute ausführen — dort laufen Benachrichtigungen, Kursaufgaben und geplante Tasks. Statt eines klassischen <code>crontab</code>-Eintrags empfiehlt die Moodle-Doku einen systemd-Timer, da dieser verhindert, dass ein neuer Lauf startet, während der vorige (z. B. bei einer aufwendigen Aufgabe) noch nicht beendet ist:</p>
+<div class="language-ini highlight"><span class="filename">/etc/systemd/system/moodle-cron.service</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">[Unit]</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Moodle Cron</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">[Service]</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="na">Type</span><span class="o">=</span><span class="s">oneshot</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="na">User</span><span class="o">=</span><span class="s">www-data</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/php /var/www/moodle/admin/cli/cron.php</span>
+</span></code></pre></div>
+<div class="language-ini highlight"><span class="filename">/etc/systemd/system/moodle-cron.timer</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">[Unit]</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Moodle Cron, jede Minute</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">[Timer]</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="na">OnBootSec</span><span class="o">=</span><span class="s">1min</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="na">OnUnitActiveSec</span><span class="o">=</span><span class="s">1min</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="na">AccuracySec</span><span class="o">=</span><span class="s">1sec</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">[Install]</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">timers.target</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>moodle-cron.timer
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>systemctl<span class="w"> </span>list-timers<span class="w"> </span>moodle-cron.timer
+</span></code></pre></div>
+<p><code>Type=oneshot</code> sorgt zusammen mit dem Timer dafür, dass systemd den nächsten Lauf erst nach Abschluss des vorherigen einplant — ein manuelles Overlap-Locking wie bei klassischem Cron ist damit nicht nötig.</p>
+<hr />
+<h2 id="7-php-fpm-pool">7. PHP-FPM-Pool<a class="headerlink" href="#7-php-fpm-pool" title="Permanent link">&para;</a></h2>
+<p>Wie bei der Drupal-Installation empfiehlt sich ein eigener Pool, damit Moodle ressourcenseitig von anderen PHP-Diensten auf demselben Host isoliert ist, z. B. <code>/etc/php/8.3/fpm/pool.d/moodle.conf</code> mit <code>listen = /run/php/php8.3-fpm-moodle.sock</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>php8.3-fpm
+</span></code></pre></div>
+<hr />
+<h2 id="8-nginx-konfiguration">8. Nginx-Konfiguration<a class="headerlink" href="#8-nginx-konfiguration" title="Permanent link">&para;</a></h2>
+<p>Erstellen oder bearbeiten Sie <code>/etc/nginx/conf.d/moodle.conf</code>:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">moodle.wissen-ahrensburg.de</span><span class="p">;</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/moodle</span><span class="p">;</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="kn">client_max_body_size</span><span class="w"> </span><span class="s">100M</span><span class="p">;</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem</span><span class="p">;</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem</span><span class="p">;</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">/\.git</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">^/(CHANGELOG|README|UPGRADING|COPYING)\.(md|txt)$</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="nv">$uri/</span><span class="w"> </span><span class="s">/index.php?</span><span class="nv">$args</span><span class="p">;</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">[^/]\.php(/|$)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">        </span><span class="kn">fastcgi_split_path_info</span><span class="w"> </span><span class="s">^(.+?\.php)(/.*)</span>$<span class="p">;</span>
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$fastcgi_script_name</span><span class="w"> </span><span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">        </span><span class="kn">include</span><span class="w"> </span><span class="s">fastcgi_params</span><span class="p">;</span>
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">SCRIPT_FILENAME</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">PATH_INFO</span><span class="w"> </span><span class="nv">$fastcgi_path_info</span><span class="p">;</span>
+</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="w">        </span><span class="kn">fastcgi_read_timeout</span><span class="w"> </span><span class="mi">300</span><span class="p">;</span>
+</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a><span class="w">        </span><span class="kn">fastcgi_pass</span><span class="w"> </span><span class="s">unix:/run/php/php8.3-fpm-moodle.sock</span><span class="p">;</span>
+</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>
+</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="sr">*</span><span class="w"> </span><span class="s">&quot;\.(js|css|gif|jpg|jpeg|png|svg|woff|woff2)</span><span class="nv">$&quot;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a><span class="w">        </span><span class="kn">expires</span><span class="w"> </span><span class="s">max</span><span class="p">;</span>
+</span><span id="__span-11-29"><a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a><span class="w">        </span><span class="kn">log_not_found</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span><span id="__span-11-30"><a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-11-31"><a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a><span class="p">}</span>
+</span><span id="__span-11-32"><a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a>
+</span><span id="__span-11-33"><a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-34"><a id="__codelineno-11-34" name="__codelineno-11-34" href="#__codelineno-11-34"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-11-35"><a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:80</span><span class="p">;</span>
+</span><span id="__span-11-36"><a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">moodle.wissen-ahrensburg.de</span><span class="p">;</span>
+</span><span id="__span-11-37"><a id="__codelineno-11-37" name="__codelineno-11-37" href="#__codelineno-11-37"></a><span class="w">    </span><span class="kn">return</span><span class="w"> </span><span class="mi">301</span><span class="w"> </span><span class="s">https://</span><span class="nv">$host$request_uri</span><span class="p">;</span>
+</span><span id="__span-11-38"><a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span></code></pre></div>
+<p><code>client_max_body_size 100M</code> erlaubt größere Datei-Uploads (z. B. Videos in Kursen) — bei Bedarf an den tatsächlichen Nutzungsfall anpassen. <code>fastcgi_read_timeout 300</code> verhindert Zeitüberschreitungen bei länger laufenden Admin-Vorgängen (z. B. Kurs-Backups). <code>fastcgi_pass</code> verweist auf den in Schritt 7 eingerichteten dedizierten Pool-Socket — bei Nutzung des Standard-Pools stattdessen <code>unix:/run/php/php8.3-fpm.sock</code> verwenden. Das eigentliche Datenverzeichnis <code>/var/moodledata</code> liegt bereits außerhalb von <code>root</code> und ist damit für Nginx grundsätzlich unerreichbar; die zusätzlichen <code>deny</code>-Regeln sichern nur Repository-Metadaten innerhalb des Webroots ab.</p>
+<hr />
+<h2 id="9-firewall-ufw">9. Firewall (UFW)<a class="headerlink" href="#9-firewall-ufw" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s2">&quot;Nginx Full&quot;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>deny<span class="w"> </span><span class="m">5432</span>/tcp
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>status<span class="w"> </span>verbose
+</span></code></pre></div>
+<p>PostgreSQL bindet zwar schon per Konfiguration nur an <code>localhost</code> (Schritt 4), die explizite <code>deny</code>-Regel dokumentiert diese Absicht aber zusätzlich sichtbar in <code>ufw status</code> — als zweite, unabhängige Absicherungsebene, falls <code>postgresql.conf</code> später versehentlich geändert wird. Details zu UFW: <a href="../../../../entwicklung/infrastruktur/ufw-firewall/">UFW-Firewall installieren und steuern</a>.</p>
+<hr />
+<h2 id="kurzprufung">Kurzprüfung<a class="headerlink" href="#kurzprufung" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>is-active<span class="w"> </span>php8.3-fpm<span class="w"> </span>nginx<span class="w"> </span>postgresql
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>systemctl<span class="w"> </span>is-active<span class="w"> </span>moodle-cron.timer
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>curl<span class="w"> </span>-I<span class="w"> </span>https://moodle.wissen-ahrensburg.de
+</span></code></pre></div>
+<p>Meldet der <code>curl</code>-Aufruf <code>HTTP/2 200</code>, ist die Installation erreichbar. Danach im Backend (<code>/login/index.php</code>) anmelden und unter <strong>Website-Administration → Server → Umgebung</strong> die Umgebungsprüfung (<code>admin/environment.php</code>) laufen lassen — sie meldet fehlende PHP-Erweiterungen oder Berechtigungsprobleme.</p>
+<hr />
+<h2 id="quellen-und-weiterfuhrende-informationen">Quellen und weiterführende Informationen<a class="headerlink" href="#quellen-und-weiterfuhrende-informationen" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://docs.moodle.org/en/Installing_Moodle">Moodle: Installing Moodle</a></li>
+<li><a href="https://moodledev.io/general/releases">Moodle: Releases</a></li>
+<li><a href="https://docs.moodle.org/en/NGINX">Moodle: NGINX</a></li>
+<li><a href="https://docs.moodle.org/en/Cron">Moodle: Cron</a></li>
+<li><a href="../../drupal/installieren/">Drupal installieren: Composer, PostgreSQL und Nginx</a></li>
+<li><a href="../../xwiki/installieren/">XWiki installieren</a></li>
+<li><a href="../../../../entwicklung/infrastruktur/ufw-firewall/">UFW-Firewall installieren und steuern</a></li>
+<li><a href="../../../../entwicklung/infrastruktur/ssh-tunnel/">SSH-Tunnel: Portweiterleitung über SSH</a></li>
+<li><a href="../../">Dokumentationsübersicht</a></li>
 </ul>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
@@ -3049,7 +3285,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../wichtige-erweiterungen/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Erweiterungen">
+          <a href="../../mediawiki/mediawiki-php-extension/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: PHP Extension">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3059,20 +3295,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Erweiterungen
+                PHP Extension
               </div>
             </div>
           </a>
         
         
           
-          <a href="../smw-sparql-queries/" class="md-footer__link md-footer__link--next" aria-label="Weiter: SMW SPARQL Endpoint">
+          <a href="../../semantische-mediawiki/installieren/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Installieren">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                SMW SPARQL Endpoint
+                Installieren
               </div>
             </div>
             <div class="md-footer__button md-icon">
