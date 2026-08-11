@@ -315,6 +315,8 @@ nav:
               - KI-Agent (Automatisierte Pflege mit LLMs): wissen/dokumentation/mediawiki/mediawiki-ki-agent.md
               - Backup Skripte: wissen/dokumentation/mediawiki/mediawiki-backup-skripte.md
               - PHP Extension: wissen/dokumentation/mediawiki/mediawiki-php-extension.md
+          - Moodle:
+              - Installieren (Git, PostgreSQL, Nginx): wissen/dokumentation/moodle/installieren.md
           - Semantisches MediaWiki:
               - Installieren: wissen/dokumentation/semantische-mediawiki/installieren.md
               - Kurzform: wissen/dokumentation/semantische-mediawiki/kurzform.md
