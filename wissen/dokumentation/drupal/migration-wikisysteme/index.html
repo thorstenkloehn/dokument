@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/wiederherstellen/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/migration-wikisysteme/">
       
       
-        <link rel="prev" href="../backup/">
+        <link rel="prev" href="../installieren/">
       
       
-        <link rel="next" href="../mediawiki-python-bot/">
+        <link rel="next" href="../export-nach-mkdocs/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Wiederherstellen - Wissen Ahrensburg</title>
+        <title>Migration nach Drupal: MediaWiki, XWiki, Wiki.js und mkdocs/Zensical importieren - Wissen Ahrensburg</title>
       
     
     
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#datei-herunterladen" class="md-skip">
+        <a href="#migration-nach-drupal-mediawiki-xwiki-wikijs-und-mkdocszensical-importieren" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Wiederherstellen
+              Migration nach Drupal: MediaWiki, XWiki, Wiki.js und mkdocs/Zensical importieren
             
           </span>
         </div>
@@ -1962,10 +1962,328 @@
                 
   
   
+    
+  
   
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_19" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_4_19" id="__nav_5_4_19_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Drupal
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_19_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4_19">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Drupal
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installieren/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installieren (Composer, PostgreSQL, Nginx)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ablauf" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ablauf
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voraussetzungen-in-drupal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Voraussetzungen in Drupal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gemeinsame-funktion-seite-in-drupal-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Gemeinsame Funktion: Seite in Drupal anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-mediawiki-drupal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. MediaWiki → Drupal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-xwiki-drupal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. XWiki → Drupal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-wikijs-drupal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Wiki.js → Drupal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mkdocszensical-drupal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. mkdocs/Zensical → Drupal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubersicht-der-quellformate" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Übersicht der Quellformate
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nach-dem-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Nach dem Import
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verwandte-themen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Verwandte Themen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export-nach-mkdocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Export zurück nach mkdocs/Zensical
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -1993,14 +2311,14 @@
   
   
   
-    <a href="../../drupal/installieren/" class="md-nav__link">
+    <a href="../../mediawiki/" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
     
   
-  Drupal
+  Installieren
 
     
   </span>
@@ -2013,344 +2331,6 @@
     </a>
   
 
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_20" checked>
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  MediaWiki
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5_4_20" id="__nav_5_4_20_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_20_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5_4_20">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  MediaWiki
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../backup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Backup
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Wiederherstellen
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Wiederherstellen
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#datei-herunterladen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Datei herunterladen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mediawiki-dump-auf-mediawiki-instanzen-importieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        MediaWiki-Dump auf MediaWiki-Instanzen importieren
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#namensraume-in-der-localsettingsphp-auf-httpswissen-ahrensburgde-anlegen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Namensräume in der LocalSettings.php auf https://wissen-ahrensburg.de anlegen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#namensraume-in-der-localsettingsphp-auf-httpsdocswissen-ahrensburgde-anlegen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Namensräume in der LocalSettings.php auf https://docs.wissen-ahrensburg.de anlegen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mediawiki-python-bot/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Python Bot Automatisierung
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mediawiki-ki-agent/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  KI-Agent (Automatisierte Pflege mit LLMs)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mediawiki-backup-skripte/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Backup Skripte
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mediawiki-php-extension/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  PHP Extension
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -2643,6 +2623,8 @@
                     
                     
                     
+                      
+                    
                     
                       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
                       <div class="md-sidebar-button__wrapper">
@@ -2658,6 +2640,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2666,10 +2650,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#datei-herunterladen" class="md-nav__link">
+  <a href="#ablauf" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Datei herunterladen
+        Ablauf
       </span>
     </span>
   </a>
@@ -2677,10 +2661,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mediawiki-dump-auf-mediawiki-instanzen-importieren" class="md-nav__link">
+  <a href="#voraussetzungen-in-drupal" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        MediaWiki-Dump auf MediaWiki-Instanzen importieren
+        Voraussetzungen in Drupal
       </span>
     </span>
   </a>
@@ -2688,10 +2672,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#namensraume-in-der-localsettingsphp-auf-httpswissen-ahrensburgde-anlegen" class="md-nav__link">
+  <a href="#gemeinsame-funktion-seite-in-drupal-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Namensräume in der LocalSettings.php auf https://wissen-ahrensburg.de anlegen
+        Gemeinsame Funktion: Seite in Drupal anlegen
       </span>
     </span>
   </a>
@@ -2699,10 +2683,76 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#namensraume-in-der-localsettingsphp-auf-httpsdocswissen-ahrensburgde-anlegen" class="md-nav__link">
+  <a href="#1-mediawiki-drupal" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Namensräume in der LocalSettings.php auf https://docs.wissen-ahrensburg.de anlegen
+        1. MediaWiki → Drupal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-xwiki-drupal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. XWiki → Drupal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-wikijs-drupal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Wiki.js → Drupal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mkdocszensical-drupal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. mkdocs/Zensical → Drupal
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubersicht-der-quellformate" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Übersicht der Quellformate
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nach-dem-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Nach dem Import
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verwandte-themen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Verwandte Themen
       </span>
     </span>
   </a>
@@ -2879,16 +2929,6 @@
     
       
         
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -2899,11 +2939,11 @@
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="../installieren/" class="md-path__link">
           
   
   <span class="md-ellipsis">
-    MediaWiki
+    Drupal
   </span>
 
         </a>
@@ -2920,50 +2960,243 @@
                 
                   
 
-  <h1 id="__skip">Wiederherstellen</h1>
-
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
-<h2 id="datei-herunterladen">Datei herunterladen<a class="headerlink" href="#datei-herunterladen" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Repository klonen (ohne sudo, falls möglich)
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git clone https://github.com/thorstenkloehn/Download.git ~/Download
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>cd ~/Download
+<h1 id="migration-nach-drupal-mediawiki-xwiki-wikijs-und-mkdocszensical-importieren">Migration nach Drupal: MediaWiki, XWiki, Wiki.js und mkdocs/Zensical importieren<a class="headerlink" href="#migration-nach-drupal-mediawiki-xwiki-wikijs-und-mkdocszensical-importieren" title="Permanent link">&para;</a></h1>
+<p>Praxis-Guide zum Extrahieren von Inhalten aus <a href="../../mediawiki/">MediaWiki</a>, <a href="../../xwiki/installieren/">XWiki</a>, <a href="../../wikijs-linux-installation/">Wiki.js</a> sowie aus einer <strong>statischen mkdocs/Zensical-Dokumentation</strong> (wie diesem Repository selbst) und zum Import in ein neu aufgesetztes <a href="../installieren/">Drupal</a> über dessen <strong>JSON:API</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis: allgemeine Technik, keine Ankündigung</p>
+<p>Der mkdocs/Zensical-Abschnitt beschreibt die technische Machbarkeit anhand eines beliebigen mkdocs-basierten Doku-Repos — er ist kein Hinweis darauf, dass <strong>Wissen Ahrensburg</strong> selbst von Zensical auf Drupal wechselt. Laut <code>CLAUDE.md</code> bleibt dieses Repository ein reines, mit Zensical gebautes Content-Repo.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Hinweis: Zwei mögliche Wege</p>
+<p>Für große, wiederholbare Migrationen bietet Drupal Core die <strong>Migrate API</strong> (erweitert um die Contrib-Module <code>migrate_plus</code>/<code>migrate_tools</code>) — sie bildet Quell-, Prozess- und Zielschritte deklarativ in YAML ab und ist der von Drupal empfohlene Weg für dauerhaft gepflegte Migrationspfade. Für eine <strong>einmalige Übernahme</strong> ist der unten beschriebene, direkte Weg über kleine Python-Skripte gegen die JSON:API oft schneller aufgesetzt und passt zum Stil der übrigen API-Skripte in diesem Wiki (siehe <a href="../../xwiki/xwiki-rest-api/">XWiki REST API &amp; Python</a>, <a href="../../wikijs-ki-agent/">Wiki.js Agenten-Pipeline</a>).</p>
+</div>
+<hr />
+<h2 id="ablauf">Ablauf<a class="headerlink" href="#ablauf" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph LR
+    MW["MediaWiki&lt;br/&gt;Action-API (Wikitext)"] --&gt; P1["Pandoc&lt;br/&gt;mediawiki zu html"]
+    XW["XWiki&lt;br/&gt;Export-URL (HTML)"] --&gt; D["Drupal JSON:API&lt;br/&gt;node--page, status:false"]
+    WJ["Wiki.js&lt;br/&gt;GraphQL-API (Markdown)"] --&gt; P2["Pandoc&lt;br/&gt;markdown zu html"]
+    MK["mkdocs/Zensical&lt;br/&gt;lokale .md-Dateien"] --&gt; P3["Pandoc&lt;br/&gt;markdown zu html"]
+    P1 --&gt; D
+    P2 --&gt; D
+    P3 --&gt; D
+    D --&gt; R["Menschliche Review&lt;br/&gt;im Drupal-Backend"]
+    R --&gt;|"Freigabe"| PUB["Veroeffentlicht (status:true)"]
+    R --&gt;|"Ablehnung"| DEL["Entwurf loeschen/ueberarbeiten"]</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: Nur Text-Inhalte</p>
+<p>Diese Skripte migrieren reinen Seiteninhalt (Titel + HTML-Body). Bilder, Dateianhänge und Kategorien/Tags müssen separat migriert werden — z. B. Dateien direkt per <code>rsync</code> in <code>sites/default/files/</code> kopieren und anschließend als Drupal-Medien registrieren.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Human-in-the-Loop wie bei den KI-Agenten-Pipelines</p>
+<p>Alle importierten Seiten werden mit <code>"status": false</code> (unveröffentlicht) angelegt — nach demselben Prinzip wie bei den <a href="../../wikijs-ki-agent/#governance-sicherheitsleitplanken">KI-Agenten-Pipelines</a> in diesem Wiki: Erst nach manueller Prüfung im Drupal-Backend wird eine Seite veröffentlicht. So verhindert ein fehlerhafter Konvertierungslauf nicht, dass kaputte Seiten live gehen.</p>
+</div>
+<hr />
+<h2 id="voraussetzungen-in-drupal">Voraussetzungen in Drupal<a class="headerlink" href="#voraussetzungen-in-drupal" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/drupal-projekt
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>vendor/bin/drush<span class="w"> </span>en<span class="w"> </span>jsonapi<span class="w"> </span>basic_auth<span class="w"> </span>-y
 </span></code></pre></div>
-<h2 id="mediawiki-dump-auf-mediawiki-instanzen-importieren">MediaWiki-Dump auf MediaWiki-Instanzen importieren<a class="headerlink" href="#mediawiki-dump-auf-mediawiki-instanzen-importieren" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>php /var/www/mediawiki/maintenance/run.php importDump.php &lt; pagedump.xml
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>php /var/www/mediawiki/maintenance/run.php initSiteStats.php
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>php /var/www/mediawiki/maintenance/run.php importDump.php &lt; docs.xml
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>php /var/www/mediawiki/maintenance/run.php rebuildrecentchanges.php
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>php /var/www/mediawiki/maintenance/run.php initSiteStats.php
+<p>Danach im Backend unter <strong>Konfiguration → Personen → Rollen</strong> eine eigene Rolle <code>migration_bot</code> mit ausschließlich der Berechtigung „Neue Inhalte vom Typ <em>Seite</em> erstellen" anlegen und einem eigenen Systemkonto zuweisen — kein Admin-Konto für den Import wiederverwenden. <code>basic_auth</code> erlaubt es diesem Konto, sich per HTTP-Basic-Auth gegen die JSON:API zu authentifizieren.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>requests
 </span></code></pre></div>
-<h2 id="namensraume-in-der-localsettingsphp-auf-httpswissen-ahrensburgde-anlegen">Namensräume in der LocalSettings.php auf https://wissen-ahrensburg.de anlegen<a class="headerlink" href="#namensraume-in-der-localsettingsphp-auf-httpswissen-ahrensburgde-anlegen" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>define(&quot;NS_Nachrichten&quot;, 3000);
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>define(&quot;NS_Nachrichten_TALK&quot;, 3001);
+<hr />
+<h2 id="gemeinsame-funktion-seite-in-drupal-anlegen">Gemeinsame Funktion: Seite in Drupal anlegen<a class="headerlink" href="#gemeinsame-funktion-seite-in-drupal-anlegen" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">requests.auth</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTTPBasicAuth</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>$wgExtraNamespaces[NS_Nachrichten] = &quot;Nachrichten&quot;;
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>$wgExtraNamespaces[NS_Nachrichten_TALK] = &quot;Nachrichten_Diskussion&quot;;
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>$wgVisualEditorAvailableNamespaces[] = NS_Nachrichten;
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>define(&quot;NS_BLOG&quot;, 3002);
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>define(&quot;NS_BLOG_TALK&quot;, 3003);
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>$wgExtraNamespaces[NS_BLOG] = &quot;Blog&quot;;
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>$wgExtraNamespaces[NS_BLOG_TALK] = &quot;Blog_Diskussion&quot;;
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>$wgVisualEditorAvailableNamespaces[] = NS_BLOG;
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>$wgVisualEditorAvailableNamespaces[NS_BLOG] = true;
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">DRUPAL_JSONAPI_URL</span> <span class="o">=</span> <span class="s2">&quot;https://drupal.wissen-ahrensburg.de/jsonapi/node/page&quot;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">AUTH</span> <span class="o">=</span> <span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="s2">&quot;migration_bot&quot;</span><span class="p">,</span> <span class="s2">&quot;BOT_PASSWORT&quot;</span><span class="p">)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">HEADERS</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/vnd.api+json&quot;</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="s2">&quot;Accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/vnd.api+json&quot;</span><span class="p">,</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">create_drupal_page</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">html_body</span><span class="p">):</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;node--page&quot;</span><span class="p">,</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>            <span class="s2">&quot;attributes&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>                <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>                <span class="s2">&quot;body&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">html_body</span><span class="p">,</span> <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;full_html&quot;</span><span class="p">},</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>                <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>  <span class="c1"># unveroeffentlicht -&gt; menschliche Review noetig</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>            <span class="p">},</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>        <span class="p">}</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    <span class="p">}</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">DRUPAL_JSONAPI_URL</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="n">AUTH</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">)</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">201</span><span class="p">:</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ &#39;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2">&#39; als Entwurf angelegt&quot;</span><span class="p">)</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ Fehler bei &#39;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2">&#39;: </span><span class="si">{</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="namensraume-in-der-localsettingsphp-auf-httpsdocswissen-ahrensburgde-anlegen">Namensräume in der LocalSettings.php auf https://docs.wissen-ahrensburg.de anlegen<a class="headerlink" href="#namensraume-in-der-localsettingsphp-auf-httpsdocswissen-ahrensburgde-anlegen" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$wgNamespacesWithSubpages[NS_MAIN] = true;
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a># End of automatically generated settings.
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a># Add more configuration options below.
+<hr />
+<h2 id="1-mediawiki-drupal">1. MediaWiki → Drupal<a class="headerlink" href="#1-mediawiki-drupal" title="Permanent link">&para;</a></h2>
+<p>MediaWiki liefert Rohtext im eigenen Wikitext-Format über die Action-API. <a href="../../../tools/pandoc/">Pandoc</a> übernimmt die Konvertierung nach HTML.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">MEDIAWIKI_API</span> <span class="o">=</span> <span class="s2">&quot;https://mediawiki.wissen-ahrensburg.de/api.php&quot;</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>define(&quot;NS_BLOG&quot;, 4000);
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>define(&quot;NS_BLOG_TALK&quot;, 4001);
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>$wgExtraNamespaces[NS_BLOG] = &quot;Blog&quot;;
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>$wgExtraNamespaces[NS_BLOG_TALK] = &quot;Blog_Diskussion&quot;;
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>$wgVisualEditorAvailableNamespaces[] = NS_BLOG;
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>$wgVisualEditorAvailableNamespaces[NS_BLOG] = true;
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_all_titles</span><span class="p">():</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">titles</span><span class="p">,</span> <span class="n">apcontinue</span> <span class="o">=</span> <span class="p">[],</span> <span class="kc">None</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;query&quot;</span><span class="p">,</span> <span class="s2">&quot;list&quot;</span><span class="p">:</span> <span class="s2">&quot;allpages&quot;</span><span class="p">,</span> <span class="s2">&quot;aplimit&quot;</span><span class="p">:</span> <span class="s2">&quot;max&quot;</span><span class="p">,</span> <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;json&quot;</span><span class="p">}</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="k">if</span> <span class="n">apcontinue</span><span class="p">:</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>            <span class="n">params</span><span class="p">[</span><span class="s2">&quot;apcontinue&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">apcontinue</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">MEDIAWIKI_API</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        <span class="n">titles</span> <span class="o">+=</span> <span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">r</span><span class="p">[</span><span class="s2">&quot;query&quot;</span><span class="p">][</span><span class="s2">&quot;allpages&quot;</span><span class="p">]]</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="n">apcontinue</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;continue&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;apcontinue&quot;</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">apcontinue</span><span class="p">:</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>            <span class="k">break</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    <span class="k">return</span> <span class="n">titles</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_wikitext</span><span class="p">(</span><span class="n">title</span><span class="p">):</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;parse&quot;</span><span class="p">,</span> <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span> <span class="s2">&quot;prop&quot;</span><span class="p">:</span> <span class="s2">&quot;wikitext&quot;</span><span class="p">,</span> <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;json&quot;</span><span class="p">}</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">MEDIAWIKI_API</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    <span class="k">return</span> <span class="n">r</span><span class="p">[</span><span class="s2">&quot;parse&quot;</span><span class="p">][</span><span class="s2">&quot;wikitext&quot;</span><span class="p">][</span><span class="s2">&quot;*&quot;</span><span class="p">]</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="k">def</span><span class="w"> </span><span class="nf">wikitext_to_html</span><span class="p">(</span><span class="n">wikitext</span><span class="p">):</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>        <span class="p">[</span><span class="s2">&quot;pandoc&quot;</span><span class="p">,</span> <span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="s2">&quot;mediawiki&quot;</span><span class="p">,</span> <span class="s2">&quot;-t&quot;</span><span class="p">,</span> <span class="s2">&quot;html&quot;</span><span class="p">],</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>        <span class="nb">input</span><span class="o">=</span><span class="n">wikitext</span><span class="p">,</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    <span class="p">)</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">get_all_titles</span><span class="p">():</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>    <span class="n">html</span> <span class="o">=</span> <span class="n">wikitext_to_html</span><span class="p">(</span><span class="n">get_wikitext</span><span class="p">(</span><span class="n">title</span><span class="p">))</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    <span class="n">create_drupal_page</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">html</span><span class="p">)</span>
 </span></code></pre></div>
+<hr />
+<h2 id="2-xwiki-drupal">2. XWiki → Drupal<a class="headerlink" href="#2-xwiki-drupal" title="Permanent link">&para;</a></h2>
+<p>Die Seitenliste kommt über die <a href="../../xwiki/xwiki-rest-api/">XWiki REST API</a>, der gerenderte HTML-Inhalt einfacher über XWikis klassische Export-URL (<code>/bin/export/{Space}/{Page}?format=html</code>) statt über die REST-API selbst, die standardmäßig nur XWiki-Syntax liefert:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">XWIKI_REST_URL</span> <span class="o">=</span> <span class="s2">&quot;https://xwiki.wissen-ahrensburg.de/rest&quot;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">XWIKI_EXPORT_URL</span> <span class="o">=</span> <span class="s2">&quot;https://xwiki.wissen-ahrensburg.de/bin/export/</span><span class="si">{space}</span><span class="s2">/</span><span class="si">{page}</span><span class="s2">?format=html&quot;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">XWIKI_AUTH</span> <span class="o">=</span> <span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="s2">&quot;admin&quot;</span><span class="p">,</span> <span class="s2">&quot;admin_password&quot;</span><span class="p">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_space_pages</span><span class="p">(</span><span class="n">wiki</span><span class="o">=</span><span class="s2">&quot;xwiki&quot;</span><span class="p">,</span> <span class="n">space</span><span class="o">=</span><span class="s2">&quot;Main&quot;</span><span class="p">):</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">XWIKI_REST_URL</span><span class="si">}</span><span class="s2">/wikis/</span><span class="si">{</span><span class="n">wiki</span><span class="si">}</span><span class="s2">/spaces/</span><span class="si">{</span><span class="n">space</span><span class="si">}</span><span class="s2">/pages&quot;</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="n">XWIKI_AUTH</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">})</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;pageSummaries&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span> <span class="k">else</span> <span class="p">[]</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_xwiki_html</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">page</span><span class="p">):</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">url</span> <span class="o">=</span> <span class="n">XWIKI_EXPORT_URL</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">space</span><span class="o">=</span><span class="n">space</span><span class="p">,</span> <span class="n">page</span><span class="o">=</span><span class="n">page</span><span class="p">)</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="n">XWIKI_AUTH</span><span class="p">)</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="k">for</span> <span class="n">summary</span> <span class="ow">in</span> <span class="n">get_space_pages</span><span class="p">():</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="n">html</span> <span class="o">=</span> <span class="n">get_xwiki_html</span><span class="p">(</span><span class="s2">&quot;Main&quot;</span><span class="p">,</span> <span class="n">summary</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="n">create_drupal_page</span><span class="p">(</span><span class="n">summary</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">],</span> <span class="n">html</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="3-wikijs-drupal">3. Wiki.js → Drupal<a class="headerlink" href="#3-wikijs-drupal" title="Permanent link">&para;</a></h2>
+<p>Wiki.js liefert den Seiteninhalt als Markdown über GraphQL (siehe <a href="../../wikijs-ki-agent/">Wiki.js Agenten-Pipeline</a>); Pandoc konvertiert erneut nach HTML.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">WIKIJS_URL</span> <span class="o">=</span> <span class="s2">&quot;https://wiki.wissen-ahrensburg.de/graphql&quot;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">WIKIJS_HEADERS</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer &lt;API_TOKEN&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">LIST_QUERY</span> <span class="o">=</span> <span class="s2">&quot;query { pages { list { id path title } } }&quot;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">SINGLE_QUERY</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="s2">query ($id: Int!) {</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="s2">  pages { single(id: $id) { title content } }</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="s2">}</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_wikijs_pages</span><span class="p">():</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">WIKIJS_URL</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="n">LIST_QUERY</span><span class="p">},</span> <span class="n">headers</span><span class="o">=</span><span class="n">WIKIJS_HEADERS</span><span class="p">)</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="s2">&quot;pages&quot;</span><span class="p">][</span><span class="s2">&quot;list&quot;</span><span class="p">]</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_wikijs_content</span><span class="p">(</span><span class="n">page_id</span><span class="p">):</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">WIKIJS_URL</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="n">SINGLE_QUERY</span><span class="p">,</span> <span class="s2">&quot;variables&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">page_id</span><span class="p">}},</span> <span class="n">headers</span><span class="o">=</span><span class="n">WIKIJS_HEADERS</span><span class="p">)</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="s2">&quot;pages&quot;</span><span class="p">][</span><span class="s2">&quot;single&quot;</span><span class="p">]</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="k">def</span><span class="w"> </span><span class="nf">markdown_to_html</span><span class="p">(</span><span class="n">markdown_text</span><span class="p">):</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>        <span class="p">[</span><span class="s2">&quot;pandoc&quot;</span><span class="p">,</span> <span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="s2">&quot;markdown&quot;</span><span class="p">,</span> <span class="s2">&quot;-t&quot;</span><span class="p">,</span> <span class="s2">&quot;html&quot;</span><span class="p">],</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>        <span class="nb">input</span><span class="o">=</span><span class="n">markdown_text</span><span class="p">,</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>    <span class="p">)</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>    <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="k">for</span> <span class="n">summary</span> <span class="ow">in</span> <span class="n">get_wikijs_pages</span><span class="p">():</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>    <span class="n">detail</span> <span class="o">=</span> <span class="n">get_wikijs_content</span><span class="p">(</span><span class="n">summary</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">])</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>    <span class="n">html</span> <span class="o">=</span> <span class="n">markdown_to_html</span><span class="p">(</span><span class="n">detail</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">])</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>    <span class="n">create_drupal_page</span><span class="p">(</span><span class="n">detail</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">],</span> <span class="n">html</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="4-mkdocszensical-drupal">4. mkdocs/Zensical → Drupal<a class="headerlink" href="#4-mkdocszensical-drupal" title="Permanent link">&para;</a></h2>
+<p>Der einfachste der vier Fälle: Eine mkdocs/Zensical-Doku liegt bereits als lokale Markdown-Dateien vor — es ist <strong>kein API-Aufruf, kein Auth-Token und kein Netzwerkzugriff</strong> nötig, sondern nur ein Verzeichnis-Scan. Der Titel jeder Seite wird aus der ersten <code># Überschrift</code> der Datei gelesen; existiert keine, dient der Dateiname als Fallback.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pathlib</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">DOCS_DIR</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;/pfad/zum/mkdocs-repo/docs&quot;</span><span class="p">)</span>  <span class="c1"># nur docs/, nicht raw/ oder site/</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_title</span><span class="p">(</span><span class="n">markdown_text</span><span class="p">,</span> <span class="n">fallback</span><span class="p">):</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;^#\s+(.+)$&quot;</span><span class="p">,</span> <span class="n">markdown_text</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span><span class="p">)</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="k">return</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">if</span> <span class="n">match</span> <span class="k">else</span> <span class="n">fallback</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="k">for</span> <span class="n">md_file</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">DOCS_DIR</span><span class="o">.</span><span class="n">rglob</span><span class="p">(</span><span class="s2">&quot;*.md&quot;</span><span class="p">)):</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="n">text</span> <span class="o">=</span> <span class="n">md_file</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="n">title</span> <span class="o">=</span> <span class="n">extract_title</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">fallback</span><span class="o">=</span><span class="n">md_file</span><span class="o">.</span><span class="n">stem</span><span class="p">)</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="n">html</span> <span class="o">=</span> <span class="n">markdown_to_html</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>  <span class="c1"># dieselbe pandoc-Funktion wie im Wiki.js-Abschnitt</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>    <span class="n">create_drupal_page</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">html</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Achtung: relative Links und Bildpfade</p>
+<p>Interne Links (<code>[Text](../ordner/seite.md)</code>) und Bildpfade sind relativ zur Datei im Dateisystem aufgelöst — nach dem Import als Drupal-Node existieren diese Pfade nicht mehr. Für eine saubere Migration vorher eine Zuordnungstabelle <code>alter Markdown-Pfad → neuer Drupal-Pfad (Alias)</code> aufbauen und Links/Bilder in einem zweiten Durchlauf per Suchen-und-Ersetzen auf die neuen Alias-Pfade umschreiben, bevor die Seiten veröffentlicht werden. Der <code>nav:</code>-Baum in <code>mkdocs.yml</code> liefert dafür die kanonische Liste aller gültigen Seiten samt Titeln.</p>
+</div>
+<hr />
+<h2 id="ubersicht-der-quellformate">Übersicht der Quellformate<a class="headerlink" href="#ubersicht-der-quellformate" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Quelle</th>
+<th>API</th>
+<th>Rohformat</th>
+<th>Konvertierung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MediaWiki</td>
+<td>Action-API (<code>action=parse</code>)</td>
+<td>Wikitext</td>
+<td><code>pandoc -f mediawiki -t html</code></td>
+</tr>
+<tr>
+<td>XWiki</td>
+<td>REST-API (Liste) + Export-URL (Inhalt)</td>
+<td>HTML (direkt)</td>
+<td>keine nötig</td>
+</tr>
+<tr>
+<td>Wiki.js</td>
+<td>GraphQL-API</td>
+<td>Markdown</td>
+<td><code>pandoc -f markdown -t html</code></td>
+</tr>
+<tr>
+<td>mkdocs/Zensical</td>
+<td>keine (lokaler Dateizugriff)</td>
+<td>Markdown</td>
+<td><code>pandoc -f markdown -t html</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="nach-dem-import">Nach dem Import<a class="headerlink" href="#nach-dem-import" title="Permanent link">&para;</a></h2>
+<ol>
+<li>In Drupal unter <strong>Inhalt</strong> die neu angelegten, unveröffentlichten Seiten filtern und stichprobenartig gegen die Quelle prüfen.</li>
+<li>Interne Links (in allen drei Quellsystemen jeweils anders aufgebaut) manuell oder über eine Mapping-Tabelle plus das Contrib-Modul <strong>Redirect</strong> auf die neuen Drupal-Pfade umbiegen.</li>
+<li>Erst nach Freigabe einzeln oder per Bulk-Aktion auf <code>status: true</code> setzen.</li>
+<li>Quellsysteme (MediaWiki/XWiki/Wiki.js) nicht sofort abschalten — parallel weiterlaufen lassen, bis die Migration vollständig verifiziert ist.</li>
+</ol>
+<hr />
+<h2 id="verwandte-themen">Verwandte Themen<a class="headerlink" href="#verwandte-themen" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../installieren/">Drupal installieren: Composer, PostgreSQL und Nginx</a></li>
+<li><a href="../../xwiki/xwiki-rest-api/">XWiki REST API &amp; Python</a></li>
+<li><a href="../../wikijs-ki-agent/">Wiki.js Agenten-Pipeline</a></li>
+<li><a href="../../mediawiki/mediawiki-python-bot/">MediaWiki Python Bot Automatisierung</a></li>
+<li><a href="../../../tools/pandoc/">Pandoc</a></li>
+<li><a href="../../">Dokumentationsübersicht</a></li>
+</ul>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
 
@@ -3056,7 +3289,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../backup/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Backup">
+          <a href="../installieren/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Installieren (Composer, PostgreSQL, Nginx)">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3066,20 +3299,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Backup
+                Installieren (Composer, PostgreSQL, Nginx)
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mediawiki-python-bot/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Python Bot Automatisierung">
+          <a href="../export-nach-mkdocs/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Export zurück nach mkdocs&#x2f;Zensical">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Python Bot Automatisierung
+                Export zurück nach mkdocs/Zensical
               </div>
             </div>
             <div class="md-footer__button md-icon">

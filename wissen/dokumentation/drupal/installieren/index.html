@@ -10,36 +10,36 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/e-learning/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/installieren/">
       
       
-        <link rel="prev" href="../daten/datenerfassung/opendatakit/">
+        <link rel="prev" href="../../wissensdatenbanken-ki-semantische-suche/">
       
       
-        <link rel="next" href="./ki-lehre-weiterbildung/">
+        <link rel="next" href="../migration-wikisysteme/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.52">
     
     
       
-        <title>E-Learning-Autorentools & Interaktive Lernumgebungen - Wissen Ahrensburg</title>
+        <title>Drupal installieren: Composer, PostgreSQL und Nginx - Wissen Ahrensburg</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.8b3b5a67.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/modern/main.8b3b5a67.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
   
@@ -123,9 +123,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
   
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#e-learning-autorentools-interaktive-lernumgebungen" class="md-skip">
+        <a href="#drupal-installieren-composer-postgresql-und-nginx" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -168,7 +168,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
-    <a href="../.." title="Wissen Ahrensburg" class="md-header__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+    <a href="../../../.." title="Wissen Ahrensburg" class="md-header__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              E-Learning-Autorentools &amp; Interaktive Lernumgebungen
+              Drupal installieren: Composer, PostgreSQL und Nginx
             
           </span>
         </div>
@@ -256,7 +256,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   Start
@@ -289,7 +289,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../k%C3%BCnstliche-intelligenz/" class="md-tabs__link">
+        <a href="../../../../k%C3%BCnstliche-intelligenz/" class="md-tabs__link">
           
   
   KI & Automatisierung
@@ -325,7 +325,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../entwicklung/erste-schritte/" class="md-tabs__link">
+        <a href="../../../../entwicklung/erste-schritte/" class="md-tabs__link">
           
   
   Entwicklung
@@ -383,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../kreativ/design/" class="md-tabs__link">
+        <a href="../../../../kreativ/design/" class="md-tabs__link">
           
   
   Kreativ
@@ -442,7 +442,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../daten/datenbanken/" class="md-tabs__link">
+        <a href="../../../daten/datenbanken/" class="md-tabs__link">
           
   
   Wissen
@@ -481,7 +481,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../rechtliches/impressum/" class="md-tabs__link">
+        <a href="../../../../rechtliches/impressum/" class="md-tabs__link">
           
   
   Rechtliches
@@ -520,7 +520,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Wissen Ahrensburg" class="md-nav__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+    <a href="../../../.." title="Wissen Ahrensburg" class="md-nav__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
@@ -538,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -596,7 +596,7 @@
   
   
   
-    <a href="../../k%C3%BCnstliche-intelligenz/" class="md-nav__link">
+    <a href="../../../../k%C3%BCnstliche-intelligenz/" class="md-nav__link">
       
   
   
@@ -662,7 +662,7 @@
   
   
   
-    <a href="../../entwicklung/erste-schritte/" class="md-nav__link">
+    <a href="../../../../entwicklung/erste-schritte/" class="md-nav__link">
       
   
   
@@ -726,7 +726,7 @@
   
   
   
-    <a href="../../kreativ/design/" class="md-nav__link">
+    <a href="../../../../kreativ/design/" class="md-nav__link">
       
   
   
@@ -859,7 +859,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../daten/datenbanken/" class="md-nav__link ">
+            <a href="../../../daten/datenbanken/" class="md-nav__link ">
               
   
   
@@ -901,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../daten/datenbanken/pgvector-anleitung/" class="md-nav__link">
+      <a href="../../../daten/datenbanken/pgvector-anleitung/" class="md-nav__link">
         
   
   
@@ -956,7 +956,7 @@
   
   
   
-    <a href="../daten/datenerfassung/" class="md-nav__link">
+    <a href="../../../daten/datenerfassung/" class="md-nav__link">
       
   
   
@@ -994,8 +994,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1027,15 +1025,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="././" class="md-nav__link md-nav__link--active">
+            <a href="../../../e-learning/" class="md-nav__link ">
               
   
   
@@ -1052,13 +1050,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_5_2" id="__nav_5_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5_2" id="__nav_5_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1077,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./ki-lehre-weiterbildung/" class="md-nav__link">
+      <a href="../../../e-learning/ki-lehre-weiterbildung/" class="md-nav__link">
         
   
   
@@ -1104,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./sprachlern-ki-agenten-topliste/" class="md-nav__link">
+      <a href="../../../e-learning/sprachlern-ki-agenten-topliste/" class="md-nav__link">
         
   
   
@@ -1131,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./lernmethoden-programmiersprachen/" class="md-nav__link">
+      <a href="../../../e-learning/lernmethoden-programmiersprachen/" class="md-nav__link">
         
   
   
@@ -1158,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
+      <a href="../../../e-learning/interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
         
   
   
@@ -1227,7 +1225,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../tools/" class="md-nav__link ">
+            <a href="../../../tools/" class="md-nav__link ">
               
   
   
@@ -1297,7 +1295,7 @@
   
   
   
-    <a href="../tools/pandoc/" class="md-nav__link">
+    <a href="../../../tools/pandoc/" class="md-nav__link">
       
   
   
@@ -1330,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/analysetool/" class="md-nav__link">
+      <a href="../../../tools/analysetool/" class="md-nav__link">
         
   
   
@@ -1357,7 +1355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/benchmark/" class="md-nav__link">
+      <a href="../../../tools/benchmark/" class="md-nav__link">
         
   
   
@@ -1365,6 +1363,889 @@
     
   
   Benchmark
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Dokumentation
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_4" id="__nav_5_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Dokumentation
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../llm-first-wiki-tools-agenten/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Native „LLM-first" Wiki-Tools & Agenten
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../klassische-wiki-systeme-llm-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Klassische Wiki-Systeme mit LLM-Integration
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../open-source-llm-agent-mcp-systeme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Open-Source Systeme mit vollständiger LLM-, Agenten- & MCP-Unterstützung
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wissensmanagement-mcp-server-topliste/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Beste Wissensmanagement-Systeme (Open Source) mit MCP-Server (Top 20)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cms-mcp-server-topliste/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../llm-wiki-pattern-karpathy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  LLM-Wiki-Pattern (Karpathy-Muster)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  KI strukturiert das Wiki autonom & Selfhosting-Migration
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../openwiki-repo-dokumentation-agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  OpenWiki: Repo-Dokumentations-Agent (LangChain)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onyx-danswer-rag-plattform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Onyx (ehem. Danswer): RAG-Plattform
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anythingllm-rag-plattform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  AnythingLLM: All-in-One Desktop- & Docker-RAG-Plattform
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../open-webui-rag-agenten-plattform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Open WebUI: All-in-One RAG-System mit Agenten-Funktion
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dify-agenten-workflow-plattform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Dify: Visuelle Agenten- & Workflow-Plattform
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flowise-visueller-flow-builder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Flowise: Visueller Flow-Builder für LangChain
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../khoj-ki-zweites-gehirn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Khoj: KI-„Zweites Gehirn" für persönliche Wissenssuche
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pkm-second-brain-methoden/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Personal Knowledge Management (PKM) & Second Brain
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Wissensdatenbanken mit KI & semantischer Suche
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_19" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_4_19" id="__nav_5_4_19_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Drupal
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_19_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4_19">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Drupal
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installieren (Composer, PostgreSQL, Nginx)
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installieren (Composer, PostgreSQL, Nginx)
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#voraussetzungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Voraussetzungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-php-composer-und-postgresql-treiber-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. PHP, Composer und PostgreSQL-Treiber installieren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-postgresql-datenbank-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. PostgreSQL-Datenbank anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-drupal-per-composer-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Drupal per Composer installieren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-site-installation-headless-per-drush" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Site-Installation headless per Drush
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-php-fpm-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. PHP-FPM-Pool
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-nginx-konfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Nginx-Konfiguration
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-firewall-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Firewall (UFW)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration-wikisysteme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export-nach-mkdocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Export zurück nach mkdocs/Zensical
 
     
   </span>
@@ -1410,569 +2291,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../dokumentation/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Dokumentation
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5_4" id="__nav_5_4_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Dokumentation
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/llm-first-wiki-tools-agenten/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Native „LLM-first" Wiki-Tools & Agenten
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/klassische-wiki-systeme-llm-integration/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Klassische Wiki-Systeme mit LLM-Integration
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/open-source-llm-agent-mcp-systeme/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Open-Source Systeme mit vollständiger LLM-, Agenten- & MCP-Unterstützung
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/wissensmanagement-mcp-server-topliste/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Beste Wissensmanagement-Systeme (Open Source) mit MCP-Server (Top 20)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/cms-mcp-server-topliste/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/llm-wiki-pattern-karpathy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  LLM-Wiki-Pattern (Karpathy-Muster)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  KI strukturiert das Wiki autonom & Selfhosting-Migration
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/openwiki-repo-dokumentation-agent/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  OpenWiki: Repo-Dokumentations-Agent (LangChain)
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/onyx-danswer-rag-plattform/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Onyx (ehem. Danswer): RAG-Plattform
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/anythingllm-rag-plattform/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  AnythingLLM: All-in-One Desktop- & Docker-RAG-Plattform
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/open-webui-rag-agenten-plattform/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Open WebUI: All-in-One RAG-System mit Agenten-Funktion
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/dify-agenten-workflow-plattform/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Dify: Visuelle Agenten- & Workflow-Plattform
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/flowise-visueller-flow-builder/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Flowise: Visueller Flow-Builder für LangChain
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/khoj-ki-zweites-gehirn/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Khoj: KI-„Zweites Gehirn" für persönliche Wissenssuche
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/pkm-second-brain-methoden/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Personal Knowledge Management (PKM) & Second Brain
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dokumentation/wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Wissensdatenbanken mit KI & semantischer Suche
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
     
     
     
@@ -1993,78 +2311,7 @@
   
   
   
-    <a href="../dokumentation/drupal/installieren/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Drupal
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../dokumentation/mediawiki/" class="md-nav__link">
+    <a href="../../mediawiki/" class="md-nav__link">
       
   
   
@@ -2129,7 +2376,7 @@
   
   
   
-    <a href="../dokumentation/semantische-mediawiki/installieren/" class="md-nav__link">
+    <a href="../../semantische-mediawiki/installieren/" class="md-nav__link">
       
   
   
@@ -2190,7 +2437,7 @@
   
   
   
-    <a href="../dokumentation/wikijs-linux-installation/" class="md-nav__link">
+    <a href="../../wikijs-linux-installation/" class="md-nav__link">
       
   
   
@@ -2255,7 +2502,7 @@
   
   
   
-    <a href="../dokumentation/xwiki/installieren/" class="md-nav__link">
+    <a href="../../xwiki/installieren/" class="md-nav__link">
       
   
   
@@ -2337,7 +2584,7 @@
   
   
   
-    <a href="../../rechtliches/impressum/" class="md-nav__link">
+    <a href="../../../../rechtliches/impressum/" class="md-nav__link">
       
   
   
@@ -2403,10 +2650,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-klassifizierung-begriffsbestimmung" class="md-nav__link">
+  <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        1. Klassifizierung &amp; Begriffsbestimmung
+        Voraussetzungen
       </span>
     </span>
   </a>
@@ -2414,49 +2661,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-erstellung-steuerung-von-ki-agenten-im-e-learning" class="md-nav__link">
+  <a href="#1-php-composer-und-postgresql-treiber-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        2. Erstellung &amp; Steuerung von KI-Agenten im E-Learning
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Erstellung &amp; Steuerung von KI-Agenten im E-Learning">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#erstellung-frameworks-sdks" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Erstellung (Frameworks &amp; SDKs)
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#steuerung-control-alignment" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Steuerung (Control &amp; Alignment)
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-was-fehlt-aktuelle-lucken-im-e-learning-okosystem" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        3. Was fehlt? (Aktuelle Lücken im E-Learning-Ökosystem)
+        1. PHP, Composer und PostgreSQL-Treiber installieren
       </span>
     </span>
   </a>
@@ -2464,168 +2672,90 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-ubersicht-existierender-e-learning-werkzeuge" class="md-nav__link">
+  <a href="#2-postgresql-datenbank-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        4. Übersicht existierender E-Learning-Werkzeuge
+        2. PostgreSQL-Datenbank anlegen
       </span>
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. Übersicht existierender E-Learning-Werkzeuge">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#die-industrie-standards-allrounder" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Die Industrie-Standards (Allrounder)
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#responsive-tools-web-first" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Responsive Tools (Web-First)
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#open-source-code-nahe-werkzeuge" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Open-Source &amp; Code-nahe Werkzeuge
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lernmanagement-systeme-lms-plattform-software" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Lernmanagement-Systeme (LMS) &amp; Plattform-Software
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#video-animation" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Video &amp; Animation
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lokale-entwickler-plattformen-interaktives-coding" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Lokale Entwickler-Plattformen (Interaktives Coding)
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sandboxen-self-hosted-coding-lms" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Sandboxen &amp; Self-Hosted Coding-LMS
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bibliotheken-fur-interaktivitat-web-learning" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Bibliotheken für Interaktivität &amp; Web-Learning
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sprachenlernen-mit-ki" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Sprachenlernen mit KI
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lokale-dokumentations-interaktive-book-systeme" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Lokale Dokumentations- &amp; interaktive Book-Systeme
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#standards-interoperabilitats-frameworks" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Standards &amp; Interoperabilitäts-Frameworks
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-optimales-zusammenspiel-referenz-architektur" class="md-nav__link">
+  <a href="#3-drupal-per-composer-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        5. Optimales Zusammenspiel (Referenz-Architektur)
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Optimales Zusammenspiel (Referenz-Architektur)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#die-rollenverteilung-im-detail" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Die Rollenverteilung im Detail:
+        3. Drupal per Composer installieren
       </span>
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#4-site-installation-headless-per-drush" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Site-Installation headless per Drush
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-php-fpm-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. PHP-FPM-Pool
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-nginx-konfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Nginx-Konfiguration
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-firewall-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Firewall (UFW)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
+      </span>
+    </span>
+  </a>
   
 </li>
       
@@ -2654,7 +2784,7 @@
   
   
     <li class="md-path__item">
-      <a href="../.." class="md-path__link">
+      <a href="../../../.." class="md-path__link">
         
   
   <span class="md-ellipsis">
@@ -2704,7 +2834,7 @@
     
     
       <li class="md-path__item">
-        <a href="../daten/datenbanken/" class="md-path__link">
+        <a href="../../../daten/datenbanken/" class="md-path__link">
           
   
   <span class="md-ellipsis">
@@ -2738,6 +2868,72 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Dokumentation
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -2747,7 +2943,7 @@
           
   
   <span class="md-ellipsis">
-    E-Learning
+    Drupal
   </span>
 
         </a>
@@ -2765,165 +2961,151 @@
                   
 
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
-<h1 id="e-learning-autorentools-interaktive-lernumgebungen">E-Learning-Autorentools &amp; Interaktive Lernumgebungen<a class="headerlink" href="#e-learning-autorentools-interaktive-lernumgebungen" title="Permanent link">&para;</a></h1>
-<p>Dieses Dokument bietet eine strukturierte Übersicht über gängige Werkzeuge, Architekturen und Konzepte zur Erstellung von Lerninhalten – von klassischen Autorenwerkzeugen bis hin zu modernen, code-nahen Sandbox-Systemen und KI-gestützten Lernumgebungen.</p>
+<h1 id="drupal-installieren-composer-postgresql-und-nginx">Drupal installieren: Composer, PostgreSQL und Nginx<a class="headerlink" href="#drupal-installieren-composer-postgresql-und-nginx" title="Permanent link">&para;</a></h1>
+<p>Diese Anleitung richtet <strong>Drupal</strong> (aktuell 10.x/11.x) produktiv auf einem eigenen Server ein — per <strong>Composer</strong> (offizieller Installationsweg, kein apt-Paket), mit <strong>PostgreSQL</strong> als Datenbank und <strong>Nginx</strong> als Reverse Proxy über PHP-FPM. Sie folgt demselben Muster wie die <a href="../../xwiki/installieren/">XWiki-</a> und <a href="../../wikijs-linux-installation/">Wiki.js-Installation</a> in diesem Wiki.</p>
+<div class="admonition warning">
+<p class="admonition-title">Achtung</p>
+<p>Die unterstützten PHP- und PostgreSQL-Versionen ändern sich mit jedem Drupal-Minor-Release. Vor einer Neuinstallation immer die aktuellen <a href="https://www.drupal.org/docs/system-requirements">Systemanforderungen</a> prüfen. Diese Anleitung geht von <strong>PHP 8.3</strong> und <strong>PostgreSQL 14+</strong> aus.</p>
+</div>
 <hr />
-<h2 id="1-klassifizierung-begriffsbestimmung">1. Klassifizierung &amp; Begriffsbestimmung<a class="headerlink" href="#1-klassifizierung-begriffsbestimmung" title="Permanent link">&para;</a></h2>
-<p>Um die verschiedenen Werkzeuge und Ansätze im E-Learning richtig einzuordnen, unterscheidet man zwischen folgenden technischen Kategorien:</p>
+<h2 id="voraussetzungen">Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Software (Anwendung / Application):</strong><ul>
-<li><em>Definition:</em> Ein fertiges, direkt nutzbares Programm für Endanwender (z. B. Articulate 360, Camtasia, JupyterLab).</li>
-<li><em>Steuerung/Kontrolle:</em> Der Anwender agiert ausschließlich innerhalb der vom Entwickler vorgegebenen Benutzeroberfläche und Funktionsgrenzen.</li>
-</ul>
-</li>
-<li><strong>Bibliothek (Library):</strong><ul>
-<li><em>Definition:</em> Eine Sammlung von wiederverwendbaren Code-Bausteinen und Funktionen, die Entwickler in ihr eigenes Projekt einbinden (z. B. Monaco Editor für Code-Eingaben).</li>
-<li><em>Steuerung/Kontrolle:</em> Der Entwickler behält die Kontrolle über den Programmfluss und ruft die Bibliothek gezielt auf (<em>„You call the library“</em>).</li>
-</ul>
-</li>
-<li><strong>Framework:</strong><ul>
-<li><em>Definition:</em> Ein strukturelles Grundgerüst, das die Architektur und den Ablauf einer Anwendung vorgibt (z. B. Adapt Framework, Next.js).</li>
-<li><em>Steuerung/Kontrolle:</em> Das Framework übernimmt die Kontrolle und ruft den Code des Entwicklers an vordefinierten Punkten auf (<em>„Inversion of Control“</em> bzw. <em>„The framework calls you“</em>).</li>
-</ul>
-</li>
-<li><strong>KI-Agent (AI Agent):</strong><ul>
-<li><em>Definition:</em> Ein autonomes System, das auf großen Sprachmodellen (LLMs) basiert, selbstständig Ziele plant, Entscheidungen trifft, Werkzeuge (Tools) nutzt und mit der Umgebung interagiert.</li>
-<li><em>Steuerung/Kontrolle:</em> Die Steuerung erfolgt nicht über starren Code, sondern deklarativ über System-Prompts, Leitplanken (Guardrails), Kontextbereitstellung und Feedbackschleifen.</li>
-</ul>
-</li>
+<li>Ubuntu-Server mit <code>sudo</code>-Rechten</li>
+<li>eine eigene Domain/Subdomain, z. B. <code>drupal.wissen-ahrensburg.de</code></li>
+<li>Nginx bereits mit SSL-Zertifikat eingerichtet (siehe <a href="../../../../entwicklung/infrastruktur/nginx-ssl/">Nginx &amp; SSL</a>)</li>
 </ul>
 <hr />
-<h2 id="2-erstellung-steuerung-von-ki-agenten-im-e-learning">2. Erstellung &amp; Steuerung von KI-Agenten im E-Learning<a class="headerlink" href="#2-erstellung-steuerung-von-ki-agenten-im-e-learning" title="Permanent link">&para;</a></h2>
-<p>KI-Agenten können im E-Learning als personalisierte Tutoren, automatische Code-Bewerter oder interaktive Lernpartner eingesetzt werden. Um sie optimal zu nutzen, müssen sie präzise erstellt und gesteuert werden.</p>
-<h3 id="erstellung-frameworks-sdks">Erstellung (Frameworks &amp; SDKs)<a class="headerlink" href="#erstellung-frameworks-sdks" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Google Antigravity SDK:</strong> Ermöglicht den Aufbau autonomer Agenten mit Zugriff auf Entwicklerwerkzeuge und Dateisysteme unter Einhaltung strenger Sicherheits- und Freigabemechanismen.</li>
-<li><strong>LangGraph / CrewAI / AutoGen:</strong> Frameworks für Multi-Agenten-Systeme, bei denen verschiedene Agenten (z. B. ein „Erklär-Agent“ und ein „Prüf-Agent“) zusammenarbeiten.</li>
-</ul>
-<h3 id="steuerung-control-alignment">Steuerung (Control &amp; Alignment)<a class="headerlink" href="#steuerung-control-alignment" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Rollen- &amp; Kontext-Prompts (System Prompts):</strong> Zuweisung einer klaren Rolle (z. B. <em>„Du bist ein geduldiger Rust-Tutor. Gib niemals die direkte Lösung vor, sondern leite den Lernenden mit Fragen an.“</em>).</li>
-<li><strong>Werkzeuge &amp; Sandboxing (Tool Calling):</strong> Übergabe genau definierter Funktionen an den Agenten (z. B. Code-Ausführung, Dateizugriff) in einer isolierten Laufzeitumgebung (Docker-Sandbox).</li>
-<li><strong>Strukturierte Ausgaben (Structured Outputs):</strong> Verwendung von JSON-Schemata, um sicherzustellen, dass die Antworten des Agenten maschinenlesbar validiert und verarbeitet werden können.</li>
-<li><strong>Menschliche Freigabe (Human-in-the-Loop):</strong> Kritische Aktionen (z. B. das Ausführen von Systembefehlen) erfordern die manuelle Bestätigung durch den Nutzer oder Instruktor.</li>
-<li><strong>Leitplanken (Guardrails):</strong> Validierungsschichten (z. B. LlamaGuard), die unerwünschte Ein- und Ausgaben blockieren und Halluzinationen minimieren.</li>
-</ul>
+<h2 id="1-php-composer-und-postgresql-treiber-installieren">1. PHP, Composer und PostgreSQL-Treiber installieren<a class="headerlink" href="#1-php-composer-und-postgresql-treiber-installieren" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>php8.3-fpm<span class="w"> </span>php8.3-cli<span class="w"> </span>php8.3-pgsql<span class="w"> </span>php8.3-gd<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>php8.3-xml<span class="w"> </span>php8.3-mbstring<span class="w"> </span>php8.3-curl<span class="w"> </span>php8.3-zip<span class="w"> </span>php8.3-opcache<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>composer<span class="w"> </span>postgresql
+</span></code></pre></div>
+<p><code>php8.3-pgsql</code> stellt den PDO-Treiber bereit, ohne den Drupal keine Verbindung zu PostgreSQL aufbauen kann.</p>
 <hr />
-<h2 id="3-was-fehlt-aktuelle-lucken-im-e-learning-okosystem">3. Was fehlt? (Aktuelle Lücken im E-Learning-Ökosystem)<a class="headerlink" href="#3-was-fehlt-aktuelle-lucken-im-e-learning-okosystem" title="Permanent link">&para;</a></h2>
-<p>Trotz einer Vielzahl an Tools gibt es fundamentale Lücken bei der Integration neuer Technologien in Lernplattformen:</p>
-<ol>
-<li><strong>Nahtlose Integration von KI-Tutoren:</strong> Klassische Autorentools (wie Articulate) bieten keine standardisierten APIs für die dynamische Anbindung von LLM-Agenten für Echtzeit-Feedback.</li>
-<li><strong>Sichere und leichtgewichtige Code-Sandboxen:</strong> Es fehlen einfach zu integrierende, serverlose Lösungen für die sichere Code-Ausführung im Browser, die ohne komplexe Backend-Infrastrukturen (wie Docker-Cluster) auskommen.</li>
-<li><strong>Erweiterte Telemetrie für KI-Interaktionen:</strong> Bestehende Standards wie SCORM oder xAPI sind nicht darauf ausgelegt, die freien, nicht-deterministischen Dialoge und Problemlösungswege zwischen Lernenden und KI-Agenten detailliert aufzuzeichnen.</li>
-<li><strong>Offline-Fähigkeit für KI-basiertes Lernen:</strong> Es fehlen ausgereifte Best-Practices, um kleinere, spezialisierte Sprachmodelle (SLMs) direkt im Browser des Lernenden (z. B. via WebGPU / WebLLM) datenschutzkonform und offline auszuführen.</li>
-</ol>
+<h2 id="2-postgresql-datenbank-anlegen">2. PostgreSQL-Datenbank anlegen<a class="headerlink" href="#2-postgresql-datenbank-anlegen" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE ROLE drupal WITH LOGIN PASSWORD &#39;EIN_LANGES_ZUFAELLIGES_PASSWORT&#39;;&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE DATABASE drupal OWNER drupal ENCODING &#39;UTF8&#39; TEMPLATE template0;&quot;</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>PostgreSQL lauscht per Default-Konfiguration (<code>postgresql.conf</code>, <code>listen_addresses = 'localhost'</code>) ohnehin nur lokal. Da Drupal über PHP-FPM auf demselben Host läuft, ist keine Netzwerkfreigabe für Port 5432 nötig — Zugriff läuft komplett über <code>localhost</code>.</p>
+</div>
 <hr />
-<h2 id="4-ubersicht-existierender-e-learning-werkzeuge">4. Übersicht existierender E-Learning-Werkzeuge<a class="headerlink" href="#4-ubersicht-existierender-e-learning-werkzeuge" title="Permanent link">&para;</a></h2>
-<h3 id="die-industrie-standards-allrounder">Die Industrie-Standards (Allrounder)<a class="headerlink" href="#die-industrie-standards-allrounder" title="Permanent link">&para;</a></h3>
-<p>Diese Tools bieten den größten Funktionsumfang für komplexe, interaktive Kurse, erfordern aber meist eine Einarbeitungszeit und proprietäre Lizenzen.</p>
-<ul>
-<li><strong>Articulate 360 / Storyline 360:</strong> Der Quasi-Standard für klassische E-Learning-Kurse mit umfangreichen Trigger- und Variablen-Systemen.</li>
-<li><strong>Adobe Captivate:</strong> Stark bei Softwaredemonstrationen und responsivem Design.</li>
-</ul>
-<h3 id="responsive-tools-web-first">Responsive Tools (Web-First)<a class="headerlink" href="#responsive-tools-web-first" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>iSpring Suite:</strong> PowerPoint-Add-in zur schnellen Konvertierung von Präsentationen in E-Learning-Kurse.</li>
-<li><strong>DominKnow | ONE:</strong> Cloud-basiertes Autorentool für kollaboratives Arbeiten und responsive Designs.</li>
-</ul>
-<h3 id="open-source-code-nahe-werkzeuge">Open-Source &amp; Code-nahe Werkzeuge<a class="headerlink" href="#open-source-code-nahe-werkzeuge" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>H5P:</strong> Ermöglicht das Erstellen interaktiver HTML5-Inhalte direkt im Browser (z. B. in Moodle, WordPress). Sehr modular und weit verbreitet.</li>
-<li><strong>Adapt Framework:</strong> Ein rein HTML5-basiertes, responsives E-Learning-Framework für Entwickler, das über JSON-Dateien konfiguriert wird.</li>
-</ul>
-<h3 id="lernmanagement-systeme-lms-plattform-software">Lernmanagement-Systeme (LMS) &amp; Plattform-Software<a class="headerlink" href="#lernmanagement-systeme-lms-plattform-software" title="Permanent link">&para;</a></h3>
-<p>Software zur Bereitstellung, Verwaltung und Protokollierung von E-Learning-Kursen:</p>
-<ul>
-<li><strong>Moodle:</strong> Das weltweit am weitesten verbreitete Open-Source-LMS. Extrem modular und durch offizielle sowie Drittanbieter-Plugins erweiterbar.</li>
-<li><strong>Canvas LMS:</strong> Ein modernes, Cloud-natives Open-Source-LMS mit hervorragenden Schnittstellen (APIs) und hoher Usability in Bildungseinrichtungen.</li>
-<li><strong>Chamilo:</strong> Ein schlankes, leicht zu bedienendes Open-Source-LMS mit Fokus auf einfacher Kursgestaltung.</li>
-</ul>
-<h3 id="video-animation">Video &amp; Animation<a class="headerlink" href="#video-animation" title="Permanent link">&para;</a></h3>
-<p>Wenn der Fokus auf visueller Vermittlung, Screencasts oder mathematisch/technischen Erklärungen liegt:</p>
-<ul>
-<li><strong>Camtasia:</strong> Standard-Werkzeug für Bildschirmaufnahmen und Videoschnitte im E-Learning.</li>
-<li><strong>OBS Studio:</strong> Open-Source-Software für Live-Streaming und Videoaufnahmen.</li>
-<li><strong>Vyond:</strong> Cloud-Plattform zur einfachen Erstellung animierter Erklärvideos.</li>
-<li><strong>Code-getriebene Animationen:</strong> Bibliotheken wie <em>Manim</em> (Python, bekannt durch 3Blue1Brown) für mathematische und technische Animationen.</li>
-</ul>
-<h3 id="lokale-entwickler-plattformen-interaktives-coding">Lokale Entwickler-Plattformen (Interaktives Coding)<a class="headerlink" href="#lokale-entwickler-plattformen-interaktives-coding" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Exercism:</strong> Lokales und webbasiertes Lernen durch testgetriebene Entwicklung (TDD) in über 60 Sprachen.</li>
-<li><strong>Anki:</strong> Karteikarten-Lernsystem mit Spaced Repetition, das über HTML/CSS/JS und Add-ons hochgradig anpassbar ist.</li>
-<li><strong>JetBrains Academy:</strong> Interaktives Lernen integriert in professionelle Entwicklungsumgebungen (IDEs).</li>
-</ul>
-<h3 id="sandboxen-self-hosted-coding-lms">Sandboxen &amp; Self-Hosted Coding-LMS<a class="headerlink" href="#sandboxen-self-hosted-coding-lms" title="Permanent link">&para;</a></h3>
-<p>Wenn eine eigene Lernplattform mit interaktiver Code-Ausführung lokal betrieben werden soll:</p>
-<ul>
-<li><strong>Editor:</strong> Einbinden des <em>Monaco Editors</em> (Basis von VS Code) in eine Web-App für Syntax-Highlighting und Autovervollständigung direkt im Browser.</li>
-<li><strong>Execution-Backend (Sandbox):</strong> Docker-Container zur sicheren Ausführung von Code (z. B. Rust, C#, Python). Ein API-Server (wie <strong>Judge0</strong>) nimmt den Code entgegen, führt Compiler/Interpreter und Test-Suites (z. B. <code>cargo test</code>) in einem kurzlebigen Container aus und gibt das Ergebnis strukturiert an das Frontend zurück.</li>
-</ul>
-<h3 id="bibliotheken-fur-interaktivitat-web-learning">Bibliotheken für Interaktivität &amp; Web-Learning<a class="headerlink" href="#bibliotheken-fur-interaktivitat-web-learning" title="Permanent link">&para;</a></h3>
-<p>Spezifische JavaScript-Bibliotheken zur Bereitstellung interaktiver Funktionalitäten im Browser:</p>
-<ul>
-<li><strong>CodeMirror:</strong> Ein flexibler, schlanker Code-Editor für den Browser. Hervorragend geeignet für mobile Lern-Apps als Alternative zu Monaco Editor.</li>
-<li><strong>Xterm.js:</strong> Eine Terminal-Komponente für das Frontend, mit der sich interaktive CLI-Umgebungen und SSH-Zugänge direkt im Browser abbilden lassen.</li>
-<li><strong>KaTeX / MathJax:</strong> Performante JavaScript-Bibliotheken zur Darstellung von mathematischer Notation (LaTeX) auf Webseiten.</li>
-<li><strong>Excalidraw / Tldraw:</strong> Bibliotheken für unendliche digitale Whiteboards, perfekt für interaktive Skizzen und kollaboratives Lernen.</li>
-<li><strong>WebLLM:</strong> Bibliothek zur direkten Ausführung von Sprachmodellen im Browser via WebGPU (wichtig für datenschutzkonforme KI-Lernunterstützung).</li>
-</ul>
-<h3 id="sprachenlernen-mit-ki">Sprachenlernen mit KI<a class="headerlink" href="#sprachenlernen-mit-ki" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong><a href="sprachlern-ki-agenten-topliste/">Beste KI-Agenten für Deutsch- und Fremdsprachenlernen (Open Source, Top 20)</a>:</strong> Vertiefende Topliste zu quelloffenen KI-Werkzeugen, die eigene Sprachlern-Aufgaben und -Übungen generieren können.</li>
-</ul>
-<h3 id="lokale-dokumentations-interaktive-book-systeme">Lokale Dokumentations- &amp; interaktive Book-Systeme<a class="headerlink" href="#lokale-dokumentations-interaktive-book-systeme" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>mdBook (Rust-Ökosystem):</strong> Erstellt statische, durchsuchbare Bücher aus Markdown-Dateien. Codebeispiele können direkt im Browser ausgeführt werden, wenn sie an ein Playground-Backend angebunden sind.</li>
-<li><strong>Jupyter Notebooks / JupyterLab:</strong> Ideal für Python, Datenanalyse und wissenschaftliche Themen. Ermöglicht das Mischen von Markdown-Erklärungen und direkt ausführbaren Code-Zellen in einer interaktiven Web-Oberfläche.</li>
-</ul>
-<h3 id="standards-interoperabilitats-frameworks">Standards &amp; Interoperabilitäts-Frameworks<a class="headerlink" href="#standards-interoperabilitats-frameworks" title="Permanent link">&para;</a></h3>
-<p>Spezifikationen und Protokolle, die die Kommunikation zwischen Inhalten und Systemen regeln:</p>
-<ul>
-<li><strong>SCORM (Sharable Content Object Reference Model):</strong> Der klassische, weit verbreitete XML-basierte E-Learning-Standard zur Paketierung von Kursen.</li>
-<li><strong>xAPI (Experience API / Tin Can):</strong> Ein moderneres Framework, das Lernaktivitäten außerhalb klassischer LMS (z. B. mobile Apps, VR-Simulationen) per REST-API protokolliert.</li>
-<li><strong>LTI (Learning Tools Interoperability):</strong> Ein Framework von 1EdTech zur nahtlosen und sicheren Einbindung externer Tools (z. B. einer Code-Sandbox) in bestehende LMS.</li>
-<li><strong>Three.js / A-Frame:</strong> WebGL- und WebVR-Frameworks, um dreidimensionale und immersive Lernwelten direkt im Browser zu programmieren.</li>
-</ul>
+<h2 id="3-drupal-per-composer-installieren">3. Drupal per Composer installieren<a class="headerlink" href="#3-drupal-per-composer-installieren" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>composer<span class="w"> </span>create-project<span class="w"> </span>drupal/recommended-project<span class="w"> </span>drupal-projekt
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">cd</span><span class="w"> </span>drupal-projekt
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>sudo<span class="w"> </span>composer<span class="w"> </span>require<span class="w"> </span>drush/drush
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/drupal-projekt
+</span></code></pre></div>
+<p><code>drupal/recommended-project</code> ist das offizielle, von der Drupal Association gepflegte Composer-Template — es bringt Drupal Core samt sinnvoller Standard-Abhängigkeiten mit. <code>drush</code> ist die Kommandozeilen-Shell für Drupal und wird im nächsten Schritt für die headless-Installation gebraucht.</p>
 <hr />
-<h2 id="5-optimales-zusammenspiel-referenz-architektur">5. Optimales Zusammenspiel (Referenz-Architektur)<a class="headerlink" href="#5-optimales-zusammenspiel-referenz-architektur" title="Permanent link">&para;</a></h2>
-<p>Um eine voll funktionsfähige, interaktive Programmier-Lernumgebung mit KI-Unterstützung aufzubauen, arbeiten die folgenden Komponenten am besten als integriertes Ökosystem zusammen:</p>
-<pre class="mermaid"><code>graph TD
-    User([Lernender]) --&gt;|"1. Schreibt Code / Fragt Tutor"| Frontend["Frontend: Next.js Framework"]
-    Frontend --&gt;|Nutzt| EditorLib[Monaco Editor Library]
-    Frontend --&gt;|Nutzt| TerminalLib[Xterm.js Library]
-
-    Frontend --&gt;|2. Führt Code aus| Sandbox["Sandbox: Docker / Judge0 Software"]
-    Sandbox --&gt;|"3. Liefert Testergebnis / Fehler"| Frontend
-
-    Frontend --&gt;|"4. Sendet Code &amp; Fehler"| Agent["KI-Agent: Tutor / Google Antigravity SDK"]
-    Agent --&gt;|"5. Analysiert &amp; Generiert didaktischen Hinweis"| Frontend
-    Frontend --&gt;|6. Zeigt Hinweis an| User</code></pre>
-<h3 id="die-rollenverteilung-im-detail">Die Rollenverteilung im Detail:<a class="headerlink" href="#die-rollenverteilung-im-detail" title="Permanent link">&para;</a></h3>
-<ol>
-<li><strong>Die Software (Laufzeit-Sicherheit &amp; Anwendung):</strong><ul>
-<li><strong>Docker &amp; Judge0</strong> laufen als Backend-Software. Sie nehmen den Code des Lernenden entgegen und führen ihn isoliert aus, um das Host-System vor bösartigem Code zu schützen.</li>
+<h2 id="4-site-installation-headless-per-drush">4. Site-Installation headless per Drush<a class="headerlink" href="#4-site-installation-headless-per-drush" title="Permanent link">&para;</a></h2>
+<p>Anders als bei XWiki oder Wiki.js braucht Drupal für die Ersteinrichtung <strong>keinen SSH-Tunnel zu einem temporären Setup-Assistenten</strong> — <code>drush site:install</code> erledigt die komplette Einrichtung nichtinteraktiv direkt auf der Kommandozeile:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/drupal-projekt
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>vendor/bin/drush<span class="w"> </span>site:install<span class="w"> </span>standard<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>--db-url<span class="o">=</span>pgsql://drupal:EIN_LANGES_ZUFAELLIGES_PASSWORT@localhost/drupal<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span>--site-name<span class="o">=</span><span class="s2">&quot;Wissen Ahrensburg&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span>--account-name<span class="o">=</span>admin<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span>--account-pass<span class="o">=</span>EIN_WEITERES_LANGES_PASSWORT<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span>--yes
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tipp: Browser-Assistent als Alternative</p>
+<p>Falls <code>drush</code> nicht zur Verfügung steht, lässt sich der grafische Installationsassistent genauso wie bei den anderen Wiki-Systemen in diesem Repository per <a href="../../../../entwicklung/infrastruktur/ssh-tunnel/">SSH-Tunnel</a> absichern, statt ihn öffentlich zu exponieren:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/drupal-projekt/web
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>-S<span class="w"> </span><span class="m">127</span>.0.0.1:8888
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ssh<span class="w"> </span>-L<span class="w"> </span><span class="m">8888</span>:127.0.0.1:8888<span class="w"> </span>admin@SERVER-IP
+</span></code></pre></div>
+Der Assistent ist dann unter <code>http://127.0.0.1:8888</code> erreichbar, verschlüsselt über die SSH-Verbindung.</p>
+</div>
+<hr />
+<h2 id="5-php-fpm-pool">5. PHP-FPM-Pool<a class="headerlink" href="#5-php-fpm-pool" title="Permanent link">&para;</a></h2>
+<p>Der Standard-Pool von <code>php8.3-fpm</code> reicht für den Anfang aus und lauscht bereits über einen Unix-Socket:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>grep<span class="w"> </span><span class="s2">&quot;^listen&quot;</span><span class="w"> </span>/etc/php/8.3/fpm/pool.d/www.conf
+</span></code></pre></div>
+<p>Erwartete Ausgabe: <code>listen = /run/php/php8.3-fpm.sock</code>. Für mehrere PHP-Anwendungen auf demselben Host empfiehlt sich stattdessen ein eigener Pool (z. B. <code>/etc/php/8.3/fpm/pool.d/drupal.conf</code> mit <code>listen = /run/php/php8.3-fpm-drupal.sock</code>), damit Drupal ressourcenseitig von anderen PHP-Diensten isoliert ist.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>php8.3-fpm
+</span></code></pre></div>
+<hr />
+<h2 id="6-nginx-konfiguration">6. Nginx-Konfiguration<a class="headerlink" href="#6-nginx-konfiguration" title="Permanent link">&para;</a></h2>
+<p>Erstellen oder bearbeiten Sie <code>/etc/nginx/conf.d/drupal.conf</code>:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">drupal.wissen-ahrensburg.de</span><span class="p">;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/drupal-projekt/web</span><span class="p">;</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem</span><span class="p">;</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem</span><span class="p">;</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">/favicon.ico</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kn">log_not_found</span><span class="w"> </span><span class="no">off</span><span class="p">;</span><span class="w"> </span><span class="kn">access_log</span><span class="w"> </span><span class="no">off</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">/robots.txt</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="kn">allow</span><span class="w"> </span><span class="s">all</span><span class="p">;</span><span class="w"> </span><span class="kn">log_not_found</span><span class="w"> </span><span class="no">off</span><span class="p">;</span><span class="w"> </span><span class="kn">access_log</span><span class="w"> </span><span class="no">off</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">^/sites/.*/private/</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kn">return</span><span class="w"> </span><span class="mi">403</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">^/sites/[^/]+/files/.*\.php$</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="s">/index.php?</span><span class="nv">$query_string</span><span class="p">;</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">@rewrite</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="w">        </span><span class="kn">rewrite</span><span class="w"> </span><span class="s">^</span><span class="w"> </span><span class="s">/index.php</span><span class="p">;</span>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">&quot;\.php$|^/update\.php&quot;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">        </span><span class="kn">fastcgi_split_path_info</span><span class="w"> </span><span class="s">^(.+?\.php)(|/.*)</span>$<span class="p">;</span>
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$fastcgi_script_name</span><span class="w"> </span><span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="w">        </span><span class="kn">include</span><span class="w"> </span><span class="s">fastcgi_params</span><span class="p">;</span>
+</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">SCRIPT_FILENAME</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">QUERY_STRING</span><span class="w"> </span><span class="nv">$query_string</span><span class="p">;</span>
+</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="w">        </span><span class="kn">fastcgi_intercept_errors</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+</span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="w">        </span><span class="kn">fastcgi_pass</span><span class="w"> </span><span class="s">unix:/run/php/php8.3-fpm-drupal.sock</span><span class="p">;</span>
+</span><span id="__span-8-31"><a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>
+</span><span id="__span-8-33"><a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="sr">*</span><span class="w"> </span><span class="s">&quot;\.(js|css|gif|jpg|jpeg|png|svg|woff|woff2)</span><span class="nv">$&quot;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-34"><a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="s">@rewrite</span><span class="p">;</span>
+</span><span id="__span-8-35"><a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a><span class="w">        </span><span class="kn">expires</span><span class="w"> </span><span class="s">max</span><span class="p">;</span>
+</span><span id="__span-8-36"><a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a><span class="w">        </span><span class="kn">log_not_found</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span><span id="__span-8-37"><a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-8-38"><a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a><span class="p">}</span>
+</span><span id="__span-8-39"><a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a>
+</span><span id="__span-8-40"><a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-41"><a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-8-42"><a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:80</span><span class="p">;</span>
+</span><span id="__span-8-43"><a id="__codelineno-8-43" name="__codelineno-8-43" href="#__codelineno-8-43"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">drupal.wissen-ahrensburg.de</span><span class="p">;</span>
+</span><span id="__span-8-44"><a id="__codelineno-8-44" name="__codelineno-8-44" href="#__codelineno-8-44"></a><span class="w">    </span><span class="kn">return</span><span class="w"> </span><span class="mi">301</span><span class="w"> </span><span class="s">https://</span><span class="nv">$host$request_uri</span><span class="p">;</span>
+</span><span id="__span-8-45"><a id="__codelineno-8-45" name="__codelineno-8-45" href="#__codelineno-8-45"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span></code></pre></div>
+<p><code>fastcgi_pass</code> verweist auf den in Schritt 5 eingerichteten dedizierten Pool-Socket — bei Nutzung des Standard-Pools stattdessen <code>unix:/run/php/php8.3-fpm.sock</code> verwenden.</p>
+<hr />
+<h2 id="7-firewall-ufw">7. Firewall (UFW)<a class="headerlink" href="#7-firewall-ufw" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s2">&quot;Nginx Full&quot;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>deny<span class="w"> </span><span class="m">5432</span>/tcp
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>status<span class="w"> </span>verbose
+</span></code></pre></div>
+<p>PostgreSQL bindet zwar schon per Konfiguration nur an <code>localhost</code> (Schritt 2), die explizite <code>deny</code>-Regel dokumentiert diese Absicht aber zusätzlich sichtbar in <code>ufw status</code> — als zweite, unabhängige Absicherungsebene, falls <code>postgresql.conf</code> später versehentlich geändert wird. Details zu UFW: <a href="../../../../entwicklung/infrastruktur/ufw-firewall/">UFW-Firewall installieren und steuern</a>.</p>
+<hr />
+<h2 id="kurzprufung">Kurzprüfung<a class="headerlink" href="#kurzprufung" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>is-active<span class="w"> </span>php8.3-fpm<span class="w"> </span>nginx<span class="w"> </span>postgresql
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>curl<span class="w"> </span>-I<span class="w"> </span>https://drupal.wissen-ahrensburg.de
+</span></code></pre></div>
+<p>Meldet der <code>curl</code>-Aufruf <code>HTTP/2 200</code>, ist die Installation erreichbar. Danach im Backend (<code>/user/login</code>) anmelden und unter <strong>Berichte → Status des Systems</strong> letzte Konfigurationshinweise prüfen (z. B. Cron-Einrichtung, Datei-Berechtigungen).</p>
+<hr />
+<h2 id="quellen-und-weiterfuhrende-informationen">Quellen und weiterführende Informationen<a class="headerlink" href="#quellen-und-weiterfuhrende-informationen" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.drupal.org/docs/system-requirements">Drupal: Systemanforderungen</a></li>
+<li><a href="https://www.drupal.org/docs/develop/using-composer/starting-a-site-using-composer">Drupal: Installation per Composer</a></li>
+<li><a href="https://www.drush.org/">Drush-Dokumentation</a></li>
+<li><a href="../migration-wikisysteme/">Migration von MediaWiki, XWiki und Wiki.js nach Drupal</a></li>
+<li><a href="../../../../entwicklung/infrastruktur/ufw-firewall/">UFW-Firewall installieren und steuern</a></li>
+<li><a href="../../../../entwicklung/infrastruktur/ssh-tunnel/">SSH-Tunnel: Portweiterleitung über SSH</a></li>
+<li><a href="../../">Dokumentationsübersicht</a></li>
 </ul>
-</li>
-<li><strong>Die Bibliotheken (Interaktive Benutzeroberfläche):</strong><ul>
-<li><strong>Monaco Editor</strong> stellt die Eingabemaske im Browser bereit (Autovervollständigung, Syntax-Highlighting).</li>
-<li><strong>Xterm.js</strong> rendert die Terminal-Ausgabe des Compilers/Interpreters originalgetreu im Browser.</li>
-</ul>
-</li>
-<li><strong>Das Framework (App-Architektur &amp; Koordination):</strong><ul>
-<li><strong>Next.js</strong> dient als Web-Framework, das die Benutzeroberfläche, die Benutzerverwaltung und den Datenfluss zwischen Editor, Sandbox und KI-Agent steuert.</li>
-<li><strong>LangGraph</strong> dient als Framework für den Agenten-Ablauf, um sicherzustellen, dass der Agent strukturiert antwortet und Zwischenschritte einhält.</li>
-</ul>
-</li>
-<li><strong>Der KI-Agent (Intelligenter Tutor):</strong><ul>
-<li>Erstellt mit dem <strong>Google Antigravity SDK</strong>, nimmt der KI-Tutor den geschriebenen Code des Nutzers und das Testergebnis aus der Sandbox entgegen.</li>
-<li>Er agiert als Sokratischer Mentor: Er gibt keine direkten Lösungen, sondern stellt Leitfragen oder weist auf logische Fehler hin.</li>
-</ul>
-</li>
-</ol>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
 
@@ -3016,7 +3198,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../daten/datenerfassung/opendatakit/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: OpenDataKit">
+          <a href="../../wissensdatenbanken-ki-semantische-suche/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Wissensdatenbanken mit KI &amp; semantischer Suche">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3026,20 +3208,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                OpenDataKit
+                Wissensdatenbanken mit KI & semantischer Suche
               </div>
             </div>
           </a>
         
         
           
-          <a href="./ki-lehre-weiterbildung/" class="md-footer__link md-footer__link--next" aria-label="Weiter: KI in Lehre &amp; Weiterbildung">
+          <a href="../migration-wikisysteme/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Migration: MediaWiki, XWiki, Wiki.js, mkdocs&#x2f;Zensical">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                KI in Lehre & Weiterbildung
+                Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3058,9 +3240,9 @@
           <div class="md-copyright__highlight">
             Copyright &copy; Wissen Ahrensburg
             &middot;
-            <a href="../../rechtliches/impressum/">Impressum</a>
+            <a href="../../../../rechtliches/impressum/">Impressum</a>
             &middot;
-            <a href="../../rechtliches/datenschutz/">Datenschutz</a>
+            <a href="../../../../rechtliches/datenschutz/">Datenschutz</a>
           </div>
         
         
@@ -3165,10 +3347,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.top","navigation.sections","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.path","navigation.prune","navigation.footer","search.suggest","search.highlight","search.share","content.code.copy","content.code.annotate","content.code.select","content.tooltips","content.tabs.link","content.action.view","toc.follow"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"In Zwischenablage kopiert","clipboard.copy":"In Zwischenablage kopieren","search.result.more.one":"1 weiteres Suchergebnis auf dieser Seite","search.result.more.other":"# weitere Suchergebnisse auf dieser Seite","search.result.none":"Keine Suchergebnisse","search.result.one":"1 Suchergebnis","search.result.other":"# Suchergebnisse","search.result.placeholder":"Suchbegriff eingeben","search.result.term.missing":"Es fehlt","select.version":"Version auswählen"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../../..","features":["navigation.top","navigation.sections","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.path","navigation.prune","navigation.footer","search.suggest","search.highlight","search.share","content.code.copy","content.code.annotate","content.code.select","content.tooltips","content.tabs.link","content.action.view","toc.follow"],"search":"../../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"In Zwischenablage kopiert","clipboard.copy":"In Zwischenablage kopieren","search.result.more.one":"1 weiteres Suchergebnis auf dieser Seite","search.result.more.other":"# weitere Suchergebnisse auf dieser Seite","search.result.none":"Keine Suchergebnisse","search.result.one":"1 Suchergebnis","search.result.other":"# Suchergebnisse","search.result.placeholder":"Suchbegriff eingeben","search.result.term.missing":"Es fehlt","select.version":"Version auswählen"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ed145cee.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.ed145cee.min.js"></script>
       
     
   </body>
