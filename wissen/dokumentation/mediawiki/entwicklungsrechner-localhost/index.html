@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/backup/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/entwicklungsrechner-localhost/">
       
       
-        <link rel="prev" href="../entwicklungsrechner-localhost/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../wiederherstellen/">
+        <link rel="next" href="../backup/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Backup - Wissen Ahrensburg</title>
+        <title>MediaWiki auf dem Entwicklungsrechner: localhost mit Nginx und PostgreSQL - Wissen Ahrensburg</title>
       
     
     
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#backup-erstellen" class="md-skip">
+        <a href="#mediawiki-auf-dem-entwicklungsrechner-localhost-mit-nginx-und-postgresql" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Backup
+              MediaWiki auf dem Entwicklungsrechner: localhost mit Nginx und PostgreSQL
             
           </span>
         </div>
@@ -2110,33 +2110,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../entwicklungsrechner-localhost/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Entwicklungsrechner: localhost mit Nginx und PostgreSQL
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -2146,6 +2119,8 @@
       
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -2154,7 +2129,7 @@
   <span class="md-ellipsis">
     
   
-  Backup
+  Entwicklungsrechner: localhost mit Nginx und PostgreSQL
 
     
   </span>
@@ -2171,7 +2146,7 @@
   <span class="md-ellipsis">
     
   
-  Backup
+  Entwicklungsrechner: localhost mit Nginx und PostgreSQL
 
     
   </span>
@@ -2187,6 +2162,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2195,10 +2172,109 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#backup-erstellen" class="md-nav__link">
+  <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Backup erstellen
+        Voraussetzungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-php-erweiterungen-postgresql-und-nginx-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. PHP, Erweiterungen, PostgreSQL und Nginx installieren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-postgresql-datenbank-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. PostgreSQL-Datenbank anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mediawiki-core-per-git-klonen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. MediaWiki-Core per Git klonen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-php-fpm-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. PHP-FPM-Pool
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-nginx-konfiguration-fur-localhost" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Nginx-Konfiguration für localhost
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-installationsassistent-im-browser-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Installationsassistent im Browser aufrufen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-lesbare-urls-und-entwicklungseinstellungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Lesbare URLs und Entwicklungseinstellungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
       </span>
     </span>
   </a>
@@ -2209,6 +2285,33 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Backup
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2700,6 +2803,8 @@
                     
                     
                     
+                      
+                    
                     
                       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
                       <div class="md-sidebar-button__wrapper">
@@ -2715,6 +2820,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2723,10 +2830,109 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#backup-erstellen" class="md-nav__link">
+  <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Backup erstellen
+        Voraussetzungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-php-erweiterungen-postgresql-und-nginx-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. PHP, Erweiterungen, PostgreSQL und Nginx installieren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-postgresql-datenbank-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. PostgreSQL-Datenbank anlegen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mediawiki-core-per-git-klonen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. MediaWiki-Core per Git klonen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-php-fpm-pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. PHP-FPM-Pool
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-nginx-konfiguration-fur-localhost" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Nginx-Konfiguration für localhost
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-installationsassistent-im-browser-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Installationsassistent im Browser aufrufen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-lesbare-urls-und-entwicklungseinstellungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        7. Lesbare URLs und Entwicklungseinstellungen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurzprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Kurzprüfung
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quellen und weiterführende Informationen
       </span>
     </span>
   </a>
@@ -2948,23 +3154,163 @@
                 
                   
 
-  <h1 id="__skip">Backup</h1>
-
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
-<h2 id="backup-erstellen">Backup erstellen<a class="headerlink" href="#backup-erstellen" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/home/thorsten
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>gh<span class="w"> </span>repo<span class="w"> </span>clone<span class="w"> </span>thorstenkloehn/Download
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>-R<span class="w"> </span>Download
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">cd</span><span class="w"> </span>/home/thorsten/Download
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sudo<span class="w"> </span>rm<span class="w"> </span>/home/thorsten/Download/pagedump.xml
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>sudo<span class="w"> </span>rm<span class="w"> </span>/home/thorsten/Download/doc.xml
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>ssh<span class="w"> </span>thorsten@wissen-ahrensburg.de<span class="w"> </span><span class="s2">&quot;php /var/www/mediawiki/maintenance/dumpBackup.php --full&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>/home/thorsten/Download/pagedump.xml
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>ssh<span class="w"> </span>thorsten@wissen-ahrensburg.de<span class="w"> </span><span class="s2">&quot;php /var/www/docs/maintenance/dumpBackup.php --full&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>/home/thorsten/Download/doc.xml
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>git<span class="w"> </span>add<span class="w"> </span>pagedump.xml
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>git<span class="w"> </span>add<span class="w"> </span>doc.xml
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Backup&quot;</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>git<span class="w"> </span>push
+<h1 id="mediawiki-auf-dem-entwicklungsrechner-localhost-mit-nginx-und-postgresql">MediaWiki auf dem Entwicklungsrechner: localhost mit Nginx und PostgreSQL<a class="headerlink" href="#mediawiki-auf-dem-entwicklungsrechner-localhost-mit-nginx-und-postgresql" title="Permanent link">&para;</a></h1>
+<p>Diese Anleitung richtet <strong>MediaWiki</strong> rein lokal auf einem Entwicklungsrechner ein — erreichbar nur über <code>localhost</code>, ohne eigene Domain und ohne SSL-Zertifikat. Als Datenbank kommt <strong>PostgreSQL</strong> zum Einsatz, als Webserver <strong>Nginx</strong> über PHP-FPM. Sie folgt demselben Muster wie die <a href="../../drupal/installieren/">Drupal-</a> und <a href="../../moodle/installieren/">Moodle-Installation</a> in diesem Wiki, ist aber bewusst auf einen lokalen Entwicklungsrechner statt einen produktiven Server zugeschnitten.</p>
+<div class="admonition warning">
+<p class="admonition-title">Achtung</p>
+<p>Die unterstützten PHP- und PostgreSQL-Versionen ändern sich mit jedem MediaWiki-Release. Vor einer Installation immer die aktuelle <a href="https://www.mediawiki.org/wiki/Compatibility">Kompatibilitätsmatrix</a> prüfen. Diese Anleitung geht von <strong>PHP 8.3</strong> und <strong>PostgreSQL 14+</strong> aus.</p>
+</div>
+<hr />
+<h2 id="voraussetzungen">Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ubuntu-Entwicklungsrechner mit <code>sudo</code>-Rechten</li>
+<li>Kein DNS-Eintrag und kein SSL-Zertifikat nötig — die Installation ist ausschließlich über <code>http://localhost</code> erreichbar</li>
+<li><code>git</code> zum Auschecken des MediaWiki-Cores</li>
+</ul>
+<hr />
+<h2 id="1-php-erweiterungen-postgresql-und-nginx-installieren">1. PHP, Erweiterungen, PostgreSQL und Nginx installieren<a class="headerlink" href="#1-php-erweiterungen-postgresql-und-nginx-installieren" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>php8.3-fpm<span class="w"> </span>php8.3-cli<span class="w"> </span>php8.3-pgsql<span class="w"> </span>php8.3-xml<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>php8.3-mbstring<span class="w"> </span>php8.3-curl<span class="w"> </span>php8.3-gd<span class="w"> </span>php8.3-intl<span class="w"> </span>php8.3-apcu<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>php8.3-opcache<span class="w"> </span>git<span class="w"> </span>nginx<span class="w"> </span>postgresql
 </span></code></pre></div>
+<p><code>php8.3-pgsql</code> stellt den PDO-Treiber bereit, ohne den MediaWiki keine Verbindung zu PostgreSQL aufbauen kann. <code>php8.3-intl</code> wird für korrekte Sprach- und Sortierregeln benötigt, <code>php8.3-apcu</code> als lokaler Objekt-Cache empfohlen (spart auf dem Entwicklungsrechner einen zusätzlichen Memcached/Redis-Dienst).</p>
+<hr />
+<h2 id="2-postgresql-datenbank-anlegen">2. PostgreSQL-Datenbank anlegen<a class="headerlink" href="#2-postgresql-datenbank-anlegen" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE ROLE mediawiki WITH LOGIN PASSWORD &#39;EIN_LANGES_ZUFAELLIGES_PASSWORT&#39;;&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE DATABASE mediawiki OWNER mediawiki ENCODING &#39;UTF8&#39; TEMPLATE template0;&quot;</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>PostgreSQL lauscht per Default-Konfiguration (<code>postgresql.conf</code>, <code>listen_addresses = 'localhost'</code>) ohnehin nur lokal. Da MediaWiki über PHP-FPM auf demselben Rechner läuft, ist keine Netzwerkfreigabe für Port 5432 nötig — auf einem reinen Entwicklungsrechner kann diese Vorgabe unverändert bleiben.</p>
+</div>
+<hr />
+<h2 id="3-mediawiki-core-per-git-klonen">3. MediaWiki-Core per Git klonen<a class="headerlink" href="#3-mediawiki-core-per-git-klonen" title="Permanent link">&para;</a></h2>
+<p>Für MediaWiki gibt es kein apt-Paket — der offizielle Weg ist ein Git-Checkout des Core-Repositorys samt Submodulen (Skins, Standard-Erweiterungen):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://gerrit.wikimedia.org/r/mediawiki/core.git<span class="w"> </span>mediawiki
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">cd</span><span class="w"> </span>mediawiki
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>git<span class="w"> </span>tag<span class="w"> </span>-l<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-V<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-5
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>sudo<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>tags/1.43.0<span class="w"> </span>-b<span class="w"> </span>lokal-1.43
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>sudo<span class="w"> </span>git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/mediawiki
+</span></code></pre></div>
+<p>Der <code>git tag</code>-Aufruf listet die verfügbaren Releases sortiert nach Version — daraus das aktuell unterstützte Release wählen (siehe Warnhinweis oben) und statt <code>1.43.0</code> einsetzen.</p>
+<hr />
+<h2 id="4-php-fpm-pool">4. PHP-FPM-Pool<a class="headerlink" href="#4-php-fpm-pool" title="Permanent link">&para;</a></h2>
+<p>Auf einem Entwicklungsrechner reicht der Standard-Pool aus:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>grep<span class="w"> </span><span class="s2">&quot;^listen&quot;</span><span class="w"> </span>/etc/php/8.3/fpm/pool.d/www.conf
+</span></code></pre></div>
+<p>Erwartete Ausgabe: <code>listen = /run/php/php8.3-fpm.sock</code>. Für Fehlersuche während der Entwicklung empfiehlt sich zusätzlich, Fehleranzeige und Logging im Pool zu aktivieren statt sie nur in <code>LocalSettings.php</code> zu setzen:</p>
+<div class="language-ini highlight"><span class="filename">/etc/php/8.3/fpm/pool.d/www.conf (Auszug)</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="na">php_admin_value[display_errors]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">On</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="na">php_admin_value[error_reporting]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">E_ALL</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>php8.3-fpm
+</span></code></pre></div>
+<hr />
+<h2 id="5-nginx-konfiguration-fur-localhost">5. Nginx-Konfiguration für localhost<a class="headerlink" href="#5-nginx-konfiguration-fur-localhost" title="Permanent link">&para;</a></h2>
+<p>MediaWiki routet Seitenaufrufe intern über den Parameter <code>title</code> statt über echte Dateipfade — die Rewrite-Regel unterscheidet sich deshalb von einem einfachen <code>try_files … /index.php?$args</code> wie bei Drupal oder Moodle:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/nginx/sites-available/mediawiki-localhost
+</span></code></pre></div>
+<div class="language-nginx highlight"><span class="filename">/etc/nginx/sites-available/mediawiki-localhost</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:80</span><span class="p">;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">localhost</span><span class="p">;</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/mediawiki</span><span class="p">;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="kn">index</span><span class="w"> </span><span class="s">index.php</span><span class="p">;</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="nv">$uri/</span><span class="w"> </span><span class="s">@rewrite</span><span class="p">;</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">@rewrite</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">        </span><span class="kn">rewrite</span><span class="w"> </span><span class="s">^/(.*)</span>$<span class="w"> </span><span class="s">/index.php?title=</span><span class="nv">$1&amp;$args</span><span class="p">;</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">\.php$</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">        </span><span class="kn">fastcgi_split_path_info</span><span class="w"> </span><span class="s">^(.+\.php)(/.*)</span>$<span class="p">;</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">        </span><span class="kn">fastcgi_pass</span><span class="w"> </span><span class="s">unix:/run/php/php8.3-fpm.sock</span><span class="p">;</span>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">        </span><span class="kn">fastcgi_index</span><span class="w"> </span><span class="s">index.php</span><span class="p">;</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="w">        </span><span class="kn">include</span><span class="w"> </span><span class="s">fastcgi_params</span><span class="p">;</span>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">SCRIPT_FILENAME</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">PATH_INFO</span><span class="w"> </span><span class="nv">$fastcgi_path_info</span><span class="p">;</span>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">/\.ht</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="w">        </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span>
+</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>
+</span><span id="__span-7-29"><a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="sr">*</span><span class="w"> </span><span class="s">\.(js|css|gif|jpg|jpeg|png|svg|woff|woff2)</span>$<span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-30"><a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="w">        </span><span class="kn">expires</span><span class="w"> </span><span class="s">max</span><span class="p">;</span>
+</span><span id="__span-7-31"><a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="w">        </span><span class="kn">log_not_found</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span><span id="__span-7-32"><a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-33"><a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/etc/nginx/sites-available/mediawiki-localhost<span class="w"> </span>/etc/nginx/sites-enabled/
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span></code></pre></div>
+<p>Kein zweiter <code>server</code>-Block für Port 443/SSL — auf dem Entwicklungsrechner wird ausschließlich über <code>http://localhost</code> zugegriffen, ein Redirect auf HTTPS entfällt.</p>
+<hr />
+<h2 id="6-installationsassistent-im-browser-aufrufen">6. Installationsassistent im Browser aufrufen<a class="headerlink" href="#6-installationsassistent-im-browser-aufrufen" title="Permanent link">&para;</a></h2>
+<p>Weil Nginx bereits lokal auf <code>localhost</code> lauscht, ist kein SSH-Tunnel wie bei einem entfernten Server nötig (vergleiche <a href="../../../../entwicklung/infrastruktur/ssh-tunnel/">SSH-Tunnel</a>) — der Assistent ist direkt erreichbar:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>http://localhost/mw-config/index.php
+</span></code></pre></div>
+<p>Im Assistenten:</p>
+<ul>
+<li><strong>Datenbanktyp</strong>: PostgreSQL</li>
+<li><strong>Datenbankserver</strong>: <code>localhost</code></li>
+<li><strong>Datenbankname</strong>: <code>mediawiki</code></li>
+<li><strong>Benutzer/Passwort</strong>: <code>mediawiki</code> / das in Schritt 2 vergebene Passwort</li>
+<li><strong>Wiki-Name</strong>, Admin-Konto und gewünschte Erweiterungen nach Bedarf auswählen</li>
+</ul>
+<p>Am Ende der Installation die generierte <code>LocalSettings.php</code> herunterladen und ins Webroot legen:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>mv<span class="w"> </span>~/Downloads/LocalSettings.php<span class="w"> </span>/var/www/mediawiki/LocalSettings.php
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/mediawiki/LocalSettings.php
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">640</span><span class="w"> </span>/var/www/mediawiki/LocalSettings.php
+</span></code></pre></div>
+<hr />
+<h2 id="7-lesbare-urls-und-entwicklungseinstellungen">7. Lesbare URLs und Entwicklungseinstellungen<a class="headerlink" href="#7-lesbare-urls-und-entwicklungseinstellungen" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/var/www/mediawiki/LocalSettings.php
+</span></code></pre></div>
+<div class="language-php highlight"><span class="filename">LocalSettings.php (Ergänzungen)</span><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="x">$wgServer = &quot;http://localhost&quot;;</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="x">$wgScriptPath = &quot;&quot;;</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="x">$wgArticlePath = &quot;/$1&quot;;</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="x">$wgUsePathInfo = true;</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="x"># Nur auf dem Entwicklungsrechner aktivieren, niemals auf einem produktiven Server:</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="x">$wgShowExceptionDetails = true;</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="x">$wgDevelopmentWarnings = true;</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="x">$wgShowDBErrorBacktrace = true;</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Achtung</p>
+<p><code>$wgShowExceptionDetails</code>, <code>$wgDevelopmentWarnings</code> und <code>$wgShowDBErrorBacktrace</code> legen interne Fehlerdetails (Stacktraces, Datenbank-Queries) offen — praktisch beim Debuggen auf dem Entwicklungsrechner, aber ein Sicherheitsrisiko auf einem öffentlich erreichbaren Server. Beim späteren Übertragen auf einen produktiven Server (z. B. per <code>rsync</code>) diese drei Zeilen entfernen oder auf <code>false</code> setzen.</p>
+</div>
+<p>Nach jeder Änderung an <code>LocalSettings.php</code> oder installierten Erweiterungen die Wartungsskripte laufen lassen:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/mediawiki
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>maintenance/run.php<span class="w"> </span>update
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>maintenance/run.php<span class="w"> </span>rebuildLocalisationCache
+</span></code></pre></div>
+<hr />
+<h2 id="kurzprufung">Kurzprüfung<a class="headerlink" href="#kurzprufung" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>is-active<span class="w"> </span>php8.3-fpm<span class="w"> </span>nginx<span class="w"> </span>postgresql
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>curl<span class="w"> </span>-I<span class="w"> </span>http://localhost
+</span></code></pre></div>
+<p>Meldet der <code>curl</code>-Aufruf <code>HTTP/1.1 200 OK</code>, ist die lokale Installation erreichbar. Danach im Browser unter <code>http://localhost/wiki/Spezial:Version</code> prüfen, ob PHP-Version, installierte Erweiterungen und die PostgreSQL-Verbindung korrekt erkannt werden.</p>
+<hr />
+<h2 id="quellen-und-weiterfuhrende-informationen">Quellen und weiterführende Informationen<a class="headerlink" href="#quellen-und-weiterfuhrende-informationen" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.mediawiki.org/wiki/Compatibility">MediaWiki: Kompatibilitätsmatrix</a></li>
+<li><a href="https://www.mediawiki.org/wiki/Manual:Installation_guide">MediaWiki: Installation Guide</a></li>
+<li><a href="https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_Nginx">MediaWiki: Nginx-Konfiguration</a></li>
+<li><a href="https://www.mediawiki.org/wiki/Manual:PostgreSQL">MediaWiki: PostgreSQL</a></li>
+<li><a href="../../drupal/installieren/">Drupal installieren: Composer, PostgreSQL und Nginx</a></li>
+<li><a href="../../moodle/installieren/">Moodle installieren: Git, PostgreSQL und Nginx</a></li>
+<li><a href="../../../../entwicklung/infrastruktur/ssh-tunnel/">SSH-Tunnel: Portweiterleitung über SSH</a></li>
+<li><a href="../../">Dokumentationsübersicht</a></li>
+</ul>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
 
@@ -3057,7 +3403,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../entwicklungsrechner-localhost/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Entwicklungsrechner: localhost mit Nginx und PostgreSQL">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Installieren">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3067,20 +3413,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Entwicklungsrechner: localhost mit Nginx und PostgreSQL
+                Installieren
               </div>
             </div>
           </a>
         
         
           
-          <a href="../wiederherstellen/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Wiederherstellen">
+          <a href="../backup/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Backup">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Wiederherstellen
+                Backup
               </div>
             </div>
             <div class="md-footer__button md-icon">
