@@ -309,6 +309,7 @@ nav:
               - "KI-gestützter Export: mkdocs, XWiki, MediaWiki, Wiki.js": wissen/dokumentation/drupal/ki-export-multi-ziel.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
+              - "Entwicklungsrechner: localhost mit Nginx und PostgreSQL": wissen/dokumentation/mediawiki/entwicklungsrechner-localhost.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
               - Wiederherstellen: wissen/dokumentation/mediawiki/wiederherstellen.md
               - Python Bot Automatisierung: wissen/dokumentation/mediawiki/mediawiki-python-bot.md
