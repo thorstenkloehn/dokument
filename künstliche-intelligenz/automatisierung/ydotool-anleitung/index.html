@@ -5677,191 +5677,191 @@
 </li>
 <li>
 <p><strong>Skripte vorab testen</strong>
-   ```bash
-   # Einzelne Befehle testen
-ydotool key a
-   ydotool mousemove 100 100</p>
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="c1"># Einzelne Befehle testen</span>
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>ydotool<span class="w"> </span>key<span class="w"> </span>a
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>ydotool<span class="w"> </span>mousemove<span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="m">100</span>
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>
+</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a><span class="c1"># Erst dann komplexe Skripte erstellen</span>
+</span></code></pre></div></p>
 </li>
 </ol>
-<p># Erst dann komplexe Skripte erstellen
-   ```</p>
 <hr />
 <h2 id="praxisprojekte">🎯 Praxisprojekte<a class="headerlink" href="#praxisprojekte" title="Permanent link">&para;</a></h2>
 <h3 id="projekt-1-automatisiertes-login-skript">Projekt 1: Automatisiertes Login-Skript<a class="headerlink" href="#projekt-1-automatisiertes-login-skript" title="Permanent link">&para;</a></h3>
 <p><strong>Ziel:</strong> Automatisches Einloggen in ein Terminal oder eine Anwendung.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="ch">#!/bin/bash</span>
-</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>
-</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="c1"># Benutzerdaten</span>
-</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="nv">USERNAME</span><span class="o">=</span><span class="s2">&quot;mein_benutzername&quot;</span>
-</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a><span class="nv">PASSWORD</span><span class="o">=</span><span class="s2">&quot;mein_passwort&quot;</span>
-</span><span id="__span-40-6"><a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>
-</span><span id="__span-40-7"><a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a><span class="c1"># Terminal öffnen (falls noch nicht offen)</span>
-</span><span id="__span-40-8"><a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+alt+t
-</span><span id="__span-40-9"><a id="__codelineno-40-9" name="__codelineno-40-9" href="#__codelineno-40-9"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
-</span><span id="__span-40-10"><a id="__codelineno-40-10" name="__codelineno-40-10" href="#__codelineno-40-10"></a>
-</span><span id="__span-40-11"><a id="__codelineno-40-11" name="__codelineno-40-11" href="#__codelineno-40-11"></a><span class="c1"># Benutzername eingeben</span>
-</span><span id="__span-40-12"><a id="__codelineno-40-12" name="__codelineno-40-12" href="#__codelineno-40-12"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$USERNAME</span><span class="s2">&quot;</span>
-</span><span id="__span-40-13"><a id="__codelineno-40-13" name="__codelineno-40-13" href="#__codelineno-40-13"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
-</span><span id="__span-40-14"><a id="__codelineno-40-14" name="__codelineno-40-14" href="#__codelineno-40-14"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
-</span><span id="__span-40-15"><a id="__codelineno-40-15" name="__codelineno-40-15" href="#__codelineno-40-15"></a>
-</span><span id="__span-40-16"><a id="__codelineno-40-16" name="__codelineno-40-16" href="#__codelineno-40-16"></a><span class="c1"># Warten auf Passwort-Prompt</span>
-</span><span id="__span-40-17"><a id="__codelineno-40-17" name="__codelineno-40-17" href="#__codelineno-40-17"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
-</span><span id="__span-40-18"><a id="__codelineno-40-18" name="__codelineno-40-18" href="#__codelineno-40-18"></a>
-</span><span id="__span-40-19"><a id="__codelineno-40-19" name="__codelineno-40-19" href="#__codelineno-40-19"></a><span class="c1"># Passwort eingeben (wird nicht angezeigt)</span>
-</span><span id="__span-40-20"><a id="__codelineno-40-20" name="__codelineno-40-20" href="#__codelineno-40-20"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$PASSWORD</span><span class="s2">&quot;</span>
-</span><span id="__span-40-21"><a id="__codelineno-40-21" name="__codelineno-40-21" href="#__codelineno-40-21"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
-</span><span id="__span-40-22"><a id="__codelineno-40-22" name="__codelineno-40-22" href="#__codelineno-40-22"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
-</span><span id="__span-40-23"><a id="__codelineno-40-23" name="__codelineno-40-23" href="#__codelineno-40-23"></a>
-</span><span id="__span-40-24"><a id="__codelineno-40-24" name="__codelineno-40-24" href="#__codelineno-40-24"></a><span class="c1"># Warten auf erfolgreichen Login</span>
-</span><span id="__span-40-25"><a id="__codelineno-40-25" name="__codelineno-40-25" href="#__codelineno-40-25"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">2000</span>
-</span><span id="__span-40-26"><a id="__codelineno-40-26" name="__codelineno-40-26" href="#__codelineno-40-26"></a>
-</span><span id="__span-40-27"><a id="__codelineno-40-27" name="__codelineno-40-27" href="#__codelineno-40-27"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Login abgeschlossen&quot;</span>
-</span></code></pre></div>
-<h3 id="projekt-2-automatisierte-bildschirmaufnahme">Projekt 2: Automatisierte Bildschirmaufnahme<a class="headerlink" href="#projekt-2-automatisierte-bildschirmaufnahme" title="Permanent link">&para;</a></h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>
-</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="c1"># Abhängigkeiten: ffmpeg, xdotool (für Fokus)</span>
-</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>
-</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="c1"># Fokus auf Fenster setzen</span>
-</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a><span class="nv">WINDOW_ID</span><span class="o">=</span><span class="k">$(</span>xdotool<span class="w"> </span>getactivewindow<span class="k">)</span>
-</span><span id="__span-41-7"><a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>
-</span><span id="__span-41-8"><a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a><span class="c1"># Zeitstempel für Dateiname</span>
-</span><span id="__span-41-9"><a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a><span class="nv">TIMESTAMP</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>+<span class="s2">&quot;%Y%m%d_%H%M%S&quot;</span><span class="k">)</span>
-</span><span id="__span-41-10"><a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a><span class="nv">OUTPUT</span><span class="o">=</span><span class="s2">&quot;recording_</span><span class="nv">$TIMESTAMP</span><span class="s2">.mp4&quot;</span>
-</span><span id="__span-41-11"><a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a>
-</span><span id="__span-41-12"><a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a><span class="c1"># Aufnahme starten (mit ffmpeg)</span>
-</span><span id="__span-41-13"><a id="__codelineno-41-13" name="__codelineno-41-13" href="#__codelineno-41-13"></a><span class="c1"># Tastendruck registrieren</span>
-</span><span id="__span-41-14"><a id="__codelineno-41-14" name="__codelineno-41-14" href="#__codelineno-41-14"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Aufnahme gestartet. Drücke q zum Beenden.&quot;</span>
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="c1"># Benutzerdaten</span>
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="nv">USERNAME</span><span class="o">=</span><span class="s2">&quot;mein_benutzername&quot;</span>
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="nv">PASSWORD</span><span class="o">=</span><span class="s2">&quot;mein_passwort&quot;</span>
+</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>
+</span><span id="__span-41-7"><a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a><span class="c1"># Terminal öffnen (falls noch nicht offen)</span>
+</span><span id="__span-41-8"><a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+alt+t
+</span><span id="__span-41-9"><a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
+</span><span id="__span-41-10"><a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a>
+</span><span id="__span-41-11"><a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a><span class="c1"># Benutzername eingeben</span>
+</span><span id="__span-41-12"><a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$USERNAME</span><span class="s2">&quot;</span>
+</span><span id="__span-41-13"><a id="__codelineno-41-13" name="__codelineno-41-13" href="#__codelineno-41-13"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
+</span><span id="__span-41-14"><a id="__codelineno-41-14" name="__codelineno-41-14" href="#__codelineno-41-14"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
 </span><span id="__span-41-15"><a id="__codelineno-41-15" name="__codelineno-41-15" href="#__codelineno-41-15"></a>
-</span><span id="__span-41-16"><a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a><span class="c1"># Fenster fokussieren</span>
-</span><span id="__span-41-17"><a id="__codelineno-41-17" name="__codelineno-41-17" href="#__codelineno-41-17"></a>xdotool<span class="w"> </span>windowactivate<span class="w"> </span><span class="nv">$WINDOW_ID</span>
+</span><span id="__span-41-16"><a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a><span class="c1"># Warten auf Passwort-Prompt</span>
+</span><span id="__span-41-17"><a id="__codelineno-41-17" name="__codelineno-41-17" href="#__codelineno-41-17"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
 </span><span id="__span-41-18"><a id="__codelineno-41-18" name="__codelineno-41-18" href="#__codelineno-41-18"></a>
-</span><span id="__span-41-19"><a id="__codelineno-41-19" name="__codelineno-41-19" href="#__codelineno-41-19"></a><span class="c1"># ydotool für Tastendruck verwenden</span>
-</span><span id="__span-41-20"><a id="__codelineno-41-20" name="__codelineno-41-20" href="#__codelineno-41-20"></a><span class="c1"># q drücken um Aufnahme zu beenden</span>
-</span><span id="__span-41-21"><a id="__codelineno-41-21" name="__codelineno-41-21" href="#__codelineno-41-21"></a><span class="c1"># Dies erfordert ein separater Prozess oder Hotkey</span>
-</span><span id="__span-41-22"><a id="__codelineno-41-22" name="__codelineno-41-22" href="#__codelineno-41-22"></a>
-</span><span id="__span-41-23"><a id="__codelineno-41-23" name="__codelineno-41-23" href="#__codelineno-41-23"></a><span class="c1"># Einfacher: Zeitgesteuerte Aufnahme</span>
-</span><span id="__span-41-24"><a id="__codelineno-41-24" name="__codelineno-41-24" href="#__codelineno-41-24"></a><span class="nv">DURATION</span><span class="o">=</span><span class="m">10</span><span class="w">  </span><span class="c1"># Sekunden</span>
-</span><span id="__span-41-25"><a id="__codelineno-41-25" name="__codelineno-41-25" href="#__codelineno-41-25"></a>ffmpeg<span class="w"> </span>-video_size<span class="w"> </span>1920x1080<span class="w"> </span>-framerate<span class="w"> </span><span class="m">30</span><span class="w"> </span>-f<span class="w"> </span>x11grab<span class="w"> </span>-i<span class="w"> </span>:0.0<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-41-26"><a id="__codelineno-41-26" name="__codelineno-41-26" href="#__codelineno-41-26"></a><span class="w">    </span>-t<span class="w"> </span><span class="nv">$DURATION</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>-pix_fmt<span class="w"> </span>yuv420p<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-41-27"><a id="__codelineno-41-27" name="__codelineno-41-27" href="#__codelineno-41-27"></a><span class="w">    </span><span class="nv">$OUTPUT</span><span class="w"> </span><span class="p">&amp;</span>
-</span><span id="__span-41-28"><a id="__codelineno-41-28" name="__codelineno-41-28" href="#__codelineno-41-28"></a>
-</span><span id="__span-41-29"><a id="__codelineno-41-29" name="__codelineno-41-29" href="#__codelineno-41-29"></a><span class="nv">PID</span><span class="o">=</span><span class="nv">$!</span>
-</span><span id="__span-41-30"><a id="__codelineno-41-30" name="__codelineno-41-30" href="#__codelineno-41-30"></a>
-</span><span id="__span-41-31"><a id="__codelineno-41-31" name="__codelineno-41-31" href="#__codelineno-41-31"></a><span class="c1"># Warten auf q-Taste</span>
-</span><span id="__span-41-32"><a id="__codelineno-41-32" name="__codelineno-41-32" href="#__codelineno-41-32"></a><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span>
-</span><span id="__span-41-33"><a id="__codelineno-41-33" name="__codelineno-41-33" href="#__codelineno-41-33"></a><span class="w">    </span><span class="c1"># Prüfen ob q gedrückt wurde (vereinfacht)</span>
-</span><span id="__span-41-34"><a id="__codelineno-41-34" name="__codelineno-41-34" href="#__codelineno-41-34"></a><span class="w">    </span><span class="c1"># In einer echten Implementierung würde man hier ein Key-Listener verwenden</span>
-</span><span id="__span-41-35"><a id="__codelineno-41-35" name="__codelineno-41-35" href="#__codelineno-41-35"></a><span class="w">    </span>sleep<span class="w"> </span><span class="m">0</span>.1
-</span><span id="__span-41-36"><a id="__codelineno-41-36" name="__codelineno-41-36" href="#__codelineno-41-36"></a>
-</span><span id="__span-41-37"><a id="__codelineno-41-37" name="__codelineno-41-37" href="#__codelineno-41-37"></a><span class="w">    </span><span class="c1"># Nach DURATION Sekunden beenden</span>
-</span><span id="__span-41-38"><a id="__codelineno-41-38" name="__codelineno-41-38" href="#__codelineno-41-38"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span>+%s<span class="k">)</span><span class="s2"> - </span><span class="nv">$START_TIME</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="k">)</span><span class="w"> </span>-ge<span class="w"> </span><span class="nv">$DURATION</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-</span><span id="__span-41-39"><a id="__codelineno-41-39" name="__codelineno-41-39" href="#__codelineno-41-39"></a><span class="w">        </span><span class="k">break</span>
-</span><span id="__span-41-40"><a id="__codelineno-41-40" name="__codelineno-41-40" href="#__codelineno-41-40"></a><span class="w">    </span><span class="k">fi</span>
-</span><span id="__span-41-41"><a id="__codelineno-41-41" name="__codelineno-41-41" href="#__codelineno-41-41"></a><span class="k">done</span>
-</span><span id="__span-41-42"><a id="__codelineno-41-42" name="__codelineno-41-42" href="#__codelineno-41-42"></a>
-</span><span id="__span-41-43"><a id="__codelineno-41-43" name="__codelineno-41-43" href="#__codelineno-41-43"></a><span class="c1"># ffmpeg beenden</span>
-</span><span id="__span-41-44"><a id="__codelineno-41-44" name="__codelineno-41-44" href="#__codelineno-41-44"></a><span class="nb">kill</span><span class="w"> </span><span class="nv">$PID</span>
-</span><span id="__span-41-45"><a id="__codelineno-41-45" name="__codelineno-41-45" href="#__codelineno-41-45"></a>
-</span><span id="__span-41-46"><a id="__codelineno-41-46" name="__codelineno-41-46" href="#__codelineno-41-46"></a><span class="c1"># Datei verschieben</span>
-</span><span id="__span-41-47"><a id="__codelineno-41-47" name="__codelineno-41-47" href="#__codelineno-41-47"></a>mv<span class="w"> </span>output.mp4<span class="w"> </span><span class="nv">$OUTPUT</span>
-</span><span id="__span-41-48"><a id="__codelineno-41-48" name="__codelineno-41-48" href="#__codelineno-41-48"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Aufnahme gespeichert: </span><span class="nv">$OUTPUT</span><span class="s2">&quot;</span>
+</span><span id="__span-41-19"><a id="__codelineno-41-19" name="__codelineno-41-19" href="#__codelineno-41-19"></a><span class="c1"># Passwort eingeben (wird nicht angezeigt)</span>
+</span><span id="__span-41-20"><a id="__codelineno-41-20" name="__codelineno-41-20" href="#__codelineno-41-20"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$PASSWORD</span><span class="s2">&quot;</span>
+</span><span id="__span-41-21"><a id="__codelineno-41-21" name="__codelineno-41-21" href="#__codelineno-41-21"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
+</span><span id="__span-41-22"><a id="__codelineno-41-22" name="__codelineno-41-22" href="#__codelineno-41-22"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
+</span><span id="__span-41-23"><a id="__codelineno-41-23" name="__codelineno-41-23" href="#__codelineno-41-23"></a>
+</span><span id="__span-41-24"><a id="__codelineno-41-24" name="__codelineno-41-24" href="#__codelineno-41-24"></a><span class="c1"># Warten auf erfolgreichen Login</span>
+</span><span id="__span-41-25"><a id="__codelineno-41-25" name="__codelineno-41-25" href="#__codelineno-41-25"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">2000</span>
+</span><span id="__span-41-26"><a id="__codelineno-41-26" name="__codelineno-41-26" href="#__codelineno-41-26"></a>
+</span><span id="__span-41-27"><a id="__codelineno-41-27" name="__codelineno-41-27" href="#__codelineno-41-27"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Login abgeschlossen&quot;</span>
 </span></code></pre></div>
-<h3 id="projekt-3-automatisiertes-testskript-fur-gui-anwendung">Projekt 3: Automatisiertes Testskript für GUI-Anwendung<a class="headerlink" href="#projekt-3-automatisiertes-testskript-fur-gui-anwendung" title="Permanent link">&para;</a></h3>
+<h3 id="projekt-2-automatisierte-bildschirmaufnahme">Projekt 2: Automatisierte Bildschirmaufnahme<a class="headerlink" href="#projekt-2-automatisierte-bildschirmaufnahme" title="Permanent link">&para;</a></h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>
-</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="c1"># Testskript für eine GUI-Anwendung</span>
-</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="nv">LOG_FILE</span><span class="o">=</span><span class="s2">&quot;/tmp/test.log&quot;</span>
-</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>
-</span><span id="__span-42-6"><a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test gestartet: </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="c1"># Abhängigkeiten: ffmpeg, xdotool (für Fokus)</span>
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>
+</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a><span class="c1"># Fokus auf Fenster setzen</span>
+</span><span id="__span-42-6"><a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a><span class="nv">WINDOW_ID</span><span class="o">=</span><span class="k">$(</span>xdotool<span class="w"> </span>getactivewindow<span class="k">)</span>
 </span><span id="__span-42-7"><a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>
-</span><span id="__span-42-8"><a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a><span class="c1"># Anwendung starten (Annahme: bereits offen)</span>
-</span><span id="__span-42-9"><a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a><span class="c1"># Fenster fokussieren</span>
-</span><span id="__span-42-10"><a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a>ydotool<span class="w"> </span>key<span class="w"> </span>alt+tab
-</span><span id="__span-42-11"><a id="__codelineno-42-11" name="__codelineno-42-11" href="#__codelineno-42-11"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
-</span><span id="__span-42-12"><a id="__codelineno-42-12" name="__codelineno-42-12" href="#__codelineno-42-12"></a>
-</span><span id="__span-42-13"><a id="__codelineno-42-13" name="__codelineno-42-13" href="#__codelineno-42-13"></a><span class="c1"># Test 1: Menü öffnen</span>
-</span><span id="__span-42-14"><a id="__codelineno-42-14" name="__codelineno-42-14" href="#__codelineno-42-14"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test 1: Menü öffnen&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
-</span><span id="__span-42-15"><a id="__codelineno-42-15" name="__codelineno-42-15" href="#__codelineno-42-15"></a>ydotool<span class="w"> </span>key<span class="w"> </span>F10
-</span><span id="__span-42-16"><a id="__codelineno-42-16" name="__codelineno-42-16" href="#__codelineno-42-16"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">300</span>
-</span><span id="__span-42-17"><a id="__codelineno-42-17" name="__codelineno-42-17" href="#__codelineno-42-17"></a>
-</span><span id="__span-42-18"><a id="__codelineno-42-18" name="__codelineno-42-18" href="#__codelineno-42-18"></a><span class="c1"># Test 2: Überprüfen ob Menü geöffnet</span>
-</span><span id="__span-42-19"><a id="__codelineno-42-19" name="__codelineno-42-19" href="#__codelineno-42-19"></a><span class="c1"># (Visuelle Prüfung - in echten Tests mit anderen Tools kombinieren)</span>
-</span><span id="__span-42-20"><a id="__codelineno-42-20" name="__codelineno-42-20" href="#__codelineno-42-20"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Escape
-</span><span id="__span-42-21"><a id="__codelineno-42-21" name="__codelineno-42-21" href="#__codelineno-42-21"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">200</span>
+</span><span id="__span-42-8"><a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a><span class="c1"># Zeitstempel für Dateiname</span>
+</span><span id="__span-42-9"><a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a><span class="nv">TIMESTAMP</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>+<span class="s2">&quot;%Y%m%d_%H%M%S&quot;</span><span class="k">)</span>
+</span><span id="__span-42-10"><a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a><span class="nv">OUTPUT</span><span class="o">=</span><span class="s2">&quot;recording_</span><span class="nv">$TIMESTAMP</span><span class="s2">.mp4&quot;</span>
+</span><span id="__span-42-11"><a id="__codelineno-42-11" name="__codelineno-42-11" href="#__codelineno-42-11"></a>
+</span><span id="__span-42-12"><a id="__codelineno-42-12" name="__codelineno-42-12" href="#__codelineno-42-12"></a><span class="c1"># Aufnahme starten (mit ffmpeg)</span>
+</span><span id="__span-42-13"><a id="__codelineno-42-13" name="__codelineno-42-13" href="#__codelineno-42-13"></a><span class="c1"># Tastendruck registrieren</span>
+</span><span id="__span-42-14"><a id="__codelineno-42-14" name="__codelineno-42-14" href="#__codelineno-42-14"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Aufnahme gestartet. Drücke q zum Beenden.&quot;</span>
+</span><span id="__span-42-15"><a id="__codelineno-42-15" name="__codelineno-42-15" href="#__codelineno-42-15"></a>
+</span><span id="__span-42-16"><a id="__codelineno-42-16" name="__codelineno-42-16" href="#__codelineno-42-16"></a><span class="c1"># Fenster fokussieren</span>
+</span><span id="__span-42-17"><a id="__codelineno-42-17" name="__codelineno-42-17" href="#__codelineno-42-17"></a>xdotool<span class="w"> </span>windowactivate<span class="w"> </span><span class="nv">$WINDOW_ID</span>
+</span><span id="__span-42-18"><a id="__codelineno-42-18" name="__codelineno-42-18" href="#__codelineno-42-18"></a>
+</span><span id="__span-42-19"><a id="__codelineno-42-19" name="__codelineno-42-19" href="#__codelineno-42-19"></a><span class="c1"># ydotool für Tastendruck verwenden</span>
+</span><span id="__span-42-20"><a id="__codelineno-42-20" name="__codelineno-42-20" href="#__codelineno-42-20"></a><span class="c1"># q drücken um Aufnahme zu beenden</span>
+</span><span id="__span-42-21"><a id="__codelineno-42-21" name="__codelineno-42-21" href="#__codelineno-42-21"></a><span class="c1"># Dies erfordert ein separater Prozess oder Hotkey</span>
 </span><span id="__span-42-22"><a id="__codelineno-42-22" name="__codelineno-42-22" href="#__codelineno-42-22"></a>
-</span><span id="__span-42-23"><a id="__codelineno-42-23" name="__codelineno-42-23" href="#__codelineno-42-23"></a><span class="c1"># Test 3: Tastenkombination testen</span>
-</span><span id="__span-42-24"><a id="__codelineno-42-24" name="__codelineno-42-24" href="#__codelineno-42-24"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test 2: Tastenkombination&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
-</span><span id="__span-42-25"><a id="__codelineno-42-25" name="__codelineno-42-25" href="#__codelineno-42-25"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+n
-</span><span id="__span-42-26"><a id="__codelineno-42-26" name="__codelineno-42-26" href="#__codelineno-42-26"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
-</span><span id="__span-42-27"><a id="__codelineno-42-27" name="__codelineno-42-27" href="#__codelineno-42-27"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+w
-</span><span id="__span-42-28"><a id="__codelineno-42-28" name="__codelineno-42-28" href="#__codelineno-42-28"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">200</span>
-</span><span id="__span-42-29"><a id="__codelineno-42-29" name="__codelineno-42-29" href="#__codelineno-42-29"></a>
-</span><span id="__span-42-30"><a id="__codelineno-42-30" name="__codelineno-42-30" href="#__codelineno-42-30"></a><span class="c1"># Test 4: Texteingabe</span>
-</span><span id="__span-42-31"><a id="__codelineno-42-31" name="__codelineno-42-31" href="#__codelineno-42-31"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test 3: Texteingabe&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
-</span><span id="__span-42-32"><a id="__codelineno-42-32" name="__codelineno-42-32" href="#__codelineno-42-32"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;Testtext 123&quot;</span>
-</span><span id="__span-42-33"><a id="__codelineno-42-33" name="__codelineno-42-33" href="#__codelineno-42-33"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
-</span><span id="__span-42-34"><a id="__codelineno-42-34" name="__codelineno-42-34" href="#__codelineno-42-34"></a>ydotool<span class="w"> </span>key<span class="w"> </span>BackSpace
-</span><span id="__span-42-35"><a id="__codelineno-42-35" name="__codelineno-42-35" href="#__codelineno-42-35"></a>ydotool<span class="w"> </span>key<span class="w"> </span>BackSpace
-</span><span id="__span-42-36"><a id="__codelineno-42-36" name="__codelineno-42-36" href="#__codelineno-42-36"></a>ydotool<span class="w"> </span>key<span class="w"> </span>BackSpace
-</span><span id="__span-42-37"><a id="__codelineno-42-37" name="__codelineno-42-37" href="#__codelineno-42-37"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
-</span><span id="__span-42-38"><a id="__codelineno-42-38" name="__codelineno-42-38" href="#__codelineno-42-38"></a>
-</span><span id="__span-42-39"><a id="__codelineno-42-39" name="__codelineno-42-39" href="#__codelineno-42-39"></a><span class="c1"># Test 5: Mausoperationen</span>
-</span><span id="__span-42-40"><a id="__codelineno-42-40" name="__codelineno-42-40" href="#__codelineno-42-40"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test 4: Mausoperationen&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
-</span><span id="__span-42-41"><a id="__codelineno-42-41" name="__codelineno-42-41" href="#__codelineno-42-41"></a>ydotool<span class="w"> </span>mousemove<span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="m">100</span>
-</span><span id="__span-42-42"><a id="__codelineno-42-42" name="__codelineno-42-42" href="#__codelineno-42-42"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
-</span><span id="__span-42-43"><a id="__codelineno-42-43" name="__codelineno-42-43" href="#__codelineno-42-43"></a>ydotool<span class="w"> </span>click<span class="w"> </span><span class="m">0</span>
-</span><span id="__span-42-44"><a id="__codelineno-42-44" name="__codelineno-42-44" href="#__codelineno-42-44"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
-</span><span id="__span-42-45"><a id="__codelineno-42-45" name="__codelineno-42-45" href="#__codelineno-42-45"></a>ydotool<span class="w"> </span>mousemove<span class="w"> </span><span class="m">200</span><span class="w"> </span><span class="m">200</span>
-</span><span id="__span-42-46"><a id="__codelineno-42-46" name="__codelineno-42-46" href="#__codelineno-42-46"></a>ydotool<span class="w"> </span>click<span class="w"> </span><span class="m">2</span><span class="w">  </span><span class="c1"># Rechtsklick</span>
-</span><span id="__span-42-47"><a id="__codelineno-42-47" name="__codelineno-42-47" href="#__codelineno-42-47"></a>
-</span><span id="__span-42-48"><a id="__codelineno-42-48" name="__codelineno-42-48" href="#__codelineno-42-48"></a><span class="c1"># Test abgeschlossen</span>
-</span><span id="__span-42-49"><a id="__codelineno-42-49" name="__codelineno-42-49" href="#__codelineno-42-49"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Alle Tests abgeschlossen: </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
-</span><span id="__span-42-50"><a id="__codelineno-42-50" name="__codelineno-42-50" href="#__codelineno-42-50"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Ergebnisse in </span><span class="nv">$LOG_FILE</span><span class="s2"> gespeichert&quot;</span>
+</span><span id="__span-42-23"><a id="__codelineno-42-23" name="__codelineno-42-23" href="#__codelineno-42-23"></a><span class="c1"># Einfacher: Zeitgesteuerte Aufnahme</span>
+</span><span id="__span-42-24"><a id="__codelineno-42-24" name="__codelineno-42-24" href="#__codelineno-42-24"></a><span class="nv">DURATION</span><span class="o">=</span><span class="m">10</span><span class="w">  </span><span class="c1"># Sekunden</span>
+</span><span id="__span-42-25"><a id="__codelineno-42-25" name="__codelineno-42-25" href="#__codelineno-42-25"></a>ffmpeg<span class="w"> </span>-video_size<span class="w"> </span>1920x1080<span class="w"> </span>-framerate<span class="w"> </span><span class="m">30</span><span class="w"> </span>-f<span class="w"> </span>x11grab<span class="w"> </span>-i<span class="w"> </span>:0.0<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-42-26"><a id="__codelineno-42-26" name="__codelineno-42-26" href="#__codelineno-42-26"></a><span class="w">    </span>-t<span class="w"> </span><span class="nv">$DURATION</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>-pix_fmt<span class="w"> </span>yuv420p<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-42-27"><a id="__codelineno-42-27" name="__codelineno-42-27" href="#__codelineno-42-27"></a><span class="w">    </span><span class="nv">$OUTPUT</span><span class="w"> </span><span class="p">&amp;</span>
+</span><span id="__span-42-28"><a id="__codelineno-42-28" name="__codelineno-42-28" href="#__codelineno-42-28"></a>
+</span><span id="__span-42-29"><a id="__codelineno-42-29" name="__codelineno-42-29" href="#__codelineno-42-29"></a><span class="nv">PID</span><span class="o">=</span><span class="nv">$!</span>
+</span><span id="__span-42-30"><a id="__codelineno-42-30" name="__codelineno-42-30" href="#__codelineno-42-30"></a>
+</span><span id="__span-42-31"><a id="__codelineno-42-31" name="__codelineno-42-31" href="#__codelineno-42-31"></a><span class="c1"># Warten auf q-Taste</span>
+</span><span id="__span-42-32"><a id="__codelineno-42-32" name="__codelineno-42-32" href="#__codelineno-42-32"></a><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-42-33"><a id="__codelineno-42-33" name="__codelineno-42-33" href="#__codelineno-42-33"></a><span class="w">    </span><span class="c1"># Prüfen ob q gedrückt wurde (vereinfacht)</span>
+</span><span id="__span-42-34"><a id="__codelineno-42-34" name="__codelineno-42-34" href="#__codelineno-42-34"></a><span class="w">    </span><span class="c1"># In einer echten Implementierung würde man hier ein Key-Listener verwenden</span>
+</span><span id="__span-42-35"><a id="__codelineno-42-35" name="__codelineno-42-35" href="#__codelineno-42-35"></a><span class="w">    </span>sleep<span class="w"> </span><span class="m">0</span>.1
+</span><span id="__span-42-36"><a id="__codelineno-42-36" name="__codelineno-42-36" href="#__codelineno-42-36"></a>
+</span><span id="__span-42-37"><a id="__codelineno-42-37" name="__codelineno-42-37" href="#__codelineno-42-37"></a><span class="w">    </span><span class="c1"># Nach DURATION Sekunden beenden</span>
+</span><span id="__span-42-38"><a id="__codelineno-42-38" name="__codelineno-42-38" href="#__codelineno-42-38"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span>+%s<span class="k">)</span><span class="s2"> - </span><span class="nv">$START_TIME</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="k">)</span><span class="w"> </span>-ge<span class="w"> </span><span class="nv">$DURATION</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+</span><span id="__span-42-39"><a id="__codelineno-42-39" name="__codelineno-42-39" href="#__codelineno-42-39"></a><span class="w">        </span><span class="k">break</span>
+</span><span id="__span-42-40"><a id="__codelineno-42-40" name="__codelineno-42-40" href="#__codelineno-42-40"></a><span class="w">    </span><span class="k">fi</span>
+</span><span id="__span-42-41"><a id="__codelineno-42-41" name="__codelineno-42-41" href="#__codelineno-42-41"></a><span class="k">done</span>
+</span><span id="__span-42-42"><a id="__codelineno-42-42" name="__codelineno-42-42" href="#__codelineno-42-42"></a>
+</span><span id="__span-42-43"><a id="__codelineno-42-43" name="__codelineno-42-43" href="#__codelineno-42-43"></a><span class="c1"># ffmpeg beenden</span>
+</span><span id="__span-42-44"><a id="__codelineno-42-44" name="__codelineno-42-44" href="#__codelineno-42-44"></a><span class="nb">kill</span><span class="w"> </span><span class="nv">$PID</span>
+</span><span id="__span-42-45"><a id="__codelineno-42-45" name="__codelineno-42-45" href="#__codelineno-42-45"></a>
+</span><span id="__span-42-46"><a id="__codelineno-42-46" name="__codelineno-42-46" href="#__codelineno-42-46"></a><span class="c1"># Datei verschieben</span>
+</span><span id="__span-42-47"><a id="__codelineno-42-47" name="__codelineno-42-47" href="#__codelineno-42-47"></a>mv<span class="w"> </span>output.mp4<span class="w"> </span><span class="nv">$OUTPUT</span>
+</span><span id="__span-42-48"><a id="__codelineno-42-48" name="__codelineno-42-48" href="#__codelineno-42-48"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Aufnahme gespeichert: </span><span class="nv">$OUTPUT</span><span class="s2">&quot;</span>
 </span></code></pre></div>
-<h3 id="projekt-4-automatisierte-datenverarbeitung">Projekt 4: Automatisierte Datenverarbeitung<a class="headerlink" href="#projekt-4-automatisierte-datenverarbeitung" title="Permanent link">&para;</a></h3>
+<h3 id="projekt-3-automatisiertes-testskript-fur-gui-anwendung">Projekt 3: Automatisiertes Testskript für GUI-Anwendung<a class="headerlink" href="#projekt-3-automatisiertes-testskript-fur-gui-anwendung" title="Permanent link">&para;</a></h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>
-</span><span id="__span-43-3"><a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a><span class="c1"># Automatisierte Verarbeitung von Dateien</span>
-</span><span id="__span-43-4"><a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a><span class="nv">INPUT_DIR</span><span class="o">=</span><span class="s2">&quot;/home/benutzer/Input&quot;</span>
-</span><span id="__span-43-5"><a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a><span class="nv">OUTPUT_DIR</span><span class="o">=</span><span class="s2">&quot;/home/benutzer/Output&quot;</span>
-</span><span id="__span-43-6"><a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>
-</span><span id="__span-43-7"><a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Starte Datenverarbeitung...&quot;</span>
-</span><span id="__span-43-8"><a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a>
-</span><span id="__span-43-9"><a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a><span class="c1"># Datei-Manager öffnen</span>
-</span><span id="__span-43-10"><a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a>ydotool<span class="w"> </span>key<span class="w"> </span>super+e
-</span><span id="__span-43-11"><a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">1000</span>
+</span><span id="__span-43-3"><a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a><span class="c1"># Testskript für eine GUI-Anwendung</span>
+</span><span id="__span-43-4"><a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a><span class="nv">LOG_FILE</span><span class="o">=</span><span class="s2">&quot;/tmp/test.log&quot;</span>
+</span><span id="__span-43-5"><a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>
+</span><span id="__span-43-6"><a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test gestartet: </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
+</span><span id="__span-43-7"><a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a>
+</span><span id="__span-43-8"><a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a><span class="c1"># Anwendung starten (Annahme: bereits offen)</span>
+</span><span id="__span-43-9"><a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a><span class="c1"># Fenster fokussieren</span>
+</span><span id="__span-43-10"><a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a>ydotool<span class="w"> </span>key<span class="w"> </span>alt+tab
+</span><span id="__span-43-11"><a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
 </span><span id="__span-43-12"><a id="__codelineno-43-12" name="__codelineno-43-12" href="#__codelineno-43-12"></a>
-</span><span id="__span-43-13"><a id="__codelineno-43-13" name="__codelineno-43-13" href="#__codelineno-43-13"></a><span class="c1"># Zu Input-Verzeichnis navigieren</span>
-</span><span id="__span-43-14"><a id="__codelineno-43-14" name="__codelineno-43-14" href="#__codelineno-43-14"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$INPUT_DIR</span><span class="s2">&quot;</span>
-</span><span id="__span-43-15"><a id="__codelineno-43-15" name="__codelineno-43-15" href="#__codelineno-43-15"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
-</span><span id="__span-43-16"><a id="__codelineno-43-16" name="__codelineno-43-16" href="#__codelineno-43-16"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
-</span><span id="__span-43-17"><a id="__codelineno-43-17" name="__codelineno-43-17" href="#__codelineno-43-17"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">1000</span>
-</span><span id="__span-43-18"><a id="__codelineno-43-18" name="__codelineno-43-18" href="#__codelineno-43-18"></a>
-</span><span id="__span-43-19"><a id="__codelineno-43-19" name="__codelineno-43-19" href="#__codelineno-43-19"></a><span class="c1"># Alle Dateien auswählen</span>
-</span><span id="__span-43-20"><a id="__codelineno-43-20" name="__codelineno-43-20" href="#__codelineno-43-20"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+a
-</span><span id="__span-43-21"><a id="__codelineno-43-21" name="__codelineno-43-21" href="#__codelineno-43-21"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">300</span>
+</span><span id="__span-43-13"><a id="__codelineno-43-13" name="__codelineno-43-13" href="#__codelineno-43-13"></a><span class="c1"># Test 1: Menü öffnen</span>
+</span><span id="__span-43-14"><a id="__codelineno-43-14" name="__codelineno-43-14" href="#__codelineno-43-14"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test 1: Menü öffnen&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
+</span><span id="__span-43-15"><a id="__codelineno-43-15" name="__codelineno-43-15" href="#__codelineno-43-15"></a>ydotool<span class="w"> </span>key<span class="w"> </span>F10
+</span><span id="__span-43-16"><a id="__codelineno-43-16" name="__codelineno-43-16" href="#__codelineno-43-16"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">300</span>
+</span><span id="__span-43-17"><a id="__codelineno-43-17" name="__codelineno-43-17" href="#__codelineno-43-17"></a>
+</span><span id="__span-43-18"><a id="__codelineno-43-18" name="__codelineno-43-18" href="#__codelineno-43-18"></a><span class="c1"># Test 2: Überprüfen ob Menü geöffnet</span>
+</span><span id="__span-43-19"><a id="__codelineno-43-19" name="__codelineno-43-19" href="#__codelineno-43-19"></a><span class="c1"># (Visuelle Prüfung - in echten Tests mit anderen Tools kombinieren)</span>
+</span><span id="__span-43-20"><a id="__codelineno-43-20" name="__codelineno-43-20" href="#__codelineno-43-20"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Escape
+</span><span id="__span-43-21"><a id="__codelineno-43-21" name="__codelineno-43-21" href="#__codelineno-43-21"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">200</span>
 </span><span id="__span-43-22"><a id="__codelineno-43-22" name="__codelineno-43-22" href="#__codelineno-43-22"></a>
-</span><span id="__span-43-23"><a id="__codelineno-43-23" name="__codelineno-43-23" href="#__codelineno-43-23"></a><span class="c1"># Kopieren</span>
-</span><span id="__span-43-24"><a id="__codelineno-43-24" name="__codelineno-43-24" href="#__codelineno-43-24"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+c
-</span><span id="__span-43-25"><a id="__codelineno-43-25" name="__codelineno-43-25" href="#__codelineno-43-25"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">300</span>
-</span><span id="__span-43-26"><a id="__codelineno-43-26" name="__codelineno-43-26" href="#__codelineno-43-26"></a>
-</span><span id="__span-43-27"><a id="__codelineno-43-27" name="__codelineno-43-27" href="#__codelineno-43-27"></a><span class="c1"># Zu Output-Verzeichnis navigieren</span>
-</span><span id="__span-43-28"><a id="__codelineno-43-28" name="__codelineno-43-28" href="#__codelineno-43-28"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+l
-</span><span id="__span-43-29"><a id="__codelineno-43-29" name="__codelineno-43-29" href="#__codelineno-43-29"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">200</span>
-</span><span id="__span-43-30"><a id="__codelineno-43-30" name="__codelineno-43-30" href="#__codelineno-43-30"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OUTPUT_DIR</span><span class="s2">&quot;</span>
-</span><span id="__span-43-31"><a id="__codelineno-43-31" name="__codelineno-43-31" href="#__codelineno-43-31"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
-</span><span id="__span-43-32"><a id="__codelineno-43-32" name="__codelineno-43-32" href="#__codelineno-43-32"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
-</span><span id="__span-43-33"><a id="__codelineno-43-33" name="__codelineno-43-33" href="#__codelineno-43-33"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">1000</span>
-</span><span id="__span-43-34"><a id="__codelineno-43-34" name="__codelineno-43-34" href="#__codelineno-43-34"></a>
-</span><span id="__span-43-35"><a id="__codelineno-43-35" name="__codelineno-43-35" href="#__codelineno-43-35"></a><span class="c1"># Einfügen</span>
-</span><span id="__span-43-36"><a id="__codelineno-43-36" name="__codelineno-43-36" href="#__codelineno-43-36"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+v
-</span><span id="__span-43-37"><a id="__codelineno-43-37" name="__codelineno-43-37" href="#__codelineno-43-37"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
+</span><span id="__span-43-23"><a id="__codelineno-43-23" name="__codelineno-43-23" href="#__codelineno-43-23"></a><span class="c1"># Test 3: Tastenkombination testen</span>
+</span><span id="__span-43-24"><a id="__codelineno-43-24" name="__codelineno-43-24" href="#__codelineno-43-24"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test 2: Tastenkombination&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
+</span><span id="__span-43-25"><a id="__codelineno-43-25" name="__codelineno-43-25" href="#__codelineno-43-25"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+n
+</span><span id="__span-43-26"><a id="__codelineno-43-26" name="__codelineno-43-26" href="#__codelineno-43-26"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
+</span><span id="__span-43-27"><a id="__codelineno-43-27" name="__codelineno-43-27" href="#__codelineno-43-27"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+w
+</span><span id="__span-43-28"><a id="__codelineno-43-28" name="__codelineno-43-28" href="#__codelineno-43-28"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">200</span>
+</span><span id="__span-43-29"><a id="__codelineno-43-29" name="__codelineno-43-29" href="#__codelineno-43-29"></a>
+</span><span id="__span-43-30"><a id="__codelineno-43-30" name="__codelineno-43-30" href="#__codelineno-43-30"></a><span class="c1"># Test 4: Texteingabe</span>
+</span><span id="__span-43-31"><a id="__codelineno-43-31" name="__codelineno-43-31" href="#__codelineno-43-31"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test 3: Texteingabe&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
+</span><span id="__span-43-32"><a id="__codelineno-43-32" name="__codelineno-43-32" href="#__codelineno-43-32"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;Testtext 123&quot;</span>
+</span><span id="__span-43-33"><a id="__codelineno-43-33" name="__codelineno-43-33" href="#__codelineno-43-33"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
+</span><span id="__span-43-34"><a id="__codelineno-43-34" name="__codelineno-43-34" href="#__codelineno-43-34"></a>ydotool<span class="w"> </span>key<span class="w"> </span>BackSpace
+</span><span id="__span-43-35"><a id="__codelineno-43-35" name="__codelineno-43-35" href="#__codelineno-43-35"></a>ydotool<span class="w"> </span>key<span class="w"> </span>BackSpace
+</span><span id="__span-43-36"><a id="__codelineno-43-36" name="__codelineno-43-36" href="#__codelineno-43-36"></a>ydotool<span class="w"> </span>key<span class="w"> </span>BackSpace
+</span><span id="__span-43-37"><a id="__codelineno-43-37" name="__codelineno-43-37" href="#__codelineno-43-37"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
 </span><span id="__span-43-38"><a id="__codelineno-43-38" name="__codelineno-43-38" href="#__codelineno-43-38"></a>
-</span><span id="__span-43-39"><a id="__codelineno-43-39" name="__codelineno-43-39" href="#__codelineno-43-39"></a><span class="c1"># Bestätigen (je nach Datei-Manager)</span>
-</span><span id="__span-43-40"><a id="__codelineno-43-40" name="__codelineno-43-40" href="#__codelineno-43-40"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
-</span><span id="__span-43-41"><a id="__codelineno-43-41" name="__codelineno-43-41" href="#__codelineno-43-41"></a>
-</span><span id="__span-43-42"><a id="__codelineno-43-42" name="__codelineno-43-42" href="#__codelineno-43-42"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Datenverarbeitung abgeschlossen&quot;</span>
+</span><span id="__span-43-39"><a id="__codelineno-43-39" name="__codelineno-43-39" href="#__codelineno-43-39"></a><span class="c1"># Test 5: Mausoperationen</span>
+</span><span id="__span-43-40"><a id="__codelineno-43-40" name="__codelineno-43-40" href="#__codelineno-43-40"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Test 4: Mausoperationen&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
+</span><span id="__span-43-41"><a id="__codelineno-43-41" name="__codelineno-43-41" href="#__codelineno-43-41"></a>ydotool<span class="w"> </span>mousemove<span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="m">100</span>
+</span><span id="__span-43-42"><a id="__codelineno-43-42" name="__codelineno-43-42" href="#__codelineno-43-42"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
+</span><span id="__span-43-43"><a id="__codelineno-43-43" name="__codelineno-43-43" href="#__codelineno-43-43"></a>ydotool<span class="w"> </span>click<span class="w"> </span><span class="m">0</span>
+</span><span id="__span-43-44"><a id="__codelineno-43-44" name="__codelineno-43-44" href="#__codelineno-43-44"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">100</span>
+</span><span id="__span-43-45"><a id="__codelineno-43-45" name="__codelineno-43-45" href="#__codelineno-43-45"></a>ydotool<span class="w"> </span>mousemove<span class="w"> </span><span class="m">200</span><span class="w"> </span><span class="m">200</span>
+</span><span id="__span-43-46"><a id="__codelineno-43-46" name="__codelineno-43-46" href="#__codelineno-43-46"></a>ydotool<span class="w"> </span>click<span class="w"> </span><span class="m">2</span><span class="w">  </span><span class="c1"># Rechtsklick</span>
+</span><span id="__span-43-47"><a id="__codelineno-43-47" name="__codelineno-43-47" href="#__codelineno-43-47"></a>
+</span><span id="__span-43-48"><a id="__codelineno-43-48" name="__codelineno-43-48" href="#__codelineno-43-48"></a><span class="c1"># Test abgeschlossen</span>
+</span><span id="__span-43-49"><a id="__codelineno-43-49" name="__codelineno-43-49" href="#__codelineno-43-49"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Alle Tests abgeschlossen: </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG_FILE</span>
+</span><span id="__span-43-50"><a id="__codelineno-43-50" name="__codelineno-43-50" href="#__codelineno-43-50"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Ergebnisse in </span><span class="nv">$LOG_FILE</span><span class="s2"> gespeichert&quot;</span>
+</span></code></pre></div>
+<h3 id="projekt-4-automatisierte-datenverarbeitung">Projekt 4: Automatisierte Datenverarbeitung<a class="headerlink" href="#projekt-4-automatisierte-datenverarbeitung" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>
+</span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="c1"># Automatisierte Verarbeitung von Dateien</span>
+</span><span id="__span-44-4"><a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="nv">INPUT_DIR</span><span class="o">=</span><span class="s2">&quot;/home/benutzer/Input&quot;</span>
+</span><span id="__span-44-5"><a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a><span class="nv">OUTPUT_DIR</span><span class="o">=</span><span class="s2">&quot;/home/benutzer/Output&quot;</span>
+</span><span id="__span-44-6"><a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>
+</span><span id="__span-44-7"><a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Starte Datenverarbeitung...&quot;</span>
+</span><span id="__span-44-8"><a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>
+</span><span id="__span-44-9"><a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a><span class="c1"># Datei-Manager öffnen</span>
+</span><span id="__span-44-10"><a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a>ydotool<span class="w"> </span>key<span class="w"> </span>super+e
+</span><span id="__span-44-11"><a id="__codelineno-44-11" name="__codelineno-44-11" href="#__codelineno-44-11"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">1000</span>
+</span><span id="__span-44-12"><a id="__codelineno-44-12" name="__codelineno-44-12" href="#__codelineno-44-12"></a>
+</span><span id="__span-44-13"><a id="__codelineno-44-13" name="__codelineno-44-13" href="#__codelineno-44-13"></a><span class="c1"># Zu Input-Verzeichnis navigieren</span>
+</span><span id="__span-44-14"><a id="__codelineno-44-14" name="__codelineno-44-14" href="#__codelineno-44-14"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$INPUT_DIR</span><span class="s2">&quot;</span>
+</span><span id="__span-44-15"><a id="__codelineno-44-15" name="__codelineno-44-15" href="#__codelineno-44-15"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
+</span><span id="__span-44-16"><a id="__codelineno-44-16" name="__codelineno-44-16" href="#__codelineno-44-16"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
+</span><span id="__span-44-17"><a id="__codelineno-44-17" name="__codelineno-44-17" href="#__codelineno-44-17"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">1000</span>
+</span><span id="__span-44-18"><a id="__codelineno-44-18" name="__codelineno-44-18" href="#__codelineno-44-18"></a>
+</span><span id="__span-44-19"><a id="__codelineno-44-19" name="__codelineno-44-19" href="#__codelineno-44-19"></a><span class="c1"># Alle Dateien auswählen</span>
+</span><span id="__span-44-20"><a id="__codelineno-44-20" name="__codelineno-44-20" href="#__codelineno-44-20"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+a
+</span><span id="__span-44-21"><a id="__codelineno-44-21" name="__codelineno-44-21" href="#__codelineno-44-21"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">300</span>
+</span><span id="__span-44-22"><a id="__codelineno-44-22" name="__codelineno-44-22" href="#__codelineno-44-22"></a>
+</span><span id="__span-44-23"><a id="__codelineno-44-23" name="__codelineno-44-23" href="#__codelineno-44-23"></a><span class="c1"># Kopieren</span>
+</span><span id="__span-44-24"><a id="__codelineno-44-24" name="__codelineno-44-24" href="#__codelineno-44-24"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+c
+</span><span id="__span-44-25"><a id="__codelineno-44-25" name="__codelineno-44-25" href="#__codelineno-44-25"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">300</span>
+</span><span id="__span-44-26"><a id="__codelineno-44-26" name="__codelineno-44-26" href="#__codelineno-44-26"></a>
+</span><span id="__span-44-27"><a id="__codelineno-44-27" name="__codelineno-44-27" href="#__codelineno-44-27"></a><span class="c1"># Zu Output-Verzeichnis navigieren</span>
+</span><span id="__span-44-28"><a id="__codelineno-44-28" name="__codelineno-44-28" href="#__codelineno-44-28"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+l
+</span><span id="__span-44-29"><a id="__codelineno-44-29" name="__codelineno-44-29" href="#__codelineno-44-29"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">200</span>
+</span><span id="__span-44-30"><a id="__codelineno-44-30" name="__codelineno-44-30" href="#__codelineno-44-30"></a><span class="nb">type</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OUTPUT_DIR</span><span class="s2">&quot;</span>
+</span><span id="__span-44-31"><a id="__codelineno-44-31" name="__codelineno-44-31" href="#__codelineno-44-31"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
+</span><span id="__span-44-32"><a id="__codelineno-44-32" name="__codelineno-44-32" href="#__codelineno-44-32"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
+</span><span id="__span-44-33"><a id="__codelineno-44-33" name="__codelineno-44-33" href="#__codelineno-44-33"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">1000</span>
+</span><span id="__span-44-34"><a id="__codelineno-44-34" name="__codelineno-44-34" href="#__codelineno-44-34"></a>
+</span><span id="__span-44-35"><a id="__codelineno-44-35" name="__codelineno-44-35" href="#__codelineno-44-35"></a><span class="c1"># Einfügen</span>
+</span><span id="__span-44-36"><a id="__codelineno-44-36" name="__codelineno-44-36" href="#__codelineno-44-36"></a>ydotool<span class="w"> </span>key<span class="w"> </span>ctrl+v
+</span><span id="__span-44-37"><a id="__codelineno-44-37" name="__codelineno-44-37" href="#__codelineno-44-37"></a>ydotool<span class="w"> </span>delay<span class="w"> </span><span class="m">500</span>
+</span><span id="__span-44-38"><a id="__codelineno-44-38" name="__codelineno-44-38" href="#__codelineno-44-38"></a>
+</span><span id="__span-44-39"><a id="__codelineno-44-39" name="__codelineno-44-39" href="#__codelineno-44-39"></a><span class="c1"># Bestätigen (je nach Datei-Manager)</span>
+</span><span id="__span-44-40"><a id="__codelineno-44-40" name="__codelineno-44-40" href="#__codelineno-44-40"></a>ydotool<span class="w"> </span>key<span class="w"> </span>Enter
+</span><span id="__span-44-41"><a id="__codelineno-44-41" name="__codelineno-44-41" href="#__codelineno-44-41"></a>
+</span><span id="__span-44-42"><a id="__codelineno-44-42" name="__codelineno-44-42" href="#__codelineno-44-42"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Datenverarbeitung abgeschlossen&quot;</span>
 </span></code></pre></div>
 <hr />
 <h2 id="ressourcen-und-weiterfuhrende-links">📚 Ressourcen und weiterführende Links<a class="headerlink" href="#ressourcen-und-weiterfuhrende-links" title="Permanent link">&para;</a></h2>

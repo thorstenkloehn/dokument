@@ -1442,8 +1442,6 @@
       
         
       
-        
-      
     
     
     
@@ -2524,67 +2522,6 @@
       
         
       
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../wikijs-linux-installation/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Wiki.js
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
         
       
         
@@ -3028,8 +2965,6 @@
       
         
       
-        
-      
     
     
     
@@ -3090,7 +3025,7 @@
 
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 <h1 id="ki-gestutzter-export-drupal-mkdocszensical-xwiki-mediawiki-und-wikijs">KI-gestützter Export: Drupal → mkdocs/Zensical, XWiki, MediaWiki und Wiki.js<a class="headerlink" href="#ki-gestutzter-export-drupal-mkdocszensical-xwiki-mediawiki-und-wikijs" title="Permanent link">&para;</a></h1>
-<p>Der <a href="../export-nach-mkdocs/">reine Export nach mkdocs/Zensical</a> konvertiert Drupal-Inhalte 1:1 per Pandoc. Dieses Kapitel erweitert den Ansatz um zwei Dinge: eine <strong>LLM-Schicht</strong>, die den oft unaufgeräumten Drupal-HTML-Body bereinigt und automatisch kategorisiert, und einen <strong>Fan-out</strong> derselben aufbereiteten Inhalte in vier Zielsysteme gleichzeitig — <a href="../export-nach-mkdocs/">mkdocs/Zensical</a>, <a href="../../xwiki/xwiki-ki-agent/">XWiki</a>, <a href="../../mediawiki/mediawiki-ki-agent/">MediaWiki</a> und <a href="../../wikijs-ki-agent/">Wiki.js</a>. Es baut damit auf denselben KI-Agenten-Mustern auf, die dieses Repository bereits für jedes der drei Wiki-Systeme einzeln dokumentiert, sowie auf der <a href="../../ki-autonome-wiki-strukturierung-selfhosting-migration/">autonomen Wiki-Strukturierung</a>.</p>
+<p>Der <a href="../export-nach-mkdocs/">reine Export nach mkdocs/Zensical</a> konvertiert Drupal-Inhalte 1:1 per Pandoc. Dieses Kapitel erweitert den Ansatz um zwei Dinge: eine <strong>LLM-Schicht</strong>, die den oft unaufgeräumten Drupal-HTML-Body bereinigt und automatisch kategorisiert, und einen <strong>Fan-out</strong> derselben aufbereiteten Inhalte in vier Zielsysteme gleichzeitig — <a href="../export-nach-mkdocs/">mkdocs/Zensical</a>, <a href="../../xwiki/xwiki-ki-agent/">XWiki</a>, <a href="../../mediawiki/mediawiki-ki-agent/">MediaWiki</a> und Wiki.js. Es baut damit auf denselben KI-Agenten-Mustern auf, die dieses Repository bereits für jedes der drei Wiki-Systeme einzeln dokumentiert, sowie auf der <a href="../../ki-autonome-wiki-strukturierung-selfhosting-migration/">autonomen Wiki-Strukturierung</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis: allgemeine Technik, keine Ankündigung</p>
 <p>Wie bei den anderen Drupal-Seiten dieses Kapitels beschreibt dieser Guide die technische Machbarkeit anhand einer beliebigen Drupal-Instanz — keine Ankündigung, dass ein konkretes System so migriert wird.</p>
@@ -3195,7 +3130,7 @@
 </span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">page</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">entwurf</span><span class="p">,</span> <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;KI-Entwurf: Import aus Drupal (Review ausstehend)&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <h3 id="wikijs-graphql-mit-ispublishedfalse">Wiki.js — GraphQL mit <code>isPublished:false</code><a class="headerlink" href="#wikijs-graphql-mit-ispublishedfalse" title="Permanent link">&para;</a></h3>
-<p>Reuse der <code>CREATE_DRAFT_MUTATION</code> aus <a href="../../wikijs-ki-agent/">Wiki.js Agenten-Pipeline</a>:</p>
+<p>Reuse der <code>CREATE_DRAFT_MUTATION</code> aus der Wiki.js-GraphQL-API:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">export_zu_wikijs</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">clean_html</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">markdown</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="p">[</span><span class="s2">&quot;pandoc&quot;</span><span class="p">,</span> <span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="s2">&quot;html&quot;</span><span class="p">,</span> <span class="s2">&quot;-t&quot;</span><span class="p">,</span> <span class="s2">&quot;gfm&quot;</span><span class="p">],</span>
@@ -3291,7 +3226,6 @@
 <li><a href="../migration-wikisysteme/">Migration nach Drupal</a> — die umgekehrte Richtung</li>
 <li><a href="../../mediawiki/mediawiki-ki-agent/">MediaWiki KI-Agent</a></li>
 <li><a href="../../xwiki/xwiki-ki-agent/">XWiki Agenten-Pipeline</a></li>
-<li><a href="../../wikijs-ki-agent/">Wiki.js Agenten-Pipeline</a></li>
 <li><a href="../../ki-autonome-wiki-strukturierung-selfhosting-migration/">KI strukturiert das Wiki autonom &amp; Selfhosting-Migration</a></li>
 <li><a href="../../../tools/pandoc/">Pandoc</a></li>
 <li><a href="../../">Dokumentationsübersicht</a></li>

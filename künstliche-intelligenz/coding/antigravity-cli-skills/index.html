@@ -1408,6 +1408,56 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bewahrte-verfahren-best-practices-zur-skill-entwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        💡 Bewährte Verfahren (Best Practices) zur Skill-Entwicklung
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Bewährte Verfahren (Best Practices) zur Skill-Entwicklung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prazise-aussagekraftige-description-schreiben" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Präzise &amp; aussagekräftige <code>description</code> schreiben
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-single-responsibility-principle-srp" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Single Responsibility Principle (SRP)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-unterlagen-in-references-auslagern" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Unterlagen in <code>references/</code> auslagern
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#4-kombiniere-anweisungen-mit-skripten" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3045,6 +3095,56 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bewahrte-verfahren-best-practices-zur-skill-entwicklung" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        💡 Bewährte Verfahren (Best Practices) zur Skill-Entwicklung
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Bewährte Verfahren (Best Practices) zur Skill-Entwicklung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prazise-aussagekraftige-description-schreiben" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Präzise &amp; aussagekräftige <code>description</code> schreiben
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-single-responsibility-principle-srp" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Single Responsibility Principle (SRP)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-unterlagen-in-references-auslagern" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Unterlagen in <code>references/</code> auslagern
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#4-kombiniere-anweisungen-mit-skripten" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3266,7 +3366,7 @@
 </span></code></pre></div>
 <h3 id="schritt-2-skillmd-mit-frontmatter-erstellen">Schritt 2: <code>SKILL.md</code> mit Frontmatter erstellen<a class="headerlink" href="#schritt-2-skillmd-mit-frontmatter-erstellen" title="Permanent link">&para;</a></h3>
 <p>Die Datei <code>SKILL.md</code> bildet das Herzstück des Skills. Sie <strong>muss</strong> einen YAML-Frontmatter-Header enthalten:</p>
-<p><div class="language-markdown highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>---
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>---
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>name: db-schema-checker
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="gu">description: Prüft PostgreSQL-Datenbankschemata auf fehlende Indizes, N+1 Abfragepotenziale und Konsistenzregeln. Aktivieren bei Datenbank-Migrationsfragen.</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="gu">---</span>
@@ -3287,29 +3387,24 @@
 </span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
 </span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="gu">## 🛠️ Hilfsskripte ausführen</span>
 </span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>Führe bei Bedarf das mitgelieferte Skript aus:
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>```bash
-</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>python3 .gemini/skills/db-schema-checker/scripts/check_indexes.py
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="sb">```bash</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>python3<span class="w"> </span>.gemini/skills/db-schema-checker/scripts/check_indexes.py
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="sb">```</span>
 </span></code></pre></div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>---
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>## 💡 Bewährte Verfahren (Best Practices) zur Skill-Entwicklung
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>### 1. Präzise &amp; aussagekräftige `description` schreiben
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Die `description` im YAML-Frontmatter entscheidet darüber, wann der Agent den Skill aktiviert.
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>- ❌ **Schlecht**: `description: Ein Skript für Datenbanken.`
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>- ✅ **Gut**: `description: Analysiert PostgreSQL Schemata, prüft Indizes und generiert Migrations-Skripte für SQLAlchemy.`
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>### 2. Single Responsibility Principle (SRP)
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>Ein Skill sollte sich auf **eine** spezifische Domäne oder Aufgabe konzentrieren (z. B. `zensical-docs`, `docker-hardening`, `unit-testing`). Erstellen Sie lieber mehrere kleine Skills als einen riesigen Monolithen.
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>### 3. Unterlagen in `references/` auslagern
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>Laden Sie große Dokumentationen nicht komplett in `SKILL.md`, da dies das Kontextfenster belastet. Verwenden Sie Unterordner:
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>```markdown
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>## Ausführliche Referenz
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>Weitere Details zur Konfiguration finden Sie in:
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>[references/rules.md](file:///.gemini/skills/my-skill/references/rules.md)
-</span></code></pre></div></p>
+<hr />
+<h2 id="bewahrte-verfahren-best-practices-zur-skill-entwicklung">💡 Bewährte Verfahren (Best Practices) zur Skill-Entwicklung<a class="headerlink" href="#bewahrte-verfahren-best-practices-zur-skill-entwicklung" title="Permanent link">&para;</a></h2>
+<h3 id="1-prazise-aussagekraftige-description-schreiben">1. Präzise &amp; aussagekräftige <code>description</code> schreiben<a class="headerlink" href="#1-prazise-aussagekraftige-description-schreiben" title="Permanent link">&para;</a></h3>
+<p>Die <code>description</code> im YAML-Frontmatter entscheidet darüber, wann der Agent den Skill aktiviert.
+- ❌ <strong>Schlecht</strong>: <code>description: Ein Skript für Datenbanken.</code>
+- ✅ <strong>Gut</strong>: <code>description: Analysiert PostgreSQL Schemata, prüft Indizes und generiert Migrations-Skripte für SQLAlchemy.</code></p>
+<h3 id="2-single-responsibility-principle-srp">2. Single Responsibility Principle (SRP)<a class="headerlink" href="#2-single-responsibility-principle-srp" title="Permanent link">&para;</a></h3>
+<p>Ein Skill sollte sich auf <strong>eine</strong> spezifische Domäne oder Aufgabe konzentrieren (z. B. <code>zensical-docs</code>, <code>docker-hardening</code>, <code>unit-testing</code>). Erstellen Sie lieber mehrere kleine Skills als einen riesigen Monolithen.</p>
+<h3 id="3-unterlagen-in-references-auslagern">3. Unterlagen in <code>references/</code> auslagern<a class="headerlink" href="#3-unterlagen-in-references-auslagern" title="Permanent link">&para;</a></h3>
+<p>Laden Sie große Dokumentationen nicht komplett in <code>SKILL.md</code>, da dies das Kontextfenster belastet. Verwenden Sie Unterordner:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gu">## Ausführliche Referenz</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Weitere Details zur Konfiguration finden Sie in:
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>[<span class="nt">references/rules.md</span>](<span class="na">file:///.gemini/skills/my-skill/references/rules.md</span>)
+</span></code></pre></div>
 <h3 id="4-kombiniere-anweisungen-mit-skripten">4. Kombiniere Anweisungen mit Skripten<a class="headerlink" href="#4-kombiniere-anweisungen-mit-skripten" title="Permanent link">&para;</a></h3>
 <p>Skills sind besonders mächtig, wenn sie Anweisungen in <code>SKILL.md</code> mit automatisierten Skripten in <code>scripts/</code> kombinieren.</p>
 <hr />

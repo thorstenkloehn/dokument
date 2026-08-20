@@ -1442,8 +1442,6 @@
       
         
       
-        
-      
     
     
     
@@ -2507,67 +2505,6 @@
       
         
       
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../wikijs-linux-installation/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Wiki.js
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
         
       
         
@@ -2994,8 +2931,6 @@
       
         
       
-        
-      
     
     
     
@@ -3056,14 +2991,14 @@
 
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 <h1 id="migration-nach-drupal-mediawiki-xwiki-wikijs-und-mkdocszensical-importieren">Migration nach Drupal: MediaWiki, XWiki, Wiki.js und mkdocs/Zensical importieren<a class="headerlink" href="#migration-nach-drupal-mediawiki-xwiki-wikijs-und-mkdocszensical-importieren" title="Permanent link">&para;</a></h1>
-<p>Praxis-Guide zum Extrahieren von Inhalten aus <a href="../../mediawiki/">MediaWiki</a>, <a href="../../xwiki/installieren/">XWiki</a>, <a href="../../wikijs-linux-installation/">Wiki.js</a> sowie aus einer <strong>statischen mkdocs/Zensical-Dokumentation</strong> (wie diesem Repository selbst) und zum Import in ein neu aufgesetztes <a href="../installieren/">Drupal</a> über dessen <strong>JSON:API</strong>.</p>
+<p>Praxis-Guide zum Extrahieren von Inhalten aus <a href="../../mediawiki/">MediaWiki</a>, <a href="../../xwiki/installieren/">XWiki</a>, Wiki.js sowie aus einer <strong>statischen mkdocs/Zensical-Dokumentation</strong> (wie diesem Repository selbst) und zum Import in ein neu aufgesetztes <a href="../installieren/">Drupal</a> über dessen <strong>JSON:API</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis: allgemeine Technik, keine Ankündigung</p>
 <p>Der mkdocs/Zensical-Abschnitt beschreibt die technische Machbarkeit anhand eines beliebigen mkdocs-basierten Doku-Repos — er ist kein Hinweis darauf, dass <strong>Wissen Ahrensburg</strong> selbst von Zensical auf Drupal wechselt. Laut <code>CLAUDE.md</code> bleibt dieses Repository ein reines, mit Zensical gebautes Content-Repo.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Hinweis: Zwei mögliche Wege</p>
-<p>Für große, wiederholbare Migrationen bietet Drupal Core die <strong>Migrate API</strong> (erweitert um die Contrib-Module <code>migrate_plus</code>/<code>migrate_tools</code>) — sie bildet Quell-, Prozess- und Zielschritte deklarativ in YAML ab und ist der von Drupal empfohlene Weg für dauerhaft gepflegte Migrationspfade. Für eine <strong>einmalige Übernahme</strong> ist der unten beschriebene, direkte Weg über kleine Python-Skripte gegen die JSON:API oft schneller aufgesetzt und passt zum Stil der übrigen API-Skripte in diesem Wiki (siehe <a href="../../xwiki/xwiki-rest-api/">XWiki REST API &amp; Python</a>, <a href="../../wikijs-ki-agent/">Wiki.js Agenten-Pipeline</a>).</p>
+<p>Für große, wiederholbare Migrationen bietet Drupal Core die <strong>Migrate API</strong> (erweitert um die Contrib-Module <code>migrate_plus</code>/<code>migrate_tools</code>) — sie bildet Quell-, Prozess- und Zielschritte deklarativ in YAML ab und ist der von Drupal empfohlene Weg für dauerhaft gepflegte Migrationspfade. Für eine <strong>einmalige Übernahme</strong> ist der unten beschriebene, direkte Weg über kleine Python-Skripte gegen die JSON:API oft schneller aufgesetzt und passt zum Stil der übrigen API-Skripte in diesem Wiki (siehe <a href="../../xwiki/xwiki-rest-api/">XWiki REST API &amp; Python</a>).</p>
 </div>
 <hr />
 <h2 id="ablauf">Ablauf<a class="headerlink" href="#ablauf" title="Permanent link">&para;</a></h2>
@@ -3084,7 +3019,7 @@
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Human-in-the-Loop wie bei den KI-Agenten-Pipelines</p>
-<p>Alle importierten Seiten werden mit <code>"status": false</code> (unveröffentlicht) angelegt — nach demselben Prinzip wie bei den <a href="../../wikijs-ki-agent/#governance-sicherheitsleitplanken">KI-Agenten-Pipelines</a> in diesem Wiki: Erst nach manueller Prüfung im Drupal-Backend wird eine Seite veröffentlicht. So verhindert ein fehlerhafter Konvertierungslauf nicht, dass kaputte Seiten live gehen.</p>
+<p>Alle importierten Seiten werden mit <code>"status": false</code> (unveröffentlicht) angelegt — nach demselben Prinzip wie bei den KI-Agenten-Pipelines in diesem Wiki: Erst nach manueller Prüfung im Drupal-Backend wird eine Seite veröffentlicht. So verhindert ein fehlerhafter Konvertierungslauf nicht, dass kaputte Seiten live gehen.</p>
 </div>
 <hr />
 <h2 id="voraussetzungen-in-drupal">Voraussetzungen in Drupal<a class="headerlink" href="#voraussetzungen-in-drupal" title="Permanent link">&para;</a></h2>
@@ -3182,7 +3117,7 @@
 </span></code></pre></div>
 <hr />
 <h2 id="3-wikijs-drupal">3. Wiki.js → Drupal<a class="headerlink" href="#3-wikijs-drupal" title="Permanent link">&para;</a></h2>
-<p>Wiki.js liefert den Seiteninhalt als Markdown über GraphQL (siehe <a href="../../wikijs-ki-agent/">Wiki.js Agenten-Pipeline</a>); Pandoc konvertiert erneut nach HTML.</p>
+<p>Wiki.js liefert den Seiteninhalt als Markdown über GraphQL; Pandoc konvertiert erneut nach HTML.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">WIKIJS_URL</span> <span class="o">=</span> <span class="s2">&quot;https://wiki.wissen-ahrensburg.de/graphql&quot;</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">WIKIJS_HEADERS</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer &lt;API_TOKEN&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
@@ -3286,7 +3221,6 @@
 <ul>
 <li><a href="../installieren/">Drupal installieren: Composer, PostgreSQL und Nginx</a></li>
 <li><a href="../../xwiki/xwiki-rest-api/">XWiki REST API &amp; Python</a></li>
-<li><a href="../../wikijs-ki-agent/">Wiki.js Agenten-Pipeline</a></li>
 <li><a href="../../mediawiki/mediawiki-python-bot/">MediaWiki Python Bot Automatisierung</a></li>
 <li><a href="../../../tools/pandoc/">Pandoc</a></li>
 <li><a href="../../">Dokumentationsübersicht</a></li>
