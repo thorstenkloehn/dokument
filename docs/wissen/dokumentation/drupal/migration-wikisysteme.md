@@ -1,12 +1,12 @@
 # Migration nach Drupal: MediaWiki, XWiki, Wiki.js und mkdocs/Zensical importieren
 
-Praxis-Guide zum Extrahieren von Inhalten aus [MediaWiki](../mediawiki/index.md), [XWiki](../xwiki/installieren.md), [Wiki.js](../wikijs-linux-installation.md) sowie aus einer **statischen mkdocs/Zensical-Dokumentation** (wie diesem Repository selbst) und zum Import in ein neu aufgesetztes [Drupal](installieren.md) über dessen **JSON:API**.
+Praxis-Guide zum Extrahieren von Inhalten aus [MediaWiki](../mediawiki/index.md), [XWiki](../xwiki/installieren.md), Wiki.js sowie aus einer **statischen mkdocs/Zensical-Dokumentation** (wie diesem Repository selbst) und zum Import in ein neu aufgesetztes [Drupal](installieren.md) über dessen **JSON:API**.
 
 !!! note "Hinweis: allgemeine Technik, keine Ankündigung"
     Der mkdocs/Zensical-Abschnitt beschreibt die technische Machbarkeit anhand eines beliebigen mkdocs-basierten Doku-Repos — er ist kein Hinweis darauf, dass **Wissen Ahrensburg** selbst von Zensical auf Drupal wechselt. Laut `CLAUDE.md` bleibt dieses Repository ein reines, mit Zensical gebautes Content-Repo.
 
 !!! note "Hinweis: Zwei mögliche Wege"
-    Für große, wiederholbare Migrationen bietet Drupal Core die **Migrate API** (erweitert um die Contrib-Module `migrate_plus`/`migrate_tools`) — sie bildet Quell-, Prozess- und Zielschritte deklarativ in YAML ab und ist der von Drupal empfohlene Weg für dauerhaft gepflegte Migrationspfade. Für eine **einmalige Übernahme** ist der unten beschriebene, direkte Weg über kleine Python-Skripte gegen die JSON:API oft schneller aufgesetzt und passt zum Stil der übrigen API-Skripte in diesem Wiki (siehe [XWiki REST API & Python](../xwiki/xwiki-rest-api.md), [Wiki.js Agenten-Pipeline](../wikijs-ki-agent.md)).
+    Für große, wiederholbare Migrationen bietet Drupal Core die **Migrate API** (erweitert um die Contrib-Module `migrate_plus`/`migrate_tools`) — sie bildet Quell-, Prozess- und Zielschritte deklarativ in YAML ab und ist der von Drupal empfohlene Weg für dauerhaft gepflegte Migrationspfade. Für eine **einmalige Übernahme** ist der unten beschriebene, direkte Weg über kleine Python-Skripte gegen die JSON:API oft schneller aufgesetzt und passt zum Stil der übrigen API-Skripte in diesem Wiki (siehe [XWiki REST API & Python](../xwiki/xwiki-rest-api.md)).
 
 ---
 
@@ -30,7 +30,7 @@ graph LR
     Diese Skripte migrieren reinen Seiteninhalt (Titel + HTML-Body). Bilder, Dateianhänge und Kategorien/Tags müssen separat migriert werden — z. B. Dateien direkt per `rsync` in `sites/default/files/` kopieren und anschließend als Drupal-Medien registrieren.
 
 !!! tip "Human-in-the-Loop wie bei den KI-Agenten-Pipelines"
-    Alle importierten Seiten werden mit `"status": false` (unveröffentlicht) angelegt — nach demselben Prinzip wie bei den [KI-Agenten-Pipelines](../wikijs-ki-agent.md#governance-sicherheitsleitplanken) in diesem Wiki: Erst nach manueller Prüfung im Drupal-Backend wird eine Seite veröffentlicht. So verhindert ein fehlerhafter Konvertierungslauf nicht, dass kaputte Seiten live gehen.
+    Alle importierten Seiten werden mit `"status": false` (unveröffentlicht) angelegt — nach demselben Prinzip wie bei den KI-Agenten-Pipelines in diesem Wiki: Erst nach manueller Prüfung im Drupal-Backend wird eine Seite veröffentlicht. So verhindert ein fehlerhafter Konvertierungslauf nicht, dass kaputte Seiten live gehen.
 
 ---
 
@@ -151,7 +151,7 @@ for summary in get_space_pages():
 
 ## 3. Wiki.js → Drupal
 
-Wiki.js liefert den Seiteninhalt als Markdown über GraphQL (siehe [Wiki.js Agenten-Pipeline](../wikijs-ki-agent.md)); Pandoc konvertiert erneut nach HTML.
+Wiki.js liefert den Seiteninhalt als Markdown über GraphQL; Pandoc konvertiert erneut nach HTML.
 
 ```python
 WIKIJS_URL = "https://wiki.wissen-ahrensburg.de/graphql"
@@ -237,7 +237,6 @@ for md_file in sorted(DOCS_DIR.rglob("*.md")):
 
 - [Drupal installieren: Composer, PostgreSQL und Nginx](installieren.md)
 - [XWiki REST API & Python](../xwiki/xwiki-rest-api.md)
-- [Wiki.js Agenten-Pipeline](../wikijs-ki-agent.md)
 - [MediaWiki Python Bot Automatisierung](../mediawiki/mediawiki-python-bot.md)
 - [Pandoc](../../tools/pandoc.md)
 - [Dokumentationsübersicht](../index.md)

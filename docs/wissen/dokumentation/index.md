@@ -83,7 +83,7 @@ Tools zur schnellen Erstellung von klassischen, inhaltsfokussierten Webseiten, B
 
 ### Klassische & Datenbank-gestützte Wikis (Relationales Backend)
 * **BookStack**: Ein modernes, einfach zu bedienendes Wiki mit einer hierarchischen Struktur (Bücher, Kapitel, Seiten), das auf PHP/Laravel basiert und eine MySQL/MariaDB-Datenbank erfordert.
-* **Wiki.js**: Ein mächtiges, modernes Wiki auf Node.js-Basis. Bietet Git-Sync, Markdown-Editoren und flexible Suchmaschinen wie **FlexSearch** sowie ein relationales Datenbank-Backend. (Siehe [native Linux-Installation](wikijs-linux-installation.md) und [Agenten-Pipeline](wikijs-ki-agent.md)).
+* **Wiki.js**: Ein mächtiges, modernes Wiki auf Node.js-Basis. Bietet Git-Sync, Markdown-Editoren und flexible Suchmaschinen wie **FlexSearch** sowie ein relationales Datenbank-Backend.
 * **MediaWiki**: Das PHP-Schwergewicht hinter Wikipedia. Perfekt für riesige Enzyklopädien und stark strukturierte Wikitext-Inhalte. (Siehe [Installationsanleitung](mediawiki/index.md), [Backup](mediawiki/backup.md) und [Wiederherstellung](mediawiki/wiederherstellen.md)).
 * **Semantic MediaWiki**: Eine Erweiterung für MediaWiki, die es ermöglicht, Wiki-Seiten mit strukturierten Daten (Semantik) zu versehen und diese abzufragen. (Siehe [Installationsanleitung](semantische-mediawiki/installieren.md), [Kurzform](semantische-mediawiki/kurzform.md) und [Erweiterungen](semantische-mediawiki/wichtige-erweiterungen.md)).
 * **XWiki**: Ein Enterprise-Wiki auf Java-Basis, das strukturierte Daten, eigene Applikationen innerhalb von Wiki-Seiten und tiefgreifende Rechteverwaltung unterstützt. (Siehe [Installationsanleitung](xwiki/installieren.md)).

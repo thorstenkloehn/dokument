@@ -178,5 +178,4 @@ Um wieder auf eine TCP-basierte Anbindung zu wechseln, in `server.xml` den Conne
 - [XWiki installieren und über Nginx bereitstellen](installieren.md)
 - [XWiki über APT installieren](installation-ueber-apt.md)
 - [Apache Tomcat 10.1 – HTTP-Connector-Referenz (unixDomainSocketPath)](https://tomcat.apache.org/tomcat-10.1-doc/config/http.html)
-- [Wiki.js über Unix-Socket anbinden](../wikijs-nginx-unix-socket.md) – gleiches Muster für Node.js/Wiki.js
 - [Nginx-Härtung](../../../entwicklung/infrastruktur/nginx-hardening.md)

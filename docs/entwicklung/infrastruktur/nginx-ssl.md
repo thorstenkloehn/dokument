@@ -79,7 +79,7 @@ sudo systemctl reload nginx
 !!! warning "Jeder Dienst braucht einen eigenen `server_name`"
     Der Zertifikatspfad (`/etc/letsencrypt/live/wissen-ahrensburg.de/…`) bleibt bei einem Wildcard-Zertifikat für alle Subdomains gleich — der `server_name` in jedem `server{}`-Block muss aber pro Dienst eindeutig sein. Deklarieren zwei `server{}`-Blöcke denselben `server_name` (z. B. weil beim Kopieren dieses Templates die Subdomain vergessen wurde), meldet Nginx `conflicting server name … ignored` und nur einer der beiden Blöcke wird tatsächlich bedient.
 
-Konkrete Backend-Anbindungen mit diesen beiden Zeilen, je auf eigener Subdomain (`xwiki.`, `mediawiki.`, `wiki.wissen-ahrensburg.de`): [XWiki installieren und über Nginx bereitstellen](../../wissen/dokumentation/xwiki/installieren.md), [Wiki.js: Netzwerk und Reverse Proxy](../../wissen/dokumentation/wikijs-linux-installation.md#7-netzwerk-und-reverse-proxy), [MediaWiki installieren](../../wissen/dokumentation/mediawiki/index.md).
+Konkrete Backend-Anbindungen mit diesen beiden Zeilen, je auf eigener Subdomain (`xwiki.`, `mediawiki.wissen-ahrensburg.de`): [XWiki installieren und über Nginx bereitstellen](../../wissen/dokumentation/xwiki/installieren.md), [MediaWiki installieren](../../wissen/dokumentation/mediawiki/index.md).
 
 !!! tip "Automatische Erneuerung"
     Von Certbot per Snap installierte Versionen richten üblicherweise automatisch einen `systemd`-Timer für die Erneuerung ein. Prüfen mit `sudo systemctl list-timers | grep certbot` und ein Dry-Run mit `sudo certbot renew --dry-run`.

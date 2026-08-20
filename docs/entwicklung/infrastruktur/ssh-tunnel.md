@@ -31,7 +31,7 @@ ssh -L 3000:127.0.0.1:3000 admin@server.example.org
 ssh -L 5432:db-internal.example.org:5432 admin@server.example.org
 ```
 
-Typische Einsatzzwecke: Admin-Oberflächen, Datenbank-Clients, interne Dashboards, einmalige Ersteinrichtungen (siehe [Wiki.js: Ersteinrichtung auf einem Headless-Server](../../wissen/dokumentation/wikijs-linux-installation.md)).
+Typische Einsatzzwecke: Admin-Oberflächen, Datenbank-Clients, interne Dashboards, einmalige Ersteinrichtungen.
 
 ### Remote Forwarding (`-R`)
 
@@ -77,7 +77,7 @@ ssh -L 8080:/var/lib/tomcat10/xwiki-socket/xwiki.sock user@server
 ssh -L /tmp/local.sock:127.0.0.1:5432 user@server
 ```
 
-Das ist unter anderem nützlich, um einen Dienst, der absichtlich nur über einen Unix-Socket lauscht — etwa nach den Anleitungen [XWiki über Unix-Socket anbinden](../../wissen/dokumentation/xwiki/xwiki-nginx-unix-socket.md) oder [Wiki.js über Unix-Socket anbinden](../../wissen/dokumentation/wikijs-nginx-unix-socket.md) — für eine Wartungssitzung testweise ohne Nginx direkt zu erreichen.
+Das ist unter anderem nützlich, um einen Dienst, der absichtlich nur über einen Unix-Socket lauscht — etwa nach der Anleitung [XWiki über Unix-Socket anbinden](../../wissen/dokumentation/xwiki/xwiki-nginx-unix-socket.md) — für eine Wartungssitzung testweise ohne Nginx direkt zu erreichen.
 
 ---
 
@@ -198,5 +198,3 @@ Meist eine tote TCP-Verbindung ohne Keepalive. Mit `ServerAliveInterval`/`Server
 - [UFW-Firewall installieren und steuern](ufw-firewall.md)
 - [systemd-Dienste erstellen](../system/systemd-service-creation.md)
 - [XWiki über Unix-Socket anbinden](../../wissen/dokumentation/xwiki/xwiki-nginx-unix-socket.md)
-- [Wiki.js über Unix-Socket anbinden](../../wissen/dokumentation/wikijs-nginx-unix-socket.md)
-- [Wiki.js nativ unter Linux installieren](../../wissen/dokumentation/wikijs-linux-installation.md)
