@@ -818,7 +818,7 @@ ydotool key b
 4. **Skripte vorab testen**
    ```bash
    # Einzelne Befehle testen
-ydotool key a
+   ydotool key a
    ydotool mousemove 100 100
    
    # Erst dann komplexe Skripte erstellen

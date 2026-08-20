@@ -40,7 +40,7 @@ Eine gut strukturierte `AGENTS.md` ist übersichtlich in logische Abschnitte unt
 
 ### Empfohlener Aufbau einer `AGENTS.md`
 
-```markdown
+````markdown
 # AGENTS.md – Projektregeln für Antigravity CLI
 
 ## 1. Projektübersicht & Architektur
@@ -68,7 +68,7 @@ npm run ver                                # Deployment
 ## 5. Werkzeug- & Berechtigungsgrenzen
 - Schreibzugriffe sind auf das Verzeichnis `docs/` und `src/` beschränkt.
 - Datenbank-Migrationen dürfen nur nach Rückfrage beim Benutzer gestartet werden.
-```
+````
 
 ---
 

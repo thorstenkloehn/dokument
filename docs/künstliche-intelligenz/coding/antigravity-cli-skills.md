@@ -48,7 +48,7 @@ mkdir -p .gemini/skills/db-schema-checker
 
 Die Datei `SKILL.md` bildet das Herzstück des Skills. Sie **muss** einen YAML-Frontmatter-Header enthalten:
 
-```markdown
+````markdown
 ---
 name: db-schema-checker
 description: Prüft PostgreSQL-Datenbankschemata auf fehlende Indizes, N+1 Abfragepotenziale und Konsistenzregeln. Aktivieren bei Datenbank-Migrationsfragen.
@@ -73,7 +73,7 @@ Führe bei Bedarf das mitgelieferte Skript aus:
 ```bash
 python3 .gemini/skills/db-schema-checker/scripts/check_indexes.py
 ```
-```
+````
 
 ---
 
