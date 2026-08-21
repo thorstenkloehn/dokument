@@ -302,6 +302,11 @@ nav:
           - 'Khoj: KI-„Zweites Gehirn" für persönliche Wissenssuche': wissen/dokumentation/khoj-ki-zweites-gehirn.md
           - "Personal Knowledge Management (PKM) & Second Brain": wissen/dokumentation/pkm-second-brain-methoden.md
           - "Wissensdatenbanken mit KI & semantischer Suche": wissen/dokumentation/wissensdatenbanken-ki-semantische-suche.md
+          - Drupal:
+              - Installieren (Composer, PostgreSQL, Nginx): wissen/dokumentation/drupal/installieren.md
+              - "Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical": wissen/dokumentation/drupal/migration-wikisysteme.md
+              - "Export zurück nach mkdocs/Zensical": wissen/dokumentation/drupal/export-nach-mkdocs.md
+              - "KI-gestützter Export: mkdocs, XWiki, MediaWiki, Wiki.js": wissen/dokumentation/drupal/ki-export-multi-ziel.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - "Entwicklungsrechner: localhost mit Nginx und PostgreSQL": wissen/dokumentation/mediawiki/entwicklungsrechner-localhost.md
