@@ -1,6 +1,6 @@
 # KI-Modelle & Frameworks: Übersicht
 
-Eine zentralisierte Übersicht über künstliche Intelligenz-Modelle, Sprachmodelle (LLMs), Diffusionsmodelle, Frameworks und Bibliotheken für Entwicklung, Training und Deployment.
+Eine zentralisierte Übersicht über künstliche Intelligenz-Modelle, Sprachmodelle (LLMs), Diffusionsmodelle, Frameworks und Bibliotheken für Entwicklung, Training und Deployment. Einen chronologischen Blick auf die technologischen Generationen von KI-Anwendungen — von Expertensystemen bis zu autonomen Agenten-Ökosystemen — bietet [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md).
 
 ---
 

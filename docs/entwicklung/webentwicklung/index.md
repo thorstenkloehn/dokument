@@ -1,6 +1,6 @@
 # Webentwicklung & KI: Übersicht
 
-Eine zentralisierte Übersicht über Strategien, Tools und Best Practices für die moderne Webentwicklung mit künstlicher Intelligenz. Diese Dokumentation konzentriert sich auf **praktische Anwendungen** von KI in der Webentwicklung – vom Frontend-Design bis zur Backend-Optimierung.
+Eine zentralisierte Übersicht über Strategien, Tools und Best Practices für die moderne Webentwicklung mit künstlicher Intelligenz. Diese Dokumentation konzentriert sich auf **praktische Anwendungen** von KI in der Webentwicklung – vom Frontend-Design bis zur Backend-Optimierung. Einen chronologischen Blick auf die technologischen Generationen der zugrunde liegenden Web-Frameworks bietet [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md).
 
 ---
 

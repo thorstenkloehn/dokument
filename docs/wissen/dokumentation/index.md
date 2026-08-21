@@ -1,6 +1,6 @@
 # Dokumentenerstellung, Wikis & Notebooks
 
-Diese Kategorie bietet eine strukturierte Übersicht über Systeme zur Dokumentenerstellung, kollaborative Wikis, interaktive Notebooks sowie Werkzeuge zur programmatischen Generierung von Dokumenten und zur Anbindung von KI-Agenten (RAG).
+Diese Kategorie bietet eine strukturierte Übersicht über Systeme zur Dokumentenerstellung, kollaborative Wikis, interaktive Notebooks sowie Werkzeuge zur programmatischen Generierung von Dokumenten und zur Anbindung von KI-Agenten (RAG). Die folgende Gliederung sortiert nach Funktion; einen chronologischen Blick auf sechs technologische Generationen von Wiki bis Multi-Agenten-Ökosystem bietet [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md), das analoge Generationenmodell für Content-Management-Systeme [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md).
 
 ```mermaid
 graph TD

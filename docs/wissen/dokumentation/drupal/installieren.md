@@ -206,6 +206,7 @@ Meldet der `curl`-Aufruf `HTTP/2 200`, ist die Installation erreichbar. Danach i
 - [Drupal: Systemanforderungen](https://www.drupal.org/docs/system-requirements)
 - [Drupal: Installation per Composer](https://www.drupal.org/docs/develop/using-composer/starting-a-site-using-composer)
 - [Drush-Dokumentation](https://www.drush.org/)
+- [Evolution und Architekturen von Drupal](evolution-digitaler-drupal.md) — historische Einordnung der hier installierten Drupal-10.x/11.x-Generation
 - [Migration von MediaWiki, XWiki und Wiki.js nach Drupal](migration-wikisysteme.md)
 - [UFW-Firewall installieren und steuern](../../../entwicklung/infrastruktur/ufw-firewall.md)
 - [SSH-Tunnel: Portweiterleitung über SSH](../../../entwicklung/infrastruktur/ssh-tunnel.md)

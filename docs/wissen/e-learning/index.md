@@ -1,6 +1,6 @@
 # E-Learning-Autorentools & Interaktive Lernumgebungen
 
-Dieses Dokument bietet eine strukturierte Übersicht über gängige Werkzeuge, Architekturen und Konzepte zur Erstellung von Lerninhalten – von klassischen Autorenwerkzeugen bis hin zu modernen, code-nahen Sandbox-Systemen und KI-gestützten Lernumgebungen.
+Dieses Dokument bietet eine strukturierte Übersicht über gängige Werkzeuge, Architekturen und Konzepte zur Erstellung von Lerninhalten – von klassischen Autorenwerkzeugen bis hin zu modernen, code-nahen Sandbox-Systemen und KI-gestützten Lernumgebungen. Einen chronologischen Blick auf die technologischen Generationen der zugrunde liegenden Lernmanagement-Systeme (LMS) bietet [Evolution und Architekturen digitaler Lernmanagement-Systeme](evolution-digitaler-lms.md).
 
 ---
 

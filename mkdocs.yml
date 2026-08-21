@@ -8,6 +8,7 @@ nav:
   # 🤖 KI & AUTOMATISIERUNG
   - KI & Automatisierung:
       - Übersicht: künstliche-intelligenz/index.md
+      - "Evolution und Architekturen digitaler KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md
 
       - KI-Coding:
           - Übersicht: künstliche-intelligenz/coding/index.md
@@ -141,6 +142,7 @@ nav:
 
       - Webentwicklung:
           - Übersicht: entwicklung/webentwicklung/index.md
+          - "Evolution und Architekturen digitaler Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-webframeworks.md
           - KI Webentwicklung: entwicklung/webentwicklung/ki-webentwicklung.md
           - Frontend mit KI: entwicklung/webentwicklung/frontend-ki.md
           - Backend-Integration: entwicklung/webentwicklung/backend-integration.md
@@ -269,6 +271,7 @@ nav:
 
       - E-Learning:
           - Übersicht: wissen/e-learning/index.md
+          - "Evolution und Architekturen digitaler LMS": wissen/e-learning/evolution-digitaler-lms.md
           - KI in Lehre & Weiterbildung: wissen/e-learning/ki-lehre-weiterbildung.md
           - Beste KI-Agenten für Deutsch- und Fremdsprachenlernen (Open Source, Top 20): wissen/e-learning/sprachlern-ki-agenten-topliste.md
           - Moderne Lernmethoden für Programmiersprachen: wissen/e-learning/lernmethoden-programmiersprachen.md
@@ -285,6 +288,8 @@ nav:
 
       - Dokumentation:
           - Übersicht: wissen/dokumentation/index.md
+          - "Evolution und Architekturen digitaler Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssysteme.md
+          - "Evolution und Architekturen digitaler Content-Management-Systeme": wissen/dokumentation/evolution-digitaler-cms.md
           - Native „LLM-first" Wiki-Tools & Agenten: wissen/dokumentation/llm-first-wiki-tools-agenten.md
           - Klassische Wiki-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wiki-systeme-llm-integration.md
           - Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wissensmanagement-cms-llm-integration.md
@@ -303,6 +308,7 @@ nav:
           - "Personal Knowledge Management (PKM) & Second Brain": wissen/dokumentation/pkm-second-brain-methoden.md
           - "Wissensdatenbanken mit KI & semantischer Suche": wissen/dokumentation/wissensdatenbanken-ki-semantische-suche.md
           - Drupal:
+              - "Evolution und Architekturen von Drupal": wissen/dokumentation/drupal/evolution-digitaler-drupal.md
               - Installieren (Composer, PostgreSQL, Nginx): wissen/dokumentation/drupal/installieren.md
               - "Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical": wissen/dokumentation/drupal/migration-wikisysteme.md
               - "Export zurück nach mkdocs/Zensical": wissen/dokumentation/drupal/export-nach-mkdocs.md
