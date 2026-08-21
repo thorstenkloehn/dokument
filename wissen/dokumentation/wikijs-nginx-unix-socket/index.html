@@ -10,36 +10,36 @@
       
       
       
-        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/moodle/installieren/">
+        <link rel="canonical" href="https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wikijs-nginx-unix-socket/">
       
       
-        <link rel="prev" href="../../mediawiki/mediawiki-php-extension/">
+        <link rel="prev" href="../wikijs-linux-installation/">
       
       
-        <link rel="next" href="../../semantische-mediawiki/installieren/">
+        <link rel="next" href="../wikijs-ki-agent/">
       
       
         
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.52">
     
     
       
-        <title>Moodle installieren: Git, PostgreSQL und Nginx - Wissen Ahrensburg</title>
+        <title>Wiki.js über Unix-Socket mit Nginx bereitstellen - Wissen Ahrensburg</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../../../assets/stylesheets/modern/main.8b3b5a67.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.8b3b5a67.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
   
@@ -123,9 +123,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
   
@@ -152,7 +152,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#moodle-installieren-git-postgresql-und-nginx" class="md-skip">
+        <a href="#wikijs-uber-unix-socket-mit-nginx-bereitstellen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -168,7 +168,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
-    <a href="../../../.." title="Wissen Ahrensburg" class="md-header__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+    <a href="../../.." title="Wissen Ahrensburg" class="md-header__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
@@ -188,7 +188,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Moodle installieren: Git, PostgreSQL und Nginx
+              Wiki.js über Unix-Socket mit Nginx bereitstellen
             
           </span>
         </div>
@@ -256,7 +256,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   Start
@@ -289,7 +289,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../k%C3%BCnstliche-intelligenz/" class="md-tabs__link">
+        <a href="../../../k%C3%BCnstliche-intelligenz/" class="md-tabs__link">
           
   
   KI & Automatisierung
@@ -325,7 +325,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../entwicklung/erste-schritte/" class="md-tabs__link">
+        <a href="../../../entwicklung/erste-schritte/" class="md-tabs__link">
           
   
   Entwicklung
@@ -383,7 +383,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../kreativ/design/" class="md-tabs__link">
+        <a href="../../../kreativ/design/" class="md-tabs__link">
           
   
   Kreativ
@@ -442,7 +442,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../daten/datenbanken/" class="md-tabs__link">
+        <a href="../../daten/datenbanken/" class="md-tabs__link">
           
   
   Wissen
@@ -481,7 +481,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../rechtliches/impressum/" class="md-tabs__link">
+        <a href="../../../rechtliches/impressum/" class="md-tabs__link">
           
   
   Rechtliches
@@ -520,7 +520,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Wissen Ahrensburg" class="md-nav__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
+    <a href="../../.." title="Wissen Ahrensburg" class="md-nav__button md-logo" aria-label="Wissen Ahrensburg" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
@@ -538,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -596,7 +596,7 @@
   
   
   
-    <a href="../../../../k%C3%BCnstliche-intelligenz/" class="md-nav__link">
+    <a href="../../../k%C3%BCnstliche-intelligenz/" class="md-nav__link">
       
   
   
@@ -662,7 +662,7 @@
   
   
   
-    <a href="../../../../entwicklung/erste-schritte/" class="md-nav__link">
+    <a href="../../../entwicklung/erste-schritte/" class="md-nav__link">
       
   
   
@@ -726,7 +726,7 @@
   
   
   
-    <a href="../../../../kreativ/design/" class="md-nav__link">
+    <a href="../../../kreativ/design/" class="md-nav__link">
       
   
   
@@ -859,7 +859,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../daten/datenbanken/" class="md-nav__link ">
+            <a href="../../daten/datenbanken/" class="md-nav__link ">
               
   
   
@@ -901,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../daten/datenbanken/pgvector-anleitung/" class="md-nav__link">
+      <a href="../../daten/datenbanken/pgvector-anleitung/" class="md-nav__link">
         
   
   
@@ -956,7 +956,7 @@
   
   
   
-    <a href="../../../daten/datenerfassung/" class="md-nav__link">
+    <a href="../../daten/datenerfassung/" class="md-nav__link">
       
   
   
@@ -1033,7 +1033,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../e-learning/" class="md-nav__link ">
+            <a href="../../e-learning/" class="md-nav__link ">
               
   
   
@@ -1075,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../e-learning/ki-lehre-weiterbildung/" class="md-nav__link">
+      <a href="../../e-learning/ki-lehre-weiterbildung/" class="md-nav__link">
         
   
   
@@ -1102,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../e-learning/sprachlern-ki-agenten-topliste/" class="md-nav__link">
+      <a href="../../e-learning/sprachlern-ki-agenten-topliste/" class="md-nav__link">
         
   
   
@@ -1129,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../e-learning/lernmethoden-programmiersprachen/" class="md-nav__link">
+      <a href="../../e-learning/lernmethoden-programmiersprachen/" class="md-nav__link">
         
   
   
@@ -1156,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../e-learning/interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
+      <a href="../../e-learning/interaktive-lernplattformen-kurserstellung/" class="md-nav__link">
         
   
   
@@ -1225,7 +1225,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../tools/" class="md-nav__link ">
+            <a href="../../tools/" class="md-nav__link ">
               
   
   
@@ -1295,7 +1295,7 @@
   
   
   
-    <a href="../../../tools/pandoc/" class="md-nav__link">
+    <a href="../../tools/pandoc/" class="md-nav__link">
       
   
   
@@ -1328,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/analysetool/" class="md-nav__link">
+      <a href="../../tools/analysetool/" class="md-nav__link">
         
   
   
@@ -1355,7 +1355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/benchmark/" class="md-nav__link">
+      <a href="../../tools/benchmark/" class="md-nav__link">
         
   
   
@@ -1440,8 +1440,6 @@
       
         
       
-        
-      
     
     
     
@@ -1464,7 +1462,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1506,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm-first-wiki-tools-agenten/" class="md-nav__link">
+      <a href="../llm-first-wiki-tools-agenten/" class="md-nav__link">
         
   
   
@@ -1533,7 +1531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../klassische-wiki-systeme-llm-integration/" class="md-nav__link">
+      <a href="../klassische-wiki-systeme-llm-integration/" class="md-nav__link">
         
   
   
@@ -1560,7 +1558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
+      <a href="../klassische-wissensmanagement-cms-llm-integration/" class="md-nav__link">
         
   
   
@@ -1587,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source-llm-agent-mcp-systeme/" class="md-nav__link">
+      <a href="../open-source-llm-agent-mcp-systeme/" class="md-nav__link">
         
   
   
@@ -1614,7 +1612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wissensmanagement-mcp-server-topliste/" class="md-nav__link">
+      <a href="../wissensmanagement-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1641,7 +1639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cms-mcp-server-topliste/" class="md-nav__link">
+      <a href="../cms-mcp-server-topliste/" class="md-nav__link">
         
   
   
@@ -1668,7 +1666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm-wiki-pattern-karpathy/" class="md-nav__link">
+      <a href="../llm-wiki-pattern-karpathy/" class="md-nav__link">
         
   
   
@@ -1695,7 +1693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
+      <a href="../ki-autonome-wiki-strukturierung-selfhosting-migration/" class="md-nav__link">
         
   
   
@@ -1722,7 +1720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../openwiki-repo-dokumentation-agent/" class="md-nav__link">
+      <a href="../openwiki-repo-dokumentation-agent/" class="md-nav__link">
         
   
   
@@ -1749,7 +1747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../onyx-danswer-rag-plattform/" class="md-nav__link">
+      <a href="../onyx-danswer-rag-plattform/" class="md-nav__link">
         
   
   
@@ -1776,7 +1774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../anythingllm-rag-plattform/" class="md-nav__link">
+      <a href="../anythingllm-rag-plattform/" class="md-nav__link">
         
   
   
@@ -1803,7 +1801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-webui-rag-agenten-plattform/" class="md-nav__link">
+      <a href="../open-webui-rag-agenten-plattform/" class="md-nav__link">
         
   
   
@@ -1830,7 +1828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dify-agenten-workflow-plattform/" class="md-nav__link">
+      <a href="../dify-agenten-workflow-plattform/" class="md-nav__link">
         
   
   
@@ -1857,7 +1855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../flowise-visueller-flow-builder/" class="md-nav__link">
+      <a href="../flowise-visueller-flow-builder/" class="md-nav__link">
         
   
   
@@ -1884,7 +1882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../khoj-ki-zweites-gehirn/" class="md-nav__link">
+      <a href="../khoj-ki-zweites-gehirn/" class="md-nav__link">
         
   
   
@@ -1911,7 +1909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pkm-second-brain-methoden/" class="md-nav__link">
+      <a href="../pkm-second-brain-methoden/" class="md-nav__link">
         
   
   
@@ -1938,7 +1936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
+      <a href="../wissensdatenbanken-ki-semantische-suche/" class="md-nav__link">
         
   
   
@@ -1968,69 +1966,6 @@
     
       
         
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../drupal/installieren/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Drupal
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
           
         
       
@@ -2068,7 +2003,7 @@
   
   
   
-    <a href="../../mediawiki/" class="md-nav__link">
+    <a href="../mediawiki/" class="md-nav__link">
       
   
   
@@ -2098,12 +2033,81 @@
                 
   
   
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../semantische-mediawiki/installieren/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Semantisches MediaWiki
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
   
     
     
+      
+        
+      
+        
       
         
       
@@ -2132,7 +2136,7 @@
   <span class="md-ellipsis">
     
   
-  Moodle
+  Wiki.js
 
     
   </span>
@@ -2147,10 +2151,37 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-  Moodle
+  Wiki.js
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wikijs-linux-installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Native Linux-Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -2175,7 +2206,7 @@
   <span class="md-ellipsis">
     
   
-  Installieren (Git, PostgreSQL, Nginx)
+  Nginx über Unix-Socket anbinden
 
     
   </span>
@@ -2192,7 +2223,7 @@
   <span class="md-ellipsis">
     
   
-  Installieren (Git, PostgreSQL, Nginx)
+  Nginx über Unix-Socket anbinden
 
     
   </span>
@@ -2218,6 +2249,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#warum-trotzdem-ein-unix-socket" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Warum trotzdem ein Unix-Socket?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2229,10 +2271,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-php-erweiterungen-und-postgresql-installieren" class="md-nav__link">
+  <a href="#ablauf" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        1. PHP, Erweiterungen und PostgreSQL installieren
+        Ablauf
       </span>
     </span>
   </a>
@@ -2240,10 +2282,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-moodle-per-git-installieren" class="md-nav__link">
+  <a href="#1-socket-verzeichnis-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        2. Moodle per Git installieren
+        1. Socket-Verzeichnis anlegen
       </span>
     </span>
   </a>
@@ -2251,10 +2293,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-datenverzeichnis-anlegen" class="md-nav__link">
+  <a href="#2-nginx-benutzer-zur-wikijs-gruppe-hinzufugen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        3. Datenverzeichnis anlegen
+        2. Nginx-Benutzer zur <code>wikijs</code>-Gruppe hinzufügen
       </span>
     </span>
   </a>
@@ -2262,10 +2304,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-postgresql-datenbank-anlegen" class="md-nav__link">
+  <a href="#3-configyml-anpassen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        4. PostgreSQL-Datenbank anlegen
+        3. <code>config.yml</code> anpassen
       </span>
     </span>
   </a>
@@ -2273,10 +2315,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-site-installation-headless-per-cli" class="md-nav__link">
+  <a href="#4-systemd-dienst-anpassen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        5. Site-Installation headless per CLI
+        4. <code>systemd</code>-Dienst anpassen
       </span>
     </span>
   </a>
@@ -2284,10 +2326,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-cron-job-einrichten" class="md-nav__link">
+  <a href="#5-nginx-konfiguration-anpassen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        6. Cron-Job einrichten
+        5. Nginx-Konfiguration anpassen
       </span>
     </span>
   </a>
@@ -2295,10 +2337,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-php-fpm-pool" class="md-nav__link">
+  <a href="#6-test" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        7. PHP-FPM-Pool
+        6. Test
       </span>
     </span>
   </a>
@@ -2306,43 +2348,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-nginx-konfiguration" class="md-nav__link">
+  <a href="#fehlerbehandlung" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        8. Nginx-Konfiguration
+        Fehlerbehandlung
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fehlerbehandlung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wikijs-startet-nicht-eaddrinuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Wiki.js startet nicht, <code>EADDRINUSE</code>
       </span>
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#9-firewall-ufw" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#nginx-meldet-permission-denied-beim-verbindungsaufbau" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        9. Firewall (UFW)
+        Nginx meldet „Permission denied" beim Verbindungsaufbau
       </span>
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#kurzprufung" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#ruckbau-auf-tcp-port" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Kurzprüfung
+        Rückbau auf TCP-Port
       </span>
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+  <a href="#weiterfuhrende-seiten" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Quellen und weiterführende Informationen
+        Weiterführende Seiten
       </span>
     </span>
   </a>
@@ -2353,6 +2412,33 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wikijs-ki-agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Agenten-Pipeline (Automatisierte Pflege mit LLMs)
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2405,72 +2491,7 @@
   
   
   
-    <a href="../../semantische-mediawiki/installieren/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Semantisches MediaWiki
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../xwiki/installieren/" class="md-nav__link">
+    <a href="../xwiki/installieren/" class="md-nav__link">
       
   
   
@@ -2552,7 +2573,7 @@
   
   
   
-    <a href="../../../../rechtliches/impressum/" class="md-nav__link">
+    <a href="../../../rechtliches/impressum/" class="md-nav__link">
       
   
   
@@ -2618,6 +2639,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#warum-trotzdem-ein-unix-socket" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Warum trotzdem ein Unix-Socket?
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#voraussetzungen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2629,10 +2661,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-php-erweiterungen-und-postgresql-installieren" class="md-nav__link">
+  <a href="#ablauf" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        1. PHP, Erweiterungen und PostgreSQL installieren
+        Ablauf
       </span>
     </span>
   </a>
@@ -2640,10 +2672,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-moodle-per-git-installieren" class="md-nav__link">
+  <a href="#1-socket-verzeichnis-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        2. Moodle per Git installieren
+        1. Socket-Verzeichnis anlegen
       </span>
     </span>
   </a>
@@ -2651,10 +2683,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-datenverzeichnis-anlegen" class="md-nav__link">
+  <a href="#2-nginx-benutzer-zur-wikijs-gruppe-hinzufugen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        3. Datenverzeichnis anlegen
+        2. Nginx-Benutzer zur <code>wikijs</code>-Gruppe hinzufügen
       </span>
     </span>
   </a>
@@ -2662,10 +2694,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-postgresql-datenbank-anlegen" class="md-nav__link">
+  <a href="#3-configyml-anpassen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        4. PostgreSQL-Datenbank anlegen
+        3. <code>config.yml</code> anpassen
       </span>
     </span>
   </a>
@@ -2673,10 +2705,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-site-installation-headless-per-cli" class="md-nav__link">
+  <a href="#4-systemd-dienst-anpassen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        5. Site-Installation headless per CLI
+        4. <code>systemd</code>-Dienst anpassen
       </span>
     </span>
   </a>
@@ -2684,10 +2716,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-cron-job-einrichten" class="md-nav__link">
+  <a href="#5-nginx-konfiguration-anpassen" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        6. Cron-Job einrichten
+        5. Nginx-Konfiguration anpassen
       </span>
     </span>
   </a>
@@ -2695,10 +2727,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-php-fpm-pool" class="md-nav__link">
+  <a href="#6-test" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        7. PHP-FPM-Pool
+        6. Test
       </span>
     </span>
   </a>
@@ -2706,43 +2738,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-nginx-konfiguration" class="md-nav__link">
+  <a href="#fehlerbehandlung" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        8. Nginx-Konfiguration
+        Fehlerbehandlung
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fehlerbehandlung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wikijs-startet-nicht-eaddrinuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Wiki.js startet nicht, <code>EADDRINUSE</code>
       </span>
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#9-firewall-ufw" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#nginx-meldet-permission-denied-beim-verbindungsaufbau" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        9. Firewall (UFW)
+        Nginx meldet „Permission denied" beim Verbindungsaufbau
       </span>
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#kurzprufung" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#ruckbau-auf-tcp-port" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Kurzprüfung
+        Rückbau auf TCP-Port
       </span>
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#quellen-und-weiterfuhrende-informationen" class="md-nav__link">
+  <a href="#weiterfuhrende-seiten" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Quellen und weiterführende Informationen
+        Weiterführende Seiten
       </span>
     </span>
   </a>
@@ -2774,7 +2823,7 @@
   
   
     <li class="md-path__item">
-      <a href="../../../.." class="md-path__link">
+      <a href="../../.." class="md-path__link">
         
   
   <span class="md-ellipsis">
@@ -2824,7 +2873,7 @@
     
     
       <li class="md-path__item">
-        <a href="../../../daten/datenbanken/" class="md-path__link">
+        <a href="../../daten/datenbanken/" class="md-path__link">
           
   
   <span class="md-ellipsis">
@@ -2892,14 +2941,12 @@
       
         
       
-        
-      
     
     
     
     
       <li class="md-path__item">
-        <a href="../../" class="md-path__link">
+        <a href="../" class="md-path__link">
           
   
   <span class="md-ellipsis">
@@ -2920,16 +2967,20 @@
       
         
       
+        
+      
+        
+      
     
     
     
     
       <li class="md-path__item">
-        <a href="././" class="md-path__link">
+        <a href="../wikijs-linux-installation/" class="md-path__link">
           
   
   <span class="md-ellipsis">
-    Moodle
+    Wiki.js
   </span>
 
         </a>
@@ -2947,188 +2998,141 @@
                   
 
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
-<h1 id="moodle-installieren-git-postgresql-und-nginx">Moodle installieren: Git, PostgreSQL und Nginx<a class="headerlink" href="#moodle-installieren-git-postgresql-und-nginx" title="Permanent link">&para;</a></h1>
-<p>Diese Anleitung richtet <strong>Moodle</strong> produktiv auf einem eigenen Server ein — per <strong>Git-Checkout</strong> (offizieller Installationsweg für Moodle, kein apt-Paket), mit <strong>PostgreSQL</strong> als Datenbank und <strong>Nginx</strong> als Reverse Proxy über PHP-FPM. Sie folgt demselben Muster wie die <a href="../../drupal/installieren/">Drupal-</a> und <a href="../../xwiki/installieren/">XWiki-Installation</a> in diesem Wiki.</p>
+<h1 id="wikijs-uber-unix-socket-mit-nginx-bereitstellen">Wiki.js über Unix-Socket mit Nginx bereitstellen<a class="headerlink" href="#wikijs-uber-unix-socket-mit-nginx-bereitstellen" title="Permanent link">&para;</a></h1>
+<p>Statt Wiki.js über einen internen TCP-Port anzusprechen (siehe <a href="../wikijs-linux-installation/">Wiki.js nativ unter Linux installieren</a>, Abschnitt „Netzwerk und Reverse Proxy"), lässt sich Nginx auch über einen <strong>Unix-Domain-Socket</strong> an Wiki.js anbinden. Node.js bindet dann keinen TCP-Port mehr, der lokal erreichbar wäre — die Kommunikation läuft ausschließlich über eine Datei im Dateisystem.</p>
 <div class="admonition warning">
-<p class="admonition-title">Achtung</p>
-<p>Die unterstützten PHP- und PostgreSQL-Versionen sowie der aktuell empfohlene Stable-/LTS-Zweig ändern sich mit jedem Moodle-Release. Vor einer Neuinstallation immer die aktuellen <a href="https://moodledev.io/general/releases">Moodle-Releases</a> prüfen. Diese Anleitung geht von <strong>PHP 8.3</strong> und <strong>PostgreSQL 14+</strong> aus.</p>
+<p class="admonition-title">Achtung: kein offiziell dokumentiertes Wiki.js-Feature</p>
+<p>Wiki.js dokumentiert in seiner <a href="https://docs.requarks.io/install/config">Konfigurationsreferenz</a> ausschließlich <code>port</code> als TCP-Port. Diese Anleitung nutzt stattdessen ein Verhalten von <strong>Node.js selbst</strong>: Wiki.js reicht den Wert von <code>port</code> unverändert an <code>server.listen(port, bindIP)</code> durch (siehe <a href="https://github.com/requarks/wiki/blob/main/server/core/servers.js"><code>server/core/servers.js</code></a> im Wiki.js-Quellcode, Stand August 2026). Node.js wiederum erkennt in seiner Argument-Normalisierung (<code>isPipeName()</code> in <a href="https://github.com/nodejs/node/blob/main/lib/net.js"><code>lib/net.js</code></a>), dass ein nicht-numerischer String kein Port, sondern ein Pfad ist, und öffnet stattdessen einen Unix-Socket an diesem Pfad — der zweite Parameter (<code>bindIP</code>) wird dabei stillschweigend ignoriert. Dieser Mechanismus ist ein stabiler, seit Langem dokumentierter Bestandteil der Node.js-Netzwerk-API, aber <strong>keine von Wiki.js offiziell unterstützte Konfiguration</strong>. Bei Problemen hilft der offizielle Wiki.js-Support daher vermutlich nicht weiter — vor einem Produktiveinsatz gründlich selbst testen und nach größeren Wiki.js-Updates erneut prüfen.</p>
 </div>
-<hr />
-<h2 id="voraussetzungen">Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Permanent link">&para;</a></h2>
+<h2 id="warum-trotzdem-ein-unix-socket">Warum trotzdem ein Unix-Socket?<a class="headerlink" href="#warum-trotzdem-ein-unix-socket" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Ubuntu-Server mit <code>sudo</code>-Rechten</li>
-<li>eine eigene Domain/Subdomain, z. B. <code>moodle.wissen-ahrensburg.de</code></li>
-<li>Nginx bereits mit SSL-Zertifikat eingerichtet (siehe <a href="../../../../entwicklung/infrastruktur/nginx-ssl/">Nginx &amp; SSL</a>)</li>
+<li><strong>Kein offener TCP-Port</strong> zwischen Wiki.js und Nginx — taucht nicht mehr in <code>ss -ltnp</code> auf.</li>
+<li><strong>Zugriffskontrolle über Dateisystemrechte</strong> statt Netzwerk-ACLs.</li>
+<li>Minimal geringerer Overhead gegenüber Loopback-TCP.</li>
 </ul>
-<hr />
-<h2 id="1-php-erweiterungen-und-postgresql-installieren">1. PHP, Erweiterungen und PostgreSQL installieren<a class="headerlink" href="#1-php-erweiterungen-und-postgresql-installieren" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>php8.3-fpm<span class="w"> </span>php8.3-cli<span class="w"> </span>php8.3-pgsql<span class="w"> </span>php8.3-gd<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>php8.3-xml<span class="w"> </span>php8.3-mbstring<span class="w"> </span>php8.3-curl<span class="w"> </span>php8.3-zip<span class="w"> </span>php8.3-intl<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>php8.3-soap<span class="w"> </span>php8.3-bcmath<span class="w"> </span>php8.3-opcache<span class="w"> </span>git<span class="w"> </span>postgresql
+<h2 id="voraussetzungen">Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Voraussetzung</th>
+<th>Prüfbefehl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>laufende Wiki.js-Installation nach <a href="../wikijs-linux-installation/">Native Linux-Installation</a></td>
+<td><code>sudo systemctl status wikijs</code></td>
+</tr>
+<tr>
+<td>Systembenutzer <code>wikijs</code> aus dieser Installation</td>
+<td><code>id wikijs</code></td>
+</tr>
+<tr>
+<td><code>sudo</code>-Rechte</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Nginx als vorgeschalteter Reverse Proxy</td>
+<td><code>nginx -v</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ablauf">Ablauf<a class="headerlink" href="#ablauf" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph LR
+    Browser["Browser"] --&gt;|"HTTPS 443"| Nginx["Nginx"]
+    Nginx --&gt;|"Unix-Socket"| Socket["/var/wiki/run/wikijs.sock"]
+    Socket --&gt; Node["Node.js - Wiki.js"]</code></pre>
+<h2 id="1-socket-verzeichnis-anlegen">1. Socket-Verzeichnis anlegen<a class="headerlink" href="#1-socket-verzeichnis-anlegen" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/wiki/run
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>wikijs:wikijs<span class="w"> </span>/var/wiki/run
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">750</span><span class="w"> </span>/var/wiki/run
 </span></code></pre></div>
-<p><code>php8.3-intl</code> und <code>php8.3-soap</code> werden von Moodle zusätzlich zu den bei Drupal üblichen Erweiterungen vorausgesetzt, <code>php8.3-bcmath</code> wird für präzise Bewertungsberechnungen im Gradebook empfohlen. <code>php8.3-pgsql</code> stellt den PDO-Treiber bereit, ohne den Moodle keine Verbindung zu PostgreSQL aufbauen kann.</p>
-<hr />
-<h2 id="2-moodle-per-git-installieren">2. Moodle per Git installieren<a class="headerlink" href="#2-moodle-per-git-installieren" title="Permanent link">&para;</a></h2>
-<p>Für Moodle gibt es kein offizielles apt-Paket — empfohlen ist ein Git-Checkout des jeweiligen Stable-Zweigs, da sich spätere Updates dann als einfaches <code>git pull</code> erledigen lassen, statt Dateien manuell zu ersetzen:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/moodle/moodle.git<span class="w"> </span>moodle
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">cd</span><span class="w"> </span>moodle
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>git<span class="w"> </span>branch<span class="w"> </span>-a<span class="w"> </span>--list<span class="w"> </span><span class="s2">&quot;origin/MOODLE_*_STABLE&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-V<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-5
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>-t<span class="w"> </span>origin/MOODLE_500_STABLE
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/moodle
+<h2 id="2-nginx-benutzer-zur-wikijs-gruppe-hinzufugen">2. Nginx-Benutzer zur <code>wikijs</code>-Gruppe hinzufügen<a class="headerlink" href="#2-nginx-benutzer-zur-wikijs-gruppe-hinzufugen" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>wikijs<span class="w"> </span>www-data
 </span></code></pre></div>
-<p>Der <code>git branch</code>-Aufruf listet die verfügbaren Stable-Zweige sortiert nach Version — daraus den aktuell unterstützten Zweig auswählen (siehe Warnhinweis oben) und statt <code>MOODLE_500_STABLE</code> einsetzen.</p>
-<hr />
-<h2 id="3-datenverzeichnis-anlegen">3. Datenverzeichnis anlegen<a class="headerlink" href="#3-datenverzeichnis-anlegen" title="Permanent link">&para;</a></h2>
-<p>Moodle benötigt außerhalb des Webroots ein separates Verzeichnis für hochgeladene Dateien, Caches und Sitzungsdaten (<code>$CFG-&gt;dataroot</code>) — es darf nicht von Nginx ausgeliefert werden:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/moodledata
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/moodledata
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">0770</span><span class="w"> </span>/var/moodledata
+<p>Wirksam wird die neue Gruppenmitgliedschaft erst nach einem Neustart von Nginx (siehe Schritt 5).</p>
+<h2 id="3-configyml-anpassen">3. <code>config.yml</code> anpassen<a class="headerlink" href="#3-configyml-anpassen" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/var/wiki/config.yml
 </span></code></pre></div>
-<p><code>0770</code> beschränkt den Zugriff auf den Besitzer und die Gruppe (<code>www-data</code>) — für andere Nutzer ist das Verzeichnis komplett gesperrt.</p>
-<hr />
-<h2 id="4-postgresql-datenbank-anlegen">4. PostgreSQL-Datenbank anlegen<a class="headerlink" href="#4-postgresql-datenbank-anlegen" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE ROLE moodle WITH LOGIN PASSWORD &#39;EIN_LANGES_ZUFAELLIGES_PASSWORT&#39;;&quot;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE DATABASE moodle OWNER moodle ENCODING &#39;UTF8&#39; LC_COLLATE &#39;C&#39; LC_CTYPE &#39;C&#39; TEMPLATE template0;&quot;</span>
+<p><code>port</code> auf den Socket-Pfad setzen; <code>bindIP</code> kann stehen bleiben, wird in diesem Fall aber ignoriert:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/wiki/run/wikijs.sock</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">bindIP</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.0.0</span>
 </span></code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Hinweis</p>
-<p>Moodle erwartet für PostgreSQL-Datenbanken explizit die Locale <code>C</code> statt der Systemlocale — deshalb <code>LC_COLLATE</code>/<code>LC_CTYPE</code> hier abweichend von einer sonst üblichen <code>de_DE.UTF-8</code>-Datenbank setzen. PostgreSQL lauscht per Default-Konfiguration ohnehin nur lokal (<code>listen_addresses = 'localhost'</code>); da Moodle über PHP-FPM auf demselben Host läuft, ist keine Netzwerkfreigabe für Port 5432 nötig.</p>
-</div>
-<hr />
-<h2 id="5-site-installation-headless-per-cli">5. Site-Installation headless per CLI<a class="headerlink" href="#5-site-installation-headless-per-cli" title="Permanent link">&para;</a></h2>
-<p>Anders als bei Drupal/Drush installiert sich Moodle über ein eigenes CLI-Skript direkt aus dem Core heraus:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/moodle
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>admin/cli/install.php<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>--wwwroot<span class="o">=</span><span class="s2">&quot;https://moodle.wissen-ahrensburg.de&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>--dataroot<span class="o">=</span>/var/moodledata<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span>--dbtype<span class="o">=</span>pgsql<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span>--dbhost<span class="o">=</span>localhost<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span>--dbname<span class="o">=</span>moodle<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span>--dbuser<span class="o">=</span>moodle<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span>--dbpass<span class="o">=</span>EIN_LANGES_ZUFAELLIGES_PASSWORT<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span>--fullname<span class="o">=</span><span class="s2">&quot;Wissen Ahrensburg&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span>--shortname<span class="o">=</span><span class="s2">&quot;WA-Moodle&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">  </span>--adminuser<span class="o">=</span>admin<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">  </span>--adminpass<span class="o">=</span>EIN_WEITERES_LANGES_PASSWORT<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">  </span>--agree-license<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">  </span>--non-interactive
+<h2 id="4-systemd-dienst-anpassen">4. <code>systemd</code>-Dienst anpassen<a class="headerlink" href="#4-systemd-dienst-anpassen" title="Permanent link">&para;</a></h2>
+<p>Node.js entfernt die Socket-Datei beim Beenden <strong>nicht automatisch</strong> (anders als z. B. Tomcat bei Unix-Sockets). Ohne Gegenmaßnahme schlägt der nächste Start mit <code>EADDRINUSE</code> fehl, weil die alte Datei noch existiert. Außerdem folgt die Zugriffsrechte-Vergabe der Socket-Datei dem Prozess-<code>umask</code>, der Standardwert von <code>systemd</code> (<code>0022</code>) würde der Gruppe keinen Schreibzugriff erlauben.</p>
+<p>Beide Punkte lassen sich in der bestehenden <code>/etc/systemd/system/wikijs.service</code> beheben:</p>
+<div class="language-ini highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">[Service]</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="na">User</span><span class="o">=</span><span class="s">wikijs</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="na">Group</span><span class="o">=</span><span class="s">wikijs</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/var/wiki</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="na">Environment</span><span class="o">=</span><span class="s">NODE_ENV=production</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="na">UMask</span><span class="o">=</span><span class="s">0007</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="na">ExecStartPre</span><span class="o">=</span><span class="s">-/usr/bin/rm -f /var/wiki/run/wikijs.sock</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/node server</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="na">Restart</span><span class="o">=</span><span class="s">on-failure</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="na">RestartSec</span><span class="o">=</span><span class="s">5</span>
 </span></code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Tipp: Browser-Assistent als Alternative</p>
-<p>Falls die nichtinteraktive Installation nicht ausreicht (z. B. für die Auswahl zusätzlicher Sprachpakete), lässt sich der grafische Installationsassistent wie bei den anderen Wiki-/CMS-Systemen in diesem Repository per <a href="../../../../entwicklung/infrastruktur/ssh-tunnel/">SSH-Tunnel</a> absichern, statt ihn öffentlich zu exponieren:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>/var/www/moodle
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>www-data<span class="w"> </span>php<span class="w"> </span>-S<span class="w"> </span><span class="m">127</span>.0.0.1:8888
+<p>Neu hinzugekommen sind <code>UMask=0007</code> (Socket wird mit <code>rwxrwx---</code> angelegt, <code>wikijs</code>-Gruppe erhält Lese- und Schreibzugriff) und <code>ExecStartPre=-/usr/bin/rm -f …</code> (entfernt eine eventuell zurückgebliebene Socket-Datei vor jedem Start; das führende <code>-</code> sorgt dafür, dass ein Start nicht fehlschlägt, falls die Datei nicht existiert).</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>wikijs
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>ls<span class="w"> </span>-l<span class="w"> </span>/var/wiki/run/wikijs.sock
 </span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ssh<span class="w"> </span>-L<span class="w"> </span><span class="m">8888</span>:127.0.0.1:8888<span class="w"> </span>admin@SERVER-IP
+<p>Die Ausgabe sollte etwa so aussehen:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>srwxrwx--- 1 wikijs wikijs 0 Aug 10 12:00 /var/wiki/run/wikijs.sock
 </span></code></pre></div>
-Der Assistent ist dann unter <code>http://127.0.0.1:8888</code> erreichbar, verschlüsselt über die SSH-Verbindung.</p>
-</div>
-<hr />
-<h2 id="6-cron-job-einrichten">6. Cron-Job einrichten<a class="headerlink" href="#6-cron-job-einrichten" title="Permanent link">&para;</a></h2>
-<p>Moodle muss <code>admin/cli/cron.php</code> mindestens jede Minute ausführen — dort laufen Benachrichtigungen, Kursaufgaben und geplante Tasks. Statt eines klassischen <code>crontab</code>-Eintrags empfiehlt die Moodle-Doku einen systemd-Timer, da dieser verhindert, dass ein neuer Lauf startet, während der vorige (z. B. bei einer aufwendigen Aufgabe) noch nicht beendet ist:</p>
-<div class="language-ini highlight"><span class="filename">/etc/systemd/system/moodle-cron.service</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">[Unit]</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Moodle Cron</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">[Service]</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="na">Type</span><span class="o">=</span><span class="s">oneshot</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="na">User</span><span class="o">=</span><span class="s">www-data</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/php /var/www/moodle/admin/cli/cron.php</span>
+<h2 id="5-nginx-konfiguration-anpassen">5. Nginx-Konfiguration anpassen<a class="headerlink" href="#5-nginx-konfiguration-anpassen" title="Permanent link">&para;</a></h2>
+<p><code>proxy_pass</code> von TCP auf den Unix-Socket umstellen:</p>
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">wiki.wissen-ahrensburg.de</span><span class="p">;</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem</span><span class="p">;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem</span><span class="p">;</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://unix:/var/wiki/run/wikijs.sock:/</span><span class="p">;</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Host</span><span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Real-IP</span><span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-For</span><span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-Proto</span><span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="p">}</span>
 </span></code></pre></div>
-<div class="language-ini highlight"><span class="filename">/etc/systemd/system/moodle-cron.timer</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">[Unit]</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Moodle Cron, jede Minute</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">[Timer]</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="na">OnBootSec</span><span class="o">=</span><span class="s">1min</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="na">OnUnitActiveSec</span><span class="o">=</span><span class="s">1min</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="na">AccuracySec</span><span class="o">=</span><span class="s">1sec</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">[Install]</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">timers.target</span>
+<p>Testen und neu starten (nicht nur <code>reload</code>, damit die neue Gruppenmitgliedschaft aus Schritt 2 greift):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>nginx
 </span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>moodle-cron.timer
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>systemctl<span class="w"> </span>list-timers<span class="w"> </span>moodle-cron.timer
+<h2 id="6-test">6. Test<a class="headerlink" href="#6-test" title="Permanent link">&para;</a></h2>
+<p>Direkt über den Socket, ohne Nginx:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>curl<span class="w"> </span>--unix-socket<span class="w"> </span>/var/wiki/run/wikijs.sock<span class="w"> </span>http://localhost/
 </span></code></pre></div>
-<p><code>Type=oneshot</code> sorgt zusammen mit dem Timer dafür, dass systemd den nächsten Lauf erst nach Abschluss des vorherigen einplant — ein manuelles Overlap-Locking wie bei klassischem Cron ist damit nicht nötig.</p>
-<hr />
-<h2 id="7-php-fpm-pool">7. PHP-FPM-Pool<a class="headerlink" href="#7-php-fpm-pool" title="Permanent link">&para;</a></h2>
-<p>Wie bei der Drupal-Installation empfiehlt sich ein eigener Pool, damit Moodle ressourcenseitig von anderen PHP-Diensten auf demselben Host isoliert ist, z. B. <code>/etc/php/8.3/fpm/pool.d/moodle.conf</code> mit <code>listen = /run/php/php8.3-fpm-moodle.sock</code>.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>php8.3-fpm
+<p>Anschließend über die öffentliche Domain im Browser aufrufen.</p>
+<h2 id="fehlerbehandlung">Fehlerbehandlung<a class="headerlink" href="#fehlerbehandlung" title="Permanent link">&para;</a></h2>
+<h3 id="wikijs-startet-nicht-eaddrinuse">Wiki.js startet nicht, <code>EADDRINUSE</code><a class="headerlink" href="#wikijs-startet-nicht-eaddrinuse" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-u<span class="w"> </span>wikijs<span class="w"> </span>-n<span class="w"> </span><span class="m">50</span><span class="w"> </span>--no-pager
 </span></code></pre></div>
-<hr />
-<h2 id="8-nginx-konfiguration">8. Nginx-Konfiguration<a class="headerlink" href="#8-nginx-konfiguration" title="Permanent link">&para;</a></h2>
-<p>Erstellen oder bearbeiten Sie <code>/etc/nginx/conf.d/moodle.conf</code>:</p>
-<div class="language-nginx highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">http2</span><span class="p">;</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">moodle.wissen-ahrensburg.de</span><span class="p">;</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/moodle</span><span class="p">;</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="kn">client_max_body_size</span><span class="w"> </span><span class="s">100M</span><span class="p">;</span>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/fullchain.pem</span><span class="p">;</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">/etc/letsencrypt/live/wissen-ahrensburg.de/privkey.pem</span><span class="p">;</span>
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
-</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">/\.git</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">^/(CHANGELOG|README|UPGRADING|COPYING)\.(md|txt)$</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kn">deny</span><span class="w"> </span><span class="s">all</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>
-</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="nv">$uri/</span><span class="w"> </span><span class="s">/index.php?</span><span class="nv">$args</span><span class="p">;</span>
-</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>
-</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">[^/]\.php(/|$)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">        </span><span class="kn">fastcgi_split_path_info</span><span class="w"> </span><span class="s">^(.+?\.php)(/.*)</span>$<span class="p">;</span>
-</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$fastcgi_script_name</span><span class="w"> </span><span class="p">=</span><span class="mi">404</span><span class="p">;</span>
-</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">        </span><span class="kn">include</span><span class="w"> </span><span class="s">fastcgi_params</span><span class="p">;</span>
-</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">SCRIPT_FILENAME</span><span class="w"> </span><span class="nv">$document_root$fastcgi_script_name</span><span class="p">;</span>
-</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="w">        </span><span class="kn">fastcgi_param</span><span class="w"> </span><span class="s">PATH_INFO</span><span class="w"> </span><span class="nv">$fastcgi_path_info</span><span class="p">;</span>
-</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="w">        </span><span class="kn">fastcgi_read_timeout</span><span class="w"> </span><span class="mi">300</span><span class="p">;</span>
-</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a><span class="w">        </span><span class="kn">fastcgi_pass</span><span class="w"> </span><span class="s">unix:/run/php/php8.3-fpm-moodle.sock</span><span class="p">;</span>
-</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>
-</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="p">~</span><span class="sr">*</span><span class="w"> </span><span class="s">&quot;\.(js|css|gif|jpg|jpeg|png|svg|woff|woff2)</span><span class="nv">$&quot;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a><span class="w">        </span><span class="kn">expires</span><span class="w"> </span><span class="s">max</span><span class="p">;</span>
-</span><span id="__span-11-29"><a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a><span class="w">        </span><span class="kn">log_not_found</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
-</span><span id="__span-11-30"><a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-11-31"><a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a><span class="p">}</span>
-</span><span id="__span-11-32"><a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a>
-</span><span id="__span-11-33"><a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-34"><a id="__codelineno-11-34" name="__codelineno-11-34" href="#__codelineno-11-34"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
-</span><span id="__span-11-35"><a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="s">[::]:80</span><span class="p">;</span>
-</span><span id="__span-11-36"><a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">moodle.wissen-ahrensburg.de</span><span class="p">;</span>
-</span><span id="__span-11-37"><a id="__codelineno-11-37" name="__codelineno-11-37" href="#__codelineno-11-37"></a><span class="w">    </span><span class="kn">return</span><span class="w"> </span><span class="mi">301</span><span class="w"> </span><span class="s">https://</span><span class="nv">$host$request_uri</span><span class="p">;</span>
-</span><span id="__span-11-38"><a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a><span class="p">}</span>
+<p>Tritt der Fehler trotz <code>ExecStartPre</code> weiterhin auf, manuell prüfen und bereinigen:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>wikijs
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sudo<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>/var/wiki/run/wikijs.sock
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>wikijs
 </span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+<h3 id="nginx-meldet-permission-denied-beim-verbindungsaufbau">Nginx meldet „Permission denied" beim Verbindungsaufbau<a class="headerlink" href="#nginx-meldet-permission-denied-beim-verbindungsaufbau" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo<span class="w"> </span>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/nginx/error.log
 </span></code></pre></div>
-<p><code>client_max_body_size 100M</code> erlaubt größere Datei-Uploads (z. B. Videos in Kursen) — bei Bedarf an den tatsächlichen Nutzungsfall anpassen. <code>fastcgi_read_timeout 300</code> verhindert Zeitüberschreitungen bei länger laufenden Admin-Vorgängen (z. B. Kurs-Backups). <code>fastcgi_pass</code> verweist auf den in Schritt 7 eingerichteten dedizierten Pool-Socket — bei Nutzung des Standard-Pools stattdessen <code>unix:/run/php/php8.3-fpm.sock</code> verwenden. Das eigentliche Datenverzeichnis <code>/var/moodledata</code> liegt bereits außerhalb von <code>root</code> und ist damit für Nginx grundsätzlich unerreichbar; die zusätzlichen <code>deny</code>-Regeln sichern nur Repository-Metadaten innerhalb des Webroots ab.</p>
-<hr />
-<h2 id="9-firewall-ufw">9. Firewall (UFW)<a class="headerlink" href="#9-firewall-ufw" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s2">&quot;Nginx Full&quot;</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>deny<span class="w"> </span><span class="m">5432</span>/tcp
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>status<span class="w"> </span>verbose
+<p>Erscheint <code>connect() to unix:/…/wikijs.sock failed (13: Permission denied)</code>, fehlt entweder die Gruppenmitgliedschaft aus Schritt 2, <code>UMask=0007</code> wurde nicht übernommen, oder Nginx wurde seither nicht neu gestartet:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>id<span class="w"> </span>www-data
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>stat<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;%a %U:%G&quot;</span><span class="w"> </span>/var/wiki/run/wikijs.sock
 </span></code></pre></div>
-<p>PostgreSQL bindet zwar schon per Konfiguration nur an <code>localhost</code> (Schritt 4), die explizite <code>deny</code>-Regel dokumentiert diese Absicht aber zusätzlich sichtbar in <code>ufw status</code> — als zweite, unabhängige Absicherungsebene, falls <code>postgresql.conf</code> später versehentlich geändert wird. Details zu UFW: <a href="../../../../entwicklung/infrastruktur/ufw-firewall/">UFW-Firewall installieren und steuern</a>.</p>
-<hr />
-<h2 id="kurzprufung">Kurzprüfung<a class="headerlink" href="#kurzprufung" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>is-active<span class="w"> </span>php8.3-fpm<span class="w"> </span>nginx<span class="w"> </span>postgresql
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>systemctl<span class="w"> </span>is-active<span class="w"> </span>moodle-cron.timer
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>curl<span class="w"> </span>-I<span class="w"> </span>https://moodle.wissen-ahrensburg.de
-</span></code></pre></div>
-<p>Meldet der <code>curl</code>-Aufruf <code>HTTP/2 200</code>, ist die Installation erreichbar. Danach im Backend (<code>/login/index.php</code>) anmelden und unter <strong>Website-Administration → Server → Umgebung</strong> die Umgebungsprüfung (<code>admin/environment.php</code>) laufen lassen — sie meldet fehlende PHP-Erweiterungen oder Berechtigungsprobleme.</p>
-<hr />
-<h2 id="quellen-und-weiterfuhrende-informationen">Quellen und weiterführende Informationen<a class="headerlink" href="#quellen-und-weiterfuhrende-informationen" title="Permanent link">&para;</a></h2>
+<h3 id="ruckbau-auf-tcp-port">Rückbau auf TCP-Port<a class="headerlink" href="#ruckbau-auf-tcp-port" title="Permanent link">&para;</a></h3>
+<p><code>port</code> in <code>config.yml</code> wieder auf eine Portnummer (z. B. <code>3000</code>) setzen, <code>UMask=</code> und <code>ExecStartPre=</code> aus der <code>systemd</code>-Unit entfernen, <code>daemon-reload</code> und <code>restart wikijs</code> ausführen, und <code>proxy_pass</code> in der Nginx-Konfiguration wieder auf <code>http://127.0.0.1:3000/</code> ändern.</p>
+<h2 id="weiterfuhrende-seiten">Weiterführende Seiten<a class="headerlink" href="#weiterfuhrende-seiten" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://docs.moodle.org/en/Installing_Moodle">Moodle: Installing Moodle</a></li>
-<li><a href="https://moodledev.io/general/releases">Moodle: Releases</a></li>
-<li><a href="https://docs.moodle.org/en/NGINX">Moodle: NGINX</a></li>
-<li><a href="https://docs.moodle.org/en/Cron">Moodle: Cron</a></li>
-<li><a href="../../drupal/installieren/">Drupal installieren: Composer, PostgreSQL und Nginx</a></li>
-<li><a href="../../xwiki/installieren/">XWiki installieren</a></li>
-<li><a href="../../../../entwicklung/infrastruktur/ufw-firewall/">UFW-Firewall installieren und steuern</a></li>
-<li><a href="../../../../entwicklung/infrastruktur/ssh-tunnel/">SSH-Tunnel: Portweiterleitung über SSH</a></li>
-<li><a href="../../">Dokumentationsübersicht</a></li>
+<li><a href="../wikijs-linux-installation/">Wiki.js nativ unter Linux installieren</a></li>
+<li><a href="../wikijs-ki-agent/">Wiki.js-Agenten-Pipeline</a></li>
+<li><a href="https://docs.requarks.io/install/config">Wiki.js: Konfigurationsreferenz</a></li>
+<li><a href="../xwiki/xwiki-nginx-unix-socket/">XWiki über Unix-Socket anbinden</a> – gleiches Muster für Tomcat/XWiki</li>
+<li><a href="../../../entwicklung/infrastruktur/nginx-hardening/">Nginx-Härtung</a></li>
 </ul>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
@@ -3222,7 +3226,7 @@ Der Assistent ist dann unter <code>http://127.0.0.1:8888</code> erreichbar, vers
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../../mediawiki/mediawiki-php-extension/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: PHP Extension">
+          <a href="../wikijs-linux-installation/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Native Linux-Installation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3232,20 +3236,20 @@ Der Assistent ist dann unter <code>http://127.0.0.1:8888</code> erreichbar, vers
                 Zurück
               </span>
               <div class="md-ellipsis">
-                PHP Extension
+                Native Linux-Installation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../semantische-mediawiki/installieren/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Installieren">
+          <a href="../wikijs-ki-agent/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Agenten-Pipeline (Automatisierte Pflege mit LLMs)">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Installieren
+                Agenten-Pipeline (Automatisierte Pflege mit LLMs)
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3264,9 +3268,9 @@ Der Assistent ist dann unter <code>http://127.0.0.1:8888</code> erreichbar, vers
           <div class="md-copyright__highlight">
             Copyright &copy; Wissen Ahrensburg
             &middot;
-            <a href="../../../../rechtliches/impressum/">Impressum</a>
+            <a href="../../../rechtliches/impressum/">Impressum</a>
             &middot;
-            <a href="../../../../rechtliches/datenschutz/">Datenschutz</a>
+            <a href="../../../rechtliches/datenschutz/">Datenschutz</a>
           </div>
         
         
@@ -3371,10 +3375,10 @@ Der Assistent ist dann unter <code>http://127.0.0.1:8888</code> erreichbar, vers
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../../..","features":["navigation.top","navigation.sections","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.path","navigation.prune","navigation.footer","search.suggest","search.highlight","search.share","content.code.copy","content.code.annotate","content.code.select","content.tooltips","content.tabs.link","content.action.view","toc.follow"],"search":"../../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"In Zwischenablage kopiert","clipboard.copy":"In Zwischenablage kopieren","search.result.more.one":"1 weiteres Suchergebnis auf dieser Seite","search.result.more.other":"# weitere Suchergebnisse auf dieser Seite","search.result.none":"Keine Suchergebnisse","search.result.one":"1 Suchergebnis","search.result.other":"# Suchergebnisse","search.result.placeholder":"Suchbegriff eingeben","search.result.term.missing":"Es fehlt","select.version":"Version auswählen"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.top","navigation.sections","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.path","navigation.prune","navigation.footer","search.suggest","search.highlight","search.share","content.code.copy","content.code.annotate","content.code.select","content.tooltips","content.tabs.link","content.action.view","toc.follow"],"search":"../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"In Zwischenablage kopiert","clipboard.copy":"In Zwischenablage kopieren","search.result.more.one":"1 weiteres Suchergebnis auf dieser Seite","search.result.more.other":"# weitere Suchergebnisse auf dieser Seite","search.result.none":"Keine Suchergebnisse","search.result.one":"1 Suchergebnis","search.result.other":"# Suchergebnisse","search.result.placeholder":"Suchbegriff eingeben","search.result.term.missing":"Es fehlt","select.version":"Version auswählen"},"version":null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.ed145cee.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ed145cee.min.js"></script>
       
     
   </body>

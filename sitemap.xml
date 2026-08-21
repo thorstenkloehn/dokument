@@ -706,18 +706,6 @@
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wissensdatenbanken-ki-semantische-suche/</loc>
       </url>
       <url>
-        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/installieren/</loc>
-      </url>
-      <url>
-        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/migration-wikisysteme/</loc>
-      </url>
-      <url>
-        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/export-nach-mkdocs/</loc>
-      </url>
-      <url>
-        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/ki-export-multi-ziel/</loc>
-      </url>
-      <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/</loc>
       </url>
       <url>
@@ -742,9 +730,6 @@
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/mediawiki-php-extension/</loc>
       </url>
       <url>
-        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/moodle/installieren/</loc>
-      </url>
-      <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/semantische-mediawiki/installieren/</loc>
       </url>
       <url>
@@ -758,6 +743,15 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/semantische-mediawiki/smw-sparql-queries/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wikijs-linux-installation/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wikijs-nginx-unix-socket/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wikijs-ki-agent/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/xwiki/installieren/</loc>

@@ -3140,7 +3140,7 @@
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Datenbank auf einem internen Host hinter dem SSH-Server erreichen</span>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>ssh<span class="w"> </span>-L<span class="w"> </span><span class="m">5432</span>:db-internal.example.org:5432<span class="w"> </span>admin@server.example.org
 </span></code></pre></div>
-<p>Typische Einsatzzwecke: Admin-Oberflächen, Datenbank-Clients, interne Dashboards, einmalige Ersteinrichtungen.</p>
+<p>Typische Einsatzzwecke: Admin-Oberflächen, Datenbank-Clients, interne Dashboards, einmalige Ersteinrichtungen (siehe <a href="../../../wissen/dokumentation/wikijs-linux-installation/">Wiki.js: Ersteinrichtung auf einem Headless-Server</a>).</p>
 <h3 id="remote-forwarding-r">Remote Forwarding (<code>-R</code>)<a class="headerlink" href="#remote-forwarding-r" title="Permanent link">&para;</a></h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ssh<span class="w"> </span>-R<span class="w"> </span>REMOTE_PORT:ZIEL_HOST:ZIEL_PORT<span class="w"> </span>user@ssh-server
 </span></code></pre></div>
@@ -3168,7 +3168,7 @@
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># lokalen Unix-Socket zu einem entfernten TCP-Ziel weiterleiten</span>
 </span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>ssh<span class="w"> </span>-L<span class="w"> </span>/tmp/local.sock:127.0.0.1:5432<span class="w"> </span>user@server
 </span></code></pre></div>
-<p>Das ist unter anderem nützlich, um einen Dienst, der absichtlich nur über einen Unix-Socket lauscht — etwa nach der Anleitung <a href="../../../wissen/dokumentation/xwiki/xwiki-nginx-unix-socket/">XWiki über Unix-Socket anbinden</a> — für eine Wartungssitzung testweise ohne Nginx direkt zu erreichen.</p>
+<p>Das ist unter anderem nützlich, um einen Dienst, der absichtlich nur über einen Unix-Socket lauscht — etwa nach den Anleitungen <a href="../../../wissen/dokumentation/xwiki/xwiki-nginx-unix-socket/">XWiki über Unix-Socket anbinden</a> oder <a href="../../../wissen/dokumentation/wikijs-nginx-unix-socket/">Wiki.js über Unix-Socket anbinden</a> — für eine Wartungssitzung testweise ohne Nginx direkt zu erreichen.</p>
 <hr />
 <h2 id="nutzliche-optionen">Nützliche Optionen<a class="headerlink" href="#nutzliche-optionen" title="Permanent link">&para;</a></h2>
 <table>
@@ -3319,6 +3319,8 @@
 <li><a href="../ufw-firewall/">UFW-Firewall installieren und steuern</a></li>
 <li><a href="../../system/systemd-service-creation/">systemd-Dienste erstellen</a></li>
 <li><a href="../../../wissen/dokumentation/xwiki/xwiki-nginx-unix-socket/">XWiki über Unix-Socket anbinden</a></li>
+<li><a href="../../../wissen/dokumentation/wikijs-nginx-unix-socket/">Wiki.js über Unix-Socket anbinden</a></li>
+<li><a href="../../../wissen/dokumentation/wikijs-linux-installation/">Wiki.js nativ unter Linux installieren</a></li>
 </ul>
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 
