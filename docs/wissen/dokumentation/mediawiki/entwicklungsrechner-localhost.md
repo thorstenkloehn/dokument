@@ -1,6 +1,6 @@
 # MediaWiki auf dem Entwicklungsrechner: localhost mit Nginx und PostgreSQL
 
-Diese Anleitung richtet **MediaWiki** rein lokal auf einem Entwicklungsrechner ein — erreichbar nur über `localhost`, ohne eigene Domain und ohne SSL-Zertifikat. Als Datenbank kommt **PostgreSQL** zum Einsatz, als Webserver **Nginx** über PHP-FPM. Sie folgt demselben Muster wie die [Drupal-](../drupal/installieren.md) und [Moodle-Installation](../moodle/installieren.md) in diesem Wiki, ist aber bewusst auf einen lokalen Entwicklungsrechner statt einen produktiven Server zugeschnitten.
+Diese Anleitung richtet **MediaWiki** rein lokal auf einem Entwicklungsrechner ein — erreichbar nur über `localhost`, ohne eigene Domain und ohne SSL-Zertifikat. Als Datenbank kommt **PostgreSQL** zum Einsatz, als Webserver **Nginx** über PHP-FPM. Sie folgt demselben Muster wie die [Moodle-Installation](../moodle/installieren.md) in diesem Wiki, ist aber bewusst auf einen lokalen Entwicklungsrechner statt einen produktiven Server zugeschnitten.
 
 !!! warning "Achtung"
     Die unterstützten PHP- und PostgreSQL-Versionen ändern sich mit jedem MediaWiki-Release. Vor einer Installation immer die aktuelle [Kompatibilitätsmatrix](https://www.mediawiki.org/wiki/Compatibility) prüfen. Diese Anleitung geht von **PHP 8.3** und **PostgreSQL 14+** aus.
@@ -207,7 +207,6 @@ Meldet der `curl`-Aufruf `HTTP/1.1 200 OK`, ist die lokale Installation erreichb
 - [MediaWiki: Installation Guide](https://www.mediawiki.org/wiki/Manual:Installation_guide)
 - [MediaWiki: Nginx-Konfiguration](https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_Nginx)
 - [MediaWiki: PostgreSQL](https://www.mediawiki.org/wiki/Manual:PostgreSQL)
-- [Drupal installieren: Composer, PostgreSQL und Nginx](../drupal/installieren.md)
 - [Moodle installieren: Git, PostgreSQL und Nginx](../moodle/installieren.md)
 - [SSH-Tunnel: Portweiterleitung über SSH](../../../entwicklung/infrastruktur/ssh-tunnel.md)
 - [Dokumentationsübersicht](../index.md)

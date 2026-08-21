@@ -1,6 +1,6 @@
 # Moodle installieren: Git, PostgreSQL und Nginx
 
-Diese Anleitung richtet **Moodle** produktiv auf einem eigenen Server ein — per **Git-Checkout** (offizieller Installationsweg für Moodle, kein apt-Paket), mit **PostgreSQL** als Datenbank und **Nginx** als Reverse Proxy über PHP-FPM. Sie folgt demselben Muster wie die [Drupal-](../drupal/installieren.md) und [XWiki-Installation](../xwiki/installieren.md) in diesem Wiki.
+Diese Anleitung richtet **Moodle** produktiv auf einem eigenen Server ein — per **Git-Checkout** (offizieller Installationsweg für Moodle, kein apt-Paket), mit **PostgreSQL** als Datenbank und **Nginx** als Reverse Proxy über PHP-FPM. Sie folgt demselben Muster wie die [XWiki-Installation](../xwiki/installieren.md) in diesem Wiki.
 
 !!! warning "Achtung"
     Die unterstützten PHP- und PostgreSQL-Versionen sowie der aktuell empfohlene Stable-/LTS-Zweig ändern sich mit jedem Moodle-Release. Vor einer Neuinstallation immer die aktuellen [Moodle-Releases](https://moodledev.io/general/releases) prüfen. Diese Anleitung geht von **PHP 8.3** und **PostgreSQL 14+** aus.
@@ -237,7 +237,6 @@ Meldet der `curl`-Aufruf `HTTP/2 200`, ist die Installation erreichbar. Danach i
 - [Moodle: Releases](https://moodledev.io/general/releases)
 - [Moodle: NGINX](https://docs.moodle.org/en/NGINX)
 - [Moodle: Cron](https://docs.moodle.org/en/Cron)
-- [Drupal installieren: Composer, PostgreSQL und Nginx](../drupal/installieren.md)
 - [XWiki installieren](../xwiki/installieren.md)
 - [UFW-Firewall installieren und steuern](../../../entwicklung/infrastruktur/ufw-firewall.md)
 - [SSH-Tunnel: Portweiterleitung über SSH](../../../entwicklung/infrastruktur/ssh-tunnel.md)
