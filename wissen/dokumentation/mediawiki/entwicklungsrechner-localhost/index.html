@@ -284,6 +284,8 @@
       
         
       
+        
+      
     
     
     
@@ -568,6 +570,8 @@
       
         
           
+        
+      
         
       
         
@@ -1011,6 +1015,8 @@
       
         
       
+        
+      
     
     
     
@@ -1066,6 +1072,33 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../e-learning/evolution-digitaler-lms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Evolution und Architekturen digitaler LMS
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1440,6 +1473,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1495,6 +1534,60 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-digitaler-wissenssysteme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Evolution und Architekturen digitaler Wissenssysteme
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-digitaler-cms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Evolution und Architekturen digitaler Content-Management-Systeme
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1960,6 +2053,71 @@
                 
   
   
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../drupal/evolution-digitaler-drupal/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Drupal
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -2000,7 +2158,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_19" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_22" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -2021,14 +2179,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5_4_19" id="__nav_5_4_19_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5_4_22" id="__nav_5_4_22_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_19_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5_4_19">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_22_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4_22">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2958,6 +3116,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3028,7 +3192,7 @@
 
 <p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
 <h1 id="mediawiki-auf-dem-entwicklungsrechner-localhost-mit-nginx-und-postgresql">MediaWiki auf dem Entwicklungsrechner: localhost mit Nginx und PostgreSQL<a class="headerlink" href="#mediawiki-auf-dem-entwicklungsrechner-localhost-mit-nginx-und-postgresql" title="Permanent link">&para;</a></h1>
-<p>Diese Anleitung richtet <strong>MediaWiki</strong> rein lokal auf einem Entwicklungsrechner ein — erreichbar nur über <code>localhost</code>, ohne eigene Domain und ohne SSL-Zertifikat. Als Datenbank kommt <strong>PostgreSQL</strong> zum Einsatz, als Webserver <strong>Nginx</strong> über PHP-FPM. Sie ist bewusst auf einen lokalen Entwicklungsrechner statt einen produktiven Server zugeschnitten.</p>
+<p>Diese Anleitung richtet <strong>MediaWiki</strong> rein lokal auf einem Entwicklungsrechner ein — erreichbar nur über <code>localhost</code>, ohne eigene Domain und ohne SSL-Zertifikat. Als Datenbank kommt <strong>PostgreSQL</strong> zum Einsatz, als Webserver <strong>Nginx</strong> über PHP-FPM. Sie folgt demselben Muster wie die <a href="../../drupal/installieren/">Drupal-Installation</a> in diesem Wiki, ist aber bewusst auf einen lokalen Entwicklungsrechner statt einen produktiven Server zugeschnitten.</p>
 <div class="admonition warning">
 <p class="admonition-title">Achtung</p>
 <p>Die unterstützten PHP- und PostgreSQL-Versionen ändern sich mit jedem MediaWiki-Release. Vor einer Installation immer die aktuelle <a href="https://www.mediawiki.org/wiki/Compatibility">Kompatibilitätsmatrix</a> prüfen. Diese Anleitung geht von <strong>PHP 8.3</strong> und <strong>PostgreSQL 14+</strong> aus.</p>
@@ -3178,6 +3342,7 @@
 <li><a href="https://www.mediawiki.org/wiki/Manual:Installation_guide">MediaWiki: Installation Guide</a></li>
 <li><a href="https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_Nginx">MediaWiki: Nginx-Konfiguration</a></li>
 <li><a href="https://www.mediawiki.org/wiki/Manual:PostgreSQL">MediaWiki: PostgreSQL</a></li>
+<li><a href="../../drupal/installieren/">Drupal installieren: Composer, PostgreSQL und Nginx</a></li>
 <li><a href="../../../../entwicklung/infrastruktur/ssh-tunnel/">SSH-Tunnel: Portweiterleitung über SSH</a></li>
 <li><a href="../../">Dokumentationsübersicht</a></li>
 </ul>

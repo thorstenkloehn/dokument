@@ -7,6 +7,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/evolution-digitaler-ki-anwendungen/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/</loc>
       </url>
       <url>
@@ -343,6 +346,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/evolution-digitaler-webframeworks/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/ki-webentwicklung/</loc>
       </url>
       <url>
@@ -622,6 +628,9 @@
         <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/evolution-digitaler-lms/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/ki-lehre-weiterbildung/</loc>
       </url>
       <url>
@@ -653,6 +662,12 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-wissenssysteme/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-cms/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/llm-first-wiki-tools-agenten/</loc>
@@ -704,6 +719,21 @@
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/wissensdatenbanken-ki-semantische-suche/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/evolution-digitaler-drupal/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/installieren/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/migration-wikisysteme/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/export-nach-mkdocs/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/drupal/ki-export-multi-ziel/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/mediawiki/</loc>
