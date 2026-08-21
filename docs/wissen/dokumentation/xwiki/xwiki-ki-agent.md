@@ -123,4 +123,5 @@ graph LR
 - [XWiki REST API & Python](xwiki-rest-api.md) — Grundlagen der REST-Anbindung ohne KI-Schicht
 - [Klassische Wiki-Systeme mit LLM-Integration](../klassische-wiki-systeme-llm-integration.md#xwiki-offizielle-llm-extension-waise) — Einordnung der offiziellen WAISE-Extension als Alternative
 - [MediaWiki KI-Agent](../mediawiki/mediawiki-ki-agent.md) — paralleler Eigenbau-Weg für MediaWiki
+- [Wiki.js KI-Agent](../wikijs-ki-agent.md) — paralleler Eigenbau-Weg für Wiki.js
 - [Onyx (ehem. Danswer)](../onyx-danswer-rag-plattform.md) — Enterprise-Suche über ein bestehendes XWiki als eine von vielen Datenquellen

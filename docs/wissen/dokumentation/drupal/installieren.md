@@ -1,6 +1,6 @@
 # Drupal installieren: Composer, PostgreSQL und Nginx
 
-Diese Anleitung richtet **Drupal** (aktuell 10.x/11.x) produktiv auf einem eigenen Server ein — per **Composer** (offizieller Installationsweg, kein apt-Paket), mit **PostgreSQL** als Datenbank und **Nginx** als Reverse Proxy über PHP-FPM. Sie folgt demselben Muster wie die [XWiki-Installation](../xwiki/installieren.md) in diesem Wiki.
+Diese Anleitung richtet **Drupal** (aktuell 10.x/11.x) produktiv auf einem eigenen Server ein — per **Composer** (offizieller Installationsweg, kein apt-Paket), mit **PostgreSQL** als Datenbank und **Nginx** als Reverse Proxy über PHP-FPM. Sie folgt demselben Muster wie die [XWiki-](../xwiki/installieren.md) und [Wiki.js-Installation](../wikijs-linux-installation.md) in diesem Wiki.
 
 !!! warning "Achtung"
     Die unterstützten PHP- und PostgreSQL-Versionen ändern sich mit jedem Drupal-Minor-Release. Vor einer Neuinstallation immer die aktuellen [Systemanforderungen](https://www.drupal.org/docs/system-requirements) prüfen. Diese Anleitung geht von **PHP 8.3** und **PostgreSQL 14+** aus.

@@ -1,6 +1,6 @@
 # KI-gestützter Export: Drupal → mkdocs/Zensical, XWiki, MediaWiki und Wiki.js
 
-Der [reine Export nach mkdocs/Zensical](export-nach-mkdocs.md) konvertiert Drupal-Inhalte 1:1 per Pandoc. Dieses Kapitel erweitert den Ansatz um zwei Dinge: eine **LLM-Schicht**, die den oft unaufgeräumten Drupal-HTML-Body bereinigt und automatisch kategorisiert, und einen **Fan-out** derselben aufbereiteten Inhalte in vier Zielsysteme gleichzeitig — [mkdocs/Zensical](export-nach-mkdocs.md), [XWiki](../xwiki/xwiki-ki-agent.md), [MediaWiki](../mediawiki/mediawiki-ki-agent.md) und Wiki.js. Es baut damit auf denselben KI-Agenten-Mustern auf, die dieses Repository bereits für jedes der drei Wiki-Systeme einzeln dokumentiert, sowie auf der [autonomen Wiki-Strukturierung](../ki-autonome-wiki-strukturierung-selfhosting-migration.md).
+Der [reine Export nach mkdocs/Zensical](export-nach-mkdocs.md) konvertiert Drupal-Inhalte 1:1 per Pandoc. Dieses Kapitel erweitert den Ansatz um zwei Dinge: eine **LLM-Schicht**, die den oft unaufgeräumten Drupal-HTML-Body bereinigt und automatisch kategorisiert, und einen **Fan-out** derselben aufbereiteten Inhalte in vier Zielsysteme gleichzeitig — [mkdocs/Zensical](export-nach-mkdocs.md), [XWiki](../xwiki/xwiki-ki-agent.md), [MediaWiki](../mediawiki/mediawiki-ki-agent.md) und [Wiki.js](../wikijs-ki-agent.md). Es baut damit auf denselben KI-Agenten-Mustern auf, die dieses Repository bereits für jedes der drei Wiki-Systeme einzeln dokumentiert, sowie auf der [autonomen Wiki-Strukturierung](../ki-autonome-wiki-strukturierung-selfhosting-migration.md).
 
 !!! note "Hinweis: allgemeine Technik, keine Ankündigung"
     Wie bei den anderen Drupal-Seiten dieses Kapitels beschreibt dieser Guide die technische Machbarkeit anhand einer beliebigen Drupal-Instanz — keine Ankündigung, dass ein konkretes System so migriert wird.
@@ -133,7 +133,7 @@ def export_zu_mediawiki(site, title, clean_html):
 
 ### Wiki.js — GraphQL mit `isPublished:false`
 
-Reuse der `CREATE_DRAFT_MUTATION` aus der Wiki.js-GraphQL-API:
+Reuse der `CREATE_DRAFT_MUTATION` aus [Wiki.js Agenten-Pipeline](../wikijs-ki-agent.md):
 
 ```python
 def export_zu_wikijs(title, clean_html, path):
@@ -196,6 +196,7 @@ Zusätzlich, systemübergreifend:
 - [Migration nach Drupal](migration-wikisysteme.md) — die umgekehrte Richtung
 - [MediaWiki KI-Agent](../mediawiki/mediawiki-ki-agent.md)
 - [XWiki Agenten-Pipeline](../xwiki/xwiki-ki-agent.md)
+- [Wiki.js Agenten-Pipeline](../wikijs-ki-agent.md)
 - [KI strukturiert das Wiki autonom & Selfhosting-Migration](../ki-autonome-wiki-strukturierung-selfhosting-migration.md)
 - [Pandoc](../../tools/pandoc.md)
 - [Dokumentationsübersicht](../index.md)
