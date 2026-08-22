@@ -115,6 +115,9 @@ Zukunftsorientierte Architekturen, in denen KI-Agenten den Content-Lebenszyklus 
 !!! tip "Bezug zu diesem Repository"
     Wissen Ahrensburg ist selbst kein CMS im hier beschriebenen Sinn, sondern ein statisch gebautes Docs-as-Code-Repository (siehe [Generation 2 der Wissenssysteme](evolution-digitaler-wissenssysteme.md#generation-2-workspace-kollaborations-docs-as-code-plattformen-ca-2015-2021)) — nutzt aber mit dem [LLM-Wiki-Pattern (Karpathy-Muster)](llm-wiki-pattern-karpathy.md) bereits ein einfaches agentengestütztes Pflegeprinzip aus Generation 5/6.
 
+!!! note "Rust als quer liegende Implementierungsachse"
+    Quer zu allen fünf Generationen dieser Zeitachse liegt eine eigene Rust-Implementierungsachse — von frühen Static-Site-Generatoren über die JavaScript-Build-Toolchain hinter Headless-Frontends bis zu WASM-Edge-Laufzeiten für Composable Commerce. Details in [Evolution und Architekturen digitaler Rust-CMS](evolution-digitaler-rust-cms.md).
+
 ---
 
 ## Alternative Sortier- & Klassifikationskriterien für CMS
@@ -158,6 +161,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich CMS nac
 - [Evolution und Architekturen digitaler Composable-CMS](evolution-digitaler-composable-cms.md) — vertiefendes Generationenmodell speziell für Generation 3 dieses Artikels
 - [Evolution und Architekturen digitaler KI-Content-Erstellung](evolution-digitaler-ki-content-erstellung.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
 - [Evolution und Architekturen digitaler Agentischer Content-Ökosysteme](evolution-digitaler-agentische-content-oekosysteme.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
+- [Evolution und Architekturen digitaler Rust-CMS](evolution-digitaler-rust-cms.md) — quer zu allen fünf Generationen liegende Implementierungsachse (Rust-Kerne hinter Static-Site-Generatoren, JS-Build-Toolchain, WASM-Edge-Laufzeiten und Edge-Proxy)
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — analoges Generationenmodell für Docs-as-Code-Werkzeuge (Sphinx, MkDocs, Docusaurus)
 - [Evolution und Architekturen digitaler Notebook-Systeme](evolution-digitaler-notebook-systeme.md) — analoges Generationenmodell für interaktive Notebook-Systeme
 - [Evolution und Architekturen digitaler LMS](../e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme

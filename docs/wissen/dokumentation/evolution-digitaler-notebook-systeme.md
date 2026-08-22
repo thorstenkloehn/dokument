@@ -5,6 +5,9 @@ Interaktive „Executable"-Notebook-Systeme lassen sich — analog zu den Genera
 !!! note "Hinweis: Generationen überlappen sich"
     Die Zeiträume sind grobe Orientierung, keine scharfen Grenzen — klassische Jupyter-Notebooks (Generation 2) laufen bis heute produktiv parallel zu reaktiven Alternativen (Generation 5) und KI-gestützten Umgebungen (Generation 6). Entscheidend ist die **Architektur** (lineare Zellausführung mit verstecktem Zustand vs. reaktive Neuberechnung, Dateiformat, Ausführungsort), nicht allein das Erscheinungsjahr.
 
+!!! note "Rust als quer liegende Implementierungsachse"
+    Quer zu allen sechs Generationen dieser Zeitachse liegt eine eigene Rust-Implementierungsachse — von der Python-Rust-Brücke über massentaugliche DataFrame-Bibliotheken wie Polars bis zu Rust-gestützter Paket- und Umgebungsverwaltung. Details in [Evolution und Architekturen digitaler Rust-Notebooks](evolution-digitaler-rust-notebooks.md).
+
 ---
 
 ## Generation 1: Literate-Programming-Vorläufer & erste Notebook-Interfaces, 1988 – 2007
@@ -143,6 +146,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Noteboo
 - [Evolution und Architekturen digitaler R-Markdown- & Quarto-Publishing-Systeme](evolution-digitaler-rmarkdown-quarto.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
 - [Evolution und Architekturen digitaler Reaktiver Notebooks](evolution-digitaler-reaktive-notebooks.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler KI-nativer Notebook-Umgebungen](evolution-digitaler-ki-native-notebooks.md) — vertiefendes Generationenmodell speziell für Generation 6 dieses Artikels
+- [Evolution und Architekturen digitaler Rust-Notebooks](evolution-digitaler-rust-notebooks.md) — quer zu allen sechs Generationen liegende Implementierungsachse (Rust-Kerne hinter DataFrame-Bibliotheken, Linting und Paketverwaltung)
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell für Wikis & PKM-Systeme
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — analoges Generationenmodell für Docs-as-Code-Werkzeuge, direkte Schnittmenge bei Jupyter Book/Quarto als Publishing-Engines
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
