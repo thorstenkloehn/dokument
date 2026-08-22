@@ -168,6 +168,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Wissens
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme
 - [Evolution und Architekturen digitaler Wiki-Engines](evolution-digitaler-wiki-engines.md) — vertiefendes Generationenmodell speziell für Generation 1 dieses Artikels
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
+- [Evolution und Architekturen digitaler Notebook-Systeme](evolution-digitaler-notebook-systeme.md) — analoges Generationenmodell für interaktive Notebook-Systeme
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — vertiefendes Generationenmodell speziell für Docs-as-Code-Werkzeuge, Nachfolger von Generation 2 dieses Artikels
 - [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md) — vertiefendes Generationenmodell speziell für Generation 3 dieses Artikels
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
