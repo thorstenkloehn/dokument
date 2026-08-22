@@ -10,6 +10,24 @@
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/evolution-digitaler-ki-anwendungen/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/evolution-digitaler-expertensysteme/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/evolution-digitaler-deep-learning-anwendungen/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/evolution-digitaler-cloud-ki-apis/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/evolution-digitaler-generative-ki-anwendungen/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/evolution-digitaler-rag-werkzeug-anwendungen/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/evolution-digitaler-autonome-ki-agenten/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/k%C3%BCnstliche-intelligenz/coding/</loc>
       </url>
       <url>
@@ -349,6 +367,27 @@
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/evolution-digitaler-webframeworks/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/evolution-digitaler-monolith-frameworks/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/evolution-digitaler-ajax-js-bibliotheken/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/evolution-digitaler-spa-frameworks/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/evolution-digitaler-meta-frameworks/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/evolution-digitaler-islands-edge-architektur/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/evolution-digitaler-ki-native-webframeworks/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/entwicklung/webentwicklung/ki-webentwicklung/</loc>
       </url>
       <url>
@@ -631,6 +670,21 @@
         <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/evolution-digitaler-lms/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/evolution-digitaler-klassische-lms/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/evolution-digitaler-cloud-lms/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/evolution-digitaler-interoperable-lms/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/evolution-digitaler-ki-adaptive-lernplattformen/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/evolution-digitaler-agentische-tutor-oekosysteme/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/e-learning/ki-lehre-weiterbildung/</loc>
       </url>
       <url>
@@ -667,7 +721,43 @@
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-wissenssysteme/</loc>
       </url>
       <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-wiki-engines/</loc>
+      </url>
+      <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-cms/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-klassische-cms/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-headless-cms/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-composable-cms/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-ki-content-erstellung/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-agentische-content-oekosysteme/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-docs-as-code/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-pkm-wissensgraphen/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-semantische-rag-wissenssysteme/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-visuell-agentische-wissenssysteme/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-multiagenten-wissensoekosysteme/</loc>
+      </url>
+      <url>
+        <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/evolution-digitaler-rust-wissenssysteme/</loc>
       </url>
       <url>
         <loc>https://dokument.wissen-ahrensburg.de/wissen/dokumentation/llm-first-wiki-tools-agenten/</loc>
