@@ -9,7 +9,7 @@ Lernmanagement-Systeme (LMS) lassen sich — analog zu den Generationenmodellen 
 
 ## Generation 1: Klassische, monolithische LMS — Kursverwaltung, SCORM-Pakete, zentrale Datenbank
 
-Die erste Generation eint drei Prinzipien: eine **zentrale Kurs- und Nutzerdatenbank**, **paketierte Lerninhalte** (fest geschnürte Kurs-Container statt lose verknüpfter Ressourcen) und **lineares Tracking** des Lernfortschritts. Sie lässt sich in drei technologische Entwicklungsstufen unterteilen:
+Die erste Generation eint drei Prinzipien: eine **zentrale Kurs- und Nutzerdatenbank**, **paketierte Lerninhalte** (fest geschnürte Kurs-Container statt lose verknüpfter Ressourcen) und **lineares Tracking** des Lernfortschritts. Sie lässt sich in drei technologische Entwicklungsstufen unterteilen — eine tiefergehende Betrachtung dieser Architekturlinie bietet [Evolution und Architekturen digitaler klassischer LMS](evolution-digitaler-klassische-lms.md):
 
 ```mermaid
 graph LR
@@ -44,7 +44,7 @@ graph LR
 
 ## Generation 2: Cloud-native LMS & Learning Experience Platforms (LXP), ca. 2011 – 2021
 
-Statt starrer Kurskataloge rückt **Content-Kuratierung** in den Vordergrund — LXPs empfehlen Lerninhalte ähnlich einem Streaming-Dienst, ergänzt um Social- und Peer-Learning-Funktionen. Parallel etablieren sich Cloud-native LMS mit modernen REST-APIs und Mobile-first-Oberflächen.
+Statt starrer Kurskataloge rückt **Content-Kuratierung** in den Vordergrund — LXPs empfehlen Lerninhalte ähnlich einem Streaming-Dienst, ergänzt um Social- und Peer-Learning-Funktionen. Parallel etablieren sich Cloud-native LMS mit modernen REST-APIs und Mobile-first-Oberflächen. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Cloud-LMS & LXP](evolution-digitaler-cloud-lms.md).
 
 **Architektur:** SaaS-Betrieb, REST-APIs, Mobile-first-Frontends, beginnende Microservice-Aufteilung statt eines Monolithen.
 
@@ -71,7 +71,7 @@ Eine dateibasiert-nahe bzw. quelloffene Ausnahme dieser Ära — analog zu Grav/
 
 SCORM-Pakete stoßen an Grenzen, sobald Lernaktivitäten außerhalb des LMS stattfinden (mobile Apps, Simulationen, VR, Präsenztrainings). Die Antwort: ein **Learning Record Store (LRS)** sammelt granulare `Aktor-Verb-Objekt`-Statements über Systemgrenzen hinweg, während **LTI** (Learning Tools Interoperability) externe Tools nahtlos ins LMS einbettet.
 
-**Architektur:** Learning Record Store neben dem LMS, xAPI/cmi5-Statements statt monolithischer SCORM-Pakete, LTI 1.3/LTI Advantage für die Tool-Einbindung.
+**Architektur:** Learning Record Store neben dem LMS, xAPI/cmi5-Statements statt monolithischer SCORM-Pakete, LTI 1.3/LTI Advantage für die Tool-Einbindung. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler interoperabler LMS](evolution-digitaler-interoperable-lms.md).
 
 | Baustein | Rolle |
 |---|---|
@@ -84,7 +84,7 @@ SCORM-Pakete stoßen an Grenzen, sobald Lernaktivitäten außerhalb des LMS stat
 
 ## Generation 4: KI-gestützte adaptive Lernplattformen, ab ca. 2022
 
-Generative KI wandert direkt in Kurs­erstellung, Bewertung und Lernpfadsteuerung: automatische Kursgenerierung, adaptive Schwierigkeitsanpassung und KI-Tutoren als Kernfunktion statt nachträglichem Plugin. Vertiefend dazu [KI in Lehre, Weiterbildung und Training](ki-lehre-weiterbildung.md) mit konkreten Open-Source- und Cloud-Werkzeugen je Lernphase.
+Generative KI wandert direkt in Kurs­erstellung, Bewertung und Lernpfadsteuerung: automatische Kursgenerierung, adaptive Schwierigkeitsanpassung und KI-Tutoren als Kernfunktion statt nachträglichem Plugin. Vertiefend dazu [KI in Lehre, Weiterbildung und Training](ki-lehre-weiterbildung.md) mit konkreten Open-Source- und Cloud-Werkzeugen je Lernphase. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler KI-adaptiver Lernplattformen](evolution-digitaler-ki-adaptive-lernplattformen.md).
 
 | System | KI-Funktion |
 |---|---|
@@ -98,7 +98,7 @@ Generative KI wandert direkt in Kurs­erstellung, Bewertung und Lernpfadsteuerun
 
 ## Generation 5: Agentische & autonome Tutor-Ökosysteme
 
-Zukunftsorientierte Architekturen, in denen KI-Agenten nicht nur einzelne Aufgaben (Bewertung, Empfehlung) übernehmen, sondern den gesamten Lernprozess orchestrieren: Lernstand erfassen, Aufgaben generieren, Code/Antworten prüfen, didaktisch intervenieren und Kursmaterial selbstständig aktualisieren — mit Langzeitgedächtnis über den individuellen Lernfortschritt hinweg.
+Zukunftsorientierte Architekturen, in denen KI-Agenten nicht nur einzelne Aufgaben (Bewertung, Empfehlung) übernehmen, sondern den gesamten Lernprozess orchestrieren: Lernstand erfassen, Aufgaben generieren, Code/Antworten prüfen, didaktisch intervenieren und Kursmaterial selbstständig aktualisieren — mit Langzeitgedächtnis über den individuellen Lernfortschritt hinweg. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme](evolution-digitaler-agentische-tutor-oekosysteme.md).
 
 - **Multi-Agenten-Tutor-Systeme** (LangGraph, CrewAI, AutoGen): ein „Erklär-Agent" und ein „Prüf-Agent" arbeiten arbeitsteilig zusammen, siehe die [Referenz-Architektur für KI-Agenten im E-Learning](index.md#5-optimales-zusammenspiel-referenz-architektur).
 - **Khanmigo & vergleichbare Sokratische Agenten**: verweigern bewusst die direkte Lösung und steuern stattdessen über Leitfragen — ein Steuerungsprinzip, das sich über [Rollen- & Kontext-Prompts](index.md#2-erstellung-steuerung-von-ki-agenten-im-e-learning) deklarativ statt über starren Code definieren lässt.
@@ -144,6 +144,11 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich LMS nac
 
 - [E-Learning-Autorentools & Interaktive Lernumgebungen](index.md) — Gesamtübersicht Autorentools, LMS und KI-Agenten im E-Learning
 - [Evolution und Architekturen digitaler Wissenssysteme](../dokumentation/evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell für Wikis & PKM-Systeme
+- [Evolution und Architekturen digitaler klassischer LMS](evolution-digitaler-klassische-lms.md) — vertiefendes Generationenmodell speziell für Generation 1 dieses Artikels
+- [Evolution und Architekturen digitaler Cloud-LMS & LXP](evolution-digitaler-cloud-lms.md) — vertiefendes Generationenmodell speziell für Generation 2 dieses Artikels
+- [Evolution und Architekturen digitaler interoperabler LMS](evolution-digitaler-interoperable-lms.md) — vertiefendes Generationenmodell speziell für Generation 3 dieses Artikels
+- [Evolution und Architekturen digitaler KI-adaptiver Lernplattformen](evolution-digitaler-ki-adaptive-lernplattformen.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
+- [Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme](evolution-digitaler-agentische-tutor-oekosysteme.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../dokumentation/evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
 - [Evolution und Architekturen digitaler Web-Frameworks](../../entwicklung/webentwicklung/evolution-digitaler-webframeworks.md) — analoges Generationenmodell für Web-Frameworks
 - [Evolution und Architekturen digitaler KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md) — analoges Generationenmodell für KI-Anwendungen

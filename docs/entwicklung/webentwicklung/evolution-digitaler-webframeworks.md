@@ -9,7 +9,7 @@ Web-Frameworks lassen sich — analog zu den Generationenmodellen für [Wissenss
 
 ## Generation 1: Serverseitige, monolithische Web-Frameworks — CGI, MVC, Templates
 
-Die erste Generation eint drei Prinzipien: **serverseitige Verarbeitung** jeder Anfrage, **Templates** zur Ausgabe von HTML und ein wachsender Grad an **struktureller Konvention** statt roher Skripte. Sie lässt sich in drei technologische Entwicklungsstufen unterteilen:
+Die erste Generation eint drei Prinzipien: **serverseitige Verarbeitung** jeder Anfrage, **Templates** zur Ausgabe von HTML und ein wachsender Grad an **struktureller Konvention** statt roher Skripte. Sie lässt sich in drei technologische Entwicklungsstufen unterteilen — eine tiefergehende Betrachtung dieser Architekturlinie bis zum heutigen Hypermedia-Comeback bietet [Evolution und Architekturen digitaler Server-Monolith-Frameworks](evolution-digitaler-monolith-frameworks.md):
 
 ```mermaid
 graph LR
@@ -45,7 +45,7 @@ graph LR
 
 ## Generation 2: Ajax-Ära & JavaScript-Bibliotheken, ca. 2005 – 2012
 
-Der Server bleibt weiterhin MVC-basiert und liefert vollständiges HTML aus — neu ist die **asynchrone Nachladefähigkeit** einzelner Seitenfragmente über `XMLHttpRequest`, ohne vollständigen Seiten-Reload.
+Der Server bleibt weiterhin MVC-basiert und liefert vollständiges HTML aus — neu ist die **asynchrone Nachladefähigkeit** einzelner Seitenfragmente über `XMLHttpRequest`, ohne vollständigen Seiten-Reload. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken](evolution-digitaler-ajax-js-bibliotheken.md).
 
 **Architektur:** DOM-Manipulation im Browser über JavaScript-Bibliotheken, Server-Backend unverändert aus Generation 1b/1c.
 
@@ -59,7 +59,7 @@ Der Server bleibt weiterhin MVC-basiert und liefert vollständiges HTML aus — 
 
 ## Generation 3: Single-Page-Application-Frameworks (SPA), ca. 2010 – 2016
 
-Das Rendering wandert vollständig in den Browser: Das Backend wird zur reinen **JSON-API**, das Frontend übernimmt Routing, Zustandsverwaltung und komponentenbasiertes UI-Rendering.
+Das Rendering wandert vollständig in den Browser: Das Backend wird zur reinen **JSON-API**, das Frontend übernimmt Routing, Zustandsverwaltung und komponentenbasiertes UI-Rendering. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler SPA-Frameworks](evolution-digitaler-spa-frameworks.md).
 
 **Architektur:** komponentenbasierte UIs, clientseitiges Routing, REST-APIs als Backend-Schnittstelle statt serverseitig gerenderter Templates.
 
@@ -75,7 +75,7 @@ Das Rendering wandert vollständig in den Browser: Das Backend wird zur reinen *
 
 ## Generation 4: Full-Stack-JavaScript & Meta-Frameworks (SSR/SSG-Hybrid), ca. 2016 – 2022
 
-SPAs verlieren serverseitig gerenderten Content und damit SEO-Fähigkeit. Die Antwort: **Meta-Frameworks**, die Server-Side Rendering (SSR) und Static Site Generation (SSG) auf Basis derselben SPA-Bibliotheken zurückbringen — mit Node.js als einheitlicher Runtime für Frontend und Backend im selben Projekt.
+SPAs verlieren serverseitig gerenderten Content und damit SEO-Fähigkeit. Die Antwort: **Meta-Frameworks**, die Server-Side Rendering (SSR) und Static Site Generation (SSG) auf Basis derselben SPA-Bibliotheken zurückbringen — mit Node.js als einheitlicher Runtime für Frontend und Backend im selben Projekt. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Full-Stack-Meta-Frameworks](evolution-digitaler-meta-frameworks.md).
 
 **Architektur:** File-based Routing, API-Routes im selben Projekt, Hydration (serverseitig gerendertes HTML wird im Browser um Interaktivität ergänzt).
 
@@ -91,7 +91,7 @@ SPAs verlieren serverseitig gerenderten Content und damit SEO-Fähigkeit. Die An
 
 ## Generation 5: Server Components, Edge & Islands-Architektur, ab ca. 2022
 
-Statt eine ganze Seite zu hydratisieren, rendert diese Generation nur die tatsächlich interaktiven Fragmente im Browser — der Rest bleibt reines, serverseitig erzeugtes HTML. Rendering wandert zusätzlich an den **Edge**, näher an den Nutzer statt in ein zentrales Rechenzentrum.
+Statt eine ganze Seite zu hydratisieren, rendert diese Generation nur die tatsächlich interaktiven Fragmente im Browser — der Rest bleibt reines, serverseitig erzeugtes HTML. Rendering wandert zusätzlich an den **Edge**, näher an den Nutzer statt in ein zentrales Rechenzentrum. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Islands- & Edge-Architekturen](evolution-digitaler-islands-edge-architektur.md).
 
 **Architektur:** React Server Components (RSC) ohne Client-JavaScript für nicht-interaktive Teile, Islands-Architektur (nur einzelne „Inseln" werden hydratisiert), Streaming-SSR, Edge-Runtimes statt monolithischem Node-Server.
 
@@ -106,7 +106,7 @@ Statt eine ganze Seite zu hydratisieren, rendert diese Generation nur die tatsä
 
 ## Generation 6: KI-native & agentengestützte Web-Frameworks, ab ca. 2024
 
-Generative KI wandert vom externen Code-Assistenten (siehe [Der KI-gestützte Entwicklungsworkflow](ki-webentwicklung.md#21-konzept-der-ki-gestutzte-entwicklungsworkflow)) direkt in den Framework-Kern: UI-Komponenten werden aus natürlicher Sprache generiert, KI-Streaming-Antworten sind eingebaute Primitive statt selbst gebauter Wrapper um eine LLM-API.
+Generative KI wandert vom externen Code-Assistenten (siehe [Der KI-gestützte Entwicklungsworkflow](ki-webentwicklung.md#21-konzept-der-ki-gestutzte-entwicklungsworkflow)) direkt in den Framework-Kern: UI-Komponenten werden aus natürlicher Sprache generiert, KI-Streaming-Antworten sind eingebaute Primitive statt selbst gebauter Wrapper um eine LLM-API. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler KI-nativer Web-Frameworks](evolution-digitaler-ki-native-webframeworks.md).
 
 | System | Prinzip |
 |---|---|
@@ -158,6 +158,13 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Web-Fra
 
 - [Webentwicklung & KI: Übersicht](index.md) — Gesamtübersicht KI-Tools je Entwicklungsbereich
 - [Websites entwickeln mit KI](ki-webentwicklung.md) — praktischer Lernpfad HTML/CSS bis Deployment mit KI (2026)
+- [Evolution und Architekturen digitaler Server-Monolith-Frameworks](evolution-digitaler-monolith-frameworks.md) — vertiefendes Generationenmodell speziell für Generation 1 dieses Artikels
+- [Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken](evolution-digitaler-ajax-js-bibliotheken.md) — vertiefendes Generationenmodell speziell für Generation 2 dieses Artikels
+- [Evolution und Architekturen digitaler SPA-Frameworks](evolution-digitaler-spa-frameworks.md) — vertiefendes Generationenmodell speziell für Generation 3 dieses Artikels
+- [Evolution und Architekturen digitaler Full-Stack-Meta-Frameworks](evolution-digitaler-meta-frameworks.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
+- [Evolution und Architekturen digitaler Islands- & Edge-Architekturen](evolution-digitaler-islands-edge-architektur.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
+- [Evolution und Architekturen digitaler KI-nativer Web-Frameworks](evolution-digitaler-ki-native-webframeworks.md) — vertiefendes Generationenmodell speziell für Generation 6 dieses Artikels
+- [Evolution und Architekturen digitaler Rust-Webframeworks](evolution-digitaler-rust-webframeworks.md) — vertiefendes, Rust-spezifisches Generationenmodell
 - [Evolution und Architekturen digitaler Wissenssysteme](../../wissen/dokumentation/evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell für Wikis & PKM-Systeme
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../../wissen/dokumentation/evolution-digitaler-cms.md) — analoges Generationenmodell für CMS, direkte Schnittmenge bei Headless-Frontends
 - [Evolution und Architekturen digitaler LMS](../../wissen/e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme

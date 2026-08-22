@@ -9,7 +9,7 @@ Digitale Wissenssysteme lassen sich nicht nur nach Produktnamen, sondern nach **
 
 ## Generation 1: Wiki-Systeme — zentrale Textdokumentation, Versionierung, manuelle Verlinkung
 
-Die namensgebende erste Generation eint drei Prinzipien: ein **zentraler Textbestand**, **Versionierung** jeder Änderung (Edit-Historie) und **manuelle Verlinkung** einzelner Seiten untereinander (Wikilinks statt automatischer Graph-Bildung). Sie lässt sich in drei technologische Entwicklungsstufen unterteilen:
+Die namensgebende erste Generation eint drei Prinzipien: ein **zentraler Textbestand**, **Versionierung** jeder Änderung (Edit-Historie) und **manuelle Verlinkung** einzelner Seiten untereinander (Wikilinks statt automatischer Graph-Bildung). Sie lässt sich in drei technologische Entwicklungsstufen unterteilen — eine tiefergehende Betrachtung dieser Architekturlinie bis zu KI-agentengestützter Wiki-Pflege in der Gegenwart bietet [Evolution und Architekturen digitaler Wiki-Engines](evolution-digitaler-wiki-engines.md):
 
 ```mermaid
 graph LR
@@ -50,7 +50,7 @@ graph LR
 
 ## Generation 2: Workspace-, Kollaborations- & Docs-as-Code-Plattformen (ca. 2015 – 2021)
 
-Zwei Strömungen verschmelzen: die Organisation hierarchischer Dokumente mit Rich-Text bzw. Markdown, modularen Blöcken und Berechtigungsmanagement (Open-Source-Alternativen zu Confluence/Notion) — sowie Docs-as-Code-Tooling mit Trennung von Inhalt und Layout, Git-Versionierung und API-first-Ansatz.
+Zwei Strömungen verschmelzen: die Organisation hierarchischer Dokumente mit Rich-Text bzw. Markdown, modularen Blöcken und Berechtigungsmanagement (Open-Source-Alternativen zu Confluence/Notion) — sowie Docs-as-Code-Tooling mit Trennung von Inhalt und Layout, Git-Versionierung und API-first-Ansatz. Eine eigene, tiefergehende Generationen-Zeitachse speziell für Docs-as-Code — von frühen Man-Pages über Sphinx bis zu agentisch gepflegten Docs — bietet [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md).
 
 **Architektur:** Node.js, Go, Rust oder Python; Markdown-/Rich-Text-zentriert; oft Git-basiert; Single Page Applications (Vue/React-Frontends); moderne REST/GraphQL-Schnittstellen.
 
@@ -64,7 +64,7 @@ Zwei Strömungen verschmelzen: die Organisation hierarchischer Dokumente mit Ric
 
 ## Generation 3: Bidirektionale Wissensgraphen & Real-time Block-Editoren (PKM)
 
-*Zeitraum: ab ca. 2020.* Nicht-lineare Wissensnetze mit Backlinks, Tag-Taxonomien und Graph-Visualisierungen („Zettelkasten-Prinzip"), verschmolzen mit Echtzeit-Block-Editoren auf CRDT-Basis.
+*Zeitraum: ab ca. 2020.* Nicht-lineare Wissensnetze mit Backlinks, Tag-Taxonomien und Graph-Visualisierungen („Zettelkasten-Prinzip"), verschmolzen mit Echtzeit-Block-Editoren auf CRDT-Basis. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie — von Hypertext-Vorläufern über Roam Research bis zu KI-nativen Canvas-Systemen — bietet [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md).
 
 **Architektur:** Lokale Markdown-Tresore (Local-First), CRDTs (Conflict-free Replicated Data Types) für Echtzeit-Kollaboration, Block-Datenmodelle (JSON-Blöcke statt Fließtext), Offline-First.
 
@@ -82,7 +82,7 @@ Vertiefend zu dieser Generation: [Personal Knowledge Management (PKM) & Second B
 
 ## Generation 4: Semantische & RAG / KI-unterstützte Wissenssysteme
 
-Wissensnetze mit maschinenlesbarer Semantik, Vektorspeichern und lokaler LLM-Integration (RAG).
+Wissensnetze mit maschinenlesbarer Semantik, Vektorspeichern und lokaler LLM-Integration (RAG). Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie — von Semantic-Web-Wissensgraphen über Vektordatenbanken bis zu GraphRAG — bietet [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md).
 
 | System | Prinzip |
 |---|---|
@@ -96,7 +96,7 @@ Vertiefend zu dieser Generation: [Wissensdatenbanken mit KI & semantischer Suche
 
 ## Generation 5: Visuelle, Local-First & Autonome/Agentische Wissenssysteme
 
-Zukunftsorientierte Wissensarchitekturen mit unendlichen Whiteboard-Canvases, end-to-end verschlüsselter CRDT-Kollaboration und aktiven KI-Agenten.
+Zukunftsorientierte Wissensarchitekturen mit unendlichen Whiteboard-Canvases, end-to-end verschlüsselter CRDT-Kollaboration und aktiven KI-Agenten. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese drei Architektur-Stränge — von frühen Mindmaps über CRDT-Forschung und das Local-First-Manifest bis zu agentischen Gedächtnissystemen — bietet [Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme](evolution-digitaler-visuell-agentische-wissenssysteme.md).
 
 | System | Prinzip |
 |---|---|
@@ -108,7 +108,7 @@ Zukunftsorientierte Wissensarchitekturen mit unendlichen Whiteboard-Canvases, en
 
 ## Generation 6: Multimodale & Selbstorganisierende Multi-Agenten-Wissensökosysteme
 
-Wissenssysteme, in denen autonome Agenten-Schwärme Inhalte nicht nur abrufen, sondern eigenständig recherchieren, verifizieren, verknüpfen und die Wissensbasis kontinuierlich pflegen – oft multimodal (Text, Sprache, Video) und werkzeugnutzend.
+Wissenssysteme, in denen autonome Agenten-Schwärme Inhalte nicht nur abrufen, sondern eigenständig recherchieren, verifizieren, verknüpfen und die Wissensbasis kontinuierlich pflegen – oft multimodal (Text, Sprache, Video) und werkzeugnutzend. Eine eigene, tiefergehende Generationen-Zeitachse speziell für die Orchestrierung dieser Agenten — von regelbasierten Einzel-Bots über koordinierte Multi-Agenten-Frameworks bis zu multimodalen Schwarm-Ökosystemen — bietet [Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme](evolution-digitaler-multiagenten-wissensoekosysteme.md).
 
 | System | Prinzip |
 |---|---|
@@ -134,7 +134,7 @@ Eine quer zu den Generationen liegende Kategorie: Generatoren, die aus Quelltext
 | **Hugo** | Go | Extrem schneller Generator für große Dokumentationsmengen. |
 
 !!! note "Zensical statt MkDocs in diesem Repository"
-    Wissen Ahrensburg wird mit **Zensical** gebaut, dem Nachfolger von MkDocs + Material (liest `mkdocs.yml` nativ) — siehe `CLAUDE.md`. Die Static-Build/Read-Only-Publish-Logik dieser Generatoren-Kategorie gilt damit unmittelbar auch für dieses Repository.
+    Wissen Ahrensburg wird mit **Zensical** gebaut, dem Nachfolger von MkDocs + Material (liest `mkdocs.yml` nativ) — siehe `CLAUDE.md`. Die Static-Build/Read-Only-Publish-Logik dieser Generatoren-Kategorie gilt damit unmittelbar auch für dieses Repository. Zensicals Build-Engine kombiniert Rust und Python — Details dazu und zu weiteren Rust-Bausteinen in Wissenssystemen bietet [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md).
 
 ---
 
@@ -166,7 +166,14 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Wissens
 ## Verwandte Themen
 
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme
+- [Evolution und Architekturen digitaler Wiki-Engines](evolution-digitaler-wiki-engines.md) — vertiefendes Generationenmodell speziell für Generation 1 dieses Artikels
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
+- [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — vertiefendes Generationenmodell speziell für Docs-as-Code-Werkzeuge, Nachfolger von Generation 2 dieses Artikels
+- [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md) — vertiefendes Generationenmodell speziell für Generation 3 dieses Artikels
+- [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
+- [Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme](evolution-digitaler-visuell-agentische-wissenssysteme.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
+- [Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme](evolution-digitaler-multiagenten-wissensoekosysteme.md) — vertiefendes Generationenmodell speziell für Generation 6 dieses Artikels
+- [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — quer zu allen sechs Generationen liegende Implementierungsachse (Rust-Kerne hinter Suche, Vektordatenbanken, CRDT-Sync und Build-Engines)
 - [Evolution und Architekturen digitaler LMS](../e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme
 - [Evolution und Architekturen digitaler Web-Frameworks](../../entwicklung/webentwicklung/evolution-digitaler-webframeworks.md) — analoges Generationenmodell für Web-Frameworks
 - [Evolution und Architekturen digitaler KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md) — analoges Generationenmodell für KI-Anwendungen

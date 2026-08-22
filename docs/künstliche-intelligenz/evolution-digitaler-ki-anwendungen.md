@@ -9,7 +9,7 @@ KI-Anwendungen lassen sich — analog zu den Generationenmodellen für [Wissenss
 
 ## Generation 1: Regelbasierte & statistische KI-Anwendungen — Wissensbasen, Inferenzmaschinen
 
-Die erste Generation eint drei Prinzipien: **manuell erfasstes oder statistisch erlerntes Wissen**, eine **feste Inferenzlogik** (Regeln oder ein trainiertes Modell) und **kein kontinuierliches Lernen** zur Laufzeit. Sie lässt sich in drei technologische Entwicklungsstufen unterteilen:
+Die erste Generation eint drei Prinzipien: **manuell erfasstes oder statistisch erlerntes Wissen**, eine **feste Inferenzlogik** (Regeln oder ein trainiertes Modell) und **kein kontinuierliches Lernen** zur Laufzeit. Sie lässt sich in drei technologische Entwicklungsstufen unterteilen — eine tiefergehende Betrachtung speziell der Expertensystem-Architekturen (1a/1b) über ihre Fortsetzung in Regel-Engines bis zu heutigen neuro-symbolischen LLM-Hybriden bietet [Evolution und Architekturen digitaler Expertensysteme](evolution-digitaler-expertensysteme.md):
 
 ```mermaid
 graph LR
@@ -39,7 +39,7 @@ graph LR
 
 ## Generation 2: Deep-Learning-Anwendungen & spezialisierte neuronale Netze, ca. 2012 – 2018
 
-GPU-beschleunigtes Training macht tiefe neuronale Netze praxistauglich — jede Anwendung erhält jedoch weiterhin ein **eigens trainiertes, aufgabenspezifisches Modell** statt eines universellen Sprachmodells.
+GPU-beschleunigtes Training macht tiefe neuronale Netze praxistauglich — jede Anwendung erhält jedoch weiterhin ein **eigens trainiertes, aufgabenspezifisches Modell** statt eines universellen Sprachmodells. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](evolution-digitaler-deep-learning-anwendungen.md).
 
 **Architektur:** Convolutional Neural Networks (CNN) für Bildaufgaben, Recurrent Neural Networks (RNN/LSTM) für Sequenzen, ein Modell pro Anwendungsfall.
 
@@ -53,7 +53,7 @@ GPU-beschleunigtes Training macht tiefe neuronale Netze praxistauglich — jede 
 
 ## Generation 3: Cloud-KI-APIs & ML-as-a-Service, ca. 2015 – 2020
 
-Vortrainierte Modelle wandern hinter **REST-APIs großer Cloud-Anbieter** — App-Entwickler nutzen Bilderkennung, Sprachverarbeitung oder Übersetzung per API-Aufruf, ohne selbst ein Modell zu trainieren.
+Vortrainierte Modelle wandern hinter **REST-APIs großer Cloud-Anbieter** — App-Entwickler nutzen Bilderkennung, Sprachverarbeitung oder Übersetzung per API-Aufruf, ohne selbst ein Modell zu trainieren. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Cloud-KI-APIs](evolution-digitaler-cloud-ki-apis.md).
 
 **Architektur:** zentrale Cloud-Modelle, Pay-per-Use-Abrechnung, keine eigene GPU-Infrastruktur beim Anwendungsentwickler nötig.
 
@@ -68,7 +68,7 @@ Vortrainierte Modelle wandern hinter **REST-APIs großer Cloud-Anbieter** — Ap
 
 ## Generation 4: Generative KI & LLM-gestützte Anwendungen, ab ca. 2020
 
-Der Transformer-Architektur-Durchbruch (2017) und darauf trainierte **Foundation-Modelle** ersetzen viele aufgabenspezifische Modelle aus Generation 2/3 durch ein einziges, generalisiertes Modell — gesteuert per Prompt statt per erneutem Training.
+Der Transformer-Architektur-Durchbruch (2017) und darauf trainierte **Foundation-Modelle** ersetzen viele aufgabenspezifische Modelle aus Generation 2/3 durch ein einziges, generalisiertes Modell — gesteuert per Prompt statt per erneutem Training. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Generativer KI-Anwendungen](evolution-digitaler-generative-ki-anwendungen.md).
 
 **Architektur:** Transformer-basierte Foundation-Modelle, Konversationsinterface als neues UI-Paradigma, API-first-Konsum statt Self-Hosting.
 
@@ -83,7 +83,7 @@ Der Transformer-Architektur-Durchbruch (2017) und darauf trainierte **Foundation
 
 ## Generation 5: RAG & werkzeugnutzende KI-Anwendungen, ab ca. 2023
 
-Reines Prompting stößt an Grenzen, sobald aktuelle oder unternehmensinterne Daten gebraucht werden. Die Antwort: **Retrieval-Augmented Generation (RAG)** kombiniert eine Vektordatenbank mit dem LLM, **Tool/Function Calling** erlaubt kontrollierte Aktionen über definierte Schnittstellen statt freiem Text.
+Reines Prompting stößt an Grenzen, sobald aktuelle oder unternehmensinterne Daten gebraucht werden. Die Antwort: **Retrieval-Augmented Generation (RAG)** kombiniert eine Vektordatenbank mit dem LLM, **Tool/Function Calling** erlaubt kontrollierte Aktionen über definierte Schnittstellen statt freiem Text. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Anwendungskategorie bietet [Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen](evolution-digitaler-rag-werkzeug-anwendungen.md).
 
 **Architektur:** Vektordatenbank + LLM-Retrieval-Schleife, strukturierte Ausgaben (JSON-Schemata) statt freiem Fließtext, definierte Werkzeuge statt impliziter Fähigkeiten.
 
@@ -98,7 +98,7 @@ Reines Prompting stößt an Grenzen, sobald aktuelle oder unternehmensinterne Da
 
 ## Generation 6: Autonome KI-Agenten & Multi-Agenten-Ökosysteme, ab ca. 2024
 
-Statt eines einzelnen Prompt-Antwort-Zyklus planen, handeln und reflektieren KI-Agenten über mehrere Schritte hinweg selbstständig — mit Zugriff auf standardisierte Werkzeuge über das **Model Context Protocol (MCP)** und teils in koordinierten Multi-Agenten-Teams.
+Statt eines einzelnen Prompt-Antwort-Zyklus planen, handeln und reflektieren KI-Agenten über mehrere Schritte hinweg selbstständig — mit Zugriff auf standardisierte Werkzeuge über das **Model Context Protocol (MCP)** und teils in koordinierten Multi-Agenten-Teams. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Autonomer KI-Agenten](evolution-digitaler-autonome-ki-agenten.md).
 
 **Architektur:** Agent-Loops (Planen → Ausführen → Reflektieren), Supervisor/Worker-Orchestrierung mehrerer spezialisierter Agenten, MCP für standardisierten Werkzeugzugriff statt proprietärer Integrationen.
 
@@ -151,6 +151,12 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich KI-Anwe
 ## Verwandte Themen
 
 - [KI-Modelle & Frameworks: Übersicht](index.md) — Gesamtübersicht Modell-Kategorien und Frameworks
+- [Evolution und Architekturen digitaler Expertensysteme](evolution-digitaler-expertensysteme.md) — vertiefendes Generationenmodell speziell für Generation 1 dieses Artikels
+- [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](evolution-digitaler-deep-learning-anwendungen.md) — vertiefendes Generationenmodell speziell für Generation 2 dieses Artikels
+- [Evolution und Architekturen digitaler Cloud-KI-APIs](evolution-digitaler-cloud-ki-apis.md) — vertiefendes Generationenmodell speziell für Generation 3 dieses Artikels
+- [Evolution und Architekturen digitaler Generativer KI-Anwendungen](evolution-digitaler-generative-ki-anwendungen.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
+- [Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen](evolution-digitaler-rag-werkzeug-anwendungen.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
+- [Evolution und Architekturen digitaler Autonomer KI-Agenten](evolution-digitaler-autonome-ki-agenten.md) — vertiefendes Generationenmodell speziell für Generation 6 dieses Artikels
 - [Evolution und Architekturen digitaler Wissenssysteme](../wissen/dokumentation/evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell für Wikis & PKM-Systeme
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../wissen/dokumentation/evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
 - [Evolution und Architekturen digitaler LMS](../wissen/e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme
