@@ -113,6 +113,9 @@ Statt eines einzelnen Prompt-Antwort-Zyklus planen, handeln und reflektieren KI-
 !!! tip "Bezug zu diesem Repository"
     Dieses Repository dokumentiert Generation 6 nicht nur, sondern nutzt sie aktiv: Die eigene Doku-Pflege folgt dem [LLM-Wiki-Pattern (Karpathy-Muster)](../wissen/dokumentation/llm-wiki-pattern-karpathy.md), und Claude Code als Agent erstellt und pflegt Artikel wie diesen direkt im Git-Repository.
 
+!!! note "Rust als quer liegende Implementierungsachse"
+    Quer zu allen sechs Generationen dieser Zeitachse liegt eine eigene Rust-Implementierungsachse — von Framework-Bindings über pure-Rust-LLM-Inferenz bis zum Model Context Protocol. Details in [Evolution und Architekturen digitaler Rust-KI-Anwendungen](evolution-digitaler-rust-ki-anwendungen.md).
+
 ---
 
 ## Alternative Sortier- & Klassifikationskriterien für KI-Anwendungen
@@ -157,6 +160,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich KI-Anwe
 - [Evolution und Architekturen digitaler Generativer KI-Anwendungen](evolution-digitaler-generative-ki-anwendungen.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
 - [Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen](evolution-digitaler-rag-werkzeug-anwendungen.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Autonomer KI-Agenten](evolution-digitaler-autonome-ki-agenten.md) — vertiefendes Generationenmodell speziell für Generation 6 dieses Artikels
+- [Evolution und Architekturen digitaler Rust-KI-Anwendungen](evolution-digitaler-rust-ki-anwendungen.md) — quer zu allen sechs Generationen liegende Implementierungsachse (Rust-Kerne hinter Framework-Bindings, Serving-Stacks, Inferenz-Engines und dem Model Context Protocol)
 - [Evolution und Architekturen digitaler Wissenssysteme](../wissen/dokumentation/evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell für Wikis & PKM-Systeme
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../wissen/dokumentation/evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
 - [Evolution und Architekturen digitaler LMS](../wissen/e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme

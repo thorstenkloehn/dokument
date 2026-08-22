@@ -104,6 +104,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 ## Verwandte Themen
 
 - [Evolution und Architekturen digitaler LMS](evolution-digitaler-lms.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
+- [Evolution und Architekturen digitaler Rust-KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für KI-Anwendungen
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](../dokumentation/evolution-digitaler-rust-wissenssysteme.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für Wissenssysteme
 - [Evolution und Architekturen digitaler Rust-CMS](../dokumentation/evolution-digitaler-rust-cms.md) — Wasmtime/WASM-Tooling als geteilter Baustein, analoge Rust-Implementierungsachse für CMS
 - [Evolution und Architekturen digitaler Rust-Notebooks](../dokumentation/evolution-digitaler-rust-notebooks.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für Notebook-Systeme

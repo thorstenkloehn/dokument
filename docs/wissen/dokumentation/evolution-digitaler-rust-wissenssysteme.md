@@ -137,6 +137,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 ## Verwandte Themen
 
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
+- [Evolution und Architekturen digitaler Rust-KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für KI-Anwendungen
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — Zola und Zensical als Rust-Bausteine dieser Zeitachse
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md) — Qdrant, LanceDB und SurrealDB als Rust-Bausteine dieser Zeitachse
 - [Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme](evolution-digitaler-visuell-agentische-wissenssysteme.md) — yrs, diamond-types und Automerge als Rust-Bausteine dieser Zeitachse

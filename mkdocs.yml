@@ -15,6 +15,7 @@ nav:
       - "Evolution und Architekturen digitaler Generativer KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-generative-ki-anwendungen.md
       - "Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen": künstliche-intelligenz/evolution-digitaler-rag-werkzeug-anwendungen.md
       - "Evolution und Architekturen digitaler Autonomer KI-Agenten": künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md
+      - "Evolution und Architekturen digitaler Rust-KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md
 
       - KI-Coding:
           - Übersicht: künstliche-intelligenz/coding/index.md
