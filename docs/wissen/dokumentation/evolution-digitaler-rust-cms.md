@@ -112,6 +112,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 ## Verwandte Themen
 
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
+- [Evolution und Architekturen digitaler Rust-KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md) — analoge Rust-Implementierungsachse für KI-Anwendungen
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — Zola als geteilter Baustein, analoge Rust-Implementierungsachse für Wissenssysteme
 - [Evolution und Architekturen digitaler Rust-Webframeworks](../../entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md) — Axum/Actix-web als mögliche Backend-Basis für Headless-CMS-APIs
 - [Evolution und Architekturen digitaler Rust-LMS](../e-learning/evolution-digitaler-rust-lms.md) — Wasmtime/WASM-Tooling als geteilter Baustein, analoge Rust-Implementierungsachse für LMS
