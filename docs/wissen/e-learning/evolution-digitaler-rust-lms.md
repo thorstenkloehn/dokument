@@ -13,7 +13,7 @@ Wie schon bei den Wissenssystemen (vgl. [Generation 1 der Rust-Wissenssysteme-Ze
 
 ```mermaid
 graph LR
-    A["Rustlings<br/>interaktive Rust-Uebungen<br/>2018"]
+    A["Rustlings<br/>interaktive Rust-Übungen<br/>2018"]
 ```
 
 - **Rustlings** (2018) — offizielles Übungsprojekt des Rust-Teams: kleine, absichtlich fehlerhafte Code-Snippets, die der Lernende direkt in der Kommandozeile repariert, mit sofortigem Compiler-Feedback statt browserbasierter Kursoberfläche.
@@ -105,7 +105,9 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 
 - [Evolution und Architekturen digitaler LMS](evolution-digitaler-lms.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](../dokumentation/evolution-digitaler-rust-wissenssysteme.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für Wissenssysteme
-- [Evolution und Architekturen digitaler Rust-CMS](../dokumentation/evolution-digitaler-rust-cms.md) — Wasmtime als geteilter Baustein, analoge Rust-Implementierungsachse für CMS
+- [Evolution und Architekturen digitaler Rust-CMS](../dokumentation/evolution-digitaler-rust-cms.md) — Wasmtime/WASM-Tooling als geteilter Baustein, analoge Rust-Implementierungsachse für CMS
+- [Evolution und Architekturen digitaler Rust-Notebooks](../dokumentation/evolution-digitaler-rust-notebooks.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für Notebook-Systeme
+- [Evolution und Architekturen digitaler Rust-Webframeworks](../../entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md) — Axum/Actix-web als mögliche Backend-Basis für LTI-/LMS-APIs
 - [Evolution und Architekturen digitaler Cloud-LMS & LXP](evolution-digitaler-cloud-lms.md) — vertiefendes Generationenmodell, in dem Firecracker-basierte Coding-Sandboxes primär zum Einsatz kommen
 - [Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme](evolution-digitaler-agentische-tutor-oekosysteme.md) — vertiefendes Generationenmodell zu Generation 5, in der Rust-gestützte lokale KI-Inferenz primär zum Einsatz kommt
 - [Rust in der Praxis](../../entwicklung/system/rust-praxis.md) — allgemeine Rust-Werkzeuglandschaft jenseits von LMS

@@ -13,7 +13,7 @@ Bevor Rust in bestehende CMS-Toolchains eindringt, entstehen eigenständige, Rus
 
 ```mermaid
 graph LR
-    A["Cobalt.rs<br/>erster Rust-SSG<br/>2014"] --> B["Zola<br/>Static-Site-Generator<br/>ohne Laufzeitabhaengigkeiten<br/>2018"]
+    A["Cobalt.rs<br/>erster Rust-SSG<br/>2014"] --> B["Zola<br/>Static-Site-Generator<br/>ohne Laufzeitabhängigkeiten<br/>2018"]
 ```
 
 - **Cobalt.rs** (2014) — einer der ersten Static-Site-Generatoren überhaupt in Rust geschrieben, nach dem Vorbild von Jekyll.
@@ -114,6 +114,8 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — Zola als geteilter Baustein, analoge Rust-Implementierungsachse für Wissenssysteme
 - [Evolution und Architekturen digitaler Rust-Webframeworks](../../entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md) — Axum/Actix-web als mögliche Backend-Basis für Headless-CMS-APIs
+- [Evolution und Architekturen digitaler Rust-LMS](../e-learning/evolution-digitaler-rust-lms.md) — Wasmtime/WASM-Tooling als geteilter Baustein, analoge Rust-Implementierungsachse für LMS
+- [Evolution und Architekturen digitaler Rust-Notebooks](evolution-digitaler-rust-notebooks.md) — Wasmtime/WASM-Tooling als geteilter Baustein, analoge Rust-Implementierungsachse für Notebook-Systeme
 - [Evolution und Architekturen digitaler Headless-CMS](evolution-digitaler-headless-cms.md) — vertiefendes Generationenmodell zu Generation 2 der CMS-Zeitachse, in der SWC/Lightning CSS primär zum Einsatz kommen
 - [Evolution und Architekturen digitaler Composable-CMS](evolution-digitaler-composable-cms.md) — vertiefendes Generationenmodell zu Generation 3, in der Wasmtime/Shopify Functions/Fastly Compute primär zum Einsatz kommen
 - [Rust in der Praxis](../../entwicklung/system/rust-praxis.md) — allgemeine Rust-Werkzeuglandschaft jenseits von CMS

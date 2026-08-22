@@ -13,7 +13,7 @@ Bevor Rust-Bibliotheken innerhalb von Python-Notebook-Zellen nutzbar werden, bra
 
 ```mermaid
 graph LR
-    A["PyO3<br/>Rust-Python-FFI-Bruecke<br/>2017"] --> B["Evcxr<br/>Rust-Kernel fuer Jupyter<br/>2018"]
+    A["PyO3<br/>Rust-Python-FFI-Brücke<br/>2017"] --> B["Evcxr<br/>Rust-Kernel für Jupyter<br/>2018"]
 ```
 
 - **PyO3** (2017) — Rust-Bibliothek für native Python-Erweiterungen und umgekehrten Aufruf von Python aus Rust; das technische Fundament, auf dem praktisch jede spätere Rust-beschleunigte Python-Bibliothek in diesem Artikel aufbaut.
@@ -61,13 +61,13 @@ Nach DataFrame- und Query-Engines wandert auch die Code-Qualitätsprüfung selbs
 
 ## Generation 5: Rust-WASM-Tooling ermöglicht browserbasierte reaktive Notebooks, 2023
 
-Reaktive Notebooks im vollständigen Browser-/WASM-Modus aus [Generation 5 der Notebook-Zeitachse](evolution-digitaler-notebook-systeme.md#generation-5-reaktive-notebooks-ohne-versteckten-zustand-2018-2024) sowie neue, nicht-Python-basierte Notebook-Kernel setzen auf dieselbe Rust-WASM-Infrastruktur, die bereits Composable-Commerce-Edge-Laufzeiten antreibt (vgl. [Generation 3 der Rust-CMS-Zeitachse](evolution-digitaler-rust-cms.md#generation-3-wasm-edge-laufzeiten-fur-composable-mach-commerce-2019-2022)).
+Neue, nicht-Python-basierte Notebook-Kernel setzen zunehmend auf dieselbe Rust-WASM-Infrastruktur, die bereits Composable-Commerce-Edge-Laufzeiten antreibt (vgl. [Generation 3 der Rust-CMS-Zeitachse](evolution-digitaler-rust-cms.md#generation-3-wasm-edge-laufzeiten-fur-composable-mach-commerce-2019-2022)) — anders als der vollständige Browser-/WASM-Modus reaktiver Notebooks aus [Generation 5 der Notebook-Zeitachse](evolution-digitaler-notebook-systeme.md#generation-5-reaktive-notebooks-ohne-versteckten-zustand-2018-2024), der (z. B. bei Marimo) über die separate, Rust-freie Pyodide/Emscripten-Toolchain läuft.
 
-**Architektur:** Rust-zu-WebAssembly-Kompilierungswerkzeuge als gemeinsames Fundament, unabhängig davon, ob die Notebook-Sprache selbst Python (via Pyodide), JavaScript/TypeScript oder Rust ist.
+**Architektur:** Rust-zu-WebAssembly-Kompilierungswerkzeuge als gemeinsames Fundament für Rust-native WASM-Notebook-Kernel — eine von mehreren parallel existierenden WASM-Toolchains, neben der Python-/Emscripten-basierten Pyodide-Kette.
 
 | Baustein | Jahr | Rolle |
 |---|---|---|
-| **wasm-bindgen / wasm-pack** | ab 2018, breite Adoption ab 2023 | Rust-Werkzeugkette, die Rust-Code zu WebAssembly kompiliert und mit JavaScript verzahnt — technisches Fundament für Marimos vollständigen Browser-Modus ohne Server. |
+| **wasm-bindgen / wasm-pack** | ab 2018, breite Adoption ab 2023 | Rust-Werkzeugkette, die Rust-Code zu WebAssembly kompiliert und mit JavaScript verzahnt — dieselbe Bytecode-Alliance-nahe WASM-Infrastruktur wie Wasmtime, nicht jedoch die Grundlage von Marimos Browser-Modus: Der läuft über **Pyodide** (CPython, via Emscripten zu WASM kompiliert), eine eigenständige, Rust-freie Toolchain. |
 | **Deno-Jupyter-Kernel** | 2023 | Deno (JavaScript-/TypeScript-Runtime mit Rust-Kern, V8 + eigener Rust-Unterbau) erhält nativen Jupyter-Kernel-Support — TypeScript-Notebooks laufen damit direkt auf einer Rust-gestützten Runtime statt Node.js. |
 
 ---
@@ -123,7 +123,8 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 - [Evolution und Architekturen digitaler Notebook-Systeme](evolution-digitaler-notebook-systeme.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — Candle/fastembed-rs als geteilter Baustein, analoge Rust-Implementierungsachse für Wissenssysteme
 - [Evolution und Architekturen digitaler Rust-CMS](evolution-digitaler-rust-cms.md) — Wasmtime/WASM-Tooling als geteilter Baustein, analoge Rust-Implementierungsachse für CMS
-- [Evolution und Architekturen digitaler Rust-LMS](../e-learning/evolution-digitaler-rust-lms.md) — Firecracker/Candle als geteilte Bausteine, analoge Rust-Implementierungsachse für LMS
+- [Evolution und Architekturen digitaler Rust-LMS](../e-learning/evolution-digitaler-rust-lms.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für LMS
+- [Evolution und Architekturen digitaler Rust-Webframeworks](../../entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md) — Axum als mögliche Backend-Basis für Jupyter-artige Notebook-Web-Services
 - [Evolution und Architekturen digitaler Reaktiver Notebooks](evolution-digitaler-reaktive-notebooks.md) — vertiefendes Generationenmodell zu Generation 5, in dem WASM-Tooling primär zum Einsatz kommt
 - [Evolution und Architekturen digitaler KI-nativer Notebook-Umgebungen](evolution-digitaler-ki-native-notebooks.md) — vertiefendes Generationenmodell zu Generation 6, in dem uv primär zum Einsatz kommt
 - [Rust in der Praxis](../../entwicklung/system/rust-praxis.md) — allgemeine Rust-Werkzeuglandschaft jenseits von Notebooks
