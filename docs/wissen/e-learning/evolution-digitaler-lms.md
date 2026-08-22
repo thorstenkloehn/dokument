@@ -107,6 +107,9 @@ Zukunftsorientierte Architekturen, in denen KI-Agenten nicht nur einzelne Aufgab
 !!! warning "Achtung: Telemetrie- und Datenschutzlücken bleiben"
     Wie in [Was fehlt? Aktuelle Lücken im E-Learning-Ökosystem](index.md#3-was-fehlt-aktuelle-lucken-im-e-learning-okosystem) beschrieben, sind SCORM und selbst xAPI nicht darauf ausgelegt, freie, nicht-deterministische Dialoge zwischen Lernenden und KI-Agenten vollständig zu erfassen — ein offener Punkt auch für Generation-5-Architekturen.
 
+!!! note "Rust als quer liegende Implementierungsachse"
+    Quer zu allen fünf Generationen dieser Zeitachse liegt eine eigene Rust-Implementierungsachse — von sicherer Sandbox-Ausführung für Programmier-Übungen über den Kern etablierter Lernwerkzeuge bis zu lokaler KI-Tutor-Inferenz. Details in [Evolution und Architekturen digitaler Rust-LMS](evolution-digitaler-rust-lms.md).
+
 ---
 
 ## Alternative Sortier- & Klassifikationskriterien für LMS
@@ -149,6 +152,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich LMS nac
 - [Evolution und Architekturen digitaler interoperabler LMS](evolution-digitaler-interoperable-lms.md) — vertiefendes Generationenmodell speziell für Generation 3 dieses Artikels
 - [Evolution und Architekturen digitaler KI-adaptiver Lernplattformen](evolution-digitaler-ki-adaptive-lernplattformen.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
 - [Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme](evolution-digitaler-agentische-tutor-oekosysteme.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
+- [Evolution und Architekturen digitaler Rust-LMS](evolution-digitaler-rust-lms.md) — quer zu allen fünf Generationen liegende Implementierungsachse (Rust-Kerne hinter Sandbox-Ausführung, Lernwerkzeugen und KI-Tutor-Inferenz)
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../dokumentation/evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
 - [Evolution und Architekturen digitaler Notebook-Systeme](../dokumentation/evolution-digitaler-notebook-systeme.md) — analoges Generationenmodell für interaktive Notebook-Systeme
 - [Evolution und Architekturen digitaler Web-Frameworks](../../entwicklung/webentwicklung/evolution-digitaler-webframeworks.md) — analoges Generationenmodell für Web-Frameworks

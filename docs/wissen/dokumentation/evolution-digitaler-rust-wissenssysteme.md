@@ -142,5 +142,8 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 - [Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme](evolution-digitaler-visuell-agentische-wissenssysteme.md) — yrs, diamond-types und Automerge als Rust-Bausteine dieser Zeitachse
 - [Wissensdatenbanken mit KI & semantischer Suche](wissensdatenbanken-ki-semantische-suche.md) — technische Mechanismen (Embeddings, Chunking, Vektordatenbanken), die mehrere hier genannte Rust-Systeme umsetzen
 - [Evolution und Architekturen digitaler Rust-Webframeworks](../../entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md) — analoge Rust-Implementierungsachse für Web-Frameworks statt Wissenssysteme
+- [Evolution und Architekturen digitaler Rust-CMS](evolution-digitaler-rust-cms.md) — analoge Rust-Implementierungsachse für CMS, Zola als geteilter Baustein
+- [Evolution und Architekturen digitaler Rust-LMS](../e-learning/evolution-digitaler-rust-lms.md) — analoge Rust-Implementierungsachse für LMS, Candle als geteilter Baustein
+- [Evolution und Architekturen digitaler Rust-Notebooks](evolution-digitaler-rust-notebooks.md) — analoge Rust-Implementierungsachse für Notebook-Systeme, Candle/fastembed-rs als geteilter Baustein
 - [Rust in der Praxis](../../entwicklung/system/rust-praxis.md) — allgemeine Rust-Werkzeuglandschaft jenseits von Wissenssystemen
 - [Beste KI-Agent-SDKs für Rust-Bibliotheken (Top 20)](../../künstliche-intelligenz/coding/ki-agent-sdk-rust-bibliotheken-topliste.md) — verwandte Rust-Bibliotheken für agentische statt reiner Wissenssystem-Infrastruktur
