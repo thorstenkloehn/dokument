@@ -30,7 +30,7 @@ graph LR
 
 | System | Speicher | Besonderheit |
 |---|---|---|
-| **MediaWiki** | PostgreSQL, MySQL, SQLite | Das System hinter Wikipedia; robust für riesige Enzyklopädien. Siehe [MediaWiki installieren](mediawiki/index.md). |
+| **MediaWiki** | PostgreSQL, MySQL, SQLite | Das System hinter Wikipedia; robust für riesige Enzyklopädien. Siehe [MediaWiki installieren](mediawiki/index.md) und [Evolution und Architekturen von MediaWiki](mediawiki/evolution-digitaler-mediawiki.md) für die eigene Versions-/Architektur-Geschichte. |
 | **DokuWiki** | Dateibasiert | Ohne Datenbank, wartungsarm und schnell eingerichtet — dateibasierte Ausnahme dieser Ära. |
 | **TikiWiki, TWiki** | MySQL/PostgreSQL | Frühe LAMP-basierte Wiki-Engines mit breitem Feature-Umfang. |
 
