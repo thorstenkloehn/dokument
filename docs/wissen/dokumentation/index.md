@@ -42,7 +42,7 @@ Tools, die speziell für das Erstellen strukturierter Bücher, Handbücher und l
 * **Nextra** (React/Next.js): Ein sehr populäres Dokumentations-Framework von Vercel, das die Stärken von Next.js und MDX kombiniert.
 ## 3. Interaktive & "Executable" Notebook-Systeme
 
-Systeme, die ausführbaren Code, Visualisierungen und erklärenden Text in einem interaktiven Dokument vereinen.
+Systeme, die ausführbaren Code, Visualisierungen und erklärenden Text in einem interaktiven Dokument vereinen. Einen chronologischen Blick auf die technologischen Generationen dieser Systeme — von Literate-Programming-Vorläufern bis zu KI-nativen Notebook-Umgebungen — bietet [Evolution und Architekturen digitaler Notebook-Systeme](evolution-digitaler-notebook-systeme.md).
 
 * **Quarto** (CLI): Das moderne Nachfolgesystem von R Markdown. Unterstützt Python, R, Julia und Observable JS. Ermöglicht das Rendern von Notebooks in hochqualitative PDFs, HTML-Seiten, wissenschaftliche Arbeiten und Präsentationen.
 * **JupyterLab / Jupyter Book**: Der Industriestandard für Data Science. JupyterLab bietet eine vollständige Entwicklungsumgebung im Browser, während Jupyter Book eine Sammlung von Notebooks als schönes Online-Buch veröffentlicht.
