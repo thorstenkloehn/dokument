@@ -9,7 +9,7 @@ Content-Management-Systeme (CMS) lassen sich — analog zu [Evolution und Archit
 
 ## Generation 1: Klassische, monolithische CMS — Datenbank, Templates, serverseitiges Rendering
 
-Die erste Generation eint drei Prinzipien: eine **zentrale Datenbank** (oder zumindest ein zentrales Dateisystem) als Content-Speicher, **Templates** zur Trennung von Inhalt und Präsentation und **serverseitiges Rendering** der ausgelieferten Seite. Sie lässt sich in drei technologische Entwicklungsstufen unterteilen:
+Die erste Generation eint drei Prinzipien: eine **zentrale Datenbank** (oder zumindest ein zentrales Dateisystem) als Content-Speicher, **Templates** zur Trennung von Inhalt und Präsentation und **serverseitiges Rendering** der ausgelieferten Seite. Sie lässt sich in drei technologische Entwicklungsstufen unterteilen — eine tiefergehende Betrachtung dieser Architekturlinie bis zur heutigen Hybrid-Rückkehr bietet [Evolution und Architekturen digitaler klassischer CMS](evolution-digitaler-klassische-cms.md):
 
 ```mermaid
 graph LR
@@ -52,7 +52,7 @@ graph LR
 
 ## Generation 2: Headless & Decoupled CMS (API-first), ca. 2015 – 2021
 
-Die Trennung von Content und Präsentation wird radikalisiert: Statt server­seitig gerenderter Templates liefert das CMS Inhalte ausschließlich über **REST- oder GraphQL-APIs** aus ("Content-as-a-Service"), das Frontend (React/Vue/Next.js, oft als JAMstack) ist ein eigenständiges Projekt. Das ermöglicht Omnichannel-Publishing — dieselben Inhalte gleichzeitig auf Website, App und IoT-Gerät.
+Die Trennung von Content und Präsentation wird radikalisiert: Statt server­seitig gerenderter Templates liefert das CMS Inhalte ausschließlich über **REST- oder GraphQL-APIs** aus ("Content-as-a-Service"), das Frontend (React/Vue/Next.js, oft als JAMstack) ist ein eigenständiges Projekt. Das ermöglicht Omnichannel-Publishing — dieselben Inhalte gleichzeitig auf Website, App und IoT-Gerät. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Headless-CMS](evolution-digitaler-headless-cms.md).
 
 **Architektur:** Node.js/Go/Ruby/PHP-Backends, JSON-APIs, getrennte Frontend-Deployments, oft Cloud-SaaS.
 
@@ -78,7 +78,7 @@ Eine dateibasierte Ausnahme dieser Ära — analog zu DokuWiki in der Wiki-Gener
 
 ## Generation 3: Composable & MACH-Architektur / Digital Experience Platforms (DXP), ab ca. 2020
 
-Headless wird zum Baustein eines größeren Prinzips: **MACH** (Microservices, API-first, Cloud-native, Headless). Statt einer monolithischen Plattform kombinieren Teams austauschbare Best-of-Breed-Services — Content, Commerce, Search, Personalisierung — über APIs zu einer individuellen "Digital Experience Platform" (DXP).
+Headless wird zum Baustein eines größeren Prinzips: **MACH** (Microservices, API-first, Cloud-native, Headless). Statt einer monolithischen Plattform kombinieren Teams austauschbare Best-of-Breed-Services — Content, Commerce, Search, Personalisierung — über APIs zu einer individuellen "Digital Experience Platform" (DXP). Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Composable-CMS](evolution-digitaler-composable-cms.md).
 
 **Architektur:** Microservices, API-Gateways, Cloud-native Skalierung, Echtzeit-Personalisierungs-Engines.
 
@@ -94,7 +94,7 @@ Headless wird zum Baustein eines größeren Prinzips: **MACH** (Microservices, A
 
 ## Generation 4: KI-gestützte Content-Erstellung & Personalisierung, ab ca. 2023
 
-Generative KI wandert direkt in den Editor: Textentwürfe, Bildgenerierung, automatische Übersetzung, SEO-Optimierung und Echtzeit-Personalisierung laufen als eingebaute oder angebundene LLM-Funktionen. Ausführlich behandelt in [Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration](klassische-wissensmanagement-cms-llm-integration.md#3-klassische-headless-cms).
+Generative KI wandert direkt in den Editor: Textentwürfe, Bildgenerierung, automatische Übersetzung, SEO-Optimierung und Echtzeit-Personalisierung laufen als eingebaute oder angebundene LLM-Funktionen. Ausführlich behandelt in [Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration](klassische-wissensmanagement-cms-llm-integration.md#3-klassische-headless-cms). Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler KI-Content-Erstellung](evolution-digitaler-ki-content-erstellung.md).
 
 | System | KI-Funktion |
 |---|---|
@@ -107,7 +107,7 @@ Generative KI wandert direkt in den Editor: Textentwürfe, Bildgenerierung, auto
 
 ## Generation 5: Agentische & autonome Content-Ökosysteme
 
-Zukunftsorientierte Architekturen, in denen KI-Agenten den Content-Lebenszyklus nicht nur unterstützen, sondern eigenständig steuern: Recherche, Entwurf, Freigabe-Routing, Veröffentlichung und kontinuierliche Aktualisierung anhand von Performance-Daten laufen als Agenten-Workflow, der menschliche Redakteure nur noch an Freigabepunkten einbindet.
+Zukunftsorientierte Architekturen, in denen KI-Agenten den Content-Lebenszyklus nicht nur unterstützen, sondern eigenständig steuern: Recherche, Entwurf, Freigabe-Routing, Veröffentlichung und kontinuierliche Aktualisierung anhand von Performance-Daten laufen als Agenten-Workflow, der menschliche Redakteure nur noch an Freigabepunkten einbindet. Eine eigene, tiefergehende Generationen-Zeitachse speziell für diese Architekturlinie bietet [Evolution und Architekturen digitaler Agentischer Content-Ökosysteme](evolution-digitaler-agentische-content-oekosysteme.md).
 
 - **Autonome Redaktions-Agenten** (Multi-Agenten-Frameworks auf Basis von Claude Code, OpenAI AgentKit): recherchieren Themen, erstellen Entwürfe, prüfen sie gegen Stil-/Faktenrichtlinien und stellen sie als Pull Request zur menschlichen Freigabe — konzeptionell deckungsgleich mit dem [agentischen Human-in-the-Loop-Prinzip](llm-first-wiki-tools-agenten.md#4-autonome-wiki-pflege-agenten-agent-schreibt-in-ein-bestehendes-wiki) aus den LLM-first-Wiki-Werkzeugen.
 - **KI-orchestrierte Composable Stacks** (z. B. Contentful als „Composable Stack Hub"): KI übernimmt die Steuerungsebene über den gesamten MACH-Stack statt nur einzelne Editor-Funktionen.
@@ -153,6 +153,12 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich CMS nac
 
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell für Wikis & PKM-Systeme
+- [Evolution und Architekturen digitaler klassischer CMS](evolution-digitaler-klassische-cms.md) — vertiefendes Generationenmodell speziell für Generation 1 dieses Artikels
+- [Evolution und Architekturen digitaler Headless-CMS](evolution-digitaler-headless-cms.md) — vertiefendes Generationenmodell speziell für Generation 2 dieses Artikels
+- [Evolution und Architekturen digitaler Composable-CMS](evolution-digitaler-composable-cms.md) — vertiefendes Generationenmodell speziell für Generation 3 dieses Artikels
+- [Evolution und Architekturen digitaler KI-Content-Erstellung](evolution-digitaler-ki-content-erstellung.md) — vertiefendes Generationenmodell speziell für Generation 4 dieses Artikels
+- [Evolution und Architekturen digitaler Agentischer Content-Ökosysteme](evolution-digitaler-agentische-content-oekosysteme.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
+- [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — analoges Generationenmodell für Docs-as-Code-Werkzeuge (Sphinx, MkDocs, Docusaurus)
 - [Evolution und Architekturen digitaler LMS](../e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme
 - [Evolution und Architekturen digitaler Web-Frameworks](../../entwicklung/webentwicklung/evolution-digitaler-webframeworks.md) — analoges Generationenmodell für Web-Frameworks, direkte Schnittmenge bei Headless-Frontends
 - [Evolution und Architekturen digitaler KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md) — analoges Generationenmodell für KI-Anwendungen

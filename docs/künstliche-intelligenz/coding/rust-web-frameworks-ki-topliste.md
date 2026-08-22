@@ -98,6 +98,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
+- [Evolution und Architekturen digitaler Rust-Webframeworks](../../entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md) — chronologisches Generationenmodell derselben und weiterer Frameworks
 - [Rust Praxis-Handbuch](../../entwicklung/system/rust-praxis.md) — Sprachgrundlagen inkl. Axum/Tokio
 - [Beste Sprachmodelle für Rust-Programmierung (Top 20)](llm-rust-topliste.md) — welches Modell hinter async-openai/Rig laufen sollte
 - [Beste lokale Sprachmodelle für Rust-Programmierung (Self-Hosting, Top 20)](lokale-sprachmodelle-rust-topliste.md) — offene Modelle für mit Candle/`ort` selbst ausgeführte Inferenz

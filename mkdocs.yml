@@ -9,6 +9,12 @@ nav:
   - KI & Automatisierung:
       - Übersicht: künstliche-intelligenz/index.md
       - "Evolution und Architekturen digitaler KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md
+      - "Evolution und Architekturen digitaler Expertensysteme": künstliche-intelligenz/evolution-digitaler-expertensysteme.md
+      - "Evolution und Architekturen digitaler Deep-Learning-Anwendungen": künstliche-intelligenz/evolution-digitaler-deep-learning-anwendungen.md
+      - "Evolution und Architekturen digitaler Cloud-KI-APIs": künstliche-intelligenz/evolution-digitaler-cloud-ki-apis.md
+      - "Evolution und Architekturen digitaler Generativer KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-generative-ki-anwendungen.md
+      - "Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen": künstliche-intelligenz/evolution-digitaler-rag-werkzeug-anwendungen.md
+      - "Evolution und Architekturen digitaler Autonomer KI-Agenten": künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md
 
       - KI-Coding:
           - Übersicht: künstliche-intelligenz/coding/index.md
@@ -143,6 +149,13 @@ nav:
       - Webentwicklung:
           - Übersicht: entwicklung/webentwicklung/index.md
           - "Evolution und Architekturen digitaler Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-webframeworks.md
+          - "Evolution und Architekturen digitaler Server-Monolith-Frameworks": entwicklung/webentwicklung/evolution-digitaler-monolith-frameworks.md
+          - "Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken": entwicklung/webentwicklung/evolution-digitaler-ajax-js-bibliotheken.md
+          - "Evolution und Architekturen digitaler SPA-Frameworks": entwicklung/webentwicklung/evolution-digitaler-spa-frameworks.md
+          - "Evolution und Architekturen digitaler Full-Stack-Meta-Frameworks": entwicklung/webentwicklung/evolution-digitaler-meta-frameworks.md
+          - "Evolution und Architekturen digitaler Islands- & Edge-Architekturen": entwicklung/webentwicklung/evolution-digitaler-islands-edge-architektur.md
+          - "Evolution und Architekturen digitaler KI-nativer Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-ki-native-webframeworks.md
+          - "Evolution und Architekturen digitaler Rust-Webframeworks": entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md
           - KI Webentwicklung: entwicklung/webentwicklung/ki-webentwicklung.md
           - Frontend mit KI: entwicklung/webentwicklung/frontend-ki.md
           - Backend-Integration: entwicklung/webentwicklung/backend-integration.md
@@ -272,6 +285,11 @@ nav:
       - E-Learning:
           - Übersicht: wissen/e-learning/index.md
           - "Evolution und Architekturen digitaler LMS": wissen/e-learning/evolution-digitaler-lms.md
+          - "Evolution und Architekturen digitaler klassischer LMS": wissen/e-learning/evolution-digitaler-klassische-lms.md
+          - "Evolution und Architekturen digitaler Cloud-LMS & LXP": wissen/e-learning/evolution-digitaler-cloud-lms.md
+          - "Evolution und Architekturen digitaler interoperabler LMS": wissen/e-learning/evolution-digitaler-interoperable-lms.md
+          - "Evolution und Architekturen digitaler KI-adaptiver Lernplattformen": wissen/e-learning/evolution-digitaler-ki-adaptive-lernplattformen.md
+          - "Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme": wissen/e-learning/evolution-digitaler-agentische-tutor-oekosysteme.md
           - KI in Lehre & Weiterbildung: wissen/e-learning/ki-lehre-weiterbildung.md
           - Beste KI-Agenten für Deutsch- und Fremdsprachenlernen (Open Source, Top 20): wissen/e-learning/sprachlern-ki-agenten-topliste.md
           - Moderne Lernmethoden für Programmiersprachen: wissen/e-learning/lernmethoden-programmiersprachen.md
@@ -289,7 +307,19 @@ nav:
       - Dokumentation:
           - Übersicht: wissen/dokumentation/index.md
           - "Evolution und Architekturen digitaler Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssysteme.md
+          - "Evolution und Architekturen digitaler Wiki-Engines": wissen/dokumentation/evolution-digitaler-wiki-engines.md
           - "Evolution und Architekturen digitaler Content-Management-Systeme": wissen/dokumentation/evolution-digitaler-cms.md
+          - "Evolution und Architekturen digitaler klassischer CMS": wissen/dokumentation/evolution-digitaler-klassische-cms.md
+          - "Evolution und Architekturen digitaler Headless-CMS": wissen/dokumentation/evolution-digitaler-headless-cms.md
+          - "Evolution und Architekturen digitaler Composable-CMS": wissen/dokumentation/evolution-digitaler-composable-cms.md
+          - "Evolution und Architekturen digitaler KI-Content-Erstellung": wissen/dokumentation/evolution-digitaler-ki-content-erstellung.md
+          - "Evolution und Architekturen digitaler Agentischer Content-Ökosysteme": wissen/dokumentation/evolution-digitaler-agentische-content-oekosysteme.md
+          - "Evolution und Architekturen digitaler Docs-as-Code": wissen/dokumentation/evolution-digitaler-docs-as-code.md
+          - "Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren": wissen/dokumentation/evolution-digitaler-pkm-wissensgraphen.md
+          - "Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme": wissen/dokumentation/evolution-digitaler-semantische-rag-wissenssysteme.md
+          - "Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme": wissen/dokumentation/evolution-digitaler-visuell-agentische-wissenssysteme.md
+          - "Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme": wissen/dokumentation/evolution-digitaler-multiagenten-wissensoekosysteme.md
+          - "Evolution und Architekturen digitaler Rust-Wissenssysteme": wissen/dokumentation/evolution-digitaler-rust-wissenssysteme.md
           - Native „LLM-first" Wiki-Tools & Agenten: wissen/dokumentation/llm-first-wiki-tools-agenten.md
           - Klassische Wiki-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wiki-systeme-llm-integration.md
           - Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wissensmanagement-cms-llm-integration.md

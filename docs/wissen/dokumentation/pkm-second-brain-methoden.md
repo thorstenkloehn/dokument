@@ -3,7 +3,7 @@
 **Personal Knowledge Management (PKM)** — oft auch als **„Second Brain"** bezeichnet — ist keine einzelne Software, sondern eine Sammlung von **Methoden** dafür, wie ein Mensch Notizen, Ideen und Wissen so festhält, dass daraus über Zeit ein zusammenhängendes, durchsuchbares Denk-Werkzeug entsteht statt eines toten Notizarchivs. Dieses Kapitel ordnet die wichtigsten Methoden ein und zeigt, welche der bereits in diesem Repository dokumentierten Werkzeuge welche Methode konkret umsetzen.
 
 !!! note "Hinweis: Abgrenzung zu den bisherigen Kapiteln"
-    Wo das [LLM-Wiki-Pattern (Karpathy-Muster)](llm-wiki-pattern-karpathy.md) beschreibt, wie ein **KI-Agent** ein Wiki aus Quellen kompiliert, geht es hier um die **menschlichen** Methoden, die PKM-Werkzeuge seit Jahrzehnten (Zettelkasten seit den 1950ern) strukturieren — und darum, wie KI diese Methoden heute zunehmend unterstützt oder automatisiert.
+    Wo das [LLM-Wiki-Pattern (Karpathy-Muster)](llm-wiki-pattern-karpathy.md) beschreibt, wie ein **KI-Agent** ein Wiki aus Quellen kompiliert, geht es hier um die **menschlichen** Methoden, die PKM-Werkzeuge seit Jahrzehnten (Zettelkasten seit den 1950ern) strukturieren — und darum, wie KI diese Methoden heute zunehmend unterstützt oder automatisiert. Die technische Architektur-Zeitachse der Werkzeuge selbst — von Hypertext-Vorläufern bis zu KI-nativen Canvas-Systemen — behandelt [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md).
 
 ---
 
@@ -74,6 +74,7 @@ Die mühsamste Phase im CODE-Framework ist historisch **„Organize"** — Notiz
 ## Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
+- [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md) — technische Architektur-Zeitachse der Werkzeuge selbst
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht, u. a. Obsidian, Logseq, Quartz
 - [Native „LLM-first" Wiki-Tools & Agenten](llm-first-wiki-tools-agenten.md) — KI-native PKM-Tools im Detail
 - [Khoj: KI-„Zweites Gehirn" für persönliche Wissenssuche](khoj-ki-zweites-gehirn.md) — konkretes Second-Brain-Werkzeug

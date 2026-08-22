@@ -3,7 +3,7 @@
 Klassische Volltextsuche findet nur, was **wörtlich** in einem Dokument steht — eine Suche nach „Auto" übersieht ein Dokument, das nur „Fahrzeug" oder „PKW" verwendet. **KI-gestützte Wissensdatenbanken** lösen das, indem sie Inhalte über **Vektordatenbanken** und **Sprachmodelle** nach **Bedeutung** statt nach exakten Begriffen durchsuchbar machen. Dieses Kapitel erklärt die technische Grundlage, auf der praktisch alle bisher in diesem Repository dokumentierten RAG-Plattformen aufbauen — [AnythingLLM](anythingllm-rag-plattform.md), [Onyx](onyx-danswer-rag-plattform.md), [Open WebUI](open-webui-rag-agenten-plattform.md), [Dify](dify-agenten-workflow-plattform.md), [Flowise](flowise-visueller-flow-builder.md) und [Khoj](khoj-ki-zweites-gehirn.md).
 
 !!! note "Hinweis: Vertiefung zur Gesamtübersicht"
-    Diese Seite vertieft Abschnitt „[RAG- & KI-Zentrierte Wissensdatenbanken](index.md#6-rag-ki-zentrierte-wissensdatenbanken-rag-co-wikis)" der [Dokumentations-Übersicht](index.md) mit den konkreten technischen Mechanismen dahinter.
+    Diese Seite vertieft Abschnitt „[RAG- & KI-Zentrierte Wissensdatenbanken](index.md#6-rag-ki-zentrierte-wissensdatenbanken-rag-co-wikis)" der [Dokumentations-Übersicht](index.md) mit den konkreten technischen Mechanismen dahinter. Die chronologische Generationen-Zeitachse dieser Architekturen — von Semantic-Web-Wissensgraphen bis zu GraphRAG — bietet [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md).
 
 ---
 
@@ -104,6 +104,7 @@ Semantische Suche allein liefert nur relevante Textabschnitte — **Retrieval-Au
 ## Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
+- [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md) — chronologisches Generationenmodell dieser Architekturen
 - [Dokumentenerstellung, Wikis & Notebooks](index.md#6-rag-ki-zentrierte-wissensdatenbanken-rag-co-wikis) — Gesamtübersicht der RAG-Co-Wiki-Kategorie
 - [PostgreSQL + pgvector](../daten/datenbanken/pgvector-anleitung.md) — praktische Installationsanleitung für eine selbst gehostete Vektordatenbank
 - [LLM-Wiki-Pattern (Karpathy-Muster)](llm-wiki-pattern-karpathy.md) — Alternative/Ergänzung zu RAG: einmalig kompiliertes Wiki statt Suche bei jeder Anfrage
