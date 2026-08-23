@@ -144,3 +144,4 @@ Neben dem chronologischen Generationenmodell lassen sich Editoren nach folgenden
 - [KI Coding](../../künstliche-intelligenz/coding/ki-coding.md) — Einstieg in terminal-/agentenzentrierte Werkzeuge derselben Generation 6
 - [AI Agents – Das Praxis-Handbuch & Architektur-Leitfaden](../../künstliche-intelligenz/coding/ai-agents-praxis.md) — Vertiefung zu agentischer Mehrdatei-Bearbeitung aus Generation 6 dieses Artikels
 - [Shell & Bash Praxis-Handbuch](shell-bash-praxis.md) — Vim/vi als alltägliches Terminal-Werkzeug
+- [Evolution und Architekturen digitaler Build-Systeme](evolution-digitaler-build-systeme.md) — komplementäre Werkzeuggattung in derselben Entwickler-Werkzeug-Reihe

@@ -125,4 +125,5 @@ Die aktuelle Generation verbindet mehrere zuvor getrennte Bausteine — standard
 - [Beste MCP-Server (Top 20)](coding/mcp-server-topliste.md) — Vertiefung zu Generation 6
 - [LLM-Wiki-Pattern (Karpathy-Muster)](../wissen/dokumentation/llm-wiki-pattern-karpathy.md) — agentisches Pflegeprinzip, das dieses Repository selbst nutzt
 - [Evolution und Architekturen digitaler Interpreter](../entwicklung/system/evolution-digitaler-interpreter.md) — Sandbox-Interpreter-Architektur hinter den Code-Sandboxes aus Generation 3 dieser Zeitachse
+- [Evolution und Architekturen digitaler Build-Systeme](../entwicklung/system/evolution-digitaler-build-systeme.md) — autonome Build-Fehler-Reparatur aus Generation 6 dieses Artikels als Vertiefung zu Generation 3 dieser Zeitachse
 - [Evolution und Architekturen digitaler Debugger](../entwicklung/system/evolution-digitaler-debugger.md) — KI-gestützte Root-Cause-Analyse aus Generation 6 dieses Artikels als Vertiefung zu Generation 3 dieser Zeitachse
