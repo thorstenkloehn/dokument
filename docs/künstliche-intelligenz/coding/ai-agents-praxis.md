@@ -229,3 +229,4 @@ Ein produktiver Agent erfordert kontinuierliche Qualitätskontrolle:
 * [Beste Cloud-KI-Agenten (Allgemein, Top 20)](cloud-ki-agenten-topliste.md)
 * [Evolution und Architekturen digitaler Debugger](../../entwicklung/system/evolution-digitaler-debugger.md) — KI-gestützte Root-Cause-Analyse als Generation 6 der Debugger-Architektur-Zeitachse
 * [Evolution und Architekturen digitaler Editoren](../../entwicklung/system/evolution-digitaler-editoren.md) — KI-native Editoren (Cursor, Windsurf, Zed) als Generation 6 der Editor-Architektur-Zeitachse
+* [Evolution und Architekturen digitaler Build-Systeme](../../entwicklung/system/evolution-digitaler-build-systeme.md) — autonome Build-Fehler-Reparatur als Generation 6 der Build-System-Architektur-Zeitachse

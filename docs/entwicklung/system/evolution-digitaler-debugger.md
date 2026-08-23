@@ -134,6 +134,7 @@ Neben dem chronologischen Generationenmodell lassen sich Debugger nach folgenden
 - [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — DWARF-Debug-Symbole aus Generation 3/4 dort als technische Grundlage von Generation 2 dieses Artikels, Language Server Protocol aus Generation 5 dort als direktes Vorbild für das Debug Adapter Protocol aus Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Interpreter](evolution-digitaler-interpreter.md) — komplementäre Ausführungsarchitekturen, die Debugger dieses Artikels jeweils beobachtbar machen
 - [Evolution und Architekturen digitaler Editoren](evolution-digitaler-editoren.md) — Debug Adapter Protocol aus Generation 5 dieses Artikels als Debugger-Pendant zu Generation 5 dort
+- [Evolution und Architekturen digitaler Build-Systeme](evolution-digitaler-build-systeme.md) — KI-Agenten reparieren Build-Fehler aus Generation 6 dort als Analogie zur KI-gestützten Root-Cause-Analyse aus Generation 6 dieses Artikels
 - [C in der Praxis](c-praxis.md) — praktische GDB-Nutzung, siehe Generation 2 dieses Artikels
 - [C++ Praxis-Handbuch](cpp-praxis.md) — Sanitizer und Debug-Symbole als Ergänzung zu GDB
 - [Assembler: Fehler & Sicherheit](assembler-fehler-sicherheit.md) — Debugging auf Maschinencode-Ebene

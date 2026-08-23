@@ -55,3 +55,4 @@ target_sources(app PUBLIC FILE_SET CXX_MODULES FILES math.cppm)
 * [Rust, C & C++ Integration](rust-c-cpp-integration.md) – C/C++ & Rust
 * [Compiler](compiler.md) – Compiler-Grundlagen
 * [Linux-Systemprogrammierung](linux-systemprogrammierung.md) – Systemebene
+* [Evolution und Architekturen digitaler Build-Systeme](evolution-digitaler-build-systeme.md) – CMake und Ninja als Generation 2 der Build-System-Architektur-Zeitachse

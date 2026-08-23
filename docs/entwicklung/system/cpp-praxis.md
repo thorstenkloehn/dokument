@@ -216,3 +216,4 @@ target_link_libraries(app PRIVATE Threads::Threads)
 * [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — C++ als Generation 3 der übergeordneten Paradigmen-Zeitachse
 * [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — GCC/Clang als Generation 3/4 der Compiler-Architektur-Zeitachse
 * [Evolution und Architekturen digitaler Debugger](evolution-digitaler-debugger.md) — GDB und Sanitizer als Vertiefung zu Generation 2 der Debugger-Architektur-Zeitachse
+* [Evolution und Architekturen digitaler Build-Systeme](evolution-digitaler-build-systeme.md) — Make und CMake als Generation 1/2 der Build-System-Architektur-Zeitachse
