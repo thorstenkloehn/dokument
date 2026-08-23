@@ -510,3 +510,4 @@ claude -p "Prüfe, ob alle öffentlichen Funktionen Doctests haben, und liste L�
 * [Entwickler-Curriculum: Software Engineering, Systems Programming mit Rust & Agentic AI](index.md) — übergeordnetes Curriculum
 * [KI-Entwicklungsworkflow für Rust](ki-entwicklungsworkflow-rust.md) — der 9-phasige Rust-spezifische Workflow, den dieser Leitfaden mit Claude-Code-Werkzeugen unterlegt
 * [Rust-Praxisprojekte mit Claude Code](rust-praxisprojekte.md) — wendet Skills, Subagenten und Hooks aus dieser Seite auf drei konkrete Projekte an
+* [Evolution und Architekturen digitaler Versionskontrollsysteme](../system/evolution-digitaler-versionskontrollsysteme.md) — der Git-Workflow aus Phase 7 dieser Seite als Generation 6 der Versionskontroll-Architektur-Zeitachse
