@@ -116,6 +116,7 @@ Typische, sinnvoll begrenzte Tool-Definitionen für einen solchen MCP-Server:
 ## Verwandte Themen
 
 - [MediaWiki Installieren](index.md) — Basis-Setup
+- [Evolution und Architekturen von MediaWiki](evolution-digitaler-mediawiki.md) — historische Einordnung, vertieft Generation 6 dieses Artikels
 - [MediaWiki Python Bot-Automatisierung](mediawiki-python-bot.md) — Grundlagen der `mwclient`-Anbindung ohne KI-Schicht
 - [Semantisches MediaWiki](../semantische-mediawiki/installieren.md) — strukturierte Daten, die ein KI-Agent gezielt abfragen kann
 - [Native „LLM-first" Wiki-Tools & Agenten](../llm-first-wiki-tools-agenten.md) — Einordnung in die breitere Werkzeuglandschaft

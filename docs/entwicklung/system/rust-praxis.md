@@ -218,3 +218,6 @@ mod tests {
 * [Beste Rust-Frameworks & Web-Backends mit KI-Unterstützung (Top 20)](../../künstliche-intelligenz/coding/rust-web-frameworks-ki-topliste.md)
 * [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-agenten-rust-topliste.md)
 * [Beste KI-Assistenten & Code-Editoren für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-assistenten-rust-topliste.md)
+* [Evolution und Architekturen digitaler Enterprise-Programmiersprachen](../evolution-digitaler-enterprise-programmiersprachen.md) — Rust als Generation 6 der allgemeinen Enterprise-Sprachachse
+* [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — Rust als Generation 6 der übergeordneten Paradigmen-Zeitachse
+* [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — rust-analyzer als Generation 5 der Compiler-Architektur-Zeitachse (Compiler als IDE-Dauerdienst)

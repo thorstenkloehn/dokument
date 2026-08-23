@@ -135,3 +135,7 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
+## Weiterführende Themen
+
+- [Evolution und Architekturen von MediaWiki](evolution-digitaler-mediawiki.md) — historische Einordnung der hier installierten MediaWiki-1.41.x-Generation
+

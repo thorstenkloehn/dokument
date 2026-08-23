@@ -30,7 +30,7 @@ graph LR
 
 | System | Speicher | Besonderheit |
 |---|---|---|
-| **MediaWiki** | PostgreSQL, MySQL, SQLite | Das System hinter Wikipedia; robust für riesige Enzyklopädien. Siehe [MediaWiki installieren](mediawiki/index.md). |
+| **MediaWiki** | PostgreSQL, MySQL, SQLite | Das System hinter Wikipedia; robust für riesige Enzyklopädien. Siehe [MediaWiki installieren](mediawiki/index.md) und [Evolution und Architekturen von MediaWiki](mediawiki/evolution-digitaler-mediawiki.md) für die eigene Versions-/Architektur-Geschichte. |
 | **DokuWiki** | Dateibasiert | Ohne Datenbank, wartungsarm und schnell eingerichtet — dateibasierte Ausnahme dieser Ära. |
 | **TikiWiki, TWiki** | MySQL/PostgreSQL | Frühe LAMP-basierte Wiki-Engines mit breitem Feature-Umfang. |
 
@@ -175,6 +175,8 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Wissens
 - [Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme](evolution-digitaler-visuell-agentische-wissenssysteme.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme](evolution-digitaler-multiagenten-wissensoekosysteme.md) — vertiefendes Generationenmodell speziell für Generation 6 dieses Artikels
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — quer zu allen sechs Generationen liegende Implementierungsachse (Rust-Kerne hinter Suche, Vektordatenbanken, CRDT-Sync und Build-Engines)
+- [Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme](evolution-digitaler-wissenssystem-frameworks.md) — quer liegende, sprachübergreifende Bauteil-Schicht (Parser, Dokumentkonverter, Editor-Toolkits, Graph-Treiber, Retrieval-Bibliotheken) hinter den Produkten dieses Artikels
+- [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](evolution-digitaler-wissenssystem-programmiersprachen.md) — quer liegende Sprachökosystem-Achse (Perl, PHP, Java, Python/Ruby, JavaScript/TypeScript, Rust) hinter den Produkten dieses Artikels
 - [Evolution und Architekturen digitaler LMS](../e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme
 - [Evolution und Architekturen digitaler Web-Frameworks](../../entwicklung/webentwicklung/evolution-digitaler-webframeworks.md) — analoges Generationenmodell für Web-Frameworks
 - [Evolution und Architekturen digitaler KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md) — analoges Generationenmodell für KI-Anwendungen

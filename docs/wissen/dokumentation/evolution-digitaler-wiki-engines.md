@@ -25,7 +25,7 @@ graph LR
 ### 1b. Relationale Datenbanken & enzyklopädischer Maßstab, 2001 – 2008
 
 - **Architektur:** klassischer LAMP-Stack, granulare Rechte- und Versionsverwaltung, Kategoriensysteme.
-- **Vertreter:** **MediaWiki** (2002, aus zwei aufeinanderfolgenden PHP-Neuentwicklungen für Wikipedia hervorgegangen, die UseModWiki ablösten — siehe [MediaWiki installieren](mediawiki/index.md)), **DokuWiki** (2004, dateibasierte Ausnahme ohne Datenbank), **TikiWiki**, **TWiki** — frühe LAMP-basierte Engines mit breitem Feature-Umfang.
+- **Vertreter:** **MediaWiki** (2002, aus zwei aufeinanderfolgenden PHP-Neuentwicklungen für Wikipedia hervorgegangen, die UseModWiki ablösten — siehe [MediaWiki installieren](mediawiki/index.md) und [Evolution und Architekturen von MediaWiki](mediawiki/evolution-digitaler-mediawiki.md) für die eigene Versions-/Architektur-Geschichte), **DokuWiki** (2004, dateibasierte Ausnahme ohne Datenbank), **TikiWiki**, **TWiki** — frühe LAMP-basierte Engines mit breitem Feature-Umfang.
 
 ### 1c. Enterprise-Wikis & Semantik, 2005 – 2015
 
@@ -136,6 +136,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Wiki-En
 ## Verwandte Themen
 
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell, Generation 1 dort entspricht diesem Artikel im Ganzen
+- [Evolution und Architekturen von MediaWiki](mediawiki/evolution-digitaler-mediawiki.md) — vertiefende Produkt-Geschichte zu Generation 1b dieses Artikels
 - [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md) — persönliche statt kollaborative Notiz-Software als Schwester-Zeitachse
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — direkte Schnittmenge bei Git-basierten Wiki-Engines (Generation 3 dieses Artikels)
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md) — technische Grundlage von Generation 5 dieses Artikels

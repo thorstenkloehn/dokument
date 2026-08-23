@@ -212,3 +212,6 @@ target_link_libraries(app PRIVATE Threads::Threads)
 * [C++20 Modules & Modern CMake](cpp20-modules-cmake.md)
 * [C Praxis-Handbuch](c-praxis.md)
 * [Rust Praxis-Handbuch](rust-praxis.md)
+* [Evolution und Architekturen digitaler Enterprise-Programmiersprachen](../evolution-digitaler-enterprise-programmiersprachen.md) — C++ als Generation 2 der allgemeinen Enterprise-Sprachachse
+* [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — C++ als Generation 3 der übergeordneten Paradigmen-Zeitachse
+* [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — GCC/Clang als Generation 3/4 der Compiler-Architektur-Zeitachse

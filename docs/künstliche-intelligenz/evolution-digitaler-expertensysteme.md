@@ -147,3 +147,4 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Experte
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../wissen/dokumentation/evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
 - [Evolution und Architekturen digitaler LMS](../wissen/e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme
 - [Evolution und Architekturen digitaler Web-Frameworks](../entwicklung/webentwicklung/evolution-digitaler-webframeworks.md) — analoges Generationenmodell für Web-Frameworks
+- [Evolution und Architekturen digitaler Programmierparadigmen](../entwicklung/evolution-digitaler-programmierparadigmen.md) — Prolog als prägende Sprache dieser Generation, vertieft als deklaratives/logisches Paradigma (Generation 2 dort)

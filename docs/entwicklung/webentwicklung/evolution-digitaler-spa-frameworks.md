@@ -125,3 +125,6 @@ Erst mit ausgereiftem Build-Tooling wird SPA-Entwicklung im großen Maßstab pra
 - [Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken](evolution-digitaler-ajax-js-bibliotheken.md) — vorausgehende Generation, aus der Backbone.js/AngularJS hervorgingen
 - [Frontend mit KI](frontend-ki.md) — Vertiefung Frontend-Frameworks mit KI-Unterstützung
 - [Webentwicklung & KI: Übersicht](index.md) — Gesamtübersicht KI-Tools je Entwicklungsbereich
+- [Evolution und Architekturen digitaler Enterprise-Web-Frameworks](evolution-digitaler-enterprise-webframeworks.md) — Angulars Enterprise-Positionierung (eingebaute DI, LTS-Zyklus) als Generation 4 dieser Zeitachse vertieft
+- [Evolution und Architekturen digitaler Enterprise-UI-Bibliotheken](evolution-digitaler-enterprise-ui-bibliotheken.md) — Kendo UI for Angular und PrimeNG als konkrete Komponentenbibliotheken für Angular aus diesem Artikel
+- [Evolution und Architekturen digitaler Programmierparadigmen](../evolution-digitaler-programmierparadigmen.md) — RxJS in Angular aus diesem Artikel als konkrete Anwendung des reaktiven Paradigmas (Generation 6 dort)

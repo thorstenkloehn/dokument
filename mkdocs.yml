@@ -146,6 +146,9 @@ nav:
   # 💻 ENTWICKLUNG
   - Entwicklung:
       - Erste Schritte: entwicklung/erste-schritte.md
+      - "Evolution und Architekturen digitaler Programmiersprachen": entwicklung/evolution-digitaler-programmiersprachen.md
+      - "Evolution und Architekturen digitaler Programmierparadigmen": entwicklung/evolution-digitaler-programmierparadigmen.md
+      - "Evolution und Architekturen digitaler Enterprise-Programmiersprachen": entwicklung/evolution-digitaler-enterprise-programmiersprachen.md
 
       - Webentwicklung:
           - Übersicht: entwicklung/webentwicklung/index.md
@@ -157,6 +160,9 @@ nav:
           - "Evolution und Architekturen digitaler Islands- & Edge-Architekturen": entwicklung/webentwicklung/evolution-digitaler-islands-edge-architektur.md
           - "Evolution und Architekturen digitaler KI-nativer Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-ki-native-webframeworks.md
           - "Evolution und Architekturen digitaler Rust-Webframeworks": entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md
+          - "Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-batteries-included-frameworks.md
+          - "Evolution und Architekturen digitaler Enterprise-Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-enterprise-webframeworks.md
+          - "Evolution und Architekturen digitaler Enterprise-UI-Bibliotheken": entwicklung/webentwicklung/evolution-digitaler-enterprise-ui-bibliotheken.md
           - KI Webentwicklung: entwicklung/webentwicklung/ki-webentwicklung.md
           - Frontend mit KI: entwicklung/webentwicklung/frontend-ki.md
           - Backend-Integration: entwicklung/webentwicklung/backend-integration.md
@@ -202,6 +208,8 @@ nav:
               - Grundlagen: entwicklung/system/assembler.md
               - Fehler & Sicherheit: entwicklung/system/assembler-fehler-sicherheit.md
           - Compiler: entwicklung/system/compiler.md
+          - "Evolution und Architekturen digitaler Compiler": entwicklung/system/evolution-digitaler-compiler.md
+          - "Evolution und Architekturen digitaler Interpreter": entwicklung/system/evolution-digitaler-interpreter.md
           - Rust & C/C++:
               - C Praxis-Handbuch: entwicklung/system/c-praxis.md
               - C++ Praxis-Handbuch: entwicklung/system/cpp-praxis.md
@@ -331,6 +339,8 @@ nav:
           - "Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme": wissen/dokumentation/evolution-digitaler-visuell-agentische-wissenssysteme.md
           - "Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme": wissen/dokumentation/evolution-digitaler-multiagenten-wissensoekosysteme.md
           - "Evolution und Architekturen digitaler Rust-Wissenssysteme": wissen/dokumentation/evolution-digitaler-rust-wissenssysteme.md
+          - "Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssystem-frameworks.md
+          - "Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssystem-programmiersprachen.md
           - Native „LLM-first" Wiki-Tools & Agenten: wissen/dokumentation/llm-first-wiki-tools-agenten.md
           - Klassische Wiki-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wiki-systeme-llm-integration.md
           - Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wissensmanagement-cms-llm-integration.md
@@ -356,6 +366,7 @@ nav:
               - "KI-gestützter Export: mkdocs, XWiki, MediaWiki, Wiki.js": wissen/dokumentation/drupal/ki-export-multi-ziel.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
+              - "Evolution und Architekturen von MediaWiki": wissen/dokumentation/mediawiki/evolution-digitaler-mediawiki.md
               - "Entwicklungsrechner: localhost mit Nginx und PostgreSQL": wissen/dokumentation/mediawiki/entwicklungsrechner-localhost.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
               - Wiederherstellen: wissen/dokumentation/mediawiki/wiederherstellen.md

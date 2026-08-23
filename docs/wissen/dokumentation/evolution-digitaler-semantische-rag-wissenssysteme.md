@@ -153,3 +153,4 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich diese S
 - [LLM-Wiki-Pattern (Karpathy-Muster)](llm-wiki-pattern-karpathy.md) — Alternative/Ergänzung zu RAG, die dieses Repository selbst nutzt
 - [Klassische Wiki-Systeme mit LLM-Integration](klassische-wiki-systeme-llm-integration.md) — Nachrüstung von Generation 1/2 der Wissenssysteme-Zeitachse mit RAG
 - [AI Agents – Das Praxis-Handbuch & Architektur-Leitfaden](../../künstliche-intelligenz/coding/ai-agents-praxis.md) — Vertiefung zu agentischer RAG (Generation 6)
+- [Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme](evolution-digitaler-wissenssystem-frameworks.md) — Nachbarachse mit weiteren Graph-Query-Frameworks (Gremlin/TinkerPop, Neo4j-Treiber) und such-spezifischen Retrieval-Bibliotheken (Haystack, txtai) neben den hier behandelten Systemen

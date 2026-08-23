@@ -846,6 +846,7 @@ clang -fsanitize=thread -g hello.c -o hello -pthread
 - [Assembler](assembler.md) – Die niedrigste Ebene unter den Compilern
 - [Rust, C++ & C Integration](rust-c-cpp-integration.md) – Sprachübergreifende Programmierung
 - [Linux-Systemprogrammierung](linux-systemprogrammierung.md) – Wie Compiler mit dem OS interagieren
+- [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) – Architektur-Geschichte der Compiler-Werkzeuge selbst, chronologisch nach Generationen
 
 
 
