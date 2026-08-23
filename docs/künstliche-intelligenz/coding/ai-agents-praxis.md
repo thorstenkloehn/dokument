@@ -227,3 +227,4 @@ Ein produktiver Agent erfordert kontinuierliche Qualitätskontrolle:
 * [Claude Code Praxis-Handbuch](claude-code-praxis.md)
 * [Beste Self-Hosting-KI-Agenten (Allgemein, Top 20)](selbsthosting-ki-agenten-topliste.md)
 * [Beste Cloud-KI-Agenten (Allgemein, Top 20)](cloud-ki-agenten-topliste.md)
+* [Evolution und Architekturen digitaler Debugger](../../entwicklung/system/evolution-digitaler-debugger.md) — KI-gestützte Root-Cause-Analyse als Generation 6 der Debugger-Architektur-Zeitachse
