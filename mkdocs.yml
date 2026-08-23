@@ -210,6 +210,7 @@ nav:
           - Compiler: entwicklung/system/compiler.md
           - "Evolution und Architekturen digitaler Compiler": entwicklung/system/evolution-digitaler-compiler.md
           - "Evolution und Architekturen digitaler Interpreter": entwicklung/system/evolution-digitaler-interpreter.md
+          - "Evolution und Architekturen digitaler Debugger": entwicklung/system/evolution-digitaler-debugger.md
           - Rust & C/C++:
               - C Praxis-Handbuch: entwicklung/system/c-praxis.md
               - C++ Praxis-Handbuch: entwicklung/system/cpp-praxis.md

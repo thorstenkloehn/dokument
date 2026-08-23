@@ -2122,6 +2122,7 @@ valgrind --error-exitcode=1 ./programm
 - [Compiler](compiler.md) – Wie Code zu Assembler wird
 - [Rust, C & C++ Integration](rust-c-cpp-integration.md) – Sprachübergreifende Programmierung
 - [Linux-Systemprogrammierung](linux-systemprogrammierung.md) – System Calls und Kernel-Interaktion
+- [Evolution und Architekturen digitaler Debugger](evolution-digitaler-debugger.md) – Architektur-Geschichte des Debugging von Maschinencode-Ebene bis verteiltes Tracing
 
 
 

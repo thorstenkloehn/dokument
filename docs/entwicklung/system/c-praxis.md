@@ -250,3 +250,4 @@ int main(void) {
 * [Compiler-Konzepte & Optimierungen](compiler.md)
 * [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — C als Generation 3 der übergeordneten Paradigmen-Zeitachse
 * [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — GCC/Clang als Generation 3/4 der Compiler-Architektur-Zeitachse
+* [Evolution und Architekturen digitaler Debugger](evolution-digitaler-debugger.md) — GDB als Generation 2 der Debugger-Architektur-Zeitachse
