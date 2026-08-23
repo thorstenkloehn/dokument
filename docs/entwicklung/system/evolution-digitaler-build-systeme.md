@@ -132,6 +132,7 @@ Neben dem chronologischen Generationenmodell lassen sich Build-Systeme nach folg
 - [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — die Werkzeuge, deren Aufrufe Build-Systeme dieses Artikels orchestrieren
 - [Evolution und Architekturen digitaler Debugger](evolution-digitaler-debugger.md) — KI-gestützte Root-Cause-Analyse aus Generation 6 dort als Analogie zu Generation 6 dieses Artikels
 - [Evolution und Architekturen digitaler Editoren](evolution-digitaler-editoren.md) — komplementäre Werkzeuggattung in derselben Entwickler-Werkzeug-Reihe
+- [Evolution und Architekturen digitaler Paketmanager](evolution-digitaler-paketmanager.md) — verwandte, aber nicht deckungsgleiche Achse: Woher Software/Abhängigkeiten kommen statt wie sie gebaut werden; Nix' hermetisches Prinzip als konzeptioneller Vorläufer von Generation 4 dieses Artikels
 - [C++20 Modules & Modern CMake](cpp20-modules-cmake.md) — praktische Vertiefung zu CMake aus Generation 2 dieses Artikels
 - [Rust in der Praxis](rust-praxis.md) — praktische Vertiefung zu Cargo aus Generation 3 dieses Artikels
 - [C in der Praxis](c-praxis.md) und [C++ Praxis-Handbuch](cpp-praxis.md) — Make/CMake-Nutzung in der Praxis
