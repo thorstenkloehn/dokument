@@ -234,3 +234,4 @@ crontab -e
 * [Linux Praxis-Handbuch](linux-praxis.md)
 * [Linux-Systemprogrammierung](linux-systemprogrammierung.md)
 * [Systemd Service Creation](systemd-service-creation.md)
+* [Evolution und Architekturen digitaler Interpreter](evolution-digitaler-interpreter.md) — Bash selbst als alltäglich genutzter Interpreter, Architektur-Geschichte dieser Ausführungsstrategie

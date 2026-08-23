@@ -122,3 +122,5 @@ Als Reaktion auf die gewachsene Komplexität von SPA-/Meta-Framework-Stacks (vgl
 - [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md) — vertiefende, sprachübergreifende Zeitachse speziell für die Vollausstattungs-Philosophie aus Generation 1
 - [Backend-Integration mit KI](backend-integration.md) — Vertiefung Backend-Frameworks mit KI-Unterstützung
 - [Websites entwickeln mit KI](ki-webentwicklung.md) — praktischer Lernpfad HTML/CSS bis Deployment mit KI
+- [Evolution und Architekturen digitaler Enterprise-Programmiersprachen](../evolution-digitaler-enterprise-programmiersprachen.md) — Spring Framework (Java) und ASP.NET Web Forms (C#) als konkrete Frameworks aus Generation 1c dieses Artikels, dort im allgemeinen Sprachökosystem-Kontext eingeordnet
+- [Evolution und Architekturen digitaler Enterprise-Web-Frameworks](evolution-digitaler-enterprise-webframeworks.md) — vertiefendes Generationenmodell speziell für die Enterprise-Tauglichkeits-Achse aus Generation 1c dieses Artikels

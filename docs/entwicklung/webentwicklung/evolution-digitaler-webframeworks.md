@@ -169,6 +169,8 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Web-Fra
 - [Evolution und Architekturen digitaler KI-nativer Web-Frameworks](evolution-digitaler-ki-native-webframeworks.md) — vertiefendes Generationenmodell speziell für Generation 6 dieses Artikels
 - [Evolution und Architekturen digitaler Rust-Webframeworks](evolution-digitaler-rust-webframeworks.md) — vertiefendes, Rust-spezifisches Generationenmodell
 - [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md) — quer zu allen sechs Generationen liegende Implementierungsachse für Vollausstattungs-Frameworks
+- [Evolution und Architekturen digitaler Enterprise-Web-Frameworks](evolution-digitaler-enterprise-webframeworks.md) — quer liegende Implementierungsachse für Enterprise-Tauglichkeit (Spring, Angular, ASP.NET Core, NestJS, Vaadin)
+- [Evolution und Architekturen digitaler Enterprise-UI-Bibliotheken](evolution-digitaler-enterprise-ui-bibliotheken.md) — quer liegende Implementierungsachse für kommerzielle UI-Komponentenbibliotheken (Ext JS, Kendo UI, PrimeNG, Syncfusion, DevExpress)
 - [Evolution und Architekturen digitaler Wissenssysteme](../../wissen/dokumentation/evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell für Wikis & PKM-Systeme
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../../wissen/dokumentation/evolution-digitaler-cms.md) — analoges Generationenmodell für CMS, direkte Schnittmenge bei Headless-Frontends
 - [Evolution und Architekturen digitaler LMS](../../wissen/e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme

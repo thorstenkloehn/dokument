@@ -248,3 +248,5 @@ int main(void) {
 * [Rust, C & C++ Integration](rust-c-cpp-integration.md)
 * [Assembler Grundlagen](assembler.md)
 * [Compiler-Konzepte & Optimierungen](compiler.md)
+* [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — C als Generation 3 der übergeordneten Paradigmen-Zeitachse
+* [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — GCC/Clang als Generation 3/4 der Compiler-Architektur-Zeitachse

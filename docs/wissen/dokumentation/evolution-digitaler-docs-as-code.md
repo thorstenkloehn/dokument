@@ -153,3 +153,5 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Docs-as
 - [LLM-Wiki-Pattern (Karpathy-Muster)](llm-wiki-pattern-karpathy.md) — agentisches Pflegeprinzip, das dieses Repository selbst nutzt (Generation 6)
 - [AI Agents – Das Praxis-Handbuch & Architektur-Leitfaden](../../künstliche-intelligenz/coding/ai-agents-praxis.md) — Vertiefung zu Generation 6
 - [Praxis-Guide: Lokales RAG & LLM-Serving mit Ollama & ChromaDB](../../künstliche-intelligenz/coding/lokales-rag-ollama.md) — Vertiefung zu Generation 5
+- [Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme](evolution-digitaler-wissenssystem-frameworks.md) — Pandoc als universeller Dokumentkonverter, oft im Hintergrund vieler hier genannten Docs-as-Code-Toolchains eingesetzt
+- [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](evolution-digitaler-wissenssystem-programmiersprachen.md) — Python/Ruby als Sprachwahl hinter Sphinx, MkDocs und Jekyll aus diesem Artikel

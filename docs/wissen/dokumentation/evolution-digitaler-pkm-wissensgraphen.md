@@ -149,3 +149,4 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich PKM-Wer
 - [Wissensdatenbanken mit KI & semantischer Suche](wissensdatenbanken-ki-semantische-suche.md) — Vertiefung zur semantischen Suchtechnik hinter KI-vorgeschlagenen Verknüpfungen
 - [LLM-Wiki-Pattern (Karpathy-Muster)](llm-wiki-pattern-karpathy.md) — dasselbe Automatisierungsprinzip auf Team-/Repository-Ebene
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme
+- [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](evolution-digitaler-wissenssystem-programmiersprachen.md) — Logseqs ClojureScript/Datascript-Kern als Sprachbeispiel aus Generation 5 dieser Zeitachse

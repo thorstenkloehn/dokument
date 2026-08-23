@@ -143,6 +143,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich MediaWi
 - [Klassische Wiki-Systeme mit LLM-Integration](../klassische-wiki-systeme-llm-integration.md) — LLM-Integrationsmuster jenseits des eigenen Agenten
 - [Evolution und Architekturen digitaler Wiki-Engines](../evolution-digitaler-wiki-engines.md) — übergeordnetes Generationenmodell, in dem MediaWiki Generation 1b bildet
 - [Evolution und Architekturen digitaler Wissenssysteme](../evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell für Wissenssysteme im Allgemeinen
+- [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](../evolution-digitaler-wissenssystem-programmiersprachen.md) — PHP als Sprachwahl aus Generation 2 dieser Zeitachse, Parsoid/Node.js als Beispiel aus Generation 1c des Frameworks-Artikels
 - [Evolution und Architekturen von Drupal](../drupal/evolution-digitaler-drupal.md) — analoger Produkt-Spezialartikel für Drupal
 - [Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme](../evolution-digitaler-multiagenten-wissensoekosysteme.md) — Pywikibot-Ökosystem als Generation 1b dieser Zeitachse
 - [Dokumentationsübersicht](../index.md)

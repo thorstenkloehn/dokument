@@ -129,3 +129,6 @@ Neben dem chronologischen Generationenmodell lassen sich Batteries-Included-Fram
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../../wissen/dokumentation/evolution-digitaler-cms.md) — Django-Admin als konzeptioneller Vorläufer automatisch generierter CMS-Oberflächen
 - [Backend-Integration mit KI](backend-integration.md) — Vertiefung Backend-Frameworks mit KI-Unterstützung
 - [Websites entwickeln mit KI](ki-webentwicklung.md) — praktischer Lernpfad HTML/CSS bis Deployment mit KI
+- [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](../../wissen/dokumentation/evolution-digitaler-wissenssystem-programmiersprachen.md) — nutzt Rails' „Convention over Configuration"-Philosophie aus Generation 1a dieses Artikels als Referenzpunkt für Rubys Sprachwahl-Logik
+- [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — Erlang (Generation 5 dort) als Vorfahre von Phoenix aus Generation 5 dieses Artikels
+- [Evolution und Architekturen digitaler Enterprise-Web-Frameworks](evolution-digitaler-enterprise-webframeworks.md) — verwandte, aber nicht deckungsgleiche Achse: Enterprise-Tauglichkeit statt reiner Vollausstattung, Spring Boot dort als konkrete Anwendung des Prinzips aus Generation 1a dieses Artikels

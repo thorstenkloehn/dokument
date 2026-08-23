@@ -146,5 +146,8 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 - [Evolution und Architekturen digitaler Rust-CMS](evolution-digitaler-rust-cms.md) — analoge Rust-Implementierungsachse für CMS, Zola als geteilter Baustein
 - [Evolution und Architekturen digitaler Rust-LMS](../e-learning/evolution-digitaler-rust-lms.md) — analoge Rust-Implementierungsachse für LMS, Candle als geteilter Baustein
 - [Evolution und Architekturen digitaler Rust-Notebooks](evolution-digitaler-rust-notebooks.md) — analoge Rust-Implementierungsachse für Notebook-Systeme, Candle/fastembed-rs als geteilter Baustein
+- [Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme](evolution-digitaler-wissenssystem-frameworks.md) — sprachübergreifende Bauteil-Schicht, deren Rust-spezifische Teilmenge dieser Artikel bildet
+- [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](evolution-digitaler-wissenssystem-programmiersprachen.md) — übergeordnetes Sprachökosystem-Generationenmodell, Generation 6 dort entspricht diesem Artikel im Ganzen
 - [Rust in der Praxis](../../entwicklung/system/rust-praxis.md) — allgemeine Rust-Werkzeuglandschaft jenseits von Wissenssystemen
+- [Evolution und Architekturen digitaler Enterprise-Programmiersprachen](../../entwicklung/evolution-digitaler-enterprise-programmiersprachen.md) — Rust als Generation 6 der allgemeinen Enterprise-Sprachachse, mit AWS Firecracker, Linux-Kernel-Aufnahme und der ONCD-Empfehlung 2024 als Meilensteine jenseits von Wissenssystemen
 - [Beste KI-Agent-SDKs für Rust-Bibliotheken (Top 20)](../../künstliche-intelligenz/coding/ki-agent-sdk-rust-bibliotheken-topliste.md) — verwandte Rust-Bibliotheken für agentische statt reiner Wissenssystem-Infrastruktur

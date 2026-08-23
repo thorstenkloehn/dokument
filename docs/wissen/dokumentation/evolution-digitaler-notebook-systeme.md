@@ -152,3 +152,4 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Noteboo
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
 - [Evolution und Architekturen digitaler LMS](../e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme
 - [Evolution und Architekturen digitaler Autonomer KI-Agenten](../../künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md) — Vertiefung zu Generation 6 dieses Artikels
+- [Evolution und Architekturen digitaler Interpreter](../../entwicklung/system/evolution-digitaler-interpreter.md) — ChatGPT Code Interpreter aus Generation 6 dieses Artikels als Produktbeispiel für Sandbox-Interpreter-Architektur

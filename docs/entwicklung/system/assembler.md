@@ -825,6 +825,8 @@ jl error_handler  # Springe wenn rax < 0 (Fehler)
 - [Compiler](compiler.md) – Wie Assembler-Code generiert wird
 - [Rust, C++ & C Integration](rust-c-cpp-integration.md) – Inline-Assembler in Hochsprachen
 - [Linux-Systemprogrammierung](linux-systemprogrammierung.md) – Syscalls und Kernel-Interaktion
+- [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — Assemblersprache als Generation 1b der übergeordneten Paradigmen-Zeitachse
+- [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — Assembler als gemeinsame Zielebene aller dort behandelten Compiler-Generationen
 
 
 
