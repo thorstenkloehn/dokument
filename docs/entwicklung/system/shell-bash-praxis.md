@@ -235,3 +235,4 @@ crontab -e
 * [Linux-Systemprogrammierung](linux-systemprogrammierung.md)
 * [Systemd Service Creation](systemd-service-creation.md)
 * [Evolution und Architekturen digitaler Interpreter](evolution-digitaler-interpreter.md) — Bash selbst als alltäglich genutzter Interpreter, Architektur-Geschichte dieser Ausführungsstrategie
+* [Evolution und Architekturen digitaler Editoren](evolution-digitaler-editoren.md) — Vim/vi als alltägliches Terminal-Werkzeug, Architektur-Geschichte dieser Werkzeuggattung

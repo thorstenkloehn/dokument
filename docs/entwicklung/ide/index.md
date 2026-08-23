@@ -228,6 +228,7 @@ graph TD
 * [Webentwicklung/KI Webentwicklung](../webentwicklung/ki-webentwicklung.md) – KI in der Webentwicklung
 * [Desktop Automation](../../künstliche-intelligenz/automatisierung/index.md) – Automatisierung von GUI-Interaktionen
 * [Content/KI-gestützte Inhalte](../../künstliche-intelligenz/content/index.md) – KI für Content-Erstellung
+* [Evolution und Architekturen digitaler Editoren](../system/evolution-digitaler-editoren.md) – Architektur-Geschichte der hier vorgestellten Editoren, chronologisch nach Generationen
 
 ---
 
