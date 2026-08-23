@@ -222,3 +222,4 @@ mod tests {
 * [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — Rust als Generation 6 der übergeordneten Paradigmen-Zeitachse
 * [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — rust-analyzer als Generation 5 der Compiler-Architektur-Zeitachse (Compiler als IDE-Dauerdienst)
 * [Evolution und Architekturen digitaler Build-Systeme](evolution-digitaler-build-systeme.md) — Cargo als Generation 3 der Build-System-Architektur-Zeitachse
+* [Evolution und Architekturen digitaler Paketmanager](evolution-digitaler-paketmanager.md) — Cargo als integrierter Build-/Paketmanager im Kontext der allgemeinen Paketmanager-Geschichte

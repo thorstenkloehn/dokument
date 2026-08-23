@@ -213,6 +213,7 @@ nav:
           - "Evolution und Architekturen digitaler Debugger": entwicklung/system/evolution-digitaler-debugger.md
           - "Evolution und Architekturen digitaler Editoren": entwicklung/system/evolution-digitaler-editoren.md
           - "Evolution und Architekturen digitaler Build-Systeme": entwicklung/system/evolution-digitaler-build-systeme.md
+          - "Evolution und Architekturen digitaler Paketmanager": entwicklung/system/evolution-digitaler-paketmanager.md
           - Rust & C/C++:
               - C Praxis-Handbuch: entwicklung/system/c-praxis.md
               - C++ Praxis-Handbuch: entwicklung/system/cpp-praxis.md

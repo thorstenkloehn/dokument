@@ -242,3 +242,4 @@ fi
 * [Systemd Service Creation](systemd-service-creation.md)
 * [Linux Cgroups v2 Limits](linux-cgroups-limits.md)
 * [Linux eBPF Performance Profiling](linux-ebpf-performance.md)
+* [Evolution und Architekturen digitaler Paketmanager](evolution-digitaler-paketmanager.md) — APT/dpkg als Generation 1/2 der Paketmanager-Architektur-Zeitachse
