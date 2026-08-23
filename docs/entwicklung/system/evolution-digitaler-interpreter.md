@@ -137,3 +137,4 @@ Neben dem chronologischen Generationenmodell lassen sich Interpreter nach folgen
 - [Shell & Bash Praxis-Handbuch](shell-bash-praxis.md) — Bash selbst als alltäglich genutzter Interpreter
 - [Evolution und Architekturen digitaler Notebook-Systeme](../../wissen/dokumentation/evolution-digitaler-notebook-systeme.md) — ChatGPT Code Interpreter als Produktbeispiel aus Generation 6 dieses Artikels
 - [Evolution und Architekturen digitaler Autonomer KI-Agenten](../../künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md) — Vertiefung zu den Code-Sandboxes aus Generation 6 dieses Artikels
+- [Evolution und Architekturen digitaler Programmierparadigmen](../evolution-digitaler-programmierparadigmen.md) — die Berechnungsmodelle, die Interpreter dieses Artikels jeweils zur Laufzeit ausführen

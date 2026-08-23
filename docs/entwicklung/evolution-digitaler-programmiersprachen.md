@@ -153,4 +153,5 @@ Neben dem chronologischen Paradigmen-Generationenmodell lassen sich Programmiers
 - [Rust in der Praxis](system/rust-praxis.md) — Vertiefung zu Generation 6 dieses Artikels
 - [Evolution und Architekturen digitaler Compiler](system/evolution-digitaler-compiler.md) — Architektur-Geschichte der Übersetzungswerkzeuge selbst, Generation 1c dieses Artikels (A-0 System) bildet dort Generation 1a
 - [Evolution und Architekturen digitaler Interpreter](system/evolution-digitaler-interpreter.md) — komplementäre Ausführungsstrategie, Lisp/BASIC aus Generation 2 dieses Artikels bilden dort Generation 1
+- [Evolution und Architekturen digitaler Programmierparadigmen](evolution-digitaler-programmierparadigmen.md) — komplementäre, paradigmenorientierte Perspektive auf dieselben Sprachen statt strikter Chronologie
 - [Erste Schritte – Entwicklung](erste-schritte.md) — Einstieg in die Sprachwahl für Einsteiger

@@ -142,6 +142,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Sprachen nach fol
 - [Evolution und Architekturen digitaler Server-Monolith-Frameworks](webentwicklung/evolution-digitaler-monolith-frameworks.md) — Spring Framework und ASP.NET Web Forms als konkrete Frameworks aus Generation 3/4 dieses Artikels
 - [Evolution und Architekturen digitaler Enterprise-Web-Frameworks](webentwicklung/evolution-digitaler-enterprise-webframeworks.md) — vertiefendes Framework-Generationenmodell auf Basis der Sprachen aus Generation 3/4 dieses Artikels
 - [Evolution und Architekturen digitaler Enterprise-UI-Bibliotheken](webentwicklung/evolution-digitaler-enterprise-ui-bibliotheken.md) — Telerik/Kendo UI, Syncfusion und DevExpress als .NET-Vendoren aus Generation 4 dieses Artikels
+- [Evolution und Architekturen digitaler Programmierparadigmen](evolution-digitaler-programmierparadigmen.md) — Java, Go und Kotlin aus diesem Artikel als Vertreter des objektorientierten (Generation 3) bzw. nebenläufigen Paradigmas (Generation 5) dort
 - [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](webentwicklung/evolution-digitaler-batteries-included-frameworks.md) — Vollausstattungs-Philosophie quer über mehrere hier genannte Sprachen
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](../wissen/dokumentation/evolution-digitaler-rust-wissenssysteme.md) — Rust-Bausteine aus Generation 6 dieses Artikels im Wissenssysteme-Kontext
 - [C++ Praxis-Handbuch](system/cpp-praxis.md) — Vertiefung zu Generation 2 dieses Artikels

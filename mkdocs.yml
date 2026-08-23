@@ -147,6 +147,7 @@ nav:
   - Entwicklung:
       - Erste Schritte: entwicklung/erste-schritte.md
       - "Evolution und Architekturen digitaler Programmiersprachen": entwicklung/evolution-digitaler-programmiersprachen.md
+      - "Evolution und Architekturen digitaler Programmierparadigmen": entwicklung/evolution-digitaler-programmierparadigmen.md
       - "Evolution und Architekturen digitaler Enterprise-Programmiersprachen": entwicklung/evolution-digitaler-enterprise-programmiersprachen.md
 
       - Webentwicklung:
