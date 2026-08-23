@@ -5,6 +5,9 @@ Web-Frameworks lassen sich — analog zu den Generationenmodellen für [Wissenss
 !!! note "Hinweis: Generationen überlappen sich"
     Die Zeiträume sind grobe Orientierung, keine scharfen Grenzen — Express.js (Generation 2/3) wird bis heute produktiv als API-Backend hinter modernen SPA- und Meta-Frameworks eingesetzt. Entscheidend ist die **Architektur** (wo wird gerendert, wie viel JavaScript erreicht den Client), nicht allein das Erscheinungsjahr.
 
+!!! note "Batteries-included als quer liegende Design-Philosophie"
+    Quer zu allen sechs Generationen dieser Zeitachse liegt eine eigene Achse aus Vollausstattungs-Frameworks — von Rails und Django über Laravel und Meteor bis zu Phoenix und Loco, die jeweils ORM, Auth und Scaffolding im Framework-Kern bündeln statt einzeln zusammengesteckter Bibliotheken. Details in [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md).
+
 ---
 
 ## Generation 1: Serverseitige, monolithische Web-Frameworks — CGI, MVC, Templates
@@ -165,6 +168,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Web-Fra
 - [Evolution und Architekturen digitaler Islands- & Edge-Architekturen](evolution-digitaler-islands-edge-architektur.md) — vertiefendes Generationenmodell speziell für Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler KI-nativer Web-Frameworks](evolution-digitaler-ki-native-webframeworks.md) — vertiefendes Generationenmodell speziell für Generation 6 dieses Artikels
 - [Evolution und Architekturen digitaler Rust-Webframeworks](evolution-digitaler-rust-webframeworks.md) — vertiefendes, Rust-spezifisches Generationenmodell
+- [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md) — quer zu allen sechs Generationen liegende Implementierungsachse für Vollausstattungs-Frameworks
 - [Evolution und Architekturen digitaler Wissenssysteme](../../wissen/dokumentation/evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell für Wikis & PKM-Systeme
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../../wissen/dokumentation/evolution-digitaler-cms.md) — analoges Generationenmodell für CMS, direkte Schnittmenge bei Headless-Frontends
 - [Evolution und Architekturen digitaler LMS](../../wissen/e-learning/evolution-digitaler-lms.md) — analoges Generationenmodell für Lernmanagement-Systeme

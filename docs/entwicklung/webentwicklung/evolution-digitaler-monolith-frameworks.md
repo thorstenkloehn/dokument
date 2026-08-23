@@ -100,7 +100,7 @@ Als Reaktion auf die gewachsene Komplexität von SPA-/Meta-Framework-Stacks (vgl
 
 ### 1. Batteries-Included-Grad
 
-- **Vollausstattung** — ORM, Auth, Admin-Oberfläche im Kern (Django, Rails, Laravel).
+- **Vollausstattung** — ORM, Auth, Admin-Oberfläche im Kern (Django, Rails, Laravel). Eine eigene, sprachübergreifende Zeitachse speziell für diese Design-Philosophie bietet [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md).
 - **Minimalistischer Kern** — Erweiterungen nach Bedarf (Flask, Gin).
 
 ### 2. Ausführungsmodell
@@ -119,5 +119,6 @@ Als Reaktion auf die gewachsene Komplexität von SPA-/Meta-Framework-Stacks (vgl
 
 - [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md) — übergeordnetes Generationenmodell, Generation 1 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Rust-Webframeworks](evolution-digitaler-rust-webframeworks.md) — analoge Rust-spezifische Zeitachse
+- [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md) — vertiefende, sprachübergreifende Zeitachse speziell für die Vollausstattungs-Philosophie aus Generation 1
 - [Backend-Integration mit KI](backend-integration.md) — Vertiefung Backend-Frameworks mit KI-Unterstützung
 - [Websites entwickeln mit KI](ki-webentwicklung.md) — praktischer Lernpfad HTML/CSS bis Deployment mit KI
