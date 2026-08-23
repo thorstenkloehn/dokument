@@ -112,3 +112,4 @@ graph TD
 - [Beste Rust-Frameworks & Web-Backends mit KI-Unterstützung (Top 20)](../../künstliche-intelligenz/coding/rust-web-frameworks-ki-topliste.md)
 - [Beste KI-Coding-Agenten für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-agenten-rust-topliste.md)
 - [Beste KI-Assistenten & Code-Editoren für Rust-Programmierung (Top 20)](../../künstliche-intelligenz/coding/ki-assistenten-rust-topliste.md)
+- [Evolution und Architekturen digitaler Editoren](evolution-digitaler-editoren.md) — Zed, Cursor und Windsurf aus dieser Topliste im Architektur-Generationenmodell eingeordnet

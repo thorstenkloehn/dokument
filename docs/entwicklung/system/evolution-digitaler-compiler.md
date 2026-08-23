@@ -144,3 +144,4 @@ Neben dem chronologischen Generationenmodell lassen sich Compiler nach folgenden
 - [Rust in der Praxis](rust-praxis.md) — Vertiefung zu Rustc und rust-analyzer aus Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Interpreter](evolution-digitaler-interpreter.md) — komplementäre Ausführungsstrategie, V8/JIT als geteilter Berührungspunkt in Generation 4 beider Artikel
 - [Evolution und Architekturen digitaler Debugger](evolution-digitaler-debugger.md) — DWARF-Debug-Symbole aus Generation 3/4 dieses Artikels als technische Grundlage von Generation 2 dort, Language Server Protocol aus Generation 5 dieses Artikels als direktes Vorbild für das Debug Adapter Protocol dort
+- [Evolution und Architekturen digitaler Editoren](evolution-digitaler-editoren.md) — Language Server Protocol aus Generation 5 dieses Artikels als Fundament von Generation 5 dort
