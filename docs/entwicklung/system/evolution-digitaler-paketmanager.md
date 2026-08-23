@@ -138,3 +138,4 @@ Neben dem chronologischen Generationenmodell lassen sich Paketmanager nach folge
 - [Rust in der Praxis](rust-praxis.md) — Cargo als integrierter Build-/Paketmanager, siehe auch [Generation 3 der Build-Systeme-Zeitachse](evolution-digitaler-build-systeme.md#generation-3-sprachintegrierte-build-paketmanager-2004-2014)
 - [Linux Praxis-Handbuch](linux-praxis.md) — praktische APT-/Paketverwaltungs-Nutzung aus Generation 2 dieses Artikels
 - [Evolution und Architekturen digitaler Autonomer KI-Agenten](../../künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md) — Vertiefung zu Generation 6 dieses Artikels
+- [Evolution und Architekturen digitaler Versionskontrollsysteme](evolution-digitaler-versionskontrollsysteme.md) — komplementäre Werkzeuggattung in derselben Entwickler-Werkzeug-Reihe
