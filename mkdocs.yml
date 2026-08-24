@@ -346,6 +346,7 @@ nav:
           - "Evolution und Architekturen digitaler Rust-Wissenssysteme": wissen/dokumentation/evolution-digitaler-rust-wissenssysteme.md
           - "Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssystem-frameworks.md
           - "Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssystem-programmiersprachen.md
+          - "Beste Programmiersprachen für moderne Wissenssysteme (Top 10)": wissen/dokumentation/programmiersprachen-wissenssysteme-topliste.md
           - Native „LLM-first" Wiki-Tools & Agenten: wissen/dokumentation/llm-first-wiki-tools-agenten.md
           - Klassische Wiki-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wiki-systeme-llm-integration.md
           - Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wissensmanagement-cms-llm-integration.md
