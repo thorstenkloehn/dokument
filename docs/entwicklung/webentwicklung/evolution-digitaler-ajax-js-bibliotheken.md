@@ -120,6 +120,7 @@ Aus Bibliotheken, die einzelne Seitenfragmente verwalten, werden vollständige F
 
 ## Verwandte Themen
 
+- [Einflussreichste Ajax- & JavaScript-Bibliotheken (Top 15)](ajax-js-bibliotheken-topliste.md) — nach historischem Einfluss gerankte Momentaufnahme, die diese Chronologie zusammenfasst
 - [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md) — übergeordnetes Generationenmodell, Generation 2 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Server-Monolith-Frameworks](evolution-digitaler-monolith-frameworks.md) — vorausgehende Generation, deren Backend unverändert blieb
 - [Evolution und Architekturen digitaler Enterprise-UI-Bibliotheken](evolution-digitaler-enterprise-ui-bibliotheken.md) — YUI, Dojo Toolkit und jQuery UI aus Generation 2/3 dieses Artikels als direkte Vorläufer kommerzieller Enterprise-Komponentenbibliotheken

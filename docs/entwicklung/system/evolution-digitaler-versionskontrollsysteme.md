@@ -134,6 +134,7 @@ Neben dem chronologischen Generationenmodell lassen sich Versionskontrollsysteme
 
 ## Verwandte Themen
 
+- [Beste Versionskontrollsysteme 2026 (Top 15)](versionskontrollsysteme-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Build-Systeme](evolution-digitaler-build-systeme.md) — Monorepo-Skalierungsproblem, das Generation 4/5 dort und Generation 5 dieses Artikels aus komplementären Blickwinkeln lösen
 - [Evolution und Architekturen digitaler Paketmanager](evolution-digitaler-paketmanager.md) — komplementäre Werkzeuggattung in derselben Entwickler-Werkzeug-Reihe
 - [Evolution und Architekturen digitaler Autonomer KI-Agenten](../../künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md) — Vertiefung zu Generation 6 dieses Artikels

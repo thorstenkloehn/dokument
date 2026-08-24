@@ -119,6 +119,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 
 ## Verwandte Themen
 
+- [Beste Rust-Bausteine für KI-Anwendungen 2026 (Top 10)](rust-ki-anwendungen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
 - [Evolution und Architekturen digitaler Autonomer KI-Agenten](evolution-digitaler-autonome-ki-agenten.md) — vertiefendes Generationenmodell zu Generation 6, in dem MCP primär zum Einsatz kommt
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](../wissen/dokumentation/evolution-digitaler-rust-wissenssysteme.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für Wissenssysteme

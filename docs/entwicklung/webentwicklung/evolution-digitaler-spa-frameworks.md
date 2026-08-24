@@ -121,6 +121,7 @@ Erst mit ausgereiftem Build-Tooling wird SPA-Entwicklung im großen Maßstab pra
 
 ## Verwandte Themen
 
+- [Beste SPA-Frameworks 2026 (Top 20)](spa-frameworks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md) — übergeordnetes Generationenmodell, Generation 3 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken](evolution-digitaler-ajax-js-bibliotheken.md) — vorausgehende Generation, aus der Backbone.js/AngularJS hervorgingen
 - [Frontend mit KI](frontend-ki.md) — Vertiefung Frontend-Frameworks mit KI-Unterstützung

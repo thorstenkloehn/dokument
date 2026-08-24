@@ -112,6 +112,7 @@ Fortschritt wird über **Kompetenzen** statt Kursabschlüsse gemessen — Lernpl
 
 ## Verwandte Themen
 
+- [Beste Cloud-LMS & LXP 2026 (Top 20)](cloud-lms-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Lernmanagement-Systeme](evolution-digitaler-lms.md) — übergeordnetes Generationenmodell, Generation 2 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler klassischer LMS](evolution-digitaler-klassische-lms.md) — vorausgehende Generation
 - [Evolution und Architekturen digitaler Interoperabler LMS](evolution-digitaler-interoperable-lms.md) — nachfolgende Generation

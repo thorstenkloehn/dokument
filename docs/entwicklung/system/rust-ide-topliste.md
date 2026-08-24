@@ -97,6 +97,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
+- [Beste Editoren 2026 (Top 15)](editoren-2026-topliste.md) — Gegenstück nach allgemeiner Verbreitung statt Rust-Sprachunterstützung
 - [Rust Praxis-Handbuch](rust-praxis.md) — Sprachgrundlagen, Ownership, Async, Makros
 - [Rust, C & C++ Integration](rust-c-cpp-integration.md) — relevant für CLion/IntelliJ-Einsatz
 - [Rust & Python Bindings (PyO3)](rust-python-bindings.md) — relevant bei Polyglot-Tooling

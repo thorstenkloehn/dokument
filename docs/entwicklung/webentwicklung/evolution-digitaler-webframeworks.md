@@ -159,6 +159,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Web-Fra
 
 ## Verwandte Themen
 
+- [Beste Web-Frameworks 2026 (Top 20)](webframeworks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Webentwicklung & KI: Übersicht](index.md) — Gesamtübersicht KI-Tools je Entwicklungsbereich
 - [Websites entwickeln mit KI](ki-webentwicklung.md) — praktischer Lernpfad HTML/CSS bis Deployment mit KI (2026)
 - [Evolution und Architekturen digitaler Server-Monolith-Frameworks](evolution-digitaler-monolith-frameworks.md) — vertiefendes Generationenmodell speziell für Generation 1 dieses Artikels

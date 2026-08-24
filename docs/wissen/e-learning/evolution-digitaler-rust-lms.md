@@ -103,6 +103,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 
 ## Verwandte Themen
 
+- [Beste Rust-Bausteine für LMS 2026 (Top 8)](rust-lms-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler LMS](evolution-digitaler-lms.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
 - [Evolution und Architekturen digitaler Rust-KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für KI-Anwendungen
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](../dokumentation/evolution-digitaler-rust-wissenssysteme.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für Wissenssysteme

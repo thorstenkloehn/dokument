@@ -116,6 +116,7 @@ Statt eines einzelnen Retrieval-Schritts bewertet die Anwendung Zwischenergebnis
 
 ## Verwandte Themen
 
+- [Beste RAG- & Werkzeug-Anwendungen 2026 (Top 15)](rag-werkzeug-anwendungen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, Generation 5 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](../wissen/dokumentation/evolution-digitaler-semantische-rag-wissenssysteme.md) — technische Grundlage (Embeddings, Vektordatenbanken) hinter dieser Anwendungs-Zeitachse
 - [Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme](../wissen/dokumentation/evolution-digitaler-multiagenten-wissensoekosysteme.md) — verwandtes Orchestrierungsprinzip für Wissenspflege statt allgemeiner Anwendungen

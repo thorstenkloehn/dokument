@@ -116,6 +116,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Bibliotheken nach
 
 ## Verwandte Themen
 
+- [Beste Enterprise-UI-Bibliotheken 2026 (Top 15)](enterprise-ui-bibliotheken-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Enterprise-Web-Frameworks](evolution-digitaler-enterprise-webframeworks.md) — verwandte, aber nicht deckungsgleiche Achse: vollständige Frameworks statt reiner UI-Komponentenbibliotheken
 - [Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken](evolution-digitaler-ajax-js-bibliotheken.md) — YUI, Dojo Toolkit und jQuery UI als direkte Vorläufer aus Generation 1 dieses Artikels
 - [Evolution und Architekturen digitaler SPA-Frameworks](evolution-digitaler-spa-frameworks.md) — Angular als Ziel-Framework von PrimeNG und Kendo UI for Angular aus Generation 2/3 dieses Artikels

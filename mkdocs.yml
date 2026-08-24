@@ -9,13 +9,21 @@ nav:
   - KI & Automatisierung:
       - Übersicht: künstliche-intelligenz/index.md
       - "Evolution und Architekturen digitaler KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md
+      - "Beste KI-Anwendungen 2026 (Top 20)": künstliche-intelligenz/ki-anwendungen-2026-topliste.md
       - "Evolution und Architekturen digitaler Expertensysteme": künstliche-intelligenz/evolution-digitaler-expertensysteme.md
+      - "Beste Expertensysteme (Top 15)": künstliche-intelligenz/expertensysteme-topliste.md
       - "Evolution und Architekturen digitaler Deep-Learning-Anwendungen": künstliche-intelligenz/evolution-digitaler-deep-learning-anwendungen.md
+      - "Beste Deep-Learning-Anwendungen 2026 (Top 15)": künstliche-intelligenz/deep-learning-anwendungen-2026-topliste.md
       - "Evolution und Architekturen digitaler Cloud-KI-APIs": künstliche-intelligenz/evolution-digitaler-cloud-ki-apis.md
+      - "Beste Cloud-KI-APIs 2026 (Top 15)": künstliche-intelligenz/cloud-ki-apis-2026-topliste.md
       - "Evolution und Architekturen digitaler Generativer KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-generative-ki-anwendungen.md
+      - "Beste generative KI-Anwendungen 2026 (Top 20)": künstliche-intelligenz/generative-ki-anwendungen-2026-topliste.md
       - "Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen": künstliche-intelligenz/evolution-digitaler-rag-werkzeug-anwendungen.md
+      - "Beste RAG- & Werkzeug-Anwendungen 2026 (Top 15)": künstliche-intelligenz/rag-werkzeug-anwendungen-2026-topliste.md
       - "Evolution und Architekturen digitaler Autonomer KI-Agenten": künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md
+      - "Beste autonome KI-Agenten 2026 (Top 20)": künstliche-intelligenz/autonome-ki-agenten-2026-topliste.md
       - "Evolution und Architekturen digitaler Rust-KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md
+      - "Beste Rust-Bausteine für KI-Anwendungen 2026 (Top 10)": künstliche-intelligenz/rust-ki-anwendungen-2026-topliste.md
 
       - KI-Coding:
           - Übersicht: künstliche-intelligenz/coding/index.md
@@ -156,16 +164,27 @@ nav:
       - Webentwicklung:
           - Übersicht: entwicklung/webentwicklung/index.md
           - "Evolution und Architekturen digitaler Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-webframeworks.md
+          - "Beste Web-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/webframeworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Server-Monolith-Frameworks": entwicklung/webentwicklung/evolution-digitaler-monolith-frameworks.md
+          - "Beste Server-Monolith-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/monolith-frameworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken": entwicklung/webentwicklung/evolution-digitaler-ajax-js-bibliotheken.md
+          - "Einflussreichste Ajax- & JavaScript-Bibliotheken (Top 15)": entwicklung/webentwicklung/ajax-js-bibliotheken-topliste.md
           - "Evolution und Architekturen digitaler SPA-Frameworks": entwicklung/webentwicklung/evolution-digitaler-spa-frameworks.md
+          - "Beste SPA-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/spa-frameworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Full-Stack-Meta-Frameworks": entwicklung/webentwicklung/evolution-digitaler-meta-frameworks.md
+          - "Beste Full-Stack-Meta-Frameworks 2026 (Top 15)": entwicklung/webentwicklung/meta-frameworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Islands- & Edge-Architekturen": entwicklung/webentwicklung/evolution-digitaler-islands-edge-architektur.md
+          - "Beste Islands- & Edge-Architekturen 2026 (Top 15)": entwicklung/webentwicklung/islands-edge-architektur-2026-topliste.md
           - "Evolution und Architekturen digitaler KI-nativer Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-ki-native-webframeworks.md
+          - "Beste KI-native Web-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/ki-native-webframeworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Rust-Webframeworks": entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md
+          - "Beste Rust-Webframeworks 2026 (Top 15)": entwicklung/webentwicklung/rust-webframeworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-batteries-included-frameworks.md
+          - "Beste Batteries-Included-Web-Frameworks 2026 (Top 15)": entwicklung/webentwicklung/batteries-included-frameworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Enterprise-Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-enterprise-webframeworks.md
+          - "Beste Enterprise-Web-Frameworks 2026 (Top 15)": entwicklung/webentwicklung/enterprise-webframeworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Enterprise-UI-Bibliotheken": entwicklung/webentwicklung/evolution-digitaler-enterprise-ui-bibliotheken.md
+          - "Beste Enterprise-UI-Bibliotheken 2026 (Top 15)": entwicklung/webentwicklung/enterprise-ui-bibliotheken-2026-topliste.md
           - KI Webentwicklung: entwicklung/webentwicklung/ki-webentwicklung.md
           - Frontend mit KI: entwicklung/webentwicklung/frontend-ki.md
           - Backend-Integration: entwicklung/webentwicklung/backend-integration.md
@@ -212,12 +231,19 @@ nav:
               - Fehler & Sicherheit: entwicklung/system/assembler-fehler-sicherheit.md
           - Compiler: entwicklung/system/compiler.md
           - "Evolution und Architekturen digitaler Compiler": entwicklung/system/evolution-digitaler-compiler.md
+          - "Beste Compiler-Werkzeuge 2026 (Top 15)": entwicklung/system/compiler-2026-topliste.md
           - "Evolution und Architekturen digitaler Interpreter": entwicklung/system/evolution-digitaler-interpreter.md
+          - "Beste Interpreter-Werkzeuge 2026 (Top 15)": entwicklung/system/interpreter-2026-topliste.md
           - "Evolution und Architekturen digitaler Debugger": entwicklung/system/evolution-digitaler-debugger.md
+          - "Beste Debugger-Werkzeuge 2026 (Top 15)": entwicklung/system/debugger-2026-topliste.md
           - "Evolution und Architekturen digitaler Editoren": entwicklung/system/evolution-digitaler-editoren.md
+          - "Beste Editoren 2026 (Top 15)": entwicklung/system/editoren-2026-topliste.md
           - "Evolution und Architekturen digitaler Build-Systeme": entwicklung/system/evolution-digitaler-build-systeme.md
+          - "Beste Build-Systeme 2026 (Top 15)": entwicklung/system/build-systeme-2026-topliste.md
           - "Evolution und Architekturen digitaler Paketmanager": entwicklung/system/evolution-digitaler-paketmanager.md
+          - "Beste Paketmanager 2026 (Top 15)": entwicklung/system/paketmanager-2026-topliste.md
           - "Evolution und Architekturen digitaler Versionskontrollsysteme": entwicklung/system/evolution-digitaler-versionskontrollsysteme.md
+          - "Beste Versionskontrollsysteme 2026 (Top 15)": entwicklung/system/versionskontrollsysteme-2026-topliste.md
           - Rust & C/C++:
               - C Praxis-Handbuch: entwicklung/system/c-praxis.md
               - C++ Praxis-Handbuch: entwicklung/system/cpp-praxis.md
@@ -302,12 +328,19 @@ nav:
       - E-Learning:
           - Übersicht: wissen/e-learning/index.md
           - "Evolution und Architekturen digitaler LMS": wissen/e-learning/evolution-digitaler-lms.md
+          - "Beste Lernmanagement-Systeme 2026 (Top 20)": wissen/e-learning/lms-2026-topliste.md
           - "Evolution und Architekturen digitaler klassischer LMS": wissen/e-learning/evolution-digitaler-klassische-lms.md
+          - "Beste klassische LMS 2026 (Top 15)": wissen/e-learning/klassische-lms-2026-topliste.md
           - "Evolution und Architekturen digitaler Cloud-LMS & LXP": wissen/e-learning/evolution-digitaler-cloud-lms.md
+          - "Beste Cloud-LMS & LXP 2026 (Top 20)": wissen/e-learning/cloud-lms-2026-topliste.md
           - "Evolution und Architekturen digitaler interoperabler LMS": wissen/e-learning/evolution-digitaler-interoperable-lms.md
+          - "Beste interoperable LMS-Bausteine 2026 (Top 10)": wissen/e-learning/interoperable-lms-2026-topliste.md
           - "Evolution und Architekturen digitaler KI-adaptiver Lernplattformen": wissen/e-learning/evolution-digitaler-ki-adaptive-lernplattformen.md
+          - "Beste KI-adaptive Lernplattformen 2026 (Top 15)": wissen/e-learning/ki-adaptive-lernplattformen-2026-topliste.md
           - "Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme": wissen/e-learning/evolution-digitaler-agentische-tutor-oekosysteme.md
+          - "Beste agentische Tutor-Ökosysteme 2026 (Top 15)": wissen/e-learning/agentische-tutor-oekosysteme-2026-topliste.md
           - "Evolution und Architekturen digitaler Rust-LMS": wissen/e-learning/evolution-digitaler-rust-lms.md
+          - "Beste Rust-Bausteine für LMS 2026 (Top 8)": wissen/e-learning/rust-lms-2026-topliste.md
           - KI in Lehre & Weiterbildung: wissen/e-learning/ki-lehre-weiterbildung.md
           - Beste KI-Agenten für Deutsch- und Fremdsprachenlernen (Open Source, Top 20): wissen/e-learning/sprachlern-ki-agenten-topliste.md
           - Moderne Lernmethoden für Programmiersprachen: wissen/e-learning/lernmethoden-programmiersprachen.md
