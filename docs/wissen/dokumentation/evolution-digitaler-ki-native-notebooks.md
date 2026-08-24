@@ -104,6 +104,7 @@ Die Ausblick-Generation: Ein Agent erstellt ein **komplettes, lauffähiges Analy
 
 ## Verwandte Themen
 
+- [Beste KI-native Notebook-Umgebungen 2026 (Top 20)](ki-native-notebooks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Notebook-Systeme](evolution-digitaler-notebook-systeme.md) — übergeordnetes Generationenmodell, Generation 6 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Reaktiver Notebooks](evolution-digitaler-reaktive-notebooks.md) — vorausgehende Generation
 - [Evolution und Architekturen digitaler cloud-gehosteter Notebooks](evolution-digitaler-cloud-notebooks.md) — technische Grundlage für Generation 1c/4 dieses Artikels

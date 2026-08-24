@@ -85,6 +85,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Static-Site-Generatoren](evolution-digitaler-static-site-generatoren.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — Schwester-Chronologie mit Fokus auf technische Dokumentation statt allgemeine Static-Site-Generierung
+- [Beste Docs-as-Code-Werkzeuge 2026 (Top 15)](docs-as-code-2026-topliste.md) — Gegenstück auf Ebene der Workflow-Werkzeuge (Linting, Suche, API-Doku-Extraktion, KI-/Agenten-Pflege) statt der Rendering-Engines
 - [Beste Programmiersprachen für moderne Wissenssysteme (Top 10)](programmiersprachen-wissenssysteme-topliste.md) — Sprachökosystem-Pendant, das mehrere Sprachen aus dieser Liste (Go, Rust, Ruby, Python, JavaScript) vertieft
 - [Beste Open-Source-Wissenssysteme für den eigenen Selfhosting-Server (Top 20)](wissenssysteme-selfhosting-server-topliste.md) — angrenzende Topliste für Wissenssysteme jenseits reiner Static-Site-Generierung
 - [Evolution und Architekturen digitaler SPA-Frameworks](../../entwicklung/webentwicklung/evolution-digitaler-spa-frameworks.md) — React/Vue/Svelte-Grundlagen hinter Rang 1, 3, 10, 11, 13
