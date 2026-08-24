@@ -96,6 +96,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Open-Source-Wissenssysteme für den eigenen Selfhosting-Server (Top 20)](wissenssysteme-selfhosting-server-topliste.md) — Ausgangs-Topliste, deren Rangfolge diese Seite für die Migrationsperspektive übernimmt
 - [Backup-Strategien für Wissenssysteme (Top 20)](backup-strategien-wissenssysteme-topliste.md) — Schwester-Topliste, dieselbe Rangfolge nach Backup statt Migration vertieft
+- [KI-Agenten-Integration in Selfhosting-Wissenssysteme (Top 20)](agenten-integration-wissenssysteme-topliste.md) — Schwester-Topliste, dieselbe Rangfolge nach MCP-/Agenten-Reife vertieft
 - [KI strukturiert das Wiki autonom & Selfhosting-Migration](ki-autonome-wiki-strukturierung-selfhosting-migration.md) — vertiefend zu KI-gestützter Migration
 - [Migration nach Drupal: MediaWiki, XWiki, Wiki.js und mkdocs/Zensical importieren](drupal/migration-wikisysteme.md) — vertiefend zu Drupal als Zielsystem
 - [Drupal-Inhalte nach mkdocs/Zensical exportieren](drupal/export-nach-mkdocs.md) — vertiefend zu Drupal als Quellsystem
