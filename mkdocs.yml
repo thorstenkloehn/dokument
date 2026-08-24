@@ -9,13 +9,21 @@ nav:
   - KI & Automatisierung:
       - Übersicht: künstliche-intelligenz/index.md
       - "Evolution und Architekturen digitaler KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md
+      - "Beste KI-Anwendungen 2026 (Top 20)": künstliche-intelligenz/ki-anwendungen-2026-topliste.md
       - "Evolution und Architekturen digitaler Expertensysteme": künstliche-intelligenz/evolution-digitaler-expertensysteme.md
+      - "Beste Expertensysteme (Top 15)": künstliche-intelligenz/expertensysteme-topliste.md
       - "Evolution und Architekturen digitaler Deep-Learning-Anwendungen": künstliche-intelligenz/evolution-digitaler-deep-learning-anwendungen.md
+      - "Beste Deep-Learning-Anwendungen 2026 (Top 15)": künstliche-intelligenz/deep-learning-anwendungen-2026-topliste.md
       - "Evolution und Architekturen digitaler Cloud-KI-APIs": künstliche-intelligenz/evolution-digitaler-cloud-ki-apis.md
+      - "Beste Cloud-KI-APIs 2026 (Top 15)": künstliche-intelligenz/cloud-ki-apis-2026-topliste.md
       - "Evolution und Architekturen digitaler Generativer KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-generative-ki-anwendungen.md
+      - "Beste generative KI-Anwendungen 2026 (Top 20)": künstliche-intelligenz/generative-ki-anwendungen-2026-topliste.md
       - "Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen": künstliche-intelligenz/evolution-digitaler-rag-werkzeug-anwendungen.md
+      - "Beste RAG- & Werkzeug-Anwendungen 2026 (Top 15)": künstliche-intelligenz/rag-werkzeug-anwendungen-2026-topliste.md
       - "Evolution und Architekturen digitaler Autonomer KI-Agenten": künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md
+      - "Beste autonome KI-Agenten 2026 (Top 20)": künstliche-intelligenz/autonome-ki-agenten-2026-topliste.md
       - "Evolution und Architekturen digitaler Rust-KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md
+      - "Beste Rust-Bausteine für KI-Anwendungen 2026 (Top 10)": künstliche-intelligenz/rust-ki-anwendungen-2026-topliste.md
 
       - KI-Coding:
           - Übersicht: künstliche-intelligenz/coding/index.md

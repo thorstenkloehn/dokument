@@ -120,6 +120,7 @@ Offene Modellgewichte machen es möglich, Foundation-Modelle vollständig **ohne
 
 ## Verwandte Themen
 
+- [Beste generative KI-Anwendungen 2026 (Top 20)](generative-ki-anwendungen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, Generation 4 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](evolution-digitaler-deep-learning-anwendungen.md) — Vorgänger-Architekturen, aus denen der Transformer hervorging
 - [Evolution und Architekturen digitaler Cloud-KI-APIs](evolution-digitaler-cloud-ki-apis.md) — Vorgänger-Generation, die von Foundation-Model-APIs abgelöst wurde

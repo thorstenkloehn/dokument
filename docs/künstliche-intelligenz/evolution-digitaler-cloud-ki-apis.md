@@ -119,6 +119,7 @@ Der entscheidende Architekturbruch: Ein einziges, generalisiertes **Foundation-M
 
 ## Verwandte Themen
 
+- [Beste Cloud-KI-APIs 2026 (Top 15)](cloud-ki-apis-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, Generation 3 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](evolution-digitaler-deep-learning-anwendungen.md) — die Modelle, die hinter Generation 1–3 dieser Zeitachse laufen
 - [Multi-LLM- & Sprachmodell-Anbieter im Vergleich](coding/llm-anbieter-vergleich.md) — aktuelle Foundation-Model-API-Anbieter im Detail

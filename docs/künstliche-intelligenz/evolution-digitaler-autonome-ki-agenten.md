@@ -117,6 +117,7 @@ Die aktuelle Generation verbindet mehrere zuvor getrennte Bausteine — standard
 
 ## Verwandte Themen
 
+- [Beste autonome KI-Agenten 2026 (Top 20)](autonome-ki-agenten-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, Generation 6 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme](../wissen/dokumentation/evolution-digitaler-multiagenten-wissensoekosysteme.md) — analoge Orchestrierungs-Zeitachse speziell für Wissenspflege
 - [Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen](evolution-digitaler-rag-werkzeug-anwendungen.md) — vorausgehende Generation, Function Calling als Grundbaustein dieser Zeitachse

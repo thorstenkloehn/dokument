@@ -125,6 +125,7 @@ Der entscheidende Architekturbruch, der Generation 2 dieser Zeitachse ablöst: S
 
 ## Verwandte Themen
 
+- [Beste Deep-Learning-Anwendungen 2026 (Top 15)](deep-learning-anwendungen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, Generation 2 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Expertensysteme](evolution-digitaler-expertensysteme.md) — vertiefendes Generationenmodell für Generation 1 der KI-Anwendungen
 - [Multimodale Vision-Pipelines](coding/multimodale-vision-pipelines.md) — praktische Umsetzung CNN-/Attention-basierter Bildverarbeitung
