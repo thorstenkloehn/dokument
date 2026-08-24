@@ -98,6 +98,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
+- [Beste Cloud-GPU-Anbieter für KI-Workloads & LLM-Inferenz (Top 20)](cloud-gpu-provider-ki-topliste.md) — allgemeine Schwester-Topliste derselben Anbieterlandschaft, Fokus auf Bereitstellungsgeschwindigkeit und Inferenzkosten statt Rust-Modell-Hosting
 - [Lokales RAG & LLM-Serving](lokales-rag-ollama.md) — Ollama-Setup auf eigener oder gemieteter Hardware
 - [vLLM High-Throughput Serving](vllm-high-throughput-serving.md) — produktionsreifes Self-Hosting für hohen Durchsatz
 - [Beste lokale Sprachmodelle für Rust-Programmierung (Self-Hosting, Top 20)](lokale-sprachmodelle-rust-topliste.md) — welches offene Modell sich für Self-Hosting eignet
