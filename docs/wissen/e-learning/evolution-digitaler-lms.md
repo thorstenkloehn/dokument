@@ -145,6 +145,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich LMS nac
 
 ## Verwandte Themen
 
+- [Beste Lernmanagement-Systeme 2026 (Top 20)](lms-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [E-Learning-Autorentools & Interaktive Lernumgebungen](index.md) — Gesamtübersicht Autorentools, LMS und KI-Agenten im E-Learning
 - [Evolution und Architekturen digitaler Wissenssysteme](../dokumentation/evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell für Wikis & PKM-Systeme
 - [Evolution und Architekturen digitaler klassischer LMS](evolution-digitaler-klassische-lms.md) — vertiefendes Generationenmodell speziell für Generation 1 dieses Artikels

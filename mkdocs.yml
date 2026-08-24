@@ -302,12 +302,19 @@ nav:
       - E-Learning:
           - Übersicht: wissen/e-learning/index.md
           - "Evolution und Architekturen digitaler LMS": wissen/e-learning/evolution-digitaler-lms.md
+          - "Beste Lernmanagement-Systeme 2026 (Top 20)": wissen/e-learning/lms-2026-topliste.md
           - "Evolution und Architekturen digitaler klassischer LMS": wissen/e-learning/evolution-digitaler-klassische-lms.md
+          - "Beste klassische LMS 2026 (Top 15)": wissen/e-learning/klassische-lms-2026-topliste.md
           - "Evolution und Architekturen digitaler Cloud-LMS & LXP": wissen/e-learning/evolution-digitaler-cloud-lms.md
+          - "Beste Cloud-LMS & LXP 2026 (Top 20)": wissen/e-learning/cloud-lms-2026-topliste.md
           - "Evolution und Architekturen digitaler interoperabler LMS": wissen/e-learning/evolution-digitaler-interoperable-lms.md
+          - "Beste interoperable LMS-Bausteine 2026 (Top 10)": wissen/e-learning/interoperable-lms-2026-topliste.md
           - "Evolution und Architekturen digitaler KI-adaptiver Lernplattformen": wissen/e-learning/evolution-digitaler-ki-adaptive-lernplattformen.md
+          - "Beste KI-adaptive Lernplattformen 2026 (Top 15)": wissen/e-learning/ki-adaptive-lernplattformen-2026-topliste.md
           - "Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme": wissen/e-learning/evolution-digitaler-agentische-tutor-oekosysteme.md
+          - "Beste agentische Tutor-Ökosysteme 2026 (Top 15)": wissen/e-learning/agentische-tutor-oekosysteme-2026-topliste.md
           - "Evolution und Architekturen digitaler Rust-LMS": wissen/e-learning/evolution-digitaler-rust-lms.md
+          - "Beste Rust-Bausteine für LMS 2026 (Top 8)": wissen/e-learning/rust-lms-2026-topliste.md
           - KI in Lehre & Weiterbildung: wissen/e-learning/ki-lehre-weiterbildung.md
           - Beste KI-Agenten für Deutsch- und Fremdsprachenlernen (Open Source, Top 20): wissen/e-learning/sprachlern-ki-agenten-topliste.md
           - Moderne Lernmethoden für Programmiersprachen: wissen/e-learning/lernmethoden-programmiersprachen.md

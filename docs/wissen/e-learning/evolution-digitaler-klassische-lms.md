@@ -112,6 +112,7 @@ Der Enterprise-LMS-Markt konsolidiert sich durch Übernahmen — aus mehreren ko
 
 ## Verwandte Themen
 
+- [Beste klassische LMS 2026 (Top 15)](klassische-lms-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Lernmanagement-Systeme](evolution-digitaler-lms.md) — übergeordnetes Generationenmodell, Generation 1 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Cloud-LMS & LXP](evolution-digitaler-cloud-lms.md) — nachfolgende Generation
 - [E-Learning-Autorentools & Interaktive Lernumgebungen](index.md) — Gesamtübersicht Autorentools, LMS und KI-Agenten im E-Learning
