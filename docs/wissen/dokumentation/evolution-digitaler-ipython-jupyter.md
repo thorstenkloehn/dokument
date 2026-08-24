@@ -111,6 +111,7 @@ Statt einer lokalen Einzelinstallation entsteht eine Infrastruktur für **viele 
 
 ## Verwandte Themen
 
+- [Beste IPython- & Jupyter-Systeme 2026 (Top 20)](ipython-jupyter-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Notebook-Systeme](evolution-digitaler-notebook-systeme.md) — übergeordnetes Generationenmodell, Generation 2 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Notebook-Vorläufer](evolution-digitaler-notebook-vorlaeufer.md) — vorausgehende Generation
 - [Evolution und Architekturen digitaler cloud-gehosteter Notebooks](evolution-digitaler-cloud-notebooks.md) — nachfolgende Generation

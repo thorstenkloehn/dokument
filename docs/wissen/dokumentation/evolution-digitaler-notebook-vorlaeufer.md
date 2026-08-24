@@ -107,6 +107,7 @@ Die letzten Vorläufer-Jahre vor der eigentlichen Jupyter-Ära: **Fernando Pére
 
 ## Verwandte Themen
 
+- [Einflussreichste Literate-Programming-Vorläufer (Top 10)](literate-programming-vorlaeufer-topliste.md) — nach historischem Einfluss gerankte Momentaufnahme, die diese Chronologie zusammenfasst
 - [Evolution und Architekturen digitaler Notebook-Systeme](evolution-digitaler-notebook-systeme.md) — übergeordnetes Generationenmodell, Generation 1 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler IPython & Jupyter](evolution-digitaler-ipython-jupyter.md) — nachfolgende Generation
 - [Evolution und Architekturen digitaler R-Markdown- & Quarto-Publishing](evolution-digitaler-rmarkdown-quarto.md) — direkte Fortsetzung von Sweave aus Generation 3 dieses Artikels

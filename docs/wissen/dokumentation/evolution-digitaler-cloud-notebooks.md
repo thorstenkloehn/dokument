@@ -107,6 +107,7 @@ Statt eines Allzweck-Notebook-Dienstes fokussieren sich diese Anbieter explizit 
 
 ## Verwandte Themen
 
+- [Beste Cloud-Notebook-Plattformen 2026 (Top 20)](cloud-notebooks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Notebook-Systeme](evolution-digitaler-notebook-systeme.md) — übergeordnetes Generationenmodell, Generation 3 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler IPython- & Jupyter-Systeme](evolution-digitaler-ipython-jupyter.md) — vorausgehende Generation, JupyterHub als technische Grundlage von Generation 1 dieses Artikels
 - [Evolution und Architekturen digitaler Cloud-KI-APIs](../../künstliche-intelligenz/evolution-digitaler-cloud-ki-apis.md) — direkte Schnittmenge bei Enterprise-ML-Plattformen (Generation 5 dieses Artikels)
