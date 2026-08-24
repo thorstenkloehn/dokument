@@ -117,6 +117,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Bausteine nach fo
 
 ## Verwandte Themen
 
+- [Beste Frameworks & Bibliotheken für Wissenssysteme 2026 (Top 20)](wissenssystem-frameworks-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes, produktorientiertes Generationenmodell, das diese Bauteil-Schicht quer durchzieht
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md) — RDF/SPARQL-Triplestores (Generation 1) und generische RAG-Orchestrierung (Generation 4) als direkte Nachbarachsen zu Generation 4/5 dieses Artikels
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — Sphinx/MkDocs/Docusaurus als produktseitige Nutzer mancher hier genannten Parser-/Konverter-Bausteine
