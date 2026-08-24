@@ -132,6 +132,7 @@ Neben dem chronologischen Generationenmodell lassen sich Interpreter nach folgen
 
 ## Verwandte Themen
 
+- [Beste Interpreter-Werkzeuge 2026 (Top 15)](interpreter-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — komplementäre Ausführungsstrategie, V8/JIT als geteilter Berührungspunkt in Generation 4 beider Artikel
 - [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — übergeordnetes Paradigmen-Generationenmodell, Lisp/BASIC (Generation 2/4 dort) als Ursprung von Generation 1 dieses Artikels
 - [Shell & Bash Praxis-Handbuch](shell-bash-praxis.md) — Bash selbst als alltäglich genutzter Interpreter

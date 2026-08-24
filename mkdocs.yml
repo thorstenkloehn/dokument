@@ -156,16 +156,27 @@ nav:
       - Webentwicklung:
           - Übersicht: entwicklung/webentwicklung/index.md
           - "Evolution und Architekturen digitaler Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-webframeworks.md
+          - "Beste Web-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/webframeworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Server-Monolith-Frameworks": entwicklung/webentwicklung/evolution-digitaler-monolith-frameworks.md
+          - "Beste Server-Monolith-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/monolith-frameworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken": entwicklung/webentwicklung/evolution-digitaler-ajax-js-bibliotheken.md
+          - "Einflussreichste Ajax- & JavaScript-Bibliotheken (Top 15)": entwicklung/webentwicklung/ajax-js-bibliotheken-topliste.md
           - "Evolution und Architekturen digitaler SPA-Frameworks": entwicklung/webentwicklung/evolution-digitaler-spa-frameworks.md
+          - "Beste SPA-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/spa-frameworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Full-Stack-Meta-Frameworks": entwicklung/webentwicklung/evolution-digitaler-meta-frameworks.md
+          - "Beste Full-Stack-Meta-Frameworks 2026 (Top 15)": entwicklung/webentwicklung/meta-frameworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Islands- & Edge-Architekturen": entwicklung/webentwicklung/evolution-digitaler-islands-edge-architektur.md
+          - "Beste Islands- & Edge-Architekturen 2026 (Top 15)": entwicklung/webentwicklung/islands-edge-architektur-2026-topliste.md
           - "Evolution und Architekturen digitaler KI-nativer Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-ki-native-webframeworks.md
+          - "Beste KI-native Web-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/ki-native-webframeworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Rust-Webframeworks": entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md
+          - "Beste Rust-Webframeworks 2026 (Top 15)": entwicklung/webentwicklung/rust-webframeworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-batteries-included-frameworks.md
+          - "Beste Batteries-Included-Web-Frameworks 2026 (Top 15)": entwicklung/webentwicklung/batteries-included-frameworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Enterprise-Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-enterprise-webframeworks.md
+          - "Beste Enterprise-Web-Frameworks 2026 (Top 15)": entwicklung/webentwicklung/enterprise-webframeworks-2026-topliste.md
           - "Evolution und Architekturen digitaler Enterprise-UI-Bibliotheken": entwicklung/webentwicklung/evolution-digitaler-enterprise-ui-bibliotheken.md
+          - "Beste Enterprise-UI-Bibliotheken 2026 (Top 15)": entwicklung/webentwicklung/enterprise-ui-bibliotheken-2026-topliste.md
           - KI Webentwicklung: entwicklung/webentwicklung/ki-webentwicklung.md
           - Frontend mit KI: entwicklung/webentwicklung/frontend-ki.md
           - Backend-Integration: entwicklung/webentwicklung/backend-integration.md
@@ -212,12 +223,19 @@ nav:
               - Fehler & Sicherheit: entwicklung/system/assembler-fehler-sicherheit.md
           - Compiler: entwicklung/system/compiler.md
           - "Evolution und Architekturen digitaler Compiler": entwicklung/system/evolution-digitaler-compiler.md
+          - "Beste Compiler-Werkzeuge 2026 (Top 15)": entwicklung/system/compiler-2026-topliste.md
           - "Evolution und Architekturen digitaler Interpreter": entwicklung/system/evolution-digitaler-interpreter.md
+          - "Beste Interpreter-Werkzeuge 2026 (Top 15)": entwicklung/system/interpreter-2026-topliste.md
           - "Evolution und Architekturen digitaler Debugger": entwicklung/system/evolution-digitaler-debugger.md
+          - "Beste Debugger-Werkzeuge 2026 (Top 15)": entwicklung/system/debugger-2026-topliste.md
           - "Evolution und Architekturen digitaler Editoren": entwicklung/system/evolution-digitaler-editoren.md
+          - "Beste Editoren 2026 (Top 15)": entwicklung/system/editoren-2026-topliste.md
           - "Evolution und Architekturen digitaler Build-Systeme": entwicklung/system/evolution-digitaler-build-systeme.md
+          - "Beste Build-Systeme 2026 (Top 15)": entwicklung/system/build-systeme-2026-topliste.md
           - "Evolution und Architekturen digitaler Paketmanager": entwicklung/system/evolution-digitaler-paketmanager.md
+          - "Beste Paketmanager 2026 (Top 15)": entwicklung/system/paketmanager-2026-topliste.md
           - "Evolution und Architekturen digitaler Versionskontrollsysteme": entwicklung/system/evolution-digitaler-versionskontrollsysteme.md
+          - "Beste Versionskontrollsysteme 2026 (Top 15)": entwicklung/system/versionskontrollsysteme-2026-topliste.md
           - Rust & C/C++:
               - C Praxis-Handbuch: entwicklung/system/c-praxis.md
               - C++ Praxis-Handbuch: entwicklung/system/cpp-praxis.md

@@ -130,6 +130,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Frameworks nach f
 
 ## Verwandte Themen
 
+- [Beste Enterprise-Web-Frameworks 2026 (Top 15)](enterprise-webframeworks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md) — übergeordnetes, sprachübergreifendes Generationenmodell
 - [Evolution und Architekturen digitaler Server-Monolith-Frameworks](evolution-digitaler-monolith-frameworks.md) — Generation 1 dieses Artikels im Kontext der breiteren Monolith-Zeitachse
 - [Evolution und Architekturen digitaler SPA-Frameworks](evolution-digitaler-spa-frameworks.md) — Angulars vollständiger Rewrite als Generation 5 dieser Zeitachse, hier als Generation 4 aus Enterprise-Perspektive vertieft

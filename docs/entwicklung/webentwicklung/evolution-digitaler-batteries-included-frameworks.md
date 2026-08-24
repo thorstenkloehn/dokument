@@ -122,6 +122,7 @@ Neben dem chronologischen Generationenmodell lassen sich Batteries-Included-Fram
 
 ## Verwandte Themen
 
+- [Beste Batteries-Included-Web-Frameworks 2026 (Top 15)](batteries-included-frameworks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md) — übergeordnetes, sprachübergreifendes Generationenmodell
 - [Evolution und Architekturen digitaler Server-Monolith-Frameworks](evolution-digitaler-monolith-frameworks.md) — Generation 1 dieses Artikels im Kontext der breiteren Monolith-Zeitachse, inkl. Microframework-Gegenbewegung
 - [Evolution und Architekturen digitaler Full-Stack-Meta-Frameworks](evolution-digitaler-meta-frameworks.md) — Next.js/Nuxt.js als technisches Fundament der JS-Batterie-Frameworks aus Generation 4

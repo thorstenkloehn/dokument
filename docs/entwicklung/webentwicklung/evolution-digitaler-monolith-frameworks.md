@@ -117,6 +117,7 @@ Als Reaktion auf die gewachsene Komplexität von SPA-/Meta-Framework-Stacks (vgl
 
 ## Verwandte Themen
 
+- [Beste Server-Monolith-Frameworks 2026 (Top 20)](monolith-frameworks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md) — übergeordnetes Generationenmodell, Generation 1 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Rust-Webframeworks](evolution-digitaler-rust-webframeworks.md) — analoge Rust-spezifische Zeitachse
 - [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md) — vertiefende, sprachübergreifende Zeitachse speziell für die Vollausstattungs-Philosophie aus Generation 1

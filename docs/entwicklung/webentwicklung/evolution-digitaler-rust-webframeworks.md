@@ -135,6 +135,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Rust-We
 
 ## Verwandte Themen
 
+- [Beste Rust-Webframeworks 2026 (Top 15)](rust-webframeworks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md) — übergeordnetes, sprachübergreifendes Generationenmodell
 - [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md) — Loco (Generation 5 dieses Artikels) als Rust-Vertreter der sprachübergreifenden Vollausstattungs-Zeitachse
 - [Evolution und Architekturen digitaler Rust-KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md) — Rig als geteilter Baustein, analoge Rust-Implementierungsachse für KI-Anwendungen

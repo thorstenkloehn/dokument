@@ -113,6 +113,7 @@ Statt einer globalen Entscheidung „statisch oder serverseitig gerendert" erlau
 
 ## Verwandte Themen
 
+- [Beste Full-Stack-Meta-Frameworks 2026 (Top 15)](meta-frameworks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md) — übergeordnetes Generationenmodell, Generation 4 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler SPA-Frameworks](evolution-digitaler-spa-frameworks.md) — vorausgehende Generation, deren SEO-Schwäche diese Zeitachse adressiert
 - [Evolution und Architekturen digitaler Content-Management-Systeme](../../wissen/dokumentation/evolution-digitaler-cms.md) — direkte Schnittmenge bei Headless-CMS-Frontends (Generation 2 dieses Artikels)

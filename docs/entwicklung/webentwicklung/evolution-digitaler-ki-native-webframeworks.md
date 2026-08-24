@@ -115,6 +115,7 @@ Die aktuelle Generation verankert Agent-Loops, standardisierten Werkzeugzugriff 
 
 ## Verwandte Themen
 
+- [Beste KI-native Web-Frameworks 2026 (Top 20)](ki-native-webframeworks-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Web-Frameworks](evolution-digitaler-webframeworks.md) — übergeordnetes Generationenmodell, Generation 6 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Islands- & Edge-Architekturen](evolution-digitaler-islands-edge-architektur.md) — vorausgehende Generation
 - [Evolution und Architekturen digitaler Autonomer KI-Agenten](../../künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md) — allgemeine Agenten-Zeitachse, Generation 4/5 dort entspricht Generation 5 dieses Artikels
