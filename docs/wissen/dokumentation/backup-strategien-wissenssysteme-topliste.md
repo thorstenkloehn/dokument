@@ -89,3 +89,4 @@ graph TD
 - [Praxis-Guide: MediaWiki Backup & Automated Restore Scripts](mediawiki/mediawiki-backup-skripte.md) — vertiefend zu Rang 6
 - [Onyx (ehem. Danswer): RAG-Plattform](onyx-danswer-rag-plattform.md) — vertiefend zu Rang 20
 - [KVM-Server mieten](../../entwicklung/infrastruktur/kvm-server-mieten.md) — Offsite-Backup-Zielserver als Ergänzung zu dieser Liste
+- [Migrationswege zwischen Wissenssystemen (Top 20)](migrationswege-wissenssysteme-topliste.md) — Schwester-Topliste, dieselbe Rangfolge nach Migration statt Backup vertieft
