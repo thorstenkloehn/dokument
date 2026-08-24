@@ -97,5 +97,6 @@ graph TD
 - [Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)](cms-mcp-server-topliste.md) — Schwester-Topliste über klassische **und** headless CMS, gerankt nach MCP-Reife
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — übergeordnetes Generationenmodell
 - [Evolution und Architekturen digitaler Composable-CMS](evolution-digitaler-composable-cms.md) — nachfolgende Architektur-Generation
+- [Beste Composable-CMS & MACH-Systeme 2026 (Top 20)](composable-cms-2026-topliste.md) — breiter gefasste Schwester-Topliste über Content, Commerce, Suche und Orchestrierung hinweg
 - [Beste Static-Site- & Docs-Generatoren 2026 (Top 20)](static-site-generatoren-2026-topliste.md) — typisches Frontend-Gegenstück zu Rang 14–15 und weiteren Git-/API-basierten Systemen dieser Liste
 - [Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration](klassische-wissensmanagement-cms-llm-integration.md) — LLM-Integration unabhängig von Headless-Architektur

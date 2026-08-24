@@ -108,6 +108,7 @@ Die aktuelle Generation verschiebt KI von einzelnen Editor-Funktionen (vgl. [KI-
 
 ## Verwandte Themen
 
+- [Beste Composable-CMS & MACH-Systeme 2026 (Top 20)](composable-cms-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — übergeordnetes Generationenmodell, Generation 3 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Headless-CMS](evolution-digitaler-headless-cms.md) — vorausgehende Generation, deren API-first-Prinzip hier zum Standard wird
 - [Evolution und Architekturen digitaler KI-Content-Erstellung](evolution-digitaler-ki-content-erstellung.md) — nachfolgende Generation
