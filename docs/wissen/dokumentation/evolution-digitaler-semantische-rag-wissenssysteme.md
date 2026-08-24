@@ -145,6 +145,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich diese S
 
 ## Verwandte Themen
 
+- [Beste semantische & RAG-Wissenssysteme 2026 (Top 20)](semantische-rag-wissenssysteme-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
 - [Wissensdatenbanken mit KI & semantischer Suche](wissensdatenbanken-ki-semantische-suche.md) — technische Mechanismen (Chunking, Embeddings, Vektordatenbanken, RAG-Pipeline) hinter diesem Generationenmodell
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell, Generation 4 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md) — analoges Generationenmodell für persönliche statt semantische Wissensgraphen
