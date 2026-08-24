@@ -14,7 +14,7 @@ graph TD
     Start["Rang eines Batteries-Included-Frameworks 2026"] --> A["Bündelungsgrad: monolithisches Vollausstattungs-Framework vs. kuratierter, austauschbarer Stack"]
     Start --> B["Enthaltene Komponenten: ORM/Datenzugriff vs. Admin-Oberfläche vs. Echtzeit-/Reaktivitätsschicht"]
     Start --> C["Sprach-/Runtime-Ökosystem: dynamisch typisiert vs. JavaScript/TypeScript vs. BEAM vs. Rust"]
-    Start --> D["Zielgruppen-Framing: „Rails für X" vs. eigenständiger Markenanspruch"]
+    Start --> D["Zielgruppen-Framing: 'Rails für X' vs. eigenständiger Markenanspruch"]
 ```
 
 ---
