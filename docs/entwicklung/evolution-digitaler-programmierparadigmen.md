@@ -135,6 +135,7 @@ Neben dem chronologischen Generationenmodell lassen sich Paradigmen nach folgend
 
 ## Verwandte Themen
 
+- [Beste Sprachen zur Umsetzung der Programmierparadigmen (Top 10)](programmierparadigmen-sprachen-topliste.md) — aktuelle Top-10-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
 - [Evolution und Architekturen digitaler Programmiersprachen](evolution-digitaler-programmiersprachen.md) — komplementäre, sprachen-chronologische Perspektive auf dieselben Paradigmen
 - [Evolution und Architekturen digitaler Enterprise-Programmiersprachen](evolution-digitaler-enterprise-programmiersprachen.md) — Java, Go und Kotlin aus diesem Artikel im Enterprise-Kontext vertieft
 - [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](../wissen/dokumentation/evolution-digitaler-wissenssystem-programmiersprachen.md) — Clojure und Erlang/Elixir aus diesem Artikel im Wissenssysteme-Kontext vertieft
