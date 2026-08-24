@@ -70,4 +70,4 @@ graph TD
 - [Die führenden Open-Source-Wissenssysteme 2026 (Top 20)](fuehrende-opensource-wissenssysteme-2026-topliste.md) — produktorientiertes Pendant zu dieser sprachorientierten Topliste
 - [Beste Wissensmanagement-Systeme (Open Source) mit MCP-Server (Top 20)](wissensmanagement-mcp-server-topliste.md) — produktorientierte Nachbar-Topliste
 - [Onyx (ehem. Danswer): RAG-Plattform](onyx-danswer-rag-plattform.md) — Beispiel für den polyglotten Python/TypeScript-Stack aus Rang 1/2
-- [Evolution und Architekturen digitaler Enterprise-Programmiersprachen](../../entwicklung/evolution-digitaler-enterprise-programmiersprachen.md) — analoges Ranking-Thema für allgemeine Unternehmenssoftware statt Wissenssysteme im Speziellen
+- [Beste Programmiersprachen für Enterprise-Software (Top 10)](../../entwicklung/enterprise-programmiersprachen-topliste.md) — analoges Ranking-Thema für allgemeine Unternehmenssoftware statt Wissenssysteme im Speziellen
