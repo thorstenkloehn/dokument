@@ -137,6 +137,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich diese S
 
 ## Verwandte Themen
 
+- [Beste Multi-Agenten-Wissensökosysteme 2026 (Top 20)](multiagenten-wissensoekosysteme-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell, Generation 6 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md) — GraphRAG als technische Grundlage von Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme](evolution-digitaler-visuell-agentische-wissenssysteme.md) — analoges Generationenmodell zu agentischen Gedächtnisarchitekturen (Einzel-Agent statt Multi-Agenten-Fokus)
