@@ -116,6 +116,7 @@ Statt zwischen monolithisch und headless zu wählen, bieten diese Systeme **beid
 
 ## Verwandte Themen
 
+- [Beste klassische CMS 2026 (Top 20)](klassische-cms-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — übergeordnetes Generationenmodell, Generation 1 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen von Drupal](drupal/evolution-digitaler-drupal.md) — vertiefende Produkt-Geschichte innerhalb dieser Generation
 - [Evolution und Architekturen digitaler Headless-CMS](evolution-digitaler-headless-cms.md) — nachfolgende Generation
