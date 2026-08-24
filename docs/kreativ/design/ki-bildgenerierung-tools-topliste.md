@@ -69,6 +69,7 @@ graph TD
 
 ## 🔗 Verwandte Themen
 
+- [Evolution und Architekturen digitaler KI-Bildgenerierung](evolution-digitaler-ki-bildgenerierung.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Design nach KI](design-nach-ki.md) — Konzepte hinter Diffusionsmodellen, ControlNet, Vektorisierung und Branding
 - [ComfyUI & SD Automatisierung](comfyui-workflow-anleitung.md) — vertiefende Praxis zu Rang 2

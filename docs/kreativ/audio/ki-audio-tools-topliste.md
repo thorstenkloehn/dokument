@@ -70,6 +70,7 @@ graph TD
 
 ## 🔗 Verwandte Themen
 
+- [Evolution und Architekturen digitaler KI-Audio-Werkzeuge](evolution-digitaler-ki-audio-werkzeuge.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [KI und Audio](ki-audio.md) — Konzepte hinter Sprachsynthese, Spracherkennung und Musikgenerierung
 - [AI Voice Cloning (XTTS v2)](ai-voice-cloning-xtts.md) — vertiefende Praxis zu Rang 5
