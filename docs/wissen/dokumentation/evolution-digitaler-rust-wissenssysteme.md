@@ -136,6 +136,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 
 ## Verwandte Themen
 
+- [Beste Rust-Bausteine für Wissenssysteme 2026 (Top 20)](rust-wissenssysteme-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
 - [Evolution und Architekturen digitaler Rust-KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für KI-Anwendungen
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — Zola und Zensical als Rust-Bausteine dieser Zeitachse
