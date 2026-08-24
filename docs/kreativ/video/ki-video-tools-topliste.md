@@ -69,6 +69,7 @@ graph TD
 
 ## 🔗 Verwandte Themen
 
+- [Evolution und Architekturen digitaler KI-Videogenerierung](evolution-digitaler-ki-videogenerierung.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [KI in der Film- und Videoproduktion](ki-filmproduktion.md) — vollständiger Produktionsprozess von Idee bis Veröffentlichung
 - [Programmatische Videogenerierung & Animation](index.md) — code-getriebene Animations-Frameworks (Remotion, Manim, Motion Canvas) statt KI-Modelle

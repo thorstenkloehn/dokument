@@ -281,6 +281,7 @@ nav:
       - Design:
           - Übersicht: kreativ/design/index.md
           - Design nach KI: kreativ/design/design-nach-ki.md
+          - "Evolution und Architekturen digitaler KI-Bildgenerierung": kreativ/design/evolution-digitaler-ki-bildgenerierung.md
           - Beste KI-Bildgenerierungs-Tools (Open Source, Top 20): kreativ/design/ki-bildgenerierung-tools-topliste.md
           - Ideenfindung mit KI: kreativ/design/ideenfindung-ki.md
           - 'Leseprobe: KI für Kreative': kreativ/design/leseprobe-ki-kreative.md
@@ -290,6 +291,7 @@ nav:
       - Audio & Musik:
           - Übersicht: kreativ/audio/index.md
           - KI und Audio: kreativ/audio/ki-audio.md
+          - "Evolution und Architekturen digitaler KI-Audio-Werkzeuge": kreativ/audio/evolution-digitaler-ki-audio-werkzeuge.md
           - Beste KI-Audio-Tools (Open Source, Top 20): kreativ/audio/ki-audio-tools-topliste.md
           - Audacity:
               - Audacity mit KI: kreativ/audio/audacity-ki.md
@@ -306,6 +308,7 @@ nav:
       - Video & Film:
           - Übersicht: kreativ/video/index.md
           - KI in der Videoproduktion: kreativ/video/ki-filmproduktion.md
+          - "Evolution und Architekturen digitaler KI-Videogenerierung": kreativ/video/evolution-digitaler-ki-videogenerierung.md
           - Beste KI-Video-Tools (Open Source, Top 20): kreativ/video/ki-video-tools-topliste.md
           - FFmpeg:
               - FFmpeg & Whisper Automatisierung: kreativ/video/ffmpeg-whisper-automatisierung.md
