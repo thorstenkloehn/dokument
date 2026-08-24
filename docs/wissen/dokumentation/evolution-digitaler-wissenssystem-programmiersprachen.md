@@ -141,6 +141,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Sprachen nach fol
 
 ## Verwandte Themen
 
+- [Beste Programmiersprachen für moderne Wissenssysteme (Top 10)](programmiersprachen-wissenssysteme-topliste.md) — nach heutiger Eignung statt historischer Generation gerankte Momentaufnahme, die diese Chronologie zusammenfasst
 - [Evolution und Architekturen digitaler Programmiersprachen](../../entwicklung/evolution-digitaler-programmiersprachen.md) — übergeordnetes, paradigmenorientiertes Generationenmodell, dessen Wissenssysteme-Perspektive dieser Artikel vertieft
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes, produktorientiertes Generationenmodell, dessen Sprachwahl je Generation dieser Artikel vertieft
 - [Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme](evolution-digitaler-wissenssystem-frameworks.md) — Nachbarachse auf Framework-/Bibliotheksebene statt Sprachebene

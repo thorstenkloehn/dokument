@@ -127,6 +127,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Drupal-
 
 ## Verwandte Themen
 
+- [Beste Drupal-Module & -Distributionen 2026 (Top 15)](drupal-module-distributionen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Drupal installieren: Composer, PostgreSQL und Nginx](installieren.md) — Installationsanleitung für Drupal 10.x/11.x
 - [Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical](migration-wikisysteme.md) — Umzug bestehender Inhalte nach Drupal
 - [Drupal-Inhalte nach mkdocs/Zensical exportieren](export-nach-mkdocs.md) — die umgekehrte Richtung

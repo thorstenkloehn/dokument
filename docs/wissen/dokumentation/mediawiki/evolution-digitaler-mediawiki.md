@@ -135,6 +135,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich MediaWi
 
 ## Verwandte Themen
 
+- [Beste MediaWiki-Erweiterungen 2026 (Top 15)](mediawiki-erweiterungen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [MediaWiki installieren](index.md) — Installationsanleitung
 - [MediaWiki auf dem Entwicklungsrechner: localhost mit Nginx und PostgreSQL](entwicklungsrechner-localhost.md) — lokale Variante ohne eigene Domain
 - [Semantisches MediaWiki installieren](../semantische-mediawiki/installieren.md) — die in Generation 2 genannte Extension als eigenständige Installation

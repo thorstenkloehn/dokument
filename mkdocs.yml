@@ -431,6 +431,7 @@ nav:
           - "Wissensdatenbanken mit KI & semantischer Suche": wissen/dokumentation/wissensdatenbanken-ki-semantische-suche.md
           - Drupal:
               - "Evolution und Architekturen von Drupal": wissen/dokumentation/drupal/evolution-digitaler-drupal.md
+              - "Beste Drupal-Module & -Distributionen 2026 (Top 15)": wissen/dokumentation/drupal/drupal-module-distributionen-2026-topliste.md
               - Installieren (Composer, PostgreSQL, Nginx): wissen/dokumentation/drupal/installieren.md
               - "Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical": wissen/dokumentation/drupal/migration-wikisysteme.md
               - "Export zurück nach mkdocs/Zensical": wissen/dokumentation/drupal/export-nach-mkdocs.md
@@ -438,6 +439,7 @@ nav:
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - "Evolution und Architekturen von MediaWiki": wissen/dokumentation/mediawiki/evolution-digitaler-mediawiki.md
+              - "Beste MediaWiki-Erweiterungen 2026 (Top 15)": wissen/dokumentation/mediawiki/mediawiki-erweiterungen-2026-topliste.md
               - "Entwicklungsrechner: localhost mit Nginx und PostgreSQL": wissen/dokumentation/mediawiki/entwicklungsrechner-localhost.md
               - Backup: wissen/dokumentation/mediawiki/backup.md
               - Wiederherstellen: wissen/dokumentation/mediawiki/wiederherstellen.md
