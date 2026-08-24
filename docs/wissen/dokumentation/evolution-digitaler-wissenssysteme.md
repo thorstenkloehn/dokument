@@ -133,6 +133,9 @@ Eine quer zu den Generationen liegende Kategorie: Generatoren, die aus Quelltext
 | **Sphinx** | Python | Starke Unterstützung für reStructuredText und API-Code-Analysen. |
 | **Hugo** | Go | Extrem schneller Generator für große Dokumentationsmengen. |
 
+!!! tip "Vertiefung dieser Kategorie"
+    Eine vollständige Generationen-Chronologie und aktuelle Top-20-Topliste zu dieser Kategorie bieten [Evolution und Architekturen digitaler Static-Site-Generatoren](evolution-digitaler-static-site-generatoren.md) und [Beste Static-Site- & Docs-Generatoren 2026 (Top 20)](static-site-generatoren-2026-topliste.md).
+
 !!! note "Zensical statt MkDocs in diesem Repository"
     Wissen Ahrensburg wird mit **Zensical** gebaut, dem Nachfolger von MkDocs + Material (liest `mkdocs.yml` nativ) — siehe `CLAUDE.md`. Die Static-Build/Read-Only-Publish-Logik dieser Generatoren-Kategorie gilt damit unmittelbar auch für dieses Repository. Zensicals Build-Engine kombiniert Rust und Python — Details dazu und zu weiteren Rust-Bausteinen in Wissenssystemen bietet [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md).
 

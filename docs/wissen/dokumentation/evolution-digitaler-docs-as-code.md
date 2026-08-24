@@ -147,6 +147,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Docs-as
 ## Verwandte Themen
 
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme inkl. Book-First-/Docs-First-Generatoren
+- [Evolution und Architekturen digitaler Static-Site-Generatoren](evolution-digitaler-static-site-generatoren.md) — Schwester-Chronologie nach Rendering-Architektur statt Anwendungsfall/Kollaborationsmodell
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell, Generation 2 dort deckt sich mit Generation 3 dieses Artikels
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — analoges Generationenmodell für CMS
 - [Evolution und Architekturen digitaler KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md) — analoges Generationenmodell für KI-Anwendungen
