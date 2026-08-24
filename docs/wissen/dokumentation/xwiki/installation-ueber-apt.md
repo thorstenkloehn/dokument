@@ -260,6 +260,7 @@ sudo apt --fix-broken install
 ## Weiterführende Seiten
 
 - [XWiki installieren und über Nginx bereitstellen](installieren.md)
+- ["Administration application is not installed" beheben](administration-anwendung-fehlt.md)
 - [Nginx über Unix-Socket anbinden](xwiki-nginx-unix-socket.md)
 - [XWiki REST API und Python](xwiki-rest-api.md)
 - [XWiki-Agenten-Pipeline](xwiki-ki-agent.md)

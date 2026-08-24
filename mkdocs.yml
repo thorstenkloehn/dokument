@@ -460,6 +460,7 @@ nav:
           - XWiki:
               - Installieren: wissen/dokumentation/xwiki/installieren.md
               - Installation über APT: wissen/dokumentation/xwiki/installation-ueber-apt.md
+              - "Fehlt: Administration Application beheben": wissen/dokumentation/xwiki/administration-anwendung-fehlt.md
               - Nginx über Unix-Socket anbinden: wissen/dokumentation/xwiki/xwiki-nginx-unix-socket.md
               - XWiki REST API & Python: wissen/dokumentation/xwiki/xwiki-rest-api.md
               - Agenten-Pipeline (Automatisierte Pflege mit LLMs): wissen/dokumentation/xwiki/xwiki-ki-agent.md
