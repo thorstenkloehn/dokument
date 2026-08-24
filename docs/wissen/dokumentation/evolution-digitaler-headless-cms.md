@@ -114,4 +114,5 @@ Statt eines eigenständigen Headless-Produkts rüsten klassische, monolithische 
 - [Evolution und Architekturen digitaler klassischer CMS](evolution-digitaler-klassische-cms.md) — vorausgehende Generation, deren Generation 6 (Hybrid) diese Zeitachse spiegelt
 - [Evolution und Architekturen digitaler Composable-CMS](evolution-digitaler-composable-cms.md) — nachfolgende Generation
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — direkte Schnittmenge bei Git-basierten Systemen (Generation 4 dieses Artikels)
+- [Beste Headless-CMS 2026 (Top 20)](headless-cms-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
 - [Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)](cms-mcp-server-topliste.md) — Agenten-/MCP-Anbindung konkreter Headless-CMS
