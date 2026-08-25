@@ -83,6 +83,7 @@ graph TD
 - [Die führenden Open-Source-Wissenssysteme 2026 (Top 20)](fuehrende-opensource-wissenssysteme-2026-topliste.md) — Schwester-Topliste nach Verbreitung/Reife statt Selfhosting-Tauglichkeit
 - [Open-Source-Wissenssysteme mit aktiver Weiterentwicklung & hoher Reife (Top 20)](aktive-reife-opensource-wissenssysteme-2026-topliste.md) — Schwester-Topliste, gerankt nach Entwicklungsaktivität und Produktionsreife statt Selfhosting-Tauglichkeit
 - [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 20)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — filtert zusätzlich auf ein einfaches Speicherbackend ohne Pflicht-Zweitsystem, direkt relevant für den Betriebsaufwand auf dem eigenen Server
+- [Open-Source-Wissenssysteme mit echter Echtzeit-Kollaboration (Top 15)](echtzeit-kollaboration-opensource-wissenssysteme-2026-topliste.md) — relevant, sobald mehrere Personen gleichzeitig im selbst gehosteten System arbeiten sollen
 - [Backup-Strategien für Wissenssysteme (Top 20)](backup-strategien-wissenssysteme-topliste.md) — dieselbe Rangfolge, vertieft speziell für Backup-Methode und Restore-Komplexität
 - [KI strukturiert das Wiki autonom & Selfhosting-Migration](ki-autonome-wiki-strukturierung-selfhosting-migration.md) — vertiefend zum Migrationsweg zwischen Systemen dieser Liste
 - [KVM-Server mieten](../../entwicklung/infrastruktur/kvm-server-mieten.md) — Server-Beschaffung als Voraussetzung für alle Ränge dieser Liste
