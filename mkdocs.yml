@@ -100,6 +100,14 @@ nav:
               - "Claude-News: Claude Cowork vom Smartphone aus nutzen": künstliche-intelligenz/coding/claude-cowork-smartphone.md
               - Claude Cowork unter Linux: künstliche-intelligenz/coding/claude-cowork-linux.md
 
+          - Antigravity 2.0 Tutorials:
+              - "Ihr erstes Projekt mit Antigravity 2.0 (Schritt für Schritt)": künstliche-intelligenz/coding/antigravity-2-erstes-projekt.md
+              - Antigravity 2.0 in der Praxis anwenden: künstliche-intelligenz/coding/antigravity-2-praxis.md
+              - Empfohlene Tools und kostenlose Ressourcen: künstliche-intelligenz/coding/antigravity-2-tools-ressourcen.md
+              - Antigravity 2.0 im Browser nutzen: künstliche-intelligenz/coding/antigravity-2-browser.md
+              - Antigravity SDK & Managed Agents API: künstliche-intelligenz/coding/antigravity-2-sdk-managed-agents.md
+              - Antigravity 2.0 auf macOS, Windows und Linux: künstliche-intelligenz/coding/antigravity-2-plattformen.md
+
           - Antigravity CLI 2 Tutorials:
               - Übersicht: künstliche-intelligenz/coding/antigravity-cli.md
               - Handbuch & Roadmap: künstliche-intelligenz/coding/antigravity-cli-roadmap-handbuch.md

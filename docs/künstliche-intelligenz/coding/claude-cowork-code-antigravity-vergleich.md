@@ -155,6 +155,8 @@ Ausführliche Dokumentation: [Antigravity CLI 2 – Referenz & Praxisleitfaden](
 - [Ihr erstes Projekt mit Claude Cowork (Schritt für Schritt)](claude-cowork-erstes-projekt.md)
 - [Claude Cowork in der Praxis anwenden](claude-cowork-praxis.md)
 - [Claude Cowork in Ihrem Browser nutzen (+Chrome-Erweiterung)](claude-cowork-browser-chrome-erweiterung.md)
+- [Ihr erstes Projekt mit Antigravity 2.0 (Schritt für Schritt)](antigravity-2-erstes-projekt.md)
+- [Antigravity 2.0 auf macOS, Windows und Linux](antigravity-2-plattformen.md)
 - [Claude Code Praxis-Handbuch](claude-code-praxis.md)
 - [Antigravity CLI 2 – Referenz & Praxisleitfaden](antigravity-cli.md)
 - [Antigravity CLI 2 – Handbuch & Roadmap](antigravity-cli-roadmap-handbuch.md)
