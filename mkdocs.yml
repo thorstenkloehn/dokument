@@ -285,6 +285,8 @@ nav:
           - Setup: entwicklung/ide/setup.md
           - Android-Entwicklung: entwicklung/ide/android.md
           - Android Praxis-Handbuch: entwicklung/ide/android-praxis.md
+          - iOS Praxis-Handbuch: entwicklung/ide/ios-praxis.md
+          - Flutter Praxis-Handbuch: entwicklung/ide/flutter-praxis.md
           - Kotlin Praxis-Handbuch: entwicklung/ide/kotlin-praxis.md
           - Lokale KI-Frontends: entwicklung/ide/lokale-ki-frontends.md
 
