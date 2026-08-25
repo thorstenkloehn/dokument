@@ -84,6 +84,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Static-Site-Generatoren](evolution-digitaler-static-site-generatoren.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Static-Site-Generatoren mit PostgreSQL-/Dateiformat-Speicherung (Top 16)](static-site-generatoren-postgresql-dateiformat-2026-topliste.md) — dieselbe Kategorie, strenger gefiltert nach Entwicklungsaktivität
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — Schwester-Chronologie mit Fokus auf technische Dokumentation statt allgemeine Static-Site-Generierung
 - [Beste Docs-as-Code-Werkzeuge 2026 (Top 15)](docs-as-code-2026-topliste.md) — Gegenstück auf Ebene der Workflow-Werkzeuge (Linting, Suche, API-Doku-Extraktion, KI-/Agenten-Pflege) statt der Rendering-Engines
 - [Beste Programmiersprachen für moderne Wissenssysteme (Top 10)](programmiersprachen-wissenssysteme-topliste.md) — Sprachökosystem-Pendant, das mehrere Sprachen aus dieser Liste (Go, Rust, Ruby, Python, JavaScript) vertieft
