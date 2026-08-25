@@ -36,5 +36,6 @@ Erstelle eine dynamische Tabelle aller Produktionsserver:
 
 ## 🔗 Verwandte Themen
 * [Semantisches MediaWiki Installieren](installieren.md) – SMW Setup
+* [Evolution und Architekturen von Semantisches MediaWiki](evolution-digitaler-semantisches-mediawiki.md) – Vertiefung zu Generation 2
 * [MediaWiki Python Bot](../mediawiki/mediawiki-python-bot.md) – Bot-Automatisierung
 * [Dokumentenerstellung](../index.md) – Übersicht

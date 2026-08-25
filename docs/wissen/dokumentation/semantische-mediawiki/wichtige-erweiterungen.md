@@ -21,4 +21,11 @@
 ## Seiten Struktur
 *  Namensräume
 * SubPageList
-* CategoryTree 
+* CategoryTree
+
+---
+
+## Verwandte Themen
+
+- [Evolution und Architekturen von Semantisches MediaWiki](evolution-digitaler-semantisches-mediawiki.md) — ordnet diese Erweiterungen chronologisch ein
+- [Beste Semantic-MediaWiki-Erweiterungen 2026 (Top 15)](semantisches-mediawiki-erweiterungen-2026-topliste.md) — nach 2026-Relevanz gerankte Auswahl
