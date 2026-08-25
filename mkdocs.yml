@@ -514,6 +514,8 @@ nav:
               - Agenten-Pipeline (Automatisierte Pflege mit LLMs): wissen/dokumentation/wikijs-ki-agent.md
           - XWiki:
               - Installieren: wissen/dokumentation/xwiki/installieren.md
+              - "Evolution und Architekturen von XWiki": wissen/dokumentation/xwiki/evolution-digitaler-xwiki.md
+              - "Beste XWiki-Erweiterungen & Flavors 2026 (Top 15)": wissen/dokumentation/xwiki/xwiki-erweiterungen-2026-topliste.md
               - Installation über APT: wissen/dokumentation/xwiki/installation-ueber-apt.md
               - "Fehlt: Administration Application beheben": wissen/dokumentation/xwiki/administration-anwendung-fehlt.md
               - Nginx über Unix-Socket anbinden: wissen/dokumentation/xwiki/xwiki-nginx-unix-socket.md

@@ -131,3 +131,10 @@ sudo ufw status verbose
 Die explizite `deny`-Regel ist bei UFWs Standardrichtlinie (`default deny incoming`) zwar redundant, macht die Absicht aber in `ufw status` sichtbar und dokumentiert sie selbsterklärend. Details zu UFW: [UFW-Firewall installieren und steuern](../../../entwicklung/infrastruktur/ufw-firewall.md).
 
 Für spätere administrative Zugriffe direkt auf Port 9000 (z. B. Fehlersuche ohne Nginx) eignet sich statt einer Portfreigabe weiterhin ein [SSH-Tunnel](../../../entwicklung/infrastruktur/ssh-tunnel.md).
+
+---
+
+## Verwandte Themen
+
+- [Evolution und Architekturen von XWiki](evolution-digitaler-xwiki.md) — Architektur- und Versionsgeschichte dieser Installation
+- [Installation über APT](installation-ueber-apt.md) — alternativer Installationsweg

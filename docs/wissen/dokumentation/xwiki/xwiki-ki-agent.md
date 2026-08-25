@@ -120,6 +120,8 @@ graph LR
 ## Verwandte Themen
 
 - [XWiki Installieren](installieren.md) — Basis-Setup
+- [Evolution und Architekturen von XWiki](evolution-digitaler-xwiki.md) — Vertiefung zu Generation 6 (KI-Ära)
+- [Beste XWiki-Erweiterungen & Flavors 2026 (Top 15)](xwiki-erweiterungen-2026-topliste.md) — WAISE (Rang 1) im Vergleich zu diesem Eigenbau-Weg
 - [XWiki REST API & Python](xwiki-rest-api.md) — Grundlagen der REST-Anbindung ohne KI-Schicht
 - [Klassische Wiki-Systeme mit LLM-Integration](../klassische-wiki-systeme-llm-integration.md#xwiki-offizielle-llm-extension-waise) — Einordnung der offiziellen WAISE-Extension als Alternative
 - [MediaWiki KI-Agent](../mediawiki/mediawiki-ki-agent.md) — paralleler Eigenbau-Weg für MediaWiki

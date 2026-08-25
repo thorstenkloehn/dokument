@@ -52,5 +52,6 @@ if __name__ == "__main__":
 
 ## 🔗 Verwandte Themen
 * [XWiki Installieren](installieren.md) – XWiki Setup
+* [Evolution und Architekturen von XWiki](evolution-digitaler-xwiki.md) – Vertiefung zu Generation 4 (REST-API-Reife)
 * [MediaWiki Python Bot](../mediawiki/mediawiki-python-bot.md) – MediaWiki API
 * [Dokumentenerstellung](../index.md) – Wissensmanagement
