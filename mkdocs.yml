@@ -92,6 +92,14 @@ nav:
               - Beste Cloud-Agenten für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/cloud-agenten-rust-topliste.md
               - Beste KI-Coding-Agenten für Rust-Programmierung (Self-Hosting, Top 20): künstliche-intelligenz/coding/selbsthosting-ki-agenten-rust-topliste.md
               - Beste KI-Assistenten & Code-Editoren für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/ki-assistenten-rust-topliste.md
+          - Claude Cowork Tutorials:
+              - "Ihr erstes Projekt mit Claude Cowork (Schritt für Schritt)": künstliche-intelligenz/coding/claude-cowork-erstes-projekt.md
+              - Claude Cowork in der Praxis anwenden: künstliche-intelligenz/coding/claude-cowork-praxis.md
+              - Empfohlene Tools und kostenlose Ressourcen: künstliche-intelligenz/coding/claude-cowork-tools-ressourcen.md
+              - "Claude Cowork in Ihrem Browser nutzen (+Chrome-Erweiterung)": künstliche-intelligenz/coding/claude-cowork-browser-chrome-erweiterung.md
+              - "Claude-News: Claude Cowork vom Smartphone aus nutzen": künstliche-intelligenz/coding/claude-cowork-smartphone.md
+              - Claude Cowork unter Linux: künstliche-intelligenz/coding/claude-cowork-linux.md
+
           - Antigravity CLI 2 Tutorials:
               - Übersicht: künstliche-intelligenz/coding/antigravity-cli.md
               - Handbuch & Roadmap: künstliche-intelligenz/coding/antigravity-cli-roadmap-handbuch.md
