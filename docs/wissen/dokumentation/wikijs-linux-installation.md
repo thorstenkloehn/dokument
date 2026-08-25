@@ -277,6 +277,7 @@ Wenn der Dienst aktiviert und aktiv ist und der HTTP-Aufruf eine Antwort liefert
 - [Wiki.js: Installation unter Linux](https://docs.requarks.io/install/linux) – technische Ausgangsbasis dieser eigenständig formulierten Anleitung
 - [Wiki.js: Systemanforderungen](https://docs.requarks.io/install/requirements)
 - [Wiki.js: Konfigurationsreferenz](https://docs.requarks.io/install/config)
+- [Evolution und Architekturen von Wiki.js](wikijs-evolution-digitaler.md) – Architektur- und Versionsgeschichte dieser Installation
 - [Wiki.js-Agenten-Pipeline](wikijs-ki-agent.md) – automatisierte Inhaltspflege über die GraphQL-API
 - [UFW-Firewall installieren und steuern](../../entwicklung/infrastruktur/ufw-firewall.md)
 - [SSH-Tunnel: Portweiterleitung über SSH](../../entwicklung/infrastruktur/ssh-tunnel.md)

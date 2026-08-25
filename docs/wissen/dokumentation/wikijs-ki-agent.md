@@ -156,6 +156,8 @@ graph LR
 
 ## Verwandte Themen
 
+- [Evolution und Architekturen von Wiki.js](wikijs-evolution-digitaler.md) — Vertiefung zu Generation 5 (GraphQL-API-Reife & KI-Agenten-Anbindung)
+- [Beste Wiki.js-Module & Integrationen 2026 (Top 15)](wikijs-module-2026-topliste.md) — dieser Agent im Vergleich zu Rang 13–14
 - [Klassische Wiki-Systeme mit LLM-Integration](klassische-wiki-systeme-llm-integration.md#wikijs-bookstack-mcp-statt-native-ki) — Einordnung von Wiki.js im Vergleich zu anderen Systemen
 - [MediaWiki KI-Agent](mediawiki/mediawiki-ki-agent.md) — paralleler Eigenbau-Weg für MediaWiki
 - [XWiki KI-Agent](xwiki/xwiki-ki-agent.md) — paralleler Eigenbau-Weg für XWiki
