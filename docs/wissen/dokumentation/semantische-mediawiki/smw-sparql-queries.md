@@ -44,5 +44,6 @@ for result in results["results"]["bindings"]:
 
 ## 🔗 Verwandte Themen
 * [SMW Inline Queries](smw-inline-queries.md) – Inline Queries
+* [Evolution und Architekturen von Semantisches MediaWiki](evolution-digitaler-semantisches-mediawiki.md) – Vertiefung zu Generation 4
 * [MediaWiki Python Bot](../mediawiki/mediawiki-python-bot.md) – Wiki Botting
 * [Semantisches MediaWiki Installieren](installieren.md) – SMW Setup

@@ -91,3 +91,10 @@ $wgHooks['CanonicalNamespaces'][] = static function ( &$list ) {
 ```
 php maintenance/update.php
 ```
+
+---
+
+## Verwandte Themen
+
+- [Evolution und Architekturen von Semantisches MediaWiki](evolution-digitaler-semantisches-mediawiki.md) — Architektur- und Versionsgeschichte
+- [Semantic MediaWiki mit Composer installieren](installieren.md) — ausführliche Installationsanleitung

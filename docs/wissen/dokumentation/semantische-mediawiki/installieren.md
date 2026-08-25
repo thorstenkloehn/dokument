@@ -224,6 +224,13 @@ wfLoadExtension( 'Mermaid' );
 $mermaidgDefaultTheme = 'neutral';
 ```
 
+---
+
+## Verwandte Themen
+
+- [Evolution und Architekturen von Semantisches MediaWiki](evolution-digitaler-semantisches-mediawiki.md) — Architektur- und Versionsgeschichte dieser Installation
+- [Wichtige Erweiterungen](wichtige-erweiterungen.md) — Companion-Extensions im Überblick
+
 
 
 
