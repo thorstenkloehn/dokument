@@ -23,6 +23,14 @@ pip install -r requirements.txt
 npm install
 ```
 
+### 4. Git-Hooks aktivieren
+
+Der Pre-Commit-Hook (`.gemini/hooks/pre-commit`) führt vor jedem Commit automatisch `zensical build` aus und bricht bei Fehlern ab. Git verwendet Hooks nur aus `.git/hooks/` oder einem per `core.hooksPath` konfigurierten Verzeichnis — diese Einstellung liegt in `.git/config` und wird **nicht** von Git selbst versioniert, muss also nach jedem frischen Checkout einmalig gesetzt werden:
+
+```bash
+git config core.hooksPath .gemini/hooks
+```
+
 ---
 
 ## Lokale Entwicklung
