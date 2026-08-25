@@ -25,7 +25,7 @@ graph LR
 ### 1b. Relationale Datenbanken & enzyklopädischer Maßstab, 2001 – 2008
 
 - **Architektur:** klassischer LAMP-Stack, granulare Rechte- und Versionsverwaltung, Kategoriensysteme.
-- **Vertreter:** **MediaWiki** (2002, aus zwei aufeinanderfolgenden PHP-Neuentwicklungen für Wikipedia hervorgegangen, die UseModWiki ablösten — siehe [MediaWiki installieren](mediawiki/index.md) und [Evolution und Architekturen von MediaWiki](mediawiki/evolution-digitaler-mediawiki.md) für die eigene Versions-/Architektur-Geschichte), **DokuWiki** (2004, dateibasierte Ausnahme ohne Datenbank), **TikiWiki**, **TWiki** — frühe LAMP-basierte Engines mit breitem Feature-Umfang.
+- **Vertreter:** **MediaWiki** (2002, aus zwei aufeinanderfolgenden PHP-Neuentwicklungen für Wikipedia hervorgegangen, die UseModWiki ablösten — siehe [MediaWiki installieren](mediawiki/index.md) und [Evolution und Architekturen von MediaWiki](mediawiki/evolution-digitaler-mediawiki.md) für die eigene Versions-/Architektur-Geschichte), **DokuWiki** (2004, dateibasierte Ausnahme ohne Datenbank, siehe [Evolution und Architekturen von DokuWiki](dokuwiki/evolution-digitaler-dokuwiki.md) für die eigene Versions-/Architektur-Geschichte), **TikiWiki**, **TWiki** — frühe LAMP-basierte Engines mit breitem Feature-Umfang.
 
 ### 1c. Enterprise-Wikis & Semantik, 2005 – 2015
 

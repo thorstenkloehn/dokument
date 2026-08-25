@@ -487,6 +487,9 @@ nav:
               - "Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical": wissen/dokumentation/drupal/migration-wikisysteme.md
               - "Export zurück nach mkdocs/Zensical": wissen/dokumentation/drupal/export-nach-mkdocs.md
               - "KI-gestützter Export: mkdocs, XWiki, MediaWiki, Wiki.js": wissen/dokumentation/drupal/ki-export-multi-ziel.md
+          - DokuWiki:
+              - "Evolution und Architekturen von DokuWiki": wissen/dokumentation/dokuwiki/evolution-digitaler-dokuwiki.md
+              - "Beste DokuWiki-Plugins & Templates 2026 (Top 15)": wissen/dokumentation/dokuwiki/dokuwiki-erweiterungen-2026-topliste.md
           - MediaWiki:
               - Installieren: wissen/dokumentation/mediawiki/index.md
               - "Evolution und Architekturen von MediaWiki": wissen/dokumentation/mediawiki/evolution-digitaler-mediawiki.md
