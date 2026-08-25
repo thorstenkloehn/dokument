@@ -63,6 +63,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](evolution-digitaler-wissenssystem-programmiersprachen.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Programmiersprachen für Wissenssysteme: Lizenz, Aktivität & Reife (Top 10)](programmiersprachen-wissenssysteme-aktive-reife-topliste.md) — dieselben zehn Sprachen, geprüft nach Lizenz der Referenzimplementierung und Entwicklungsaktivität statt RAG-/Performance-Eignung
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — vertiefend zu Rang 3
 - [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md) — vertiefend zu Rang 8 (Logseq/Clojure)
 - [PostgreSQL + pgvector](../daten/datenbanken/pgvector-anleitung.md) — vertiefend zu Rang 10
