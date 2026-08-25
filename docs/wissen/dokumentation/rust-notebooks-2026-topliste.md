@@ -70,6 +70,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Rust-Notebooks](evolution-digitaler-rust-notebooks.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Rust-Bausteine für Notebooks mit PostgreSQL-/Dateiformat-Speicherung (Top 10)](rust-notebooks-postgresql-dateiformat-2026-topliste.md) — dieselbe Kategorie, geprüft nach Lizenz, Speicherbackend und Entwicklungsaktivität
 - [Beste Notebook-Systeme 2026 (Top 20)](notebook-systeme-2026-topliste.md) — Produktebene, zu der diese Bausteine unsichtbar beitragen
 - [Beste Rust-Bausteine für CMS 2026 (Top 15)](rust-cms-2026-topliste.md) — wasm-bindgen/wasm-pack dort im Wasmtime-Kontext, analoge Topliste derselben Bauteil-Ebene für CMS
 - [Beste Rust-Bausteine für Wissenssysteme 2026 (Top 20)](rust-wissenssysteme-2026-topliste.md) — Polars/DataFusion als geteilte Bausteine, analoge Topliste derselben Bauteil-Ebene für Wissenssysteme
