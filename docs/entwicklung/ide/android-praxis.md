@@ -195,4 +195,6 @@ interface ApiService {
 ## 🔗 7. Verwandte Themen & Weiterführende Links
 * [Zurück zur IDE & Tools Übersicht](index.md)
 * [Android ADB & Wireless Debugging](android.md)
+* [iOS Development – Das Praxis-Handbuch](ios-praxis.md) — die native iOS-Entsprechung
+* [Flutter – Das Praxis-Handbuch](flutter-praxis.md) — Cross-Platform-Alternative für iOS und Android aus einer Codebasis
 * [Kotlin Praxis-Handbuch](kotlin-praxis.md)
