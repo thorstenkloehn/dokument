@@ -299,6 +299,20 @@
 }
 
 /* -----------------------------------------------------------------------------
+   Mermaid-Diagramme – auf schmalen Viewports scrollen statt bis zur
+   Unlesbarkeit stauchen. Zensical rendert die SVG in einen
+   attachShadow({mode:"closed"}) hinein, den CSS-Regeln grundsätzlich nicht
+   erreichen können – die eigentliche Größenkorrektur passiert daher in
+   javascripts/mermaid-mobile-fix.js. Diese Regel sorgt nur noch für die
+   Scrollleiste am Host-Element, sobald die SVG dort breiter ist.
+   ----------------------------------------------------------------------------- */
+
+.md-typeset .mermaid {
+  overflow-x: auto;
+  display: block;
+}
+
+/* -----------------------------------------------------------------------------
    KI-Hinweis – oberhalb jeder Seite
    ----------------------------------------------------------------------------- */
 

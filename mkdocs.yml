@@ -610,6 +610,9 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/mermaid-mobile-fix.js
+
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
