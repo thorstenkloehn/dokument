@@ -120,6 +120,7 @@ Die aktuelle Generation bringt drei parallele Entwicklungen: ein Kommunikations-
 
 ## Verwandte Themen
 
+- [Beste Moodle-Plugins & -Distributionen 2026 (Top 15)](moodle-plugins-distributionen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Moodle installieren: Git, PostgreSQL und Nginx](installieren.md) — Installationsanleitung
 - [Evolution und Architekturen digitaler klassischer LMS](../../e-learning/evolution-digitaler-klassische-lms.md) — übergeordnetes Generationenmodell, Generation 1b dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Lernmanagement-Systeme](../../e-learning/evolution-digitaler-lms.md) — Gesamt-Generationenmodell für LMS im Allgemeinen
