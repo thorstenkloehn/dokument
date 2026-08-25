@@ -190,6 +190,7 @@ nav:
           - Frontend mit KI: entwicklung/webentwicklung/frontend-ki.md
           - Backend-Integration: entwicklung/webentwicklung/backend-integration.md
           - Deployment mit KI: entwicklung/webentwicklung/deployment.md
+          - "Statisches Hosting aus Git-Repositories: Anbieter & Preise": entwicklung/webentwicklung/static-hosting-git-anbieter.md
           - Performance-Optimierung: entwicklung/webentwicklung/performance.md
 
       - Server & Infrastruktur:
