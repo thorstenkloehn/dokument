@@ -468,6 +468,10 @@ Empfehlung, welche Datenbanken sich am besten für Automatisierung durch KI-Agen
 * [Tools & Hilfswerkzeuge](../../tools/index.md) – Entwicklungs- und Analyse-Tools
 * [Lokale KI-Frontends](../../../entwicklung/ide/lokale-ki-frontends.md) – Web-UIs für lokale KI
 * [Datenerfassung](../datenerfassung/index.md) – Datenerfassungstools
+* [Evolution und Architekturen digitaler Vektordatenbanken](evolution-digitaler-vektordatenbanken.md) – Vertiefung mit Chronologie
+* [Beste Vektordatenbanken 2026 (Top 15)](vektordatenbanken-2026-topliste.md) – gerankte Momentaufnahme
+* [Evolution und Architekturen digitaler BI- & Analytics-Tools](evolution-digitaler-bi-analytics-tools.md) – Vertiefung mit Chronologie
+* [Beste BI- & Analytics-Tools 2026 (Top 15)](bi-analytics-tools-2026-topliste.md) – gerankte Momentaufnahme
 
 ---
 
