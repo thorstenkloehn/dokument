@@ -57,6 +57,16 @@ Mintlify Analytics bündelt alles in einem proprietären Hosting-Produkt, das Ma
 
 ---
 
+## Was bewusst nicht in dieser Liste steht
+
+!!! warning "Achtung: Ausschluss trotz Verbreitung oder technischer Stärke"
+    - **Redundant zu bereits gerankten Alternativen**: Matomo (self-hosted Web-Analytics, funktional deckungsgleich mit den bereits gelisteten Plausible/Umami/GoatCounter), Simple Analytics (proprietäre Privacy-SaaS, redundant zu Fathom Analytics, Rang 13) und FullStory (proprietäres Heatmap/Session-Replay, redundant zu Hotjar, Rang 11).
+    - **Andere Kategorie, kein On-Site-Analytics**: Google Search Console (SEO-/Index-Tool statt Seitenaufruf-Messung, ergänzt GA4 aus Rang 2, gehört aber in eine SEO-Topliste) und Sentry (Error-Tracking statt Nutzungs-Analytics).
+    - **Reine Infrastruktur statt Endnutzer-Dashboard**: Segment und ähnliche Customer-Data-Plattformen routen Ereignisdaten zwischen Systemen, liefern aber selbst kein Auswertungs-Dashboard für Docs-Teams.
+    - **Proprietäres Produkt-Analytics ohne Docs-spezifischen Zusatznutzen**: Amplitude und Mixpanel decken dieselbe Rolle wie das bereits gelistete, offene PostHog (Rang 3) ab.
+
+---
+
 ## Entscheidungshilfe nach Baustellen-Typ
 
 ```mermaid
