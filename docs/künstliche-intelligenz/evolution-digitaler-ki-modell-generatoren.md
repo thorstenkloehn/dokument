@@ -126,6 +126,7 @@ Diffusionsmodelle sind qualitativ stark, aber langsam (typischerweise 20–1000 
 
 ## Verwandte Themen
 
+- [Beste KI-Modell-Generatoren 2026 (Top 15)](ki-modell-generatoren-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Evolution und Architekturen digitaler Generativer KI-Anwendungen](evolution-digitaler-generative-ki-anwendungen.md) — Produkt-/Anwendungsgeneration, die auf diesen Modell-Architekturen aufbaut
 - [Beste generative KI-Anwendungen 2026 (Top 20)](generative-ki-anwendungen-2026-topliste.md) — konkrete Produkte, gerankte Momentaufnahme 2026
 - [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](evolution-digitaler-deep-learning-anwendungen.md) — übergeordnete Deep-Learning-Zeitachse, aus der GANs (Generation 2 dort) hervorgingen
