@@ -81,6 +81,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Die führenden Open-Source-Wissenssysteme 2026 (Top 20)](fuehrende-opensource-wissenssysteme-2026-topliste.md) — Schwester-Topliste nach Verbreitung/Reife statt Selfhosting-Tauglichkeit
+- [Open-Source-Wissenssysteme mit aktiver Weiterentwicklung & hoher Reife (Top 20)](aktive-reife-opensource-wissenssysteme-2026-topliste.md) — Schwester-Topliste, gerankt nach Entwicklungsaktivität und Produktionsreife statt Selfhosting-Tauglichkeit
 - [Backup-Strategien für Wissenssysteme (Top 20)](backup-strategien-wissenssysteme-topliste.md) — dieselbe Rangfolge, vertieft speziell für Backup-Methode und Restore-Komplexität
 - [KI strukturiert das Wiki autonom & Selfhosting-Migration](ki-autonome-wiki-strukturierung-selfhosting-migration.md) — vertiefend zum Migrationsweg zwischen Systemen dieser Liste
 - [KVM-Server mieten](../../entwicklung/infrastruktur/kvm-server-mieten.md) — Server-Beschaffung als Voraussetzung für alle Ränge dieser Liste
