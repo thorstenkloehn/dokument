@@ -76,6 +76,7 @@ nav:
           - Tools:
               - Continue.dev & Tabby AI: künstliche-intelligenz/coding/continue-dev-setup.md
               - Claude Code Praxis-Handbuch: künstliche-intelligenz/coding/claude-code-praxis.md
+              - "Claude Cowork vs. Claude Code vs. Antigravity 2.0 vs. Antigravity IDE vs. Antigravity CLI": künstliche-intelligenz/coding/claude-cowork-code-antigravity-vergleich.md
               - KI-Tools auf dem Produktionsserver: künstliche-intelligenz/coding/ki-tools-produktionsserver.md
               - Beste KI-Agent-CLIs (Allgemein, Top 20): künstliche-intelligenz/coding/ki-agent-cli-topliste.md
               - Beste KI-Agent-IDEs (Allgemein, Top 20): künstliche-intelligenz/coding/ki-agent-ide-topliste.md
