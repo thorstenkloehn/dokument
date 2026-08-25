@@ -83,4 +83,5 @@ graph TD
 - [Programmiersprachen für Wissenssysteme: Lizenz, Aktivität & Reife (Top 10)](programmiersprachen-wissenssysteme-aktive-reife-topliste.md) — vergleichbarer Fall, bei dem ebenfalls praktisch nichts herausfällt
 - [Reaktive Notebooks mit PostgreSQL-/Dateiformat-Speicherung](reaktive-notebooks-postgresql-dateiformat-2026-topliste.md) — Schwester-Topliste zum Hidden-State-Nachfolgeökosystem
 - [R-Markdown- & Quarto-Werkzeuge mit PostgreSQL-/Dateiformat-Speicherung](rmarkdown-quarto-postgresql-dateiformat-2026-topliste.md) — konvergierende Publishing-Linie
+- [Rust-Bausteine für Notebooks mit PostgreSQL-/Dateiformat-Speicherung (Top 10)](rust-notebooks-postgresql-dateiformat-2026-topliste.md) — Bauteil-Ebene, zu der diese Produktebene unsichtbar beiträgt
 - [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 20)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselben Speicherkriterien für die breitere Wissenssysteme-Klasse
