@@ -116,6 +116,9 @@ Statt eines einzelnen Prompt-Antwort-Zyklus planen, handeln und reflektieren KI-
 !!! note "Rust als quer liegende Implementierungsachse"
     Quer zu allen sechs Generationen dieser Zeitachse liegt eine eigene Rust-Implementierungsachse — von Framework-Bindings über pure-Rust-LLM-Inferenz bis zum Model Context Protocol. Details in [Evolution und Architekturen digitaler Rust-KI-Anwendungen](evolution-digitaler-rust-ki-anwendungen.md).
 
+!!! note "KI-Modell-Generatoren als quer liegende Architekturlinie"
+    Quer zu Generation 2 (Deep-Learning) und Generation 4 (Generative KI) liegt die Architekturlinie der generativen Modell-Generatoren selbst — vom Variational Autoencoder über GANs und Diffusionsmodelle bis zu heutigen, auf Geschwindigkeit destillierten Hybrid-Generatoren. Details in [Evolution und Architekturen digitaler KI-Modell-Generatoren](evolution-digitaler-ki-modell-generatoren.md).
+
 ---
 
 ## Alternative Sortier- & Klassifikationskriterien für KI-Anwendungen

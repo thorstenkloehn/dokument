@@ -237,6 +237,7 @@ Meldet der `curl`-Aufruf `HTTP/2 200`, ist die Installation erreichbar. Danach i
 - [Moodle: Releases](https://moodledev.io/general/releases)
 - [Moodle: NGINX](https://docs.moodle.org/en/NGINX)
 - [Moodle: Cron](https://docs.moodle.org/en/Cron)
+- [Evolution und Architekturen von Moodle](evolution-digitaler-moodle.md) — Architektur- und Versionsgeschichte, in der Generation 6 zum hier verwendeten `MOODLE_500_STABLE`-Zweig führt
 - [Drupal installieren: Composer, PostgreSQL und Nginx](../drupal/installieren.md)
 - [UFW-Firewall installieren und steuern](../../../entwicklung/infrastruktur/ufw-firewall.md)
 - [SSH-Tunnel: Portweiterleitung über SSH](../../../entwicklung/infrastruktur/ssh-tunnel.md)
