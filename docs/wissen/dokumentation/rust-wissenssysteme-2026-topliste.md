@@ -78,6 +78,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Rust-Bausteine für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)](rust-wissenssysteme-postgresql-dateiformat-2026-topliste.md) — dieselbe Kategorie, strenger gefiltert nach Lizenz, Speicherbackend und Entwicklungsaktivität
 - [Beste Frameworks & Bibliotheken für Wissenssysteme 2026 (Top 20)](wissenssystem-frameworks-2026-topliste.md) — sprachübergreifende Schwester-Topliste derselben Bauteil-Ebene
 - [Beste semantische & RAG-Wissenssysteme 2026 (Top 20)](semantische-rag-wissenssysteme-2026-topliste.md) — Qdrant, LanceDB, SurrealDB und Candle dort im RAG-Stack-Kontext
 - [Beste Sprachen zur Umsetzung der Programmierparadigmen (Top 10)](../../entwicklung/programmierparadigmen-sprachen-topliste.md) — Rang 1 dort (Rust) im allgemeinen Paradigmen-Kontext
