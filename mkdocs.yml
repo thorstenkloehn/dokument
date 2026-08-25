@@ -367,8 +367,10 @@ nav:
           - "Evolution und Architekturen digitaler Content-Management-Systeme": wissen/dokumentation/evolution-digitaler-cms.md
           - "Evolution und Architekturen digitaler klassischer CMS": wissen/dokumentation/evolution-digitaler-klassische-cms.md
           - "Beste klassische CMS 2026 (Top 20)": wissen/dokumentation/klassische-cms-2026-topliste.md
+          - "Klassische CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 7)": wissen/dokumentation/klassische-cms-postgresql-dateiformat-2026-topliste.md
           - "Evolution und Architekturen digitaler Headless-CMS": wissen/dokumentation/evolution-digitaler-headless-cms.md
           - "Beste Headless-CMS 2026 (Top 20)": wissen/dokumentation/headless-cms-2026-topliste.md
+          - "Headless-CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 9)": wissen/dokumentation/headless-cms-postgresql-dateiformat-2026-topliste.md
           - "Evolution und Architekturen digitaler Composable-CMS": wissen/dokumentation/evolution-digitaler-composable-cms.md
           - "Beste Composable-CMS & MACH-Systeme 2026 (Top 20)": wissen/dokumentation/composable-cms-2026-topliste.md
           - "Evolution und Architekturen digitaler KI-Content-Erstellung": wissen/dokumentation/evolution-digitaler-ki-content-erstellung.md
@@ -377,18 +379,22 @@ nav:
           - "Beste agentische Content-Ökosysteme 2026 (Top 20)": wissen/dokumentation/agentische-content-oekosysteme-2026-topliste.md
           - "Evolution und Architekturen digitaler Rust-CMS": wissen/dokumentation/evolution-digitaler-rust-cms.md
           - "Beste Rust-Bausteine für CMS 2026 (Top 15)": wissen/dokumentation/rust-cms-2026-topliste.md
+          - "Rust-Bausteine für CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 12)": wissen/dokumentation/rust-cms-postgresql-dateiformat-2026-topliste.md
           - "Evolution und Architekturen digitaler Notebook-Systeme": wissen/dokumentation/evolution-digitaler-notebook-systeme.md
           - "Beste Notebook-Systeme 2026 (Top 20)": wissen/dokumentation/notebook-systeme-2026-topliste.md
           - "Evolution und Architekturen digitaler Notebook-Vorläufer": wissen/dokumentation/evolution-digitaler-notebook-vorlaeufer.md
           - "Einflussreichste Literate-Programming-Vorläufer (Top 10)": wissen/dokumentation/literate-programming-vorlaeufer-topliste.md
           - "Evolution und Architekturen digitaler IPython- & Jupyter-Systeme": wissen/dokumentation/evolution-digitaler-ipython-jupyter.md
           - "Beste IPython- & Jupyter-Systeme 2026 (Top 20)": wissen/dokumentation/ipython-jupyter-2026-topliste.md
+          - "IPython- & Jupyter-Systeme mit PostgreSQL-/Dateiformat-Speicherung (Top 20)": wissen/dokumentation/ipython-jupyter-postgresql-dateiformat-2026-topliste.md
           - "Evolution und Architekturen digitaler Cloud-Notebooks": wissen/dokumentation/evolution-digitaler-cloud-notebooks.md
           - "Beste Cloud-Notebook-Plattformen 2026 (Top 20)": wissen/dokumentation/cloud-notebooks-2026-topliste.md
           - "Evolution und Architekturen digitaler R-Markdown- & Quarto-Publishing-Systeme": wissen/dokumentation/evolution-digitaler-rmarkdown-quarto.md
           - "Beste R-Markdown- & Quarto-Werkzeuge 2026 (Top 15)": wissen/dokumentation/rmarkdown-quarto-2026-topliste.md
+          - "R-Markdown- & Quarto-Werkzeuge mit PostgreSQL-/Dateiformat-Speicherung (Top 13)": wissen/dokumentation/rmarkdown-quarto-postgresql-dateiformat-2026-topliste.md
           - "Evolution und Architekturen digitaler Reaktiver Notebooks": wissen/dokumentation/evolution-digitaler-reaktive-notebooks.md
           - "Beste reaktive Notebooks 2026 (Top 10)": wissen/dokumentation/reaktive-notebooks-2026-topliste.md
+          - "Reaktive Notebooks mit PostgreSQL-/Dateiformat-Speicherung (Top 9)": wissen/dokumentation/reaktive-notebooks-postgresql-dateiformat-2026-topliste.md
           - "Evolution und Architekturen digitaler KI-nativer Notebook-Umgebungen": wissen/dokumentation/evolution-digitaler-ki-native-notebooks.md
           - "Beste KI-native Notebook-Umgebungen 2026 (Top 20)": wissen/dokumentation/ki-native-notebooks-2026-topliste.md
           - "Evolution und Architekturen digitaler Rust-Notebooks": wissen/dokumentation/evolution-digitaler-rust-notebooks.md
@@ -398,6 +404,7 @@ nav:
           - "Workspace-, Kollaborations- & Docs-as-Code-Plattformen (Top 20)": wissen/dokumentation/workspace-kollaboration-docs-as-code-2026-topliste.md
           - "Evolution und Architekturen digitaler Static-Site-Generatoren": wissen/dokumentation/evolution-digitaler-static-site-generatoren.md
           - "Beste Static-Site- & Docs-Generatoren 2026 (Top 20)": wissen/dokumentation/static-site-generatoren-2026-topliste.md
+          - "Static-Site-Generatoren mit PostgreSQL-/Dateiformat-Speicherung (Top 16)": wissen/dokumentation/static-site-generatoren-postgresql-dateiformat-2026-topliste.md
           - "Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren": wissen/dokumentation/evolution-digitaler-pkm-wissensgraphen.md
           - "Beste PKM-Wissensgraphen & Block-Editoren 2026 (Top 20)": wissen/dokumentation/pkm-wissensgraphen-2026-topliste.md
           - "Bidirektionale Wissensgraphen & Real-time Block-Editoren (Top 15)": wissen/dokumentation/bidirektionale-wissensgraphen-realtime-block-editoren-2026-topliste.md
