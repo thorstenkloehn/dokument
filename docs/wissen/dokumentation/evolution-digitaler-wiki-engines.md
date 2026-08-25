@@ -30,7 +30,7 @@ graph LR
 ### 1c. Enterprise-Wikis & Semantik, 2005 – 2015
 
 - **Architektur:** Java-/.NET-Stacks, WYSIWYG-Editoren, semantische Metadaten.
-- **Vertreter:** **XWiki** (2006, siehe [XWiki installieren](xwiki/installieren.md)), **Atlassian Confluence** (2004), **Semantic MediaWiki** (2005, siehe [Semantisches MediaWiki](semantische-mediawiki/installieren.md)), **Foswiki** (2008, TWiki-Fork).
+- **Vertreter:** **XWiki** (2006, siehe [XWiki installieren](xwiki/installieren.md) und [Evolution und Architekturen von XWiki](xwiki/evolution-digitaler-xwiki.md) für die eigene Versions-/Architektur-Geschichte), **Atlassian Confluence** (2004), **Semantic MediaWiki** (2005, siehe [Semantisches MediaWiki](semantische-mediawiki/installieren.md)), **Foswiki** (2008, TWiki-Fork).
 
 ---
 
