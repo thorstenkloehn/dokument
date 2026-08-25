@@ -91,6 +91,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Wiki-Engines](evolution-digitaler-wiki-engines.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Wiki-Engines mit PostgreSQL- oder Dateiformat-Speicherung (Top 15)](wiki-engines-postgresql-dateiformat-2026-topliste.md) — dieselbe Kategorie, strenger gefiltert nach Lizenz, Speicherbackend und Entwicklungsaktivität
 - [Die führenden Open-Source-Wissenssysteme 2026 (Top 20)](fuehrende-opensource-wissenssysteme-2026-topliste.md) — breiter gefasste Schwester-Topliste inkl. PKM und RAG-Plattformen
 - [Beste Open-Source-Wissenssysteme für den eigenen Selfhosting-Server (Top 20)](wissenssysteme-selfhosting-server-topliste.md) — Selfhosting-Perspektive über dieselbe breitere Kategorie
 - [Evolution und Architekturen von MediaWiki](mediawiki/evolution-digitaler-mediawiki.md) — vertiefende Produkt-Geschichte zu Rang 1
