@@ -17,6 +17,7 @@ fi
 if [ ! -d node_modules ] || [ package-lock.json -nt node_modules ]; then
   npm install --silent
 fi
+git config core.hooksPath .gemini/hooks
 .venv/bin/zensical build
 ```
 
