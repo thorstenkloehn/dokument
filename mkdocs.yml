@@ -513,6 +513,8 @@ nav:
               - SMW SPARQL Endpoint: wissen/dokumentation/semantische-mediawiki/smw-sparql-queries.md
           - Wiki.js:
               - Native Linux-Installation: wissen/dokumentation/wikijs-linux-installation.md
+              - "Evolution und Architekturen von Wiki.js": wissen/dokumentation/wikijs-evolution-digitaler.md
+              - "Beste Wiki.js-Module & Integrationen 2026 (Top 15)": wissen/dokumentation/wikijs-module-2026-topliste.md
               - Nginx über Unix-Socket anbinden: wissen/dokumentation/wikijs-nginx-unix-socket.md
               - Agenten-Pipeline (Automatisierte Pflege mit LLMs): wissen/dokumentation/wikijs-ki-agent.md
           - XWiki:

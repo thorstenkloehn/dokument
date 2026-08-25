@@ -56,7 +56,7 @@ Statt einer eigenen Datenbank-Versionierung übernehmen einige Wiki-Engines **Gi
 | System | Jahr | Prinzip |
 |---|---|---|
 | **Gollum** | 2010 | Git-Backend-Wiki-Engine hinter der GitHub-Wiki-Funktion — jede Änderung ist ein Git-Commit. |
-| **Wiki.js 1.x** | 2014 | Ursprüngliche Node.js/MongoDB-basierte Erstversion, optional mit Git-Sync — Vorläufer des vollständigen Rewrites in Generation 4. |
+| **Wiki.js 1.x** | 2014 | Ursprüngliche Node.js/MongoDB-basierte Erstversion, optional mit Git-Sync — Vorläufer des vollständigen Rewrites in Generation 4, siehe [Evolution und Architekturen von Wiki.js](wikijs-evolution-digitaler.md) für die eigene Versions-/Architektur-Geschichte. |
 
 ---
 
