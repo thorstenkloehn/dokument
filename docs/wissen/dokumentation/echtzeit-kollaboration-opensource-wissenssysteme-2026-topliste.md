@@ -124,5 +124,6 @@ graph TD
 - [Beste Open-Source-Wissenssysteme für den eigenen Selfhosting-Server (Top 20)](wissenssysteme-selfhosting-server-topliste.md) — relevant, sobald Echtzeit-Kollaboration auf dem eigenen Server produktiv betrieben werden soll
 - [Die führenden Open-Source-Wissenssysteme 2026 (Top 20)](fuehrende-opensource-wissenssysteme-2026-topliste.md) — breiteste Schwester-Topliste nach Verbreitung
 - [Bidirektionale Wissensgraphen & Real-time Block-Editoren (Top 15)](bidirektionale-wissensgraphen-realtime-block-editoren-2026-topliste.md) — PKM-spezifische Schwester-Topliste, große Überschneidung im Block-Editor-Cluster (AppFlowy, AFFiNE, Docmost)
+- [Visuelle, Local-First & agentische Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)](visuell-agentische-wissenssysteme-postgresql-dateiformat-2026-topliste.md) — große Überschneidung im Visuell-Cluster (Excalidraw, AFFiNE, Penpot, draw.io)
 - [Khoj: KI-„Zweites Gehirn" für persönliche Wissenssuche](khoj-ki-zweites-gehirn.md) — Gegenbeispiel, ausgeschlossen wegen fehlendem Dokumenteneditieren
 - [Dify: Visuelle Agenten- & Workflow-Plattform](dify-agenten-workflow-plattform.md) — Gegenbeispiel, ausgeschlossen wegen fehlendem Dokumenteneditieren
