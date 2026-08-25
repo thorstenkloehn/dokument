@@ -148,6 +148,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Docs-as
 
 - [Beste Docs-as-Code-Werkzeuge 2026 (Top 15)](docs-as-code-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
 - [Beste Open-Source-Docs-as-Code-Werkzeuge 2026 (Top 20)](docs-as-code-open-source-2026-topliste.md) — dieselbe Momentaufnahme, gefiltert auf 20 Werkzeuge unter OSI-anerkannter Lizenz
+- [Beste Docs-as-Code-Analytics-Werkzeuge 2026 (Top 15)](docs-as-code-analytics-2026-topliste.md) — ergänzende Auswertungs-Ebene, die misst statt zu bauen oder zu prüfen
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme inkl. Book-First-/Docs-First-Generatoren
 - [Evolution und Architekturen digitaler Static-Site-Generatoren](evolution-digitaler-static-site-generatoren.md) — Schwester-Chronologie nach Rendering-Architektur statt Anwendungsfall/Kollaborationsmodell
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — analoges Generationenmodell, Generation 2 dort deckt sich mit Generation 3 dieses Artikels
