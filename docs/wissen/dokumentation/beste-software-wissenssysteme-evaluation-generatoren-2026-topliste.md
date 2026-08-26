@@ -59,7 +59,7 @@ MediaWiki, XWiki, BookStack und Joplin zeigen, dass mehrjährige Produktionshist
 Alle sechs aufgenommenen Evaluationswerkzeuge sind seit 2021 oder jünger und ausnahmslos permissiv lizenziert (MIT/Apache-2.0) — ein Muster, das sich deutlich von der älteren Wissenssysteme-Domäne mit ihrem GPL-/AGPL-Anteil unterscheidet, siehe [Evolution digitaler KI-Evaluationswerkzeuge](../../künstliche-intelligenz/evolution-digitaler-ki-evaluation.md).
 
 ### Domäne Generator: Code offen heißt nicht automatisch Gewichte frei
-Nur FLUX.1 [schnell], ComfyUI und ControlNet erreichen in dieser Domäne „uneingeschränkt kommerziell nutzbar" auf beiden Ebenen (Code und Modellgewichte) — Stable Diffusion 3.5 bleibt trotz größtem Ökosystem wegen der Enterprise-Schwelle seiner Community License nur eingeschränkt einsetzbar, siehe Lizenzhinweis unten.
+Nur **FLUX.1 [schnell]** erreicht in dieser Domäne „uneingeschränkt kommerziell nutzbar" auf beiden Ebenen (Code und Modellgewichte) gleichzeitig. ComfyUI (GPL-3.0) und ControlNet (Apache-2.0) sind je nur auf einer Ebene uneingeschränkt: ComfyUI trägt als Copyleft-Lizenz Weitergabepflichten, bei ControlNet ist ausschließlich die Code-Lizenz geprüft. Stable Diffusion 3.5 bleibt trotz größtem Ökosystem wegen der Enterprise-Schwelle seiner Community License am stärksten eingeschränkt — siehe Lizenzhinweis unten.
 
 ---
 
@@ -110,4 +110,4 @@ graph TD
 - [Beste KI-Modell-Generatoren 2026 (Top 15)](../../künstliche-intelligenz/ki-modell-generatoren-2026-topliste.md) — vollständige Einzel-Topliste der Domäne Generator
 - [Evolution und Architekturen digitaler KI-Modell-Generatoren](../../künstliche-intelligenz/evolution-digitaler-ki-modell-generatoren.md) — chronologisches Generationenmodell der Generatoren
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — chronologisches Generationenmodell der Wissenssysteme
-- [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 22)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselbe Wissenssysteme-Domäne, zusätzlich gefiltert auf einfaches Speicherbackend
+- [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 20)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselbe Wissenssysteme-Domäne, zusätzlich gefiltert auf einfaches Speicherbackend

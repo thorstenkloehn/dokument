@@ -2,8 +2,8 @@
 
 Die [Evolution und Architekturen digitaler KI-Evaluationswerkzeuge](evolution-digitaler-ki-evaluation.md) ordnet diese Werkzeuglinie chronologisch — von manueller Begutachtung über statische Benchmark-Suiten, LLM-als-Richter-Verfahren und RAG-spezifische Metriken bis zu agentischen und sicherheitsfokussierten Continuous-Eval-Pipelines. Diese Seite übersetzt die Chronologie in eine **Momentaufnahme 2026**: 15 Werkzeuge, mit denen LLM-, RAG- und Agenten-Systeme 2026 tatsächlich produktiv evaluiert werden — sortiert nach Reifegrad, aktiver Weiterentwicklung, Funktionsumfang und, wo abweichend, expliziter Lizenz-Einordnung für den kommerziellen Einsatz.
 
-!!! note "Hinweis: Nur OSI-anerkannte Lizenzen in der Hauptliste"
-    Wie in den [Wissenssysteme-Toplisten](../wissen/dokumentation/fuehrende-opensource-wissenssysteme-2026-topliste.md) zählen in der Hauptliste nur Werkzeuge unter einer OSI-anerkannten Open-Source-Lizenz (MIT, Apache-2.0). Ein source-available Sonderfall (Arize Phoenix, Elastic License 2.0) steht separat unten.
+!!! note "Hinweis: Nur OSI-anerkannte Lizenzen in Rang 1–14"
+    Wie in den [Wissenssysteme-Toplisten](../wissen/dokumentation/fuehrende-opensource-wissenssysteme-2026-topliste.md) zählen Rang 1–14 ausschließlich Werkzeuge unter einer OSI-anerkannten Open-Source-Lizenz (MIT, Apache-2.0). Rang 15 ist ein source-available Sonderfall (Arize Phoenix, Elastic License 2.0), explizit als solcher gekennzeichnet — Details im [Lizenz-Sonderfall-Abschnitt](#lizenz-sonderfall-arize-phoenix).
 
 ---
 
