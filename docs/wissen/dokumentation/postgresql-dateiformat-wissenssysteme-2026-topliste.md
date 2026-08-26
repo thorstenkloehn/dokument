@@ -1,12 +1,12 @@
-# Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung, aktiver Weiterentwicklung & hoher Reife — Top-20-Topliste
+# Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung, aktiver Weiterentwicklung & hoher Reife — Top-22-Topliste
 
 Die [Topliste aktiver & reifer Open-Source-Wissenssysteme](aktive-reife-opensource-wissenssysteme-2026-topliste.md) filtert nach OSI-Lizenz, Entwicklungsaktivität und Reife. Diese Seite legt ein viertes Kriterium obendrauf, das gezielt den Betriebsaufwand adressiert: **Der eigentliche Wissensinhalt darf nur in PostgreSQL oder in einem reinen Dateiformat (Markdown, SQLite, Einzeldatei) persistiert werden** — kein zwingendes zweites oder drittes Pflicht-Backend wie MongoDB, Elasticsearch, Vespa oder eine dedizierte Vektor-Datenbank. Ein Selfhosting-Stack mit „nur einem Datenspeicher" ist einfacher zu betreiben, zu sichern und zu migrieren als einer mit drei verschiedenen Diensten.
 
 !!! note "Hinweis: Nur OSI-anerkannte Lizenzen"
     Wie in der [Gesamtübersicht](open-source-llm-agent-mcp-systeme.md) zählen hier ausschließlich Systeme unter einer OSI-anerkannten Open-Source-Lizenz (MIT, GPL, LGPL, AGPL, BSD, Apache-2.0). Source-available-Sonderfälle wie Outline (BSL) oder Open WebUI (eigene Lizenz mit Branding-Pflicht) fallen unabhängig vom Speicherbackend heraus — konsistent mit der Handhabung in der [MCP-Topliste](wissensmanagement-mcp-server-topliste.md#lizenz-sonderfall).
 
-!!! tip "Tipp: Cache/Queue zählt nicht als Pflicht-Zweitsystem"
-    Ein Dienst wie Redis, der ausschließlich als Cache, Session-Store oder Job-Queue dient und keinen dauerhaften Wissensinhalt hält, disqualifiziert ein System hier **nicht** — solange der Content selbst vollständig aus PostgreSQL oder den Dateien rekonstruierbar bleibt. Bei Docmost (Rang 15) und AFFiNE (Rang 16) ist das explizit der Fall und unten vermerkt.
+!!! tip "Tipp: Cache/Queue/Blob-Storage zählt nicht als Pflicht-Zweitsystem"
+    Ein Dienst wie Redis, der ausschließlich als Cache, Session-Store oder Job-Queue dient und keinen dauerhaften Wissensinhalt hält, disqualifiziert ein System hier **nicht** — solange der Content selbst vollständig aus PostgreSQL oder den Dateien rekonstruierbar bleibt. Bei Docmost (Rang 15) und AFFiNE (Rang 16) ist das explizit der Fall und unten vermerkt. Dieselbe Logik gilt für reinen Datei-/Blob-Speicher für Uploads (z. B. MinIO/S3 für Bild-Anhänge): Solange die eigentlichen Wissensdaten in PostgreSQL liegen und ein Anhangsverzeichnis auch auf einem lokalen Dateisystem statt S3 laufen kann, zählt das nicht als Pflicht-Zweitdatenbank — relevant bei AppFlowy (Rang 17).
 
 ---
 
@@ -19,7 +19,7 @@ graph TD
     A -->|"Ja: Markdown/SQLite/Einzeldatei ohne DB-Server"| B
     A -->|"Nein: zwingendes Pflicht-Zweitsystem (MongoDB, Elasticsearch, Vespa, dedizierte Vektor-DB)"| C["Ausschluss"]
     B --> D{"Sehr aktive Weiterentwicklung UND hohe Reife?"}
-    D -->|"Ja"| E["Aufnahme in Top 20"]
+    D -->|"Ja"| E["Aufnahme in Top 22"]
     D -->|"Nein"| C
 ```
 
@@ -40,10 +40,12 @@ graph LR
         Khoj
         Docmost
         AFFiNE
+        AppFlowy
         HedgeDoc
         Wikibase
         SMW["Semantisches MediaWiki"]
         Paperless["Paperless-ngx"]
+        Linkwarden
     end
     subgraph Beides["Beides wählbar"]
         Joplin
@@ -58,7 +60,7 @@ graph LR
 
 ---
 
-## Top 20 im Überblick
+## Top 22 im Überblick
 
 | Rang | System | Kategorie | Lizenz | Speicherbackend | Aktivität/Reife |
 |---|---|---|---|---|---|
@@ -78,10 +80,12 @@ graph LR
 | 14 | **[AnythingLLM](anythingllm-rag-plattform.md)** | RAG/Wissensmanagement | MIT | SQLite + eingebettete Datei-Vektordatenbank (LanceDB) im Standardbetrieb | Aktive Discord-getriebene Entwicklung |
 | 15 | **Docmost** | Wissensmanagement (Confluence-Alternative) | AGPL-3.0 | PostgreSQL als alleiniger Content-Speicher (Redis nur als Cache/Queue) | Jung, aber ungewöhnlich hohe Commit-Frequenz |
 | 16 | **AFFiNE** | Wissensmanagement/Whiteboard | MIT | PostgreSQL als Metadaten-Speicher im Selfhosting-Betrieb | Wöchentliche Canary-Builds |
-| 17 | **HedgeDoc** | Kollaborative Markdown-Notizen | AGPL-3.0 | PostgreSQL oder SQLite frei wählbar | Aktiv gepflegt, breite Editor-Community |
-| 18 | **Wikibase** (Wikidata-Basis) | Strukturiertes Wissensmanagement | GPL-2.0 | PostgreSQL offiziell unterstützt (MediaWiki-Datenbankschicht) | Professionell von Wikimedia Deutschland weiterentwickelt |
-| 19 | **Semantisches MediaWiki** | Wiki-Erweiterung (Semantik) | GPL-2.0+ | PostgreSQL offiziell unterstützt (MediaWiki-Datenbankschicht) | Seit professional.wiki-Sponsoring (ab 2023) wieder deutlich aktiver, siehe [Installation](semantische-mediawiki/installieren.md) |
-| 20 | **Paperless-ngx** | Dokumentenarchiv/Wissensablage | GPL-3.0 | PostgreSQL empfohlen, SQLite möglich | Sehr aktive Weiterentwicklung, große Community seit dem Fork 2021 |
+| 17 | **AppFlowy** | Workspace-Plattform (Notion-Alternative) | AGPL-3.0 | PostgreSQL als Content-Speicher (über AppFlowy Cloud) | Eigene Rust-CRDT-Engine, aktive Weiterentwicklung seit 2021 |
+| 18 | **HedgeDoc** | Kollaborative Markdown-Notizen | AGPL-3.0 | PostgreSQL oder SQLite frei wählbar | Aktiv gepflegt, breite Editor-Community |
+| 19 | **Wikibase** (Wikidata-Basis) | Strukturiertes Wissensmanagement | GPL-2.0 | PostgreSQL offiziell unterstützt (MediaWiki-Datenbankschicht) | Professionell von Wikimedia Deutschland weiterentwickelt |
+| 20 | **Semantisches MediaWiki** | Wiki-Erweiterung (Semantik) | GPL-2.0+ | PostgreSQL offiziell unterstützt (MediaWiki-Datenbankschicht) | Seit professional.wiki-Sponsoring (ab 2023) wieder deutlich aktiver, siehe [Installation](semantische-mediawiki/installieren.md) |
+| 21 | **Paperless-ngx** | Dokumentenarchiv/Wissensablage | GPL-3.0 | PostgreSQL empfohlen, SQLite möglich | Sehr aktive Weiterentwicklung, große Community seit dem Fork 2021 |
+| 22 | **Linkwarden** | Lesezeichen-/Link-Archivierung | AGPL-3.0 | PostgreSQL als alleiniges Pflicht-Backend (Meilisearch nur optional für Volltextsuche) | Aktive Weiterentwicklung, paralleles kommerzielles Cloud-Angebot bei vollständig offenem Kern |
 
 ---
 
@@ -96,14 +100,20 @@ Diese drei Systeme brauchen keinen Datenbankserver überhaupt — Backup ist ein
 ### Paperless-ngx: das einzige reine Dokumentenarchiv dieser Liste
 Paperless-ngx erweitert den Scope bewusst um eine vierte Kategorie neben Wiki, PKM und RAG-Plattform: ein OCR-gestütztes Dokumentenarchiv, das eingehende PDFs/Scans automatisch verschlagwortet und durchsuchbar macht. Fachlich ein anderer Anwendungsfall als ein Wiki, aber technisch und lizenzrechtlich passt es exakt in dieses Raster — PostgreSQL als empfohlenes Backend, GPL-3.0, seit dem Fork von „Paperless" 2021 durchgängig sehr aktiv.
 
+### AppFlowy: dritte Rust-CRDT-Notion-Alternative neben Docmost und AFFiNE
+[AppFlowy](evolution-digitaler-pkm-wissensgraphen.md) rundet das Trio PostgreSQL-gestützter Notion-Alternativen ab (Rang 15–17): eigene Rust-CRDT-Engine, Self-Hosting über die selbst betreibbare AppFlowy Cloud mit PostgreSQL als Content-Speicher. Redis und ein S3-kompatibler Blob-Store für Datei-Uploads laufen im Standard-Stack mit, disqualifizieren das System aber nicht — dieselbe „Cache/Blob zählt nicht als Pflicht-Zweitsystem"-Logik wie bei Docmost und AFFiNE greift hier, solange der eigentliche Wissensinhalt vollständig aus PostgreSQL rekonstruierbar bleibt.
+
+### Linkwarden: eine fünfte Kategorie — Lesezeichen- und Link-Archivierung
+Wo Paperless-ngx eingehende Dokumente archiviert, sichert Linkwarden (Rang 22) ausgehende Web-Links dauerhaft: Zu jedem gespeicherten Lesezeichen legt es automatisch Screenshot, PDF und ein Einzeldatei-HTML-Archiv an, um Link-Rot vorzubeugen. PostgreSQL ist das einzige Pflicht-Backend — Meilisearch verbessert nur optional die Volltextsuche, ist für den Grundbetrieb aber nicht erforderlich. Das parallele kommerzielle Cloud-Angebot (linkwarden.app) neben dem vollständig offenen AGPL-3.0-Kern zeigt zudem, dass „aktiv kommerziell getragen" und „uneingeschränkt Open Source" sich hier nicht ausschließen.
+
 ---
 
 ## Was bewusst nicht in dieser Liste steht
 
 !!! warning "Achtung: Ausschluss trotz Open Source, Aktivität oder Reife"
-    Drei Kategorien von Systemen fallen aus dieser Liste heraus, obwohl sie in verwandten Toplisten dieser Dokumentation auftauchen:
+    Vier Kategorien von Systemen fallen aus dieser Liste heraus, obwohl sie in verwandten Toplisten dieser Dokumentation auftauchen:
 
-    - **Zwingendes Pflicht-Zweitsystem jenseits Postgres/Datei**: [Dify](dify-agenten-workflow-plattform.md) und [Onyx](onyx-danswer-rag-plattform.md) (ehem. Danswer) benötigen zusätzlich zu PostgreSQL zwingend eine dedizierte Vektor-Datenbank bzw. einen Suchindex (Weaviate/Milvus bei Dify, Vespa bei Onyx) — architektonisch das Gegenteil des „ein Datenspeicher reicht"-Prinzips dieser Liste.
+    - **Zwingendes Pflicht-Zweitsystem jenseits Postgres/Datei**: [Dify](dify-agenten-workflow-plattform.md) und [Onyx](onyx-danswer-rag-plattform.md) (ehem. Danswer) benötigen zusätzlich zu PostgreSQL zwingend eine dedizierte Vektor-Datenbank bzw. einen Suchindex (Weaviate/Milvus bei Dify, Vespa bei Onyx) — architektonisch das Gegenteil des „ein Datenspeicher reicht"-Prinzips dieser Liste. Aus demselben Grund fehlt Karakeep (ehem. Hoarder): Die Standard-Deployment-Vorlage führt Meilisearch als festen zweiten Dienst für die Kernsuche, nicht nur optional wie bei Linkwarden (Rang 22).
     - **Kein PostgreSQL-Support**: BookStack (nur MySQL/MariaDB, kein offizieller PostgreSQL-Support trotz wiederholter Community-Nachfrage) und Growi (MongoDB-basiert) erfüllen das Speicherkriterium nicht, obwohl beide aktiv gepflegt und reif sind.
     - **Andere primäre Datenbank im Sync-Server**: Standard Notes' selbstgehosteter Sync-Server ist primär auf MySQL ausgelegt statt auf PostgreSQL oder Dateiformat.
     - **Lizenzausschluss unabhängig vom Speicherbackend**: Outline (BSL) und [Open WebUI](open-webui-rag-agenten-plattform.md) (eigene Lizenz mit Branding-Pflicht) — Details siehe [Lizenz-Sonderfälle in der MCP-Topliste](wissensmanagement-mcp-server-topliste.md#lizenz-sonderfall).
@@ -121,6 +131,8 @@ graph TD
     Ziel -->|"Kollaborative Markdown-Notizen, freie DB-Wahl"| E["HedgeDoc"]
     Ziel -->|"PKM mit reinen Textdateien im eigenen Sync-Ordner"| F["Logseq / SilverBullet"]
     Ziel -->|"Strukturierte Fakten auf PostgreSQL"| G["Wikibase / Semantisches MediaWiki"]
+    Ziel -->|"Notion-artiger Team-Workspace auf PostgreSQL"| H["AppFlowy / Docmost / AFFiNE"]
+    Ziel -->|"Lesezeichen & Weblinks dauerhaft archivieren"| I["Linkwarden"]
 ```
 
 ---
