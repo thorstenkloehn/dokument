@@ -110,4 +110,4 @@ graph TD
 - [Beste KI-Modell-Generatoren 2026 (Top 15)](../../künstliche-intelligenz/ki-modell-generatoren-2026-topliste.md) — vollständige Einzel-Topliste der Domäne Generator
 - [Evolution und Architekturen digitaler KI-Modell-Generatoren](../../künstliche-intelligenz/evolution-digitaler-ki-modell-generatoren.md) — chronologisches Generationenmodell der Generatoren
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — chronologisches Generationenmodell der Wissenssysteme
-- [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 20)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselbe Wissenssysteme-Domäne, zusätzlich gefiltert auf einfaches Speicherbackend
+- [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 22)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselbe Wissenssysteme-Domäne, zusätzlich gefiltert auf einfaches Speicherbackend

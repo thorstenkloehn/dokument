@@ -66,4 +66,4 @@ graph TD
 - [Beste reaktive Notebooks 2026 (Top 10)](reaktive-notebooks-2026-topliste.md) — Basis-Topliste ohne Lizenz-/Speicherbackend-Filter
 - [IPython- & Jupyter-Systeme mit PostgreSQL-/Dateiformat-Speicherung (Top 20)](ipython-jupyter-postgresql-dateiformat-2026-topliste.md) — Vorgänger-Architektur, deren Hidden-State-Problem diese Kategorie adressiert
 - [R-Markdown- & Quarto-Werkzeuge mit PostgreSQL-/Dateiformat-Speicherung](rmarkdown-quarto-postgresql-dateiformat-2026-topliste.md) — Schwester-Kategorie im Notebook-Cluster
-- [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 20)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselben Speicherkriterien für die breitere Wissenssysteme-Klasse
+- [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 22)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselben Speicherkriterien für die breitere Wissenssysteme-Klasse

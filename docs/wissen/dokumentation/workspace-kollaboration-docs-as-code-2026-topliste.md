@@ -129,7 +129,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
-- [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 20)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselben Speicherkriterien für die breitere Wiki-/PKM-/RAG-Wissenssysteme-Klasse
+- [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 22)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselben Speicherkriterien für die breitere Wiki-/PKM-/RAG-Wissenssysteme-Klasse
 - [Wiki-Engines mit PostgreSQL- oder Dateiformat-Speicherung (Top 15)](wiki-engines-postgresql-dateiformat-2026-topliste.md) — dieselben Kriterien, enger gefasst auf klassische Wiki-Engines
 - [Open-Source-Wissenssysteme mit echter Echtzeit-Kollaboration (Top 15)](echtzeit-kollaboration-opensource-wissenssysteme-2026-topliste.md) — Schwester-Topliste mit CRDT/OT-Fokus statt Speicherbackend, mehrere Überschneidungen (AFFiNE, CryptPad, HedgeDoc, OnlyOffice, Collabora Online)
 - [Beste Docs-as-Code-Werkzeuge 2026 (Top 15)](docs-as-code-2026-topliste.md) — Workflow-Ebene (Linting, API-Doku-Extraktion, Hosting/CI) statt Plattform-Ebene
