@@ -18,6 +18,8 @@ nav:
       - "Beste Cloud-KI-APIs 2026 (Top 15)": künstliche-intelligenz/cloud-ki-apis-2026-topliste.md
       - "Evolution und Architekturen digitaler KI-Modell-Generatoren": künstliche-intelligenz/evolution-digitaler-ki-modell-generatoren.md
       - "Beste KI-Modell-Generatoren 2026 (Top 15)": künstliche-intelligenz/ki-modell-generatoren-2026-topliste.md
+      - "Evolution und Architekturen digitaler KI-Evaluationswerkzeuge": künstliche-intelligenz/evolution-digitaler-ki-evaluation.md
+      - "Beste KI-Evaluationswerkzeuge 2026 (Top 15)": künstliche-intelligenz/ki-evaluation-2026-topliste.md
       - "Evolution und Architekturen digitaler Generativer KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-generative-ki-anwendungen.md
       - "Beste generative KI-Anwendungen 2026 (Top 20)": künstliche-intelligenz/generative-ki-anwendungen-2026-topliste.md
       - "Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen": künstliche-intelligenz/evolution-digitaler-rag-werkzeug-anwendungen.md
@@ -461,6 +463,7 @@ nav:
           - "Die führenden Open-Source-Wissenssysteme 2026 (Top 20)": wissen/dokumentation/fuehrende-opensource-wissenssysteme-2026-topliste.md
           - "Beste Open-Source-Wissenssysteme für den eigenen Selfhosting-Server (Top 20)": wissen/dokumentation/wissenssysteme-selfhosting-server-topliste.md
           - "Open-Source-Wissenssysteme mit aktiver Weiterentwicklung & hoher Reife (Top 20)": wissen/dokumentation/aktive-reife-opensource-wissenssysteme-2026-topliste.md
+          - "Beste Software 2026: Wissenssysteme, Evaluation & Generatoren (Top-20-Meta-Topliste)": wissen/dokumentation/beste-software-wissenssysteme-evaluation-generatoren-2026-topliste.md
           - "Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 20)": wissen/dokumentation/postgresql-dateiformat-wissenssysteme-2026-topliste.md
           - "Open-Source-Wissenssysteme mit echter Echtzeit-Kollaboration (Top 15)": wissen/dokumentation/echtzeit-kollaboration-opensource-wissenssysteme-2026-topliste.md
           - "Backup-Strategien für Wissenssysteme (Top 20)": wissen/dokumentation/backup-strategien-wissenssysteme-topliste.md
