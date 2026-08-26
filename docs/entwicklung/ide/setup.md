@@ -242,7 +242,13 @@ EOF
 # 6. Datenbank aktualisieren
 sudo update-desktop-database
 ```
-### Visual Studio Code und Neovim installieren
+### Visual Studio Code installieren
+
+```bash
+sudo snap install code --classic
+```
+
+### Neovim installieren
 
 ```bash
 sudo apt-get install neovim
