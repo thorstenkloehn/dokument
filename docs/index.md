@@ -251,7 +251,7 @@ graph TD
 
     | Kategorie | Tools |
     |-----------|-------|
-    | Sprachen | Node.js, Python, Java, Golang, Rust, C/C++ |
+    | Sprachen | Node.js, Python, Java, Golang, Rust, C/C++, C#/.NET |
     | Editoren | VS Code, Antigravity IDE |
     | KI-Assistenten | GitHub Copilot, Claude Code, Antigravity CLI |
     | Lokale Dienste | PostgreSQL, Nginx, Google Chrome |

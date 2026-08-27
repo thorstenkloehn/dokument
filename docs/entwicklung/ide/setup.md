@@ -77,6 +77,21 @@ npm -v # Should print "11.7.0".
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
+### .NET (C# / ASP.NET Core) installieren
+
+```bash
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-10.0
+dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-aspnet-codegenerator
+dotnet tool install -g Microsoft.Web.LibraryManager.Cli
+echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc
+source ~/.bashrc
+code --install-extension ms-dotnettools.csdevkit
+sudo dotnet workload install android
+dotnet workload update
+```
+
 ---
 
 ## Datenbanken installieren
