@@ -87,6 +87,8 @@ Die klassische Enterprise-Java/.NET-Generation (Struts, JSF, Portal-Frameworks) 
 
 **Next.js** und **Nuxt** schreiben keine Datenbank vor und rendern im SSG-Modus vollständig dateibasiert. **Phoenix** ist der Elixir-Vertreter: `mix phx.new` erzeugt standardmäßig ein PostgreSQL-Projekt über Ecto, und die Erlang-VM trägt Echtzeit-Workloads, an denen klassische Stacks scheitern.
 
+Nur auf die Meta-Framework-Klasse fokussiert — mit demselben Sieb, aber eigener Generationen-Zeitachse — ist [Produktionsreife Open-Source-Full-Stack-Meta-Frameworks nach Generation](produktionsreife-meta-frameworks-generationen-2026-topliste.md): dort bestehen nur Next.js und Nuxt, weil Remix in React Router aufgegangen und Gatsby eingeschlafen ist.
+
 ### Generation 5 – 6 — warum hier (noch) nichts steht
 
 - **Generation 5 (Islands & Edge)**: **Astro** (2021), **Qwik** (2021), **SolidStart** und **TanStack Start** sind architektonisch reif, liegen aber unter der **Fünf-Jahres-Marke** für ununterbrochenen Produktionseinsatz. Astro dürfte 2027 als erster Kandidat nachrücken.
