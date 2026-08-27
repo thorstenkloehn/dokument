@@ -5,7 +5,7 @@
 sudo apt update
 
 # Installiert eine aktuelle, schlanke Java-Laufzeitumgebung ohne grafische Komponenten
-sudo apt install openjdk-21-jre-headless
+sudo apt install openjdk-26-jre-headless
 
 # Überprüft die installierte Java-Version
 java -version

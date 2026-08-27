@@ -27,7 +27,11 @@ sudo ubuntu-drivers install
 sudo apt install python3 python3-pip python3-venv python-is-python3
 ```
 
+### Java (OpenJDK) installieren
 
+```bash
+sudo apt install openjdk-26-jdk-headless
+```
 
 ### C und C++ Entwicklungsumgebung
 
