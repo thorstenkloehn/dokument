@@ -1,21 +1,28 @@
 # CLAUDE.md
 
-Reines Content-Repo (keine App, kein Build-Code) für die Doku-Seite **Wissen Ahrensburg** (dokument.wissen-ahrensburg.de), gebaut mit **Zensical** (Nachfolger von MkDocs + Material, liest `mkdocs.yml` nativ).
+Reines Content-Repo (keine App/Build-Code) für **Wissen Ahrensburg** (dokument.wissen-ahrensburg.de), gebaut mit **Zensical** (MkDocs-Nachfolger, liest `mkdocs.yml` nativ).
 
-> **Niemals `mkdocs build` / `mkdocs serve` verwenden** — nur `.venv/bin/zensical build` / `serve`. Migration Juli 2026.
+> **Nie `mkdocs build`/`serve`** — nur `.venv/bin/zensical build`/`serve`.
 
-## Workflows & Befehle
+## Workflows
 
-Siehe `.claude/skills/zensical-docs/SKILL.md` (Vorschau/Build/Deployment, neue Seite anlegen, Seitenvorlage) und `.claude/skills/mermaid-validator/SKILL.md` (Quoting-Regeln). Vor Commits/Deployment: Subagent `doc-checker`. Für Setup/Installation: Subagent `setup-installer` (nur spawnen, wenn `requirements.txt`/`package-lock.json` neuer als installierte Abhängigkeiten sind).
+Details in den Skills: `zensical-docs` (Vorschau/Build/Deploy, neue Seite, Vorlage), `mermaid-validator` (Quoting-Regeln). Vor Commit/Deploy: Subagent `doc-checker`. Setup: Subagent `setup-installer` (nur wenn `requirements.txt`/`package-lock.json` neuer als installiert).
 
 ## Struktur
 
-- `docs/<bereich>/` — Content, `bereich` ∈ `künstliche-intelligenz`, `entwicklung`, `kreativ`, `wissen`, `rechtliches`. Jede Seite braucht einen gespiegelten Eintrag in `mkdocs.yml` unter `nav:`, sonst gilt sie als "verwaist".
-- `raw/` — unveränderliche Rohquellen (Notizen, Transkripte, Rohtext) nach dem [LLM-Wiki-Pattern (Karpathy-Muster)](docs/wissen/dokumentation/llm-wiki-pattern-karpathy.md); wird nur gelesen, nie editiert, ist nicht Teil des Builds/der Nav. Siehe `raw/README.md`.
-- `mkdocs.yml` — einzige Config-/Nav-Quelle.
-- `site/` — Build-Output, nicht von Hand editieren.
-- `.gemini/hooks/pre-commit`, `.gemini/scripts/check_orphaned_files.py` — CLI-agnostisch, aktiv im Einsatz (Pre-Commit-Hook). Übrige `.gemini/skills/` und `.gemini/subagents/` gehören zur parallel genutzten Antigravity/Gemini-CLI, nicht zu Claude Code — nicht löschen, nicht als Referenz für Claude-Code-Workflows nutzen.
+- `docs/<bereich>/` — Content; `bereich` ∈ `künstliche-intelligenz`, `entwicklung`, `kreativ`, `wissen`, `rechtliches`. Jede Seite braucht einen `nav:`-Eintrag in `mkdocs.yml`, sonst "verwaist".
+- `raw/` — unveränderliche Rohquellen ([LLM-Wiki-Pattern](docs/wissen/dokumentation/llm-wiki-pattern-karpathy.md)); nur lesen, nicht Teil des Builds. Siehe `raw/README.md`.
+- `mkdocs.yml` — einzige Config-/Nav-Quelle. `site/` — Build-Output, nicht editieren.
+- `.gemini/hooks/pre-commit` + `.gemini/scripts/check_orphaned_files.py` — aktiver Pre-Commit-Hook, CLI-agnostisch. Übrige `.gemini/` gehört zur Gemini-/Antigravity-CLI — nicht löschen, nicht als Claude-Code-Referenz nutzen.
 
 ## Konventionen
 
-Content auf Deutsch, Dateinamen/Code/Befehle auf Englisch/kebab-case.
+Content auf Deutsch, Dateinamen/Code/Befehle Englisch/kebab-case.
+
+<!-- OPENWIKI:START -->
+
+## OpenWiki
+
+See [AGENTS.md](AGENTS.md) for OpenWiki agent instructions.
+
+<!-- OPENWIKI:END -->
