@@ -21,7 +21,7 @@ Der Produktionsserver ist darauf ausgelegt, maximale Datenkontrolle und Datensch
 Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Bereitstellung von Anwendungen.
 
 **Sprachen & Frameworks:**
-- Node.js, Python, Java, Golang, Rust, C/C++
+- Node.js, Python, Java, Golang, Rust, C/C++, C#/.NET
 
 **Editoren & KI-Assistenten:**
 - Visual Studio Code, Google Antigravity IDE, GitHub Copilot, Claude Code, Antigravity CLI

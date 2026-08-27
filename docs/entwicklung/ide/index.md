@@ -26,7 +26,7 @@ Moderne IDEs (Integrated Development Environments) und Code-Editoren bieten Entw
 
 * **Systemvoraussetzungen**: Paketinstallationen, Updates, Abhängigkeiten
 * **System-Setup**: passwortloses sudo, Treiber, Bibliotheken
-* **Sprachruntimes**: Java, Python, Node.js, Go, Rust, C/C++
+* **Sprachruntimes**: Java, Python, Node.js, Go, Rust, C/C++, C#/.NET
 * **Datenbanken**: PostgreSQL, PostGIS, OSM-Datenverarbeitung
 * **Entwicklungstools**: Git, GitHub CLI, Chrome, VS Code
 
