@@ -75,7 +75,7 @@ Die klassische Enterprise-Java/.NET-Generation (Struts, JSF, Portal-Frameworks) 
 | 9 | **Vue.js** | UI-Framework (Rendering) | Speicherfilter nicht anwendbar | MIT | 2014 |
 | 10 | **Angular** | UI-Framework (Rendering, Google) | Speicherfilter nicht anwendbar | MIT | 2016 |
 
-**Express.js** mandatiert nichts und besteht den Speicherfilter genau deshalb — die häufige Paarung mit MongoDB (MEAN) ist Konvention, keine Anforderung. **React, Vue und Angular** sind reine Client-Bibliotheken ohne eigene Persistenz; für sie greift der Speicherfilter nicht, ihre Aufnahme stützt sich allein auf Reife und Betriebs-Skala (React und Vue mit den größten Frontend-Ökosystemen weltweit).
+**Express.js** mandatiert nichts und besteht den Speicherfilter genau deshalb — die häufige Paarung mit MongoDB (MEAN) ist Konvention, keine Anforderung. **React, Vue und Angular** sind reine Client-Bibliotheken ohne eigene Persistenz; für sie greift der Speicherfilter nicht, ihre Aufnahme stützt sich allein auf Reife und Betriebs-Skala (React und Vue mit den größten Frontend-Ökosystemen weltweit). Nur auf diese drei fokussiert — mit eigener Generationen-Zeitachse — ist [Produktionsreife Open-Source-SPA-Frameworks nach Generation](produktionsreife-spa-frameworks-generationen-2026-topliste.md).
 
 ### Generation 4 — Full-Stack-Meta-Frameworks & Elixir (ca. 2014 – 2022)
 
