@@ -91,7 +91,7 @@ Die klassische Enterprise-Java/.NET-Generation (Struts, JSF, Portal-Frameworks) 
 
 - **Generation 5 (Islands & Edge)**: **Astro** (2021), **Qwik** (2021), **SolidStart** und **TanStack Start** sind architektonisch reif, liegen aber unter der **Fünf-Jahres-Marke** für ununterbrochenen Produktionseinsatz. Astro dürfte 2027 als erster Kandidat nachrücken.
 - **Generation 6 (KI-nativ)**: zu jung und häufig an einen einzelnen Hosting-Anbieter gekoppelt — die Reifezeit-Filter greifen doppelt. Details: [Evolution und Architekturen digitaler KI-nativer Web-Frameworks](evolution-digitaler-ki-native-webframeworks.md).
-- **Rust-Web-Frameworks** (Axum, Actix Web, Leptos): reif und schnell wachsend, aber Betreiberbasis und Fünf-Jahres-Produktionshistorie noch nicht auf dem Niveau der obigen zwölf. Eigene Betrachtung: [Evolution und Architekturen digitaler Rust-Webframeworks](evolution-digitaler-rust-webframeworks.md).
+- **Rust-Web-Frameworks** (Axum, Actix Web, Leptos): reif und schnell wachsend, aber als Kategorie noch jung — nur Actix-web besteht das volle Sieb, Axum steht mit seiner andauernden `0.x`-Versionierung auf der Schwelle. Eigene Betrachtung: [Produktionsreife Open-Source-Rust-Web-Frameworks nach Generation](produktionsreife-rust-webframeworks-generationen-2026-topliste.md).
 
 ### Quer zu den Generationen — dateibasierte Persistenz
 
@@ -154,7 +154,7 @@ Die Persistenzschicht eines Web-Frameworks ist **auswechselbar** — deshalb ist
 - [Evolution und Architekturen digitaler Server-Monolith-Frameworks](evolution-digitaler-monolith-frameworks.md) — vertiefend zu Generation 1 (Rails, Django, Laravel)
 - [Evolution und Architekturen digitaler Enterprise-Web-Frameworks](evolution-digitaler-enterprise-webframeworks.md) — vertiefend zu Spring Boot und ASP.NET Core
 - [Produktionsreife Open-Source-Enterprise-Web-Frameworks nach Generation (Top 7 + Grenzfälle)](produktionsreife-enterprise-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb, enger auf die Enterprise-Klasse (Java/.NET) gefasst; dort fällt die Speicherantwort eindeutig auf PostgreSQL
-- [Evolution und Architekturen digitaler Rust-Webframeworks](evolution-digitaler-rust-webframeworks.md) — die Rust-Kandidaten, die die Fünf-Jahres-Marke noch nicht erreichen
+- [Produktionsreife Open-Source-Rust-Web-Frameworks nach Generation (1 Framework + Grenzfälle)](produktionsreife-rust-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb, angewandt auf die junge Rust-Kategorie
 - [Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12)](../../wissen/dokumentation/produktionsreife-wissenssysteme-generationen-2026-topliste.md) — Schwester-Topliste mit demselben Fünf-Filter-Sieb für Wikis, PKM und RAG
 - [Produktionsreife Open-Source-CMS nach Generation (Top 12)](../../wissen/dokumentation/produktionsreife-cms-generationen-2026-topliste.md) — dasselbe Sieb für Content-Management-Systeme
 - [Produktionsreife Open-Source-LMS nach Generation](../../wissen/e-learning/produktionsreife-lms-generationen-2026-topliste.md) — dasselbe Sieb für Lernmanagement-Systeme
