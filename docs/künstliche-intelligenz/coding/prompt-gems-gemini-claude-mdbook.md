@@ -302,7 +302,7 @@ Deine Aufgabe ist es, bei der Erstellung neuer Unterkategorien oder Projekte ein
 
 Mit folgendem leichtgewichtigen Python-Skript `add_project.py` kann der Gemini Chatbot (oder der lokale Entwickler) ein neues Projekt mit leerer `projekt.md` in einer Unterkategorie anlegen und automatisch in `SUMMARY.md` (mdBook) bzw. `mkdocs.yml` eintragen:
 
-```python
+````python
 #!/usr/bin/env python3
 import os
 import sys
@@ -360,7 +360,7 @@ if __name__ == "__main__":
         print("Usage: python3 add_project.py <bereich> <projekt_name> '<Titel>'")
         sys.exit(1)
     add_project_to_mdbook(sys.argv[1], sys.argv[2], sys.argv[3])
-```
+````
 
 Verwendung im Terminal:
 ```bash
