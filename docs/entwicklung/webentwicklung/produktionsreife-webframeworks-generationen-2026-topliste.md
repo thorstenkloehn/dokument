@@ -91,7 +91,7 @@ Nur auf die Meta-Framework-Klasse fokussiert — mit demselben Sieb, aber eigene
 
 ### Generation 5 – 6 — warum hier (noch) nichts steht
 
-- **Generation 5 (Islands & Edge)**: **Astro** (2021), **Qwik** (2021), **SolidStart** und **TanStack Start** sind architektonisch reif, liegen aber unter der **Fünf-Jahres-Marke** für ununterbrochenen Produktionseinsatz. Astro dürfte 2027 als erster Kandidat nachrücken.
+- **Generation 5 (Islands & Edge)**: **Astro** (2021), **Qwik** (2021), **SolidStart** und **TanStack Start** sind architektonisch reif, liegen aber unter der **Fünf-Jahres-Marke** für ununterbrochenen Produktionseinsatz. Astro dürfte 2027 als erster Kandidat nachrücken. Eigene Betrachtung: [Produktionsreife Open-Source-Islands- & Edge-Architekturen nach Generation](produktionsreife-islands-edge-architekturen-generationen-2026-topliste.md).
 - **Generation 6 (KI-nativ)**: zu jung und häufig an einen einzelnen Hosting-Anbieter gekoppelt — die Reifezeit-Filter greifen doppelt. Details: [Evolution und Architekturen digitaler KI-nativer Web-Frameworks](evolution-digitaler-ki-native-webframeworks.md).
 - **Rust-Web-Frameworks** (Axum, Actix Web, Leptos): reif und schnell wachsend, aber als Kategorie noch jung — nur Actix-web besteht das volle Sieb, Axum steht mit seiner andauernden `0.x`-Versionierung auf der Schwelle. Eigene Betrachtung: [Produktionsreife Open-Source-Rust-Web-Frameworks nach Generation](produktionsreife-rust-webframeworks-generationen-2026-topliste.md).
 
