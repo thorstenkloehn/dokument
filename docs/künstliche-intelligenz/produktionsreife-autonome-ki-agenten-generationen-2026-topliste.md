@@ -140,6 +140,7 @@ Vertiefung: [PostgreSQL DBA Praxis-Handbuch](../entwicklung/infrastruktur/postgr
 - [Evolution und Architekturen digitaler Autonomer KI-Agenten](evolution-digitaler-autonome-ki-agenten.md) — das sechsstufige Generationenmodell, nach dem diese Liste sortiert ist
 - [Beste autonome KI-Agenten 2026 (Top 20)](autonome-ki-agenten-2026-topliste.md) — breiteste Basis-Topliste inklusive proprietärer Systeme
 - [Produktionsreife Open-Source-KI-native Web-Frameworks nach Generation](../entwicklung/webentwicklung/produktionsreife-ki-native-webframeworks-generationen-2026-topliste.md) — dasselbe „kein Treffer"-Bild in der KI-nativen Web-Framework-Kategorie
+- [Produktionsreife Open-Source-RAG- & Werkzeug-Anwendungen nach Generation](produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md) — die vorausgehende KI-Anwendungs-Generation, ebenfalls kein Treffer bei den Anwendungen
 - [AI Agents – Das Praxis-Handbuch](coding/ai-agents-praxis.md) — konkrete Umsetzung des pragmatischen Wegs
 - [Agentic Workflows mit LangGraph](coding/agentic-workflows-langgraph.md) — Vertiefung zum aussichtsreichsten Orchestrierungs-Framework
 - [Beste MCP-Server (Top 20)](coding/mcp-server-topliste.md) — der Werkzeug-Standard hinter Generation 6
