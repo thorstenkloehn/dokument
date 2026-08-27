@@ -22,7 +22,7 @@ Moderne IDEs (Integrated Development Environments) und Code-Editoren bieten Entw
 ## Hauptthemen
 
 ### 1. [System-Setup und Installation](setup.md)
-**Detaillierte Anleitungen zur Einrichtung des lokalen Entwicklungsrechners** unter Ubuntu 25.10.
+**Detaillierte Anleitungen zur Einrichtung des lokalen Entwicklungsrechners** unter Ubuntu 26.04 LTS.
 
 * **Systemvoraussetzungen**: Paketinstallationen, Updates, Abhängigkeiten
 * **System-Setup**: passwortloses sudo, Treiber, Bibliotheken

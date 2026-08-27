@@ -1,6 +1,6 @@
 # IDE & Entwicklungsumgebung: System-Setup und Installation
 
-Detaillierte Anleitungen zur Einrichtung des lokalen Entwicklungsrechners unter Ubuntu 25.10.
+Detaillierte Anleitungen zur Einrichtung des lokalen Entwicklungsrechners unter Ubuntu 26.04 LTS.
 
 ---
 

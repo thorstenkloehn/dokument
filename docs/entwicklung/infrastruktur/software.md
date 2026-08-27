@@ -16,7 +16,7 @@ Der Produktionsserver ist darauf ausgelegt, maximale Datenkontrolle und Datensch
 - **Kachelserver**: Switch2OSM Tileserver für OpenStreetMap-Daten
 - **Laufzeiten & Tools**: Java, Python, Git & GitHub CLI
 
-### Entwicklungsrechner (Ubuntu 25.10)
+### Entwicklungsrechner (Ubuntu 26.04 LTS)
 
 Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Bereitstellung von Anwendungen.
 
