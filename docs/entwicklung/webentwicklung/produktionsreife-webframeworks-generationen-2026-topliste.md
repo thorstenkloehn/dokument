@@ -153,6 +153,7 @@ Die Persistenzschicht eines Web-Frameworks ist **auswechselbar** — deshalb ist
 - [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md) — die Vollausstattungs-Achse, für die der Speicherfilter überhaupt greift
 - [Evolution und Architekturen digitaler Server-Monolith-Frameworks](evolution-digitaler-monolith-frameworks.md) — vertiefend zu Generation 1 (Rails, Django, Laravel)
 - [Evolution und Architekturen digitaler Enterprise-Web-Frameworks](evolution-digitaler-enterprise-webframeworks.md) — vertiefend zu Spring Boot und ASP.NET Core
+- [Produktionsreife Open-Source-Enterprise-Web-Frameworks nach Generation (Top 7 + Grenzfälle)](produktionsreife-enterprise-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb, enger auf die Enterprise-Klasse (Java/.NET) gefasst; dort fällt die Speicherantwort eindeutig auf PostgreSQL
 - [Evolution und Architekturen digitaler Rust-Webframeworks](evolution-digitaler-rust-webframeworks.md) — die Rust-Kandidaten, die die Fünf-Jahres-Marke noch nicht erreichen
 - [Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12)](../../wissen/dokumentation/produktionsreife-wissenssysteme-generationen-2026-topliste.md) — Schwester-Topliste mit demselben Fünf-Filter-Sieb für Wikis, PKM und RAG
 - [Produktionsreife Open-Source-CMS nach Generation (Top 12)](../../wissen/dokumentation/produktionsreife-cms-generationen-2026-topliste.md) — dasselbe Sieb für Content-Management-Systeme
