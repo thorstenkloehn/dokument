@@ -66,7 +66,7 @@ graph LR
 
 ### Generation 5 — agentische Browser-Steuerung (ab 2024)
 
-**OpenAI Operator**, **Anthropic Computer Use**, **Devin** — proprietäre Agenten-Laufzeiten, jünger als zwei Jahre. Die allgemeine Zeitachse dazu: [Evolution und Architekturen digitaler Autonomer KI-Agenten](../../künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md).
+**OpenAI Operator**, **Anthropic Computer Use**, **Devin** — proprietäre Agenten-Laufzeiten, jünger als zwei Jahre. Dieselbe Kategorie mit demselben Sieb: [Produktionsreife autonome Open-Source-KI-Agenten nach Generation](../../künstliche-intelligenz/produktionsreife-autonome-ki-agenten-generationen-2026-topliste.md) — ebenfalls kein Treffer.
 
 ### Generation 6 — Agenten-Primitive im Framework-Kern (ab 2025)
 
