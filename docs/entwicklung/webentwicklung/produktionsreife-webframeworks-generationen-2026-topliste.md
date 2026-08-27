@@ -154,6 +154,7 @@ Die Persistenzschicht eines Web-Frameworks ist **auswechselbar** — deshalb ist
 - [Beste Web-Frameworks 2026 (Top 20)](webframeworks-2026-topliste.md) — breiteste Basis-Topliste nach Verbreitung
 - [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](evolution-digitaler-batteries-included-frameworks.md) — die Vollausstattungs-Achse, für die der Speicherfilter überhaupt greift
 - [Evolution und Architekturen digitaler Server-Monolith-Frameworks](evolution-digitaler-monolith-frameworks.md) — vertiefend zu Generation 1 (Rails, Django, Laravel)
+- [Produktionsreife Open-Source-Server-Monolith-Frameworks nach Generation (Top 11)](produktionsreife-monolith-frameworks-generationen-2026-topliste.md) — dasselbe Sieb über alle sechs Monolith-Generationen, inkl. Flask/FastAPI, Go und dem Hypermedia-Comeback
 - [Evolution und Architekturen digitaler Enterprise-Web-Frameworks](evolution-digitaler-enterprise-webframeworks.md) — vertiefend zu Spring Boot und ASP.NET Core
 - [Produktionsreife Open-Source-Enterprise-Web-Frameworks nach Generation (Top 7 + Grenzfälle)](produktionsreife-enterprise-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb, enger auf die Enterprise-Klasse (Java/.NET) gefasst; dort fällt die Speicherantwort eindeutig auf PostgreSQL
 - [Produktionsreife Open-Source-Rust-Web-Frameworks nach Generation (1 Framework + Grenzfälle)](produktionsreife-rust-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb, angewandt auf die junge Rust-Kategorie
