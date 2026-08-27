@@ -36,7 +36,7 @@ Umfassend ausgestattetes System zur Erstellung, zum Testen und zur lokalen Berei
 ### 1. [System-Installation & Paketmanagement](installation.md)
 **Grundlegende Softwareinstallation und Systemkonfiguration** für Ubuntu-Server und Entwicklungsumgebungen.
 
-* **Java**: OpenJDK 21 JRE Headless
+* **Java**: OpenJDK 26 JRE Headless
 * **Python**: Python 3 mit pip und venv
 * **Paketmanagement**: apt, software-properties-common
 
