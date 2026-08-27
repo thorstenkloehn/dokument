@@ -18,11 +18,3 @@ Details in den Skills: `zensical-docs` (Vorschau/Build/Deploy, neue Seite, Vorla
 ## Konventionen
 
 Content auf Deutsch, Dateinamen/Code/Befehle Englisch/kebab-case.
-
-<!-- OPENWIKI:START -->
-
-## OpenWiki
-
-See [AGENTS.md](AGENTS.md) for OpenWiki agent instructions.
-
-<!-- OPENWIKI:END -->
