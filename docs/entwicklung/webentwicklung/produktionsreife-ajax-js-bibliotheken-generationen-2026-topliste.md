@@ -113,6 +113,6 @@ Das Backend am anderen Ende des Ajax-Aufrufs ist wie üblich PostgreSQL-gestütz
 - [Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken](evolution-digitaler-ajax-js-bibliotheken.md) — das sechsstufige Generationenmodell, nach dem diese Liste sortiert ist
 - [Einflussreichste Ajax- & JavaScript-Bibliotheken (Top 15)](ajax-js-bibliotheken-topliste.md) — die vollständige historische Topliste der Kategorie
 - [Produktionsreife Open-Source-SPA-Frameworks nach Generation](produktionsreife-spa-frameworks-generationen-2026-topliste.md) — die direkte Nachfolge-Kategorie (React, Vue, Angular)
-- [Evolution und Architekturen digitaler Enterprise-UI-Bibliotheken](evolution-digitaler-enterprise-ui-bibliotheken.md) — YUI, Dojo und jQuery UI als Vorläufer der kommerziellen Komponentenbibliotheken
+- [Produktionsreife Open-Source-Enterprise-UI-Bibliotheken nach Generation](produktionsreife-enterprise-ui-bibliotheken-generationen-2026-topliste.md) — die Nachfolge-Kategorie; YUI, Dojo und jQuery UI als deren Vorläufer aus Generation 1
 - [Produktionsreife Open-Source-Web-Frameworks & -Bibliotheken nach Generation](produktionsreife-webframeworks-generationen-2026-topliste.md) — die übergeordnete Variante
 - [PostgreSQL DBA Praxis-Handbuch](../infrastruktur/postgresql-dba-praxis.md) — die Datenbankschicht im Backend hinter jedem Ajax-Aufruf
