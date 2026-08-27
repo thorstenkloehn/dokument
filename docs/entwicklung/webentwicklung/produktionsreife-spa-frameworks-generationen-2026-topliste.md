@@ -126,6 +126,7 @@ Ein SPA-Framework hat **keine eigene Speicherschicht** — es läuft im Browser 
 
 - [Evolution und Architekturen digitaler SPA-Frameworks](evolution-digitaler-spa-frameworks.md) — das sechsstufige Generationenmodell, nach dem diese Liste sortiert ist
 - [Beste SPA-Frameworks 2026 (Top 20)](spa-frameworks-2026-topliste.md) — breiteste Basis-Topliste inklusive State-Management- und Build-Bausteine
+- [Produktionsreife Open-Source-Ajax- & JavaScript-Bibliotheken nach Generation](produktionsreife-ajax-js-bibliotheken-generationen-2026-topliste.md) — die Vorgänger-Kategorie; dort besteht nur noch jQuery
 - [Produktionsreife Open-Source-Web-Frameworks & -Bibliotheken nach Generation](produktionsreife-webframeworks-generationen-2026-topliste.md) — die übergeordnete Variante; React, Vue und Angular erscheinen dort in Generation 3
 - [Produktionsreife Open-Source-Full-Stack-Meta-Frameworks nach Generation](produktionsreife-meta-frameworks-generationen-2026-topliste.md) — die Server-Rendering-Schicht über diesen SPA-Bibliotheken (Next.js, Nuxt)
 - [Produktionsreife Open-Source-Enterprise-Web-Frameworks nach Generation](produktionsreife-enterprise-webframeworks-generationen-2026-topliste.md) — Angular in seiner Enterprise-Rolle, plus die PostgreSQL-gestützten Backends
