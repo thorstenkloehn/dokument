@@ -247,7 +247,7 @@ graph TD
 
 === "Entwicklungsrechner"
 
-    **Ubuntu 25.10** – vollständig für lokale KI-Entwicklung ausgestattet
+    **Ubuntu 26.04 LTS** – vollständig für lokale KI-Entwicklung ausgestattet
 
     | Kategorie | Tools |
     |-----------|-------|
