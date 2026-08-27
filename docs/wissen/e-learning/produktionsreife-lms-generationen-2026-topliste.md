@@ -136,6 +136,7 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Beste klassische LMS 2026 (Top 15)](klassische-lms-2026-topliste.md) — Fokus auf Generation 1
 - [Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12)](../dokumentation/produktionsreife-wissenssysteme-generationen-2026-topliste.md) — Schwester-Topliste mit demselben Fünf-Filter-Sieb für Wikis, PKM und RAG
 - [Produktionsreife Open-Source-CMS nach Generation (Top 12)](../dokumentation/produktionsreife-cms-generationen-2026-topliste.md) — Schwester-Topliste mit demselben Sieb für Content-Management-Systeme
+- [Produktionsreife Open-Source-Web-Frameworks & -Bibliotheken nach Generation](../../entwicklung/webentwicklung/produktionsreife-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb für Web-Frameworks
 - [KI in Lehre, Weiterbildung und Training](ki-lehre-weiterbildung.md) — wie man Generation 4 (KI-adaptiv) auf Moodle nachrüstet
 - [Evolution und Architekturen von Moodle](../dokumentation/moodle/evolution-digitaler-moodle.md) — vertiefend zu Rang 1
 - [PostgreSQL DBA Praxis-Handbuch](../../entwicklung/infrastruktur/postgresql-dba-praxis.md) — Datenbankschicht hinter beiden Rängen dieser Liste

@@ -170,6 +170,7 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — das fünfstufige Generationenmodell, nach dem diese Liste sortiert ist
 - [Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12)](produktionsreife-wissenssysteme-generationen-2026-topliste.md) — die Schwester-Topliste mit demselben Fünf-Filter-Sieb für Wikis, PKM und RAG statt CMS
 - [Produktionsreife Open-Source-LMS nach Generation](../e-learning/produktionsreife-lms-generationen-2026-topliste.md) — dasselbe Sieb für Lernmanagement-Systeme; Ergebnis: nur Moodle und Canvas bestehen alle Filter
+- [Produktionsreife Open-Source-Web-Frameworks & -Bibliotheken nach Generation](../../entwicklung/webentwicklung/produktionsreife-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb für Web-Frameworks, die den Unterbau vieler Headless- und Composable-CMS bilden
 - [Klassische CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 7)](klassische-cms-postgresql-dateiformat-2026-topliste.md) — derselbe Speicherfilter, nach Rang statt nach Generation und ohne den Content-Skala-Filter
 - [Headless-CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 9)](headless-cms-postgresql-dateiformat-2026-topliste.md) — dieselben Speicherkriterien für die API-first-Kategorie
 - [Beste klassische CMS 2026 (Top 20)](klassische-cms-2026-topliste.md) — breiteste Basis-Topliste nach Marktführerschaft
