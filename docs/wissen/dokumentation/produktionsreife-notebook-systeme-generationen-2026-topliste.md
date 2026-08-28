@@ -119,3 +119,4 @@ Notebook-Systeme sind die **klarste „dateibasiert"-Kategorie** der ganzen Fami
 - [Evolution und Architekturen digitaler Reaktiver Notebooks](evolution-digitaler-reaktive-notebooks.md) — vertiefend zu Generation 5 (Pluto.jl, Marimo, Observable)
 - [IPython- & Jupyter-Systeme mit PostgreSQL-/Dateiformat-Speicherung (Top 20)](ipython-jupyter-postgresql-dateiformat-2026-topliste.md) — der Speicherfilter, nach Rang statt nach Generation
 - [Produktionsreife Open-Source-semantische & RAG-Wissenssysteme nach Generation](produktionsreife-semantische-rag-wissenssysteme-generationen-2026-topliste.md) — Schwesterseite mit demselben Sieb
+- [Produktionsreife Open-Source-Static-Site-Generatoren nach Generation (Top 8)](produktionsreife-static-site-generatoren-generationen-2026-topliste.md) — die andere dateibasierte Kategorie; der Speicherfilter ist dort noch bedeutungsloser
