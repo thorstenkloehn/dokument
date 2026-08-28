@@ -440,6 +440,7 @@ nav:
           - "Evolution und Architekturen digitaler Rust-CMS": wissen/dokumentation/evolution-digitaler-rust-cms.md
           - "Beste Rust-Bausteine für CMS 2026 (Top 15)": wissen/dokumentation/rust-cms-2026-topliste.md
           - "Rust-Bausteine für CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 12)": wissen/dokumentation/rust-cms-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Rust-Bausteine für CMS nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-rust-cms-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Notebook-Systeme": wissen/dokumentation/evolution-digitaler-notebook-systeme.md
           - "Beste Notebook-Systeme 2026 (Top 20)": wissen/dokumentation/notebook-systeme-2026-topliste.md
           - "Produktionsreife Open-Source-Notebook-Systeme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-notebook-systeme-generationen-2026-topliste.md
@@ -464,6 +465,7 @@ nav:
           - "Evolution und Architekturen digitaler Rust-Notebooks": wissen/dokumentation/evolution-digitaler-rust-notebooks.md
           - "Beste Rust-Bausteine für Notebooks 2026 (Top 10)": wissen/dokumentation/rust-notebooks-2026-topliste.md
           - "Rust-Bausteine für Notebooks mit PostgreSQL-/Dateiformat-Speicherung (Top 10)": wissen/dokumentation/rust-notebooks-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Rust-Bausteine für Notebooks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-rust-notebooks-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Docs-as-Code": wissen/dokumentation/evolution-digitaler-docs-as-code.md
           - "Beste Docs-as-Code-Werkzeuge 2026 (Top 15)": wissen/dokumentation/docs-as-code-2026-topliste.md
           - "Beste Open-Source-Docs-as-Code-Werkzeuge 2026 (Top 20)": wissen/dokumentation/docs-as-code-open-source-2026-topliste.md
@@ -491,6 +493,7 @@ nav:
           - "Evolution und Architekturen digitaler Rust-Wissenssysteme": wissen/dokumentation/evolution-digitaler-rust-wissenssysteme.md
           - "Beste Rust-Bausteine für Wissenssysteme 2026 (Top 20)": wissen/dokumentation/rust-wissenssysteme-2026-topliste.md
           - "Rust-Bausteine für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)": wissen/dokumentation/rust-wissenssysteme-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Rust-Bausteine für Wissenssysteme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-rust-wissenssysteme-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssystem-frameworks.md
           - "Beste Frameworks & Bibliotheken für Wissenssysteme 2026 (Top 20)": wissen/dokumentation/wissenssystem-frameworks-2026-topliste.md
           - "Frameworks & Bibliotheken für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 16)": wissen/dokumentation/wissenssystem-frameworks-postgresql-dateiformat-2026-topliste.md

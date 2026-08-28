@@ -137,6 +137,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 ## Verwandte Themen
 
 - [Beste Rust-Bausteine für Wissenssysteme 2026 (Top 20)](rust-wissenssysteme-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
+- [Produktionsreife Rust-Bausteine für Wissenssysteme nach Generation (Top 3)](produktionsreife-rust-wissenssysteme-generationen-2026-topliste.md) — dasselbe Modell durch das konservative Fünf-Filter-Sieb; nur Tantivy, Tokio und mdBook bestehen, die Vektordatenbank-Generation scheitert je an einem Filter (Qdrant Speicher/5 J, SurrealDB BSL, LanceDB/Candle zu jung)
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
 - [Evolution und Architekturen digitaler Rust-KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md) — Candle als geteilter Baustein, analoge Rust-Implementierungsachse für KI-Anwendungen
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — Zola und Zensical als Rust-Bausteine dieser Zeitachse

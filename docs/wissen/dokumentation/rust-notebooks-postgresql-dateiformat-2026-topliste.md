@@ -69,6 +69,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Rust-Bausteine für Notebooks 2026 (Top 10)](rust-notebooks-2026-topliste.md) — Basis-Topliste ohne Lizenz-/Speicherbackend-Filter
+- [Produktionsreife Rust-Bausteine für Notebooks nach Generation (Top 4)](produktionsreife-rust-notebooks-generationen-2026-topliste.md) — noch strenger: zusätzlich fünf Jahre Produktion und sehr große Betriebs-Skala, nach Generation sortiert
 - [IPython- & Jupyter-Systeme mit PostgreSQL-/Dateiformat-Speicherung (Top 20)](ipython-jupyter-postgresql-dateiformat-2026-topliste.md) — Produktebene, zu der diese Bausteine unsichtbar beitragen
 - [Rust-Bausteine für CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 12)](rust-cms-postgresql-dateiformat-2026-topliste.md) — wasm-bindgen/wasm-pack dort im Wasmtime-Kontext, analoge Topliste derselben Bauteil-Ebene
 - [Rust-Bausteine für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)](rust-wissenssysteme-postgresql-dateiformat-2026-topliste.md) — Polars/DataFusion als geteilte Bausteine
