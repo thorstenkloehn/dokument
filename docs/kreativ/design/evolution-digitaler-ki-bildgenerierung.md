@@ -133,6 +133,7 @@ Die aktuelle Generation konsolidiert DiT-Architektur und Rectified Flow zum neue
 ## Verwandte Themen
 
 - [Beste KI-Bildgenerierungs-Tools (Top 20)](ki-bildgenerierung-tools-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife KI-Bildgenerierung nach Generation (kein Treffer)](produktionsreife-ki-bildgenerierung-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; kein Treffer — die Kategorie beginnt im August 2022, StyleGAN und die Diffusionsmodelle tragen nicht-OSI-Lizenzen, die Oberflächen (AUTOMATIC1111, ComfyUI) sind unter fünf Jahre
 - [Design nach KI](design-nach-ki.md) — Konzepte hinter Diffusionsmodellen, ControlNet, Vektorisierung und Branding
 - [ComfyUI & SD Automatisierung](comfyui-workflow-anleitung.md) — praktische Vertiefung zu Generation 5
 - [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-deep-learning-anwendungen.md) — GAN-Grundlagen aus Generation 1 dieses Artikels im übergeordneten Kontext

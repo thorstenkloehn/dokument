@@ -128,6 +128,7 @@ Statt reiner Qualitätssteigerung optimiert die aktuelle Generation auf **Geschw
 ## Verwandte Themen
 
 - [Beste KI-Video-Tools (Top 20)](ki-video-tools-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife KI-Videogenerierung nach Generation (kein Treffer)](produktionsreife-ki-videogenerierung-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; der klarste „kein Treffer" der Kreativ-Achse — die Kategorie ist keine drei Jahre alt
 - [KI in der Film- und Videoproduktion](ki-filmproduktion.md) — vollständiger Produktionsprozess von Idee bis Veröffentlichung
 - [Evolution und Architekturen digitaler KI-Bildgenerierung](../design/evolution-digitaler-ki-bildgenerierung.md) — Bildmodelle als Ausgangsmaterial und Architekturvorbild für Generation 2–4 dieser Zeitachse
 - [Evolution und Architekturen digitaler KI-Audio-Werkzeuge](../audio/evolution-digitaler-ki-audio-werkzeuge.md) — analoger Architekturwandel von klassischer zu neuronaler Generierung in der Audio-Domäne

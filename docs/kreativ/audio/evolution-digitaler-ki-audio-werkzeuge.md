@@ -138,6 +138,7 @@ Die aktuelle Generation optimiert nicht primär auf maximale Qualität, sondern 
 ## Verwandte Themen
 
 - [Beste KI-Audio-Tools (Top 20)](ki-audio-tools-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife KI-Audio-Werkzeuge nach Generation (Top 4)](produktionsreife-ki-audio-werkzeuge-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; nur das klassische Synthese-Fundament (FluidSynth, SuperCollider, eSpeak NG) plus RNNoise besteht, die neuronalen Generierungswellen der Generationen 2–5 nicht
 - [KI und Audio](ki-audio.md) — Konzepte hinter Sprachsynthese, Spracherkennung und Musikgenerierung
 - [AI Voice Cloning (XTTS v2)](ai-voice-cloning-xtts.md) — praktische Vertiefung zu Generation 4
 - [Evolution und Architekturen digitaler KI-Bildgenerierung](../design/evolution-digitaler-ki-bildgenerierung.md) — analoger Architekturwandel von GAN zu Diffusion in der Bild-Domäne

@@ -70,6 +70,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Evolution und Architekturen digitaler KI-Videogenerierung](evolution-digitaler-ki-videogenerierung.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife KI-Videogenerierung nach Generation (kein Treffer)](produktionsreife-ki-videogenerierung-generationen-2026-topliste.md) — dieselben 20 Werkzeuge durch das konservative Fünf-Filter-Sieb; keines besteht, kein einziges ist drei Jahre alt
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [KI in der Film- und Videoproduktion](ki-filmproduktion.md) — vollständiger Produktionsprozess von Idee bis Veröffentlichung
 - [Programmatische Videogenerierung & Animation](index.md) — code-getriebene Animations-Frameworks (Remotion, Manim, Motion Canvas) statt KI-Modelle

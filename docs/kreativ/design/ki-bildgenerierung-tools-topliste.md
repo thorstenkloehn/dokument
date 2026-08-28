@@ -70,6 +70,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Evolution und Architekturen digitaler KI-Bildgenerierung](evolution-digitaler-ki-bildgenerierung.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife KI-Bildgenerierung nach Generation (kein Treffer)](produktionsreife-ki-bildgenerierung-generationen-2026-topliste.md) — dieselben 20 Werkzeuge durch das konservative Fünf-Filter-Sieb; keines besteht, weil die Kategorie noch keine fünf Jahre alt ist
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Design nach KI](design-nach-ki.md) — Konzepte hinter Diffusionsmodellen, ControlNet, Vektorisierung und Branding
 - [ComfyUI & SD Automatisierung](comfyui-workflow-anleitung.md) — vertiefende Praxis zu Rang 2
