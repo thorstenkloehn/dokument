@@ -142,6 +142,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Sprachen nach fol
 ## Verwandte Themen
 
 - [Beste Programmiersprachen für moderne Wissenssysteme (Top 10)](programmiersprachen-wissenssysteme-topliste.md) — nach heutiger Eignung statt historischer Generation gerankte Momentaufnahme, die diese Chronologie zusammenfasst
+- [Produktionsreife Programmiersprachen für Wissenssysteme nach Generation (Top 7)](produktionsreife-wissenssystem-programmiersprachen-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; jede Generation ab 2 trifft (PHP, Java, Python, Ruby, JavaScript, Rust), nur Perl fällt an Kontinuität und Neuwahl
 - [Evolution und Architekturen digitaler Programmiersprachen](../../entwicklung/evolution-digitaler-programmiersprachen.md) — übergeordnetes, paradigmenorientiertes Generationenmodell, dessen Wissenssysteme-Perspektive dieser Artikel vertieft
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes, produktorientiertes Generationenmodell, dessen Sprachwahl je Generation dieser Artikel vertieft
 - [Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme](evolution-digitaler-wissenssystem-frameworks.md) — Nachbarachse auf Framework-/Bibliotheksebene statt Sprachebene

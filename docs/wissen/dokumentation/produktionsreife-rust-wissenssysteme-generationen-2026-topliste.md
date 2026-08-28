@@ -125,5 +125,6 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Produktionsreife Rust-Bausteine für KI-Anwendungen nach Generation (Top 1)](../../künstliche-intelligenz/produktionsreife-rust-ki-anwendungen-generationen-2026-topliste.md) — jüngste Achse der Familie; Candle fällt dort aus demselben Grund wie hier
 - [Produktionsreife Vektordatenbanken nach Generation (Top 5)](../daten/datenbanken/produktionsreife-vektordatenbanken-generationen-2026-topliste.md) — dort werden Qdrant/LanceDB im Datastore-Kontext bewertet
 - [Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12)](produktionsreife-wissenssysteme-generationen-2026-topliste.md) — die Produktebene über diesen Bausteinen
+- [Produktionsreife Programmiersprachen für Wissenssysteme nach Generation (Top 7)](produktionsreife-wissenssystem-programmiersprachen-generationen-2026-topliste.md) — die Sprach-Ebene; Rust (Generation 6) dort verweist für die Detail-Einordnung auf diese Seite
 - [Produktionsreife Debugger-Werkzeuge nach Generation](../../entwicklung/system/produktionsreife-debugger-werkzeuge-generationen-2026-topliste.md) — dieselbe Lizenz-Beobachtung (BSL ist keine OSI-Lizenz)
 - [PostgreSQL DBA Praxis-Handbuch](../../entwicklung/infrastruktur/postgresql-dba-praxis.md) — Datenbankschicht des Wissenssystems über den Bausteinen

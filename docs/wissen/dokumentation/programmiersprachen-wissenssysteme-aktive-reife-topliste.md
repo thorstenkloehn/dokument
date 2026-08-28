@@ -73,6 +73,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Programmiersprachen für moderne Wissenssysteme (Top 10)](programmiersprachen-wissenssysteme-topliste.md) — Basis-Topliste nach RAG-/Performance-/Kollaborationseignung statt Lizenz/Aktivität
 - [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](evolution-digitaler-wissenssystem-programmiersprachen.md) — chronologisches Generationenmodell als Hintergrund
+- [Produktionsreife Programmiersprachen für Wissenssysteme nach Generation (Top 7)](produktionsreife-wissenssystem-programmiersprachen-generationen-2026-topliste.md) — härtestes Sieb: zusätzlich fünf Jahre, große Neuwahl-Betreiberbasis und sehr große Betriebs-Skala; von diesen 10 fällt Perl (Kontinuität), Clojure und TypeScript werden Grenzfälle
 - [Open-Source-Wissenssysteme mit aktiver Weiterentwicklung & hoher Reife (Top 20)](aktive-reife-opensource-wissenssysteme-2026-topliste.md) — dieselben Kriterien für fertige Produkte statt Sprachen
 - [Rust-Bausteine für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)](rust-wissenssysteme-postgresql-dateiformat-2026-topliste.md) — vertiefend zu Rang 3 auf Bausteinebene
 - [Frameworks & Bibliotheken für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 16)](wissenssystem-frameworks-postgresql-dateiformat-2026-topliste.md) — sprachübergreifende Bausteinebene, auf der diese Sprachen typisch eingesetzt werden
