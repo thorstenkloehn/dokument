@@ -101,6 +101,7 @@ graph LR
 ## Verwandte Themen
 
 - [Beste KI-Evaluationswerkzeuge 2026 (Top 15)](ki-evaluation-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife KI-Evaluationswerkzeuge nach Generation (Top 1)](produktionsreife-ki-evaluation-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; nur das lm-evaluation-harness von EleutherAI (Gen 2) besteht, die LLM-/RAG-/Agenten-Eval-Werkzeuge der Generationen 3–7 sind unter fünf Jahre
 - [Beste Software 2026: Wissenssysteme, Evaluation & Generatoren (Top-20-Meta-Topliste)](../wissen/dokumentation/beste-software-wissenssysteme-evaluation-generatoren-2026-topliste.md) — führt diese Kategorie mit Wissenssystemen und Generatoren nach denselben Reife-/Aktivitäts-/Lizenzkriterien zusammen
 - [Evolution und Architekturen digitaler autonomer KI-Agenten](evolution-digitaler-autonome-ki-agenten.md) — Produktgeneration, deren Handlungssequenzen Generation 6 bewertet
 - [Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen](evolution-digitaler-rag-werkzeug-anwendungen.md) — Produktgeneration, deren Pipelines Generation 4 bewertet
