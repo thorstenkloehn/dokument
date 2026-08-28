@@ -84,6 +84,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Cloud-LMS & LXP](evolution-digitaler-cloud-lms.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Cloud-LMS & LXP nach Generation (Top 1)](produktionsreife-cloud-lms-generationen-2026-topliste.md) — dasselbe feinere Generationenmodell durch das konservative Fünf-Filter-Sieb; nur Canvas LMS besteht, Open edX fällt am MongoDB-Speicherfilter, die LXP-Generationen sind vollständig proprietär
 - [Beste Lernmanagement-Systeme 2026 (Top 20)](lms-2026-topliste.md) — Gesamtmarkt-Topliste über alle fünf LMS-Generationen hinweg
 - [Beste klassische LMS 2026 (Top 15)](klassische-lms-2026-topliste.md) — vorausgehende Generation
 - [Beste interoperable LMS-Bausteine 2026 (Top 10)](interoperable-lms-2026-topliste.md) — nachfolgende Generation

@@ -113,6 +113,7 @@ Fortschritt wird über **Kompetenzen** statt Kursabschlüsse gemessen — Lernpl
 ## Verwandte Themen
 
 - [Beste Cloud-LMS & LXP 2026 (Top 20)](cloud-lms-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Cloud-LMS & LXP nach Generation (Top 1)](produktionsreife-cloud-lms-generationen-2026-topliste.md) — dasselbe Modell durch ein konservatives Fünf-Filter-Sieb; nur Canvas LMS besteht, weil die LXP-Kategorie gehosteten Betrieb als Produkt verkauft und nie einen quelloffenen Vertreter hatte
 - [Evolution und Architekturen digitaler Lernmanagement-Systeme](evolution-digitaler-lms.md) — übergeordnetes Generationenmodell, Generation 2 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler klassischer LMS](evolution-digitaler-klassische-lms.md) — vorausgehende Generation
 - [Evolution und Architekturen digitaler Interoperabler LMS](evolution-digitaler-interoperable-lms.md) — nachfolgende Generation
