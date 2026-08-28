@@ -141,6 +141,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich PKM-Wer
 ## Verwandte Themen
 
 - [Beste PKM-Wissensgraphen & Block-Editoren 2026 (Top 20)](pkm-wissensgraphen-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
+- [Produktionsreife Open-Source-PKM-Wissensgraphen & Block-Editoren nach Generation (Top 3)](produktionsreife-pkm-wissensgraphen-generationen-2026-topliste.md) — dieselbe Chronologie durch ein striktes Fünf-Filter-Sieb; nur TiddlyWiki, Zettlr und Joplin bestehen
 - [Personal Knowledge Management (PKM) & Second Brain: Methoden](pkm-second-brain-methoden.md) — die methodische Seite (Zettelkasten, PARA, CODE, Evergreen Notes) zu dieser technischen Zeitachse
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell, Generation 3 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme](evolution-digitaler-visuell-agentische-wissenssysteme.md) — Schwester-Zeitachse entlang der Canvas-/Sync-/Agenten-Architektur, teilt sich mehrere Werkzeuge mit diesem Artikel

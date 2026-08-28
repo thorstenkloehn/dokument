@@ -149,7 +149,7 @@ graph TD
 | **TWiki** | Aktive Weiterentwicklung | Von Foswiki-Fork überholt, seither kaum noch für Neuprojekte gewählt |
 | **MoinMoin** | Reife/Stabilität | Python-3-Übergang hat die Betreiberbasis stark schrumpfen lassen |
 | **Apache JSPWiki** | Betreiberbasis | Etablierte Java-Nische, aber deutlich kleiner als XWiki |
-| **TiddlyWiki** | Betreiberbasis + Skala | Primär Einzelnutzer-Werkzeug (eine HTML-Datei) — keine „sehr große", mehrautorige Betriebs-Skala nachgewiesen |
+| **TiddlyWiki** | Betreiberbasis + Skala | Primär Einzelnutzer-Werkzeug (eine HTML-Datei) — keine „sehr große", mehrautorige Betriebs-Skala nachgewiesen; besteht dagegen die [PKM-Wissensgraphen-Schwesterseite](produktionsreife-pkm-wissensgraphen-generationen-2026-topliste.md), die genau für Einzelnutzer-Skala misst |
 
 ---
 
