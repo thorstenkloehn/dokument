@@ -139,6 +139,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich diese S
 ## Verwandte Themen
 
 - [Beste visuelle, Local-First & agentische Wissenssysteme 2026 (Top 20)](visuell-agentische-wissenssysteme-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
+- [Produktionsreife visuelle, Local-First & agentische Wissenssysteme nach Generation (Top 3)](produktionsreife-visuell-agentische-wissenssysteme-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; das Sieb trennt die drei Stränge nach Alter — Freeplane, Yjs und Excalidraw bestehen, der agentische Gedächtnis-Strang (Letta, Mem0, Zep) hat keinen Treffer
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell, Generation 5 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md) — Schwester-Zeitachse entlang des Verlinkungs-/Block-Editor-Paradigmas, teilt sich mehrere Werkzeuge mit dieser Zeitachse
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md) — analoges Generationenmodell für Generation 4

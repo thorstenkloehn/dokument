@@ -84,6 +84,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Agentischer Content-Ökosysteme](evolution-digitaler-agentische-content-oekosysteme.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife agentische Content-Ökosysteme nach Generation (kein Treffer)](produktionsreife-agentische-content-oekosysteme-generationen-2026-topliste.md) — dieselbe Kategorie durch das konservative Fünf-Filter-Sieb; der klarste „kein Treffer" der CMS-Linie, Architektur erst seit 2023
 - [Beste Composable-CMS & MACH-Systeme 2026 (Top 20)](composable-cms-2026-topliste.md) — technische Grundlage für Rang 1–4 dieser Liste
 - [Beste Multi-Agenten-Wissensökosysteme 2026 (Top 20)](multiagenten-wissensoekosysteme-2026-topliste.md) — analoges Orchestrierungsprinzip für Wissenspflege statt Content-Produktion
 - [Beste Headless-CMS 2026 (Top 20)](headless-cms-2026-topliste.md) — vertiefend zu Rang 4 (Contentful)

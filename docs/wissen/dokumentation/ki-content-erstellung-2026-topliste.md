@@ -87,6 +87,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler KI-Content-Erstellung](evolution-digitaler-ki-content-erstellung.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife KI-Content-Erstellung in CMS nach Generation (kein Treffer)](produktionsreife-ki-content-erstellung-generationen-2026-topliste.md) — dieselbe Kategorie durch das konservative Fünf-Filter-Sieb; der einzige quelloffene Kern-Baustein (Drupal AI-Modul) ist von 2024, unter fünf Jahre
 - [Beste agentische Content-Ökosysteme 2026 (Top 20)](agentische-content-oekosysteme-2026-topliste.md) — nachfolgende Generation mit mehrstufigen Agenten-Workflows statt Einzel-Editor-Funktionen
 - [Beste Headless-CMS 2026 (Top 20)](headless-cms-2026-topliste.md) — vertiefend zu Rang 11–13 (Sanity, Contentful, Storyblok)
 - [Beste klassische CMS 2026 (Top 20)](klassische-cms-2026-topliste.md) — vertiefend zu Rang 2–6, 14–15
