@@ -86,6 +86,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler R-Markdown- & Quarto-Publishing-Systeme](evolution-digitaler-rmarkdown-quarto.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
 - [R-Markdown- & Quarto-Werkzeuge mit PostgreSQL-/Dateiformat-Speicherung (Top 13)](rmarkdown-quarto-postgresql-dateiformat-2026-topliste.md) — dieselbe Kategorie, geprüft nach Lizenz, Speicherbackend und Entwicklungsaktivität
+- [Produktionsreife Open-Source-R-Markdown- & Quarto-Werkzeuge nach Generation (Top 5)](produktionsreife-rmarkdown-quarto-generationen-2026-topliste.md) — dieselben Kriterien plus Skala- und Reifegrad-Filter, sortiert nach Generation
 - [Beste Notebook-Systeme 2026 (Top 20)](notebook-systeme-2026-topliste.md) — Gesamtmarkt-Topliste über alle sechs Notebook-Generationen hinweg
 - [Beste IPython- & Jupyter-Systeme 2026 (Top 20)](ipython-jupyter-2026-topliste.md) — Schwester-Zeitachse, konvergiert in Generation 6 dieser Kategorie
 - [Beste Cloud-Notebook-Plattformen 2026 (Top 20)](cloud-notebooks-2026-topliste.md) — Databricks Notebooks dort mit R-Markdown-Unterstützung im Enterprise-Kontext

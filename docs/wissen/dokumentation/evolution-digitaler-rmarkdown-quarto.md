@@ -110,6 +110,7 @@ Die aktuelle Generation lässt die beiden bisher getrennten Linien zusammenlaufe
 ## Verwandte Themen
 
 - [Beste R-Markdown- & Quarto-Werkzeuge 2026 (Top 15)](rmarkdown-quarto-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Open-Source-R-Markdown- & Quarto-Werkzeuge nach Generation (Top 5)](produktionsreife-rmarkdown-quarto-generationen-2026-topliste.md) — dieselbe Chronologie durch ein striktes Fünf-Filter-Sieb; Quarto selbst besteht es (noch) nicht
 - [Evolution und Architekturen digitaler Notebook-Systeme](evolution-digitaler-notebook-systeme.md) — übergeordnetes Generationenmodell, Generation 4 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Notebook-Vorläufer](evolution-digitaler-notebook-vorlaeufer.md) — Sweave als Ursprung von Generation 1 dieses Artikels
 - [Evolution und Architekturen digitaler IPython- & Jupyter-Systeme](evolution-digitaler-ipython-jupyter.md) — Schwester-Zeitachse, konvergiert in Generation 6 dieses Artikels
