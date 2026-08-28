@@ -71,6 +71,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Evolution und Architekturen digitaler KI-Audio-Werkzeuge](evolution-digitaler-ki-audio-werkzeuge.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife KI-Audio-Werkzeuge nach Generation (Top 4)](produktionsreife-ki-audio-werkzeuge-generationen-2026-topliste.md) — dieselben 20 Werkzeuge durch das konservative Fünf-Filter-Sieb; nur FluidSynth, SuperCollider, eSpeak NG und RNNoise bestehen — Whisper wird 2027 zum Treffer
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [KI und Audio](ki-audio.md) — Konzepte hinter Sprachsynthese, Spracherkennung und Musikgenerierung
 - [AI Voice Cloning (XTTS v2)](ai-voice-cloning-xtts.md) — vertiefende Praxis zu Rang 5
