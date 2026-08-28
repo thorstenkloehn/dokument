@@ -116,6 +116,7 @@ Notebook-Systeme sind die **klarste „dateibasiert"-Kategorie** der ganzen Fami
 - [Beste Notebook-Systeme 2026 (Top 20)](notebook-systeme-2026-topliste.md) — breiteste Basis-Topliste inklusive proprietärer Plattformen
 - [Evolution und Architekturen digitaler IPython- & Jupyter-Systeme](evolution-digitaler-ipython-jupyter.md) — vertiefend zu Generation 2 (Jupyter, JupyterHub, JupyterLab)
 - [Evolution und Architekturen digitaler R-Markdown- & Quarto-Publishing-Systeme](evolution-digitaler-rmarkdown-quarto.md) — vertiefend zu Generation 4
+- [Produktionsreife Open-Source-R-Markdown- & Quarto-Werkzeuge nach Generation (Top 5)](produktionsreife-rmarkdown-quarto-generationen-2026-topliste.md) — dieselbe Kategorie mit dem feineren, sechsstufigen R-Markdown-/Quarto-Generationenmodell statt der groben Generation-4-Zusammenfassung hier
 - [Evolution und Architekturen digitaler Reaktiver Notebooks](evolution-digitaler-reaktive-notebooks.md) — vertiefend zu Generation 5 (Pluto.jl, Marimo, Observable)
 - [IPython- & Jupyter-Systeme mit PostgreSQL-/Dateiformat-Speicherung (Top 20)](ipython-jupyter-postgresql-dateiformat-2026-topliste.md) — der Speicherfilter, nach Rang statt nach Generation
 - [Produktionsreife Open-Source-semantische & RAG-Wissenssysteme nach Generation](produktionsreife-semantische-rag-wissenssysteme-generationen-2026-topliste.md) — Schwesterseite mit demselben Sieb

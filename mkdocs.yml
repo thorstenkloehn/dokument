@@ -438,6 +438,7 @@ nav:
           - "Evolution und Architekturen digitaler R-Markdown- & Quarto-Publishing-Systeme": wissen/dokumentation/evolution-digitaler-rmarkdown-quarto.md
           - "Beste R-Markdown- & Quarto-Werkzeuge 2026 (Top 15)": wissen/dokumentation/rmarkdown-quarto-2026-topliste.md
           - "R-Markdown- & Quarto-Werkzeuge mit PostgreSQL-/Dateiformat-Speicherung (Top 13)": wissen/dokumentation/rmarkdown-quarto-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Open-Source-R-Markdown- & Quarto-Werkzeuge nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-rmarkdown-quarto-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Reaktiver Notebooks": wissen/dokumentation/evolution-digitaler-reaktive-notebooks.md
           - "Beste reaktive Notebooks 2026 (Top 10)": wissen/dokumentation/reaktive-notebooks-2026-topliste.md
           - "Reaktive Notebooks mit PostgreSQL-/Dateiformat-Speicherung (Top 9)": wissen/dokumentation/reaktive-notebooks-postgresql-dateiformat-2026-topliste.md
