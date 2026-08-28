@@ -73,5 +73,6 @@ graph TD
 
 - [Startseite](../../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler BI- & Analytics-Tools](evolution-digitaler-bi-analytics-tools.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-BI- & Analytics-Tools nach Generation (Top 3)](produktionsreife-bi-analytics-tools-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb; nur Metabase, Apache Superset und Grafana bestehen — fünf von sechs Generationen sind vollständig proprietär
 - [Beste Vektordatenbanken 2026 (Top 15)](vektordatenbanken-2026-topliste.md) — verwandte Datenbank-Vertiefung im selben Bereich
 - [Datenbanken & Big Data: Übersicht für KI-Anwendungen](index.md)

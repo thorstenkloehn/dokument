@@ -370,8 +370,10 @@ nav:
           - PostgreSQL + pgvector: wissen/daten/datenbanken/pgvector-anleitung.md
           - "Evolution und Architekturen digitaler Vektordatenbanken": wissen/daten/datenbanken/evolution-digitaler-vektordatenbanken.md
           - "Beste Vektordatenbanken 2026 (Top 15)": wissen/daten/datenbanken/vektordatenbanken-2026-topliste.md
+          - "Produktionsreife Open-Source-Vektordatenbanken nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-vektordatenbanken-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler BI- & Analytics-Tools": wissen/daten/datenbanken/evolution-digitaler-bi-analytics-tools.md
           - "Beste BI- & Analytics-Tools 2026 (Top 15)": wissen/daten/datenbanken/bi-analytics-tools-2026-topliste.md
+          - "Produktionsreife Open-Source-BI- & Analytics-Tools nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-bi-analytics-tools-generationen-2026-topliste.md
           - Datenerfassung:
               - Übersicht: wissen/daten/datenerfassung/index.md
               - OpenDataKit: wissen/daten/datenerfassung/opendatakit.md

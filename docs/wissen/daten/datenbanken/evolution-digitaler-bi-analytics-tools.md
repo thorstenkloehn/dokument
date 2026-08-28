@@ -106,5 +106,6 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Beste BI- & Analytics-Tools 2026 (Top 15)](bi-analytics-tools-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Open-Source-BI- & Analytics-Tools nach Generation (Top 3)](produktionsreife-bi-analytics-tools-generationen-2026-topliste.md) — dasselbe Generationenmodell durch ein konservatives Fünf-Filter-Sieb; die Lizenz-Achse siebt, nicht der Speicher
 - [Datenbanken & Big Data: Übersicht für KI-Anwendungen](index.md)
 - [Beste Cloud-LMS & LXP 2026 (Top 20)](../../e-learning/cloud-lms-2026-topliste.md) — verwandtes SaaS-Bewertungsmuster im Bildungsbereich
