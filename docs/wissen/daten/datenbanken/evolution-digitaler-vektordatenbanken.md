@@ -99,6 +99,7 @@ graph TD
 ## 🔗 Verwandte Themen
 
 - [Beste Vektordatenbanken 2026 (Top 15)](vektordatenbanken-2026-topliste.md) — Momentaufnahme, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Open-Source-Vektordatenbanken nach Generation (Top 5)](produktionsreife-vektordatenbanken-generationen-2026-topliste.md) — dasselbe Generationenmodell durch ein konservatives Fünf-Filter-Sieb; hier prüft der Speicherfilter den Pflicht-Unterbau des Systems selbst
 - [PostgreSQL + pgvector: Praktische Anleitung](pgvector-anleitung.md)
 - [Datenbanken & Big Data: Übersicht für KI-Anwendungen](index.md)
 - [Lokales RAG & LLM-Serving](../../../künstliche-intelligenz/coding/lokales-rag-ollama.md)

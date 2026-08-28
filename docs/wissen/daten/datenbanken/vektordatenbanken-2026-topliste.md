@@ -72,6 +72,7 @@ graph TD
 
 - [Startseite](../../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Vektordatenbanken](evolution-digitaler-vektordatenbanken.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-Vektordatenbanken nach Generation (Top 5)](produktionsreife-vektordatenbanken-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb: Faiss, Weaviate, Vespa, pgvector, OpenSearch k-NN
 - [PostgreSQL + pgvector: Praktische Anleitung](pgvector-anleitung.md)
 - [Datenbanken & Big Data: Übersicht für KI-Anwendungen](index.md)
 - [Lokales RAG & LLM-Serving](../../../künstliche-intelligenz/coding/lokales-rag-ollama.md)
