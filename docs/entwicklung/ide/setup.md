@@ -199,37 +199,6 @@ gh auth login
 
 ## Editoren & IDEs installieren
 
-
-### Google Antigravity 2
-```bash
-# 1. In das temporäre Verzeichnis wechseln
-
-# 2. Download mit fest definiertem Dateinamen (-O)
-wget "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.11.0-6376446768316416/linux-x64/Antigravity.tar.gz" -O antigravity2.tar.gz
-
-# 3. Zielverzeichnis erstellen
-sudo mkdir -p /opt/Antigravity2
-
-# 4. Entpacken
-sudo tar -xzf antigravity2.tar.gz -C /opt/Antigravity2 --strip-components=1
-
-# 5. Desktop-Datei erstellen
-sudo bash -c 'cat > /usr/share/applications/antigravity2.desktop' << 'EOF'
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Antigravity Deskop
-Comment=Google Antigravity Development Platform
-Exec=/opt/Antigravity2/antigravity --no-sandbox
-Icon=/opt/Antigravity2/icon.svg
-Terminal=false
-Categories=Development;IDE;
-StartupWMClass=antigravity-ide
-EOF
-
-# 6. Datenbank aktualisieren
-sudo update-desktop-database
-```
 ### Visual Studio Code installieren
 
 ```bash
