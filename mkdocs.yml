@@ -279,6 +279,7 @@ nav:
           - "Beste Paketmanager 2026 (Top 15)": entwicklung/system/paketmanager-2026-topliste.md
           - "Evolution und Architekturen digitaler Versionskontrollsysteme": entwicklung/system/evolution-digitaler-versionskontrollsysteme.md
           - "Beste Versionskontrollsysteme 2026 (Top 15)": entwicklung/system/versionskontrollsysteme-2026-topliste.md
+          - "Produktionsreife Open-Source-Versionskontrollsysteme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/system/produktionsreife-versionskontrollsysteme-generationen-2026-topliste.md
           - Rust & C/C++:
               - C Praxis-Handbuch: entwicklung/system/c-praxis.md
               - C++ Praxis-Handbuch: entwicklung/system/cpp-praxis.md
