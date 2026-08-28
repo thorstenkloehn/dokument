@@ -126,6 +126,7 @@ Das ist zugleich die größte Stärke der Kategorie: maximale Betriebsdisziplin 
 - [Beste Static-Site- & Docs-Generatoren 2026 (Top 20)](static-site-generatoren-2026-topliste.md) — breiteste Basis-Topliste
 - [Static-Site-Generatoren mit PostgreSQL-/Dateiformat-Speicherung (Top 16)](static-site-generatoren-postgresql-dateiformat-2026-topliste.md) — derselbe Speicherfilter, nach Rang statt nach Generation
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — die Kollaborations-/Review-Perspektive auf dieselben Werkzeuge
+- [Produktionsreife Open-Source-Docs-as-Code-Werkzeuge nach Generation (Top 10)](produktionsreife-docs-as-code-generationen-2026-topliste.md) — Schwesterseite; Sphinx, MkDocs, Jekyll und Docusaurus erscheinen dort ebenfalls, ergänzt um Generation-1-Funde wie LaTeX, Doxygen und Javadoc
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — vertiefend zu Generation 6 (Zensical)
 - [Produktionsreife Open-Source-Full-Stack-Meta-Frameworks nach Generation](../../entwicklung/webentwicklung/produktionsreife-meta-frameworks-generationen-2026-topliste.md) — Next.js/Nuxt in ihrer Hybrid-Rolle
 - [Produktionsreife Open-Source-Notebook-Systeme nach Generation (Top 4)](produktionsreife-notebook-systeme-generationen-2026-topliste.md) — Schwesterseite, ebenfalls dateibasiert

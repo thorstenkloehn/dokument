@@ -147,6 +147,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Docs-as
 ## Verwandte Themen
 
 - [Beste Docs-as-Code-Werkzeuge 2026 (Top 15)](docs-as-code-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Open-Source-Docs-as-Code-Werkzeuge nach Generation (Top 10)](produktionsreife-docs-as-code-generationen-2026-topliste.md) — dieselbe Chronologie durch ein striktes Fünf-Filter-Sieb; Schwerpunkt liegt überraschend auf Generation 1 (LaTeX, Doxygen, Javadoc)
 - [Beste Open-Source-Docs-as-Code-Werkzeuge 2026 (Top 20)](docs-as-code-open-source-2026-topliste.md) — dieselbe Momentaufnahme, gefiltert auf 20 Werkzeuge unter OSI-anerkannter Lizenz
 - [Beste Docs-as-Code-Analytics-Werkzeuge 2026 (Top 15)](docs-as-code-analytics-2026-topliste.md) — ergänzende Auswertungs-Ebene, die misst statt zu bauen oder zu prüfen
 - [Dokumentenerstellung, Wikis & Notebooks](index.md) — Gesamtübersicht aller Dokumentations-Systeme inkl. Book-First-/Docs-First-Generatoren
