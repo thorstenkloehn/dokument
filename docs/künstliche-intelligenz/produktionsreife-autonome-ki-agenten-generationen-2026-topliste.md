@@ -138,6 +138,7 @@ Vertiefung: [PostgreSQL DBA Praxis-Handbuch](../entwicklung/infrastruktur/postgr
 ## 🔗 Verwandte Themen
 
 - [Evolution und Architekturen digitaler Autonomer KI-Agenten](evolution-digitaler-autonome-ki-agenten.md) — das sechsstufige Generationenmodell, nach dem diese Liste sortiert ist
+- [Produktionsreife KI-Anwendungen nach Generation (Top 9)](produktionsreife-ki-anwendungen-generationen-2026-topliste.md) — die übergeordnete Dach-Seite; Generation 6 bleibt auch dort ohne Treffer
 - [Beste autonome KI-Agenten 2026 (Top 20)](autonome-ki-agenten-2026-topliste.md) — breiteste Basis-Topliste inklusive proprietärer Systeme
 - [Produktionsreife Open-Source-KI-native Web-Frameworks nach Generation](../entwicklung/webentwicklung/produktionsreife-ki-native-webframeworks-generationen-2026-topliste.md) — dasselbe „kein Treffer"-Bild in der KI-nativen Web-Framework-Kategorie
 - [Produktionsreife Open-Source-RAG- & Werkzeug-Anwendungen nach Generation](produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md) — die vorausgehende KI-Anwendungs-Generation, ebenfalls kein Treffer bei den Anwendungen

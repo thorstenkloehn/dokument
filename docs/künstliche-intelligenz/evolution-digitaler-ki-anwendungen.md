@@ -157,6 +157,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich KI-Anwe
 ## Verwandte Themen
 
 - [Beste KI-Anwendungen 2026 (Top 20)](ki-anwendungen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife KI-Anwendungen nach Generation (Top 9)](produktionsreife-ki-anwendungen-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; die Regel-Engines, ML-Referenzbibliotheken und Infrastruktur der Generationen 1–3/5 bestehen, die Anwendungen der Generationen 4–6 nicht
 - [KI-Modelle & Frameworks: Übersicht](index.md) — Gesamtübersicht Modell-Kategorien und Frameworks
 - [Evolution und Architekturen digitaler Expertensysteme](evolution-digitaler-expertensysteme.md) — vertiefendes Generationenmodell speziell für Generation 1 dieses Artikels
 - [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](evolution-digitaler-deep-learning-anwendungen.md) — vertiefendes Generationenmodell speziell für Generation 2 dieses Artikels

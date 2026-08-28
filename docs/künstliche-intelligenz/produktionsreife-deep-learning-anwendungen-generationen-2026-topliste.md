@@ -119,6 +119,7 @@ Vertiefung zur Datenbankschicht der Anwendungen: [PostgreSQL DBA Praxis-Handbuch
 ## 🔗 Verwandte Themen
 
 - [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](evolution-digitaler-deep-learning-anwendungen.md) — das Generationenmodell der Architektur-Meilensteine, nach dem diese Liste sortiert ist
+- [Produktionsreife KI-Anwendungen nach Generation (Top 9)](produktionsreife-ki-anwendungen-generationen-2026-topliste.md) — die übergeordnete Dach-Seite; ResNet, YOLO und Transformer/BERT erscheinen dort als Generation-2-Treffer
 - [Beste Deep-Learning-Anwendungen 2026 (Top 15)](deep-learning-anwendungen-2026-topliste.md) — breitere Basis-Topliste nach architektonischem Einfluss, inklusive historischer Meilensteine
 - [Produktionsreife Rust-Bausteine für KI-Anwendungen nach Generation (Top 1)](produktionsreife-rust-ki-anwendungen-generationen-2026-topliste.md) — dieselbe reife OSS-Schicht (Hugging Face) mit `tokenizers` als einzigem Treffer
 - [Produktionsreife semantische & RAG-Wissenssysteme nach Generation (Top 7)](../wissen/dokumentation/produktionsreife-semantische-rag-wissenssysteme-generationen-2026-topliste.md) — dieselbe Struktur: die Infrastruktur ist reif, die Anwendungen darüber nicht
