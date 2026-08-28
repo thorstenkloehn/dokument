@@ -134,6 +134,7 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Evolution und Architekturen digitaler Lernmanagement-Systeme (LMS)](evolution-digitaler-lms.md) — das fünfstufige Generationenmodell, nach dem diese Liste sortiert ist
 - [Beste Lernmanagement-Systeme 2026 (Top 20)](lms-2026-topliste.md) — breiteste Basis-Topliste nach Verbreitung, inklusive proprietärer SaaS-Systeme
 - [Beste klassische LMS 2026 (Top 15)](klassische-lms-2026-topliste.md) — Fokus auf Generation 1
+- [Produktionsreife klassische Open-Source-LMS nach Generation (Top 1)](produktionsreife-klassische-lms-generationen-2026-topliste.md) — dasselbe Sieb nur für die klassische Linie, nach deren feinerem 1a/1b/1c-Modell; Ergebnis: nur Moodle
 - [Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12)](../dokumentation/produktionsreife-wissenssysteme-generationen-2026-topliste.md) — Schwester-Topliste mit demselben Fünf-Filter-Sieb für Wikis, PKM und RAG
 - [Produktionsreife Open-Source-CMS nach Generation (Top 12)](../dokumentation/produktionsreife-cms-generationen-2026-topliste.md) — Schwester-Topliste mit demselben Sieb für Content-Management-Systeme
 - [Produktionsreife Open-Source-Web-Frameworks & -Bibliotheken nach Generation](../../entwicklung/webentwicklung/produktionsreife-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb für Web-Frameworks
