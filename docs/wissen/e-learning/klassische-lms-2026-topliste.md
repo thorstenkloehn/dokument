@@ -74,6 +74,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler klassischer LMS](evolution-digitaler-klassische-lms.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife klassische Open-Source-LMS nach Generation (Top 1)](produktionsreife-klassische-lms-generationen-2026-topliste.md) — dasselbe feinere Generationenmodell durch das konservative Fünf-Filter-Sieb; nur Moodle besteht, die übrigen Open-Source-Klassiker (Sakai, ILIAS, Chamilo) fallen am PostgreSQL-Speicherfilter
 - [Beste Lernmanagement-Systeme 2026 (Top 20)](lms-2026-topliste.md) — Gesamtmarkt-Topliste über alle fünf LMS-Generationen hinweg
 - [Beste Cloud-LMS & LXP 2026 (Top 20)](cloud-lms-2026-topliste.md) — nachfolgende Generation
 - [Beste klassische CMS 2026 (Top 20)](../dokumentation/klassische-cms-2026-topliste.md) — analoge Topliste für CMS statt LMS

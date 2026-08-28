@@ -113,6 +113,7 @@ Der Enterprise-LMS-Markt konsolidiert sich durch Übernahmen — aus mehreren ko
 ## Verwandte Themen
 
 - [Beste klassische LMS 2026 (Top 15)](klassische-lms-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife klassische Open-Source-LMS nach Generation (Top 1)](produktionsreife-klassische-lms-generationen-2026-topliste.md) — dasselbe Modell durch ein konservatives Fünf-Filter-Sieb; die klassische Linie zerfällt in eine proprietäre Enterprise-Hälfte und eine MySQL-gebundene Open-Source-Hälfte, nur Moodle besteht
 - [Evolution und Architekturen digitaler Lernmanagement-Systeme](evolution-digitaler-lms.md) — übergeordnetes Generationenmodell, Generation 1 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Cloud-LMS & LXP](evolution-digitaler-cloud-lms.md) — nachfolgende Generation
 - [E-Learning-Autorentools & Interaktive Lernumgebungen](index.md) — Gesamtübersicht Autorentools, LMS und KI-Agenten im E-Learning
