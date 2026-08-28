@@ -118,6 +118,7 @@ Notebook-Systeme sind die **klarste „dateibasiert"-Kategorie** der ganzen Fami
 - [Evolution und Architekturen digitaler R-Markdown- & Quarto-Publishing-Systeme](evolution-digitaler-rmarkdown-quarto.md) — vertiefend zu Generation 4
 - [Produktionsreife Open-Source-R-Markdown- & Quarto-Werkzeuge nach Generation (Top 5)](produktionsreife-rmarkdown-quarto-generationen-2026-topliste.md) — dieselbe Kategorie mit dem feineren, sechsstufigen R-Markdown-/Quarto-Generationenmodell statt der groben Generation-4-Zusammenfassung hier
 - [Evolution und Architekturen digitaler Reaktiver Notebooks](evolution-digitaler-reaktive-notebooks.md) — vertiefend zu Generation 5 (Pluto.jl, Marimo, Observable)
+- [Produktionsreife Open-Source-Reaktive-Notebooks nach Generation (Top 1)](produktionsreife-reaktive-notebooks-generationen-2026-topliste.md) — dieselbe Kategorie mit dem feineren, sechsstufigen Generationenmodell; nur Pluto.jl besteht
 - [IPython- & Jupyter-Systeme mit PostgreSQL-/Dateiformat-Speicherung (Top 20)](ipython-jupyter-postgresql-dateiformat-2026-topliste.md) — der Speicherfilter, nach Rang statt nach Generation
 - [Produktionsreife Open-Source-semantische & RAG-Wissenssysteme nach Generation](produktionsreife-semantische-rag-wissenssysteme-generationen-2026-topliste.md) — Schwesterseite mit demselben Sieb
 - [Produktionsreife Open-Source-Static-Site-Generatoren nach Generation (Top 8)](produktionsreife-static-site-generatoren-generationen-2026-topliste.md) — die andere dateibasierte Kategorie; der Speicherfilter ist dort noch bedeutungsloser
