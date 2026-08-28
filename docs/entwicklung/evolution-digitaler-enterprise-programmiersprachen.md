@@ -137,6 +137,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Sprachen nach fol
 ## Verwandte Themen
 
 - [Beste Programmiersprachen für Enterprise-Software (Top 10)](enterprise-programmiersprachen-topliste.md) — aktuelle Top-10-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
+- [Produktionsreife Enterprise-Programmiersprachen nach Generation (Top 8)](produktionsreife-enterprise-programmiersprachen-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; fast jede Generation trifft (COBOL, C++, Ada, Java, C#, Go, Kotlin, Rust), PL/I und RPG fallen an der fehlenden offenen Implementierung
 - [Evolution und Architekturen digitaler Programmiersprachen](evolution-digitaler-programmiersprachen.md) — übergeordnetes, paradigmenorientiertes Generationenmodell, dessen Geschäftssoftware-Perspektive dieser Artikel vertieft
 - [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](../wissen/dokumentation/evolution-digitaler-wissenssystem-programmiersprachen.md) — analoges Sprachökosystem-Generationenmodell für Wikis, PKM- und Docs-Systeme statt allgemeiner Enterprise-Software
 - [Evolution und Architekturen digitaler Web-Frameworks](webentwicklung/evolution-digitaler-webframeworks.md) — Frameworks, die viele hier genannten Sprachen im Web-Kontext tragen

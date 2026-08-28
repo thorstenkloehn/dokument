@@ -143,6 +143,7 @@ Neben dem chronologischen Paradigmen-Generationenmodell lassen sich Programmiers
 
 ## Verwandte Themen
 
+- [Produktionsreife Programmiersprachen nach Generation (Top 9)](produktionsreife-programmiersprachen-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; der Speicherfilter läuft leer und wird durch offene Standardisierung ersetzt. Perl fällt an der Kontinuität, Generation 5 (funktional) ohne Volltreffer
 - [Evolution und Architekturen digitaler Enterprise-Programmiersprachen](evolution-digitaler-enterprise-programmiersprachen.md) — domänenspezifische Vertiefung: dieselben Paradigmen-Generationen aus Sicht der Geschäftssoftware-Eignung
 - [Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme](../wissen/dokumentation/evolution-digitaler-wissenssystem-programmiersprachen.md) — domänenspezifische Vertiefung: dieselben Paradigmen-Generationen aus Sicht von Wiki-/PKM-/Docs-Werkzeugen
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](../wissen/dokumentation/evolution-digitaler-rust-wissenssysteme.md) — vollständige Generationen-Zeitachse speziell für Rust-Bausteine
