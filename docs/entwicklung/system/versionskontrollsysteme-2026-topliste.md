@@ -76,6 +76,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Versionskontrollsysteme](evolution-digitaler-versionskontrollsysteme.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-Versionskontrollsysteme nach Generation (Top 6)](produktionsreife-versionskontrollsysteme-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb (produktionsreif, jahrelang stabil, große Betreiberbasis, sehr große Skala, dateibasiert oder PostgreSQL)
 - [Beste Build-Systeme 2026 (Top 15)](build-systeme-2026-topliste.md) — Monorepo-Skalierungsproblem aus komplementärem Blickwinkel
 - [Beste Paketmanager 2026 (Top 15)](paketmanager-2026-topliste.md) — komplementäre Werkzeuggattung in derselben Entwickler-Werkzeug-Reihe
 - [AI Agents – Das Praxis-Handbuch & Architektur-Leitfaden](../../künstliche-intelligenz/coding/ai-agents-praxis.md) — Vertiefung zu KI-gestützten Commit-Workflows
