@@ -169,6 +169,7 @@ graph TD
 - [Open-Source-Wissenssysteme mit aktiver Weiterentwicklung & hoher Reife (Top 20)](aktive-reife-opensource-wissenssysteme-2026-topliste.md) — Basis-Sieb nach Lizenz, Aktivität und Reife, ohne Skala- und Speicherfilter
 - [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 22)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — derselbe Speicherfilter, aber nach Rang statt nach Generation und ohne den Enzyklopädie-Skala-Filter
 - [Wiki-Engines mit PostgreSQL- oder Dateiformat-Speicherung (Top 15)](wiki-engines-postgresql-dateiformat-2026-topliste.md) — enger auf reine Wiki-Engines gefasst
+- [Produktionsreife Open-Source-Wiki-Engines nach Generation (Top 11)](produktionsreife-wiki-engines-generationen-2026-topliste.md) — dieselbe Kategorie mit dem feineren, achtstufigen Wiki-Engine-Generationenmodell statt der groben Generation-1-Zusammenfassung hier
 - [Die führenden Open-Source-Wissenssysteme 2026 (Top 20)](fuehrende-opensource-wissenssysteme-2026-topliste.md) — breiteste Schwester-Topliste nach Verbreitung
 - [Beste Open-Source-Wissenssysteme für den eigenen Selfhosting-Server (Top 20)](wissenssysteme-selfhosting-server-topliste.md) — Ranking nach Betriebstauglichkeit auf dem eigenen Server
 - [Evolution und Architekturen digitaler Wiki-Engines](evolution-digitaler-wiki-engines.md) — vertiefendes Generationenmodell speziell für Generation 1
