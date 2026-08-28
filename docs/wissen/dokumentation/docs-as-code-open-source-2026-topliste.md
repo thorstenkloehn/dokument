@@ -103,6 +103,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Docs-as-Code-Werkzeuge 2026 (Top 15)](docs-as-code-2026-topliste.md) — lizenzoffene Basisliste, aus der diese Seite die 20 quelloffenen Werkzeuge filtert und ergänzt
+- [Produktionsreife Open-Source-Docs-as-Code-Werkzeuge nach Generation (Top 10)](produktionsreife-docs-as-code-generationen-2026-topliste.md) — dieselben Kriterien plus Skala-Filter, sortiert nach Generation statt nach Rang
 - [Evolution und Architekturen digitaler Docs-as-Code](evolution-digitaler-docs-as-code.md) — chronologisches Generationenmodell hinter beiden Toplisten
 - [Beste Static-Site- & Docs-Generatoren 2026 (Top 20)](static-site-generatoren-2026-topliste.md) — Gegenstück auf Ebene der Rendering-Engines statt der Workflow-Werkzeuge
 - [Workspace-, Kollaborations- & Docs-as-Code-Plattformen (Top 20)](workspace-kollaboration-docs-as-code-2026-topliste.md) — Plattform-Ebene (Hosting, Team-Workspace, Groupware) statt Workflow-Werkzeuge
