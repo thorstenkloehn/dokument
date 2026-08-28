@@ -74,6 +74,7 @@ graph TD
 
 - [Startseite](../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Expertensysteme](evolution-digitaler-expertensysteme.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Expertensysteme & Regel-Engines nach Generation (Top 2)](produktionsreife-expertensysteme-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb; von den 15 Rängen bestehen nur Drools und CLIPS
 - [Beste KI-Anwendungen 2026 (Top 20)](ki-anwendungen-2026-topliste.md) — Gesamtmarkt-Topliste über alle sechs KI-Generationen hinweg
 - [AI Agents – Das Praxis-Handbuch & Architektur-Leitfaden](coding/ai-agents-praxis.md) — moderne Agenten-Architekturen als Fortsetzung von Generation 6
 - [Beste MCP-Server (Top 20)](coding/mcp-server-topliste.md) — Werkzeugzugriff als moderne Entsprechung expliziter Constraints

@@ -139,6 +139,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Experte
 ## Verwandte Themen
 
 - [Beste Expertensysteme (Top 15)](expertensysteme-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Expertensysteme & Regel-Engines nach Generation (Top 2)](produktionsreife-expertensysteme-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; nur die Regel-Engines Drools (Gen 4) und CLIPS (Gen 2) bestehen, die KI-Winter-Systeme und die neuro-symbolische Generation 6 nicht
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, Generation 1 dieses Artikels entspricht Generation 1a/1b dort
 - [KI-Modelle & Frameworks: Übersicht](index.md) — Gesamtübersicht Modell-Kategorien und Frameworks
 - [AI Agents – Das Praxis-Handbuch & Architektur-Leitfaden](coding/ai-agents-praxis.md) — moderne Agenten-Architekturen als Fortsetzung von Generation 6

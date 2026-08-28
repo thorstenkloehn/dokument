@@ -81,6 +81,7 @@ graph TD
 
 - [Startseite](../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife KI-Anwendungen nach Generation (Top 9)](produktionsreife-ki-anwendungen-generationen-2026-topliste.md) — dieselben sechs Generationen durch das konservative Fünf-Filter-Sieb; nur Bausteine und Infrastruktur bestehen, kein Endprodukt der KI-Ära
 - [Beste Expertensysteme (Top 15)](expertensysteme-topliste.md) — vertiefend zu Rang 20
 - [Beste Deep-Learning-Anwendungen 2026 (Top 15)](deep-learning-anwendungen-2026-topliste.md) — vertiefend zu Rang 15–16
 - [Beste Cloud-KI-APIs 2026 (Top 15)](cloud-ki-apis-2026-topliste.md) — vertiefend zu Rang 11–14

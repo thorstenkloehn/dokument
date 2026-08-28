@@ -146,6 +146,7 @@ Bei RAG ist der Speicherfilter kein Randthema, sondern die zentrale Architekture
 ## 🔗 Verwandte Themen
 
 - [Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen](evolution-digitaler-rag-werkzeug-anwendungen.md) — das sechsstufige Generationenmodell, nach dem diese Liste sortiert ist
+- [Produktionsreife KI-Anwendungen nach Generation (Top 9)](produktionsreife-ki-anwendungen-generationen-2026-topliste.md) — die übergeordnete Dach-Seite; pgvector erscheint dort als einziger Generation-5-Treffer
 - [Beste RAG- & Werkzeug-Anwendungen 2026 (Top 15)](rag-werkzeug-anwendungen-2026-topliste.md) — breiteste Basis-Topliste inklusive proprietärer Produkte
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](../wissen/dokumentation/evolution-digitaler-semantische-rag-wissenssysteme.md) — die Infrastruktur (Embeddings, Vektor-DBs, Pipeline), die dieser Artikel voraussetzt
 - [Produktionsreife Open-Source-semantische & RAG-Wissenssysteme nach Generation (Top 7)](../wissen/dokumentation/produktionsreife-semantische-rag-wissenssysteme-generationen-2026-topliste.md) — dasselbe Sieb auf die Infrastruktur; dort bestehen sieben Systeme (FAISS, Weaviate, Haystack, pgvector, Apache Jena, Neo4j, sentence-transformers)
