@@ -84,6 +84,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler KI-nativer Notebook-Umgebungen](evolution-digitaler-ki-native-notebooks.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife KI-native Notebook-Umgebungen nach Generation (kein Treffer)](produktionsreife-ki-native-notebooks-generationen-2026-topliste.md) — dieselbe Kategorie durch das konservative Fünf-Filter-Sieb; der einzige quelloffene Baustein (Jupyter AI) ist von 2023, unter fünf Jahre
 - [Beste Notebook-Systeme 2026 (Top 20)](notebook-systeme-2026-topliste.md) — Gesamtmarkt-Topliste über alle sechs Notebook-Generationen hinweg
 - [Beste Cloud-Notebook-Plattformen 2026 (Top 20)](cloud-notebooks-2026-topliste.md) — technische Grundlage für Rang 3–5, 13–14 dieser Liste
 - [Beste reaktive Notebooks 2026 (Top 10)](reaktive-notebooks-2026-topliste.md) — vorausgehende Generation, konvergiert bei Rang 20 (Marimo AI) mit dieser Kategorie

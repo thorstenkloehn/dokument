@@ -439,10 +439,13 @@ nav:
           - "Produktionsreife Open-Source-Headless-CMS nach Generation (Reifegrad, Evaluation & Content-Skala)": wissen/dokumentation/produktionsreife-headless-cms-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Composable-CMS": wissen/dokumentation/evolution-digitaler-composable-cms.md
           - "Beste Composable-CMS & MACH-Systeme 2026 (Top 20)": wissen/dokumentation/composable-cms-2026-topliste.md
+          - "Produktionsreife Composable-CMS & MACH-Systeme nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-composable-cms-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler KI-Content-Erstellung": wissen/dokumentation/evolution-digitaler-ki-content-erstellung.md
           - "Beste KI-Content-Erstellung in CMS-Editoren 2026 (Top 20)": wissen/dokumentation/ki-content-erstellung-2026-topliste.md
+          - "Produktionsreife KI-Content-Erstellung in CMS nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-ki-content-erstellung-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Agentischer Content-Ökosysteme": wissen/dokumentation/evolution-digitaler-agentische-content-oekosysteme.md
           - "Beste agentische Content-Ökosysteme 2026 (Top 20)": wissen/dokumentation/agentische-content-oekosysteme-2026-topliste.md
+          - "Produktionsreife agentische Content-Ökosysteme nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-agentische-content-oekosysteme-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Rust-CMS": wissen/dokumentation/evolution-digitaler-rust-cms.md
           - "Beste Rust-Bausteine für CMS 2026 (Top 15)": wissen/dokumentation/rust-cms-2026-topliste.md
           - "Rust-Bausteine für CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 12)": wissen/dokumentation/rust-cms-postgresql-dateiformat-2026-topliste.md
@@ -468,6 +471,7 @@ nav:
           - "Produktionsreife Open-Source-Reaktive-Notebooks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-reaktive-notebooks-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler KI-nativer Notebook-Umgebungen": wissen/dokumentation/evolution-digitaler-ki-native-notebooks.md
           - "Beste KI-native Notebook-Umgebungen 2026 (Top 20)": wissen/dokumentation/ki-native-notebooks-2026-topliste.md
+          - "Produktionsreife KI-native Notebook-Umgebungen nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-ki-native-notebooks-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Rust-Notebooks": wissen/dokumentation/evolution-digitaler-rust-notebooks.md
           - "Beste Rust-Bausteine für Notebooks 2026 (Top 10)": wissen/dokumentation/rust-notebooks-2026-topliste.md
           - "Rust-Bausteine für Notebooks mit PostgreSQL-/Dateiformat-Speicherung (Top 10)": wissen/dokumentation/rust-notebooks-postgresql-dateiformat-2026-topliste.md
@@ -493,9 +497,11 @@ nav:
           - "Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme": wissen/dokumentation/evolution-digitaler-visuell-agentische-wissenssysteme.md
           - "Beste visuelle, Local-First & agentische Wissenssysteme 2026 (Top 20)": wissen/dokumentation/visuell-agentische-wissenssysteme-2026-topliste.md
           - "Visuelle, Local-First & agentische Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)": wissen/dokumentation/visuell-agentische-wissenssysteme-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife visuelle, Local-First & agentische Wissenssysteme nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-visuell-agentische-wissenssysteme-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme": wissen/dokumentation/evolution-digitaler-multiagenten-wissensoekosysteme.md
           - "Beste Multi-Agenten-Wissensökosysteme 2026 (Top 20)": wissen/dokumentation/multiagenten-wissensoekosysteme-2026-topliste.md
           - "Multi-Agenten-Wissensökosysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 14)": wissen/dokumentation/multiagenten-wissensoekosysteme-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Multi-Agenten-Wissensökosysteme nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-multiagenten-wissensoekosysteme-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Rust-Wissenssysteme": wissen/dokumentation/evolution-digitaler-rust-wissenssysteme.md
           - "Beste Rust-Bausteine für Wissenssysteme 2026 (Top 20)": wissen/dokumentation/rust-wissenssysteme-2026-topliste.md
           - "Rust-Bausteine für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)": wissen/dokumentation/rust-wissenssysteme-postgresql-dateiformat-2026-topliste.md

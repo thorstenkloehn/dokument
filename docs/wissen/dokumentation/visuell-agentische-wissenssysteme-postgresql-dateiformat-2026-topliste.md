@@ -120,6 +120,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste visuelle, Local-First & agentische Wissenssysteme 2026 (Top 20)](visuell-agentische-wissenssysteme-2026-topliste.md) — Basis-Topliste ohne Lizenz-/Speicherbackend-/Aktivitätsfilter
 - [Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme](evolution-digitaler-visuell-agentische-wissenssysteme.md) — chronologisches Generationenmodell als Hintergrund
+- [Produktionsreife visuelle, Local-First & agentische Wissenssysteme nach Generation (Top 3)](produktionsreife-visuell-agentische-wissenssysteme-generationen-2026-topliste.md) — härtestes Sieb: zusätzlich fünf Jahre Produktion und sehr große Skala; von diesen 15 bleiben Freeplane, Yjs und Excalidraw, der agentische Gedächtnis-Strang fällt komplett
 - [Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 22)](postgresql-dateiformat-wissenssysteme-2026-topliste.md) — dieselben Speicherkriterien für die breitere Wissenssysteme-Klasse
 - [Semantische & RAG-Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)](semantische-rag-wissenssysteme-postgresql-dateiformat-2026-topliste.md) — dieselbe Framework-Behandlung (kein Pflicht-Backend), enger auf RAG-Bausteine gefasst
 - [Open-Source-Wissenssysteme mit echter Echtzeit-Kollaboration (Top 15)](echtzeit-kollaboration-opensource-wissenssysteme-2026-topliste.md) — große Überschneidung im Visuell-Cluster (Excalidraw, AFFiNE, Penpot, draw.io)

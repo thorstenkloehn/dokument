@@ -86,6 +86,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Composable-CMS](evolution-digitaler-composable-cms.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Composable-CMS & MACH-Systeme nach Generation (kein Treffer)](produktionsreife-composable-cms-generationen-2026-topliste.md) — dieselbe Kategorie durch das konservative Fünf-Filter-Sieb; kein selbst betreibbarer, quelloffener Treffer — MACH bleibt eine Zertifizierungs-Ebene über proprietärem SaaS
 - [Beste Headless-CMS 2026 (Top 20)](headless-cms-2026-topliste.md) — enger gefasste Schwester-Topliste, reine Content-Domäne statt vollständiger MACH-Stack
 - [Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20)](cms-mcp-server-topliste.md) — Gegenstück nach MCP-/Agenten-Reife statt MACH-Konformität
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — übergeordnetes Generationenmodell

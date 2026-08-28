@@ -111,6 +111,7 @@ Die aktuelle Generation bündelt Textgenerierung, Bilderstellung, semantische Su
 ## Verwandte Themen
 
 - [Beste KI-Content-Erstellung in CMS-Editoren 2026 (Top 20)](ki-content-erstellung-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
+- [Produktionsreife KI-Content-Erstellung in CMS nach Generation (kein Treffer)](produktionsreife-ki-content-erstellung-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; kein Treffer — der einzige quelloffene Kern-Baustein (Drupal AI-Modul) ist von 2024
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — übergeordnetes Generationenmodell, Generation 4 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Composable-CMS](evolution-digitaler-composable-cms.md) — vorausgehende Generation, Discovery-Microservices als Grundlage von Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Agentischer Content-Ökosysteme](evolution-digitaler-agentische-content-oekosysteme.md) — nachfolgende Generation
