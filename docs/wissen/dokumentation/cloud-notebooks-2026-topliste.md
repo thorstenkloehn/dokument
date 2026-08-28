@@ -89,6 +89,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Cloud-Notebooks](evolution-digitaler-cloud-notebooks.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-Cloud-Notebooks nach Generation (Top 1)](produktionsreife-cloud-notebooks-generationen-2026-topliste.md) — dieselben Kriterien plus Lizenz-, Skala- und Reifegrad-Filter, sortiert nach Generation
 - [Beste Notebook-Systeme 2026 (Top 20)](notebook-systeme-2026-topliste.md) — Gesamtmarkt-Topliste über alle Generationen hinweg
 - [Beste IPython- & Jupyter-Systeme 2026 (Top 20)](ipython-jupyter-2026-topliste.md) — vorausgehende Generation, lokale Kernel-Frontend-Architektur als Gegenstück
 - [Beste Rust-Bausteine für Notebooks 2026 (Top 10)](rust-notebooks-2026-topliste.md) — Polars/uv als geteilte Bausteine hinter mehreren dieser Plattformen
