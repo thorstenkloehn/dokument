@@ -95,6 +95,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Open-Source-Wissenssysteme für den eigenen Selfhosting-Server (Top 20)](wissenssysteme-selfhosting-server-topliste.md) — Ausgangs-Topliste, deren Rangfolge diese Seite für die Migrationsperspektive übernimmt
+- [Alternativen zu proprietären Wissensmanagement-Systemen (Top 15)](proprietaere-wissensmanagement-alternativen-2026-topliste.md) — welche Open-Source-Alternative zu Confluence, Notion, SharePoint & Co. passt, bevor es an den Umzug geht
 - [Backup-Strategien für Wissenssysteme (Top 20)](backup-strategien-wissenssysteme-topliste.md) — Schwester-Topliste, dieselbe Rangfolge nach Backup statt Migration vertieft
 - [KI-Agenten-Integration in Selfhosting-Wissenssysteme (Top 20)](agenten-integration-wissenssysteme-topliste.md) — Schwester-Topliste, dieselbe Rangfolge nach MCP-/Agenten-Reife vertieft
 - [KI strukturiert das Wiki autonom & Selfhosting-Migration](ki-autonome-wiki-strukturierung-selfhosting-migration.md) — vertiefend zu KI-gestützter Migration
