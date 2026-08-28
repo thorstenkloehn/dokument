@@ -27,7 +27,7 @@ graph TD
 ```
 
 !!! note "Hinweis: Dies ist die Dach-Seite — jede Generation hat einen eigenen Deep-Dive"
-    Für die vollständige Filter-Begründung je Architekturlinie siehe die verlinkten Sub-Seiten: [Expertensysteme](produktionsreife-expertensysteme-generationen-2026-topliste.md) (Gen 1), [Deep-Learning-Anwendungen](produktionsreife-deep-learning-anwendungen-generationen-2026-topliste.md) (Gen 2), [Cloud-KI-APIs](produktionsreife-cloud-ki-apis-generationen-2026-topliste.md) (Gen 3), [RAG- & Werkzeug-Anwendungen](produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md) (Gen 5), [autonome KI-Agenten](produktionsreife-autonome-ki-agenten-generationen-2026-topliste.md) (Gen 6). Für Gen 1c (statistisches ML) und Gen 4 (generative KI) gibt es noch keinen eigenen Deep-Dive — sie werden hier direkt behandelt.
+    Für die vollständige Filter-Begründung je Architekturlinie siehe die verlinkten Sub-Seiten: [Expertensysteme](produktionsreife-expertensysteme-generationen-2026-topliste.md) (Gen 1), [Deep-Learning-Anwendungen](produktionsreife-deep-learning-anwendungen-generationen-2026-topliste.md) (Gen 2), [Cloud-KI-APIs](produktionsreife-cloud-ki-apis-generationen-2026-topliste.md) (Gen 3), [generative KI-Anwendungen](produktionsreife-generative-ki-anwendungen-generationen-2026-topliste.md) (Gen 4), [RAG- & Werkzeug-Anwendungen](produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md) (Gen 5), [autonome KI-Agenten](produktionsreife-autonome-ki-agenten-generationen-2026-topliste.md) (Gen 6). Für Gen 1c (statistisches ML) gibt es noch keinen eigenen Deep-Dive — sie wird hier direkt behandelt.
 
 ---
 
@@ -68,7 +68,7 @@ Ein Treffer: **MLflow** (Apache-2.0, seit 2018), die cloud-unabhängige MLOps-Sc
 
 ### Generation 4 — Generative KI & LLM-gestützte Anwendungen (ab ca. 2020)
 
-Kein eigenständiger Anwendungs-Treffer. Die Produkte — **ChatGPT**, **GitHub Copilot**, **Midjourney**, **Stable Diffusion** als gehosteter Dienst — sind proprietär; **Stable Diffusions** Gewichte stehen unter der CreativeML-OpenRAIL-M-Lizenz (Nutzungsbeschränkungen, nicht OSI-anerkannt — dieselbe Konstellation wie StyleGAN auf der [Deep-Learning-Seite](produktionsreife-deep-learning-anwendungen-generationen-2026-topliste.md)). Was besteht, ist die **Bibliotheksschicht**: Hugging Face `transformers` (Apache-2.0, 2019, bereits als Generation-2-Treffer gezählt) und `diffusers` (Apache-2.0, 2022, ~4 Jahre — Grenzfall an der Reifezeit). Ein eigener Deep-Dive für diese Generation steht noch aus.
+Kein eigenständiger Anwendungs-Treffer. Die Produkte — **ChatGPT**, **GitHub Copilot**, **Midjourney**, **Stable Diffusion** als gehosteter Dienst — sind proprietär; **Stable Diffusions** Gewichte stehen unter der CreativeML-OpenRAIL-M-Lizenz (Nutzungsbeschränkungen, nicht OSI-anerkannt — dieselbe Konstellation wie StyleGAN auf der [Deep-Learning-Seite](produktionsreife-deep-learning-anwendungen-generationen-2026-topliste.md)). Was besteht, ist die **Bibliotheksschicht**: Hugging Face `transformers` (Apache-2.0, 2019, bereits als Generation-2-Treffer gezählt) und `diffusers` (Apache-2.0, 2022, ~4 Jahre — Grenzfall an der Reifezeit). Vollständige Begründung auf der [Generative-KI-Anwendungen-Deep-Dive-Seite](produktionsreife-generative-ki-anwendungen-generationen-2026-topliste.md).
 
 ### Generation 5 — RAG & werkzeugnutzende Anwendungen (ab ca. 2023)
 

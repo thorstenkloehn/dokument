@@ -80,6 +80,7 @@ graph TD
 
 - [Startseite](../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Generativer KI-Anwendungen](evolution-digitaler-generative-ki-anwendungen.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife generative KI-Anwendungen nach Generation (Top 1)](produktionsreife-generative-ki-anwendungen-generationen-2026-topliste.md) — dieselben 20 Systeme durch das konservative Fünf-Filter-Sieb; nur Hugging Face `transformers` besteht, alle Produkte und Foundation-Modelle fallen an Lizenz oder Reifezeit
 - [Beste KI-Anwendungen 2026 (Top 20)](ki-anwendungen-2026-topliste.md) — Gesamtmarkt-Topliste über alle sechs KI-Generationen hinweg
 - [Multi-LLM- & Sprachmodell-Anbieter im Vergleich](coding/llm-anbieter-vergleich.md) — aktuelle Modelle und Anbieter im Detail
 - [Custom Chat-Assistenten im Anbieter-Vergleich](coding/custom-chat-assistenten-anbieter-vergleich.md) — Vertiefung zu Rang 15–16

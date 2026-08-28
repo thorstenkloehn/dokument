@@ -122,6 +122,7 @@ Offene Modellgewichte machen es möglich, Foundation-Modelle vollständig **ohne
 
 - [Evolution und Architekturen digitaler KI-Modell-Generatoren](evolution-digitaler-ki-modell-generatoren.md) — Architekturlinie der Modell-Generatoren (VAE, GAN, Diffusion), auf denen diese Produktgeneration aufbaut
 - [Beste generative KI-Anwendungen 2026 (Top 20)](generative-ki-anwendungen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife generative KI-Anwendungen nach Generation (Top 1)](produktionsreife-generative-ki-anwendungen-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; nur die Bibliotheksschicht (Hugging Face `transformers`) besteht, kein Produkt der Generationen 2–6 — Llama fällt an der nicht-OSI-Community-Lizenz
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, Generation 4 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](evolution-digitaler-deep-learning-anwendungen.md) — Vorgänger-Architekturen, aus denen der Transformer hervorging
 - [Evolution und Architekturen digitaler Cloud-KI-APIs](evolution-digitaler-cloud-ki-apis.md) — Vorgänger-Generation, die von Foundation-Model-APIs abgelöst wurde

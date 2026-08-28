@@ -69,6 +69,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Notebook-Vorläufer](evolution-digitaler-notebook-vorlaeufer.md) — chronologisches Generationenmodell, dessen historischen Einfluss diese Topliste zusammenfasst
+- [Produktionsreife Notebook-Vorläufer nach Generation (Top 1)](produktionsreife-notebook-vorlaeufer-generationen-2026-topliste.md) — dieselben zehn Systeme durch das konservative Fünf-Filter-Sieb; nur Org-mode/Babel besteht, WEB/CWEB/noweb scheitern an der aktiven Betreiberbasis
 - [Beste Notebook-Systeme 2026 (Top 20)](notebook-systeme-2026-topliste.md) — Gesamtmarkt-Topliste der tatsächlich aktiven Nachfolgesysteme
 - [Beste IPython- & Jupyter-Systeme 2026 (Top 20)](ipython-jupyter-2026-topliste.md) — direkte Fortsetzung von Rang 6–7 dieser Liste
 - [Beste R-Markdown- & Quarto-Werkzeuge 2026 (Top 15)](rmarkdown-quarto-2026-topliste.md) — direkte Fortsetzung von Rang 5 dieser Liste
