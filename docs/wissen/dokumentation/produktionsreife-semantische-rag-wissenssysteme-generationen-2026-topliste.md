@@ -141,4 +141,5 @@ Nicht auf dieser Achse: **Milvus** im Cluster-Modus (`etcd`-Abhängigkeit), **Pi
 - [Wissensdatenbanken mit KI & semantischer Suche](wissensdatenbanken-ki-semantische-suche.md) — die technischen Mechanismen (Chunking, Embeddings, Pipeline) hinter diesem Modell
 - [Produktionsreife Open-Source-RAG- & Werkzeug-Anwendungen nach Generation](../../künstliche-intelligenz/produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md) — die Anwendungsschicht auf dieser Infrastruktur; dort kein Treffer
 - [Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12)](produktionsreife-wissenssysteme-generationen-2026-topliste.md) — die übergeordnete Wissenssysteme-Variante
+- [Produktionsreife Open-Source-Notebook-Systeme nach Generation (Top 4)](produktionsreife-notebook-systeme-generationen-2026-topliste.md) — Schwesterseite mit demselben Sieb für interaktive Notebooks
 - [PostgreSQL + pgvector](../daten/datenbanken/pgvector-anleitung.md) — Vektorsuche in der bestehenden relationalen Datenbank
