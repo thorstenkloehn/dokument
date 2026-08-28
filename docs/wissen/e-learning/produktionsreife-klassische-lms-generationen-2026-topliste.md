@@ -100,6 +100,7 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Beste klassische LMS 2026 (Top 15)](klassische-lms-2026-topliste.md) — breiteste Basis-Topliste inklusive proprietärer und historischer Systeme
 - [Produktionsreife Open-Source-LMS nach Generation (Top 2 + Grenzfälle)](produktionsreife-lms-generationen-2026-topliste.md) — allgemeine Schwesterseite über alle fünf LMS-Generationen; dort kommt Canvas LMS als Generation-2-Treffer hinzu
 - [Produktionsreife Cloud-LMS & LXP nach Generation (Top 1)](produktionsreife-cloud-lms-generationen-2026-topliste.md) — Schwesterseite für die nachfolgende, Cloud-native Generation; dort ist Canvas LMS der einzige Treffer
+- [Produktionsreife Rust-Bausteine für LMS nach Generation (Top 2)](produktionsreife-rust-lms-generationen-2026-topliste.md) — Schwesterseite für die quer liegende Rust-Implementierungsachse
 - [Evolution und Architekturen von Moodle](../dokumentation/moodle/evolution-digitaler-moodle.md) — vertiefend zum einzigen Treffer
 - [Moodle installieren (Git, PostgreSQL, Nginx)](../dokumentation/moodle/installieren.md) — Installation auf dem Speicherfilter-Backend
 - [Produktionsreife Open-Source-CMS nach Generation (Top 12)](../dokumentation/produktionsreife-cms-generationen-2026-topliste.md) — Schwesterseite mit demselben Fünf-Filter-Sieb

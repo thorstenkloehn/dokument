@@ -133,3 +133,4 @@ Da das Framework nichts vorschreibt, ist die Speicherfrage eine reine Crate-Wahl
 - [Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12)](../../wissen/dokumentation/produktionsreife-wissenssysteme-generationen-2026-topliste.md) — Schwester-Topliste mit demselben Fünf-Filter-Sieb
 - [Produktionsreife Open-Source-CMS nach Generation (Top 12)](../../wissen/dokumentation/produktionsreife-cms-generationen-2026-topliste.md) — dasselbe Sieb für Content-Management-Systeme
 - [Produktionsreife Open-Source-LMS nach Generation](../../wissen/e-learning/produktionsreife-lms-generationen-2026-topliste.md) — dasselbe Sieb für Lernmanagement-Systeme
+- [Produktionsreife Rust-Bausteine für LMS nach Generation (Top 2)](../../wissen/e-learning/produktionsreife-rust-lms-generationen-2026-topliste.md) — die e-learning-Parallele dieser Seite; dort besteht kein domäneneigener Baustein, nur Firecracker und Wasmtime

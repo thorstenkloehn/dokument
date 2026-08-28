@@ -68,6 +68,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Rust-LMS](evolution-digitaler-rust-lms.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Rust-Bausteine für LMS nach Generation (Top 2)](produktionsreife-rust-lms-generationen-2026-topliste.md) — dieselbe Bauteil-Ebene durch das konservative Fünf-Filter-Sieb; nur Firecracker und Wasmtime bestehen, beide domänenfremd
 - [Beste Lernmanagement-Systeme 2026 (Top 20)](lms-2026-topliste.md) — Produktebene, zu der diese Bausteine unsichtbar beitragen
 - [Beste Rust-Bausteine für CMS 2026 (Top 15)](../dokumentation/rust-cms-2026-topliste.md) — Wasmtime dort im Composable-Commerce-Kontext, analoge Topliste derselben Bauteil-Ebene für CMS
 - [Beste Rust-Bausteine für Wissenssysteme 2026 (Top 20)](../dokumentation/rust-wissenssysteme-2026-topliste.md) — Candle als geteilter Baustein, analoge Topliste derselben Bauteil-Ebene für Wissenssysteme

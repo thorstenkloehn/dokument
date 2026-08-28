@@ -136,6 +136,7 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Beste klassische LMS 2026 (Top 15)](klassische-lms-2026-topliste.md) — Fokus auf Generation 1
 - [Produktionsreife klassische Open-Source-LMS nach Generation (Top 1)](produktionsreife-klassische-lms-generationen-2026-topliste.md) — dasselbe Sieb nur für die klassische Linie, nach deren feinerem 1a/1b/1c-Modell; Ergebnis: nur Moodle
 - [Produktionsreife Cloud-LMS & LXP nach Generation (Top 1)](produktionsreife-cloud-lms-generationen-2026-topliste.md) — dasselbe Sieb nur für die Cloud-native Linie, nach deren feinerem Sechs-Generationen-Modell; Ergebnis: nur Canvas LMS
+- [Produktionsreife Rust-Bausteine für LMS nach Generation (Top 2)](produktionsreife-rust-lms-generationen-2026-topliste.md) — dasselbe Sieb auf der Bauteil-Ebene der Rust-Implementierungsachse; Ergebnis: nur Firecracker und Wasmtime, beide domänenfremd
 - [Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12)](../dokumentation/produktionsreife-wissenssysteme-generationen-2026-topliste.md) — Schwester-Topliste mit demselben Fünf-Filter-Sieb für Wikis, PKM und RAG
 - [Produktionsreife Open-Source-CMS nach Generation (Top 12)](../dokumentation/produktionsreife-cms-generationen-2026-topliste.md) — Schwester-Topliste mit demselben Sieb für Content-Management-Systeme
 - [Produktionsreife Open-Source-Web-Frameworks & -Bibliotheken nach Generation](../../entwicklung/webentwicklung/produktionsreife-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb für Web-Frameworks
