@@ -74,6 +74,7 @@ graph TD
 
 - [Startseite](../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Deep-Learning-Anwendungen](evolution-digitaler-deep-learning-anwendungen.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Deep-Learning-Anwendungen nach Generation (Top 3)](produktionsreife-deep-learning-anwendungen-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb; übrig bleiben ResNet, YOLO und Transformer/BERT als quelloffene Architektur-Bausteine
 - [Beste KI-Anwendungen 2026 (Top 20)](ki-anwendungen-2026-topliste.md) — Gesamtmarkt-Topliste über alle sechs KI-Generationen hinweg
 - [Beste Cloud-KI-APIs 2026 (Top 15)](cloud-ki-apis-2026-topliste.md) — Folge-Generation, die diese Modelle hinter REST-APIs verfügbar macht
 - [Multimodale Vision-Pipelines](coding/multimodale-vision-pipelines.md) — praktische Umsetzung CNN-/Attention-basierter Bildverarbeitung

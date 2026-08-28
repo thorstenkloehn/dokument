@@ -112,4 +112,5 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../entwicklung
 - [Produktionsreife Rust-Web-Frameworks nach Generation](../entwicklung/webentwicklung/produktionsreife-rust-webframeworks-generationen-2026-topliste.md) — dort ist Rig als Generation-6-KI-Backend eingeordnet
 - [Produktionsreife autonome KI-Agenten nach Generation (kein Treffer)](produktionsreife-autonome-ki-agenten-generationen-2026-topliste.md) — die Anwendungsebene über rmcp/Rig, dieselbe „zu jung + proprietär"-Struktur
 - [Produktionsreife RAG- & Werkzeug-Anwendungen nach Generation](produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md) — die Datenbankschicht (pgvector) über diesen Bausteinen
+- [Produktionsreife Deep-Learning-Anwendungen nach Generation (Top 3)](produktionsreife-deep-learning-anwendungen-generationen-2026-topliste.md) — die vorausgehende Modell-Ära; dort besteht Hugging Face `transformers` als Transformer-/BERT-Baustein
 - [PostgreSQL DBA Praxis-Handbuch](../entwicklung/infrastruktur/postgresql-dba-praxis.md) — Datenbankschicht der KI-Anwendung über den Bausteinen

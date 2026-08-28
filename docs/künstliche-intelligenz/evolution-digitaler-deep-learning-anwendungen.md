@@ -126,6 +126,7 @@ Der entscheidende Architekturbruch, der Generation 2 dieser Zeitachse ablöst: S
 ## Verwandte Themen
 
 - [Beste Deep-Learning-Anwendungen 2026 (Top 15)](deep-learning-anwendungen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Deep-Learning-Anwendungen nach Generation (Top 3)](produktionsreife-deep-learning-anwendungen-generationen-2026-topliste.md) — dieses Generationenmodell durch das konservative Fünf-Filter-Sieb; die Produkte (Siri, Alexa, GNMT) fallen an Lizenz oder Kontinuität, aber die Architekturen bestehen als Bausteine: ResNet (torchvision), YOLO (Ultralytics), Transformer/BERT (transformers)
 - [Evolution und Architekturen digitaler KI-Anwendungen](evolution-digitaler-ki-anwendungen.md) — übergeordnetes Generationenmodell, Generation 2 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler Expertensysteme](evolution-digitaler-expertensysteme.md) — vertiefendes Generationenmodell für Generation 1 der KI-Anwendungen
 - [Multimodale Vision-Pipelines](coding/multimodale-vision-pipelines.md) — praktische Umsetzung CNN-/Attention-basierter Bildverarbeitung
