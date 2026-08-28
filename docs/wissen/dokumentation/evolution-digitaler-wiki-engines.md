@@ -136,6 +136,7 @@ Neben dem chronologischen/technologischen Generationenmodell lassen sich Wiki-En
 ## Verwandte Themen
 
 - [Beste Wiki-Engines 2026 (Top 20)](wiki-engines-2026-topliste.md) — aktuelle Top-20-Topliste, die diese Chronologie in eine Momentaufnahme 2026 übersetzt
+- [Produktionsreife Open-Source-Wiki-Engines nach Generation (Top 11)](produktionsreife-wiki-engines-generationen-2026-topliste.md) — dieselbe Chronologie durch ein striktes Fünf-Filter-Sieb (Reifegrad, Betreiberbasis, Skala, Speicherbackend)
 - [Evolution und Architekturen digitaler Wissenssysteme](evolution-digitaler-wissenssysteme.md) — übergeordnetes Generationenmodell, Generation 1 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen von MediaWiki](mediawiki/evolution-digitaler-mediawiki.md) — vertiefende Produkt-Geschichte zu Generation 1b dieses Artikels
 - [Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren](evolution-digitaler-pkm-wissensgraphen.md) — persönliche statt kollaborative Notiz-Software als Schwester-Zeitachse
