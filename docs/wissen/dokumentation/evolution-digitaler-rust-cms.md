@@ -112,6 +112,7 @@ Neben dem chronologischen Generationenmodell lassen sich diese Rust-Bausteine na
 ## Verwandte Themen
 
 - [Beste Rust-Bausteine für CMS 2026 (Top 15)](rust-cms-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Rust-Bausteine für CMS nach Generation (Top 2)](produktionsreife-rust-cms-generationen-2026-topliste.md) — dasselbe Modell durch das konservative Fünf-Filter-Sieb; nur SWC und Wasmtime bestehen, beide geteilte Infrastruktur, plus Markdown-Parser als Grenzfall
 - [Evolution und Architekturen digitaler Content-Management-Systeme](evolution-digitaler-cms.md) — übergeordnetes Generationenmodell, das diese Rust-Implementierungsachse quer durchzieht
 - [Evolution und Architekturen digitaler Rust-KI-Anwendungen](../../künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md) — analoge Rust-Implementierungsachse für KI-Anwendungen
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — Zola als geteilter Baustein, analoge Rust-Implementierungsachse für Wissenssysteme

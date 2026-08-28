@@ -75,6 +75,7 @@ graph TD
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Rust-CMS](evolution-digitaler-rust-cms.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
 - [Rust-Bausteine für CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 12)](rust-cms-postgresql-dateiformat-2026-topliste.md) — dieselbe Kategorie, strenger gefiltert nach Lizenz, Speicherbackend und Entwicklungsaktivität
+- [Produktionsreife Rust-Bausteine für CMS nach Generation (Top 2)](produktionsreife-rust-cms-generationen-2026-topliste.md) — härtestes Sieb der drei: zusätzlich fünf Jahre Produktion und sehr große Betriebs-Skala; übrig bleiben nur SWC und Wasmtime
 - [Beste Rust-Bausteine für Wissenssysteme 2026 (Top 20)](rust-wissenssysteme-2026-topliste.md) — Zola als geteilter Baustein, analoge Topliste derselben Bauteil-Ebene für Wissenssysteme
 - [Beste Headless-CMS 2026 (Top 20)](headless-cms-2026-topliste.md) — SWC/Lightning CSS dort im Produktkontext der Next.js-/Parcel-basierten Frontends
 - [Beste Composable-CMS & MACH-Systeme 2026 (Top 20)](composable-cms-2026-topliste.md) — Wasmtime/Shopify Functions/Fastly Compute dort im DXP-Produktkontext

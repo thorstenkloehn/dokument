@@ -116,5 +116,8 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Produktionsreife interoperable LMS-Bausteine nach Generation (kein Treffer)](produktionsreife-interoperable-lms-generationen-2026-topliste.md) — Schwesterseite der Interoperabilitäts-Linie
 - [Produktionsreife KI-adaptive Lernplattformen nach Generation (kein Treffer)](produktionsreife-ki-adaptive-lernplattformen-generationen-2026-topliste.md) — Schwesterseite der KI-adaptiven Linie
 - [Produktionsreife agentische Tutor-Ökosysteme nach Generation (kein Treffer)](produktionsreife-agentische-tutor-oekosysteme-generationen-2026-topliste.md) — Schwesterseite der agentischen Linie
+- [Produktionsreife Rust-Bausteine für CMS nach Generation (Top 2)](../dokumentation/produktionsreife-rust-cms-generationen-2026-topliste.md) — dieselbe Beobachtung für CMS: die reife Rust-Schicht ist geteilte Infrastruktur (SWC, Wasmtime)
+- [Produktionsreife Rust-Bausteine für Wissenssysteme nach Generation (Top 3)](../dokumentation/produktionsreife-rust-wissenssysteme-generationen-2026-topliste.md) — dieselbe Beobachtung für Wissenssysteme (Tantivy, Tokio, mdBook)
+- [Produktionsreife Rust-Bausteine für Notebooks nach Generation (Top 4)](../dokumentation/produktionsreife-rust-notebooks-generationen-2026-topliste.md) — dieselbe Beobachtung für Notebooks (Rust-Python-Datenpipeline)
 - [Produktionsreife Interpreter-Werkzeuge nach Generation](../../entwicklung/system/produktionsreife-interpreter-werkzeuge-generationen-2026-topliste.md) — dieselbe Beobachtung: bei Werkzeug-Bausteinen ist der Speicherfilter strukturell bedeutungslos
 - [PostgreSQL DBA Praxis-Handbuch](../../entwicklung/infrastruktur/postgresql-dba-praxis.md) — Datenbankschicht des LMS über den Bausteinen

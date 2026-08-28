@@ -73,6 +73,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Beste Rust-Bausteine für CMS 2026 (Top 15)](rust-cms-2026-topliste.md) — Basis-Topliste ohne Lizenz-/Speicherbackend-/Aktivitätsfilter
+- [Produktionsreife Rust-Bausteine für CMS nach Generation (Top 2)](produktionsreife-rust-cms-generationen-2026-topliste.md) — noch strenger: zusätzlich fünf Jahre Produktion und sehr große Betriebs-Skala, nach Generation sortiert
 - [Rust-Bausteine für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)](rust-wissenssysteme-postgresql-dateiformat-2026-topliste.md) — Zola als geteilter Baustein, analoge Topliste für Wissenssysteme
 - [Headless-CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 9)](headless-cms-postgresql-dateiformat-2026-topliste.md) — SWC/Lightning CSS dort im Produktkontext der Next.js-Frontends
 - [Static-Site-Generatoren mit PostgreSQL-/Dateiformat-Speicherung](static-site-generatoren-postgresql-dateiformat-2026-topliste.md) — Zola dort im generatorübergreifenden Vergleich
