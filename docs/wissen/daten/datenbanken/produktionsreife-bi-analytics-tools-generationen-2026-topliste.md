@@ -106,5 +106,6 @@ Fazit: Alle drei Treffer bestehen den Speicherfilter mühelos. Die Kategorie sch
 - [Beste Vektordatenbanken 2026 (Top 15)](vektordatenbanken-2026-topliste.md) — verwandte Datenbank-Vertiefung im selben Bereich
 - [Produktionsreife Open-Source-Vektordatenbanken nach Generation (Top 5)](produktionsreife-vektordatenbanken-generationen-2026-topliste.md) — Schwesterseite mit demselben Fünf-Filter-Sieb
 - [Produktionsreife relationale Datenbanken nach Generation (Top 4)](produktionsreife-relationale-datenbanken-generationen-2026-topliste.md) — PostgreSQL/SQLite bestehen dort das Sieb; sie sind das Metadaten-Backend von Metabase und Superset
+- [Produktionsreife Open-Source-Dokumentdatenbanken nach Generation (Top 2)](produktionsreife-dokumentdatenbanken-generationen-2026-topliste.md) — Schwesterseite im selben Datenbereich; dieselbe Lizenz-Achse siebt
 - [Produktionsreife Open-Source-Editoren nach Generation (Top 3)](../../../entwicklung/system/produktionsreife-editoren-generationen-2026-topliste.md) — dasselbe Muster: die Lizenz-Achse siebt, nicht der Speicher
 - [Datenbanken & Big Data: Übersicht für KI-Anwendungen](index.md)
