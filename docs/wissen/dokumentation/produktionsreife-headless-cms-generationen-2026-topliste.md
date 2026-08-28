@@ -119,6 +119,7 @@ Die drei Treffer dieser Liste spiegeln exakt den Umschlagpunkt der [CMS-Generati
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Headless-CMS](evolution-digitaler-headless-cms.md) — das sechsstufige Generationenmodell, nach dem diese Liste sortiert ist
 - [Produktionsreife Open-Source-CMS nach Generation (Top 12)](produktionsreife-cms-generationen-2026-topliste.md) — die Schwester-Topliste mit demselben Sieb für die gesamte CMS-Klasse; Strapi, Grav und Drupal erscheinen dort ebenfalls
+- [Produktionsreife klassische Open-Source-CMS nach Generation (Top 3)](produktionsreife-klassische-cms-generationen-2026-topliste.md) — Schwesterseite für die vorausgehende, monolithische Generation; dort fällt die gesamte WordPress-Linie am selben MySQL-Speicherfilter
 - [Produktionsreife Open-Source-Static-Site-Generatoren nach Generation (Top 8)](produktionsreife-static-site-generatoren-generationen-2026-topliste.md) — die Systeme, deren Content-Skala Decap CMS/Tina CMS tatsächlich tragen
 - [Beste Headless-CMS 2026 (Top 20)](headless-cms-2026-topliste.md) — breiteste Basis-Topliste nach Marktführerschaft
 - [Headless-CMS mit PostgreSQL- oder Dateiformat-Speicherung (Top 9)](headless-cms-postgresql-dateiformat-2026-topliste.md) — derselbe Speicher-/Lizenzfilter, nach Rang statt nach Generation und ohne den Content-Skala-Filter

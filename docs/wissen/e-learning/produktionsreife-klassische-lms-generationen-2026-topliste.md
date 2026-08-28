@@ -107,4 +107,5 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Evolution und Architekturen von Moodle](../dokumentation/moodle/evolution-digitaler-moodle.md) — vertiefend zum einzigen Treffer
 - [Moodle installieren (Git, PostgreSQL, Nginx)](../dokumentation/moodle/installieren.md) — Installation auf dem Speicherfilter-Backend
 - [Produktionsreife Open-Source-CMS nach Generation (Top 12)](../dokumentation/produktionsreife-cms-generationen-2026-topliste.md) — Schwesterseite mit demselben Fünf-Filter-Sieb
+- [Produktionsreife klassische Open-Source-CMS nach Generation (Top 3)](../dokumentation/produktionsreife-klassische-cms-generationen-2026-topliste.md) — dieselbe strukturelle Aussage für CMS: das Massenmarkt-System (WordPress) ist an MySQL gebunden, nur die Enterprise-Hälfte (Drupal, TYPO3, Liferay) besteht
 - [PostgreSQL DBA Praxis-Handbuch](../../entwicklung/infrastruktur/postgresql-dba-praxis.md) — Datenbankschicht hinter dem Treffer
