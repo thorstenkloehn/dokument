@@ -82,6 +82,7 @@ graph TD
 - [Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme](evolution-digitaler-wissenssystem-frameworks.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
 - [Frameworks & Bibliotheken für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 16)](wissenssystem-frameworks-postgresql-dateiformat-2026-topliste.md) — dieselbe Kategorie, strenger gefiltert nach Lizenz, Speicherbackend und Entwicklungsaktivität
 - [Beste semantische & RAG-Wissenssysteme 2026 (Top 20)](semantische-rag-wissenssysteme-2026-topliste.md) — Schwester-Topliste, dort Haystack/txtai/Neo4j als RAG-/Graph-Stack-Baustein statt eigenständige Entwickler-Bibliothek
+- [Produktionsreife Open-Source-Frameworks & -Bibliotheken für Wissenssysteme nach Generation (Top 8)](produktionsreife-wissenssystem-frameworks-generationen-2026-topliste.md) — dieselben Kriterien plus Skala- und Reifegrad-Filter, sortiert nach Generation
 - [Die führenden Open-Source-Wissenssysteme 2026 (Top 20)](fuehrende-opensource-wissenssysteme-2026-topliste.md) — Produktebene, die auf vielen Bausteinen dieser Liste aufbaut
 - [Evolution und Architekturen digitaler Rust-Wissenssysteme](evolution-digitaler-rust-wissenssysteme.md) — Rust-spezifische Teilmenge derselben Bauteil-Schicht (Tantivy, ftml, yrs, Candle)
 - [Pandoc installieren & nutzen](../tools/pandoc.md) und [Pandoc-Export-Pipeline](../tools/pandoc-export-pipeline.md) — praktische Anleitung zu Rang 1

@@ -137,6 +137,7 @@ Nicht auf dieser Achse: **Milvus** im Cluster-Modus (`etcd`-Abhängigkeit), **Pi
 
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](evolution-digitaler-semantische-rag-wissenssysteme.md) — das sechsstufige Generationenmodell, nach dem diese Liste sortiert ist
 - [Beste semantische & RAG-Wissenssysteme 2026 (Top 20)](semantische-rag-wissenssysteme-2026-topliste.md) — breiteste Basis-Topliste
+- [Produktionsreife Open-Source-Frameworks & -Bibliotheken für Wissenssysteme nach Generation (Top 8)](produktionsreife-wissenssystem-frameworks-generationen-2026-topliste.md) — Bauteil-Ebene statt Endprodukt; Haystack und Sentence-Transformers erscheinen bewusst auf beiden Seiten
 - [Semantische & RAG-Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)](semantische-rag-wissenssysteme-postgresql-dateiformat-2026-topliste.md) — derselbe Speicherfilter, nach Rang statt nach Generation
 - [Wissensdatenbanken mit KI & semantischer Suche](wissensdatenbanken-ki-semantische-suche.md) — die technischen Mechanismen (Chunking, Embeddings, Pipeline) hinter diesem Modell
 - [Produktionsreife Open-Source-RAG- & Werkzeug-Anwendungen nach Generation](../../künstliche-intelligenz/produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md) — die Anwendungsschicht auf dieser Infrastruktur; dort kein Treffer
