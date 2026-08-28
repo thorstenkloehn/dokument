@@ -122,3 +122,4 @@ Notebook-Systeme sind die **klarste „dateibasiert"-Kategorie** der ganzen Fami
 - [IPython- & Jupyter-Systeme mit PostgreSQL-/Dateiformat-Speicherung (Top 20)](ipython-jupyter-postgresql-dateiformat-2026-topliste.md) — der Speicherfilter, nach Rang statt nach Generation
 - [Produktionsreife Open-Source-semantische & RAG-Wissenssysteme nach Generation](produktionsreife-semantische-rag-wissenssysteme-generationen-2026-topliste.md) — Schwesterseite mit demselben Sieb
 - [Produktionsreife Open-Source-Static-Site-Generatoren nach Generation (Top 8)](produktionsreife-static-site-generatoren-generationen-2026-topliste.md) — die andere dateibasierte Kategorie; der Speicherfilter ist dort noch bedeutungsloser
+- [Produktionsreife Open-Source-Cloud-Notebooks nach Generation (Top 1)](produktionsreife-cloud-notebooks-generationen-2026-topliste.md) — Schwesterseite zu Generation 3; nur Binder/BinderHub besteht, gebaut auf JupyterHub aus Generation 2 dieser Liste
