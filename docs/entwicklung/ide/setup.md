@@ -96,7 +96,7 @@ dotnet tool install -g Microsoft.Web.LibraryManager.Cli
 echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc
 source ~/.bashrc
 code --install-extension ms-dotnettools.csdevkit
-dotnet workload update
+
 ```
 
 ---
