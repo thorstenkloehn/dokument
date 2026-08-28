@@ -125,6 +125,7 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Beste Rust-Bausteine für CMS 2026 (Top 15)](rust-cms-2026-topliste.md) — breitere Basis-Topliste inklusive junger und punktueller Bausteine
 - [Rust-Bausteine für CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 12)](rust-cms-postgresql-dateiformat-2026-topliste.md) — mittlere Filterstufe: Lizenz, Speicher, Aktivität, aber ohne die Fünf-Jahres-/Skala-Härte dieser Seite
 - [Produktionsreife Rust-Bausteine für LMS nach Generation (Top 2)](../e-learning/produktionsreife-rust-lms-generationen-2026-topliste.md) — dieselbe Beobachtung für LMS: die reife Rust-Schicht ist geteilte Infrastruktur (Firecracker, Wasmtime)
+- [Produktionsreife Rust-Bausteine für KI-Anwendungen nach Generation (Top 1)](../../künstliche-intelligenz/produktionsreife-rust-ki-anwendungen-generationen-2026-topliste.md) — jüngste Achse der Familie: nur Hugging Face `tokenizers` besteht
 - [Produktionsreife Rust-Web-Frameworks nach Generation](../../entwicklung/webentwicklung/produktionsreife-rust-webframeworks-generationen-2026-topliste.md) — Schwesterseite; dort besteht mit Actix-web ein domäneneigenes Framework
 - [Produktionsreife Rust-Bausteine für Wissenssysteme nach Generation](produktionsreife-rust-wissenssysteme-generationen-2026-topliste.md) — dieselbe Bauteil-Ebene für Wissenssysteme
 - [Produktionsreife Open-Source-Headless-CMS nach Generation (Top 3)](produktionsreife-headless-cms-generationen-2026-topliste.md) — die Produktebene über SWC/Lightning CSS
