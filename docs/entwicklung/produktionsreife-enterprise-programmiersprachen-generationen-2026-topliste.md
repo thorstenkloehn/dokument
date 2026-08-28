@@ -139,5 +139,6 @@ Der Speicherfilter der übrigen Familie hat für eine Sprache keine Entsprechung
 - [Beste Programmiersprachen für Enterprise-Software (Top 10)](enterprise-programmiersprachen-topliste.md) — breitere Basis-Topliste nach heutiger Relevanz, inklusive PL/I und RPG
 - [Produktionsreife Programmiersprachen nach Generation (Top 9)](produktionsreife-programmiersprachen-generationen-2026-topliste.md) — allgemeine Schwesterseite nach Paradigmen-Generationen; erklärt die Standardisierungs-Achse ausführlich
 - [Produktionsreife Sprachen der Programmierparadigmen nach Generation](produktionsreife-programmierparadigmen-sprachen-generationen-2026-topliste.md) — dasselbe Sieb aus Paradigmen-Sicht
+- [Produktionsreife Programmiersprachen für Wissenssysteme nach Generation (Top 7)](../wissen/dokumentation/produktionsreife-wissenssystem-programmiersprachen-generationen-2026-topliste.md) — die dritte Domänen-Vertiefung der Sprach-Achse (Wiki/PKM/Docs statt Geschäftssoftware)
 - [Produktionsreife Monolith-Web-Frameworks nach Generation](webentwicklung/produktionsreife-monolith-frameworks-generationen-2026-topliste.md) — dieselbe „reifste Kategorie"-Beobachtung; Spring (Java) und ASP.NET (C#) dort im Framework-Kontext
 - [C++ Praxis-Handbuch](system/cpp-praxis.md) · [Rust Praxis-Handbuch](system/rust-praxis.md) — Vertiefungen zu Rang 2 und 8
