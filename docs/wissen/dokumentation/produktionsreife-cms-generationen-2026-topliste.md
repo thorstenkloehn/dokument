@@ -173,6 +173,7 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Produktionsreife Open-Source-Web-Frameworks & -Bibliotheken nach Generation](../../entwicklung/webentwicklung/produktionsreife-webframeworks-generationen-2026-topliste.md) — dasselbe Sieb für Web-Frameworks, die den Unterbau vieler Headless- und Composable-CMS bilden
 - [Klassische CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 7)](klassische-cms-postgresql-dateiformat-2026-topliste.md) — derselbe Speicherfilter, nach Rang statt nach Generation und ohne den Content-Skala-Filter
 - [Headless-CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 9)](headless-cms-postgresql-dateiformat-2026-topliste.md) — dieselben Speicherkriterien für die API-first-Kategorie
+- [Produktionsreife Open-Source-Headless-CMS nach Generation (Top 3)](produktionsreife-headless-cms-generationen-2026-topliste.md) — dieselbe Kategorie mit dem feineren, sechsstufigen Headless-Generationenmodell statt der groben Generation-2-Zusammenfassung hier
 - [Beste klassische CMS 2026 (Top 20)](klassische-cms-2026-topliste.md) — breiteste Basis-Topliste nach Marktführerschaft
 - [Beste Headless-CMS 2026 (Top 20)](headless-cms-2026-topliste.md) — Basis-Topliste der API-first-Kategorie
 - [Evolution und Architekturen digitaler klassischer CMS](evolution-digitaler-klassische-cms.md) — vertiefendes Generationenmodell speziell für Generation 1
