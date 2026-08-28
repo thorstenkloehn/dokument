@@ -105,6 +105,7 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Beste Cloud-LMS & LXP 2026 (Top 20)](cloud-lms-2026-topliste.md) — breiteste Basis-Topliste inklusive proprietärer SaaS-Plattformen
 - [Produktionsreife Open-Source-LMS nach Generation (Top 2 + Grenzfälle)](produktionsreife-lms-generationen-2026-topliste.md) — allgemeine Schwesterseite über alle fünf LMS-Generationen; dort kommt Moodle als Generation-1b-Treffer hinzu
 - [Produktionsreife klassische Open-Source-LMS nach Generation (Top 1)](produktionsreife-klassische-lms-generationen-2026-topliste.md) — Schwesterseite für die vorausgehende, selbst gehostete Generation
+- [Produktionsreife Rust-Bausteine für LMS nach Generation (Top 2)](produktionsreife-rust-lms-generationen-2026-topliste.md) — Firecracker-basierte Coding-Sandboxes, die Canvas LMS und andere Cloud-Plattformen einbetten
 - [Produktionsreife Open-Source-Cloud-Notebooks nach Generation (Top 1)](../dokumentation/produktionsreife-cloud-notebooks-generationen-2026-topliste.md) — dieselbe strukturelle Aussage: eine Kategorie, die Rechen-/Betriebskapazität verkauft, bleibt fast vollständig proprietär
 - [Produktionsreife BI- & Analytics-Werkzeuge nach Generation (Top 3)](../daten/datenbanken/produktionsreife-bi-analytics-tools-generationen-2026-topliste.md) — Schwesterseite mit demselben Fünf-Filter-Sieb und derselben Lizenz-Dominanz-Beobachtung
 - [PostgreSQL DBA Praxis-Handbuch](../../entwicklung/infrastruktur/postgresql-dba-praxis.md) — Datenbankschicht hinter dem Treffer
