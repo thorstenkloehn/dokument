@@ -77,6 +77,7 @@ graph TD
 ## Verwandte Themen
 
 - [Evolution und Architekturen digitaler KI-Modell-Generatoren](evolution-digitaler-ki-modell-generatoren.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife KI-Modell-Generatoren nach Generation (kein Treffer)](produktionsreife-ki-modell-generatoren-generationen-2026-topliste.md) — dieselben 15 Systeme durch das konservative Fünf-Filter-Sieb; keiner besteht, weil die OSI-lizenzierte Werkzeugschicht noch keine fünf Jahre alt ist
 - [Beste generative KI-Anwendungen 2026 (Top 20)](generative-ki-anwendungen-2026-topliste.md) — Produkt-/Anwendungsebene, auf der viele dieser Modelle ausgeliefert werden
 - [Evolution und Architekturen digitaler Generativer KI-Anwendungen](evolution-digitaler-generative-ki-anwendungen.md) — übergeordnete Produktgeneration
 - [Multimodale Vision-Pipelines](coding/multimodale-vision-pipelines.md) — praktischer Einsatz von Rang 5–11 in eigenen Pipelines

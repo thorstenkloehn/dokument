@@ -85,6 +85,7 @@ graph TD
 ## Verwandte Themen
 
 - [Evolution und Architekturen digitaler KI-Evaluationswerkzeuge](evolution-digitaler-ki-evaluation.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife KI-Evaluationswerkzeuge nach Generation (Top 1)](produktionsreife-ki-evaluation-generationen-2026-topliste.md) — dieselben 15 Werkzeuge durch das konservative Fünf-Filter-Sieb; nur das lm-evaluation-harness besteht die Fünf-Jahres-Marke
 - [Beste Software 2026: Wissenssysteme, Evaluation & Generatoren (Top-20-Meta-Topliste)](../wissen/dokumentation/beste-software-wissenssysteme-evaluation-generatoren-2026-topliste.md) — führt diese Kategorie mit Wissenssystemen und Generatoren nach denselben Reife-/Aktivitäts-/Lizenzkriterien zusammen
 - [Beste KI-Modell-Generatoren 2026 (Top 15)](ki-modell-generatoren-2026-topliste.md) — Schwester-Topliste für die Generatoren-Seite derselben Meta-Topliste
 - [Beste autonome KI-Agenten 2026 (Top 20)](autonome-ki-agenten-2026-topliste.md) — Produktebene, deren Handlungssequenzen von Rang 7 (Inspect AI) evaluiert werden
