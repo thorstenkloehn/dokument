@@ -76,6 +76,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-Compiler-Werkzeuge nach Generation (Top 8)](produktionsreife-compiler-werkzeuge-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb (produktionsreif, jahrelang stabil, große Betreiberbasis, sehr große Skala, dateibasiert oder PostgreSQL)
 - [Compiler: Übersetzen von Hochsprachen zu Maschinencode](compiler.md) — praktische Vertiefung: Phasen, GCC/Clang/Rustc im Vergleich
 - [Beste Interpreter-Werkzeuge 2026 (Top 15)](interpreter-2026-topliste.md) — komplementäre Ausführungsstrategie
 - [Beste Debugger-Werkzeuge 2026 (Top 15)](debugger-2026-topliste.md) — DWARF-Debug-Symbole als geteilter Berührungspunkt

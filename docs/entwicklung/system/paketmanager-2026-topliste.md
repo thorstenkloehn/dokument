@@ -76,6 +76,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Paketmanager](evolution-digitaler-paketmanager.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-Paketmanager nach Generation (Top 13)](produktionsreife-paketmanager-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb; einzige Systemprogrammierungs-Kategorie mit lückenloser Generationsabdeckung inklusive Generation 6
 - [Beste Build-Systeme 2026 (Top 15)](build-systeme-2026-topliste.md) — verwandte, aber nicht deckungsgleiche Achse
 - [Beste Batteries-Included-Web-Frameworks 2026 (Top 15)](../webentwicklung/batteries-included-frameworks-2026-topliste.md) — Composer als Laravels Paketverwaltungs-Baustein
 - [Rust in der Praxis](rust-praxis.md) — Cargo als integrierter Build-/Paketmanager

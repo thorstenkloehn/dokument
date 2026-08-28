@@ -74,6 +74,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Interpreter](evolution-digitaler-interpreter.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-Interpreter-Werkzeuge nach Generation (Top 8)](produktionsreife-interpreter-werkzeuge-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb (produktionsreif, jahrelang stabil, große Betreiberbasis, sehr große Skala, dateibasiert oder PostgreSQL)
 - [Beste Compiler-Werkzeuge 2026 (Top 15)](compiler-2026-topliste.md) — komplementäre Ausführungsstrategie
 - [Shell & Bash Praxis-Handbuch](shell-bash-praxis.md) — Bash selbst als alltäglich genutzter Interpreter
 - [Beste Notebook-Systeme 2026 (Top 20)](../../wissen/dokumentation/notebook-systeme-2026-topliste.md) — ChatGPT Code Interpreter als Produktbeispiel aus Rang 7

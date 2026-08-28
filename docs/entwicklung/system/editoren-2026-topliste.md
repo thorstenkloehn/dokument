@@ -75,6 +75,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Editoren](evolution-digitaler-editoren.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-Editoren nach Generation (Top 3)](produktionsreife-editoren-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb; nur Vim/Neovim, Emacs und VS Code bestehen — Generation 3, 4 und 6 fallen an Lizenz oder Kontinuität
 - [Beste IDEs & Editoren mit Rust-Unterstützung (Top 20)](rust-ide-topliste.md) — Zed, Cursor und Windsurf im praktischen Rust-Vergleich
 - [Beste Compiler-Werkzeuge 2026 (Top 15)](compiler-2026-topliste.md) — LSP als Fundament der hier gerankten Generation 5
 - [Beste Debugger-Werkzeuge 2026 (Top 15)](debugger-2026-topliste.md) — DAP als Debugger-Pendant zu Generation 5 dieser Liste
