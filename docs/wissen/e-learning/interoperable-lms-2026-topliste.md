@@ -70,6 +70,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler interoperabler LMS](evolution-digitaler-interoperable-lms.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife interoperable LMS-Bausteine nach Generation (kein Treffer)](produktionsreife-interoperable-lms-generationen-2026-topliste.md) — dieselbe Kategorie durch das konservative Fünf-Filter-Sieb; die Standards sind reif, aber keine betreibbaren Systeme, die reifen Implementierungen proprietär, Learning Locker MongoDB-gebunden
 - [Beste Lernmanagement-Systeme 2026 (Top 20)](lms-2026-topliste.md) — Gesamtmarkt-Topliste über alle fünf LMS-Generationen hinweg
 - [Beste Cloud-LMS & LXP 2026 (Top 20)](cloud-lms-2026-topliste.md) — vorausgehende Generation
 - [Beste KI-adaptive Lernplattformen 2026 (Top 15)](ki-adaptive-lernplattformen-2026-topliste.md) — nachfolgende Generation

@@ -76,6 +76,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme](evolution-digitaler-agentische-tutor-oekosysteme.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife agentische Tutor-Ökosysteme nach Generation (kein Treffer)](produktionsreife-agentische-tutor-oekosysteme-generationen-2026-topliste.md) — dieselbe Kategorie durch das konservative Fünf-Filter-Sieb; kein domäneneigener, quelloffener, produktionsreifer Baustein — Praxis-Fazit: reifes LMS + etabliertes Agenten-Framework
 - [Beste Lernmanagement-Systeme 2026 (Top 20)](lms-2026-topliste.md) — Gesamtmarkt-Topliste über alle fünf LMS-Generationen hinweg
 - [Beste KI-adaptive Lernplattformen 2026 (Top 15)](ki-adaptive-lernplattformen-2026-topliste.md) — vorausgehende Generation
 - [Beste agentische Content-Ökosysteme 2026 (Top 20)](../dokumentation/agentische-content-oekosysteme-2026-topliste.md) — analoges Orchestrierungsprinzip für Content-Pflege statt individuelles Tutoring

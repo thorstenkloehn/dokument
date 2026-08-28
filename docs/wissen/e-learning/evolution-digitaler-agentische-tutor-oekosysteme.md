@@ -105,6 +105,7 @@ Die Ausblick-Generation: Lernstand erfassen, Aufgaben generieren, Code/Antworten
 ## Verwandte Themen
 
 - [Beste agentische Tutor-Ökosysteme 2026 (Top 15)](agentische-tutor-oekosysteme-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife agentische Tutor-Ökosysteme nach Generation (kein Treffer)](produktionsreife-agentische-tutor-oekosysteme-generationen-2026-topliste.md) — dasselbe Modell durch das konservative Fünf-Filter-Sieb; der klarste „kein Treffer" der Familie: Architektur erst seit 2023, Bildungsprodukte proprietär, quelloffene Bausteine (LangGraph, CrewAI, Mem0) domänenfremd und selbst zu jung
 - [Evolution und Architekturen digitaler Lernmanagement-Systeme](evolution-digitaler-lms.md) — übergeordnetes Generationenmodell, Generation 5 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler KI-adaptiver Lernplattformen](evolution-digitaler-ki-adaptive-lernplattformen.md) — vorausgehende Generation
 - [Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme](../dokumentation/evolution-digitaler-multiagenten-wissensoekosysteme.md) — analoges Orchestrierungsprinzip für Wissenspflege statt individuelles Tutoring
