@@ -117,6 +117,7 @@ Fazit für die meisten Projekte: Unter wenigen Millionen Vektoren ist **pgvector
 
 - [Evolution und Architekturen digitaler Vektordatenbanken](evolution-digitaler-vektordatenbanken.md) — das Generationenmodell, nach dem diese Liste sortiert ist
 - [Beste Vektordatenbanken 2026 (Top 15)](vektordatenbanken-2026-topliste.md) — breiteste Basis-Topliste inklusive Managed-Dienste
+- [Produktionsreife relationale Datenbanken nach Generation (Top 4)](produktionsreife-relationale-datenbanken-generationen-2026-topliste.md) — dieselbe Umdeutung des Speicherfilters (Pflicht-Unterbau des Systems selbst); pgvector besteht dort als Generation-6-Erweiterung von PostgreSQL
 - [PostgreSQL + pgvector: Praktische Anleitung](pgvector-anleitung.md) — Installation und Beispiel-Queries für den Speicherfilter-Sieger
 - [Produktionsreife Open-Source-semantische & RAG-Wissenssysteme nach Generation (Top 7)](../../dokumentation/produktionsreife-semantische-rag-wissenssysteme-generationen-2026-topliste.md) — Schwesterseite; Faiss, Weaviate und pgvector erscheinen dort ebenfalls
 - [Produktionsreife Open-Source-RAG- & Werkzeug-Anwendungen nach Generation](../../../künstliche-intelligenz/produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md) — die Anwendungsschicht, für die diese Datenbanken das Retrieval-Backend sind

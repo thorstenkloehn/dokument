@@ -382,6 +382,9 @@ nav:
       - Daten:
           - Datenbanken: wissen/daten/datenbanken/index.md
           - PostgreSQL + pgvector: wissen/daten/datenbanken/pgvector-anleitung.md
+          - "Evolution und Architekturen digitaler relationaler Datenbanken": wissen/daten/datenbanken/evolution-digitaler-relationale-datenbanken.md
+          - "Beste relationale Datenbanken 2026 (Top 15)": wissen/daten/datenbanken/relationale-datenbanken-2026-topliste.md
+          - "Produktionsreife relationale Datenbanken nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-relationale-datenbanken-generationen-2026-topliste.md
           - "Evolution und Architekturen digitaler Vektordatenbanken": wissen/daten/datenbanken/evolution-digitaler-vektordatenbanken.md
           - "Beste Vektordatenbanken 2026 (Top 15)": wissen/daten/datenbanken/vektordatenbanken-2026-topliste.md
           - "Produktionsreife Open-Source-Vektordatenbanken nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-vektordatenbanken-generationen-2026-topliste.md
