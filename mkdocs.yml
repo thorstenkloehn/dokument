@@ -180,10 +180,13 @@ nav:
   - Entwicklung:
       - Erste Schritte: entwicklung/erste-schritte.md
       - "Evolution und Architekturen digitaler Programmiersprachen": entwicklung/evolution-digitaler-programmiersprachen.md
+      - "Produktionsreife Programmiersprachen nach Generation (Reifegrad, Standardisierung & Betriebs-Skala)": entwicklung/produktionsreife-programmiersprachen-generationen-2026-topliste.md
       - "Evolution und Architekturen digitaler Programmierparadigmen": entwicklung/evolution-digitaler-programmierparadigmen.md
       - "Beste Sprachen zur Umsetzung der Programmierparadigmen (Top 10)": entwicklung/programmierparadigmen-sprachen-topliste.md
+      - "Produktionsreife Sprachen der Programmierparadigmen nach Generation (Reifegrad, Standardisierung & Betriebs-Skala)": entwicklung/produktionsreife-programmierparadigmen-sprachen-generationen-2026-topliste.md
       - "Evolution und Architekturen digitaler Enterprise-Programmiersprachen": entwicklung/evolution-digitaler-enterprise-programmiersprachen.md
       - "Beste Programmiersprachen für Enterprise-Software (Top 10)": entwicklung/enterprise-programmiersprachen-topliste.md
+      - "Produktionsreife Enterprise-Programmiersprachen nach Generation (Reifegrad, Standardisierung & Betriebs-Skala)": entwicklung/produktionsreife-enterprise-programmiersprachen-generationen-2026-topliste.md
 
       - Webentwicklung:
           - Übersicht: entwicklung/webentwicklung/index.md

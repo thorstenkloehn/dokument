@@ -71,6 +71,7 @@ graph TD
 
 - [Startseite](../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Enterprise-Programmiersprachen](evolution-digitaler-enterprise-programmiersprachen.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Enterprise-Programmiersprachen nach Generation (Top 8)](produktionsreife-enterprise-programmiersprachen-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb, nach Generation sortiert; PL/I und RPG fallen an der fehlenden offenen Implementierung
 - [Beste Programmiersprachen für moderne Wissenssysteme (Top 10)](../wissen/dokumentation/programmiersprachen-wissenssysteme-topliste.md) — analoges Sprachranking für Wikis/PKM/Docs statt allgemeiner Enterprise-Software
 - [Rust in der Praxis](system/rust-praxis.md) — Vertiefung zu Rang 4
 - [C++ Praxis-Handbuch](system/cpp-praxis.md) — Vertiefung zu Rang 6

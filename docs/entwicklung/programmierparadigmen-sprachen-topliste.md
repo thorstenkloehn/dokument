@@ -71,6 +71,7 @@ graph TD
 
 - [Startseite](../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Programmierparadigmen](evolution-digitaler-programmierparadigmen.md) — chronologisches Generationenmodell, dessen Sprachbeispiele diese Topliste vertieft
+- [Produktionsreife Sprachen der Programmierparadigmen nach Generation (Top 4)](produktionsreife-programmierparadigmen-sprachen-generationen-2026-topliste.md) — dieselben Paradigmen durch das konservative Fünf-Filter-Sieb; hier belohnt Verbreitung statt Reinheit, deshalb bestehen die Multi-Paradigmen-Träger statt Haskell/Prolog/Smalltalk
 - [Beste Programmiersprachen für Enterprise-Software (Top 10)](enterprise-programmiersprachen-topliste.md) — analoges Sprachranking nach Enterprise-Relevanz statt Paradigmen-Reinheit
 - [Beste Programmiersprachen für moderne Wissenssysteme (Top 10)](../wissen/dokumentation/programmiersprachen-wissenssysteme-topliste.md) — analoges Sprachranking für Wikis/PKM/Docs
 - [Rust in der Praxis](system/rust-praxis.md) — Vertiefung zu Rang 1

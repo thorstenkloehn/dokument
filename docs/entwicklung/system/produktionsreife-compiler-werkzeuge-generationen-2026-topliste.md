@@ -130,6 +130,7 @@ Fazit: Der Speicherfilter unterscheidet in dieser Kategorie nichts — er bestä
 - [Beste Compiler-Werkzeuge 2026 (Top 15)](compiler-2026-topliste.md) — breiteste Basis-Topliste inklusive historischer und proprietärer Werkzeuge
 - [Compiler: Übersetzen von Hochsprachen zu Maschinencode](compiler.md) — praktische Vertiefung: Phasen, GCC/Clang/Rustc im Vergleich
 - [Produktionsreife Open-Source-Versionskontrollsysteme nach Generation (Top 6)](produktionsreife-versionskontrollsysteme-generationen-2026-topliste.md) — Schwesterseite derselben Entwickler-Werkzeug-Reihe
+- [Produktionsreife Programmiersprachen nach Generation (Top 9)](../produktionsreife-programmiersprachen-generationen-2026-topliste.md) — die Sprachen, deren Compiler hier gerankt sind; dort läuft der Speicherfilter ebenfalls leer und wird durch offene Standardisierung ersetzt
 - [Beste Interpreter-Werkzeuge 2026 (Top 15)](interpreter-2026-topliste.md) — komplementäre Ausführungsstrategie
 - [Beste Debugger-Werkzeuge 2026 (Top 15)](debugger-2026-topliste.md) — DWARF-Debug-Symbole als geteilter Berührungspunkt
 - [Beste Build-Systeme 2026 (Top 15)](build-systeme-2026-topliste.md) — orchestriert die hier gerankten Compiler-Aufrufe
