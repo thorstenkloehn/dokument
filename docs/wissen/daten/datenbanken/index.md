@@ -478,6 +478,9 @@ Empfehlung, welche Datenbanken sich am besten für Automatisierung durch KI-Agen
 * [Evolution und Architekturen digitaler Dokumentdatenbanken](evolution-digitaler-dokumentdatenbanken.md) – Vertiefung mit Chronologie
 * [Beste Dokumentdatenbanken 2026 (Top 15)](dokumentdatenbanken-2026-topliste.md) – gerankte Momentaufnahme
 * [Produktionsreife Open-Source-Dokumentdatenbanken nach Generation (Top 2)](produktionsreife-dokumentdatenbanken-generationen-2026-topliste.md) – konservatives Fünf-Filter-Sieb
+* [Evolution und Architekturen digitaler Graphdatenbanken](evolution-digitaler-graphdatenbanken.md) – Vertiefung mit Chronologie
+* [Beste Graphdatenbanken 2026 (Top 15)](graphdatenbanken-2026-topliste.md) – gerankte Momentaufnahme
+* [Produktionsreife Open-Source-Graphdatenbanken nach Generation (Top 2)](produktionsreife-graphdatenbanken-generationen-2026-topliste.md) – konservatives Fünf-Filter-Sieb
 
 ---
 

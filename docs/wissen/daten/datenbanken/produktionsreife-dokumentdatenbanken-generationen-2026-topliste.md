@@ -112,6 +112,7 @@ graph TD
 - [Beste Dokumentdatenbanken 2026 (Top 15)](dokumentdatenbanken-2026-topliste.md) — breiteste Basis-Topliste inklusive MongoDB, Managed-Dienste und Multi-Model-Systeme
 - [Produktionsreife relationale Datenbanken nach Generation (Top 4)](produktionsreife-relationale-datenbanken-generationen-2026-topliste.md) — PostgreSQL JSONB als Dokumentspeicher besteht dort das Sieb
 - [Produktionsreife Open-Source-Vektordatenbanken nach Generation (Top 5)](produktionsreife-vektordatenbanken-generationen-2026-topliste.md) — dieselbe „Feature statt eigene Kategorie"-Bewegung und dieselbe Lizenz-Achse
+- [Produktionsreife Open-Source-Graphdatenbanken nach Generation (Top 2)](produktionsreife-graphdatenbanken-generationen-2026-topliste.md) — Schwesterseite; auch dort bleiben nur zwei Treffer (Neo4j CE, Apache AGE)
 - [Produktionsreife Open-Source-BI- & Analytics-Tools nach Generation (Top 3)](produktionsreife-bi-analytics-tools-generationen-2026-topliste.md) — Schwesterseite im selben Datenbereich; auch dort siebt die Lizenz, nicht der Speicher
 - [PostgreSQL DBA Praxis-Handbuch](../../../entwicklung/infrastruktur/postgresql-dba-praxis.md) · [PostgreSQL + pgvector](pgvector-anleitung.md)
 - [Datenbanken & Big Data: Übersicht für KI-Anwendungen](index.md)

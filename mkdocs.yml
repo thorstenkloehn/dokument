@@ -394,6 +394,9 @@ nav:
           - "Evolution und Architekturen digitaler Dokumentdatenbanken": wissen/daten/datenbanken/evolution-digitaler-dokumentdatenbanken.md
           - "Beste Dokumentdatenbanken 2026 (Top 15)": wissen/daten/datenbanken/dokumentdatenbanken-2026-topliste.md
           - "Produktionsreife Open-Source-Dokumentdatenbanken nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-dokumentdatenbanken-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Graphdatenbanken": wissen/daten/datenbanken/evolution-digitaler-graphdatenbanken.md
+          - "Beste Graphdatenbanken 2026 (Top 15)": wissen/daten/datenbanken/graphdatenbanken-2026-topliste.md
+          - "Produktionsreife Open-Source-Graphdatenbanken nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-graphdatenbanken-generationen-2026-topliste.md
           - Datenerfassung:
               - Übersicht: wissen/daten/datenerfassung/index.md
               - OpenDataKit: wissen/daten/datenerfassung/opendatakit.md
