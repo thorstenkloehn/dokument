@@ -136,6 +136,7 @@ Neben dem chronologischen Generationenmodell lassen sich Compiler nach folgenden
 ## Verwandte Themen
 
 - [Beste Compiler-Werkzeuge 2026 (Top 15)](compiler-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Open-Source-Compiler-Werkzeuge nach Generation (Top 8)](produktionsreife-compiler-werkzeuge-generationen-2026-topliste.md) — dasselbe Generationenmodell durch ein konservatives Fünf-Filter-Sieb (Reifegrad, Betreiberbasis, Betriebs-Skala, Speicherbackend)
 - [Compiler: Übersetzen von Hochsprachen zu Maschinencode](compiler.md) — praktische Vertiefung: Phasen, GCC/Clang/Rustc im Vergleich, Compiler-Optionen
 - [Evolution und Architekturen digitaler Programmiersprachen](../evolution-digitaler-programmiersprachen.md) — übergeordnetes Paradigmen-Generationenmodell, Generation 1c dort entspricht Generation 1a dieses Artikels
 - [Evolution und Architekturen digitaler Enterprise-Programmiersprachen](../evolution-digitaler-enterprise-programmiersprachen.md) — Rust als parallele Sicherheits-Generation zu Mojo aus Generation 6 dieses Artikels

@@ -137,6 +137,7 @@ Neben dem chronologischen Generationenmodell lassen sich Editoren nach folgenden
 ## Verwandte Themen
 
 - [Beste Editoren 2026 (Top 15)](editoren-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Open-Source-Editoren nach Generation (Top 3)](produktionsreife-editoren-generationen-2026-topliste.md) — dasselbe Generationenmodell durch ein konservatives Fünf-Filter-Sieb; Generation 3, 4 und 6 liefern keinen quelloffenen, reifen Vertreter
 - [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — Language Server Protocol aus Generation 5 dort als Fundament von Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Debugger](evolution-digitaler-debugger.md) — Debug Adapter Protocol aus Generation 5 dort als Debugger-Pendant zu Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Interpreter](evolution-digitaler-interpreter.md) — komplementäre Ausführungsarchitekturen, die Editoren dieses Artikels als Quelltext-Werkzeug ergänzen

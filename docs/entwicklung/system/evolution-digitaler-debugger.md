@@ -132,6 +132,7 @@ Neben dem chronologischen Generationenmodell lassen sich Debugger nach folgenden
 ## Verwandte Themen
 
 - [Beste Debugger-Werkzeuge 2026 (Top 15)](debugger-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Open-Source-Debugger-Werkzeuge nach Generation (Top 5)](produktionsreife-debugger-werkzeuge-generationen-2026-topliste.md) — dasselbe Generationenmodell durch ein konservatives Fünf-Filter-Sieb (Reifegrad, Betreiberbasis, Betriebs-Skala, Speicherbackend)
 - [Evolution und Architekturen digitaler Compiler](evolution-digitaler-compiler.md) — DWARF-Debug-Symbole aus Generation 3/4 dort als technische Grundlage von Generation 2 dieses Artikels, Language Server Protocol aus Generation 5 dort als direktes Vorbild für das Debug Adapter Protocol aus Generation 5 dieses Artikels
 - [Evolution und Architekturen digitaler Interpreter](evolution-digitaler-interpreter.md) — komplementäre Ausführungsarchitekturen, die Debugger dieses Artikels jeweils beobachtbar machen
 - [Evolution und Architekturen digitaler Editoren](evolution-digitaler-editoren.md) — Debug Adapter Protocol aus Generation 5 dieses Artikels als Debugger-Pendant zu Generation 5 dort

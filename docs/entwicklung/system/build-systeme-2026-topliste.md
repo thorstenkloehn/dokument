@@ -75,6 +75,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Build-Systeme](evolution-digitaler-build-systeme.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-Build-Systeme nach Generation (Top 9)](produktionsreife-build-systeme-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb (produktionsreif, jahrelang stabil, große Betreiberbasis, sehr große Skala, dateibasiert oder PostgreSQL)
 - [Beste Compiler-Werkzeuge 2026 (Top 15)](compiler-2026-topliste.md) — die Werkzeuge, deren Aufrufe hier orchestriert werden
 - [Beste Paketmanager 2026 (Top 15)](paketmanager-2026-topliste.md) — verwandte, aber nicht deckungsgleiche Achse
 - [Beste Versionskontrollsysteme 2026 (Top 15)](versionskontrollsysteme-2026-topliste.md) — Monorepo-Skalierungsproblem aus komplementärem Blickwinkel

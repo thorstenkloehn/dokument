@@ -134,6 +134,7 @@ Neben dem chronologischen Generationenmodell lassen sich Paketmanager nach folge
 ## Verwandte Themen
 
 - [Beste Paketmanager 2026 (Top 15)](paketmanager-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife Open-Source-Paketmanager nach Generation (Top 13)](produktionsreife-paketmanager-generationen-2026-topliste.md) — dasselbe Generationenmodell durch ein konservatives Fünf-Filter-Sieb (Reifegrad, Betreiberbasis, Betriebs-Skala, Speicherbackend)
 - [Evolution und Architekturen digitaler Build-Systeme](evolution-digitaler-build-systeme.md) — Cargo/Maven aus Generation 3 dort vereinen Build- und Paketverwaltung, Nix' hermetisches Prinzip aus Generation 4 dieses Artikels als konzeptioneller Vorläufer von Generation 4 dort
 - [Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks](../webentwicklung/evolution-digitaler-batteries-included-frameworks.md) — Composer als Laravels Paketverwaltungs-Baustein aus Generation 3 dieses Artikels
 - [Rust in der Praxis](rust-praxis.md) — Cargo als integrierter Build-/Paketmanager, siehe auch [Generation 3 der Build-Systeme-Zeitachse](evolution-digitaler-build-systeme.md#generation-3-sprachintegrierte-build-paketmanager-2004-2014)

@@ -76,6 +76,7 @@ graph TD
 
 - [Startseite](../../index.md) — zurück zur Dokumentations-Zentrale
 - [Evolution und Architekturen digitaler Debugger](evolution-digitaler-debugger.md) — chronologisches Generationenmodell, dessen aktuellen Stand diese Topliste zusammenfasst
+- [Produktionsreife Open-Source-Debugger-Werkzeuge nach Generation (Top 5)](produktionsreife-debugger-werkzeuge-generationen-2026-topliste.md) — dieselbe Chronologie durch das konservative Fünf-Filter-Sieb (produktionsreif, jahrelang stabil, große Betreiberbasis, sehr große Skala, dateibasiert oder PostgreSQL)
 - [Beste Compiler-Werkzeuge 2026 (Top 15)](compiler-2026-topliste.md) — DWARF-Debug-Symbole als geteilter Berührungspunkt
 - [Beste Editoren 2026 (Top 15)](editoren-2026-topliste.md) — DAP-Integration als Debugger-Pendant zur dortigen Generation 5
 - [C in der Praxis](c-praxis.md) — praktische GDB-Nutzung
