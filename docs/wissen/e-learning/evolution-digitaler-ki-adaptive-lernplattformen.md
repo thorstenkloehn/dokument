@@ -108,6 +108,7 @@ Statt eine neue Plattform zu bauen, rüsten KI-Plugins **bestehende Moodle-Insta
 ## Verwandte Themen
 
 - [Beste KI-adaptive Lernplattformen 2026 (Top 15)](ki-adaptive-lernplattformen-2026-topliste.md) — Momentaufnahme 2026, die diese Chronologie in eine gerankte Topliste übersetzt
+- [Produktionsreife KI-adaptive Lernplattformen nach Generation (kein Treffer)](produktionsreife-ki-adaptive-lernplattformen-generationen-2026-topliste.md) — dasselbe Modell durch das konservative Fünf-Filter-Sieb; Ergebnis: fast vollständig proprietäres SaaS, der generative Kern erst seit 2022, einziger quelloffener Pfad ist Moodle mit KI-Plugins
 - [Evolution und Architekturen digitaler Lernmanagement-Systeme](evolution-digitaler-lms.md) — übergeordnetes Generationenmodell, Generation 4 dort entspricht diesem Artikel im Ganzen
 - [Evolution und Architekturen digitaler interoperabler LMS](evolution-digitaler-interoperable-lms.md) — vorausgehende Generation
 - [Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme](evolution-digitaler-agentische-tutor-oekosysteme.md) — nachfolgende Generation

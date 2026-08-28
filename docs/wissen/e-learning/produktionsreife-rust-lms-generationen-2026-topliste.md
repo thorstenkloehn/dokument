@@ -113,5 +113,8 @@ Vertiefung zur Datenbankschicht: [PostgreSQL DBA Praxis-Handbuch](../../entwickl
 - [Produktionsreife Open-Source-LMS nach Generation (Top 2 + Grenzfälle)](produktionsreife-lms-generationen-2026-topliste.md) — die Produktebene über diesen Bausteinen
 - [Produktionsreife Cloud-LMS & LXP nach Generation (Top 1)](produktionsreife-cloud-lms-generationen-2026-topliste.md) — Canvas LMS bettet Firecracker-basierte Coding-Sandboxes ein
 - [Produktionsreife klassische Open-Source-LMS nach Generation (Top 1)](produktionsreife-klassische-lms-generationen-2026-topliste.md) — Schwesterseite der klassischen Linie
+- [Produktionsreife interoperable LMS-Bausteine nach Generation (kein Treffer)](produktionsreife-interoperable-lms-generationen-2026-topliste.md) — Schwesterseite der Interoperabilitäts-Linie
+- [Produktionsreife KI-adaptive Lernplattformen nach Generation (kein Treffer)](produktionsreife-ki-adaptive-lernplattformen-generationen-2026-topliste.md) — Schwesterseite der KI-adaptiven Linie
+- [Produktionsreife agentische Tutor-Ökosysteme nach Generation (kein Treffer)](produktionsreife-agentische-tutor-oekosysteme-generationen-2026-topliste.md) — Schwesterseite der agentischen Linie
 - [Produktionsreife Interpreter-Werkzeuge nach Generation](../../entwicklung/system/produktionsreife-interpreter-werkzeuge-generationen-2026-topliste.md) — dieselbe Beobachtung: bei Werkzeug-Bausteinen ist der Speicherfilter strukturell bedeutungslos
 - [PostgreSQL DBA Praxis-Handbuch](../../entwicklung/infrastruktur/postgresql-dba-praxis.md) — Datenbankschicht des LMS über den Bausteinen
