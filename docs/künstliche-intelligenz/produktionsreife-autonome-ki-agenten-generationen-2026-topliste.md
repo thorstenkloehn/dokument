@@ -141,6 +141,7 @@ Vertiefung: [PostgreSQL DBA Praxis-Handbuch](../entwicklung/infrastruktur/postgr
 - [Beste autonome KI-Agenten 2026 (Top 20)](autonome-ki-agenten-2026-topliste.md) — breiteste Basis-Topliste inklusive proprietärer Systeme
 - [Produktionsreife Open-Source-KI-native Web-Frameworks nach Generation](../entwicklung/webentwicklung/produktionsreife-ki-native-webframeworks-generationen-2026-topliste.md) — dasselbe „kein Treffer"-Bild in der KI-nativen Web-Framework-Kategorie
 - [Produktionsreife Open-Source-RAG- & Werkzeug-Anwendungen nach Generation](produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md) — die vorausgehende KI-Anwendungs-Generation, ebenfalls kein Treffer bei den Anwendungen
+- [Produktionsreife Rust-Bausteine für KI-Anwendungen nach Generation (Top 1)](produktionsreife-rust-ki-anwendungen-generationen-2026-topliste.md) — die Bauteil-Ebene unter rmcp/Rig: nur Hugging Face `tokenizers` besteht, Generation 6 (MCP, Agenten) ist mit ~2 Jahren zu jung
 - [AI Agents – Das Praxis-Handbuch](coding/ai-agents-praxis.md) — konkrete Umsetzung des pragmatischen Wegs
 - [Agentic Workflows mit LangGraph](coding/agentic-workflows-langgraph.md) — Vertiefung zum aussichtsreichsten Orchestrierungs-Framework
 - [Beste MCP-Server (Top 20)](coding/mcp-server-topliste.md) — der Werkzeug-Standard hinter Generation 6

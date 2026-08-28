@@ -150,6 +150,7 @@ Bei RAG ist der Speicherfilter kein Randthema, sondern die zentrale Architekture
 - [Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme](../wissen/dokumentation/evolution-digitaler-semantische-rag-wissenssysteme.md) — die Infrastruktur (Embeddings, Vektor-DBs, Pipeline), die dieser Artikel voraussetzt
 - [Produktionsreife Open-Source-semantische & RAG-Wissenssysteme nach Generation (Top 7)](../wissen/dokumentation/produktionsreife-semantische-rag-wissenssysteme-generationen-2026-topliste.md) — dasselbe Sieb auf die Infrastruktur; dort bestehen sieben Systeme (FAISS, Weaviate, Haystack, pgvector, Apache Jena, Neo4j, sentence-transformers)
 - [Produktionsreife autonome Open-Source-KI-Agenten nach Generation](produktionsreife-autonome-ki-agenten-generationen-2026-topliste.md) — dasselbe „kein Treffer"-Bild in der Agenten-Kategorie
+- [Produktionsreife Rust-Bausteine für KI-Anwendungen nach Generation (Top 1)](produktionsreife-rust-ki-anwendungen-generationen-2026-topliste.md) — die Rust-Bauteil-Ebene (Candle, tokenizers) unter diesen Anwendungen; nur `tokenizers` besteht das Sieb
 - [AI Agents – Das Praxis-Handbuch](coding/ai-agents-praxis.md) — konkrete Umsetzung des pragmatischen Wegs
 - [Beste MCP-Server (Top 20)](coding/mcp-server-topliste.md) — der Werkzeug-Standard hinter Generation 5
 - [PostgreSQL + pgvector](../wissen/daten/datenbanken/pgvector-anleitung.md) — Retrieval in derselben Datenbank wie die relationalen Daten
