@@ -198,45 +198,12 @@ gh auth login
 ---
 
 ## Editoren & IDEs installieren
-
-### Google Antigravity 
-
-```bash
-# 1. In das temporäre Verzeichnis wechseln
-cd /tmp
-
-# 2. Download mit fest definiertem Dateinamen (-O)
-wget "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.1.1-6123990880747520/linux-x64/Antigravity%20IDE.tar.gz" -O antigravity.tar.gz
-
-# 3. Zielverzeichnis erstellen
-sudo mkdir -p /opt/Antigravity_IDE
-
-# 4. Entpacken
-sudo tar -xzf antigravity.tar.gz -C /opt/Antigravity_IDE --strip-components=1
-
-# 5. Desktop-Datei erstellen
-sudo bash -c 'cat > /usr/share/applications/antigravity.desktop' << 'EOF'
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Antigravity IDE
-Comment=Google Antigravity Development Platform
-Exec=/opt/Antigravity_IDE/antigravity-ide --no-sandbox
-Icon=/opt/Antigravity_IDE/icon.svg
-Terminal=false
-Categories=Development;IDE;
-StartupWMClass=antigravity-ide
-EOF
-
-# 6. Datenbank aktualisieren
-sudo update-desktop-database
-```
 ### Google Antigravity 2
 ```bash
 # 1. In das temporäre Verzeichnis wechseln
 
 # 2. Download mit fest definiertem Dateinamen (-O)
-wget "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.4.3-4510119262814208/linux-x64/Antigravity.tar.gz" -O antigravity2.tar.gz
+wget "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.5.0-5471848641724416/linux-x64/Antigravity.tar.gz" -O antigravity2.tar.gz
 
 # 3. Zielverzeichnis erstellen
 sudo mkdir -p /opt/Antigravity2
