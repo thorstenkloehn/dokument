@@ -76,15 +76,6 @@ npm -v # Should print "11.7.0".
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-
-### Weitere Visual Studio Code Erweiterungen
-```
-code --install-extension rust-lang.rust-analyzer
-code --install-extension Google.google-antigravity
-code --install-extension anthropic.claude-code
-
-```
-
 ### .NET (C# / ASP.NET Core) installieren
 
 ```bash
@@ -95,7 +86,7 @@ dotnet tool install --global dotnet-aspnet-codegenerator
 dotnet tool install -g Microsoft.Web.LibraryManager.Cli
 echo 'export PATH=$HOME/.dotnet/tools:$PATH' >> ~/.bashrc
 source ~/.bashrc
-code --install-extension ms-dotnettools.csdevkit
+
 
 ```
 
@@ -224,7 +215,14 @@ sudo apt-get install neovim
 ```bash
 curl -f https://zed.dev/install.sh | sh
 ```
+### Weitere Visual Studio Code Erweiterungen
+```
+code --install-extension rust-lang.rust-analyzer
+code --install-extension Google.google-antigravity
+code --install-extension anthropic.claude-code
+code --install-extension ms-dotnettools.csdevkit
 
+```
 ### Jetbrains IDEs installieren
 
 ```bash
