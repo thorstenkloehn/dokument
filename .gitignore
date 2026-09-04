@@ -1,0 +1,12 @@
+.venv
+site
+node_modules
+_site
+.cache
+tools/mkdocs2mdbook/target
+mdbook-out
+
+
+# Snyk Security Extension - AI Rules (auto-generated)
+.github/instructions/snyk_rules.instructions.md
+mkdocs.yml.backup

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# .gemini/hooks/pre-commit
+# Automatische Prüfung vor jedem Git-Commit für Zensical Docs
+
+set -e
+
+echo "🔍 Starte Dokumentations-Validierung..."
+
+# 1. Zensical Build ausführen
+if [ -f ".venv/bin/zensical" ]; then
+    echo "⚙️ Führe Zensical Build aus..."
+    .venv/bin/zensical build
+else
+    echo "⚠️ .venv/bin/zensical nicht gefunden! Bitte Setup ausführen."
+    exit 1
+fi
+
+echo "✅ Zensical Build erfolgreich abgeschlossen!"
