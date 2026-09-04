@@ -1,0 +1,143 @@
+{{DISPLAYTITLE:RAG- & KI-zentrierte Wissensdatenbanken (RAG-Co-Wikis) – welche kann den meisten Inhalt / die meisten Artikel verwalten?}}
+
+Diese Analyse wertet '''alle vorhandenen Ranking-, Vertiefungs-, Sicherheits- und Backup-Artikel''' des Content-Repos ''Wissen Ahrensburg'' (dokument.wissen-ahrensburg.de) für genau die Kategorie aus, die dort in ''[[Dokumentenerstellung, Wikis & Notebooks]]'' als
+
+: '''„6. RAG- & KI-Zentrierte Wissensdatenbanken (RAG-Co-Wikis)"'''
+
+geführt wird – Systeme und Pipelines, die Wikis und Dokumente für LLMs aufbereiten oder als intelligente Co-Wikis mit RAG-Anbindung fungieren. Frage: '''Welches dieser Systeme kann – nach den in den Artikeln belegten Skala-Nachweisen – die meisten Inhalts-Einheiten (Artikel, Dokumente, Embeddings) verwalten?'''
+
+'''Stand:''' 29. August 2026. Alle Quell-Artikel sind als „Momentaufnahme August 2026" datiert.
+
+== Die Kategorie „RAG-Co-Wikis" ==
+
+Laut Repo-Übersicht (§ 6) umfasst die Kategorie zwei Konzepte und zehn Werkzeuge:
+
+{| class="wikitable"
+|-
+! System !! Rolle !! Vektor-/Index-Speicher !! Lizenz
+|-
+| '''LLM-Wiki''' / '''Co-Wiki''' || Konzepte (KI liest/verlinkt/beantwortet autonom bzw. Mensch + Agent Hand in Hand) || – || –
+|-
+| '''Onyx''' (ehem. Danswer) || Enterprise-Suche + Chat über 50+ Datenquellen || '''Vespa''' (Vektor + Keyword) + Redis + MinIO || MIT (CE); Enterprise proprietär
+|-
+| '''Khoj''' || „Zweites Gehirn", indiziert lokale Dateien (PDF, Markdown, Org-mode) || '''PostgreSQL + pgvector''' (HNSW) || AGPL-3.0
+|-
+| '''AnythingLLM''' || All-in-One-Dokumenten-Chat, Workspace-isoliert || eingebettetes '''LanceDB''' (Standard) + 6 weitere (pgvector, Chroma, Qdrant, Milvus, …) || MIT
+|-
+| '''Open WebUI''' || Chat-Frontend mit eingebautem RAG, Team-Rechte || intern; extern Qdrant/Milvus/pgvector || eigene Lizenz mit Branding-Pflicht (nicht OSI)
+|-
+| '''Outline''' || Team-Wiki mit Markdown + API, KI-Antworten || PostgreSQL + Redis (Yjs-Realtime) || '''BSL''' (nicht OSI)
+|-
+| '''Anytype''' || verschlüsseltes objektbasiertes Local-First-Wiki || „any-sync"-CRDT, IPFS || Lizenzstatus 2026 uneinheitlich (nicht durchgängig OSI)
+|-
+| '''Affine.pro''' || Workspace + unendliches Whiteboard || eigene Rust-CRDT-Engine || AGPL-3.0
+|-
+| '''NotebookLM''' (Google) || persönlicher KI-Workspace, Upload-Quellen || proprietär, gehostet || proprietär
+|-
+| '''Dify.ai''' / '''Flowise''' || visuelle Builder für RAG-Pipelines & Agenten || mehrteiliger Stack (PG + Vektor-DB + Worker) || diverse OSI
+|}
+
+== Kriterium – und eine wichtige Unterscheidung ==
+
+RAG-Co-Wikis '''speichern meist keinen kanonischen Inhalt''' – sie '''indexieren''', was anderswo liegt:
+
+* '''Onyx''' synchronisiert laufend aus Slack, Google Drive, Confluence, Wikis (50+ Connectoren) – der Inhalt bleibt in den Quellsystemen.
+* '''Khoj''', '''AnythingLLM''' indexieren lokale Dateien bzw. hochgeladene Dokumente in einen Vektorindex.
+* Nur '''Outline''', '''Anytype''', '''Affine''' sind selbst ein Content-Store (eigene Artikel/Objekte).
+
+„Verwalten" wird hier also zweigeteilt gemessen: '''(A) Index-/Retrieval-Skala''' (wie viele Embeddings/Dokumente durchsuchbar) und '''(B) kanonische Content-Skala''' (wie viele eigene Artikel gespeichert).
+
+== Rangliste ==
+
+{| class="wikitable"
+|-
+! Rang !! System !! Belegte Skala !! Quelle im Repo
+|-
+| '''1 (Index-Skala, belegt)''' || '''Khoj''' || '''> 10 Mio. Embeddings/Vektoren''' (pgvector mit HNSW-Indizes, JSONB); '''🥉''' in der Matrix „Großinhalte-Verwaltung & KI-Batch-Verarbeitung" – hinter MediaWiki/Wikibase und XWiki, '''vor''' Wiki.js, BookStack und Docmost || Enterprise-Wissenssystem-Sicherheit & PostgreSQL (Skalierungs-Matrix)
+|-
+| '''2 (Architektur-Ceiling)''' || '''Onyx''' (Danswer) || '''Vespa'''-Engine (auf Milliarden Dokumente ausgelegt) + Keyword-Index; '''50+ Connectoren''', RBAC, „sämtliche internen Datenquellen"; höchster Ressourcenbedarf und aufwendigste Backup-Strategie aller RAG-Plattformen des Repos || Onyx-Vertiefungsseite; Backup-Strategien für Wissenssysteme; RAG-Werkzeug-Anwendungen nach Generation
+|-
+| 3 || '''AnythingLLM''' || eingebettetes LanceDB (Standard) oder pgvector/Qdrant/Milvus; Workspace-isoliert; „einfache lokale Dokumenten-Chats"; Rang 8 der RAG-Werkzeug-Topliste („unternehmensweite RAG-Assistenten") || RAG-Werkzeug-Anwendungen 2026; AnythingLLM-Vertiefungsseite
+|-
+| 4 || '''Open WebUI''' || pgvector/Qdrant/Milvus als externe Vektor-DB (Pflicht im Multi-Replica-Betrieb); „am weitesten verbreitete selbst gehostete Chat-Oberfläche"; RAG pro Chat || Open-WebUI-Vertiefungsseite
+|-
+| — (Content-Store) || '''Outline''' || Team-Wiki, tausende Dokumente je Instanz, PostgreSQL + Redis, exzellente API – aber '''BSL, nicht OSI''' || Führende Open-Source-Wissenssysteme (Lizenz-Sonderfall); MCP-Server-Topliste
+|-
+| — || '''Anytype / Affine.pro''' || Local-First / Team-Workspace; Personal- bis kleine Team-Skala; Anytype-Lizenz 2026 uneinheitlich, Affine „knapp unter fünf Jahren / Canary" || Echtzeit-Kollaboration-Topliste; PKM-Wissensgraphen nach Generation
+|-
+| — || '''NotebookLM''' || proprietär, gehostet, harte Obergrenze an Quellen/Wörtern je Notebook; nicht selbst hostbar || Dokumentenerstellung, Wikis & Notebooks (§ 6)
+|-
+| — || '''Dify / Flowise''' || Pipeline-Builder, kein primärer Content-Store; mehrteiliger Stack („hoher" Backup-Aufwand bei Dify) || Backup-Strategien für Wissenssysteme; RAG-Werkzeug-Anwendungen nach Generation
+|}
+
+== Reife: keiner besteht das Fünf-Filter-Sieb ==
+
+Die Produktionsreife-Analyse des Repos ist eindeutig: '''AnythingLLM, Onyx, Open WebUI, Dify, Flowise sind alle 2023 entstanden''' und bestehen das konservative Fünf-Filter-Sieb (produktionsreif · 5+ Jahre · große Betreiberbasis · sehr große Skala · dateibasiert oder PostgreSQL) '''nicht'''. Wörtlich: ''„Die Anwendungen sind jung – das Fundament, auf dem sie stehen, ist es nicht."'' Was besteht, ist die '''Infrastruktur''': '''pgvector''' (seit April 2021).
+
+Zusätzliche Ausschlüsse:
+* '''Open WebUI''' – eigene Lizenz mit Branding-Pflicht seit April 2025, nicht OSI.
+* '''Outline''' – Business Source License, nicht OSI.
+* '''Anytype''' – Lizenzstatus 2026 nicht durchgängig OSI-konform.
+* '''NotebookLM''' – vollständig proprietär, gehostet.
+
+== Die Kandidaten im Detail ==
+
+=== Khoj – die belegte Skala-Spitze ===
+
+Khoj ist das '''einzige''' RAG-Co-Wiki der Kategorie, das im Repo eine '''explizite große Skala-Zahl''' und eine '''Medaillen-Platzierung''' hat: '''> 10 Mio. Embeddings/Vektoren''', gespeichert in '''PostgreSQL mit pgvector und HNSW-Indizes''' – 🥉 in der Matrix „Großinhalte-Verwaltung & KI-Batch-Verarbeitung", direkt hinter MediaWiki und XWiki, '''vor''' allen datenbankgestützten Team-Wikis (Wiki.js, BookStack, Docmost). Django-basiert, „MCP-Streaming, Async-Worker" für den Batch-Import. AGPL-3.0, damit als einziges der Top-4 klar OSI. Kernfokus: „persönliches zweites Gehirn, extrem breite Zugriffswege", vollständig offline betreibbar.
+
+=== Onyx (Danswer) – das höchste Architektur-Ceiling ===
+
+Onyx ist auf die '''größte theoretische Skala''' ausgelegt: Es nutzt '''Vespa''' als Vektor- und Keyword-Engine – dieselbe Engine, die für Milliarden Dokumente konzipiert ist – und bindet über '''50+ Connectoren + MCP''' „sämtliche internen Datenquellen" eines Unternehmens an (Slack, Google Drive, Confluence, Wikis, …). Der Standard-Modus fährt Vespa, Background-Worker, einen ML-Inferenz-Server, Redis und MinIO hoch; das Repo nennt Onyx die Plattform mit dem „höchsten Ressourcenbedarf" und der „aufwendigsten Backup-Strategie" der gesamten Wissenssystem-Backup-Liste. '''Aber:''' Onyx '''speichert den Inhalt nicht''' – es hält einen Suchindex über fremde Quellsysteme. Und es ist 2023 – kein Reife-Treffer.
+
+=== AnythingLLM / Open WebUI – die leichtgewichtigen ===
+
+Beide sind primär '''Dokumenten-Chat pro Workspace / pro Unterhaltung'''. AnythingLLM nutzt standardmäßig ein '''eingebettetes LanceDB''' (keine externe Infrastruktur), skaliert über austauschbare Vektor-DBs (u. a. pgvector), bleibt aber laut Repo auf „einfache lokale Dokumenten-Chats" ausgelegt. Open WebUI ist die verbreitetste Chat-Oberfläche, hängt für große Bestände an einer externen Vektor-DB – scheidet aber am Lizenzfilter aus.
+
+=== Outline – der einzige echte Content-Store mit Skala ===
+
+Von den Systemen, die '''eigenen kanonischen Inhalt''' halten (statt fremden zu indexieren), skaliert '''Outline''' am weitesten: ein schnelles Team-Wiki mit PostgreSQL + Redis, Yjs-Realtime und exzellenter API, das tausende Dokumente je Instanz trägt. Es fällt ausschließlich an der '''Business Source License''' (nicht OSI) – nicht an der Technik.
+
+== Ergebnis ==
+
+{| class="wikitable"
+|-
+! Frage !! Antwort
+|-
+| Meister '''belegte Index-/Retrieval-Skala''' || '''Khoj''' – > 10 Mio. Embeddings/Vektoren, 🥉 in der Großinhalte-Verwaltung-Matrix (einziges medailliertes RAG-Co-Wiki), pgvector + HNSW, OSI (AGPL)
+|-
+| Meister '''theoretisches Architektur-Ceiling''' || '''Onyx''' – Vespa (Milliarden-Ebene), 50+ Connectoren, enterprise-weit – aber indexiert fremden Inhalt, speichert ihn nicht, und 2023
+|-
+| Meister '''eigener''' kanonischer Content-Store || '''Outline''' – tausende Dokumente je Instanz – aber BSL (nicht OSI)
+|-
+| Reife (Fünf-Filter-Sieb) || '''keiner''' – alle RAG-Anwendungen sind 2023; nur die Infrastruktur '''pgvector''' besteht
+|}
+
+'''Gesamtantwort:''' Nach den belegten Zahlen des Repos kann '''Khoj''' den meisten Inhalt verwalten – '''> 10 Mio. Embeddings/Vektoren''' in PostgreSQL + pgvector, und als einziges RAG-Co-Wiki mit einer Medaillen-Platzierung in der „Großinhalte-Verwaltung"-Matrix (Rang 3 hinter MediaWiki und XWiki). Zugleich das einzige der vier Spitzen-Systeme mit klarer OSI-Lizenz (AGPL-3.0).
+
+'''Architektonisch''' ist '''Onyx (Danswer)''' größer dimensioniert (Vespa-Engine für Milliarden Dokumente, 50+ Connectoren), '''verwaltet''' den Inhalt aber nicht selbst – es hält einen Suchindex über fremde Quellsysteme – und ist als 2023er-Anwendung kein Reife-Treffer.
+
+'''Wichtige Einordnung:''' RAG-Co-Wikis sind '''Retrieval-Schichten''', keine kanonischen Content-Speicher. Sie verwalten Embeddings und einen Suchindex über Inhalte, die in MediaWiki, Confluence, Google Drive oder lokalen Dateien liegen. Für die '''kanonische Verwaltung von zig Millionen Artikeln''' bleibt '''MediaWiki''' zuständig ([[Groesste_Inhalts-Skala|siehe Gesamt-Skala-Analyse]]). Von den RAG-Co-Wikis mit '''eigenem''' Content-Store skaliert '''Outline''' am weitesten (tausende Docs/Instanz), scheitert aber an der Nicht-OSI-Lizenz.
+
+Der '''belastbare Weg heute''' laut Repo: reife Infrastruktur (pgvector) unter einer der jungen Anwendungen – konkret '''Khoj''' oder '''Onyx CE''' für die unternehmensinterne Wissensbasis.
+
+== Ausgewertete Artikel ==
+
+* Dokumentenerstellung, Wikis & Notebooks (§ 6 „RAG- & KI-Zentrierte Wissensdatenbanken (RAG-Co-Wikis)") – Kategorie-Definition
+* Enterprise-Wissenssystem-Sicherheit & PostgreSQL – Matrix „Großinhalte-Verwaltung & KI-Batch-Verarbeitung": Khoj 🥉 mit > 10 Mio. Embeddings
+* Onyx (ehem. Danswer): Open-Source Enterprise-Such- & RAG-Plattform (Vertiefung) – Vespa, 50+ Connectoren, Lite/Standard-Modus
+* Khoj – KI-„zweites Gehirn" (Vertiefung) – PostgreSQL + pgvector, offline-first
+* AnythingLLM – RAG-Plattform (Vertiefung) – LanceDB-Standard + 6 Vektor-DB-Optionen
+* Open WebUI – RAG- & Agenten-Plattform (Vertiefung) – externe Vektor-DBs, Lizenz mit Branding-Pflicht
+* Produktionsreife Open-Source-RAG- & Werkzeug-Anwendungen nach Generation – „Anwendungen jung, Fundament nicht"; kein Treffer, pgvector besteht
+* Beste RAG- & Werkzeug-Anwendungen 2026 (Top 15) – AnythingLLM Rang 8
+* Semantische & RAG-Wissenssysteme 2026 / Produktionsreife semantische & RAG-Wissenssysteme nach Generation – Infrastruktur-Ebene (pgvector, Weaviate, Haystack)
+* Backup-Strategien für Wissenssysteme (Top 20) – Onyx „aufwendigste Backup-Strategie / höchster Ressourcenbedarf"; Khoj, AnythingLLM, Dify, Flowise
+* Führende / aktive & reife Open-Source-Wissenssysteme 2026 – Outline (BSL), Open WebUI (Branding-Lizenz), Anytype (Lizenz uneinheitlich) als Nicht-OSI-Sonderfälle
+* Wissensdatenbanken mit KI & semantischer Suche – technische Mechanismen (Chunking, Embeddings, Hybrid-Suche)
+
+[[Kategorie:Analyse]]
+[[Kategorie:Skalierung]]
+[[Kategorie:RAG]]
+[[Kategorie:Künstliche Intelligenz]]
+[[Kategorie:Wissenssysteme]]

@@ -1,0 +1,15 @@
+{#-
+  Custom Content Override for MkDocs Material
+  Fügt einen Transparenzhinweis gemäß Art. 50 EU AI Act oberhalb jeder Seite ein.
+-#}
+{% include "partials/actions.html" %}
+{% if "<h1" not in page.content %}
+  <h1 id="__skip">{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+<p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
+{{ page.content }}
+<p class="ai-generated-notice">Hinweis: Diese Inhalte wurden mit Unterstützung von Künstlicher Intelligenz erstellt und redaktionell überprüft (Transparenzhinweis gemäß Art. 50 EU AI Act).</p>
+{% include "partials/tags.html" %}
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}

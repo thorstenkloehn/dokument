@@ -1,0 +1,20 @@
+{
+  "name": "np-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": ".venv/bin/zensical build",
+    "serve": ".venv/bin/zensical serve",
+    "ver": ".venv/bin/zensical build && gh-pages -d site --nojekyll --cname dokument.wissen-ahrensburg.de",
+    "deploy": "npm run ver"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

@@ -1,0 +1,137 @@
+{{DISPLAYTITLE:Lokale Dokumentations-Wikis – welches kann den meisten Inhalt / die meisten Artikel verwalten?}}
+
+Diese Analyse wertet '''alle vorhandenen Ranking-, Evolution-, Sicherheits- und Backup-Artikel''' des Content-Repos ''Wissen Ahrensburg'' (dokument.wissen-ahrensburg.de) für genau die Kategorie aus, die dort in ''[[Dokumentenerstellung, Wikis & Notebooks]]'' als
+
+: '''„5. Lokale Dokumentations-Wikis & Wissensdatenbanken"'''
+
+geführt wird – also selbst gehostete / lokal betriebene Wiki- und Dokumentations-Systeme. Frage: '''Welches dieser Systeme kann – nach den in den Artikeln belegten Skala-Nachweisen – die meisten Inhalts-Einheiten (Artikel, Seiten) verwalten?'''
+
+'''Stand:''' 29. August 2026. Alle Quell-Artikel sind als „Momentaufnahme August 2026" datiert.
+
+== Die Kategorie „Lokale Dokumentations-Wikis" ==
+
+Laut Repo-Übersicht (§ 5) umfasst die Kategorie:
+
+{| class="wikitable"
+|-
+! Untergruppe !! System !! Stack !! Speicher !! Lizenz
+|-
+| rowspan="5" | Klassische & DB-gestützte Wikis || '''MediaWiki''' || PHP || PostgreSQL / MySQL / MariaDB || GPL-2.0
+|-
+| '''Semantic MediaWiki''' || PHP (MediaWiki-Erweiterung) || wie MediaWiki || GPL-2.0+
+|-
+| '''XWiki''' || Java || PostgreSQL / MySQL / Oracle || LGPL-2.1
+|-
+| '''Wiki.js''' || Node.js/Vue || PostgreSQL (empf.) / MySQL / SQLite || AGPL-3.0
+|-
+| '''BookStack''' || PHP/Laravel || nur MySQL/MariaDB || MIT
+|-
+| Flat-File-Wikis || '''DokuWiki''' || PHP || reines Dateiformat, kein DB-Server || GPL-2.0
+|-
+| rowspan="2" | Local-First / PKM || '''Obsidian''' || Electron || lokaler Markdown-Ordner || proprietär
+|-
+| '''Logseq''' || Clojure/Electron || Markdown-/Org-Dateien || AGPL-3.0
+|-
+| SSG für lokale Notizen || '''Quartz (v4)''' || TypeScript || Markdown → statische Site || MIT
+|}
+
+== Kriterium ==
+
+Gemessen wird die '''belegte Anzahl verwalteter Inhalts-Einheiten''' (Artikel/Seiten pro Instanz) aus den „Content-Skala"-Nachweisen der Produktionsreife-Toplisten. „Verwalten" schließt hier ein: Speicherung, Versionierung, Mehrautoren-Betrieb, indizierte Volltext-/Struktur-Suche über den Gesamtbestand.
+
+== Rangliste nach belegter Inhalts-Skala ==
+
+{| class="wikitable"
+|-
+! Rang !! System !! Belegte Inhalts-Skala !! Quelle im Repo
+|-
+| '''1''' || '''MediaWiki''' || '''> 60 Mio. Seiten''' allein englische Wikipedia; „hunderte Millionen Seiten und Terabytes" über Wikipedia + Wikimedia Commons + Wikidata; „das einzige Open-Source-System dieser Liste, das nachweislich hunderte Millionen Seiten … über Jahrzehnte betreibt" || Produktionsreife Wiki-Engines nach Generation; Evolution digitaler MediaWiki; Enterprise-Wissenssystem-Sicherheit
+|-
+| 2 || '''Semantic MediaWiki''' || erbt die MediaWiki-Skala vollständig + zusätzlich abfragbare strukturierte Attribute (Wikidata via Wikibase: '''> 115 Mio. strukturierte Datenobjekte''') || Produktionsreife Wiki-Engines nach Generation; Wiki-Engines mit PostgreSQL/Dateiformat
+|-
+| 3 || '''XWiki''' || '''> 1 Mio. Seiten''' pro Instanz, Multi-Wiki; Sub-Wikis mit getrennten PostgreSQL-Schemas – „jede Abteilung kann hunderttausende Dokumente verwalten, ohne die Performance anderer Bereiche zu beeinträchtigen" || Enterprise-Wissenssystem-Sicherheit; Produktionsreife Wiki-Engines nach Generation
+|-
+| 4 || '''Wiki.js''' || Instanzen mit '''zehntausenden Seiten''', v2-Serie seit Jahren produktionsstabil; relationales Backend, FlexSearch/Elasticsearch/DB-Suche || Produktionsreife Wiki-Engines nach Generation; Beste Wiki-Engines 2026
+|-
+| 5 || '''DokuWiki''' || '''Zehntausende Seiten pro Instanz''' produktiv im Einsatz – aber Flat-File: jenseits davon wird das Einlesen/Durchsuchen des Dateibaums spürbar langsam || Produktionsreife Wiki-Engines nach Generation; Wissenssysteme für den Selfhosting-Server
+|-
+| 6 || '''BookStack''' || Bücher/Kapitel/Seiten-Hierarchie (max. 3 Ebenen), „sehr niedrige Einstiegshürde"; nur MySQL/MariaDB; nicht auf Enzyklopädie-Skala ausgelegt || Beste Wiki-Engines 2026; Produktionsreife CMS nach Generation
+|-
+| — || '''Obsidian / Logseq''' (PKM) || scheitern in ''jeder'' Repo-Analyse am „Enzyklopädie-Skala"-Filter: für Einzelpersonen/kleine Teams, „nicht für hunderttausende Artikel mit vielen gleichzeitigen Autoren"; Logseq zusätzlich mitten in der DB-Engine-Migration || Produktionsreife Wissenssysteme nach Generation; Produktionsreife PKM-Wissensgraphen nach Generation
+|-
+| — || '''Quartz (v4)''' || Static-Site-Generator: übersetzt einen Obsidian-Tresor in eine Website – Publish-Werkzeug, keine Mehrautoren-Verwaltung, Skala-Grenze = Build-Zeit || Dokumentenerstellung, Wikis & Notebooks (§ 5)
+|}
+
+== Die Systeme im Detail ==
+
+=== Platz 1: MediaWiki ===
+
+MediaWiki ist in ''jeder'' skala-relevanten Repo-Analyse der Referenzpunkt. Die Produktionsreife-Wiki-Engines-Topliste: ''„das einzige Open-Source-System dieser Liste, das nachweislich hunderte Millionen Seiten und Terabytes an Revisionsdaten über Jahrzehnte hinweg performant und sicher betreibt (Wikipedia, Wikimedia Commons, Wikidata)."''
+
+* '''> 60 Mio. Seiten''' allein englische Wikipedia, ''> 100.000'' öffentliche Wikis, hauptamtliches Team der Wikimedia Foundation.
+* Technische Grundlage: diff-basiertes Delta-Speichern (komprimiert), partitionierte Text-Tabellen, GIN-Indizes, dedizierte Bot-API + JobQueue.
+* Speicher: PostgreSQL offiziell unterstützt, Standard MySQL/MariaDB – bei sehr großer Skala werden „PostgreSQL-native GIN-Indizes und <code>pgvector</code>-HNSW-Vektorbäume unverzichtbar".
+* Lokal betreibbar: dieses Repository dokumentiert MediaWiki mit Nginx-Unix-Socket, PostgreSQL-Tuning und Backup-Skripten.
+
+=== Platz 2: Semantic MediaWiki ===
+
+Erbt die gesamte MediaWiki-Datenbankschicht und damit die volle Skala, ergänzt um strukturierte, per <code>#ask</code>/SPARQL abfragbare Attribute. Die eng verwandte '''Wikibase'''-Extension betreibt mit '''Wikidata > 115 Mio. strukturierte Datenobjekte''' – „der größtmögliche Skala-Nachweis". Vorbehalt: sehr große <code>#ask</code>-Abfragen können teuer werden – die reine Seitenzahl ist aber MediaWiki-identisch.
+
+=== Platz 3: XWiki ===
+
+Der '''Enterprise-Skalierer''' der Kategorie: „> 1 Mio. Seiten und strukturierte Datenobjekte" pro Instanz, und – anders als MediaWiki – '''Sub-Wikis mit je eigenem PostgreSQL-Datenbank-Schema'''. Damit lässt sich ein sehr großer Gesamtbestand in isolierte Bereiche (z. B. Abteilungen) partitionieren, ohne dass die Last eines Bereichs die anderen bremst. Monatliche Releases, tiefe LDAP/SSO-Integration.
+
+=== Platz 4–5: Wiki.js und DokuWiki ===
+
+'''Wiki.js''' (Node.js, PostgreSQL-Standard) verwaltet zuverlässig '''zehntausende Seiten''' pro Instanz mit moderner SPA-Oberfläche und Git-Sync als zusätzlicher Versionsebene. '''DokuWiki''' erreicht dieselbe Größenordnung („zehntausende Seiten pro Instanz produktiv"), zahlt aber den Flat-File-Preis: keine Datenbank, dafür wird das Einlesen und Durchsuchen des Dateibaums bei sehr großen Beständen spürbar langsam – der Kompromiss ist minimaler Betrieb (Backup = <code>rsync</code> von <code>data/</code>), nicht maximale Skala.
+
+=== Platz 6: BookStack ===
+
+Bewusst schlank: eine dreistufige Hierarchie (Buch → Kapitel → Seite), sehr niedrige Einstiegshürde, aber '''nur MySQL/MariaDB''' und strukturell nicht für flache, sehr große Wissensbasen mit zehntausenden gleichrangigen Artikeln ausgelegt. In der Produktionsreife-CMS-Analyse fällt BookStack am Speicherfilter (kein PostgreSQL).
+
+== SSG & PKM: warum Quartz, Obsidian, Logseq nicht mithalten ==
+
+* '''Quartz (v4)''' ist ein '''Static-Site-Generator''' – er übersetzt einen lokalen Markdown-/Obsidian-Ordner in eine durchsuchbare Website. Er ''veröffentlicht'' beliebig viele Notizen (Skala-Grenze = Build-Zeit), aber er ''verwaltet'' nichts: keine Laufzeit-Datenbank, keine Mehrautoren-Sperren, keine Freigabe-Workflows. Dasselbe Prinzip wie [[Groesste_Inhalts-Skala|Hugo/MkDocs bei den SSG]].
+* '''Obsidian''' und '''Logseq''' scheitern in ''jeder'' Repo-Analyse am „Enzyklopädie-Skala"-Filter: Sie sind „für einzelne Personen oder kleine Teams optimiert … nicht für hunderttausende Artikel mit vielen gleichzeitigen Autoren". Logseq ist zusätzlich „mitten in der Migration auf eine neue DB-Engine – also gerade nicht stabil".
+
+== Ergebnis ==
+
+{| class="wikitable"
+|-
+! Frage !! Antwort
+|-
+| Meister '''absolute Artikel-Skala''' || '''MediaWiki''' – > 60 Mio. Artikel je Instanz, hunderte Millionen über Wikimedia
+|-
+| Meister '''strukturierte Datenobjekte''' || '''Semantic MediaWiki / Wikibase''' – > 115 Mio. Objekte, gleiche Engine
+|-
+| Meister '''partitionierbarer Enterprise-Großbestand''' || '''XWiki''' – > 1 Mio. Seiten, Sub-Wikis mit eigenem PostgreSQL-Schema
+|-
+| Meister '''minimaler Betrieb''' bei mittlerer Skala || '''DokuWiki''' – zehntausende Seiten ohne Datenbankserver
+|-
+| „Meiste Notizen ''veröffentlichen''" (kein Verwalten) || '''Quartz''' – SSG, Grenze = Build-Zeit
+|}
+
+'''Gesamtantwort:''' Von den lokalen Dokumentations-Wikis kann '''MediaWiki''' den meisten Inhalt verwalten – mit '''großem Abstand'''. Es ist das einzige System der Kategorie mit einem belegten Bestand von '''zig Millionen bis hunderten Millionen''' Artikeln je Instanz über Jahrzehnte, und in jeder Skala-relevanten Repo-Analyse der Referenzpunkt. Wer zusätzlich '''strukturierte, abfragbare Daten''' braucht, nimmt '''Semantic MediaWiki''' bzw. '''Wikibase''' (> 115 Mio. Objekte) auf derselben Engine.
+
+'''Zweiter (für Unternehmen): XWiki''' – „nur" > 1 Mio. Seiten je Instanz, dafür lässt sich der Gesamtbestand über '''Sub-Wikis mit getrennten PostgreSQL-Schemas''' sauber partitionieren, was bei sehr vielen isolierten Bereichen (Abteilungen, Mandanten) praktischer sein kann als eine einzige riesige MediaWiki-Instanz.
+
+'''Für kleinere, lokal betriebene Dokumentation''' reichen '''Wiki.js''' oder '''DokuWiki''' (je zehntausende Seiten); '''BookStack''' ist bewusst auf überschaubare, hierarchische Handbücher begrenzt. '''Obsidian/Logseq''' (PKM) und '''Quartz''' (SSG) sind keine Multi-Autoren-Verwaltungssysteme und fallen für „meisten Inhalt verwalten" strukturell heraus.
+
+== Ausgewertete Artikel ==
+
+* Dokumentenerstellung, Wikis & Notebooks (§ 5 „Lokale Dokumentations-Wikis & Wissensdatenbanken") – Kategorie-Definition
+* Produktionsreife Open-Source-Wiki-Engines nach Generation (Top 11) – Skala-Nachweise MediaWiki > 60 Mio., XWiki > 1 Mio., DokuWiki zehntausende Seiten, Wikibase > 115 Mio.
+* Beste Wiki-Engines 2026 (Top 20) – BookStack-Hierarchie, DokuWiki Flat-File
+* Wiki-Engines mit PostgreSQL- oder Dateiformat-Speicherung (Top 15)
+* Produktionsreife Open-Source-Wissenssysteme nach Generation (Top 12) – „Enzyklopädie-Skala"-Filter, PKM-Ausschluss
+* Produktionsreife Open-Source-PKM-Wissensgraphen & Block-Editoren nach Generation (Top 3) – Skala für Einzelnutzer neu definiert
+* Wissenssysteme für den eigenen Selfhosting-Server (Top 20) – Ressourcenbedarf DokuWiki/BookStack/Wiki.js/XWiki
+* Enterprise-Wissenssystem-Sicherheit & PostgreSQL – Skalierungs-Matrix (MediaWiki/Wikibase > 60 Mio., XWiki > 1 Mio.)
+* Evolution und Architekturen digitaler MediaWiki / digitaler Wiki-Engines
+* Backup-Strategien für Wissenssysteme (Top 20)
+
+[[Kategorie:Analyse]]
+[[Kategorie:Skalierung]]
+[[Kategorie:Wissenssysteme]]
+[[Kategorie:MediaWiki]]
+[[Kategorie:Dokumentation]]

@@ -1,0 +1,766 @@
+site_name: Wissen Ahrensburg
+site_description: Dokumentation zu KI, Entwicklung, Kreativ und Wissen
+site_url: https://dokument.wissen-ahrensburg.de
+
+nav:
+  - Start: index.md
+
+  # 🤖 KI & AUTOMATISIERUNG
+  - KI & Automatisierung:
+      - Übersicht: künstliche-intelligenz/index.md
+      - "Evolution und Architekturen digitaler KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-ki-anwendungen.md
+      - "Beste KI-Anwendungen 2026 (Top 20)": künstliche-intelligenz/ki-anwendungen-2026-topliste.md
+      - "Produktionsreife KI-Anwendungen nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-ki-anwendungen-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler Expertensysteme": künstliche-intelligenz/evolution-digitaler-expertensysteme.md
+      - "Beste Expertensysteme (Top 15)": künstliche-intelligenz/expertensysteme-topliste.md
+      - "Produktionsreife Expertensysteme & Regel-Engines nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-expertensysteme-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler Deep-Learning-Anwendungen": künstliche-intelligenz/evolution-digitaler-deep-learning-anwendungen.md
+      - "Beste Deep-Learning-Anwendungen 2026 (Top 15)": künstliche-intelligenz/deep-learning-anwendungen-2026-topliste.md
+      - "Produktionsreife Deep-Learning-Anwendungen nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-deep-learning-anwendungen-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler Cloud-KI-APIs": künstliche-intelligenz/evolution-digitaler-cloud-ki-apis.md
+      - "Beste Cloud-KI-APIs 2026 (Top 15)": künstliche-intelligenz/cloud-ki-apis-2026-topliste.md
+      - "Produktionsreife Cloud-KI-APIs nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-cloud-ki-apis-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler KI-Modell-Generatoren": künstliche-intelligenz/evolution-digitaler-ki-modell-generatoren.md
+      - "Beste KI-Modell-Generatoren 2026 (Top 15)": künstliche-intelligenz/ki-modell-generatoren-2026-topliste.md
+      - "Produktionsreife KI-Modell-Generatoren nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-ki-modell-generatoren-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler KI-Evaluationswerkzeuge": künstliche-intelligenz/evolution-digitaler-ki-evaluation.md
+      - "Beste KI-Evaluationswerkzeuge 2026 (Top 15)": künstliche-intelligenz/ki-evaluation-2026-topliste.md
+      - "Produktionsreife KI-Evaluationswerkzeuge nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-ki-evaluation-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler Generativer KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-generative-ki-anwendungen.md
+      - "Beste generative KI-Anwendungen 2026 (Top 20)": künstliche-intelligenz/generative-ki-anwendungen-2026-topliste.md
+      - "Produktionsreife generative KI-Anwendungen nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-generative-ki-anwendungen-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler RAG- & Werkzeug-Anwendungen": künstliche-intelligenz/evolution-digitaler-rag-werkzeug-anwendungen.md
+      - "Beste RAG- & Werkzeug-Anwendungen 2026 (Top 15)": künstliche-intelligenz/rag-werkzeug-anwendungen-2026-topliste.md
+      - "Produktionsreife Open-Source-RAG- & Werkzeug-Anwendungen nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-rag-werkzeug-anwendungen-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler Autonomer KI-Agenten": künstliche-intelligenz/evolution-digitaler-autonome-ki-agenten.md
+      - "Beste autonome KI-Agenten 2026 (Top 20)": künstliche-intelligenz/autonome-ki-agenten-2026-topliste.md
+      - "Produktionsreife autonome Open-Source-KI-Agenten nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-autonome-ki-agenten-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler Rust-KI-Anwendungen": künstliche-intelligenz/evolution-digitaler-rust-ki-anwendungen.md
+      - "Beste Rust-Bausteine für KI-Anwendungen 2026 (Top 10)": künstliche-intelligenz/rust-ki-anwendungen-2026-topliste.md
+      - "Produktionsreife Rust-Bausteine für KI-Anwendungen nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": künstliche-intelligenz/produktionsreife-rust-ki-anwendungen-generationen-2026-topliste.md
+
+      - KI-Coding:
+          - Übersicht: künstliche-intelligenz/coding/index.md
+          - Einstieg:
+              - KI Coding: künstliche-intelligenz/coding/ki-coding.md
+              - AI Engineer Praxis-Handbuch: künstliche-intelligenz/coding/ai-engineer-praxis.md
+              - Prompt Engineering Praxis-Handbuch: künstliche-intelligenz/coding/prompt-engineering-praxis.md
+              - Prompt Gems (Gemini, Claude, mdBook): künstliche-intelligenz/coding/prompt-gems-gemini-claude-mdbook.md
+              - Meine Gems Liste und Claude Projekt Liste:
+                - Projekt: künstliche-intelligenz/coding/gems/projekt.md
+                - Entwicklungs-Fahrplan: künstliche-intelligenz/coding/gems/Entwicklungs-Fahrplan.md
+                - eigene Ki anwendung bauen : künstliche-intelligenz/coding/gems/eigene_Ki_anwendung_bauen.md
+              - Programmieren lernen mit KI: künstliche-intelligenz/coding/programmieren-lernen-ki.md
+              - Programmieren mit KI: künstliche-intelligenz/coding/programmieren-mit-ki.md
+              - Vibe Coding & Engineering: künstliche-intelligenz/coding/vibe-coding-engineering.md
+              - Vibe Coding Praxis-Handbuch: künstliche-intelligenz/coding/vibe-coding-praxis.md
+              - Eigene KI-Anwendungen: künstliche-intelligenz/coding/ki-anwendungen-programmieren.md
+              - Praxiseinstieg KI-Programmierung: künstliche-intelligenz/coding/praxiseinstieg-ki-programmierung.md
+          - LLM & Serving:
+              - Multi-LLM- & Sprachmodell-Anbieter im Vergleich: künstliche-intelligenz/coding/llm-anbieter-vergleich.md
+              - Beste KI-Sprachmodell-SDKs nach Programmiersprachen-Vielfalt (Top 20): künstliche-intelligenz/coding/llm-sdk-sprachen-topliste.md
+              - Beste Rust-Bibliotheken & Frameworks für ein eigenes KI-Sprachmodell-SDK (Top 20): künstliche-intelligenz/coding/llm-sdk-rust-bibliotheken-topliste.md
+              - Beste Sprachmodelle für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/llm-rust-topliste.md
+              - Beste lokale Sprachmodelle für Rust-Programmierung (Self-Hosting, Top 20): künstliche-intelligenz/coding/lokale-sprachmodelle-rust-topliste.md
+              - Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/llm-aggregatoren-rust-topliste.md
+              - Beste Aggregatoren & Multi-Modell-Provider für Rust-Programmierung (Abo-Abrechnung, Top 20): künstliche-intelligenz/coding/llm-aggregatoren-abo-rust-topliste.md
+              - Beste Direkt-Anbieter (Offizielle Entwickler-APIs) für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/llm-direktanbieter-rust-topliste.md
+              - Beste Abo-basierte Direkt-Anbieter (Offizielle Entwickler-Abos) für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/llm-abo-anbieter-rust-topliste.md
+              - Beste Cloud-GPU-Anbieter für KI-Workloads & LLM-Inferenz (Top 20): künstliche-intelligenz/coding/cloud-gpu-provider-ki-topliste.md
+              - Beste Cloud-Provider für GPU-Hosting eigener Rust-Coding-Modelle (Top 20): künstliche-intelligenz/coding/cloud-gpu-provider-rust-topliste.md
+              - Beste Rust-Frameworks & Web-Backends mit KI-Unterstützung (Top 20): künstliche-intelligenz/coding/rust-web-frameworks-ki-topliste.md
+              - Custom Chat-Assistenten im Anbieter-Vergleich (Gems, GPTs, Projects): künstliche-intelligenz/coding/custom-chat-assistenten-anbieter-vergleich.md
+              - Beste Mobile KI-Chat-Apps mit Live-Sprach- & Video-Modus (Android, Top 20): künstliche-intelligenz/coding/mobile-ki-chat-live-topliste.md
+              - Lokales RAG & LLM-Serving: künstliche-intelligenz/coding/lokales-rag-ollama.md
+              - vLLM High-Throughput Serving: künstliche-intelligenz/coding/vllm-high-throughput-serving.md
+              - Local LLM Fine-Tuning (Unsloth): künstliche-intelligenz/coding/lora-finetuning-unsloth.md
+              - Structured LLM Outputs (Pydantic): künstliche-intelligenz/coding/structured-outputs-pydantic.md
+              - Multimodale Vision Pipelines: künstliche-intelligenz/coding/multimodale-vision-pipelines.md
+          - Frameworks & Agenten:
+              - AI Agents Praxis-Handbuch: künstliche-intelligenz/coding/ai-agents-praxis.md
+              - Beste Self-Hosting-KI-Agenten (Allgemein, Top 20): künstliche-intelligenz/coding/selbsthosting-ki-agenten-topliste.md
+              - Beste Cloud-KI-Agenten (Allgemein, Top 20): künstliche-intelligenz/coding/cloud-ki-agenten-topliste.md
+              - Beste KI-Agent-SDKs nach Programmiersprachen-Vielfalt (Top 20): künstliche-intelligenz/coding/ki-agent-sdk-sprachen-topliste.md
+              - Beste Rust-Bibliotheken & Frameworks für ein eigenes KI-Agent-SDK (Top 20): künstliche-intelligenz/coding/ki-agent-sdk-rust-bibliotheken-topliste.md
+              - Agentic Workflows (LangGraph): künstliche-intelligenz/coding/agentic-workflows-langgraph.md
+              - AutoGen Multi-Agent Framework: künstliche-intelligenz/coding/autogen-multiagent-framework.md
+              - Microsoft Semantic Kernel: künstliche-intelligenz/coding/semantic-kernel-python.md
+              - LangChain LCEL Chains: künstliche-intelligenz/coding/langchain-lcel-chains.md
+              - Open-WebUI Pipelines: künstliche-intelligenz/coding/open-webui-pipelines.md
+          - Tools:
+              - Continue.dev & Tabby AI: künstliche-intelligenz/coding/continue-dev-setup.md
+              - Claude Code Praxis-Handbuch: künstliche-intelligenz/coding/claude-code-praxis.md
+              - "Claude Cowork vs. Claude Code vs. Antigravity 2.0 vs. Antigravity IDE vs. Antigravity CLI": künstliche-intelligenz/coding/claude-cowork-code-antigravity-vergleich.md
+              - KI-Tools auf dem Produktionsserver: künstliche-intelligenz/coding/ki-tools-produktionsserver.md
+              - Beste KI-Agent-CLIs (Allgemein, Top 20): künstliche-intelligenz/coding/ki-agent-cli-topliste.md
+              - Beste KI-Agent-IDEs (Allgemein, Top 20): künstliche-intelligenz/coding/ki-agent-ide-topliste.md
+              - Agent Client Protocol (ACP) — Übersicht: künstliche-intelligenz/coding/agent-client-protocol-acp.md
+              - Beste Alternativen zum Agent Client Protocol (ACP, Top 20): künstliche-intelligenz/coding/agent-client-protocol-alternativen-topliste.md
+              - Beste MCP-Server (Top 20): künstliche-intelligenz/coding/mcp-server-topliste.md
+              - Beste MCP-Clients (Top 20): künstliche-intelligenz/coding/mcp-client-topliste.md
+              - Beste MCP-Registries (Top 20): künstliche-intelligenz/coding/mcp-registry-topliste.md
+              - Beste MCP-Gateways (Top 20): künstliche-intelligenz/coding/mcp-gateway-topliste.md
+              - MCP-Sicherheit & Best Practices (Top 20): künstliche-intelligenz/coding/mcp-sicherheit-best-practices-topliste.md
+              - Beste Open-Source-Software mit MCP-Server (Top 20): künstliche-intelligenz/coding/mcp-server-opensource-software-topliste.md
+              - Beste KI-Coding-Agenten für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/ki-agenten-rust-topliste.md
+              - Beste Cloud-Agenten für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/cloud-agenten-rust-topliste.md
+              - Beste KI-Coding-Agenten für Rust-Programmierung (Self-Hosting, Top 20): künstliche-intelligenz/coding/selbsthosting-ki-agenten-rust-topliste.md
+              - Beste KI-Assistenten & Code-Editoren für Rust-Programmierung (Top 20): künstliche-intelligenz/coding/ki-assistenten-rust-topliste.md
+          - Claude Cowork Tutorials:
+              - "Ihr erstes Projekt mit Claude Cowork (Schritt für Schritt)": künstliche-intelligenz/coding/claude-cowork-erstes-projekt.md
+              - Claude Cowork in der Praxis anwenden: künstliche-intelligenz/coding/claude-cowork-praxis.md
+              - Empfohlene Tools und kostenlose Ressourcen: künstliche-intelligenz/coding/claude-cowork-tools-ressourcen.md
+              - "Claude Cowork in Ihrem Browser nutzen (+Chrome-Erweiterung)": künstliche-intelligenz/coding/claude-cowork-browser-chrome-erweiterung.md
+              - "Claude-News: Claude Cowork vom Smartphone aus nutzen": künstliche-intelligenz/coding/claude-cowork-smartphone.md
+              - Claude Cowork unter Linux: künstliche-intelligenz/coding/claude-cowork-linux.md
+
+          - Antigravity 2.0 Tutorials:
+              - "Ihr erstes Projekt mit Antigravity 2.0 (Schritt für Schritt)": künstliche-intelligenz/coding/antigravity-2-erstes-projekt.md
+              - Antigravity 2.0 in der Praxis anwenden: künstliche-intelligenz/coding/antigravity-2-praxis.md
+              - Empfohlene Tools und kostenlose Ressourcen: künstliche-intelligenz/coding/antigravity-2-tools-ressourcen.md
+              - Antigravity 2.0 im Browser nutzen: künstliche-intelligenz/coding/antigravity-2-browser.md
+              - Antigravity SDK & Managed Agents API: künstliche-intelligenz/coding/antigravity-2-sdk-managed-agents.md
+              - Antigravity 2.0 auf macOS, Windows und Linux: künstliche-intelligenz/coding/antigravity-2-plattformen.md
+
+          - Antigravity CLI 2 Tutorials:
+              - Übersicht: künstliche-intelligenz/coding/antigravity-cli.md
+              - Handbuch & Roadmap: künstliche-intelligenz/coding/antigravity-cli-roadmap-handbuch.md
+              - Kapitel 1 – Einführung & Grundlagen: künstliche-intelligenz/coding/antigravity-cli-einfuehrung-grundlagen.md
+              - Kapitel 2 – Befehle, TUI & Cheatsheet: künstliche-intelligenz/coding/antigravity-cli-befehle-tui-cheatsheet.md
+              - Kapitel 3 – Workflows & Sessions: künstliche-intelligenz/coding/antigravity-cli-workflow-sessions.md
+              - Kapitel 4 – AGENTS.md Struktur: künstliche-intelligenz/coding/antigravity-cli-agents-md.md
+              - Kapitel 5 – Skills & Skill-Entwicklung: künstliche-intelligenz/coding/antigravity-cli-skills.md
+              - Kapitel 6 – Subagenten & Orchestrierung: künstliche-intelligenz/coding/antigravity-cli-subagents.md
+              - Kapitel 7 – Hooks & Lifecycle: künstliche-intelligenz/coding/antigravity-cli-hooks-automatisierung.md
+              - Kapitel 8 – Kontext-Management: künstliche-intelligenz/coding/antigravity-cli-kontext-performance.md
+              - Kapitel 9 – MCP, Headless & Security: künstliche-intelligenz/coding/antigravity-cli-advanced-mcp-cicd.md
+
+      - Content-Erstellung:
+          - Übersicht: künstliche-intelligenz/content/index.md
+          - KI Content Creation: künstliche-intelligenz/content/ki-content-creation.md
+          - Content-Strategie mit KI: künstliche-intelligenz/content/content-strategie.md
+          - KI-gestützte SEO-Optimierung: künstliche-intelligenz/content/ki-seo-optimierung.md
+          - Multilinguale Inhalte mit KI: künstliche-intelligenz/content/multilinguale-inhalte.md
+          - Social Media Automatisierung: künstliche-intelligenz/content/social-media-ki.md
+          - KI Content-Pipeline: künstliche-intelligenz/content/ki-content-pipeline.md
+
+      - Desktop-Automatisierung:
+          - Übersicht: künstliche-intelligenz/automatisierung/index.md
+          - Beste lokale Computer-KI-Agenten (Allgemein, Top 20): künstliche-intelligenz/automatisierung/lokale-ki-agenten-topliste.md
+          - Beste Desktop-Steuerungs-Software mit KI (Top 20): künstliche-intelligenz/automatisierung/desktop-steuerungs-software-ki-topliste.md
+          - Beste Browser-Erweiterungen mit KI-Agent (Top 20): künstliche-intelligenz/automatisierung/browser-erweiterungen-ki-agent-topliste.md
+          - Beste Browser-Erweiterungen mit KI-Agent (Open Source, Ubuntu 26.04, Top 20): künstliche-intelligenz/automatisierung/browser-erweiterungen-opensource-ubuntu-topliste.md
+          - Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Top 20): künstliche-intelligenz/automatisierung/desktop-agent-vollsteuerung-topliste.md
+          - Beste Desktop-Software mit vollständiger KI-Agent-Steuerung (Open Source, Ubuntu 26.04, Top 20): künstliche-intelligenz/automatisierung/desktop-agent-vollsteuerung-opensource-ubuntu-topliste.md
+          - Beste Voice-Steuerung-KI-Agenten (Top 20): künstliche-intelligenz/automatisierung/voice-steuerung-ki-agent-topliste.md
+          - Beste Voice-Steuerung-KI-Agenten (Open Source, Ubuntu 26.04, Top 20): künstliche-intelligenz/automatisierung/voice-steuerung-opensource-ubuntu-topliste.md
+          - Beste Voice-Steuerung-KI-Agenten für CLI-Automatisierung (Top 20): künstliche-intelligenz/automatisierung/voice-steuerung-cli-automatisierung-topliste.md
+          - Beste Computer-Use-Agenten für Ubuntu 26.04 (Top 20): künstliche-intelligenz/automatisierung/computer-use-agenten-ubuntu-topliste.md
+          - Beste Computer-Use-Agenten für Ubuntu 26.04 (Open Source, Top 20): künstliche-intelligenz/automatisierung/computer-use-agenten-opensource-ubuntu-topliste.md
+          - Beste Desktop-Steuerungs-Software mit KI (Open Source, Ubuntu 26.04, Top 20): künstliche-intelligenz/automatisierung/desktop-software-opensource-ubuntu-topliste.md
+          - Beste Screenshot-Analyse-KI-Agenten (Top 20): künstliche-intelligenz/automatisierung/screenshot-analyse-ki-agent-topliste.md
+          - Beste Screenshot-Analyse-KI-Agenten (Open Source, Ubuntu 26.04, Top 20): künstliche-intelligenz/automatisierung/screenshot-analyse-opensource-ubuntu-topliste.md
+          - Beste KI-Agent-Fernsteuerung auf einem Self-Hosting-Server per Android (Open Source, Top 20): künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-server-topliste.md
+          - Beste KI-Agent-Fernsteuerung auf einem lokalen Rechner per Android (Open Source, Top 20): künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-lokal-topliste.md
+          - Android-KI-Agent-Fernsteuerung für den lokalen PC selbst programmieren (Kotlin & KI-Agent-SDK): künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-lokal-sdk-kotlin.md
+          - Android-KI-Agent-Fernsteuerung für Server selbst programmieren (Kotlin & KI-Agent-SDK): künstliche-intelligenz/automatisierung/android-ki-agent-fernsteuerung-server-sdk-kotlin.md
+          - PyAutoGUI:
+              - Grundlagen: künstliche-intelligenz/automatisierung/pyautogui-anleitung.md
+              - OpenCV & OCR: künstliche-intelligenz/automatisierung/pyautogui-ocr-vision.md
+          - Playwright:
+              - Grundlagen: künstliche-intelligenz/automatisierung/playwright-anleitung.md
+              - KI Web-Scraping: künstliche-intelligenz/automatisierung/playwright-ki-extraction.md
+              - Network Interception: künstliche-intelligenz/automatisierung/playwright-network-mocking.md
+              - Trace Viewer: künstliche-intelligenz/automatisierung/playwright-trace-viewer.md
+              - Visual Regression: künstliche-intelligenz/automatisierung/playwright-visual-regression.md
+              - Device & Geo Emulation: künstliche-intelligenz/automatisierung/playwright-device-emulation.md
+              - HAR Export & Metriken: künstliche-intelligenz/automatisierung/playwright-har-metrics.md
+          - Robot Framework:
+              - Grundlagen: künstliche-intelligenz/automatisierung/robot-framework-anleitung.md
+              - API-Testing: künstliche-intelligenz/automatisierung/robot-framework-api-testing.md
+              - Custom Keywords: künstliche-intelligenz/automatisierung/robot-framework-custom-keywords.md
+          - ydotool:
+              - Grundlagen: künstliche-intelligenz/automatisierung/ydotool-anleitung.md
+              - Wayland Automatisierung: künstliche-intelligenz/automatisierung/ydotool-wayland-praxis.md
+
+  # 💻 ENTWICKLUNG
+  - Entwicklung:
+      - Erste Schritte: entwicklung/erste-schritte.md
+      - "Evolution und Architekturen digitaler Programmiersprachen": entwicklung/evolution-digitaler-programmiersprachen.md
+      - "Produktionsreife Programmiersprachen nach Generation (Reifegrad, Standardisierung & Betriebs-Skala)": entwicklung/produktionsreife-programmiersprachen-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler Programmierparadigmen": entwicklung/evolution-digitaler-programmierparadigmen.md
+      - "Beste Sprachen zur Umsetzung der Programmierparadigmen (Top 10)": entwicklung/programmierparadigmen-sprachen-topliste.md
+      - "Produktionsreife Sprachen der Programmierparadigmen nach Generation (Reifegrad, Standardisierung & Betriebs-Skala)": entwicklung/produktionsreife-programmierparadigmen-sprachen-generationen-2026-topliste.md
+      - "Evolution und Architekturen digitaler Enterprise-Programmiersprachen": entwicklung/evolution-digitaler-enterprise-programmiersprachen.md
+      - "Beste Programmiersprachen für Enterprise-Software (Top 10)": entwicklung/enterprise-programmiersprachen-topliste.md
+      - "Produktionsreife Enterprise-Programmiersprachen nach Generation (Reifegrad, Standardisierung & Betriebs-Skala)": entwicklung/produktionsreife-enterprise-programmiersprachen-generationen-2026-topliste.md
+
+      - Webentwicklung:
+          - Übersicht: entwicklung/webentwicklung/index.md
+          - "Evolution und Architekturen digitaler Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-webframeworks.md
+          - "Beste Web-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/webframeworks-2026-topliste.md
+          - "Produktionsreife Open-Source-Web-Frameworks & -Bibliotheken nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-webframeworks-generationen-2026-topliste.md
+          - "Produktionsreife Open-Source-Web-Frameworks mit vollständigem pgvector-Support nach Generation (Top 2)": entwicklung/webentwicklung/produktionsreife-pgvector-webframeworks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Server-Monolith-Frameworks": entwicklung/webentwicklung/evolution-digitaler-monolith-frameworks.md
+          - "Beste Server-Monolith-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/monolith-frameworks-2026-topliste.md
+          - "Produktionsreife Open-Source-Server-Monolith-Frameworks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-monolith-frameworks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Ajax- & JavaScript-Bibliotheken": entwicklung/webentwicklung/evolution-digitaler-ajax-js-bibliotheken.md
+          - "Einflussreichste Ajax- & JavaScript-Bibliotheken (Top 15)": entwicklung/webentwicklung/ajax-js-bibliotheken-topliste.md
+          - "Produktionsreife Open-Source-Ajax- & JavaScript-Bibliotheken nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-ajax-js-bibliotheken-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler SPA-Frameworks": entwicklung/webentwicklung/evolution-digitaler-spa-frameworks.md
+          - "Beste SPA-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/spa-frameworks-2026-topliste.md
+          - "Produktionsreife Open-Source-SPA-Frameworks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-spa-frameworks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Full-Stack-Meta-Frameworks": entwicklung/webentwicklung/evolution-digitaler-meta-frameworks.md
+          - "Beste Full-Stack-Meta-Frameworks 2026 (Top 15)": entwicklung/webentwicklung/meta-frameworks-2026-topliste.md
+          - "Produktionsreife Open-Source-Full-Stack-Meta-Frameworks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-meta-frameworks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Islands- & Edge-Architekturen": entwicklung/webentwicklung/evolution-digitaler-islands-edge-architektur.md
+          - "Beste Islands- & Edge-Architekturen 2026 (Top 15)": entwicklung/webentwicklung/islands-edge-architektur-2026-topliste.md
+          - "Produktionsreife Open-Source-Islands- & Edge-Architekturen nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-islands-edge-architekturen-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler KI-nativer Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-ki-native-webframeworks.md
+          - "Beste KI-native Web-Frameworks 2026 (Top 20)": entwicklung/webentwicklung/ki-native-webframeworks-2026-topliste.md
+          - "Produktionsreife Open-Source-KI-native Web-Frameworks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-ki-native-webframeworks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Rust-Webframeworks": entwicklung/webentwicklung/evolution-digitaler-rust-webframeworks.md
+          - "Beste Rust-Webframeworks 2026 (Top 15)": entwicklung/webentwicklung/rust-webframeworks-2026-topliste.md
+          - "Produktionsreife Open-Source-Rust-Web-Frameworks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-rust-webframeworks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Batteries-Included-Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-batteries-included-frameworks.md
+          - "Beste Batteries-Included-Web-Frameworks 2026 (Top 15)": entwicklung/webentwicklung/batteries-included-frameworks-2026-topliste.md
+          - "Produktionsreife Open-Source-Batteries-Included-Web-Frameworks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-batteries-included-frameworks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Enterprise-Web-Frameworks": entwicklung/webentwicklung/evolution-digitaler-enterprise-webframeworks.md
+          - "Beste Enterprise-Web-Frameworks 2026 (Top 15)": entwicklung/webentwicklung/enterprise-webframeworks-2026-topliste.md
+          - "Produktionsreife Open-Source-Enterprise-Web-Frameworks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-enterprise-webframeworks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Enterprise-UI-Bibliotheken": entwicklung/webentwicklung/evolution-digitaler-enterprise-ui-bibliotheken.md
+          - "Beste Enterprise-UI-Bibliotheken 2026 (Top 15)": entwicklung/webentwicklung/enterprise-ui-bibliotheken-2026-topliste.md
+          - "Produktionsreife Open-Source-Enterprise-UI-Bibliotheken nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/webentwicklung/produktionsreife-enterprise-ui-bibliotheken-generationen-2026-topliste.md
+          - KI Webentwicklung: entwicklung/webentwicklung/ki-webentwicklung.md
+          - Frontend mit KI: entwicklung/webentwicklung/frontend-ki.md
+          - Backend-Integration: entwicklung/webentwicklung/backend-integration.md
+          - Deployment mit KI: entwicklung/webentwicklung/deployment.md
+          - "Statisches Hosting aus Git-Repositories: Anbieter & Preise": entwicklung/webentwicklung/static-hosting-git-anbieter.md
+          - Performance-Optimierung: entwicklung/webentwicklung/performance.md
+
+      - Server & Infrastruktur:
+          - Übersicht: entwicklung/infrastruktur/index.md
+          - Software-Übersicht: entwicklung/infrastruktur/software.md
+          - Installation: entwicklung/infrastruktur/installation.md
+          - Nginx:
+              - Grundlagen: entwicklung/infrastruktur/nginx.md
+              - SSL & HTTPS: entwicklung/infrastruktur/nginx-ssl.md
+              - Hardening & Sicherheit: entwicklung/infrastruktur/nginx-hardening.md
+              - Load Balancing: entwicklung/infrastruktur/nginx-loadbalancing.md
+              - FastCGI & Proxy Caching: entwicklung/infrastruktur/nginx-caching.md
+              - Rate Limiting: entwicklung/infrastruktur/nginx-rate-limiting.md
+              - GeoIP Blocking: entwicklung/infrastruktur/nginx-geoip-blocking.md
+          - PostgreSQL:
+              - Grundlagen: entwicklung/infrastruktur/postgresql.md
+              - DBA Praxis-Handbuch: entwicklung/infrastruktur/postgresql-dba-praxis.md
+              - Backup & Recovery: entwicklung/infrastruktur/postgresql-backup-restore.md
+              - Performance Tuning: entwicklung/infrastruktur/postgresql-tuning.md
+              - PgBouncer Pooling: entwicklung/infrastruktur/postgresql-pgbouncer.md
+              - Streaming Replication: entwicklung/infrastruktur/postgresql-streaming-replication.md
+              - Logical Replication: entwicklung/infrastruktur/postgresql-logical-replication.md
+              - Table Partitioning: entwicklung/infrastruktur/postgresql-table-partitioning.md
+              - JSONB & GIN-Indizes: entwicklung/infrastruktur/postgresql-jsonb-gin-indexes.md
+              - Volltextsuche (tsvector): entwicklung/infrastruktur/postgresql-fulltext-search.md
+          - KI/ML-Infrastrukturen: entwicklung/infrastruktur/ki-ml-infrastrukturen.md
+          - Beste Open-Source-Apps zur Fernsteuerung von Self-Hosting-Servern per Android (Top 20): entwicklung/infrastruktur/android-server-fernsteuerung-opensource-topliste.md
+          - KVM-Server mieten: entwicklung/infrastruktur/kvm-server-mieten.md
+          - Benchmarking:
+              - HTTP Server Benchmarking: entwicklung/infrastruktur/http-server-benchmarking.md
+              - k6 API Load Testing: entwicklung/infrastruktur/k6-api-load-testing.md
+          - Sicherheit:
+              - Übersicht: entwicklung/infrastruktur/sicherheit/index.md
+              - Enterprise-Webframework Sicherheit: entwicklung/infrastruktur/sicherheit/enterprise-webframework-sicherheit-topliste.md
+              - Enterprise-CMS Sicherheit & PostgreSQL: entwicklung/infrastruktur/sicherheit/enterprise-cms-sicherheit-postgresql-topliste.md
+              - Enterprise-Wissenssystem Sicherheit & PostgreSQL: entwicklung/infrastruktur/sicherheit/enterprise-wissenssystem-sicherheit-postgresql-topliste.md
+              - Enterprise-SSR Sicherheit: entwicklung/infrastruktur/sicherheit/enterprise-ssr-sicherheit-topliste.md
+              - Enterprise-LMS Sicherheit & PostgreSQL: entwicklung/infrastruktur/sicherheit/enterprise-lms-sicherheit-postgresql-topliste.md
+              - UFW-Firewall: entwicklung/infrastruktur/ufw-firewall.md
+              - SSH-Tunnel: entwicklung/infrastruktur/ssh-tunnel.md
+      - Systemprogrammierung:
+          - Übersicht: entwicklung/system/index.md
+          - Assembler:
+              - Grundlagen: entwicklung/system/assembler.md
+              - Fehler & Sicherheit: entwicklung/system/assembler-fehler-sicherheit.md
+          - Compiler: entwicklung/system/compiler.md
+          - "Evolution und Architekturen digitaler Compiler": entwicklung/system/evolution-digitaler-compiler.md
+          - "Beste Compiler-Werkzeuge 2026 (Top 15)": entwicklung/system/compiler-2026-topliste.md
+          - "Produktionsreife Open-Source-Compiler-Werkzeuge nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/system/produktionsreife-compiler-werkzeuge-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Interpreter": entwicklung/system/evolution-digitaler-interpreter.md
+          - "Beste Interpreter-Werkzeuge 2026 (Top 15)": entwicklung/system/interpreter-2026-topliste.md
+          - "Produktionsreife Open-Source-Interpreter-Werkzeuge nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/system/produktionsreife-interpreter-werkzeuge-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Debugger": entwicklung/system/evolution-digitaler-debugger.md
+          - "Beste Debugger-Werkzeuge 2026 (Top 15)": entwicklung/system/debugger-2026-topliste.md
+          - "Produktionsreife Open-Source-Debugger-Werkzeuge nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/system/produktionsreife-debugger-werkzeuge-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Editoren": entwicklung/system/evolution-digitaler-editoren.md
+          - "Beste Editoren 2026 (Top 15)": entwicklung/system/editoren-2026-topliste.md
+          - "Produktionsreife Open-Source-Editoren nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/system/produktionsreife-editoren-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Build-Systeme": entwicklung/system/evolution-digitaler-build-systeme.md
+          - "Beste Build-Systeme 2026 (Top 15)": entwicklung/system/build-systeme-2026-topliste.md
+          - "Produktionsreife Open-Source-Build-Systeme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/system/produktionsreife-build-systeme-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Paketmanager": entwicklung/system/evolution-digitaler-paketmanager.md
+          - "Beste Paketmanager 2026 (Top 15)": entwicklung/system/paketmanager-2026-topliste.md
+          - "Produktionsreife Open-Source-Paketmanager nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/system/produktionsreife-paketmanager-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Versionskontrollsysteme": entwicklung/system/evolution-digitaler-versionskontrollsysteme.md
+          - "Beste Versionskontrollsysteme 2026 (Top 15)": entwicklung/system/versionskontrollsysteme-2026-topliste.md
+          - "Produktionsreife Open-Source-Versionskontrollsysteme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": entwicklung/system/produktionsreife-versionskontrollsysteme-generationen-2026-topliste.md
+          - Rust & C/C++:
+              - C Praxis-Handbuch: entwicklung/system/c-praxis.md
+              - C++ Praxis-Handbuch: entwicklung/system/cpp-praxis.md
+              - Rust Praxis-Handbuch: entwicklung/system/rust-praxis.md
+              - Rust, C & C++ Integration: entwicklung/system/rust-c-cpp-integration.md
+              - Rust & Python Bindings (PyO3): entwicklung/system/rust-python-bindings.md
+              - Beste IDEs & Editoren mit Rust-Unterstützung (Top 20): entwicklung/system/rust-ide-topliste.md
+              - C++20 Modules & Modern CMake: entwicklung/system/cpp20-modules-cmake.md
+          - Linux:
+              - Linux Praxis-Handbuch: entwicklung/system/linux-praxis.md
+              - Shell & Bash Praxis-Handbuch: entwicklung/system/shell-bash-praxis.md
+              - Linux-Systemprogrammierung: entwicklung/system/linux-systemprogrammierung.md
+              - Systemd Service Creation: entwicklung/system/systemd-service-creation.md
+              - Linux Cgroups v2 Limits: entwicklung/system/linux-cgroups-limits.md
+              - Linux eBPF Performance Profiling: entwicklung/system/linux-ebpf-performance.md
+          - Spiele-Entwicklung:
+              - Game Development Praxis-Handbuch: entwicklung/system/game-development-praxis.md
+
+      - IDE & Tools:
+          - Übersicht: entwicklung/ide/index.md
+          - Setup: entwicklung/ide/setup.md
+          - Android-Entwicklung: entwicklung/ide/android.md
+          - Android Praxis-Handbuch: entwicklung/ide/android-praxis.md
+          - iOS Praxis-Handbuch: entwicklung/ide/ios-praxis.md
+          - Flutter Praxis-Handbuch: entwicklung/ide/flutter-praxis.md
+          - Kotlin Praxis-Handbuch: entwicklung/ide/kotlin-praxis.md
+          - Lokale KI-Frontends: entwicklung/ide/lokale-ki-frontends.md
+
+      - Agentic Coding & Curriculum:
+          - Übersicht & Curriculum: entwicklung/agentic-coding-curriculum/index.md
+          - KI-Entwicklungsworkflow für Rust: entwicklung/agentic-coding-curriculum/ki-entwicklungsworkflow-rust.md
+          - "Claude Code CLI: End-to-End-Leitfaden": entwicklung/agentic-coding-curriculum/claude-code-cli-leitfaden.md
+          - Rust-Praxisprojekte mit Claude Code: entwicklung/agentic-coding-curriculum/rust-praxisprojekte.md
+
+  # 🎨 KREATIV
+  - Kreativ:
+      - Design:
+          - Übersicht: kreativ/design/index.md
+          - Design nach KI: kreativ/design/design-nach-ki.md
+          - "Evolution und Architekturen digitaler KI-Bildgenerierung": kreativ/design/evolution-digitaler-ki-bildgenerierung.md
+          - Beste KI-Bildgenerierungs-Tools (Open Source, Top 20): kreativ/design/ki-bildgenerierung-tools-topliste.md
+          - "Produktionsreife KI-Bildgenerierung nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": kreativ/design/produktionsreife-ki-bildgenerierung-generationen-2026-topliste.md
+          - Ideenfindung mit KI: kreativ/design/ideenfindung-ki.md
+          - Prompting als Designmaterial: kreativ/design/prompting-als-designmaterial.md
+          - ComfyUI & SD Automatisierung: kreativ/design/comfyui-workflow-anleitung.md
+          - Blender 3D Python Automatisierung: kreativ/design/blender-python-automation.md
+
+      - Audio & Musik:
+          - Übersicht: kreativ/audio/index.md
+          - KI und Audio: kreativ/audio/ki-audio.md
+          - "Evolution und Architekturen digitaler KI-Audio-Werkzeuge": kreativ/audio/evolution-digitaler-ki-audio-werkzeuge.md
+          - Beste KI-Audio-Tools (Open Source, Top 20): kreativ/audio/ki-audio-tools-topliste.md
+          - "Produktionsreife KI-Audio-Werkzeuge nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": kreativ/audio/produktionsreife-ki-audio-werkzeuge-generationen-2026-topliste.md
+          - Audacity:
+              - Audacity mit KI: kreativ/audio/audacity-ki.md
+              - Audacity Macro Automatisierung: kreativ/audio/audacity-macro-automatisierung.md
+          - DAW & MIDI:
+              - DAW-Integration mit KI: kreativ/audio/daw-integration.md
+              - MIDI-Programmierung mit KI: kreativ/audio/midi-programmierung.md
+              - MIDI-Generierung mit Python: kreativ/audio/midi-python-automation.md
+          - Audio-Processing:
+              - Audio-Processing mit KI: kreativ/audio/audio-processing.md
+              - WebAudio API JavaScript: kreativ/audio/webaudio-api-javascript.md
+              - AI Voice Cloning (XTTS v2): kreativ/audio/ai-voice-cloning-xtts.md
+
+      - Video & Film:
+          - Übersicht: kreativ/video/index.md
+          - KI in der Videoproduktion: kreativ/video/ki-filmproduktion.md
+          - "Evolution und Architekturen digitaler KI-Videogenerierung": kreativ/video/evolution-digitaler-ki-videogenerierung.md
+          - Beste KI-Video-Tools (Open Source, Top 20): kreativ/video/ki-video-tools-topliste.md
+          - "Produktionsreife KI-Videogenerierung nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": kreativ/video/produktionsreife-ki-videogenerierung-generationen-2026-topliste.md
+          - FFmpeg:
+              - FFmpeg & Whisper Automatisierung: kreativ/video/ffmpeg-whisper-automatisierung.md
+              - FFmpeg Advanced Filtering & AV1: kreativ/video/ffmpeg-advanced-filters.md
+              - FFmpeg HLS Video Streaming: kreativ/video/ffmpeg-hls-streaming.md
+              - FFmpeg Video Contact Sheets: kreativ/video/ffmpeg-thumbnail-grid.md
+          - Animationen:
+              - Manim Animation Engine: kreativ/video/manim-animation-guide.md
+              - Remotion React Video Generation: kreativ/video/remotion-react-video.md
+
+  # 📚 WISSEN
+  - Wissen:
+      - Daten:
+          - Datenbanken: wissen/daten/datenbanken/index.md
+          - PostgreSQL + pgvector: wissen/daten/datenbanken/pgvector-anleitung.md
+          - "Evolution und Architekturen digitaler relationaler Datenbanken": wissen/daten/datenbanken/evolution-digitaler-relationale-datenbanken.md
+          - "Beste relationale Datenbanken 2026 (Top 15)": wissen/daten/datenbanken/relationale-datenbanken-2026-topliste.md
+          - "Produktionsreife relationale Datenbanken nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-relationale-datenbanken-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Vektordatenbanken": wissen/daten/datenbanken/evolution-digitaler-vektordatenbanken.md
+          - "Beste Vektordatenbanken 2026 (Top 15)": wissen/daten/datenbanken/vektordatenbanken-2026-topliste.md
+          - "Produktionsreife Open-Source-Vektordatenbanken nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-vektordatenbanken-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler BI- & Analytics-Tools": wissen/daten/datenbanken/evolution-digitaler-bi-analytics-tools.md
+          - "Beste BI- & Analytics-Tools 2026 (Top 15)": wissen/daten/datenbanken/bi-analytics-tools-2026-topliste.md
+          - "Produktionsreife Open-Source-BI- & Analytics-Tools nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-bi-analytics-tools-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Dokumentdatenbanken": wissen/daten/datenbanken/evolution-digitaler-dokumentdatenbanken.md
+          - "Beste Dokumentdatenbanken 2026 (Top 15)": wissen/daten/datenbanken/dokumentdatenbanken-2026-topliste.md
+          - "Produktionsreife Open-Source-Dokumentdatenbanken nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-dokumentdatenbanken-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Graphdatenbanken": wissen/daten/datenbanken/evolution-digitaler-graphdatenbanken.md
+          - "Beste Graphdatenbanken 2026 (Top 15)": wissen/daten/datenbanken/graphdatenbanken-2026-topliste.md
+          - "Produktionsreife Open-Source-Graphdatenbanken nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/daten/datenbanken/produktionsreife-graphdatenbanken-generationen-2026-topliste.md
+          - Datenerfassung:
+              - Übersicht: wissen/daten/datenerfassung/index.md
+              - OpenDataKit: wissen/daten/datenerfassung/opendatakit.md
+
+      - E-Learning:
+          - Übersicht: wissen/e-learning/index.md
+          - "Evolution und Architekturen digitaler LMS": wissen/e-learning/evolution-digitaler-lms.md
+          - "Beste Lernmanagement-Systeme 2026 (Top 20)": wissen/e-learning/lms-2026-topliste.md
+          - "Evolution und Architekturen digitaler klassischer LMS": wissen/e-learning/evolution-digitaler-klassische-lms.md
+          - "Beste klassische LMS 2026 (Top 15)": wissen/e-learning/klassische-lms-2026-topliste.md
+          - "Produktionsreife klassische Open-Source-LMS nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/e-learning/produktionsreife-klassische-lms-generationen-2026-topliste.md
+          - "Produktionsreife Open-Source-LMS nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/e-learning/produktionsreife-lms-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Cloud-LMS & LXP": wissen/e-learning/evolution-digitaler-cloud-lms.md
+          - "Beste Cloud-LMS & LXP 2026 (Top 20)": wissen/e-learning/cloud-lms-2026-topliste.md
+          - "Produktionsreife Cloud-LMS & LXP nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/e-learning/produktionsreife-cloud-lms-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler interoperabler LMS": wissen/e-learning/evolution-digitaler-interoperable-lms.md
+          - "Beste interoperable LMS-Bausteine 2026 (Top 10)": wissen/e-learning/interoperable-lms-2026-topliste.md
+          - "Produktionsreife interoperable LMS-Bausteine nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/e-learning/produktionsreife-interoperable-lms-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler KI-adaptiver Lernplattformen": wissen/e-learning/evolution-digitaler-ki-adaptive-lernplattformen.md
+          - "Beste KI-adaptive Lernplattformen 2026 (Top 15)": wissen/e-learning/ki-adaptive-lernplattformen-2026-topliste.md
+          - "Produktionsreife KI-adaptive Lernplattformen nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/e-learning/produktionsreife-ki-adaptive-lernplattformen-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Agentischer Tutor-Ökosysteme": wissen/e-learning/evolution-digitaler-agentische-tutor-oekosysteme.md
+          - "Beste agentische Tutor-Ökosysteme 2026 (Top 15)": wissen/e-learning/agentische-tutor-oekosysteme-2026-topliste.md
+          - "Produktionsreife agentische Tutor-Ökosysteme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/e-learning/produktionsreife-agentische-tutor-oekosysteme-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Rust-LMS": wissen/e-learning/evolution-digitaler-rust-lms.md
+          - "Beste Rust-Bausteine für LMS 2026 (Top 8)": wissen/e-learning/rust-lms-2026-topliste.md
+          - "Produktionsreife Rust-Bausteine für LMS nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/e-learning/produktionsreife-rust-lms-generationen-2026-topliste.md
+          - KI in Lehre & Weiterbildung: wissen/e-learning/ki-lehre-weiterbildung.md
+          - Beste KI-Agenten für Deutsch- und Fremdsprachenlernen (Open Source, Top 20): wissen/e-learning/sprachlern-ki-agenten-topliste.md
+          - Moderne Lernmethoden für Programmiersprachen: wissen/e-learning/lernmethoden-programmiersprachen.md
+          - Interaktive Lernplattformen & Kurserstellung: wissen/e-learning/interaktive-lernplattformen-kurserstellung.md
+
+      - Tools:
+          - Übersicht: wissen/tools/index.md
+          - Pandoc:
+              - Grundlagen: wissen/tools/pandoc.md
+              - Export-Pipeline: wissen/tools/pandoc-export-pipeline.md
+              - Custom Lua-Filter: wissen/tools/pandoc-lua-filters.md
+          - Analysetool: wissen/tools/analysetool.md
+          - Benchmark: wissen/tools/benchmark.md
+
+      - Dokumentation:
+          - Übersicht: wissen/dokumentation/index.md
+          - "Evolution und Architekturen digitaler Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssysteme.md
+          - "Evolution und Architekturen digitaler Wiki-Engines": wissen/dokumentation/evolution-digitaler-wiki-engines.md
+          - "Beste Wiki-Engines 2026 (Top 20)": wissen/dokumentation/wiki-engines-2026-topliste.md
+          - "Wiki-Engines mit PostgreSQL- oder Dateiformat-Speicherung (Top 15)": wissen/dokumentation/wiki-engines-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Open-Source-Wiki-Engines nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-wiki-engines-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Content-Management-Systeme": wissen/dokumentation/evolution-digitaler-cms.md
+          - "Evolution und Architekturen digitaler klassischer CMS": wissen/dokumentation/evolution-digitaler-klassische-cms.md
+          - "Beste klassische CMS 2026 (Top 20)": wissen/dokumentation/klassische-cms-2026-topliste.md
+          - "Klassische CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 7)": wissen/dokumentation/klassische-cms-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife klassische Open-Source-CMS nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-klassische-cms-generationen-2026-topliste.md
+          - "Produktionsreife Open-Source-CMS nach Generation (Reifegrad, Evaluation & Content-Skala, Top 12)": wissen/dokumentation/produktionsreife-cms-generationen-2026-topliste.md
+          - "Produktionsreife Open-Source-CMS mit vollständigem pgvector-Support nach Generation (kein Treffer)": wissen/dokumentation/produktionsreife-pgvector-cms-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Headless-CMS": wissen/dokumentation/evolution-digitaler-headless-cms.md
+          - "Beste Headless-CMS 2026 (Top 20)": wissen/dokumentation/headless-cms-2026-topliste.md
+          - "Headless-CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 9)": wissen/dokumentation/headless-cms-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Open-Source-Headless-CMS nach Generation (Reifegrad, Evaluation & Content-Skala)": wissen/dokumentation/produktionsreife-headless-cms-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Composable-CMS": wissen/dokumentation/evolution-digitaler-composable-cms.md
+          - "Beste Composable-CMS & MACH-Systeme 2026 (Top 20)": wissen/dokumentation/composable-cms-2026-topliste.md
+          - "Produktionsreife Composable-CMS & MACH-Systeme nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-composable-cms-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler KI-Content-Erstellung": wissen/dokumentation/evolution-digitaler-ki-content-erstellung.md
+          - "Beste KI-Content-Erstellung in CMS-Editoren 2026 (Top 20)": wissen/dokumentation/ki-content-erstellung-2026-topliste.md
+          - "Produktionsreife KI-Content-Erstellung in CMS nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-ki-content-erstellung-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Agentischer Content-Ökosysteme": wissen/dokumentation/evolution-digitaler-agentische-content-oekosysteme.md
+          - "Beste agentische Content-Ökosysteme 2026 (Top 20)": wissen/dokumentation/agentische-content-oekosysteme-2026-topliste.md
+          - "Produktionsreife agentische Content-Ökosysteme nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-agentische-content-oekosysteme-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Rust-CMS": wissen/dokumentation/evolution-digitaler-rust-cms.md
+          - "Beste Rust-Bausteine für CMS 2026 (Top 15)": wissen/dokumentation/rust-cms-2026-topliste.md
+          - "Rust-Bausteine für CMS mit PostgreSQL-/Dateiformat-Speicherung (Top 12)": wissen/dokumentation/rust-cms-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Rust-Bausteine für CMS nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-rust-cms-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Notebook-Systeme": wissen/dokumentation/evolution-digitaler-notebook-systeme.md
+          - "Beste Notebook-Systeme 2026 (Top 20)": wissen/dokumentation/notebook-systeme-2026-topliste.md
+          - "Produktionsreife Open-Source-Notebook-Systeme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-notebook-systeme-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Notebook-Vorläufer": wissen/dokumentation/evolution-digitaler-notebook-vorlaeufer.md
+          - "Einflussreichste Literate-Programming-Vorläufer (Top 10)": wissen/dokumentation/literate-programming-vorlaeufer-topliste.md
+          - "Produktionsreife Notebook-Vorläufer nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-notebook-vorlaeufer-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler IPython- & Jupyter-Systeme": wissen/dokumentation/evolution-digitaler-ipython-jupyter.md
+          - "Beste IPython- & Jupyter-Systeme 2026 (Top 20)": wissen/dokumentation/ipython-jupyter-2026-topliste.md
+          - "IPython- & Jupyter-Systeme mit PostgreSQL-/Dateiformat-Speicherung (Top 20)": wissen/dokumentation/ipython-jupyter-postgresql-dateiformat-2026-topliste.md
+          - "Evolution und Architekturen digitaler Cloud-Notebooks": wissen/dokumentation/evolution-digitaler-cloud-notebooks.md
+          - "Beste Cloud-Notebook-Plattformen 2026 (Top 20)": wissen/dokumentation/cloud-notebooks-2026-topliste.md
+          - "Produktionsreife Open-Source-Cloud-Notebooks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-cloud-notebooks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler R-Markdown- & Quarto-Publishing-Systeme": wissen/dokumentation/evolution-digitaler-rmarkdown-quarto.md
+          - "Beste R-Markdown- & Quarto-Werkzeuge 2026 (Top 15)": wissen/dokumentation/rmarkdown-quarto-2026-topliste.md
+          - "R-Markdown- & Quarto-Werkzeuge mit PostgreSQL-/Dateiformat-Speicherung (Top 13)": wissen/dokumentation/rmarkdown-quarto-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Open-Source-R-Markdown- & Quarto-Werkzeuge nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-rmarkdown-quarto-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Reaktiver Notebooks": wissen/dokumentation/evolution-digitaler-reaktive-notebooks.md
+          - "Beste reaktive Notebooks 2026 (Top 10)": wissen/dokumentation/reaktive-notebooks-2026-topliste.md
+          - "Reaktive Notebooks mit PostgreSQL-/Dateiformat-Speicherung (Top 9)": wissen/dokumentation/reaktive-notebooks-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Open-Source-Reaktive-Notebooks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-reaktive-notebooks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler KI-nativer Notebook-Umgebungen": wissen/dokumentation/evolution-digitaler-ki-native-notebooks.md
+          - "Beste KI-native Notebook-Umgebungen 2026 (Top 20)": wissen/dokumentation/ki-native-notebooks-2026-topliste.md
+          - "Produktionsreife KI-native Notebook-Umgebungen nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-ki-native-notebooks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Rust-Notebooks": wissen/dokumentation/evolution-digitaler-rust-notebooks.md
+          - "Beste Rust-Bausteine für Notebooks 2026 (Top 10)": wissen/dokumentation/rust-notebooks-2026-topliste.md
+          - "Rust-Bausteine für Notebooks mit PostgreSQL-/Dateiformat-Speicherung (Top 10)": wissen/dokumentation/rust-notebooks-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Rust-Bausteine für Notebooks nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-rust-notebooks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Docs-as-Code": wissen/dokumentation/evolution-digitaler-docs-as-code.md
+          - "Beste Docs-as-Code-Werkzeuge 2026 (Top 15)": wissen/dokumentation/docs-as-code-2026-topliste.md
+          - "Beste Open-Source-Docs-as-Code-Werkzeuge 2026 (Top 20)": wissen/dokumentation/docs-as-code-open-source-2026-topliste.md
+          - "Beste Docs-as-Code-Analytics-Werkzeuge 2026 (Top 15)": wissen/dokumentation/docs-as-code-analytics-2026-topliste.md
+          - "Workspace-, Kollaborations- & Docs-as-Code-Plattformen (Top 20)": wissen/dokumentation/workspace-kollaboration-docs-as-code-2026-topliste.md
+          - "Produktionsreife Open-Source-Docs-as-Code-Werkzeuge nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-docs-as-code-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Static-Site-Generatoren": wissen/dokumentation/evolution-digitaler-static-site-generatoren.md
+          - "Beste Static-Site- & Docs-Generatoren 2026 (Top 20)": wissen/dokumentation/static-site-generatoren-2026-topliste.md
+          - "Produktionsreife Open-Source-Static-Site-Generatoren nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-static-site-generatoren-generationen-2026-topliste.md
+          - "Static-Site-Generatoren mit PostgreSQL-/Dateiformat-Speicherung (Top 16)": wissen/dokumentation/static-site-generatoren-postgresql-dateiformat-2026-topliste.md
+          - "Evolution und Architekturen digitaler PKM-Wissensgraphen & Block-Editoren": wissen/dokumentation/evolution-digitaler-pkm-wissensgraphen.md
+          - "Beste PKM-Wissensgraphen & Block-Editoren 2026 (Top 20)": wissen/dokumentation/pkm-wissensgraphen-2026-topliste.md
+          - "Bidirektionale Wissensgraphen & Real-time Block-Editoren (Top 15)": wissen/dokumentation/bidirektionale-wissensgraphen-realtime-block-editoren-2026-topliste.md
+          - "Produktionsreife Open-Source-PKM-Wissensgraphen & Block-Editoren nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-pkm-wissensgraphen-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Semantischer & RAG-Wissenssysteme": wissen/dokumentation/evolution-digitaler-semantische-rag-wissenssysteme.md
+          - "Beste semantische & RAG-Wissenssysteme 2026 (Top 20)": wissen/dokumentation/semantische-rag-wissenssysteme-2026-topliste.md
+          - "Semantische & RAG-Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)": wissen/dokumentation/semantische-rag-wissenssysteme-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Open-Source-semantische & RAG-Wissenssysteme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-semantische-rag-wissenssysteme-generationen-2026-topliste.md
+          - "Produktionsreife Open-Source-Wissenssysteme mit vollständigem pgvector-Support nach Generation (Top 2)": wissen/dokumentation/produktionsreife-pgvector-wissenssysteme-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Visueller, Local-First & Agentischer Wissenssysteme": wissen/dokumentation/evolution-digitaler-visuell-agentische-wissenssysteme.md
+          - "Beste visuelle, Local-First & agentische Wissenssysteme 2026 (Top 20)": wissen/dokumentation/visuell-agentische-wissenssysteme-2026-topliste.md
+          - "Visuelle, Local-First & agentische Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)": wissen/dokumentation/visuell-agentische-wissenssysteme-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife visuelle, Local-First & agentische Wissenssysteme nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-visuell-agentische-wissenssysteme-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Multi-Agenten-Wissensökosysteme": wissen/dokumentation/evolution-digitaler-multiagenten-wissensoekosysteme.md
+          - "Beste Multi-Agenten-Wissensökosysteme 2026 (Top 20)": wissen/dokumentation/multiagenten-wissensoekosysteme-2026-topliste.md
+          - "Multi-Agenten-Wissensökosysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 14)": wissen/dokumentation/multiagenten-wissensoekosysteme-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Multi-Agenten-Wissensökosysteme nach Generation (Reifegrad, Lizenz & Betriebs-Skala)": wissen/dokumentation/produktionsreife-multiagenten-wissensoekosysteme-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Rust-Wissenssysteme": wissen/dokumentation/evolution-digitaler-rust-wissenssysteme.md
+          - "Beste Rust-Bausteine für Wissenssysteme 2026 (Top 20)": wissen/dokumentation/rust-wissenssysteme-2026-topliste.md
+          - "Rust-Bausteine für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 15)": wissen/dokumentation/rust-wissenssysteme-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Rust-Bausteine für Wissenssysteme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-rust-wissenssysteme-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Frameworks & Bibliotheken für Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssystem-frameworks.md
+          - "Beste Frameworks & Bibliotheken für Wissenssysteme 2026 (Top 20)": wissen/dokumentation/wissenssystem-frameworks-2026-topliste.md
+          - "Frameworks & Bibliotheken für Wissenssysteme mit PostgreSQL-/Dateiformat-Speicherung (Top 16)": wissen/dokumentation/wissenssystem-frameworks-postgresql-dateiformat-2026-topliste.md
+          - "Produktionsreife Open-Source-Frameworks & -Bibliotheken für Wissenssysteme nach Generation (Reifegrad, Evaluation & Betriebs-Skala)": wissen/dokumentation/produktionsreife-wissenssystem-frameworks-generationen-2026-topliste.md
+          - "Evolution und Architekturen digitaler Programmiersprachen für Wissenssysteme": wissen/dokumentation/evolution-digitaler-wissenssystem-programmiersprachen.md
+          - "Beste Programmiersprachen für moderne Wissenssysteme (Top 10)": wissen/dokumentation/programmiersprachen-wissenssysteme-topliste.md
+          - "Programmiersprachen für Wissenssysteme: Lizenz, Aktivität & Reife (Top 10)": wissen/dokumentation/programmiersprachen-wissenssysteme-aktive-reife-topliste.md
+          - "Produktionsreife Programmiersprachen für Wissenssysteme nach Generation (Reifegrad, Standardisierung & Betriebs-Skala)": wissen/dokumentation/produktionsreife-wissenssystem-programmiersprachen-generationen-2026-topliste.md
+          - Native „LLM-first" Wiki-Tools & Agenten: wissen/dokumentation/llm-first-wiki-tools-agenten.md
+          - Klassische Wiki-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wiki-systeme-llm-integration.md
+          - Klassische Wissensmanagement-, KB- & CMS-Systeme mit LLM-Integration: wissen/dokumentation/klassische-wissensmanagement-cms-llm-integration.md
+          - "Die führenden Open-Source-Wissenssysteme 2026 (Top 20)": wissen/dokumentation/fuehrende-opensource-wissenssysteme-2026-topliste.md
+          - "Beste Open-Source-Wissenssysteme für den eigenen Selfhosting-Server (Top 20)": wissen/dokumentation/wissenssysteme-selfhosting-server-topliste.md
+          - "Open-Source-Wissenssysteme mit aktiver Weiterentwicklung & hoher Reife (Top 20)": wissen/dokumentation/aktive-reife-opensource-wissenssysteme-2026-topliste.md
+          - "Produktionsreife Open-Source-Wissenssysteme nach Generation (Reifegrad, Evaluation & Enzyklopädie-Skala, Top 12)": wissen/dokumentation/produktionsreife-wissenssysteme-generationen-2026-topliste.md
+          - "Beste Software 2026: Wissenssysteme, Evaluation & Generatoren (Top-20-Meta-Topliste)": wissen/dokumentation/beste-software-wissenssysteme-evaluation-generatoren-2026-topliste.md
+          - "Open-Source-Wissenssysteme mit PostgreSQL- oder Dateiformat-Speicherung (Top 22)": wissen/dokumentation/postgresql-dateiformat-wissenssysteme-2026-topliste.md
+          - "Open-Source-Wissenssysteme mit echter Echtzeit-Kollaboration (Top 15)": wissen/dokumentation/echtzeit-kollaboration-opensource-wissenssysteme-2026-topliste.md
+          - "Backup-Strategien für Wissenssysteme (Top 20)": wissen/dokumentation/backup-strategien-wissenssysteme-topliste.md
+          - "Migrationswege zwischen Wissenssystemen (Top 20)": wissen/dokumentation/migrationswege-wissenssysteme-topliste.md
+          - "Alternativen zu proprietären Wissensmanagement-Systemen (Top 15)": wissen/dokumentation/proprietaere-wissensmanagement-alternativen-2026-topliste.md
+          - "KI-Agenten-Integration in Selfhosting-Wissenssysteme (Top 20)": wissen/dokumentation/agenten-integration-wissenssysteme-topliste.md
+          - Open-Source Systeme mit vollständiger LLM-, Agenten- & MCP-Unterstützung: wissen/dokumentation/open-source-llm-agent-mcp-systeme.md
+          - Beste Wissensmanagement-Systeme (Open Source) mit MCP-Server (Top 20): wissen/dokumentation/wissensmanagement-mcp-server-topliste.md
+          - Beste CMS-Systeme (Open Source) mit MCP-Server (Top 20): wissen/dokumentation/cms-mcp-server-topliste.md
+          - "LLM-Wiki-Pattern (Karpathy-Muster)": wissen/dokumentation/llm-wiki-pattern-karpathy.md
+          - "KI strukturiert das Wiki autonom & Selfhosting-Migration": wissen/dokumentation/ki-autonome-wiki-strukturierung-selfhosting-migration.md
+          - "OpenWiki: Repo-Dokumentations-Agent (LangChain)": wissen/dokumentation/openwiki-repo-dokumentation-agent.md
+          - "Onyx (ehem. Danswer): RAG-Plattform": wissen/dokumentation/onyx-danswer-rag-plattform.md
+          - "AnythingLLM: All-in-One Desktop- & Docker-RAG-Plattform": wissen/dokumentation/anythingllm-rag-plattform.md
+          - "Open WebUI: All-in-One RAG-System mit Agenten-Funktion": wissen/dokumentation/open-webui-rag-agenten-plattform.md
+          - "Dify: Visuelle Agenten- & Workflow-Plattform": wissen/dokumentation/dify-agenten-workflow-plattform.md
+          - "Flowise: Visueller Flow-Builder für LangChain": wissen/dokumentation/flowise-visueller-flow-builder.md
+          - 'Khoj: KI-„Zweites Gehirn" für persönliche Wissenssuche': wissen/dokumentation/khoj-ki-zweites-gehirn.md
+          - "Personal Knowledge Management (PKM) & Second Brain": wissen/dokumentation/pkm-second-brain-methoden.md
+          - "Wissensdatenbanken mit KI & semantischer Suche": wissen/dokumentation/wissensdatenbanken-ki-semantische-suche.md
+          - Drupal:
+              - "Evolution und Architekturen von Drupal": wissen/dokumentation/drupal/evolution-digitaler-drupal.md
+              - "Beste Drupal-Module & -Distributionen 2026 (Top 15)": wissen/dokumentation/drupal/drupal-module-distributionen-2026-topliste.md
+              - Installieren (Composer, PostgreSQL, Nginx): wissen/dokumentation/drupal/installieren.md
+              - "Migration: MediaWiki, XWiki, Wiki.js, mkdocs/Zensical": wissen/dokumentation/drupal/migration-wikisysteme.md
+              - "Export zurück nach mkdocs/Zensical": wissen/dokumentation/drupal/export-nach-mkdocs.md
+              - "KI-gestützter Export: mkdocs, XWiki, MediaWiki, Wiki.js": wissen/dokumentation/drupal/ki-export-multi-ziel.md
+          - DokuWiki:
+              - "Evolution und Architekturen von DokuWiki": wissen/dokumentation/dokuwiki/evolution-digitaler-dokuwiki.md
+              - "Beste DokuWiki-Plugins & Templates 2026 (Top 15)": wissen/dokumentation/dokuwiki/dokuwiki-erweiterungen-2026-topliste.md
+          - MediaWiki:
+              - Installieren: wissen/dokumentation/mediawiki/index.md
+              - "Evolution und Architekturen von MediaWiki": wissen/dokumentation/mediawiki/evolution-digitaler-mediawiki.md
+              - "Beste MediaWiki-Erweiterungen 2026 (Top 15)": wissen/dokumentation/mediawiki/mediawiki-erweiterungen-2026-topliste.md
+              - "Entwicklungsrechner: localhost mit Nginx und PostgreSQL": wissen/dokumentation/mediawiki/entwicklungsrechner-localhost.md
+              - Backup: wissen/dokumentation/mediawiki/backup.md
+              - Wiederherstellen: wissen/dokumentation/mediawiki/wiederherstellen.md
+              - Python Bot Automatisierung: wissen/dokumentation/mediawiki/mediawiki-python-bot.md
+              - KI-Agent (Automatisierte Pflege mit LLMs): wissen/dokumentation/mediawiki/mediawiki-ki-agent.md
+              - Backup Skripte: wissen/dokumentation/mediawiki/mediawiki-backup-skripte.md
+              - PHP Extension: wissen/dokumentation/mediawiki/mediawiki-php-extension.md
+          - Moodle:
+              - Installieren (Git, PostgreSQL, Nginx): wissen/dokumentation/moodle/installieren.md
+              - "Evolution und Architekturen von Moodle": wissen/dokumentation/moodle/evolution-digitaler-moodle.md
+              - "Beste Moodle-Plugins & -Distributionen 2026 (Top 15)": wissen/dokumentation/moodle/moodle-plugins-distributionen-2026-topliste.md
+          - Semantisches MediaWiki:
+              - Installieren: wissen/dokumentation/semantische-mediawiki/installieren.md
+              - "Evolution und Architekturen von Semantisches MediaWiki": wissen/dokumentation/semantische-mediawiki/evolution-digitaler-semantisches-mediawiki.md
+              - "Beste Semantic-MediaWiki-Erweiterungen 2026 (Top 15)": wissen/dokumentation/semantische-mediawiki/semantisches-mediawiki-erweiterungen-2026-topliste.md
+              - Kurzform: wissen/dokumentation/semantische-mediawiki/kurzform.md
+              - Erweiterungen: wissen/dokumentation/semantische-mediawiki/wichtige-erweiterungen.md
+              - SMW Inline Queries: wissen/dokumentation/semantische-mediawiki/smw-inline-queries.md
+              - SMW SPARQL Endpoint: wissen/dokumentation/semantische-mediawiki/smw-sparql-queries.md
+          - Wiki.js:
+              - Native Linux-Installation: wissen/dokumentation/wikijs-linux-installation.md
+              - "Evolution und Architekturen von Wiki.js": wissen/dokumentation/wikijs-evolution-digitaler.md
+              - "Beste Wiki.js-Module & Integrationen 2026 (Top 15)": wissen/dokumentation/wikijs-module-2026-topliste.md
+              - Nginx über Unix-Socket anbinden: wissen/dokumentation/wikijs-nginx-unix-socket.md
+              - Agenten-Pipeline (Automatisierte Pflege mit LLMs): wissen/dokumentation/wikijs-ki-agent.md
+          - XWiki:
+              - Installieren: wissen/dokumentation/xwiki/installieren.md
+              - "Evolution und Architekturen von XWiki": wissen/dokumentation/xwiki/evolution-digitaler-xwiki.md
+              - "Beste XWiki-Erweiterungen & Flavors 2026 (Top 15)": wissen/dokumentation/xwiki/xwiki-erweiterungen-2026-topliste.md
+              - Installation über APT: wissen/dokumentation/xwiki/installation-ueber-apt.md
+              - "Fehlt: Administration Application beheben": wissen/dokumentation/xwiki/administration-anwendung-fehlt.md
+              - Nginx über Unix-Socket anbinden: wissen/dokumentation/xwiki/xwiki-nginx-unix-socket.md
+              - XWiki REST API & Python: wissen/dokumentation/xwiki/xwiki-rest-api.md
+              - Agenten-Pipeline (Automatisierte Pflege mit LLMs): wissen/dokumentation/xwiki/xwiki-ki-agent.md
+
+  # ⚖️ RECHTLICHES
+  - Rechtliches:
+      - Impressum: rechtliches/impressum.md
+      - Datenschutz: rechtliches/datenschutz.md
+      - "EU AI Act: Überblick & Umsetzung in Deutschland": rechtliches/eu-ai-act-uebersicht.md
+      - Artikel 50 EU AI Act: rechtliches/eu-ai-act-artikel-50.md
+      - "KI in Deutschland: weitere Gesetze": rechtliches/ki-gesetze-deutschland.md
+      - "Cookie-Banner für MediaWiki": rechtliches/mediawiki-cookie-banner.md
+
+copyright: Copyright &copy; Wissen Ahrensburg
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: de
+  features:
+    # Navigation
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.prune
+    - navigation.footer
+    # Suche
+    - search.suggest
+    - search.highlight
+    - search.share
+    # Content
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.tooltips
+    - content.tabs.link
+    - content.action.view
+    # TOC
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dunklen Modus aktivieren
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: light-blue
+      toggle:
+        icon: material/weather-sunny
+        name: Hellen Modus aktivieren
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
+    admonition:
+      note:     material/pencil-circle
+      abstract: material/clipboard-text
+      info:     material/information
+      tip:      material/fire
+      success:  material/check-circle
+      question: material/help-circle
+      warning:  material/alert
+      failure:  material/close-circle
+      danger:   material/lightning-bolt-circle
+      bug:      material/bug
+      example:  material/test-tube
+      quote:    material/format-quote-close
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search:
+      lang: de
+      separator: '[\s\-]+'
+  - git-revision-date
+  - git-authors
+  - minify:
+      minify_html: true
+
+extra:
+  consent:
+    title: Cookie-Zustimmung
+    description: >-
+      Wir verwenden Cookies, um Ihre Besuche und Präferenzen wiederzuerkennen.
+    cookies:
+      analytics: Feedback
+    actions:
+      - accept
+      - reject
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://wissen-ahrensburg.de
+      name: Wissen Ahrensburg
+    - icon: fontawesome/brands/github
+      link: https://github.com
+      name: GitHub
+  generator: true
+  analytics:
+    feedback:
+      title: War diese Seite hilfreich?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Diese Seite war hilfreich
+          data: 1
+          note: >-
+            Danke für das Feedback!
+        - icon: material/emoticon-sad-outline
+          name: Diese Seite könnte besser sein
+          data: 0
+          note: >-
+            Danke für das Feedback. Helfen Sie uns, diese Seite zu verbessern.
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mermaid-mobile-fix.js
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - footnotes
+  - toc:
+      permalink: true
+      baselevel: 1
